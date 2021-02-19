@@ -3,7 +3,7 @@
     <table id="verb-conjugation">
       <thead>
         <th colspan="8">
-          Conjugation of <span>{{ word }}णो</span> <span>(</span
+          Marwari conjugation of verb → <span>{{ word }}णो</span> <span>(</span
           ><span>{{ worden }}ṇo</span><span>)</span>
         </th>
 
@@ -917,7 +917,7 @@
 
 <script>
 export default {
-  props: { word: String, worden: String, wordtype: String },
+  props: { word: String, worden: String, wordcat: String },
   data() {
     return {
       showAll: false,
