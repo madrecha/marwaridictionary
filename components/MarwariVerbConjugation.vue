@@ -1,33 +1,46 @@
 <template>
   <div>
-    <table>
-      <tbody>
+    <table id="verb-conjugation">
+      <thead>
+        <th colspan="8">
+          Conjugation of <span>{{ word }}णो</span> <span>(</span
+          ><span>{{ worden }}ṇo</span><span>)</span>
+        </th>
+
         <tr>
-          <th colspan="8">
-            Conjugation of <span>{{ word }}णो</span> <span>(</span
-            ><span>{{ worden }}ṇo</span><span>)</span>
-          </th>
-        </tr>
-        <tr style="">
-          <th rowspan="2" colspan="2">Person</th>
+          <th rowspan="3" colspan="2">Person</th>
           <th colspan="3">Singular</th>
           <th colspan="3">Plural</th>
         </tr>
-        <tr style="">
-          <th>1<sup>st</sup> person<br /><span>मूं</span></th>
-          <th>2<sup>nd</sup> person<br /><span>थूं</span></th>
-          <th>3<sup>rd</sup> person<br /><span>यो/वो/या/वा</span></th>
-          <th>1<sup>st</sup> person<br /><span>आपा/मां</span></th>
-          <th>2<sup>nd</sup> person<br /><span>थां</span></th>
-          <th>3<sup>rd</sup> person<br /><span>ये/वे/आप</span></th>
+        <tr>
+          <th>1<sup>st</sup> person</th>
+          <th>2<sup>nd</sup> person</th>
+          <th>3<sup>rd</sup> person</th>
+          <th>1<sup>st</sup> person</th>
+          <th>2<sup>nd</sup> person</th>
+          <th>3<sup>rd</sup> person</th>
         </tr>
         <tr>
+          <th>मूं</th>
+          <th>थूं</th>
+          <th>यो/वो/या/वा</th>
+          <th>आपा/मां</th>
+          <th>थां</th>
+          <th>ये/वे/आप</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          @click.prevent="showPerfective = !showPerfective"
+          class="verb-category"
+        >
           <th colspan="8">Perfective</th>
         </tr>
 
-        <tr>
+        <tr v-show="showPerfective">
           <th rowspan="2">Simple</th>
-          <td style="background: #d4d4d4">
+
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -49,8 +62,8 @@
             <span>{{ word }}्या</span><br /><span>{{ worden }}yā</span>
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showPerfective">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -72,9 +85,9 @@
             <span>{{ word }}ीं</span><br /><span>{{ worden }}ī̃</span>
           </td>
         </tr>
-        <tr>
+        <tr v-show="showPerfective">
           <th rowspan="2">Present</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -96,8 +109,8 @@
             <span>{{ word }}्या हां</span><br /><span>{{ worden }}yā hā̃</span>
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showPerfective">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -119,9 +132,9 @@
             <span>{{ word }}ीं हैं</span><br /><span>{{ worden }}ī̃ ha͠i</span>
           </td>
         </tr>
-        <tr>
+        <tr v-show="showPerfective">
           <th rowspan="2">Past</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -143,8 +156,8 @@
             <span>{{ word }}्या थां</span><br /><span>{{ worden }}yā thā̃</span>
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showPerfective">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -166,9 +179,9 @@
             <span>{{ word }}ीं थीं</span><br /><span>{{ worden }}ī̃ thī̃</span>
           </td>
         </tr>
-        <tr>
+        <tr v-show="showPerfective">
           <th rowspan="2">Presumptive</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -194,8 +207,8 @@
             <span>{{ word }}्या वेंई</span><br /><span>{{ worden }}yā vẽī</span>
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showPerfective">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -217,9 +230,9 @@
             <span>{{ word }}ीं वेंई</span><br /><span>{{ worden }}ī̃ vẽī</span>
           </td>
         </tr>
-        <tr>
+        <tr v-show="showPerfective">
           <th rowspan="2">Subjunctive</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -243,8 +256,8 @@
             <span>{{ word }}्या वेंई</span><br /><span>{{ worden }}yā vẽī</span>
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showPerfective">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -268,12 +281,15 @@
             <span>{{ word }}ीं वेंई</span><br /><span>{{ worden }}ī̃ vẽī</span>
           </td>
         </tr>
-        <tr>
+        <tr
+          @click.prevent="showImperfective = !showImperfective"
+          class="verb-category"
+        >
           <th colspan="8">Imperfective</th>
         </tr>
-        <tr>
+        <tr v-show="showImperfective">
           <th rowspan="2">Present</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -295,8 +311,8 @@
             <span>{{ word }}ता</span><br /><span>{{ worden }}tā</span>
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showImperfective">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -318,9 +334,9 @@
             <span>{{ word }}तीं</span><br /><span>{{ worden }}tī̃</span>
           </td>
         </tr>
-        <tr>
+        <tr v-show="showImperfective">
           <th rowspan="2">Present</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -342,8 +358,8 @@
             <span>{{ word }}े हैं</span><br /><span>{{ worden }}e ha͠i</span>
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showImperfective">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -365,9 +381,9 @@
             <span>{{ word }}े हैं</span><br /><span>{{ worden }}e ha͠i</span>
           </td>
         </tr>
-        <tr>
+        <tr v-show="showImperfective">
           <th rowspan="2">Past</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -389,8 +405,8 @@
             <span>{{ word }}ता था</span><br /><span>{{ worden }}tā thā</span>
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showImperfective">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -412,9 +428,9 @@
             <span>{{ word }}तीं थीं</span><br /><span>{{ worden }}tī̃ thī̃</span>
           </td>
         </tr>
-        <tr>
+        <tr v-show="showImperfective">
           <th rowspan="2">Presumptive</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -438,8 +454,8 @@
             <span>{{ word }}ता वेंई</span><br /><span>{{ worden }}tā vẽī</span>
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showImperfective">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -465,9 +481,9 @@
             <span>{{ word }}तीं वेंई</span><br /><span>{{ worden }}tī̃ vẽī</span>
           </td>
         </tr>
-        <tr>
+        <tr v-show="showImperfective">
           <th rowspan="2">Subjunctive</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -491,8 +507,8 @@
             <span>{{ word }}ता वेंई</span><br /><span>{{ worden }}tā vẽī</span>
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showImperfective">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -518,12 +534,15 @@
             <span>{{ word }}तीं वेंई</span><br /><span>{{ worden }}tī̃ vẽī</span>
           </td>
         </tr>
-        <tr>
+        <tr
+          @click.prevent="showContinuous = !showContinuous"
+          class="verb-category"
+        >
           <th colspan="8">Continuous</th>
         </tr>
-        <tr>
+        <tr v-show="showContinuous">
           <th rowspan="2">Present</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -555,8 +574,8 @@
             >
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showContinuous">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -590,9 +609,9 @@
             >
           </td>
         </tr>
-        <tr>
+        <tr v-show="showContinuous">
           <th rowspan="2">Past</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -626,8 +645,8 @@
             >
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showContinuous">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -661,9 +680,9 @@
             >
           </td>
         </tr>
-        <tr>
+        <tr v-show="showContinuous">
           <th rowspan="2">Presumptive</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -697,8 +716,8 @@
             >
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showContinuous">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -732,9 +751,9 @@
             >
           </td>
         </tr>
-        <tr>
+        <tr v-show="showContinuous">
           <th rowspan="2">Subjunctive</th>
-          <td style="background: #d4d4d4">
+          <td class="gender">
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
@@ -768,8 +787,8 @@
             >
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
+        <tr v-show="showContinuous">
+          <td class="gender">
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
@@ -803,10 +822,13 @@
             >
           </td>
         </tr>
-        <tr>
+        <tr
+          @click.prevent="showNonaspectual = !showNonaspectual"
+          class="verb-category"
+        >
           <th colspan="8">Non-aspectual</th>
         </tr>
-        <tr>
+        <tr v-show="showNonaspectual">
           <th colspan="2">Subjunctive</th>
           <td>
             <span>{{ word }}ूँ</span><br /><span>{{ worden }}ū̃</span>
@@ -827,10 +849,10 @@
             <span>{{ word }}ीं</span><br /><span>{{ worden }}ī̃</span>
           </td>
         </tr>
-        <tr>
+        <tr v-show="showNonaspectual">
           <th rowspan="2">Future</th>
-          <td style="background: #d4d4d4">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
+          <td class="gender">
+            <span><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
             <span>{{ word }}ूँला</span><br /><span>{{ worden }}ū̃lā</span>
@@ -851,9 +873,9 @@
             <span>{{ word }}ींला</span><br /><span>{{ worden }}ī̃lā</span>
           </td>
         </tr>
-        <tr>
-          <td style="background: #d4d4d4">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
+        <tr v-show="showNonaspectual">
+          <td class="gender">
+            <span><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
             <span>{{ word }}ूँला</span><br /><span>{{ worden }}ū̃lā</span>
@@ -874,7 +896,7 @@
             <span>{{ word }}ींला</span><br /><span>{{ worden }}ī̃lā</span>
           </td>
         </tr>
-        <tr>
+        <tr v-show="showNonaspectual">
           <th colspan="2">Imperative</th>
           <td>-</td>
           <td>
@@ -895,12 +917,37 @@
 
 <script>
 export default {
-  props: { word: String, worden: String },
+  props: { word: String, worden: String, wordtype: String },
   data() {
-    return {};
+    return {
+      showAll: false,
+      showPerfective: true,
+      showImperfective: false,
+      showContinuous: false,
+      showNonaspectual: false,
+    };
   },
 };
 </script>
 
 <style lang="postcss" scoped>
+table {
+  @apply tw-border tw-border-pink-800 tw-border-collapse;
+}
+th {
+  @apply tw-text-xl tw-text-blue-900 tw-font-medium;
+  @apply tw-py-2 tw-px-3;
+  @apply tw-border tw-border-blue-800;
+}
+td {
+  @apply tw-border tw-border-blue-800;
+  @apply tw-py-2 tw-px-3;
+}
+
+.verb-category {
+  @apply tw-bg-pink-50;
+}
+.gender {
+  @apply tw-bg-blue-50;
+}
 </style>
