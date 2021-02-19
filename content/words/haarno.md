@@ -3,8 +3,9 @@ title: हारणो
 transliteration: haarno
 slugurl: haarno
 
-conjugation: हार
-conjugationen: haar
+conjugation: 
+  term: हार
+  en: haar
 
 grammar: verb
 

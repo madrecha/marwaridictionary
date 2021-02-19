@@ -3,8 +3,9 @@ title: भागणो
 transliteration: bhaagno
 slugurl: bhaagno
 
-conjugation: भाग
-conjugationen: bhaag
+conjugation: 
+  term: भाग
+  en: bhaag
 
 grammar: verb
 

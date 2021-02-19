@@ -4,9 +4,7 @@ transliteration: jamku
 slugurl: jamku
 
 grammar: noun
-
-meaning:
-  en: "happy"
-  hi: "खुश"
 ---
 
+## Meaning
+1. happy
