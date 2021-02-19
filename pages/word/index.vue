@@ -19,6 +19,7 @@ export default {
   async fetch() {
     this.words = await this.$content("words")
       //   .where({ slugurl: this.$route.params.slugurl })
+      .sortBy("title")
       .fetch();
   },
 };
