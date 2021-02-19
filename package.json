@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "npm run generate && firebase deploy --only hosting:marwaridictionary"
   },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
