@@ -3,10 +3,10 @@ title: उकसाणो
 transliteration: uksaano
 slugurl: uksaano
 
-# conjugation: 
-#   term: उकसा
-#   en: uksaa
-#   type: ending_in_aa
+conjugation: 
+  term: उकसा
+  en: uksaa
+  category: verb-ending-in-aa
 
 
 grammar: verb
