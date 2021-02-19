@@ -1,16 +1,38 @@
 <template>
-  <div class="tw-flex tw-bg-pink-100">
-    <div class="tw-mx-auto">
-      <nuxt-link to="/">Home</nuxt-link>
-      <nuxt-link to="/word">All Words</nuxt-link>
+  <div
+    class="tw-flex tw-items-center tw-justify-center tw-bg-gradient-to-br tw-from-white tw-to-blue-50"
+  >
+    <div class="tw-w-1/3">
+      <p
+        class="tw-p-3 tw-text-center tw-font-bold tw-text-2xl tw-text-gray-500"
+      >
+        Marwari Dictionary
+      </p>
     </div>
+    <nav class="tw-w-2/3 tw-px-8">
+      <ul class="tw-mx-auto tw-flex">
+        <li
+          v-for="menu in menus"
+          :key="menu.name"
+          class="tw-p-3 hover:tw-bg-pink-50"
+        >
+          <nuxt-link :to="menu.url">{{ menu.name }}</nuxt-link>
+        </li>
+      </ul>
+    </nav>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {};
+    return {
+      menus: [
+        { name: "Home", url: "/" },
+        { name: "Words", url: "/word" },
+        { name: "About", url: "/about" },
+      ],
+    };
   },
 };
 </script>
