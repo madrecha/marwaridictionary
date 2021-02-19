@@ -1,12 +1,12 @@
 ---
-title: पादणो
-transliteration: paadno
-slugurl: paadno
+title: ताड़णो
+transliteration: taadno
+slugurl: taadno
 
 conjugation: 
   type: verb
-  term: पाद
-  en: paad
+  term: ताड़
+  en: taad
 
 ---
 ## Etymology
@@ -15,7 +15,8 @@ conjugation:
 
 ## Verb
 ### Meaning
-1. to fart
+1. to ogle
+2. to stare continuously
 
 ### Conjugation
 <marwari-verb-conjugation :word="conjugation.term" :worden="conjugation.en"></marwari-verb-conjugation>
