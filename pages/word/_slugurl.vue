@@ -5,7 +5,7 @@
         Marwari word: {{ word.title }}
       </h1>
       <NuxtContent :document="word"></NuxtContent>
-      <div v-if="word.conjugation">
+      <div v-if="word.conjugation && !word.conjugation.category">
         <h2
           class="tw-text-pink-800 tw-text-xl sm:tw-text-3xl tw-mt-4 tw-bg-gradient-to-r tw-from-white tw-to-red-50 tw-rounded-md tw-py-1 lg:tw--ml-2 tw-pl-3 tw-shadow-md"
         >
@@ -17,7 +17,7 @@
           <MarwariVerbConjugation
             :word="word.conjugation.term"
             :worden="word.conjugation.en"
-            :wordtype="word.conjugation.type"
+            :wordcat="word.conjugation.category"
           ></MarwariVerbConjugation>
         </div>
       </div>
