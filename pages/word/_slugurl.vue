@@ -3,6 +3,13 @@
     <div v-for="word in words" :key="word.slugurl">
       <h1>Marwari word: {{ word.title }}</h1>
       <NuxtContent :document="word"></NuxtContent>
+      <div v-if="word.conjugation">
+        <h2>Conjugation</h2>
+        <MarwariVerbConjugation
+          :word="word.conjugation"
+          :worden="word.conjugationen"
+        ></MarwariVerbConjugation>
+      </div>
       <!-- <h2>Meaning</h2> -->
       <!-- <h3>English meaning:</h3>
       {{ word.meaning.en }}
@@ -21,10 +28,13 @@
 
 <script>
 export default {
+  // components: { MarwariVerbConjugation },
   data() {
     return {
       words: [],
     };
+
+    MarwariVerbConjugation;
   },
   async fetch() {
     this.words = await this.$content("words")
