@@ -14,6 +14,10 @@ grammar: verb
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to walk
 2. to be okay; to be acceptable
+
+### Conjugation
+<marwari-verb-conjugation :word="conjugation.term" :worden="conjugation.en"></marwari-verb-conjugation>
