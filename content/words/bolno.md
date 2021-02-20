@@ -17,3 +17,4 @@ grammar:
 2. to tell
 
 ### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

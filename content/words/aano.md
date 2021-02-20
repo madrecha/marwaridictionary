@@ -6,7 +6,7 @@ slugurl: aano
 grammar: 
   verb:
     term: आ
-    en: aa
+    trans: aa
     ending: aa
 
 ---
@@ -17,3 +17,6 @@ grammar:
 ## Meaning
 1. to come
 2. to arrive
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>
