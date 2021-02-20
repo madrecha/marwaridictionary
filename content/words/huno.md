@@ -19,3 +19,6 @@ categories:
 
 ## Meaning
 1. to sleep
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

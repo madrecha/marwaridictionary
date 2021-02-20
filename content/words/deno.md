@@ -24,3 +24,6 @@ grammar:
 ## Meaning
 1. to give
 2. to donate
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

@@ -15,5 +15,9 @@ grammar:
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to bathe
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

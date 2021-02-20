@@ -15,3 +15,6 @@ grammar:
 ### Meaning
 1. to cause someone to run
 2. to shoo away
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

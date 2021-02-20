@@ -18,5 +18,6 @@ grammar:
 2. to give up
 3. to be defeated
 
-## Conjugation
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>
 

@@ -20,3 +20,6 @@ grammar:
 ### Meaning
 1. to taunt
 2. to tell
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

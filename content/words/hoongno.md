@@ -17,4 +17,4 @@ grammar:
 1. to smell
 
 ### Conjugation
-<marwari-verb-conjugation :word="grammar.verb.term" :worden="grammar.verb.trans"></marwari-verb-conjugation>
+<verb-conj :grammar="grammar"></verb-conj>

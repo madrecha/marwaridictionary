@@ -18,3 +18,6 @@ grammar:
 ## Meaning
 1. to sew
 2. to stitch
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

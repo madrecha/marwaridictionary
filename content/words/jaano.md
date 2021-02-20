@@ -20,3 +20,6 @@ categories:
 
 ## Meaning
 1. to go
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

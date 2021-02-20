@@ -13,5 +13,8 @@ grammar:
 
 ## Verb
 
-## Meaning
+### Meaning
 1. to cause someone to reduce or decrease
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

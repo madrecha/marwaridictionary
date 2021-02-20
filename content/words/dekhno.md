@@ -23,4 +23,4 @@ grammar:
 3. to consider; to think
 
 ### Conjugation
-<marwari-verb-conjugation :word="conjugation.term" :worden="conjugation.en"></marwari-verb-conjugation>
+<verb-conj :grammar="grammar"></verb-conj>

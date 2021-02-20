@@ -21,3 +21,6 @@ grammar:
 
 ## Meaning
 1. to cause someone to give
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

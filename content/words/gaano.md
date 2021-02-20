@@ -23,5 +23,5 @@ grammar:
 1. to take away
 2. to deliver
 
-<!-- ### Conjugation
-<MarwariConjugationVerb :word="conjugation.term" :worden="conjugation.en"></MarwariConjugationVerb> -->
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

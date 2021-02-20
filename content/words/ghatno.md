@@ -14,5 +14,9 @@ grammar:
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to reduce; to decrease
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>
