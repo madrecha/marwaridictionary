@@ -2,6 +2,9 @@
 title: आपाणो
 transliteration: aapaano
 slugurl: aapaano
+
+grammar:
+  pronoun
 ---
 ## Etymology
 

@@ -1,5 +1,5 @@
 ---
-title: देवाणो
+title: देवाणणो
 transliteration: devaano
 slugurl: devaano
 
@@ -10,7 +10,7 @@ grammar:
     ending: aa
     causative: 
       verb: देणो
-      type: 2
+      type: 3
 
 ---
 ## Etymology

@@ -1,16 +1,15 @@
 ---
-title: ऊँट / ऊंट
+title: ऊँट
 transliteration: unt
 slugurl: unt
 
-category: 
+grammar: noun
+
+topics: 
   - animal
 ---
-
-## Etymology
-
-## Pronunciation
-
 ## Noun
+<fos :word="title"></fos>
+
 ### Meaning
 1. camel

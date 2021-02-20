@@ -3,7 +3,11 @@ title: अटे
 transliteration: ate
 slugurl: ate
 
-category: 
+grammar: 
+  pronoun:
+
+categories:
+  - 
 ---
 
 ## Etymology

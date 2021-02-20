@@ -3,7 +3,12 @@ title: भडूरो
 transliteration: bhaduro
 slugurl: bhaduro
 
-category: 
+grammar: 
+  noun:
+    gender: m
+    number: s
+
+categories: 
   - animal
 ---
 

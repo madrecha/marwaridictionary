@@ -3,12 +3,11 @@ title: देणो
 transliteration: deno
 slugurl: deno
 
-conjugation: 
-  term: दे
-  en: de
-  category: verb-ending-in-ae
-
-grammar: verb
+grammar:
+  verb:
+    term: दे
+    trans: de
+    ending: ae
 
 ---
 ## Etymology

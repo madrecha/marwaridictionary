@@ -3,10 +3,10 @@ title: पादणो
 transliteration: paadno
 slugurl: paadno
 
-conjugation: 
-  type: verb
-  term: पाद
-  en: paad
+grammar: 
+  verb:
+    term: पाद
+    en: paad
 
 ---
 ## Etymology
@@ -18,4 +18,4 @@ conjugation:
 1. to fart
 
 ### Conjugation
-<marwari-verb-conjugation :word="conjugation.term" :worden="conjugation.en"></marwari-verb-conjugation>
+<marwari-verb-conjugation :word="grammar.verb.term" :worden="grammar.verb.en"></marwari-verb-conjugation>

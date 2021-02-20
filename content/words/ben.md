@@ -3,7 +3,12 @@ title: बेन
 transliteration: ben
 slugurl: ben
 
-category: 
+grammar: 
+  noun:
+    gender: f
+    number: s
+
+categories: 
   - person
   - relative
 ---

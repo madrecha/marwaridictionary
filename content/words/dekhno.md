@@ -3,11 +3,11 @@ title: देखणो
 transliteration: dekhno
 slugurl: dekhno
 
-conjugation: 
-  type: verb
-  term: देख
-  en: ve
-
+grammar: 
+  verb: 
+    term: देख
+    trans: ve
+    ending: a
 ---
 
 ## Etymology

@@ -3,7 +3,12 @@ title: भैंस
 transliteration: bhains
 slugurl: bhains
 
-category: 
+grammar: 
+  noun:
+    gender: m
+    number: s
+
+categories: 
   - animal
 ---
 

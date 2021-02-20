@@ -3,16 +3,21 @@ title: चिल्लाणो
 transliteration: chillaano
 slugurl: chillaano
 
-conjugation: 
-  term: चिल्ला
-  en: chillaa
-  category: verb-ending-in-aa
+grammar: 
+  verb:
+    term: चिल्ला
+    trans: chillaa
+    ending: aa
+
+categories:
+  - 
 
 ---
 ## Etymology
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to shout
 2. to scold

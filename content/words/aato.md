@@ -3,7 +3,13 @@ title: आटो
 transliteration: aato
 slugurl: aato
 
-category: 
+grammar:
+  noun:
+    gender: m
+    number: s
+
+categories: 
+  - food
 ---
 
 ## Etymology

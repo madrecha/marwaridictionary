@@ -3,12 +3,11 @@ title: चालणो
 transliteration: chaalno
 slugurl: chaalno
 
-conjugation: 
-  term: चाल
-  en: chaal
-
-grammar: verb
-
+grammar:
+  verb:
+    term: चाल
+    trans: chaal
+    ending: a
 ---
 ## Etymology
 
@@ -20,4 +19,4 @@ grammar: verb
 2. to be okay; to be acceptable
 
 ### Conjugation
-<marwari-verb-conjugation :word="conjugation.term" :worden="conjugation.en"></marwari-verb-conjugation>
+<marwari-verb-conjugation :word="grammar.verb.term" :worden="grammar.verb.trans"></marwari-verb-conjugation>

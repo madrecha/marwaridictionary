@@ -3,7 +3,12 @@ title: छोरी
 transliteration: chhori
 slugurl: chhori
 
-category: 
+grammar:
+  noun:
+    gender: f
+    number: s
+
+categories: 
   - person
 ---
 

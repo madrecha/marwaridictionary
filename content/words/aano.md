@@ -3,10 +3,11 @@ title: आणो
 transliteration: aano
 slugurl: aano
 
-conjugation: 
-  term: आ
-  en: aa
-  category: verb-ending-in-aa
+grammar: 
+  verb:
+    term: आ
+    en: aa
+    ending: aa
 
 ---
 ## Etymology

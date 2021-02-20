@@ -2,6 +2,9 @@
 title: आपणो
 transliteration: aapno
 slugurl: aapno
+
+grammar:
+  pronoun
 ---
 ## Etymology
 
@@ -12,4 +15,4 @@ slugurl: aapno
 1. our, ours
 
 ### Synonym
-1. [आपाणो](aapaano)
+<syn :syn="['आपाणो']"></syn>

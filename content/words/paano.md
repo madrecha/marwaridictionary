@@ -3,16 +3,16 @@ title: पाणो
 transliteration: paano
 slugurl: paano
 
-conjugation: 
-  term: paano
-  en: paa
-  category: verb-ending-in-aa
+grammar: 
+  noun:
+    gender: m
+    number: s
+  verb: 
+    term: पा
+    en: paa
+    cat: verb-ending-in-aa
 
 ---
-## Etymology
-
-## Pronunciation
-
 ## Verb
 ### Meaning
 1. to achieve

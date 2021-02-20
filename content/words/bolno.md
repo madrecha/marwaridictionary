@@ -3,13 +3,17 @@ title: बोलणो
 transliteration: bolno
 slugurl: bolno
 
-conjugation: 
-  term: बोल
-  en: bol
+grammar: 
+  verb: 
+    term: बोल
+    en: bol
+    ending: a
 
-grammar: verb
 ---
 
-## Meaning
+## Verb
+### Meaning
 1. to say, to speak
 2. to tell
+
+### Conjugation
