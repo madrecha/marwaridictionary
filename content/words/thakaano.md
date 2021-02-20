@@ -1,7 +1,7 @@
 ---
 title: थकाणो
-transliteration: peeno
-slugurl: peeno
+transliteration: thakaano
+slugurl: thakaano
 
 grammar:
   verb:

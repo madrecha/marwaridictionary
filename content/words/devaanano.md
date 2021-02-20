@@ -1,6 +1,6 @@
 ---
 title: देवाणणो
-transliteration: devaano
+transliteration: devaanano
 slugurl: devaano
 
 grammar: 
