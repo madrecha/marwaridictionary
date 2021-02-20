@@ -10,7 +10,7 @@
           :key="word.slugurl"
           class="tw-p-3 hover:tw-bg-blue-50 tw-text-lg tw-text-center"
         >
-          <nuxt-link :to="`/word/${word.slugurl}`">
+          <nuxt-link :to="`/word/${word.title}`">
             {{ word.title }}<br /><span class="tw-text-sm">
               {{ word.transliteration }}
             </span>
@@ -31,7 +31,7 @@ export default {
   async fetch() {
     this.words = await this.$content("words")
       //   .where({ slugurl: this.$route.params.slugurl })
-      .sortBy("title")
+      .sortBy("transliteration")
       .fetch();
   },
 };
