@@ -7,6 +7,8 @@ grammar:
   verb:
     term: दे
     trans: de
+    term2: द
+    trans2: d
     ending: ae
     causative: 
       self: 1
