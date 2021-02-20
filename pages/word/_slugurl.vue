@@ -9,7 +9,7 @@
         <h2
           class="tw-text-pink-800 tw-text-xl sm:tw-text-3xl tw-mt-4 tw-bg-gradient-to-r tw-from-white tw-to-red-50 tw-rounded-md tw-py-1 lg:tw--ml-2 tw-pl-3 tw-shadow-md"
         >
-          Grammar
+          Grammar categories
         </h2>
         <div v-if="word.grammar.noun">
           Noun,
