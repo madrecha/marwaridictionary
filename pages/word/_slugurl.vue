@@ -2,7 +2,7 @@
   <div class="tw-mt-3">
     <div v-for="word in words" :key="word.slugurl">
       <h1 class="tw-text-3xl tw-text-pink-800 tw-text-center tw-font-medium">
-        {{ word.title }} ({{ word.transliteration }})
+        {{ word.title }} ({{ word.transliteration }}) meaning in Marwari
       </h1>
       <NuxtContent :document="word"></NuxtContent>
       <div v-if="word.grammar" class="tw-mt-8">
