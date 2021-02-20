@@ -8,6 +8,8 @@ grammar:
     term: वाच
     trans: vaanch
     ending: a
+    causative: 
+      self: 1
 ---
 
 ## Etymology
@@ -20,4 +22,4 @@ grammar:
 1. to read
 
 ### Conjugation
-<marwari-verb-conjugation :word="conjugation.term" :worden="conjugation.en"></marwari-verb-conjugation>
+<verb-conj :grammar="grammar"></verb-conj>

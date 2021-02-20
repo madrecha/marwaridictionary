@@ -18,5 +18,9 @@ grammar:
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to do
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

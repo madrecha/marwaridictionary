@@ -8,6 +8,8 @@ grammar:
     term: थका
     trans: thakaa
     ending: aa
+    causative:
+      self: 2
 
 
 ---
@@ -15,6 +17,10 @@ grammar:
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to make someone tired
 2. to annoy someone to the extent he/she becomes fed up
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

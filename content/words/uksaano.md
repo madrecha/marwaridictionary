@@ -12,5 +12,9 @@ grammar:
 
 ---
 
-## Meaning
+## Verb
+### Meaning
 1. to incite, to enflame
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

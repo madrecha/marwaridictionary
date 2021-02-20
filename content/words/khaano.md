@@ -25,3 +25,6 @@ categories:
 ### Meaning
 1. to eat
 2. to accept bribe
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

@@ -14,6 +14,10 @@ grammar:
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to fly
 2. to soar high
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

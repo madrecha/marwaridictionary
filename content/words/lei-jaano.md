@@ -5,7 +5,7 @@ slugurl: lei-jaano
 
 grammar: 
   term: लेई जा
-  en: lei jaa
+  trans: lei jaa
   ending: aa
 
 categories:
@@ -19,3 +19,6 @@ categories:
 ### Meaning
 1. to take away
 2. to deliver
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

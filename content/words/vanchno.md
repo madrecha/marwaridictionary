@@ -8,12 +8,18 @@ grammar:
     term: वंच
     trans: vanch
     ending: a
+    causative: 
+      self: 1
 
 ---
 ## Etymology
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to be saved
 2. to escape from some danger
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

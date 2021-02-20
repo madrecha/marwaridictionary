@@ -6,13 +6,19 @@ slugurl: vanchaano
 grammar: 
   verb:
     term: वंचा
-    en: vanchaa
+    trans: vanchaa
     ending: aa
+    causative: 
+      self: 2
 
 ---
 ## Etymology
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to save
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

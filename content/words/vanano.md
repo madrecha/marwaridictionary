@@ -22,4 +22,4 @@ grammar:
 2. to accomplish something
 
 ### Conjugation
-<marwari-verb-conjugation :word="conjugation.term" :worden="conjugation.en"></marwari-verb-conjugation>
+<verb-conj :grammar="grammar"></verb-conj>

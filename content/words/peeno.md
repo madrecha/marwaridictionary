@@ -14,6 +14,10 @@ grammar:
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to drink
 2. to consume alcohol
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

@@ -16,5 +16,9 @@ categories:
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to bring
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

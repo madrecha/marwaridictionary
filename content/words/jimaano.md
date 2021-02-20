@@ -19,5 +19,9 @@ grammar:
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to feed
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

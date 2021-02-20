@@ -19,5 +19,9 @@ grammar:
 
 ## Pronunciation
 
-## Meaning
+## Verb
+### Meaning
 1. to cause someone to feed someone
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

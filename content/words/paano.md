@@ -13,11 +13,16 @@ grammar:
     ending: aa
 
 ---
+
+## Noun
+### Meaning
+1. instrument
+
 ## Verb
 ### Meaning
 1. to achieve
 2. to cause someone to drink
 
-## Noun
-### Meaning
-1. instrument
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>
+

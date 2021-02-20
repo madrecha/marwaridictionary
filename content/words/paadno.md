@@ -22,4 +22,4 @@ categories:
 1. to fart
 
 ### Conjugation
-<marwari-verb-conjugation :word="grammar.verb.term" :worden="grammar.verb.en"></marwari-verb-conjugation>
+<verb-conj :grammar="grammar"></verb-conj>

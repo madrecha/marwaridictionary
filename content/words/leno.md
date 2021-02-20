@@ -15,3 +15,6 @@ grammar:
 
 ### Meaning
 1. to take
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

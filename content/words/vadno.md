@@ -20,3 +20,6 @@ grammar:
 ### Meaning
 1. to grow
 2. to increase
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

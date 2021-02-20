@@ -20,4 +20,4 @@ grammar:
 2. to scold
 
 ### Conjugation
-<marwari-verb-conjugation :word="conjugation.term" :worden="conjugation.en"></marwari-verb-conjugation>
+<verb-conj :grammar="grammar"></verb-conj>
