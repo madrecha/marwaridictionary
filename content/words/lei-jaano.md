@@ -1,15 +1,16 @@
 ---
-title: लेई जाणो
-transliteration: lei jaano
+title: लेई-जाणो
+transliteration: lei-jaano
 slugurl: lei-jaano
 
 grammar: 
-  term: लेई जा
-  trans: lei jaa
-  ending: aa
+  verb:
+    term: लेई जा
+    trans: lei jaa
+    ending: aa
 
 categories:
-  - verb-phrases-ending-with-जाणो
+  - "verb-phrases-ending-with-जाणो"
 ---
 ## Etymology
 

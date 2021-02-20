@@ -4,10 +4,10 @@ transliteration: gaano
 slugurl: gaano
 
 grammar: 
-	verb:
-  	term: गाणो
-	 	trans: gaa
-		ending: aa
+  verb:
+    term: गाणो
+    trans: gaa
+    ending: aa
 
 ---
 ## Etymology
