@@ -8,9 +8,12 @@
         <li
           v-for="word in words"
           :key="word.slugurl"
-          class="tw-p-3 hover:tw-bg-blue-50 tw-text-lg tw-text-center"
+          class="tw-m-2 hover:tw-bg-blue-50 tw-text-center"
         >
-          <nuxt-link :to="`/word/${word.title}`">
+          <nuxt-link
+            :to="`/word/${word.title}`"
+            class="tw-py-2 tw-text-lg tw-text-center"
+          >
             {{ word.title }}<br /><span class="tw-text-sm">
               {{ word.transliteration }}
             </span>
@@ -31,7 +34,7 @@ export default {
   async fetch() {
     this.words = await this.$content("words")
       //   .where({ slugurl: this.$route.params.slugurl })
-      .sortBy("transliteration")
+      .sortBy("title")
       .fetch();
   },
 };
