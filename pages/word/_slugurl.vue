@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="tw-mt-3">
     <div v-for="word in words" :key="word.slugurl">
       <h1 class="tw-text-3xl tw-text-pink-800 tw-text-center tw-font-medium">
-        Marwari word: {{ word.title }}
+        {{ word.title }} ({{ word.transliteration }})
       </h1>
       <NuxtContent :document="word"></NuxtContent>
       <!-- <div v-if="word.conjugation && !word.conjugation.category">
@@ -26,10 +26,14 @@
 </template>
 
 <script>
-import MarwariVerbConjugation from "~/components/MarwariVerbConjugation.vue";
+// import MarwariVerbConjugation from "~/components/MarwariVerbConjugation.vue";
+// import Ant from "~/components/word/Ant.vue";
+// import Syn from "~/components/word/Syn.vue";
+
+// import noun from "~/components/grammar/noun.vue";
 
 export default {
-  components: { MarwariVerbConjugation },
+  // components: { MarwariVerbConjugation, Syn, Ant, noun },
   data() {
     return {
       words: [],
@@ -37,7 +41,7 @@ export default {
   },
   async fetch() {
     this.words = await this.$content("words")
-      .where({ slugurl: this.$route.params.slugurl })
+      .where({ title: this.$route.params.slugurl })
       .fetch();
   },
 };
