@@ -138,22 +138,22 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}्यो थो</span><br /><span>{{ worden }}yo tho</span>
+            <span>{{ word }}यो थो</span><br /><span>{{ worden }}yo tho</span>
           </td>
           <td>
-            <span>{{ word }}्यो थो</span><br /><span>{{ worden }}yo tho</span>
+            <span>{{ word }}यो थो</span><br /><span>{{ worden }}yo tho</span>
           </td>
           <td>
-            <span>{{ word }}्यो थो</span><br /><span>{{ worden }}yo tho</span>
+            <span>{{ word }}यो थो</span><br /><span>{{ worden }}yo tho</span>
           </td>
           <td>
-            <span>{{ word }}्या थां</span><br /><span>{{ worden }}yā thā̃</span>
+            <span>{{ word }}या थां</span><br /><span>{{ worden }}yā thā̃</span>
           </td>
           <td>
-            <span>{{ word }}्या था</span><br /><span>{{ worden }}yā thā</span>
+            <span>{{ word }}या था</span><br /><span>{{ worden }}yā thā</span>
           </td>
           <td>
-            <span>{{ word }}्या थां</span><br /><span>{{ worden }}yā thā̃</span>
+            <span>{{ word }}या थां</span><br /><span>{{ worden }}yā thā̃</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -161,22 +161,22 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी थी</span><br /><span>{{ worden }}ī thī</span>
+            <span>{{ word }}ई थी</span><br /><span>{{ worden }}ī thī</span>
           </td>
           <td>
-            <span>{{ word }}ी थी</span><br /><span>{{ worden }}ī thī</span>
+            <span>{{ word }}ई थी</span><br /><span>{{ worden }}ī thī</span>
           </td>
           <td>
-            <span>{{ word }}ी थी</span><br /><span>{{ worden }}ī thī</span>
+            <span>{{ word }}ई थी</span><br /><span>{{ worden }}ī thī</span>
           </td>
           <td>
-            <span>{{ word }}ीं थीं</span><br /><span>{{ worden }}ī̃ thī̃</span>
+            <span>{{ word }}ईं थीं</span><br /><span>{{ worden }}ī̃ thī̃</span>
           </td>
           <td>
-            <span>{{ word }}ीं थीं</span><br /><span>{{ worden }}ī̃ thī̃</span>
+            <span>{{ word }}ईं थीं</span><br /><span>{{ worden }}ī̃ thī̃</span>
           </td>
           <td>
-            <span>{{ word }}ीं थीं</span><br /><span>{{ worden }}ī̃ thī̃</span>
+            <span>{{ word }}ईं थीं</span><br /><span>{{ worden }}ī̃ thī̃</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -185,26 +185,22 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}्यो वेऊँ</span><br /><span>{{ worden }}yo veū̃</span>
+            <span>{{ word }}यो वेऊँ</span><br /><span>{{ worden }}yo veū̃</span>
           </td>
           <td>
-            <span>{{ word }}्यो वेई</span><br /><span>{{ worden }}yo veī</span>
+            <span>{{ word }}यो वेई</span><br /><span>{{ worden }}yo veī</span>
           </td>
           <td>
-            <span>{{ word }}्यो वेई</span><br /><span>{{ worden }}yo veī</span>
+            <span>{{ word }}यो वेई</span><br /><span>{{ worden }}yo veī</span>
           </td>
           <td>
-            <span>{{ word }}्या वेंवा</span><br /><span
-              >{{ word }}yā vemvā</span
-            >
+            <span>{{ word }}या वेंवा</span><br /><span>{{ word }}yā vemvā</span>
           </td>
           <td>
-            <span>{{ word }}्या वेवो</span><br /><span
-              >{{ worden }}yā vevo</span
-            >
+            <span>{{ word }}या वेवो</span><br /><span>{{ worden }}yā vevo</span>
           </td>
           <td>
-            <span>{{ word }}्या वेंई</span><br /><span>{{ worden }}yā vẽī</span>
+            <span>{{ word }}या वेंई</span><br /><span>{{ worden }}yā vẽī</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -212,22 +208,22 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी वेऊँ</span><br /><span>{{ worden }}ī veū̃</span>
+            <span>{{ word }}ई वेऊँ</span><br /><span>{{ worden }}ī veū̃</span>
           </td>
           <td>
-            <span>{{ word }}ी वेई</span><br /><span>{{ worden }}ī veī</span>
+            <span>{{ word }}ई वेई</span><br /><span>{{ worden }}ī veī</span>
           </td>
           <td>
-            <span>{{ word }}ी वेई</span><br /><span>{{ worden }}ī veī</span>
+            <span>{{ word }}ई वेई</span><br /><span>{{ worden }}ī veī</span>
           </td>
           <td>
-            <span>{{ word }}ीं वेंई</span><br /><span>{{ worden }}ī̃ vẽī</span>
+            <span>{{ word }}ईं वेंई</span><br /><span>{{ worden }}ī̃ vẽī</span>
           </td>
           <td>
-            <span>{{ word }}ीं वेओ</span><br /><span>{{ worden }}ī̃ veo</span>
+            <span>{{ word }}ईं वेओ</span><br /><span>{{ worden }}ī̃ veo</span>
           </td>
           <td>
-            <span>{{ word }}ीं वेंई</span><br /><span>{{ worden }}ī̃ vẽī</span>
+            <span>{{ word }}ईं वेंई</span><br /><span>{{ worden }}ī̃ vẽī</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -261,24 +257,24 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी वेऊँ</span><br /><span>{{ worden }}ī veū̃</span>
+            <span>{{ word }}ई वेऊँ</span><br /><span>{{ worden }}ī veū̃</span>
           </td>
           <td>
-            <span>{{ word }}ी वेई</span><br /><span>{{ worden }}ī veī</span>
+            <span>{{ word }}ई वेई</span><br /><span>{{ worden }}ī veī</span>
           </td>
           <td>
-            <span>{{ word }}ी वेई</span><br /><span>{{ worden }}ī veī</span>
+            <span>{{ word }}ई वेई</span><br /><span>{{ worden }}ī veī</span>
           </td>
           <td>
-            <span>{{ word }}ीं वेंवा</span><br /><span
+            <span>{{ word }}ईं वेंवा</span><br /><span
               >{{ worden }}ī̃ vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}ीं वेओ</span><br /><span>{{ worden }}ī̃ veo</span>
+            <span>{{ word }}ईं वेओ</span><br /><span>{{ worden }}ī̃ veo</span>
           </td>
           <td>
-            <span>{{ word }}ीं वेंई</span><br /><span>{{ worden }}ī̃ vẽī</span>
+            <span>{{ word }}ईं वेंई</span><br /><span>{{ worden }}ī̃ vẽī</span>
           </td>
         </tr>
         <tr
@@ -340,22 +336,22 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
+            <span>{{ word }}ऊँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
           </td>
           <td>
-            <span>{{ word }}े है</span><br /><span>{{ worden }}e hai</span>
+            <span>{{ word }}ए है</span><br /><span>{{ worden }}e hai</span>
           </td>
           <td>
-            <span>{{ word }}े है</span><br /><span>{{ worden }}e hai</span>
+            <span>{{ word }}ए है</span><br /><span>{{ worden }}e hai</span>
           </td>
           <td>
-            <span>{{ word }}ा हां</span><br /><span>{{ worden }}ā hā̃</span>
+            <span>{{ word }}वा हां</span><br /><span>{{ worden }}ā hā̃</span>
           </td>
           <td>
-            <span>{{ word }}ो हो</span><br /><span>{{ worden }}o ho</span>
+            <span>{{ word }}ओ हो</span><br /><span>{{ worden }}o ho</span>
           </td>
           <td>
-            <span>{{ word }}े हैं</span><br /><span>{{ worden }}e ha͠i</span>
+            <span>{{ word }}ए हैं</span><br /><span>{{ worden }}e ha͠i</span>
           </td>
         </tr>
         <tr v-show="showImperfective">
@@ -363,22 +359,22 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
+            <span>{{ word }}ऊँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
           </td>
           <td>
-            <span>{{ word }}े है</span><br /><span>{{ worden }}e hai</span>
+            <span>{{ word }}ए है</span><br /><span>{{ worden }}e hai</span>
           </td>
           <td>
-            <span>{{ word }}े है</span><br /><span>{{ worden }}e hai</span>
+            <span>{{ word }}ए है</span><br /><span>{{ worden }}e hai</span>
           </td>
           <td>
-            <span>{{ word }}ांं हां</span><br /><span>{{ worden }}ā̃̃ hā̃</span>
+            <span>{{ word }}वां हां</span><br /><span>{{ worden }}ā̃̃ hā̃</span>
           </td>
           <td>
-            <span>{{ word }}ो हो</span><br /><span>{{ worden }}o ho</span>
+            <span>{{ word }}ओ हो</span><br /><span>{{ worden }}o ho</span>
           </td>
           <td>
-            <span>{{ word }}े हैं</span><br /><span>{{ worden }}e ha͠i</span>
+            <span>{{ word }}ए हैं</span><br /><span>{{ worden }}e ha͠i</span>
           </td>
         </tr>
         <tr v-show="showImperfective">
@@ -487,7 +483,7 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
+            <span>{{ word }}ऊँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
           </td>
           <td>
             <span>{{ word }}तो वेई</span><br /><span>{{ worden }}to veī</span>
@@ -512,7 +508,7 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
+            <span>{{ word }}ऊँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
           </td>
           <td>
             <span>{{ word }}ती वेई</span><br /><span>{{ worden }}tī veī</span>
@@ -546,30 +542,30 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी रू हूँ</span><br /><span
+            <span>{{ word }}ई रू हूँ</span><br /><span
               >{{ worden }}ī rū hū̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो है</span><br /><span
+            <span>{{ word }}ई रो है</span><br /><span
               >{{ worden }}ī ro hai</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो है</span><br /><span
+            <span>{{ word }}ई रो है</span><br /><span
               >{{ worden }}ī ro hai</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा हां</span><br /><span
+            <span>{{ word }}ई रा हां</span><br /><span
               >{{ worden }}ī rā hā̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा हो</span><br /><span>{{ worden }}ī rā ho</span>
+            <span>{{ word }}ई रा हो</span><br /><span>{{ worden }}ī rā ho</span>
           </td>
           <td>
-            <span>{{ word }}ी रा हैं</span><br /><span
+            <span>{{ word }}ई रा हैं</span><br /><span
               >{{ worden }}ī rā ha͠i</span
             >
           </td>
@@ -579,32 +575,32 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी री हूँ</span><br /><span
+            <span>{{ word }}ई री हूँ</span><br /><span
               >{{ worden }}ī rī hū̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री है</span><br /><span
+            <span>{{ word }}ई री है</span><br /><span
               >{{ worden }}ī rī hai</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री है</span><br /><span
+            <span>{{ word }}ई री है</span><br /><span
               >{{ worden }}ī rī hai</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं हां</span><br /><span
+            <span>{{ word }}ई रीं हां</span><br /><span
               >{{ worden }}ī rī̃ hā̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं हो</span><br /><span
+            <span>{{ word }}ई रीं हो</span><br /><span
               >{{ worden }}ī rī̃ ho</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं हैं</span><br /><span
+            <span>{{ word }}ई रीं हैं</span><br /><span
               >{{ worden }}ī rī̃ ha͠i</span
             >
           </td>
@@ -615,32 +611,32 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी रो थो</span><br /><span
+            <span>{{ word }}ई रो थो</span><br /><span
               >{{ worden }}ī ro tho</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो थो</span><br /><span
+            <span>{{ word }}ई रो थो</span><br /><span
               >{{ worden }}ī ro tho</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो थो</span><br /><span
+            <span>{{ word }}ई रो थो</span><br /><span
               >{{ worden }}ī ro tho</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा था</span><br /><span
+            <span>{{ word }}ई रा था</span><br /><span
               >{{ worden }}ī rā thā</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा था</span><br /><span
+            <span>{{ word }}ई रा था</span><br /><span
               >{{ worden }}ī rā thā</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा था</span><br /><span
+            <span>{{ word }}ई रा था</span><br /><span
               >{{ worden }}ī rā thā</span
             >
           </td>
@@ -650,32 +646,32 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी री थी</span><br /><span
+            <span>{{ word }}ई री थी</span><br /><span
               >{{ worden }}ī rī thī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री थी</span><br /><span
+            <span>{{ word }}ई री थी</span><br /><span
               >{{ worden }}ī rī thī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री थी</span><br /><span
+            <span>{{ word }}ई री थी</span><br /><span
               >{{ worden }}ī rī thī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं थीं</span><br /><span
+            <span>{{ word }}ई रीं थीं</span><br /><span
               >{{ worden }}ī rī̃ thī̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं थीं</span><br /><span
+            <span>{{ word }}ई रीं थीं</span><br /><span
               >{{ worden }}ī rī̃ thī̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं थीं</span><br /><span
+            <span>{{ word }}ई रीं थीं</span><br /><span
               >{{ worden }}ī rī̃ thī̃</span
             >
           </td>
@@ -686,32 +682,32 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी रो वेऊँ</span><br /><span
+            <span>{{ word }}ई रो वेऊँ</span><br /><span
               >{{ worden }}ī ro veū̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो वेई</span><br /><span
+            <span>{{ word }}ई रो वेई</span><br /><span
               >{{ worden }}ī ro veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो वेई</span><br /><span
+            <span>{{ word }}ई रो वेई</span><br /><span
               >{{ worden }}ī ro veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेंवा</span><br /><span
+            <span>{{ word }}ई रा वेंवा</span><br /><span
               >{{ worden }}ī rā vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेवो</span><br /><span
+            <span>{{ word }}ई रा वेवो</span><br /><span
               >{{ worden }}ī rā vevo</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेंई</span><br /><span
+            <span>{{ word }}ई रा वेंई</span><br /><span
               >{{ worden }}ī rā vẽī</span
             >
           </td>
@@ -721,32 +717,32 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी रू वेऊँ</span><br /><span
+            <span>{{ word }}ई रू वेऊँ</span><br /><span
               >{{ worden }}ī rū veū̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री वेई</span><br /><span
+            <span>{{ word }}ई री वेई</span><br /><span
               >{{ worden }}ī rī veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री वेई</span><br /><span
+            <span>{{ word }}ई री वेई</span><br /><span
               >{{ worden }}ī rī veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेंवा</span><br /><span
+            <span>{{ word }}ई रीं वेंवा</span><br /><span
               >{{ worden }}ī rī̃ vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेवो</span><br /><span
+            <span>{{ word }}ई रीं वेवो</span><br /><span
               >{{ worden }}ī rī̃ vevo</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेंई</span><br /><span
+            <span>{{ word }}ई रीं वेंई</span><br /><span
               >{{ worden }}ī rī̃ vẽī</span
             >
           </td>
@@ -757,32 +753,32 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी रू वेऊँ</span><br /><span
+            <span>{{ word }}ई रू वेऊँ</span><br /><span
               >{{ worden }}ī rū veū̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो वेई</span><br /><span
+            <span>{{ word }}ई रो वेई</span><br /><span
               >{{ worden }}ī ro veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो वेई</span><br /><span
+            <span>{{ word }}ई रो वेई</span><br /><span
               >{{ worden }}ī ro veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेंवा</span><br /><span
+            <span>{{ word }}ई रा वेंवा</span><br /><span
               >{{ worden }}ī rā vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेवो</span><br /><span
+            <span>{{ word }}ई रा वेवो</span><br /><span
               >{{ worden }}ī rā vevo</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेंई</span><br /><span
+            <span>{{ word }}ई रा वेंई</span><br /><span
               >{{ worden }}ī rā vẽī</span
             >
           </td>
@@ -792,32 +788,32 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी री वेऊँ</span><br /><span
+            <span>{{ word }}ई री वेऊँ</span><br /><span
               >{{ worden }}ī rī veū̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री वेई</span><br /><span
+            <span>{{ word }}ई री वेई</span><br /><span
               >{{ worden }}ī rī veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री वेई</span><br /><span
+            <span>{{ word }}ई री वेई</span><br /><span
               >{{ worden }}ī rī veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेंवा</span><br /><span
+            <span>{{ word }}ई रीं वेंवा</span><br /><span
               >{{ worden }}ī rī̃ vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेवो</span><br /><span
+            <span>{{ word }}ई रीं वेवो</span><br /><span
               >{{ worden }}ī rī̃ vevo</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेंई</span><br /><span
+            <span>{{ word }}ई रीं वेंई</span><br /><span
               >{{ worden }}ī rī̃ vẽī</span
             >
           </td>
@@ -831,22 +827,22 @@
         <tr v-show="showNonaspectual">
           <th colspan="2">Subjunctive</th>
           <td>
-            <span>{{ word }}ूँ</span><br /><span>{{ worden }}ū̃</span>
+            <span>{{ word }}ऊँ</span><br /><span>{{ worden }}ū̃</span>
           </td>
           <td>
-            <span>{{ word }}े</span><br /><span>{{ worden }}e</span>
+            <span>{{ word }}ए</span><br /><span>{{ worden }}e</span>
           </td>
           <td>
-            <span>{{ word }}े</span><br /><span>{{ worden }}e</span>
+            <span>{{ word }}ए</span><br /><span>{{ worden }}e</span>
           </td>
           <td>
-            <span>{{ word }}ांं</span><br /><span>{{ worden }}ā̃̃</span>
+            <span>{{ word }}वां</span><br /><span>{{ worden }}ā̃̃</span>
           </td>
           <td>
-            <span>{{ word }}ो</span><br /><span>{{ worden }}o</span>
+            <span>{{ word }}ओ</span><br /><span>{{ worden }}o</span>
           </td>
           <td>
-            <span>{{ word }}ीं</span><br /><span>{{ worden }}ī̃</span>
+            <span>{{ word }}ईं</span><br /><span>{{ worden }}ī̃</span>
           </td>
         </tr>
         <tr v-show="showNonaspectual">
@@ -855,22 +851,22 @@
             <span><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँला</span><br /><span>{{ worden }}ū̃lā</span>
+            <span>{{ word }}ऊँला</span><br /><span>{{ worden }}ū̃lā</span>
           </td>
           <td>
-            <span>{{ word }}ीला</span><br /><span>{{ worden }}īlā</span>
+            <span>{{ word }}ईला</span><br /><span>{{ worden }}īlā</span>
           </td>
           <td>
-            <span>{{ word }}ीला</span><br /><span>{{ worden }}īlā</span>
+            <span>{{ word }}ईला</span><br /><span>{{ worden }}īlā</span>
           </td>
           <td>
-            <span>{{ word }}ांला</span><br /><span>{{ worden }}ā̃lā</span>
+            <span>{{ word }}वांला</span><br /><span>{{ worden }}ā̃lā</span>
           </td>
           <td>
-            <span>{{ word }}ोला</span><br /><span>{{ worden }}olā</span>
+            <span>{{ word }}ओला</span><br /><span>{{ worden }}olā</span>
           </td>
           <td>
-            <span>{{ word }}ींला</span><br /><span>{{ worden }}ī̃lā</span>
+            <span>{{ word }}ईंला</span><br /><span>{{ worden }}ī̃lā</span>
           </td>
         </tr>
         <tr v-show="showNonaspectual">
@@ -878,22 +874,22 @@
             <span><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँला</span><br /><span>{{ worden }}ū̃lā</span>
+            <span>{{ word }}ऊँला</span><br /><span>{{ worden }}ū̃lā</span>
           </td>
           <td>
-            <span>{{ word }}ीला</span><br /><span>{{ worden }}īlā</span>
+            <span>{{ word }}ईला</span><br /><span>{{ worden }}īlā</span>
           </td>
           <td>
-            <span>{{ word }}ीला</span><br /><span>{{ worden }}īlā</span>
+            <span>{{ word }}ईला</span><br /><span>{{ worden }}īlā</span>
           </td>
           <td>
-            <span>{{ word }}ांला</span><br /><span>{{ worden }}ā̃lā</span>
+            <span>{{ word }}वांला</span><br /><span>{{ worden }}ā̃lā</span>
           </td>
           <td>
-            <span>{{ word }}ोला</span><br /><span>{{ worden }}olā</span>
+            <span>{{ word }}ओला</span><br /><span>{{ worden }}olā</span>
           </td>
           <td>
-            <span>{{ word }}ींला</span><br /><span>{{ worden }}ī̃lā</span>
+            <span>{{ word }}ईंला</span><br /><span>{{ worden }}ī̃lā</span>
           </td>
         </tr>
         <tr v-show="showNonaspectual">
@@ -906,7 +902,7 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span>{{ word }}ो</span><br /><span>{{ worden }}o</span>
+            <span>{{ word }}ओ</span><br /><span>{{ worden }}o</span>
           </td>
           <td>-</td>
         </tr>
