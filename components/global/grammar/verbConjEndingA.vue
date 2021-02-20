@@ -3,8 +3,8 @@
     <table id="verb-conjugation">
       <thead>
         <th colspan="8">
-          Marwari conjugation of verb → <span>{{ word }}णो</span> <span>(</span
-          ><span>{{ worden }}ṇo</span><span>)</span>
+          Marwari conjugation of verb → <span>{{ term }}णो</span> <span>(</span
+          ><span>{{ trans }}ṇo</span><span>)</span>
         </th>
 
         <tr>
@@ -44,22 +44,22 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}्यो</span><br /><span>{{ worden }}yo</span>
+            <span>{{ term }}्यो</span><br /><span>{{ trans }}yo</span>
           </td>
           <td>
-            <span>{{ word }}्यो</span><br /><span>{{ worden }}yo</span>
+            <span>{{ term }}्यो</span><br /><span>{{ trans }}yo</span>
           </td>
           <td>
-            <span>{{ word }}्यो</span><br /><span>{{ worden }}yo</span>
+            <span>{{ term }}्यो</span><br /><span>{{ trans }}yo</span>
           </td>
           <td>
-            <span>{{ word }}्या</span><br /><span>{{ worden }}yā</span>
+            <span>{{ term }}्या</span><br /><span>{{ trans }}yā</span>
           </td>
           <td>
-            <span>{{ word }}्या</span><br /><span>{{ worden }}yā</span>
+            <span>{{ term }}्या</span><br /><span>{{ trans }}yā</span>
           </td>
           <td>
-            <span>{{ word }}्या</span><br /><span>{{ worden }}yā</span>
+            <span>{{ term }}्या</span><br /><span>{{ trans }}yā</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -67,22 +67,22 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी</span><br /><span>{{ worden }}ī</span>
+            <span>{{ term }}ी</span><br /><span>{{ trans }}ī</span>
           </td>
           <td>
-            <span>{{ word }}ी</span><br /><span>{{ worden }}ī</span>
+            <span>{{ term }}ी</span><br /><span>{{ trans }}ī</span>
           </td>
           <td>
-            <span>{{ word }}ी</span><br /><span>{{ worden }}ī</span>
+            <span>{{ term }}ी</span><br /><span>{{ trans }}ī</span>
           </td>
           <td>
-            <span>{{ word }}ीं</span><br /><span>{{ worden }}ī̃</span>
+            <span>{{ term }}ीं</span><br /><span>{{ trans }}ī̃</span>
           </td>
           <td>
-            <span>{{ word }}ीं</span><br /><span>{{ worden }}ī̃</span>
+            <span>{{ term }}ीं</span><br /><span>{{ trans }}ī̃</span>
           </td>
           <td>
-            <span>{{ word }}ीं</span><br /><span>{{ worden }}ī̃</span>
+            <span>{{ term }}ीं</span><br /><span>{{ trans }}ī̃</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -91,22 +91,22 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}्यो हूँ</span><br /><span>{{ worden }}yo hū̃</span>
+            <span>{{ term }}्यो हूँ</span><br /><span>{{ trans }}yo hū̃</span>
           </td>
           <td>
-            <span>{{ word }}्यो है</span><br /><span>{{ worden }}yo hai</span>
+            <span>{{ term }}्यो है</span><br /><span>{{ trans }}yo hai</span>
           </td>
           <td>
-            <span>{{ word }}्यो है</span><br /><span>{{ worden }}yo hai</span>
+            <span>{{ term }}्यो है</span><br /><span>{{ trans }}yo hai</span>
           </td>
           <td>
-            <span>{{ word }}्या हां</span><br /><span>{{ worden }}yā hā̃</span>
+            <span>{{ term }}्या हां</span><br /><span>{{ trans }}yā hā̃</span>
           </td>
           <td>
-            <span>{{ word }}्या हो</span><br /><span>{{ worden }}yā ho</span>
+            <span>{{ term }}्या हो</span><br /><span>{{ trans }}yā ho</span>
           </td>
           <td>
-            <span>{{ word }}्या हां</span><br /><span>{{ worden }}yā hā̃</span>
+            <span>{{ term }}्या हां</span><br /><span>{{ trans }}yā hā̃</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -114,22 +114,22 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी हूँ</span><br /><span>{{ worden }}ī hū̃</span>
+            <span>{{ term }}ी हूँ</span><br /><span>{{ trans }}ī hū̃</span>
           </td>
           <td>
-            <span>{{ word }}ी है</span><br /><span>{{ worden }}ī hai</span>
+            <span>{{ term }}ी है</span><br /><span>{{ trans }}ī hai</span>
           </td>
           <td>
-            <span>{{ word }}ी है</span><br /><span>{{ worden }}ī hai</span>
+            <span>{{ term }}ी है</span><br /><span>{{ trans }}ī hai</span>
           </td>
           <td>
-            <span>{{ word }}ीं हां</span><br /><span>{{ worden }}ī̃ hā̃</span>
+            <span>{{ term }}ीं हां</span><br /><span>{{ trans }}ī̃ hā̃</span>
           </td>
           <td>
-            <span>{{ word }}ीं हो</span><br /><span>{{ worden }}ī̃ ho</span>
+            <span>{{ term }}ीं हो</span><br /><span>{{ trans }}ī̃ ho</span>
           </td>
           <td>
-            <span>{{ word }}ीं हैं</span><br /><span>{{ worden }}ī̃ ha͠i</span>
+            <span>{{ term }}ीं हैं</span><br /><span>{{ trans }}ī̃ ha͠i</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -138,22 +138,22 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}्यो थो</span><br /><span>{{ worden }}yo tho</span>
+            <span>{{ term }}्यो थो</span><br /><span>{{ trans }}yo tho</span>
           </td>
           <td>
-            <span>{{ word }}्यो थो</span><br /><span>{{ worden }}yo tho</span>
+            <span>{{ term }}्यो थो</span><br /><span>{{ trans }}yo tho</span>
           </td>
           <td>
-            <span>{{ word }}्यो थो</span><br /><span>{{ worden }}yo tho</span>
+            <span>{{ term }}्यो थो</span><br /><span>{{ trans }}yo tho</span>
           </td>
           <td>
-            <span>{{ word }}्या थां</span><br /><span>{{ worden }}yā thā̃</span>
+            <span>{{ term }}्या थां</span><br /><span>{{ trans }}yā thā̃</span>
           </td>
           <td>
-            <span>{{ word }}्या था</span><br /><span>{{ worden }}yā thā</span>
+            <span>{{ term }}्या था</span><br /><span>{{ trans }}yā thā</span>
           </td>
           <td>
-            <span>{{ word }}्या थां</span><br /><span>{{ worden }}yā thā̃</span>
+            <span>{{ term }}्या थां</span><br /><span>{{ trans }}yā thā̃</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -161,22 +161,22 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी थी</span><br /><span>{{ worden }}ī thī</span>
+            <span>{{ term }}ी थी</span><br /><span>{{ trans }}ī thī</span>
           </td>
           <td>
-            <span>{{ word }}ी थी</span><br /><span>{{ worden }}ī thī</span>
+            <span>{{ term }}ी थी</span><br /><span>{{ trans }}ī thī</span>
           </td>
           <td>
-            <span>{{ word }}ी थी</span><br /><span>{{ worden }}ī thī</span>
+            <span>{{ term }}ी थी</span><br /><span>{{ trans }}ī thī</span>
           </td>
           <td>
-            <span>{{ word }}ीं थीं</span><br /><span>{{ worden }}ī̃ thī̃</span>
+            <span>{{ term }}ीं थीं</span><br /><span>{{ trans }}ī̃ thī̃</span>
           </td>
           <td>
-            <span>{{ word }}ीं थीं</span><br /><span>{{ worden }}ī̃ thī̃</span>
+            <span>{{ term }}ीं थीं</span><br /><span>{{ trans }}ī̃ thī̃</span>
           </td>
           <td>
-            <span>{{ word }}ीं थीं</span><br /><span>{{ worden }}ī̃ thī̃</span>
+            <span>{{ term }}ीं थीं</span><br /><span>{{ trans }}ī̃ thī̃</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -185,26 +185,24 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}्यो वेऊँ</span><br /><span>{{ worden }}yo veū̃</span>
+            <span>{{ term }}्यो वेऊँ</span><br /><span>{{ trans }}yo veū̃</span>
           </td>
           <td>
-            <span>{{ word }}्यो वेई</span><br /><span>{{ worden }}yo veī</span>
+            <span>{{ term }}्यो वेई</span><br /><span>{{ trans }}yo veī</span>
           </td>
           <td>
-            <span>{{ word }}्यो वेई</span><br /><span>{{ worden }}yo veī</span>
+            <span>{{ term }}्यो वेई</span><br /><span>{{ trans }}yo veī</span>
           </td>
           <td>
-            <span>{{ word }}्या वेंवा</span><br /><span
-              >{{ word }}yā vemvā</span
+            <span>{{ term }}्या वेंवा</span><br /><span
+              >{{ term }}yā vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}्या वेवो</span><br /><span
-              >{{ worden }}yā vevo</span
-            >
+            <span>{{ term }}्या वेवो</span><br /><span>{{ trans }}yā vevo</span>
           </td>
           <td>
-            <span>{{ word }}्या वेंई</span><br /><span>{{ worden }}yā vẽī</span>
+            <span>{{ term }}्या वेंई</span><br /><span>{{ trans }}yā vẽī</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -212,22 +210,22 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी वेऊँ</span><br /><span>{{ worden }}ī veū̃</span>
+            <span>{{ term }}ी वेऊँ</span><br /><span>{{ trans }}ī veū̃</span>
           </td>
           <td>
-            <span>{{ word }}ी वेई</span><br /><span>{{ worden }}ī veī</span>
+            <span>{{ term }}ी वेई</span><br /><span>{{ trans }}ī veī</span>
           </td>
           <td>
-            <span>{{ word }}ी वेई</span><br /><span>{{ worden }}ī veī</span>
+            <span>{{ term }}ी वेई</span><br /><span>{{ trans }}ī veī</span>
           </td>
           <td>
-            <span>{{ word }}ीं वेंई</span><br /><span>{{ worden }}ī̃ vẽī</span>
+            <span>{{ term }}ीं वेंई</span><br /><span>{{ trans }}ī̃ vẽī</span>
           </td>
           <td>
-            <span>{{ word }}ीं वेओ</span><br /><span>{{ worden }}ī̃ veo</span>
+            <span>{{ term }}ीं वेओ</span><br /><span>{{ trans }}ī̃ veo</span>
           </td>
           <td>
-            <span>{{ word }}ीं वेंई</span><br /><span>{{ worden }}ī̃ vẽī</span>
+            <span>{{ term }}ीं वेंई</span><br /><span>{{ trans }}ī̃ vẽī</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -236,24 +234,24 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}्यो वेऊँ</span><br /><span>{{ worden }}yo veū̃</span>
+            <span>{{ term }}्यो वेऊँ</span><br /><span>{{ trans }}yo veū̃</span>
           </td>
           <td>
-            <span>{{ word }}्यो वेई</span><br /><span>{{ worden }}yo veī</span>
+            <span>{{ term }}्यो वेई</span><br /><span>{{ trans }}yo veī</span>
           </td>
           <td>
-            <span>{{ word }}्यो वेई</span><br /><span>{{ worden }}yo veī</span>
+            <span>{{ term }}्यो वेई</span><br /><span>{{ trans }}yo veī</span>
           </td>
           <td>
-            <span>{{ word }}्या वेंवा</span><br /><span
-              >{{ word }}yā vemvā</span
+            <span>{{ term }}्या वेंवा</span><br /><span
+              >{{ term }}yā vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}्या वेओ</span><br /><span>{{ worden }}yā veo</span>
+            <span>{{ term }}्या वेओ</span><br /><span>{{ trans }}yā veo</span>
           </td>
           <td>
-            <span>{{ word }}्या वेंई</span><br /><span>{{ worden }}yā vẽī</span>
+            <span>{{ term }}्या वेंई</span><br /><span>{{ trans }}yā vẽī</span>
           </td>
         </tr>
         <tr v-show="showPerfective">
@@ -261,24 +259,22 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी वेऊँ</span><br /><span>{{ worden }}ī veū̃</span>
+            <span>{{ term }}ी वेऊँ</span><br /><span>{{ trans }}ī veū̃</span>
           </td>
           <td>
-            <span>{{ word }}ी वेई</span><br /><span>{{ worden }}ī veī</span>
+            <span>{{ term }}ी वेई</span><br /><span>{{ trans }}ī veī</span>
           </td>
           <td>
-            <span>{{ word }}ी वेई</span><br /><span>{{ worden }}ī veī</span>
+            <span>{{ term }}ी वेई</span><br /><span>{{ trans }}ī veī</span>
           </td>
           <td>
-            <span>{{ word }}ीं वेंवा</span><br /><span
-              >{{ worden }}ī̃ vemvā</span
-            >
+            <span>{{ term }}ीं वेंवा</span><br /><span>{{ trans }}ī̃ vemvā</span>
           </td>
           <td>
-            <span>{{ word }}ीं वेओ</span><br /><span>{{ worden }}ī̃ veo</span>
+            <span>{{ term }}ीं वेओ</span><br /><span>{{ trans }}ī̃ veo</span>
           </td>
           <td>
-            <span>{{ word }}ीं वेंई</span><br /><span>{{ worden }}ī̃ vẽī</span>
+            <span>{{ term }}ीं वेंई</span><br /><span>{{ trans }}ī̃ vẽī</span>
           </td>
         </tr>
         <tr
@@ -293,22 +289,22 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}तो</span><br /><span>{{ worden }}to</span>
+            <span>{{ term }}तो</span><br /><span>{{ trans }}to</span>
           </td>
           <td>
-            <span>{{ word }}तो</span><br /><span>{{ worden }}to</span>
+            <span>{{ term }}तो</span><br /><span>{{ trans }}to</span>
           </td>
           <td>
-            <span>{{ word }}तो</span><br /><span>{{ worden }}to</span>
+            <span>{{ term }}तो</span><br /><span>{{ trans }}to</span>
           </td>
           <td>
-            <span>{{ word }}ता</span><br /><span>{{ worden }}tā</span>
+            <span>{{ term }}ता</span><br /><span>{{ trans }}tā</span>
           </td>
           <td>
-            <span>{{ word }}ता</span><br /><span>{{ worden }}tā</span>
+            <span>{{ term }}ता</span><br /><span>{{ trans }}tā</span>
           </td>
           <td>
-            <span>{{ word }}ता</span><br /><span>{{ worden }}tā</span>
+            <span>{{ term }}ता</span><br /><span>{{ trans }}tā</span>
           </td>
         </tr>
         <tr v-show="showImperfective">
@@ -316,22 +312,22 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ती</span><br /><span>{{ worden }}tī</span>
+            <span>{{ term }}ती</span><br /><span>{{ trans }}tī</span>
           </td>
           <td>
-            <span>{{ word }}ती</span><br /><span>{{ worden }}tī</span>
+            <span>{{ term }}ती</span><br /><span>{{ trans }}tī</span>
           </td>
           <td>
-            <span>{{ word }}ती</span><br /><span>{{ worden }}tī</span>
+            <span>{{ term }}ती</span><br /><span>{{ trans }}tī</span>
           </td>
           <td>
-            <span>{{ word }}तीं</span><br /><span>{{ worden }}tī̃</span>
+            <span>{{ term }}तीं</span><br /><span>{{ trans }}tī̃</span>
           </td>
           <td>
-            <span>{{ word }}तीं</span><br /><span>{{ worden }}tī̃</span>
+            <span>{{ term }}तीं</span><br /><span>{{ trans }}tī̃</span>
           </td>
           <td>
-            <span>{{ word }}तीं</span><br /><span>{{ worden }}tī̃</span>
+            <span>{{ term }}तीं</span><br /><span>{{ trans }}tī̃</span>
           </td>
         </tr>
         <tr v-show="showImperfective">
@@ -340,22 +336,22 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
+            <span>{{ term }}ूँ हूँ</span><br /><span>{{ trans }}ū̃ hū̃</span>
           </td>
           <td>
-            <span>{{ word }}े है</span><br /><span>{{ worden }}e hai</span>
+            <span>{{ term }}े है</span><br /><span>{{ trans }}e hai</span>
           </td>
           <td>
-            <span>{{ word }}े है</span><br /><span>{{ worden }}e hai</span>
+            <span>{{ term }}े है</span><br /><span>{{ trans }}e hai</span>
           </td>
           <td>
-            <span>{{ word }}ा हां</span><br /><span>{{ worden }}ā hā̃</span>
+            <span>{{ term }}ा हां</span><br /><span>{{ trans }}ā hā̃</span>
           </td>
           <td>
-            <span>{{ word }}ो हो</span><br /><span>{{ worden }}o ho</span>
+            <span>{{ term }}ो हो</span><br /><span>{{ trans }}o ho</span>
           </td>
           <td>
-            <span>{{ word }}े हैं</span><br /><span>{{ worden }}e ha͠i</span>
+            <span>{{ term }}े हैं</span><br /><span>{{ trans }}e ha͠i</span>
           </td>
         </tr>
         <tr v-show="showImperfective">
@@ -363,22 +359,22 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
+            <span>{{ term }}ूँ हूँ</span><br /><span>{{ trans }}ū̃ hū̃</span>
           </td>
           <td>
-            <span>{{ word }}े है</span><br /><span>{{ worden }}e hai</span>
+            <span>{{ term }}े है</span><br /><span>{{ trans }}e hai</span>
           </td>
           <td>
-            <span>{{ word }}े है</span><br /><span>{{ worden }}e hai</span>
+            <span>{{ term }}े है</span><br /><span>{{ trans }}e hai</span>
           </td>
           <td>
-            <span>{{ word }}ांं हां</span><br /><span>{{ worden }}ā̃̃ hā̃</span>
+            <span>{{ term }}ांं हां</span><br /><span>{{ trans }}ā̃̃ hā̃</span>
           </td>
           <td>
-            <span>{{ word }}ो हो</span><br /><span>{{ worden }}o ho</span>
+            <span>{{ term }}ो हो</span><br /><span>{{ trans }}o ho</span>
           </td>
           <td>
-            <span>{{ word }}े हैं</span><br /><span>{{ worden }}e ha͠i</span>
+            <span>{{ term }}े हैं</span><br /><span>{{ trans }}e ha͠i</span>
           </td>
         </tr>
         <tr v-show="showImperfective">
@@ -387,22 +383,22 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}तो थो</span><br /><span>{{ worden }}to tho</span>
+            <span>{{ term }}तो थो</span><br /><span>{{ trans }}to tho</span>
           </td>
           <td>
-            <span>{{ word }}तो थो</span><br /><span>{{ worden }}to tho</span>
+            <span>{{ term }}तो थो</span><br /><span>{{ trans }}to tho</span>
           </td>
           <td>
-            <span>{{ word }}तो थो</span><br /><span>{{ worden }}to tho</span>
+            <span>{{ term }}तो थो</span><br /><span>{{ trans }}to tho</span>
           </td>
           <td>
-            <span>{{ word }}ता था</span><br /><span>{{ worden }}tā thā</span>
+            <span>{{ term }}ता था</span><br /><span>{{ trans }}tā thā</span>
           </td>
           <td>
-            <span>{{ word }}ता था</span><br /><span>{{ worden }}tā thā</span>
+            <span>{{ term }}ता था</span><br /><span>{{ trans }}tā thā</span>
           </td>
           <td>
-            <span>{{ word }}ता था</span><br /><span>{{ worden }}tā thā</span>
+            <span>{{ term }}ता था</span><br /><span>{{ trans }}tā thā</span>
           </td>
         </tr>
         <tr v-show="showImperfective">
@@ -410,22 +406,22 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ती थी</span><br /><span>{{ worden }}tī thī</span>
+            <span>{{ term }}ती थी</span><br /><span>{{ trans }}tī thī</span>
           </td>
           <td>
-            <span>{{ word }}ती थी</span><br /><span>{{ worden }}tī thī</span>
+            <span>{{ term }}ती थी</span><br /><span>{{ trans }}tī thī</span>
           </td>
           <td>
-            <span>{{ word }}ती थी</span><br /><span>{{ worden }}tī thī</span>
+            <span>{{ term }}ती थी</span><br /><span>{{ trans }}tī thī</span>
           </td>
           <td>
-            <span>{{ word }}तीं थीं</span><br /><span>{{ worden }}tī̃ thī̃</span>
+            <span>{{ term }}तीं थीं</span><br /><span>{{ trans }}tī̃ thī̃</span>
           </td>
           <td>
-            <span>{{ word }}तीं थीं</span><br /><span>{{ worden }}tī̃ thī̃</span>
+            <span>{{ term }}तीं थीं</span><br /><span>{{ trans }}tī̃ thī̃</span>
           </td>
           <td>
-            <span>{{ word }}तीं थीं</span><br /><span>{{ worden }}tī̃ thī̃</span>
+            <span>{{ term }}तीं थीं</span><br /><span>{{ trans }}tī̃ thī̃</span>
           </td>
         </tr>
         <tr v-show="showImperfective">
@@ -434,24 +430,24 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}तो वेऊँ</span><br /><span>{{ worden }}to veū̃</span>
+            <span>{{ term }}तो वेऊँ</span><br /><span>{{ trans }}to veū̃</span>
           </td>
           <td>
-            <span>{{ word }}तो वेई</span><br /><span>{{ word }}to veī</span>
+            <span>{{ term }}तो वेई</span><br /><span>{{ term }}to veī</span>
           </td>
           <td>
-            <span>{{ word }}तो वेई</span><br /><span>{{ worden }}to veī</span>
+            <span>{{ term }}तो वेई</span><br /><span>{{ trans }}to veī</span>
           </td>
           <td>
-            <span>{{ word }}ता वेंवा</span><br /><span
-              >{{ worden }}tā vemvā</span
+            <span>{{ term }}ता वेंवा</span><br /><span
+              >{{ trans }}tā vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}ता वेवो</span><br /><span>{{ worden }}tā vevo</span>
+            <span>{{ term }}ता वेवो</span><br /><span>{{ trans }}tā vevo</span>
           </td>
           <td>
-            <span>{{ word }}ता वेंई</span><br /><span>{{ worden }}tā vẽī</span>
+            <span>{{ term }}ता वेंई</span><br /><span>{{ trans }}tā vẽī</span>
           </td>
         </tr>
         <tr v-show="showImperfective">
@@ -459,26 +455,24 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ती वेऊँ</span><br /><span>{{ worden }}tī veū̃</span>
+            <span>{{ term }}ती वेऊँ</span><br /><span>{{ trans }}tī veū̃</span>
           </td>
           <td>
-            <span>{{ word }}ती वेई</span><br /><span>{{ worden }}tī veī</span>
+            <span>{{ term }}ती वेई</span><br /><span>{{ trans }}tī veī</span>
           </td>
           <td>
-            <span>{{ word }}ती वेई</span><br /><span>{{ worden }}tī veī</span>
+            <span>{{ term }}ती वेई</span><br /><span>{{ trans }}tī veī</span>
           </td>
           <td>
-            <span>{{ word }}तीं वेंवा</span><br /><span
-              >{{ worden }}tī̃ vemvā</span
+            <span>{{ term }}तीं वेंवा</span><br /><span
+              >{{ trans }}tī̃ vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}तीं वेवो</span><br /><span
-              >{{ worden }}tī̃ vevo</span
-            >
+            <span>{{ term }}तीं वेवो</span><br /><span>{{ trans }}tī̃ vevo</span>
           </td>
           <td>
-            <span>{{ word }}तीं वेंई</span><br /><span>{{ worden }}tī̃ vẽī</span>
+            <span>{{ term }}तीं वेंई</span><br /><span>{{ trans }}tī̃ vẽī</span>
           </td>
         </tr>
         <tr v-show="showImperfective">
@@ -487,24 +481,24 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
+            <span>{{ term }}ूँ हूँ</span><br /><span>{{ trans }}ū̃ hū̃</span>
           </td>
           <td>
-            <span>{{ word }}तो वेई</span><br /><span>{{ worden }}to veī</span>
+            <span>{{ term }}तो वेई</span><br /><span>{{ trans }}to veī</span>
           </td>
           <td>
-            <span>{{ word }}तो वेई</span><br /><span>{{ worden }}to veī</span>
+            <span>{{ term }}तो वेई</span><br /><span>{{ trans }}to veī</span>
           </td>
           <td>
-            <span>{{ word }}ता वेंवा</span><br /><span
-              >{{ worden }}tā vemvā</span
+            <span>{{ term }}ता वेंवा</span><br /><span
+              >{{ trans }}tā vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}ता वेवो</span><br /><span>{{ worden }}tā vevo</span>
+            <span>{{ term }}ता वेवो</span><br /><span>{{ trans }}tā vevo</span>
           </td>
           <td>
-            <span>{{ word }}ता वेंई</span><br /><span>{{ worden }}tā vẽī</span>
+            <span>{{ term }}ता वेंई</span><br /><span>{{ trans }}tā vẽī</span>
           </td>
         </tr>
         <tr v-show="showImperfective">
@@ -512,26 +506,24 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँ हूँ</span><br /><span>{{ worden }}ū̃ hū̃</span>
+            <span>{{ term }}ूँ हूँ</span><br /><span>{{ trans }}ū̃ hū̃</span>
           </td>
           <td>
-            <span>{{ word }}ती वेई</span><br /><span>{{ worden }}tī veī</span>
+            <span>{{ term }}ती वेई</span><br /><span>{{ trans }}tī veī</span>
           </td>
           <td>
-            <span>{{ word }}ती वेई</span><br /><span>{{ worden }}tī veī</span>
+            <span>{{ term }}ती वेई</span><br /><span>{{ trans }}tī veī</span>
           </td>
           <td>
-            <span>{{ word }}तीं वेंवा</span><br /><span
-              >{{ worden }}tī̃ vemvā</span
+            <span>{{ term }}तीं वेंवा</span><br /><span
+              >{{ trans }}tī̃ vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}तीं वेवो</span><br /><span
-              >{{ worden }}tī̃ vevo</span
-            >
+            <span>{{ term }}तीं वेवो</span><br /><span>{{ trans }}tī̃ vevo</span>
           </td>
           <td>
-            <span>{{ word }}तीं वेंई</span><br /><span>{{ worden }}tī̃ vẽī</span>
+            <span>{{ term }}तीं वेंई</span><br /><span>{{ trans }}tī̃ vẽī</span>
           </td>
         </tr>
         <tr
@@ -546,31 +538,23 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी रू हूँ</span><br /><span
-              >{{ worden }}ī rū hū̃</span
-            >
+            <span>{{ term }}ी रू हूँ</span><br /><span>{{ trans }}ī rū hū̃</span>
           </td>
           <td>
-            <span>{{ word }}ी रो है</span><br /><span
-              >{{ worden }}ī ro hai</span
-            >
+            <span>{{ term }}ी रो है</span><br /><span>{{ trans }}ī ro hai</span>
           </td>
           <td>
-            <span>{{ word }}ी रो है</span><br /><span
-              >{{ worden }}ī ro hai</span
-            >
+            <span>{{ term }}ी रो है</span><br /><span>{{ trans }}ī ro hai</span>
           </td>
           <td>
-            <span>{{ word }}ी रा हां</span><br /><span
-              >{{ worden }}ī rā hā̃</span
-            >
+            <span>{{ term }}ी रा हां</span><br /><span>{{ trans }}ī rā hā̃</span>
           </td>
           <td>
-            <span>{{ word }}ी रा हो</span><br /><span>{{ worden }}ī rā ho</span>
+            <span>{{ term }}ी रा हो</span><br /><span>{{ trans }}ī rā ho</span>
           </td>
           <td>
-            <span>{{ word }}ी रा हैं</span><br /><span
-              >{{ worden }}ī rā ha͠i</span
+            <span>{{ term }}ी रा हैं</span><br /><span
+              >{{ trans }}ī rā ha͠i</span
             >
           </td>
         </tr>
@@ -579,33 +563,25 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी री हूँ</span><br /><span
-              >{{ worden }}ī rī hū̃</span
+            <span>{{ term }}ी री हूँ</span><br /><span>{{ trans }}ī rī hū̃</span>
+          </td>
+          <td>
+            <span>{{ term }}ी री है</span><br /><span>{{ trans }}ī rī hai</span>
+          </td>
+          <td>
+            <span>{{ term }}ी री है</span><br /><span>{{ trans }}ī rī hai</span>
+          </td>
+          <td>
+            <span>{{ term }}ी रीं हां</span><br /><span
+              >{{ trans }}ī rī̃ hā̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री है</span><br /><span
-              >{{ worden }}ī rī hai</span
-            >
+            <span>{{ term }}ी रीं हो</span><br /><span>{{ trans }}ī rī̃ ho</span>
           </td>
           <td>
-            <span>{{ word }}ी री है</span><br /><span
-              >{{ worden }}ī rī hai</span
-            >
-          </td>
-          <td>
-            <span>{{ word }}ी रीं हां</span><br /><span
-              >{{ worden }}ī rī̃ hā̃</span
-            >
-          </td>
-          <td>
-            <span>{{ word }}ी रीं हो</span><br /><span
-              >{{ worden }}ī rī̃ ho</span
-            >
-          </td>
-          <td>
-            <span>{{ word }}ी रीं हैं</span><br /><span
-              >{{ worden }}ī rī̃ ha͠i</span
+            <span>{{ term }}ी रीं हैं</span><br /><span
+              >{{ trans }}ī rī̃ ha͠i</span
             >
           </td>
         </tr>
@@ -615,34 +591,22 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी रो थो</span><br /><span
-              >{{ worden }}ī ro tho</span
-            >
+            <span>{{ term }}ी रो थो</span><br /><span>{{ trans }}ī ro tho</span>
           </td>
           <td>
-            <span>{{ word }}ी रो थो</span><br /><span
-              >{{ worden }}ī ro tho</span
-            >
+            <span>{{ term }}ी रो थो</span><br /><span>{{ trans }}ī ro tho</span>
           </td>
           <td>
-            <span>{{ word }}ी रो थो</span><br /><span
-              >{{ worden }}ī ro tho</span
-            >
+            <span>{{ term }}ी रो थो</span><br /><span>{{ trans }}ī ro tho</span>
           </td>
           <td>
-            <span>{{ word }}ी रा था</span><br /><span
-              >{{ worden }}ī rā thā</span
-            >
+            <span>{{ term }}ी रा था</span><br /><span>{{ trans }}ī rā thā</span>
           </td>
           <td>
-            <span>{{ word }}ी रा था</span><br /><span
-              >{{ worden }}ī rā thā</span
-            >
+            <span>{{ term }}ी रा था</span><br /><span>{{ trans }}ī rā thā</span>
           </td>
           <td>
-            <span>{{ word }}ी रा था</span><br /><span
-              >{{ worden }}ī rā thā</span
-            >
+            <span>{{ term }}ी रा था</span><br /><span>{{ trans }}ī rā thā</span>
           </td>
         </tr>
         <tr v-show="showContinuous">
@@ -650,33 +614,27 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी री थी</span><br /><span
-              >{{ worden }}ī rī thī</span
+            <span>{{ term }}ी री थी</span><br /><span>{{ trans }}ī rī thī</span>
+          </td>
+          <td>
+            <span>{{ term }}ी री थी</span><br /><span>{{ trans }}ī rī thī</span>
+          </td>
+          <td>
+            <span>{{ term }}ी री थी</span><br /><span>{{ trans }}ī rī thī</span>
+          </td>
+          <td>
+            <span>{{ term }}ी रीं थीं</span><br /><span
+              >{{ trans }}ī rī̃ thī̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री थी</span><br /><span
-              >{{ worden }}ī rī thī</span
+            <span>{{ term }}ी रीं थीं</span><br /><span
+              >{{ trans }}ī rī̃ thī̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री थी</span><br /><span
-              >{{ worden }}ī rī thī</span
-            >
-          </td>
-          <td>
-            <span>{{ word }}ी रीं थीं</span><br /><span
-              >{{ worden }}ī rī̃ thī̃</span
-            >
-          </td>
-          <td>
-            <span>{{ word }}ी रीं थीं</span><br /><span
-              >{{ worden }}ī rī̃ thī̃</span
-            >
-          </td>
-          <td>
-            <span>{{ word }}ी रीं थीं</span><br /><span
-              >{{ worden }}ī rī̃ thī̃</span
+            <span>{{ term }}ी रीं थीं</span><br /><span
+              >{{ trans }}ī rī̃ thī̃</span
             >
           </td>
         </tr>
@@ -686,33 +644,33 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी रो वेऊँ</span><br /><span
-              >{{ worden }}ī ro veū̃</span
+            <span>{{ term }}ी रो वेऊँ</span><br /><span
+              >{{ trans }}ī ro veū̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो वेई</span><br /><span
-              >{{ worden }}ī ro veī</span
+            <span>{{ term }}ी रो वेई</span><br /><span
+              >{{ trans }}ī ro veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो वेई</span><br /><span
-              >{{ worden }}ī ro veī</span
+            <span>{{ term }}ी रो वेई</span><br /><span
+              >{{ trans }}ī ro veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेंवा</span><br /><span
-              >{{ worden }}ī rā vemvā</span
+            <span>{{ term }}ी रा वेंवा</span><br /><span
+              >{{ trans }}ī rā vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेवो</span><br /><span
-              >{{ worden }}ī rā vevo</span
+            <span>{{ term }}ी रा वेवो</span><br /><span
+              >{{ trans }}ī rā vevo</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेंई</span><br /><span
-              >{{ worden }}ī rā vẽī</span
+            <span>{{ term }}ी रा वेंई</span><br /><span
+              >{{ trans }}ī rā vẽī</span
             >
           </td>
         </tr>
@@ -721,33 +679,33 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी रू वेऊँ</span><br /><span
-              >{{ worden }}ī rū veū̃</span
+            <span>{{ term }}ी रू वेऊँ</span><br /><span
+              >{{ trans }}ī rū veū̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री वेई</span><br /><span
-              >{{ worden }}ī rī veī</span
+            <span>{{ term }}ी री वेई</span><br /><span
+              >{{ trans }}ī rī veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री वेई</span><br /><span
-              >{{ worden }}ī rī veī</span
+            <span>{{ term }}ी री वेई</span><br /><span
+              >{{ trans }}ī rī veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेंवा</span><br /><span
-              >{{ worden }}ī rī̃ vemvā</span
+            <span>{{ term }}ी रीं वेंवा</span><br /><span
+              >{{ trans }}ī rī̃ vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेवो</span><br /><span
-              >{{ worden }}ī rī̃ vevo</span
+            <span>{{ term }}ी रीं वेवो</span><br /><span
+              >{{ trans }}ī rī̃ vevo</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेंई</span><br /><span
-              >{{ worden }}ī rī̃ vẽī</span
+            <span>{{ term }}ी रीं वेंई</span><br /><span
+              >{{ trans }}ī rī̃ vẽī</span
             >
           </td>
         </tr>
@@ -757,33 +715,33 @@
             <span class="gender"><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी रू वेऊँ</span><br /><span
-              >{{ worden }}ī rū veū̃</span
+            <span>{{ term }}ी रू वेऊँ</span><br /><span
+              >{{ trans }}ī rū veū̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो वेई</span><br /><span
-              >{{ worden }}ī ro veī</span
+            <span>{{ term }}ी रो वेई</span><br /><span
+              >{{ trans }}ī ro veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रो वेई</span><br /><span
-              >{{ worden }}ī ro veī</span
+            <span>{{ term }}ी रो वेई</span><br /><span
+              >{{ trans }}ī ro veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेंवा</span><br /><span
-              >{{ worden }}ī rā vemvā</span
+            <span>{{ term }}ी रा वेंवा</span><br /><span
+              >{{ trans }}ī rā vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेवो</span><br /><span
-              >{{ worden }}ī rā vevo</span
+            <span>{{ term }}ी रा वेवो</span><br /><span
+              >{{ trans }}ī rā vevo</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रा वेंई</span><br /><span
-              >{{ worden }}ī rā vẽī</span
+            <span>{{ term }}ी रा वेंई</span><br /><span
+              >{{ trans }}ī rā vẽī</span
             >
           </td>
         </tr>
@@ -792,33 +750,33 @@
             <span class="gender"><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ी री वेऊँ</span><br /><span
-              >{{ worden }}ī rī veū̃</span
+            <span>{{ term }}ी री वेऊँ</span><br /><span
+              >{{ trans }}ī rī veū̃</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री वेई</span><br /><span
-              >{{ worden }}ī rī veī</span
+            <span>{{ term }}ी री वेई</span><br /><span
+              >{{ trans }}ī rī veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी री वेई</span><br /><span
-              >{{ worden }}ī rī veī</span
+            <span>{{ term }}ी री वेई</span><br /><span
+              >{{ trans }}ī rī veī</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेंवा</span><br /><span
-              >{{ worden }}ī rī̃ vemvā</span
+            <span>{{ term }}ी रीं वेंवा</span><br /><span
+              >{{ trans }}ī rī̃ vemvā</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेवो</span><br /><span
-              >{{ worden }}ī rī̃ vevo</span
+            <span>{{ term }}ी रीं वेवो</span><br /><span
+              >{{ trans }}ī rī̃ vevo</span
             >
           </td>
           <td>
-            <span>{{ word }}ी रीं वेंई</span><br /><span
-              >{{ worden }}ī rī̃ vẽī</span
+            <span>{{ term }}ी रीं वेंई</span><br /><span
+              >{{ trans }}ī rī̃ vẽī</span
             >
           </td>
         </tr>
@@ -831,22 +789,22 @@
         <tr v-show="showNonaspectual">
           <th colspan="2">Subjunctive</th>
           <td>
-            <span>{{ word }}ूँ</span><br /><span>{{ worden }}ū̃</span>
+            <span>{{ term }}ूँ</span><br /><span>{{ trans }}ū̃</span>
           </td>
           <td>
-            <span>{{ word }}े</span><br /><span>{{ worden }}e</span>
+            <span>{{ term }}े</span><br /><span>{{ trans }}e</span>
           </td>
           <td>
-            <span>{{ word }}े</span><br /><span>{{ worden }}e</span>
+            <span>{{ term }}े</span><br /><span>{{ trans }}e</span>
           </td>
           <td>
-            <span>{{ word }}ांं</span><br /><span>{{ worden }}ā̃̃</span>
+            <span>{{ term }}ांं</span><br /><span>{{ trans }}ā̃̃</span>
           </td>
           <td>
-            <span>{{ word }}ो</span><br /><span>{{ worden }}o</span>
+            <span>{{ term }}ो</span><br /><span>{{ trans }}o</span>
           </td>
           <td>
-            <span>{{ word }}ीं</span><br /><span>{{ worden }}ī̃</span>
+            <span>{{ term }}ीं</span><br /><span>{{ trans }}ī̃</span>
           </td>
         </tr>
         <tr v-show="showNonaspectual">
@@ -855,22 +813,22 @@
             <span><abbr title="masculine gender">m</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँला</span><br /><span>{{ worden }}ū̃lā</span>
+            <span>{{ term }}ूँला</span><br /><span>{{ trans }}ū̃lā</span>
           </td>
           <td>
-            <span>{{ word }}ीला</span><br /><span>{{ worden }}īlā</span>
+            <span>{{ term }}ीला</span><br /><span>{{ trans }}īlā</span>
           </td>
           <td>
-            <span>{{ word }}ीला</span><br /><span>{{ worden }}īlā</span>
+            <span>{{ term }}ीला</span><br /><span>{{ trans }}īlā</span>
           </td>
           <td>
-            <span>{{ word }}ांला</span><br /><span>{{ worden }}ā̃lā</span>
+            <span>{{ term }}ांला</span><br /><span>{{ trans }}ā̃lā</span>
           </td>
           <td>
-            <span>{{ word }}ोला</span><br /><span>{{ worden }}olā</span>
+            <span>{{ term }}ोला</span><br /><span>{{ trans }}olā</span>
           </td>
           <td>
-            <span>{{ word }}ींला</span><br /><span>{{ worden }}ī̃lā</span>
+            <span>{{ term }}ींला</span><br /><span>{{ trans }}ī̃lā</span>
           </td>
         </tr>
         <tr v-show="showNonaspectual">
@@ -878,35 +836,35 @@
             <span><abbr title="feminine gender">f</abbr></span>
           </td>
           <td>
-            <span>{{ word }}ूँला</span><br /><span>{{ worden }}ū̃lā</span>
+            <span>{{ term }}ूँला</span><br /><span>{{ trans }}ū̃lā</span>
           </td>
           <td>
-            <span>{{ word }}ीला</span><br /><span>{{ worden }}īlā</span>
+            <span>{{ term }}ीला</span><br /><span>{{ trans }}īlā</span>
           </td>
           <td>
-            <span>{{ word }}ीला</span><br /><span>{{ worden }}īlā</span>
+            <span>{{ term }}ीला</span><br /><span>{{ trans }}īlā</span>
           </td>
           <td>
-            <span>{{ word }}ांला</span><br /><span>{{ worden }}ā̃lā</span>
+            <span>{{ term }}ांला</span><br /><span>{{ trans }}ā̃lā</span>
           </td>
           <td>
-            <span>{{ word }}ोला</span><br /><span>{{ worden }}olā</span>
+            <span>{{ term }}ोला</span><br /><span>{{ trans }}olā</span>
           </td>
           <td>
-            <span>{{ word }}ींला</span><br /><span>{{ worden }}ī̃lā</span>
+            <span>{{ term }}ींला</span><br /><span>{{ trans }}ī̃lā</span>
           </td>
         </tr>
         <tr v-show="showNonaspectual">
           <th colspan="2">Imperative</th>
           <td>-</td>
           <td>
-            <span>{{ word }}</span
-            ><br /><span>{{ worden }}</span>
+            <span>{{ term }}</span
+            ><br /><span>{{ trans }}</span>
           </td>
           <td>-</td>
           <td>-</td>
           <td>
-            <span>{{ word }}ो</span><br /><span>{{ worden }}o</span>
+            <span>{{ term }}ो</span><br /><span>{{ trans }}o</span>
           </td>
           <td>-</td>
         </tr>
@@ -917,7 +875,7 @@
 
 <script>
 export default {
-  props: { word: String, worden: String, wordcat: String },
+  props: { term: String, trans: String, wordcat: String },
   data() {
     return {
       showAll: false,

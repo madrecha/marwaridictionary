@@ -2,24 +2,32 @@
   <div>
     <verb-conj-ending-a
       v-if="grammar.verb.ending === 'a'"
-      :word="grammar.verb.term"
-      :worden="grammar.verb.trans"
+      :term="grammar.verb.term"
+      :trans="grammar.verb.trans"
     ></verb-conj-ending-a>
     <verb-conj-ending-aa
       v-if="grammar.verb.ending === 'aa'"
-      :word="grammar.verb.term"
-      :worden="grammar.verb.trans"
+      :term="grammar.verb.term"
+      :trans="grammar.verb.trans"
     ></verb-conj-ending-aa>
+    <verb-conj-ending-ae
+      v-if="grammar.verb.ending === 'ae'"
+      :term="grammar.verb.term"
+      :trans="grammar.verb.trans"
+      :term2="grammar.verb.term2"
+      :trans2="grammar.verb.trans2"
+    ></verb-conj-ending-ae>
   </div>
 </template>
 
 <script>
 import verbConjEndingA from "./grammar/verbConjEndingA.vue";
 import verbConjEndingAa from "./grammar/verbConjEndingAa.vue";
+import verbConjEndingAe from "./grammar/verbConjEndingAe.vue";
 
 export default {
   props: { grammar: Object },
-  components: { verbConjEndingA, verbConjEndingAa },
+  components: { verbConjEndingA, verbConjEndingAa, verbConjEndingAe },
   data() {
     return {};
   },
