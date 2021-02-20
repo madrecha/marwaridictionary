@@ -1,8 +1,8 @@
 <template>
   <div class="tw-mt-3">
-    <div class="tw-text-center tw-text-2xl">
-      {{ words.length }} words added till now
-    </div>
+    <h1 class="tw-text-center tw-text-2xl">
+      {{ words.length }} Marwari words added till now
+    </h1>
     <div class="tw-mt-3">
       <ul class="tw-flex tw-flex-wrap">
         <li
