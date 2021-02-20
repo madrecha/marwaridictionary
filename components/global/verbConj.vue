@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div
+    class="tw-max-w-xs tw-overflow-x-scroll sm:tw-overflow-x-auto sm:tw-max-w-full"
+  >
     <verb-conj-ending-a
       v-if="grammar.verb.ending === 'a'"
       :term="grammar.verb.term"
