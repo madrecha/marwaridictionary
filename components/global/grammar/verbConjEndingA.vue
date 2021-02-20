@@ -1,876 +1,423 @@
 <template>
-  <div>
-    <table id="verb-conjugation">
-      <thead>
-        <th colspan="8">
-          Marwari conjugation of verb → <span>{{ term }}णो</span> <span>(</span
-          ><span>{{ trans }}ṇo</span><span>)</span>
-        </th>
+  <table id="verb-conjugation">
+    <thead>
+      <th colspan="8">
+        Marwari conjugation of verb → <span>{{ term }}णो</span> <span>(</span
+        ><span>{{ trans }}ṇo</span><span>)</span>
+      </th>
 
-        <tr>
-          <th rowspan="3" colspan="2">Person</th>
-          <th colspan="3">Singular</th>
-          <th colspan="3">Plural</th>
-        </tr>
-        <tr>
-          <th>1<sup>st</sup> person</th>
-          <th>2<sup>nd</sup> person</th>
-          <th>3<sup>rd</sup> person</th>
-          <th>1<sup>st</sup> person</th>
-          <th>2<sup>nd</sup> person</th>
-          <th>3<sup>rd</sup> person</th>
-        </tr>
-        <tr>
-          <th>मूं</th>
-          <th>थूं</th>
-          <th>यो/वो/या/वा</th>
-          <th>आपा/मां</th>
-          <th>थां</th>
-          <th>ये/वे/आप</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          @click.prevent="showPerfective = !showPerfective"
-          class="verb-category"
-        >
-          <th colspan="8">Perfective</th>
-        </tr>
+      <tr>
+        <th rowspan="3" colspan="2">Person</th>
+        <th colspan="3">Singular</th>
+        <th colspan="3">Plural</th>
+      </tr>
+      <tr>
+        <th>1<sup>st</sup> person</th>
+        <th>2<sup>nd</sup> person</th>
+        <th>3<sup>rd</sup> person</th>
+        <th>1<sup>st</sup> person</th>
+        <th>2<sup>nd</sup> person</th>
+        <th>3<sup>rd</sup> person</th>
+      </tr>
+      <tr>
+        <th>मूं</th>
+        <th>थूं</th>
+        <th>यो/वो/या/वा</th>
+        <th>आपा/मां</th>
+        <th>थां</th>
+        <th>ये/वे/आप</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        @click.prevent="showPerfective = !showPerfective"
+        class="verb-category"
+      >
+        <th colspan="8">Perfective</th>
+      </tr>
 
-        <tr v-show="showPerfective">
-          <th rowspan="2">Simple</th>
+      <tr v-show="showPerfective">
+        <th rowspan="2">Simple</th>
 
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}्यो</span><br /><span>{{ trans }}yo</span>
-          </td>
-          <td>
-            <span>{{ term }}्यो</span><br /><span>{{ trans }}yo</span>
-          </td>
-          <td>
-            <span>{{ term }}्यो</span><br /><span>{{ trans }}yo</span>
-          </td>
-          <td>
-            <span>{{ term }}्या</span><br /><span>{{ trans }}yā</span>
-          </td>
-          <td>
-            <span>{{ term }}्या</span><br /><span>{{ trans }}yā</span>
-          </td>
-          <td>
-            <span>{{ term }}्या</span><br /><span>{{ trans }}yā</span>
-          </td>
-        </tr>
-        <tr v-show="showPerfective">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी</span><br /><span>{{ trans }}ī</span>
-          </td>
-          <td>
-            <span>{{ term }}ी</span><br /><span>{{ trans }}ī</span>
-          </td>
-          <td>
-            <span>{{ term }}ी</span><br /><span>{{ trans }}ī</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं</span><br /><span>{{ trans }}ī̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं</span><br /><span>{{ trans }}ī̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं</span><br /><span>{{ trans }}ī̃</span>
-          </td>
-        </tr>
-        <tr v-show="showPerfective">
-          <th rowspan="2">Present</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}्यो हूँ</span><br /><span>{{ trans }}yo hū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}्यो है</span><br /><span>{{ trans }}yo hai</span>
-          </td>
-          <td>
-            <span>{{ term }}्यो है</span><br /><span>{{ trans }}yo hai</span>
-          </td>
-          <td>
-            <span>{{ term }}्या हां</span><br /><span>{{ trans }}yā hā̃</span>
-          </td>
-          <td>
-            <span>{{ term }}्या हो</span><br /><span>{{ trans }}yā ho</span>
-          </td>
-          <td>
-            <span>{{ term }}्या हां</span><br /><span>{{ trans }}yā hā̃</span>
-          </td>
-        </tr>
-        <tr v-show="showPerfective">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी हूँ</span><br /><span>{{ trans }}ī hū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ी है</span><br /><span>{{ trans }}ī hai</span>
-          </td>
-          <td>
-            <span>{{ term }}ी है</span><br /><span>{{ trans }}ī hai</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं हां</span><br /><span>{{ trans }}ī̃ hā̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं हो</span><br /><span>{{ trans }}ī̃ ho</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं हैं</span><br /><span>{{ trans }}ī̃ ha͠i</span>
-          </td>
-        </tr>
-        <tr v-show="showPerfective">
-          <th rowspan="2">Past</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}्यो थो</span><br /><span>{{ trans }}yo tho</span>
-          </td>
-          <td>
-            <span>{{ term }}्यो थो</span><br /><span>{{ trans }}yo tho</span>
-          </td>
-          <td>
-            <span>{{ term }}्यो थो</span><br /><span>{{ trans }}yo tho</span>
-          </td>
-          <td>
-            <span>{{ term }}्या थां</span><br /><span>{{ trans }}yā thā̃</span>
-          </td>
-          <td>
-            <span>{{ term }}्या था</span><br /><span>{{ trans }}yā thā</span>
-          </td>
-          <td>
-            <span>{{ term }}्या थां</span><br /><span>{{ trans }}yā thā̃</span>
-          </td>
-        </tr>
-        <tr v-show="showPerfective">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी थी</span><br /><span>{{ trans }}ī thī</span>
-          </td>
-          <td>
-            <span>{{ term }}ी थी</span><br /><span>{{ trans }}ī thī</span>
-          </td>
-          <td>
-            <span>{{ term }}ी थी</span><br /><span>{{ trans }}ī thī</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं थीं</span><br /><span>{{ trans }}ī̃ thī̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं थीं</span><br /><span>{{ trans }}ī̃ thī̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं थीं</span><br /><span>{{ trans }}ī̃ thī̃</span>
-          </td>
-        </tr>
-        <tr v-show="showPerfective">
-          <th rowspan="2">Presumptive</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}्यो वेऊँ</span><br /><span>{{ trans }}yo veū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}्यो वेई</span><br /><span>{{ trans }}yo veī</span>
-          </td>
-          <td>
-            <span>{{ term }}्यो वेई</span><br /><span>{{ trans }}yo veī</span>
-          </td>
-          <td>
-            <span>{{ term }}्या वेंवा</span><br /><span
-              >{{ term }}yā vemvā</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}्या वेवो</span><br /><span>{{ trans }}yā vevo</span>
-          </td>
-          <td>
-            <span>{{ term }}्या वेंई</span><br /><span>{{ trans }}yā vẽī</span>
-          </td>
-        </tr>
-        <tr v-show="showPerfective">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी वेऊँ</span><br /><span>{{ trans }}ī veū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ी वेई</span><br /><span>{{ trans }}ī veī</span>
-          </td>
-          <td>
-            <span>{{ term }}ी वेई</span><br /><span>{{ trans }}ī veī</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं वेंई</span><br /><span>{{ trans }}ī̃ vẽī</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं वेओ</span><br /><span>{{ trans }}ī̃ veo</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं वेंई</span><br /><span>{{ trans }}ī̃ vẽī</span>
-          </td>
-        </tr>
-        <tr v-show="showPerfective">
-          <th rowspan="2">Subjunctive</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}्यो वेऊँ</span><br /><span>{{ trans }}yo veū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}्यो वेई</span><br /><span>{{ trans }}yo veī</span>
-          </td>
-          <td>
-            <span>{{ term }}्यो वेई</span><br /><span>{{ trans }}yo veī</span>
-          </td>
-          <td>
-            <span>{{ term }}्या वेंवा</span><br /><span
-              >{{ term }}yā vemvā</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}्या वेओ</span><br /><span>{{ trans }}yā veo</span>
-          </td>
-          <td>
-            <span>{{ term }}्या वेंई</span><br /><span>{{ trans }}yā vẽī</span>
-          </td>
-        </tr>
-        <tr v-show="showPerfective">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी वेऊँ</span><br /><span>{{ trans }}ī veū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ी वेई</span><br /><span>{{ trans }}ī veī</span>
-          </td>
-          <td>
-            <span>{{ term }}ी वेई</span><br /><span>{{ trans }}ī veī</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं वेंवा</span><br /><span>{{ trans }}ī̃ vemvā</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं वेओ</span><br /><span>{{ trans }}ī̃ veo</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं वेंई</span><br /><span>{{ trans }}ī̃ vẽī</span>
-          </td>
-        </tr>
-        <tr
-          @click.prevent="showImperfective = !showImperfective"
-          class="verb-category"
-        >
-          <th colspan="8">Imperfective</th>
-        </tr>
-        <tr v-show="showImperfective">
-          <th rowspan="2">Present</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}तो</span><br /><span>{{ trans }}to</span>
-          </td>
-          <td>
-            <span>{{ term }}तो</span><br /><span>{{ trans }}to</span>
-          </td>
-          <td>
-            <span>{{ term }}तो</span><br /><span>{{ trans }}to</span>
-          </td>
-          <td>
-            <span>{{ term }}ता</span><br /><span>{{ trans }}tā</span>
-          </td>
-          <td>
-            <span>{{ term }}ता</span><br /><span>{{ trans }}tā</span>
-          </td>
-          <td>
-            <span>{{ term }}ता</span><br /><span>{{ trans }}tā</span>
-          </td>
-        </tr>
-        <tr v-show="showImperfective">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ती</span><br /><span>{{ trans }}tī</span>
-          </td>
-          <td>
-            <span>{{ term }}ती</span><br /><span>{{ trans }}tī</span>
-          </td>
-          <td>
-            <span>{{ term }}ती</span><br /><span>{{ trans }}tī</span>
-          </td>
-          <td>
-            <span>{{ term }}तीं</span><br /><span>{{ trans }}tī̃</span>
-          </td>
-          <td>
-            <span>{{ term }}तीं</span><br /><span>{{ trans }}tī̃</span>
-          </td>
-          <td>
-            <span>{{ term }}तीं</span><br /><span>{{ trans }}tī̃</span>
-          </td>
-        </tr>
-        <tr v-show="showImperfective">
-          <th rowspan="2">Present</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ूँ हूँ</span><br /><span>{{ trans }}ū̃ hū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}े है</span><br /><span>{{ trans }}e hai</span>
-          </td>
-          <td>
-            <span>{{ term }}े है</span><br /><span>{{ trans }}e hai</span>
-          </td>
-          <td>
-            <span>{{ term }}ा हां</span><br /><span>{{ trans }}ā hā̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ो हो</span><br /><span>{{ trans }}o ho</span>
-          </td>
-          <td>
-            <span>{{ term }}े हैं</span><br /><span>{{ trans }}e ha͠i</span>
-          </td>
-        </tr>
-        <tr v-show="showImperfective">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ूँ हूँ</span><br /><span>{{ trans }}ū̃ hū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}े है</span><br /><span>{{ trans }}e hai</span>
-          </td>
-          <td>
-            <span>{{ term }}े है</span><br /><span>{{ trans }}e hai</span>
-          </td>
-          <td>
-            <span>{{ term }}ांं हां</span><br /><span>{{ trans }}ā̃̃ hā̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ो हो</span><br /><span>{{ trans }}o ho</span>
-          </td>
-          <td>
-            <span>{{ term }}े हैं</span><br /><span>{{ trans }}e ha͠i</span>
-          </td>
-        </tr>
-        <tr v-show="showImperfective">
-          <th rowspan="2">Past</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}तो थो</span><br /><span>{{ trans }}to tho</span>
-          </td>
-          <td>
-            <span>{{ term }}तो थो</span><br /><span>{{ trans }}to tho</span>
-          </td>
-          <td>
-            <span>{{ term }}तो थो</span><br /><span>{{ trans }}to tho</span>
-          </td>
-          <td>
-            <span>{{ term }}ता था</span><br /><span>{{ trans }}tā thā</span>
-          </td>
-          <td>
-            <span>{{ term }}ता था</span><br /><span>{{ trans }}tā thā</span>
-          </td>
-          <td>
-            <span>{{ term }}ता था</span><br /><span>{{ trans }}tā thā</span>
-          </td>
-        </tr>
-        <tr v-show="showImperfective">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ती थी</span><br /><span>{{ trans }}tī thī</span>
-          </td>
-          <td>
-            <span>{{ term }}ती थी</span><br /><span>{{ trans }}tī thī</span>
-          </td>
-          <td>
-            <span>{{ term }}ती थी</span><br /><span>{{ trans }}tī thī</span>
-          </td>
-          <td>
-            <span>{{ term }}तीं थीं</span><br /><span>{{ trans }}tī̃ thī̃</span>
-          </td>
-          <td>
-            <span>{{ term }}तीं थीं</span><br /><span>{{ trans }}tī̃ thī̃</span>
-          </td>
-          <td>
-            <span>{{ term }}तीं थीं</span><br /><span>{{ trans }}tī̃ thī̃</span>
-          </td>
-        </tr>
-        <tr v-show="showImperfective">
-          <th rowspan="2">Presumptive</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}तो वेऊँ</span><br /><span>{{ trans }}to veū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}तो वेई</span><br /><span>{{ term }}to veī</span>
-          </td>
-          <td>
-            <span>{{ term }}तो वेई</span><br /><span>{{ trans }}to veī</span>
-          </td>
-          <td>
-            <span>{{ term }}ता वेंवा</span><br /><span
-              >{{ trans }}tā vemvā</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ता वेवो</span><br /><span>{{ trans }}tā vevo</span>
-          </td>
-          <td>
-            <span>{{ term }}ता वेंई</span><br /><span>{{ trans }}tā vẽī</span>
-          </td>
-        </tr>
-        <tr v-show="showImperfective">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ती वेऊँ</span><br /><span>{{ trans }}tī veū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ती वेई</span><br /><span>{{ trans }}tī veī</span>
-          </td>
-          <td>
-            <span>{{ term }}ती वेई</span><br /><span>{{ trans }}tī veī</span>
-          </td>
-          <td>
-            <span>{{ term }}तीं वेंवा</span><br /><span
-              >{{ trans }}tī̃ vemvā</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}तीं वेवो</span><br /><span>{{ trans }}tī̃ vevo</span>
-          </td>
-          <td>
-            <span>{{ term }}तीं वेंई</span><br /><span>{{ trans }}tī̃ vẽī</span>
-          </td>
-        </tr>
-        <tr v-show="showImperfective">
-          <th rowspan="2">Subjunctive</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ूँ हूँ</span><br /><span>{{ trans }}ū̃ hū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}तो वेई</span><br /><span>{{ trans }}to veī</span>
-          </td>
-          <td>
-            <span>{{ term }}तो वेई</span><br /><span>{{ trans }}to veī</span>
-          </td>
-          <td>
-            <span>{{ term }}ता वेंवा</span><br /><span
-              >{{ trans }}tā vemvā</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ता वेवो</span><br /><span>{{ trans }}tā vevo</span>
-          </td>
-          <td>
-            <span>{{ term }}ता वेंई</span><br /><span>{{ trans }}tā vẽī</span>
-          </td>
-        </tr>
-        <tr v-show="showImperfective">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ूँ हूँ</span><br /><span>{{ trans }}ū̃ hū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ती वेई</span><br /><span>{{ trans }}tī veī</span>
-          </td>
-          <td>
-            <span>{{ term }}ती वेई</span><br /><span>{{ trans }}tī veī</span>
-          </td>
-          <td>
-            <span>{{ term }}तीं वेंवा</span><br /><span
-              >{{ trans }}tī̃ vemvā</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}तीं वेवो</span><br /><span>{{ trans }}tī̃ vevo</span>
-          </td>
-          <td>
-            <span>{{ term }}तीं वेंई</span><br /><span>{{ trans }}tī̃ vẽī</span>
-          </td>
-        </tr>
-        <tr
-          @click.prevent="showContinuous = !showContinuous"
-          class="verb-category"
-        >
-          <th colspan="8">Continuous</th>
-        </tr>
-        <tr v-show="showContinuous">
-          <th rowspan="2">Present</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी रू हूँ</span><br /><span>{{ trans }}ī rū hū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रो है</span><br /><span>{{ trans }}ī ro hai</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रो है</span><br /><span>{{ trans }}ī ro hai</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रा हां</span><br /><span>{{ trans }}ī rā hā̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रा हो</span><br /><span>{{ trans }}ī rā ho</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रा हैं</span><br /><span
-              >{{ trans }}ī rā ha͠i</span
-            >
-          </td>
-        </tr>
-        <tr v-show="showContinuous">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी री हूँ</span><br /><span>{{ trans }}ī rī hū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ी री है</span><br /><span>{{ trans }}ī rī hai</span>
-          </td>
-          <td>
-            <span>{{ term }}ी री है</span><br /><span>{{ trans }}ī rī hai</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रीं हां</span><br /><span
-              >{{ trans }}ī rī̃ hā̃</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रीं हो</span><br /><span>{{ trans }}ī rī̃ ho</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रीं हैं</span><br /><span
-              >{{ trans }}ī rī̃ ha͠i</span
-            >
-          </td>
-        </tr>
-        <tr v-show="showContinuous">
-          <th rowspan="2">Past</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी रो थो</span><br /><span>{{ trans }}ī ro tho</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रो थो</span><br /><span>{{ trans }}ī ro tho</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रो थो</span><br /><span>{{ trans }}ī ro tho</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रा था</span><br /><span>{{ trans }}ī rā thā</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रा था</span><br /><span>{{ trans }}ī rā thā</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रा था</span><br /><span>{{ trans }}ī rā thā</span>
-          </td>
-        </tr>
-        <tr v-show="showContinuous">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी री थी</span><br /><span>{{ trans }}ī rī thī</span>
-          </td>
-          <td>
-            <span>{{ term }}ी री थी</span><br /><span>{{ trans }}ī rī thī</span>
-          </td>
-          <td>
-            <span>{{ term }}ी री थी</span><br /><span>{{ trans }}ī rī thī</span>
-          </td>
-          <td>
-            <span>{{ term }}ी रीं थीं</span><br /><span
-              >{{ trans }}ī rī̃ thī̃</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रीं थीं</span><br /><span
-              >{{ trans }}ī rī̃ thī̃</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रीं थीं</span><br /><span
-              >{{ trans }}ī rī̃ thī̃</span
-            >
-          </td>
-        </tr>
-        <tr v-show="showContinuous">
-          <th rowspan="2">Presumptive</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी रो वेऊँ</span><br /><span
-              >{{ trans }}ī ro veū̃</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रो वेई</span><br /><span
-              >{{ trans }}ī ro veī</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रो वेई</span><br /><span
-              >{{ trans }}ī ro veī</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रा वेंवा</span><br /><span
-              >{{ trans }}ī rā vemvā</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रा वेवो</span><br /><span
-              >{{ trans }}ī rā vevo</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रा वेंई</span><br /><span
-              >{{ trans }}ī rā vẽī</span
-            >
-          </td>
-        </tr>
-        <tr v-show="showContinuous">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी रू वेऊँ</span><br /><span
-              >{{ trans }}ī rū veū̃</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी री वेई</span><br /><span
-              >{{ trans }}ī rī veī</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी री वेई</span><br /><span
-              >{{ trans }}ī rī veī</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रीं वेंवा</span><br /><span
-              >{{ trans }}ī rī̃ vemvā</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रीं वेवो</span><br /><span
-              >{{ trans }}ī rī̃ vevo</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रीं वेंई</span><br /><span
-              >{{ trans }}ī rī̃ vẽī</span
-            >
-          </td>
-        </tr>
-        <tr v-show="showContinuous">
-          <th rowspan="2">Subjunctive</th>
-          <td class="gender">
-            <span class="gender"><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी रू वेऊँ</span><br /><span
-              >{{ trans }}ī rū veū̃</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रो वेई</span><br /><span
-              >{{ trans }}ī ro veī</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रो वेई</span><br /><span
-              >{{ trans }}ī ro veī</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रा वेंवा</span><br /><span
-              >{{ trans }}ī rā vemvā</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रा वेवो</span><br /><span
-              >{{ trans }}ī rā vevo</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रा वेंई</span><br /><span
-              >{{ trans }}ī rā vẽī</span
-            >
-          </td>
-        </tr>
-        <tr v-show="showContinuous">
-          <td class="gender">
-            <span class="gender"><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ी री वेऊँ</span><br /><span
-              >{{ trans }}ī rī veū̃</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी री वेई</span><br /><span
-              >{{ trans }}ī rī veī</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी री वेई</span><br /><span
-              >{{ trans }}ī rī veī</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रीं वेंवा</span><br /><span
-              >{{ trans }}ī rī̃ vemvā</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रीं वेवो</span><br /><span
-              >{{ trans }}ī rī̃ vevo</span
-            >
-          </td>
-          <td>
-            <span>{{ term }}ी रीं वेंई</span><br /><span
-              >{{ trans }}ī rī̃ vẽī</span
-            >
-          </td>
-        </tr>
-        <tr
-          @click.prevent="showNonaspectual = !showNonaspectual"
-          class="verb-category"
-        >
-          <th colspan="8">Non-aspectual</th>
-        </tr>
-        <tr v-show="showNonaspectual">
-          <th colspan="2">Subjunctive</th>
-          <td>
-            <span>{{ term }}ूँ</span><br /><span>{{ trans }}ū̃</span>
-          </td>
-          <td>
-            <span>{{ term }}े</span><br /><span>{{ trans }}e</span>
-          </td>
-          <td>
-            <span>{{ term }}े</span><br /><span>{{ trans }}e</span>
-          </td>
-          <td>
-            <span>{{ term }}ांं</span><br /><span>{{ trans }}ā̃̃</span>
-          </td>
-          <td>
-            <span>{{ term }}ो</span><br /><span>{{ trans }}o</span>
-          </td>
-          <td>
-            <span>{{ term }}ीं</span><br /><span>{{ trans }}ī̃</span>
-          </td>
-        </tr>
-        <tr v-show="showNonaspectual">
-          <th rowspan="2">Future</th>
-          <td class="gender">
-            <span><abbr title="masculine gender">m</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ूँला</span><br /><span>{{ trans }}ū̃lā</span>
-          </td>
-          <td>
-            <span>{{ term }}ीला</span><br /><span>{{ trans }}īlā</span>
-          </td>
-          <td>
-            <span>{{ term }}ीला</span><br /><span>{{ trans }}īlā</span>
-          </td>
-          <td>
-            <span>{{ term }}ांला</span><br /><span>{{ trans }}ā̃lā</span>
-          </td>
-          <td>
-            <span>{{ term }}ोला</span><br /><span>{{ trans }}olā</span>
-          </td>
-          <td>
-            <span>{{ term }}ींला</span><br /><span>{{ trans }}ī̃lā</span>
-          </td>
-        </tr>
-        <tr v-show="showNonaspectual">
-          <td class="gender">
-            <span><abbr title="feminine gender">f</abbr></span>
-          </td>
-          <td>
-            <span>{{ term }}ूँला</span><br /><span>{{ trans }}ū̃lā</span>
-          </td>
-          <td>
-            <span>{{ term }}ीला</span><br /><span>{{ trans }}īlā</span>
-          </td>
-          <td>
-            <span>{{ term }}ीला</span><br /><span>{{ trans }}īlā</span>
-          </td>
-          <td>
-            <span>{{ term }}ांला</span><br /><span>{{ trans }}ā̃lā</span>
-          </td>
-          <td>
-            <span>{{ term }}ोला</span><br /><span>{{ trans }}olā</span>
-          </td>
-          <td>
-            <span>{{ term }}ींला</span><br /><span>{{ trans }}ī̃lā</span>
-          </td>
-        </tr>
-        <tr v-show="showNonaspectual">
-          <th colspan="2">Imperative</th>
-          <td>-</td>
-          <td>
-            <span>{{ term }}</span
-            ><br /><span>{{ trans }}</span>
-          </td>
-          <td>-</td>
-          <td>-</td>
-          <td>
-            <span>{{ term }}ो</span><br /><span>{{ trans }}o</span>
-          </td>
-          <td>-</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}्यो<br />{{ trans }}yo</td>
+        <td>{{ term }}्यो<br />{{ trans }}yo</td>
+        <td>{{ term }}्यो<br />{{ trans }}yo</td>
+        <td>{{ term }}्या<br />{{ trans }}yā</td>
+        <td>{{ term }}्या<br />{{ trans }}yā</td>
+        <td>{{ term }}्या<br />{{ trans }}yā</td>
+      </tr>
+      <tr v-show="showPerfective">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ी<br />{{ trans }}ī</td>
+        <td>{{ term }}ी<br />{{ trans }}ī</td>
+        <td>{{ term }}ी<br />{{ trans }}ī</td>
+        <td>{{ term }}ीं<br />{{ trans }}ī̃</td>
+        <td>{{ term }}ीं<br />{{ trans }}ī̃</td>
+        <td>{{ term }}ीं<br />{{ trans }}ī̃</td>
+      </tr>
+      <tr v-show="showPerfective">
+        <th rowspan="2">Present</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}्यो हूँ<br />{{ trans }}yo hū̃</td>
+        <td>{{ term }}्यो है<br />{{ trans }}yo hai</td>
+        <td>{{ term }}्यो है<br />{{ trans }}yo hai</td>
+        <td>{{ term }}्या हां<br />{{ trans }}yā hā̃</td>
+        <td>{{ term }}्या हो<br />{{ trans }}yā ho</td>
+        <td>{{ term }}्या हां<br />{{ trans }}yā hā̃</td>
+      </tr>
+      <tr v-show="showPerfective">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ी हूँ<br />{{ trans }}ī hū̃</td>
+        <td>{{ term }}ी है<br />{{ trans }}ī hai</td>
+        <td>{{ term }}ी है<br />{{ trans }}ī hai</td>
+        <td>{{ term }}ीं हां<br />{{ trans }}ī̃ hā̃</td>
+        <td>{{ term }}ीं हो<br />{{ trans }}ī̃ ho</td>
+        <td>{{ term }}ीं हैं<br />{{ trans }}ī̃ ha͠i</td>
+      </tr>
+      <tr v-show="showPerfective">
+        <th rowspan="2">Past</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}्यो थो<br />{{ trans }}yo tho</td>
+        <td>{{ term }}्यो थो<br />{{ trans }}yo tho</td>
+        <td>{{ term }}्यो थो<br />{{ trans }}yo tho</td>
+        <td>{{ term }}्या थां<br />{{ trans }}yā thā̃</td>
+        <td>{{ term }}्या था<br />{{ trans }}yā thā</td>
+        <td>{{ term }}्या थां<br />{{ trans }}yā thā̃</td>
+      </tr>
+      <tr v-show="showPerfective">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ी थी<br />{{ trans }}ī thī</td>
+        <td>{{ term }}ी थी<br />{{ trans }}ī thī</td>
+        <td>{{ term }}ी थी<br />{{ trans }}ī thī</td>
+        <td>{{ term }}ीं थीं<br />{{ trans }}ī̃ thī̃</td>
+        <td>{{ term }}ीं थीं<br />{{ trans }}ī̃ thī̃</td>
+        <td>{{ term }}ीं थीं<br />{{ trans }}ī̃ thī̃</td>
+      </tr>
+      <tr v-show="showPerfective">
+        <th rowspan="2">Presumptive</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}्यो वेऊँ<br />{{ trans }}yo veū̃</td>
+        <td>{{ term }}्यो वेई<br />{{ trans }}yo veī</td>
+        <td>{{ term }}्यो वेई<br />{{ trans }}yo veī</td>
+        <td>{{ term }}्या वेंवा<br />{{ term }}yā vemvā</td>
+        <td>{{ term }}्या वेवो<br />{{ trans }}yā vevo</td>
+        <td>{{ term }}्या वेंई<br />{{ trans }}yā vẽī</td>
+      </tr>
+      <tr v-show="showPerfective">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ी वेऊँ<br />{{ trans }}ī veū̃</td>
+        <td>{{ term }}ी वेई<br />{{ trans }}ī veī</td>
+        <td>{{ term }}ी वेई<br />{{ trans }}ī veī</td>
+        <td>{{ term }}ीं वेंई<br />{{ trans }}ī̃ vẽī</td>
+        <td>{{ term }}ीं वेओ<br />{{ trans }}ī̃ veo</td>
+        <td>{{ term }}ीं वेंई<br />{{ trans }}ī̃ vẽī</td>
+      </tr>
+      <tr v-show="showPerfective">
+        <th rowspan="2">Subjunctive</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}्यो वेऊँ<br />{{ trans }}yo veū̃</td>
+        <td>{{ term }}्यो वेई<br />{{ trans }}yo veī</td>
+        <td>{{ term }}्यो वेई<br />{{ trans }}yo veī</td>
+        <td>{{ term }}्या वेंवा<br />{{ term }}yā vemvā</td>
+        <td>{{ term }}्या वेओ<br />{{ trans }}yā veo</td>
+        <td>{{ term }}्या वेंई<br />{{ trans }}yā vẽī</td>
+      </tr>
+      <tr v-show="showPerfective">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ी वेऊँ<br />{{ trans }}ī veū̃</td>
+        <td>{{ term }}ी वेई<br />{{ trans }}ī veī</td>
+        <td>{{ term }}ी वेई<br />{{ trans }}ī veī</td>
+        <td>{{ term }}ीं वेंवा<br />{{ trans }}ī̃ vemvā</td>
+        <td>{{ term }}ीं वेओ<br />{{ trans }}ī̃ veo</td>
+        <td>{{ term }}ीं वेंई<br />{{ trans }}ī̃ vẽī</td>
+      </tr>
+      <tr
+        @click.prevent="showImperfective = !showImperfective"
+        class="verb-category"
+      >
+        <th colspan="8">Imperfective</th>
+      </tr>
+      <tr v-show="showImperfective">
+        <th rowspan="2">Present</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}तो<br />{{ trans }}to</td>
+        <td>{{ term }}तो<br />{{ trans }}to</td>
+        <td>{{ term }}तो<br />{{ trans }}to</td>
+        <td>{{ term }}ता<br />{{ trans }}tā</td>
+        <td>{{ term }}ता<br />{{ trans }}tā</td>
+        <td>{{ term }}ता<br />{{ trans }}tā</td>
+      </tr>
+      <tr v-show="showImperfective">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ती<br />{{ trans }}tī</td>
+        <td>{{ term }}ती<br />{{ trans }}tī</td>
+        <td>{{ term }}ती<br />{{ trans }}tī</td>
+        <td>{{ term }}तीं<br />{{ trans }}tī̃</td>
+        <td>{{ term }}तीं<br />{{ trans }}tī̃</td>
+        <td>{{ term }}तीं<br />{{ trans }}tī̃</td>
+      </tr>
+      <tr v-show="showImperfective">
+        <th rowspan="2">Present</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}ूँ हूँ<br />{{ trans }}ū̃ hū̃</td>
+        <td>{{ term }}े है<br />{{ trans }}e hai</td>
+        <td>{{ term }}े है<br />{{ trans }}e hai</td>
+        <td>{{ term }}ा हां<br />{{ trans }}ā hā̃</td>
+        <td>{{ term }}ो हो<br />{{ trans }}o ho</td>
+        <td>{{ term }}े हैं<br />{{ trans }}e ha͠i</td>
+      </tr>
+      <tr v-show="showImperfective">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ूँ हूँ<br />{{ trans }}ū̃ hū̃</td>
+        <td>{{ term }}े है<br />{{ trans }}e hai</td>
+        <td>{{ term }}े है<br />{{ trans }}e hai</td>
+        <td>{{ term }}ांं हां<br />{{ trans }}ā̃̃ hā̃</td>
+        <td>{{ term }}ो हो<br />{{ trans }}o ho</td>
+        <td>{{ term }}े हैं<br />{{ trans }}e ha͠i</td>
+      </tr>
+      <tr v-show="showImperfective">
+        <th rowspan="2">Past</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}तो थो<br />{{ trans }}to tho</td>
+        <td>{{ term }}तो थो<br />{{ trans }}to tho</td>
+        <td>{{ term }}तो थो<br />{{ trans }}to tho</td>
+        <td>{{ term }}ता था<br />{{ trans }}tā thā</td>
+        <td>{{ term }}ता था<br />{{ trans }}tā thā</td>
+        <td>{{ term }}ता था<br />{{ trans }}tā thā</td>
+      </tr>
+      <tr v-show="showImperfective">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ती थी<br />{{ trans }}tī thī</td>
+        <td>{{ term }}ती थी<br />{{ trans }}tī thī</td>
+        <td>{{ term }}ती थी<br />{{ trans }}tī thī</td>
+        <td>{{ term }}तीं थीं<br />{{ trans }}tī̃ thī̃</td>
+        <td>{{ term }}तीं थीं<br />{{ trans }}tī̃ thī̃</td>
+        <td>{{ term }}तीं थीं<br />{{ trans }}tī̃ thī̃</td>
+      </tr>
+      <tr v-show="showImperfective">
+        <th rowspan="2">Presumptive</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}तो वेऊँ<br />{{ trans }}to veū̃</td>
+        <td>{{ term }}तो वेई<br />{{ term }}to veī</td>
+        <td>{{ term }}तो वेई<br />{{ trans }}to veī</td>
+        <td>{{ term }}ता वेंवा<br />{{ trans }}tā vemvā</td>
+        <td>{{ term }}ता वेवो<br />{{ trans }}tā vevo</td>
+        <td>{{ term }}ता वेंई<br />{{ trans }}tā vẽī</td>
+      </tr>
+      <tr v-show="showImperfective">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ती वेऊँ<br />{{ trans }}tī veū̃</td>
+        <td>{{ term }}ती वेई<br />{{ trans }}tī veī</td>
+        <td>{{ term }}ती वेई<br />{{ trans }}tī veī</td>
+        <td>{{ term }}तीं वेंवा<br />{{ trans }}tī̃ vemvā</td>
+        <td>{{ term }}तीं वेवो<br />{{ trans }}tī̃ vevo</td>
+        <td>{{ term }}तीं वेंई<br />{{ trans }}tī̃ vẽī</td>
+      </tr>
+      <tr v-show="showImperfective">
+        <th rowspan="2">Subjunctive</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}ूँ हूँ<br />{{ trans }}ū̃ hū̃</td>
+        <td>{{ term }}तो वेई<br />{{ trans }}to veī</td>
+        <td>{{ term }}तो वेई<br />{{ trans }}to veī</td>
+        <td>{{ term }}ता वेंवा<br />{{ trans }}tā vemvā</td>
+        <td>{{ term }}ता वेवो<br />{{ trans }}tā vevo</td>
+        <td>{{ term }}ता वेंई<br />{{ trans }}tā vẽī</td>
+      </tr>
+      <tr v-show="showImperfective">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ूँ हूँ<br />{{ trans }}ū̃ hū̃</td>
+        <td>{{ term }}ती वेई<br />{{ trans }}tī veī</td>
+        <td>{{ term }}ती वेई<br />{{ trans }}tī veī</td>
+        <td>{{ term }}तीं वेंवा<br />{{ trans }}tī̃ vemvā</td>
+        <td>{{ term }}तीं वेवो<br />{{ trans }}tī̃ vevo</td>
+        <td>{{ term }}तीं वेंई<br />{{ trans }}tī̃ vẽī</td>
+      </tr>
+      <tr
+        @click.prevent="showContinuous = !showContinuous"
+        class="verb-category"
+      >
+        <th colspan="8">Continuous</th>
+      </tr>
+      <tr v-show="showContinuous">
+        <th rowspan="2">Present</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}ी रू हूँ<br />{{ trans }}ī rū hū̃</td>
+        <td>{{ term }}ी रो है<br />{{ trans }}ī ro hai</td>
+        <td>{{ term }}ी रो है<br />{{ trans }}ī ro hai</td>
+        <td>{{ term }}ी रा हां<br />{{ trans }}ī rā hā̃</td>
+        <td>{{ term }}ी रा हो<br />{{ trans }}ī rā ho</td>
+        <td>{{ term }}ी रा हैं<br />{{ trans }}ī rā ha͠i</td>
+      </tr>
+      <tr v-show="showContinuous">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ी री हूँ<br />{{ trans }}ī rī hū̃</td>
+        <td>{{ term }}ी री है<br />{{ trans }}ī rī hai</td>
+        <td>{{ term }}ी री है<br />{{ trans }}ī rī hai</td>
+        <td>{{ term }}ी रीं हां<br />{{ trans }}ī rī̃ hā̃</td>
+        <td>{{ term }}ी रीं हो<br />{{ trans }}ī rī̃ ho</td>
+        <td>{{ term }}ी रीं हैं<br />{{ trans }}ī rī̃ ha͠i</td>
+      </tr>
+      <tr v-show="showContinuous">
+        <th rowspan="2">Past</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}ी रो थो<br />{{ trans }}ī ro tho</td>
+        <td>{{ term }}ी रो थो<br />{{ trans }}ī ro tho</td>
+        <td>{{ term }}ी रो थो<br />{{ trans }}ī ro tho</td>
+        <td>{{ term }}ी रा था<br />{{ trans }}ī rā thā</td>
+        <td>{{ term }}ी रा था<br />{{ trans }}ī rā thā</td>
+        <td>{{ term }}ी रा था<br />{{ trans }}ī rā thā</td>
+      </tr>
+      <tr v-show="showContinuous">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ी री थी<br />{{ trans }}ī rī thī</td>
+        <td>{{ term }}ी री थी<br />{{ trans }}ī rī thī</td>
+        <td>{{ term }}ी री थी<br />{{ trans }}ī rī thī</td>
+        <td>{{ term }}ी रीं थीं<br />{{ trans }}ī rī̃ thī̃</td>
+        <td>{{ term }}ी रीं थीं<br />{{ trans }}ī rī̃ thī̃</td>
+        <td>{{ term }}ी रीं थीं<br />{{ trans }}ī rī̃ thī̃</td>
+      </tr>
+      <tr v-show="showContinuous">
+        <th rowspan="2">Presumptive</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}ी रो वेऊँ<br />{{ trans }}ī ro veū̃</td>
+        <td>{{ term }}ी रो वेई<br />{{ trans }}ī ro veī</td>
+        <td>{{ term }}ी रो वेई<br />{{ trans }}ī ro veī</td>
+        <td>{{ term }}ी रा वेंवा<br />{{ trans }}ī rā vemvā</td>
+        <td>{{ term }}ी रा वेवो<br />{{ trans }}ī rā vevo</td>
+        <td>{{ term }}ी रा वेंई<br />{{ trans }}ī rā vẽī</td>
+      </tr>
+      <tr v-show="showContinuous">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ी रू वेऊँ<br />{{ trans }}ī rū veū̃</td>
+        <td>{{ term }}ी री वेई<br />{{ trans }}ī rī veī</td>
+        <td>{{ term }}ी री वेई<br />{{ trans }}ī rī veī</td>
+        <td>{{ term }}ी रीं वेंवा<br />{{ trans }}ī rī̃ vemvā</td>
+        <td>{{ term }}ी रीं वेवो<br />{{ trans }}ī rī̃ vevo</td>
+        <td>{{ term }}ी रीं वेंई<br />{{ trans }}ī rī̃ vẽī</td>
+      </tr>
+      <tr v-show="showContinuous">
+        <th rowspan="2">Subjunctive</th>
+        <td class="gender">
+          <abbr title="masculine gender">m</abbr>
+        </td>
+        <td>{{ term }}ी रू वेऊँ<br />{{ trans }}ī rū veū̃</td>
+        <td>{{ term }}ी रो वेई<br />{{ trans }}ī ro veī</td>
+        <td>{{ term }}ी रो वेई<br />{{ trans }}ī ro veī</td>
+        <td>{{ term }}ी रा वेंवा<br />{{ trans }}ī rā vemvā</td>
+        <td>{{ term }}ी रा वेवो<br />{{ trans }}ī rā vevo</td>
+        <td>{{ term }}ी रा वेंई<br />{{ trans }}ī rā vẽī</td>
+      </tr>
+      <tr v-show="showContinuous">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ी री वेऊँ<br />{{ trans }}ī rī veū̃</td>
+        <td>{{ term }}ी री वेई<br />{{ trans }}ī rī veī</td>
+        <td>{{ term }}ी री वेई<br />{{ trans }}ī rī veī</td>
+        <td>{{ term }}ी रीं वेंवा<br />{{ trans }}ī rī̃ vemvā</td>
+        <td>{{ term }}ी रीं वेवो<br />{{ trans }}ī rī̃ vevo</td>
+        <td>{{ term }}ी रीं वेंई<br />{{ trans }}ī rī̃ vẽī</td>
+      </tr>
+      <tr
+        @click.prevent="showNonaspectual = !showNonaspectual"
+        class="verb-category"
+      >
+        <th colspan="8">Non-aspectual</th>
+      </tr>
+      <tr v-show="showNonaspectual">
+        <th colspan="2">Subjunctive</th>
+        <td>{{ term }}ूँ<br />{{ trans }}ū̃</td>
+        <td>{{ term }}े<br />{{ trans }}e</td>
+        <td>{{ term }}े<br />{{ trans }}e</td>
+        <td>{{ term }}ांं<br />{{ trans }}ā̃̃</td>
+        <td>{{ term }}ो<br />{{ trans }}o</td>
+        <td>{{ term }}ीं<br />{{ trans }}ī̃</td>
+      </tr>
+      <tr v-show="showNonaspectual">
+        <th rowspan="2">Future</th>
+        <td class="gender"><abbr title="masculine gender">m</abbr></td>
+        <td>{{ term }}ूँला<br />{{ trans }}ū̃lā</td>
+        <td>{{ term }}ीला<br />{{ trans }}īlā</td>
+        <td>{{ term }}ीला<br />{{ trans }}īlā</td>
+        <td>{{ term }}ांला<br />{{ trans }}ā̃lā</td>
+        <td>{{ term }}ोला<br />{{ trans }}olā</td>
+        <td>{{ term }}ींला<br />{{ trans }}ī̃lā</td>
+      </tr>
+      <tr v-show="showNonaspectual">
+        <td class="gender">
+          <abbr title="feminine gender">f</abbr>
+        </td>
+        <td>{{ term }}ूँला<br />{{ trans }}ū̃lā</td>
+        <td>{{ term }}ीला<br />{{ trans }}īlā</td>
+        <td>{{ term }}ीला<br />{{ trans }}īlā</td>
+        <td>{{ term }}ांला<br />{{ trans }}ā̃lā</td>
+        <td>{{ term }}ोला<br />{{ trans }}olā</td>
+        <td>{{ term }}ींला<br />{{ trans }}ī̃lā</td>
+      </tr>
+      <tr v-show="showNonaspectual">
+        <th colspan="2">Imperative</th>
+        <td>-</td>
+        <td>{{ term }}<br />{{ trans }}</td>
+        <td>-</td>
+        <td>-</td>
+        <td>{{ term }}ो<br />{{ trans }}o</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
 </template>
 
 <script>
