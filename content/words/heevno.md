@@ -3,11 +3,12 @@ title: हीवणो
 transliteration: heevno
 slugurl: heevno
 
-conjugation: 
-  term: हीव
-  en: heev
-
-grammar: verb
+grammar: 
+  verb:
+    term: हीव
+    trans: heev
+    ending: a
+    type: transitive
 
 ---
 ## Etymology

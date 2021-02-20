@@ -3,10 +3,15 @@ title: जाणो
 transliteration: jaano
 slugurl: jaano
 
-conjugation: 
-  term: जा
-  en: jaa
-  category: verb-ending-in-aa
+grammar: 
+  verb:
+    term: जा
+    trans: jaa
+    ending: aa
+    type: intransitive
+
+categories:
+  - 
 
 ---
 ## Etymology

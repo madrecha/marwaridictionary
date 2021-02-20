@@ -8,6 +8,8 @@ grammar:
     term: देख
     trans: ve
     ending: a
+    type: 
+      - transitive
 ---
 
 ## Etymology

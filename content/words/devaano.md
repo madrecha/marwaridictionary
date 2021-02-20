@@ -9,8 +9,10 @@ grammar:
     trans: devaa
     ending: aa
     causative: 
-      verb: देणो
-      type: 2
+      self: 2
+      verb1: देणो
+      verb2: देवाणो
+      verb3: देवाणणो
 
 ---
 ## Etymology

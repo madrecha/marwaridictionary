@@ -3,9 +3,13 @@ title: हुणणो
 transliteration: hunano
 slugurl: hunano
 
-conjugation: 
-  term: हुण
-  en: hun
+grammar: 
+  verb:
+    term: हुण
+    trans: hun
+    ending: a
+    causative: 
+      self: 1
 
 ---
 ## Etymology

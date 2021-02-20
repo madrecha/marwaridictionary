@@ -3,16 +3,15 @@ title: हारणो
 transliteration: haarno
 slugurl: haarno
 
-conjugation: 
-  term: हार
-  en: haar
+grammar: 
+  verb:
+    term: हार
+    trans: haar
+    ending: a
 
-grammar: verb
 
 ---
-## Etymology
-
-## Pronunciation
+## Verb
 
 ## Meaning
 1. to lose

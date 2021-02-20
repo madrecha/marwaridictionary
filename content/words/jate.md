@@ -3,7 +3,12 @@ title: जटे
 transliteration: jate
 slugurl: jate
 
-category: 
+grammar: 
+  pronoun:
+
+categories: 
+  - 
+
 ---
 
 ## Etymology

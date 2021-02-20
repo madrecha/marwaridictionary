@@ -3,12 +3,14 @@ title: हुणो
 transliteration: huno
 slugurl: huno
 
-conjugation: 
-  term: हु
-  en: hu
-  category: verb-ending-in-u
+grammar: 
+  verb:
+    term: हु
+    trans: hu
+    ending: u
 
-grammar: verb
+categories:
+  - 
 
 ---
 ## Etymology

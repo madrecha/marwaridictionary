@@ -3,15 +3,15 @@ title: घटाणो
 transliteration: ghataano
 slugurl: ghataano
 
-conjugation: 
-  term: घटा
-  en: ghataa
-  category: verb-ending-in-aa
+grammar:
+  verb:
+    term: घटा
+    trans: ghataa
+    ending: aa
 
 ---
-## Etymology
 
-## Pronunciation
+## Verb
 
 ## Meaning
 1. to cause someone to reduce or decrease

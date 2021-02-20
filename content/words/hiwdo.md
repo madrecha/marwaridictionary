@@ -2,6 +2,13 @@
 title: हिवड़ो
 transliteration: hivdo
 slugurl: hivdo
+
+grammar:
+  noun: 
+    gender: m
+    number: s
+
+
 ---
 
 ## Etymology

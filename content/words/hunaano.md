@@ -3,10 +3,13 @@ title: हुणाणो
 transliteration: hunaano
 slugurl: hunaano
 
-conjugation: 
-  term: लेई जा
-  en: hunaa
-  category: verb-ending-in-aa
+grammar: 
+  verb:
+    term: लेई जा
+    trans: hunaa
+    ending: aa
+    causative:
+      self: 2
 
 ---
 ## Etymology

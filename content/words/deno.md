@@ -8,6 +8,13 @@ grammar:
     term: दे
     trans: de
     ending: ae
+    causative: 
+      self: 1
+      verb1: देणो
+      verb2: देवाणो
+      verb3: देवाणणो
+    type: 
+      - transitive
 
 ---
 ## Etymology

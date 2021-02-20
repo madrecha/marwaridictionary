@@ -3,9 +3,11 @@ title: घटणो
 transliteration: ghatno
 slugurl: ghatno
 
-conjugation: 
-  term: घट
-  en: ghat
+grammar: 
+  verb:
+    term: घट
+    trans: ghat
+    ending: a
 
 ---
 ## Etymology

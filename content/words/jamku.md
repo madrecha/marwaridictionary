@@ -3,7 +3,11 @@ title: जमकू
 transliteration: jamku
 slugurl: jamku
 
-grammar: noun
+grammar:
+	adjective:
+		gender: m
+		number: s
+
 ---
 
 ## Meaning

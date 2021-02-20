@@ -3,16 +3,13 @@ title: हूँगणो
 transliteration: hoongno
 slugurl: hoongno
 
-conjugation: 
-  type: verb
-  term: हूँग
-  en: hoong
+grammar:
+  verb:
+    term: हूँग
+    trans: hoong
+    ending: a
 
 ---
-
-## Etymology
-
-## Pronunciation
 
 
 ## Verb
@@ -20,4 +17,4 @@ conjugation:
 1. to smell
 
 ### Conjugation
-<marwari-verb-conjugation :word="conjugation.term" :worden="conjugation.en"></marwari-verb-conjugation>
+<marwari-verb-conjugation :word="grammar.verb.term" :worden="grammar.verb.trans"></marwari-verb-conjugation>

@@ -3,7 +3,12 @@ title: घोड़ो
 transliteration: ghodo
 slugurl: ghodo
 
-category: 
+grammar:
+  noun:
+    gender: m
+    number: s
+
+categories: 
   - animal
 ---
 

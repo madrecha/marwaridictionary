@@ -3,17 +3,26 @@ title: फदकणो
 transliteration: fadakno
 slugurl: fadakno
 
-conjugation: फदक
-conjugationen: fadak
+grammar: 
+  verb:
+    term: फदक
+    trans: fadak
+    ending: a
+    type: intransitive
+    causative: 
+      self: 1
+      verb1: फदकणो
+      verb2: फदकाणो
+      verb3: फदकवाणो
 
-grammar: verb
+categories:
+  - 
 
 ---
 
-## Etymology
 
-## Pronunciation
-## Meaning
+## Verb
+### Meaning
 1. To jump excitedly
     - रिजल्ट देखते इन वो खुशी रा मारे फडकवा लागी ग्यो। 
       - As soon as he saw the result, he started jumping excitedly.
@@ -23,5 +32,5 @@ grammar: verb
       - uska english meaning
 2. To be enthusiastic
 
-## Usage 
+### Usage 
 To denote the activity of jumping or dancing with excitement

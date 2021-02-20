@@ -3,7 +3,12 @@ title: गदेड़ो
 transliteration: gadedo
 slugurl: gadedo
 
-category: 
+grammar: 
+  noun: 
+    gender: m
+    number: s
+    
+categories: 
   - animal
 ---
 

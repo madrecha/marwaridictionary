@@ -3,11 +3,12 @@ title: हापड़णो
 transliteration: haapadno
 slugurl: haapadno
 
-conjugation: 
-  term: हापड़
-  en: haapad
+grammar: 
+  verb:
+    term: हापड़
+    trans: haapad
+    ending: a
 
-grammar: verb
 
 ---
 ## Etymology

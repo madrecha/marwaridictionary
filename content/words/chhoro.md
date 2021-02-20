@@ -8,7 +8,7 @@ grammar:
     gender: m
     number: s
 
-category: 
+categories: 
   - person
 ---
 

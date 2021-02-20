@@ -3,7 +3,12 @@ title: जनावर
 transliteration: janaavar
 slugurl: janaavar
 
-category: 
+grammar: 
+  noun:
+    gender: m
+    number: s
+    
+categories: 
   - animal
 ---
 

@@ -2,14 +2,17 @@
 title: घर
 transliteration: ghar
 slugurl: ghar
----
 
-## Etymology
-## Pronunciation
+grammar:
+  noun:
+    gender: m
+    number: s
+
+---
 ## Noun
 ### Meaning
 1. house
 2. home
 
 ### Synonym
-1. [मकान](makaan)
+<syn :syn="['मकान']"></syn>

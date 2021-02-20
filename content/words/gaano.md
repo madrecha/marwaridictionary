@@ -3,10 +3,11 @@ title: गाणो
 transliteration: gaano
 slugurl: gaano
 
-conjugation: 
-  term: गाणो
-  en: gaa
-  category: verb-ending-in-aa
+grammar: 
+	verb:
+  	term: गाणो
+	 	trans: gaa
+		ending: aa
 
 ---
 ## Etymology
