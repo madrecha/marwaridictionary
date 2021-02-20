@@ -3,15 +3,15 @@ title: लेणो
 transliteration: leno
 slugurl: leno
 
-conjugation: 
-  term: ले
-  en: leno
-  category: verb-ending-in-ae
+grammar:
+  verb:
+    term: ले
+    trans: leno
+    ending: ae
 
 ---
-## Etymology
 
-## Pronunciation
+## Verb
 
-## Meaning
+### Meaning
 1. to take

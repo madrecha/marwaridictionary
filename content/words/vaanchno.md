@@ -3,11 +3,11 @@ title: वाचणो
 transliteration: vaanchno
 slugurl: vaanchno
 
-conjugation: 
-  type: verb
-  term: वाच
-  en: vaanch
-
+grammar: 
+  verb:
+    term: वाच
+    trans: vaanch
+    ending: a
 ---
 
 ## Etymology

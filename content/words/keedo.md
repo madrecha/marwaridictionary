@@ -3,7 +3,12 @@ title: कीड़ो
 transliteration: keedo
 slugurl: keedo
 
-category: 
+grammar:
+  noun:
+    gender: m
+    number: s
+
+categories: 
   - insect
 ---
 

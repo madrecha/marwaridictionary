@@ -3,11 +3,14 @@ title: लाणो
 transliteration: laano
 slugurl: laano
 
-conjugation: 
-  term: ला
-  en: laa
-  category: verb-ending-in-aa
+grammar: 
+  verb:
+    term: ला
+    trans: laa
+    ending: aa
 
+categories:
+  
 ---
 ## Etymology
 

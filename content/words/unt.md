@@ -3,9 +3,12 @@ title: ऊँट
 transliteration: unt
 slugurl: unt
 
-grammar: noun
+grammar: 
+  noun:
+    gender: m
+    number: s
 
-topics: 
+categories: 
   - animal
 ---
 ## Noun

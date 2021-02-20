@@ -3,12 +3,11 @@ title: वणणो
 transliteration: vanano
 slugurl: vanano
 
-conjugation: 
-  term: वण
-  en: van
-
-grammar: verb
-
+grammar: 
+  verb:
+    term: वण
+    trans: van
+    ending: a
 ---
 ## Etymology
 

@@ -3,12 +3,11 @@ title: पीणो
 transliteration: peeno
 slugurl: peeno
 
-conjugation: 
-  term: पी
-  en: pee
-  category: verb-ending-in-ee
-
-grammar: verb
+grammar:
+  verb:
+    term: पी
+    en: pee
+    ending: ee
 
 ---
 ## Etymology

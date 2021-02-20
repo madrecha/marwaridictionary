@@ -3,7 +3,12 @@ title: कटे
 transliteration: kate
 slugurl: kate
 
-category: 
+grammar:
+  pronoun:
+    type: interrogative
+
+categories: 
+  - 
 ---
 
 ## Etymology

@@ -3,7 +3,11 @@ title: वटे
 transliteration: vate
 slugurl: vate
 
-category: 
+grammar: 
+  pronoun:
+
+categories: 
+  - 
 ---
 
 ## Etymology

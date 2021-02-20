@@ -2,11 +2,13 @@
 title: थारो
 transliteration: thaaro
 slugurl: thaaro
+
+grammar:
+  pronoun:
+    person: 2
+    number: s
+    gender: m
 ---
-## Etymology
-
-## Pronunciation
-
 ## Pronoun
 ### Meaning
 1. your, yours

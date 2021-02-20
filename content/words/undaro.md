@@ -3,7 +3,12 @@ title: उंदरो
 transliteration: undaro
 slugurl: undaro
 
-category: 
+grammar:
+  noun:
+    gender: m
+    number: s
+    
+categories: 
   - animal
 ---
 

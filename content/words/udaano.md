@@ -3,12 +3,12 @@ title: उड़ाणो
 transliteration: udaano
 slugurl: udaano
 
-conjugation: 
-  term: उड़ा
-  en: udaa
-  category: verb-ending-in-aa
+grammar: 
+  verb:
+    term: उड़ा
+    trans: udaa
+    ending: aa
 
-grammar: verb
 
 ---
 ## Etymology

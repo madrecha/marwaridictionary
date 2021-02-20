@@ -3,10 +3,11 @@ title: वंचाणो
 transliteration: vanchaano
 slugurl: vanchaano
 
-conjugation: 
-  term: वंचा
-  en: vanchaa
-  category: verb-ending-in-aa
+grammar: 
+  verb:
+    term: वंचा
+    en: vanchaa
+    ending: aa
 
 ---
 ## Etymology

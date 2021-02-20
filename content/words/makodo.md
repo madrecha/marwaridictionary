@@ -3,7 +3,12 @@ title: मकोड़ो
 transliteration: makodo
 slugurl: makodo
 
-category: 
+grammar:
+  noun:
+    gender: m
+    number: s
+
+categories: 
   - insect
 ---
 

@@ -3,12 +3,14 @@ title: कई
 transliteration: kai
 slugurl: kai
 
-category: 
+grammar:
+  adjective:
+  pronoun:
+    type: interrogative
+
+categories: 
+  - 
 ---
-
-## Etymology
-
-## Pronunciation
 
 ## Adjective
 ### Meaning

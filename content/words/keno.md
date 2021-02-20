@@ -3,10 +3,14 @@ title: केणो
 transliteration: keno
 slugurl: keno
 
-conjugation: 
-  term: के
-  en: ke
-  category: verb-ending-in-ae
+grammar:
+  verb:
+    term: के
+    trans: ke
+    ending: ae
+
+categories: 
+  - 
 
 ---
 ## Etymology

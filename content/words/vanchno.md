@@ -3,11 +3,11 @@ title: वंचणो
 transliteration: vanchno
 slugurl: vanchno
 
-conjugation: 
-  term: वंच
-  en: vanch
-
-grammar: verb
+grammar: 
+  verb:
+    term: वंच
+    trans: vanch
+    ending: a
 
 ---
 ## Etymology

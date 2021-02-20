@@ -3,7 +3,12 @@ title: कुत्रो
 transliteration: kutro
 slugurl: kutro
 
-category: 
+grammar:
+  noun:
+    gender: m
+    number: s
+
+categories: 
   - animal
 ---
 

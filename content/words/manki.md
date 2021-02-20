@@ -3,7 +3,12 @@ title: मनकी
 transliteration: manki
 slugurl: manki
 
-category: 
+grammar:
+  noun:
+    gender: f
+    number: s
+    
+categories: 
   - animal
 ---
 

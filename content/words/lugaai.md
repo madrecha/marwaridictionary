@@ -8,7 +8,7 @@ grammar:
     gender: f
     number: s
 
-category: 
+categories: 
   - person
 ---
 

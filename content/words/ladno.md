@@ -3,9 +3,11 @@ title: लड़णो
 transliteration: ladno
 slugurl: ladno
 
-conjugation: 
-  term: लड़
-  en: lad
+grammar: 
+  verb:
+    term: लड़
+    trans: lad
+    ending: a
   
 ---
 ## Etymology

@@ -2,10 +2,11 @@
 title: रो
 transliteration: ro
 slugurl: ro
+
+grammar: 
+  preposition:
 ---
 
-## Etymology
-## Pronunciation
 ## Preposition
 ### Meaning
 1. of (male)

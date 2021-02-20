@@ -3,11 +3,11 @@ title: थाकणो
 transliteration: thaakno
 slugurl: thaakno
 
-conjugation: 
-  term: थाक
-  en: thaak
-
-grammar: verb
+grammar: 
+  verb:
+    term: थाक
+    trans: thaak
+    ending: a
 
 ---
 ## Etymology

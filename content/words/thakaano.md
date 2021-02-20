@@ -3,12 +3,12 @@ title: थकाणो
 transliteration: peeno
 slugurl: peeno
 
-conjugation: 
-  term: थका
-  en: thakaa
-  category: verb-ending-in-aa
+grammar:
+  verb:
+    term: थका
+    trans: thakaa
+    ending: aa
 
-grammar: verb
 
 ---
 ## Etymology

@@ -3,17 +3,20 @@ title: वदणो
 transliteration: vadno
 slugurl: vadno
 
-conjugation: 
-  term: वद
-  en: vad
-
-grammar: verb
+grammar: 
+  verb:
+    term: वद
+    trans: vad
+    ending: a
+    causative:
+      self: 1
+      verb1: वदणो
+      verb2: वदाणो
+      verb3: वदवाणो
 
 ---
-## Etymology
+## Verb
 
-## Pronunciation
-
-## Meaning
+### Meaning
 1. to grow
 2. to increase

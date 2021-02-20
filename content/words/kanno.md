@@ -3,8 +3,12 @@ title: कण्णो
 transliteration: kanno
 slugurl: kanno
 
-category: 
+grammar:
+  pronoun:
+    type: interrogative
 
+categories: 
+  - 
 ---
 
 ## Etymology

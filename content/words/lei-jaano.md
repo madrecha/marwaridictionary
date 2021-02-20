@@ -3,11 +3,13 @@ title: लेई जाणो
 transliteration: lei jaano
 slugurl: lei-jaano
 
-conjugation: 
+grammar: 
   term: लेई जा
   en: lei jaa
-  category: verb-ending-in-aa
+  ending: aa
 
+categories:
+  - verb-phrases-ending-with-जाणो
 ---
 ## Etymology
 

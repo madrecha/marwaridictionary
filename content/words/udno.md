@@ -3,11 +3,11 @@ title: उड़णो
 transliteration: udno
 slugurl: udno
 
-conjugation: 
-  term: उड़
-  en: ud
-
-grammar: verb
+grammar: 
+  verb:
+    term: उड़
+    trans: ud
+    ending: a
 
 ---
 ## Etymology

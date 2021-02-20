@@ -3,10 +3,11 @@ title: ताड़णो
 transliteration: taadno
 slugurl: taadno
 
-conjugation: 
-  type: verb
-  term: ताड़
-  en: taad
+grammar: 
+  verb:
+    term: ताड़
+    trans: taad
+    ending: a
 
 ---
 ## Etymology

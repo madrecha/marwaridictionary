@@ -3,18 +3,13 @@ title: वेणो
 transliteration: veno
 slugurl: veno
 
-conjugation: 
-  type: verb
-  term: वे
-  en: ve
-  category: verb-ending-in-ae
+grammar: 
+  verb:
+    term: वे
+    trans: ve
+    ending: ae
 
 ---
-
-## Etymology
-
-## Pronunciation
-
 
 ## Verb
 ### Meaning

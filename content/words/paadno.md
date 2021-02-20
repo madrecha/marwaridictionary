@@ -6,8 +6,12 @@ slugurl: paadno
 grammar: 
   verb:
     term: पाद
-    en: paad
+    trans: paad
+    ending: a
 
+categories:
+  - informal
+  - slang
 ---
 ## Etymology
 

@@ -3,11 +3,11 @@ title: उगणो
 transliteration: ugno
 slugurl: ugno
 
-conjugation: 
-  term: उग
-  en: ug
-
-grammar: verb
+grammar: 
+  verb:
+    term: उग
+    trans: ug
+    ending: a
 
 ---
 ## Etymology

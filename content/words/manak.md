@@ -3,7 +3,12 @@ title: मनक
 transliteration: manak
 slugurl: manak
 
-category: 
+grammar:
+  noun:
+    gender: m
+    number: s
+
+categories: 
   - person
 ---
 

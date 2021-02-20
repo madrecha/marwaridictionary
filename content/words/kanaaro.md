@@ -3,8 +3,12 @@ title: कणाारो
 transliteration: kanaaro
 slugurl: kanaaro
 
-category: 
+grammar:
+  pronoun:
+    type: interrogative
 
+categories: 
+  - 
 ---
 
 ## Etymology

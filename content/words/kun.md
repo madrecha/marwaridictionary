@@ -3,7 +3,12 @@ title: कुण
 transliteration: kun
 slugurl: kun
 
-category: 
+grammar:
+  pronoun:
+    type: interrogative
+
+categories: 
+  - 
 
 ---
 

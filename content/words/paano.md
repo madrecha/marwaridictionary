@@ -9,8 +9,8 @@ grammar:
     number: s
   verb: 
     term: पा
-    en: paa
-    cat: verb-ending-in-aa
+    trans: paa
+    ending: aa
 
 ---
 ## Verb

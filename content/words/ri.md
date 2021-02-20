@@ -2,10 +2,11 @@
 title: री
 transliteration: ri
 slugurl: ri
----
 
-## Etymology
-## Pronunciation
+grammar:
+  preposition:
+  
+---
 ## Preposition
 ### Meaning
 1. of (female)

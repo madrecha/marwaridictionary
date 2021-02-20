@@ -3,13 +3,14 @@ title: वांदरो
 transliteration: vaandaro
 slugurl: vaandaro
 
-category: 
+grammar:
+  noun:
+    gender: m
+    number: s
+
+categories: 
   - animal
 ---
-
-## Etymology
-
-## Pronunciation
 
 ## Noun
 ### Meaning

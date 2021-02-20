@@ -3,11 +3,14 @@ title: खाणो
 transliteration: khaano
 slugurl: khaano
 
-conjugation: 
-  fos: verb
-  term: खा
-  en: khaa
-  category: verb-ending-in-aa
+grammar: 
+  verb:
+    term: खा
+    trans: khaa
+    ending: aa
+
+categories:
+  - 
 
 ---
 ## Etymology

@@ -3,7 +3,12 @@ title: तेंदुओ
 transliteration: tenduo
 slugurl: tenduo
 
-category: 
+grammar:
+  noun:
+    gender: m
+    number: s
+    
+categories: 
   - mammal
 ---
 

@@ -3,12 +3,11 @@ title: उगाणो
 transliteration: ugaano
 slugurl: ugaano
 
-conjugation: 
-  term: उगा
-  en: ugaa
-  category: verb-ending-in-aa
-
-grammar: verb
+grammar: 
+  verb:
+    term: उगा
+    trans: ugaa
+    ending: aa
 
 ---
 ## Etymology
