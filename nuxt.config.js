@@ -52,6 +52,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     // analyze: false,
+    corejs: 3,
     extractCSS: true,
     filenames: {
       app: ({ isDev, isModern }) => isDev ? `[name]${isModern ? '.modern' : ''}.js` : `[name].[contenthash:7]${isModern ? '.modern' : ''}.js`,
