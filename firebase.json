@@ -67,15 +67,6 @@
             "value": "DENY"
           }
         ]
-      },
-      {
-        "source": "**/*.@(html)",
-        "headers": [
-          {
-            "key": "x-adi",
-            "value": "IamHTML"
-          }
-        ]
       }
     ]
   }
