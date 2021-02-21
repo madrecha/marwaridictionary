@@ -2,6 +2,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  // Create only modern build
+  // Ref: https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-modern
+  modern: true,
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'marwaridictionary',
