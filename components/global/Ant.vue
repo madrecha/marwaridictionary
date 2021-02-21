@@ -15,6 +15,3 @@ export default {
   props: { ant: Array },
 };
 </script>
-
-<style lang="postcss" scoped>
-</style>

@@ -15,6 +15,3 @@ export default {
   props: { syn: Array },
 };
 </script>
-
-<style lang="postcss" scoped>
-</style>
