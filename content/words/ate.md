@@ -18,3 +18,8 @@ categories:
 ## Pronoun
 ### Meaning
 1. here
+
+### Example
+* 
+  Marwari: Ate aav अटे आव 
+  English: Come here
