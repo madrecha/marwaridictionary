@@ -75,7 +75,7 @@ This directory contains all the Marwari words.
 2. For **भगाणो** (to cause to run):
     ```
     causative:
-      self: 1, 
+      self: 2, 
       verb1: 'भागणो' 
       verb1_trans: 'bhaagno'
       verb2: 'भगाणो'
