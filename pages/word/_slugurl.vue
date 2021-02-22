@@ -43,6 +43,12 @@ export default {
       .where({ title: this.$route.params.slugurl })
       .fetch();
   },
+  activated() {
+    // Call fetch again if last fetch more than a minute ago
+    if (this.$fetchState.timestamp <= Date.now() - 60000) {
+      this.$fetch();
+    }
+  },
 };
 </script>
 
