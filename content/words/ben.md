@@ -4,10 +4,11 @@ transliteration: ben
 slugurl: ben
 
 grammar: 
+  word: बेन
   noun:
-    word: बेन
-    term: बेन
     ending: a
+    term: बेन
+    trans: ben
     gender: f
     number: s
 

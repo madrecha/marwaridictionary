@@ -4,7 +4,11 @@ transliteration: janaavar
 slugurl: janaavar
 
 grammar: 
+  word: जनावर
   noun:
+    ending: a
+    term: जनावर
+    trans: janaavar
     gender: m
     number: s
     
@@ -20,3 +24,6 @@ categories:
 ### Meaning
 1. animal
 2. monster
+
+### Declension
+<noun-decl :grammar="grammar"></noun-decl>

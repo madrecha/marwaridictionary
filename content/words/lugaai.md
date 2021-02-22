@@ -4,7 +4,11 @@ transliteration: lugaai
 slugurl: lugaai
 
 grammar: 
+  word: लुगाई
   noun:
+    term: लुगा
+    ending: ii-vowel
+    trans: luga
     gender: f
     number: s
 
@@ -23,3 +27,6 @@ categories:
 1. woman
 2. wife
 3. female
+
+### Declension
+<noun-decl :grammar="grammar"></noun-decl>

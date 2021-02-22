@@ -4,7 +4,11 @@ transliteration: ghar
 slugurl: ghar
 
 grammar:
+  word: घर
   noun:
+    ending: a
+    term: घर
+    trans: ghar
     gender: m
     number: s
 
