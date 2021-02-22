@@ -1,7 +1,7 @@
 ---
 title: उगणो
-transliteration: ugno
-slugurl: ugno
+transliteration: ugano
+slugurl: उगणो
 
 grammar: 
   verb:
