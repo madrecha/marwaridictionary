@@ -6,20 +6,15 @@ slugurl: ate
 grammar: 
   pronoun:
 
+examples:
+  - eg: अटे आव
+    en: Come here
+
 categories:
   - 
 ---
 
-## Etymology
-
-## Pronunciation
-
-
 ## Pronoun
 ### Meaning
 1. here
-
-### Example
-* 
-  Marwari: Ate aav अटे आव 
-  English: Come here
+		<eg :eg="examples"></eg>
