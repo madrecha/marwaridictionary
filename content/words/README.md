@@ -158,8 +158,86 @@ examples3:
 ```
 
 
-## Helpful-content-matter
+## Helpful Examples
 
+### Noun - basic
+
+```
+---
+title: मनक
+transliteration: manak
+slugurl: मनक
+
+---
+
+## Noun
+### Meaning
+1. man
+2. person
+
+```
+
+### Noun - with grammar
+
+```
+---
+title: मनक
+transliteration: manak
+slugurl: मनक
+
+grammar:
+  noun:
+    gender: m
+    number: s
+
+---
+
+## Noun
+### Meaning
+1. man
+2. person
+
+```
+### Verb - basic
+
+```
+---
+title: फदकणो
+transliteration: fadakno
+slugurl: फदकणो
+
+---
+
+## Verb
+### Meaning
+1. To jump excitedly
+
+```
+
+### Verb - with grammar and conjugation
+
+```
+---
+title: फदकणो
+transliteration: fadakno
+slugurl: फदकणो
+
+grammar: 
+  verb:
+    term: फदक
+    trans: fadak
+    ending: a
+
+---
+
+## Verb
+### Meaning
+1. To jump excitedly
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>
+
+```
 ### Only Verb
 
 ```
