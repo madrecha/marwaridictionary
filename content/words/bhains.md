@@ -5,6 +5,10 @@ slugurl: bhains
 
 grammar: 
   noun:
+    word: भैंस
+    ending: a
+    term: भैंस
+    trans: bhains
     gender: m
     number: s
 
@@ -12,10 +16,9 @@ categories:
   - animal
 ---
 
-## Etymology
-
-## Pronunciation
-
 ## Noun
 ### Meaning
 1. buffalo
+
+### Declension
+<noun-decl :grammar="grammar"></noun-decl>

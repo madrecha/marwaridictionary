@@ -8,12 +8,15 @@ grammar:
     gender: m
     number: s
   noun:
+    word: अंधो
+    ending: o
+    term: अंध
+    trans: andh
     gender: m
+    gender_f: अंधी
+    gender_f_trans: andhi
     number: s
 ---
-
-## Etymology
-## Pronunciation
 
 ## Adjective
 ### Meaning
@@ -22,3 +25,6 @@ grammar:
 ## Noun
 ### Meaning
 1. blind person
+
+### Declension
+<noun-decl :grammar="grammar"></noun-decl>

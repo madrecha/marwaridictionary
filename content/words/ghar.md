@@ -21,3 +21,6 @@ syn:
 
 ### Synonym
 <syn :syn="syn"></syn>
+
+### Declension
+<noun-decl :grammar="grammar"></noun-decl>
