@@ -8,7 +8,7 @@ grammar:
   noun:
     term: लुगा
     ending: ii-vowel
-    trans: luga
+    trans: lugaa
     gender: f
     number: s
 

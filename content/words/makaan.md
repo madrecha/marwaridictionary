@@ -4,7 +4,11 @@ transliteration: makaan
 slugurl: makaan
 
 grammar: 
+  word: मकान
   noun:
+    ending: a
+    term: मकान
+    trans: makaan
     gender: m
     number: s
 
@@ -26,3 +30,6 @@ syn:
 
 ### Synonym
 <syn :syn="syn"></syn>
+
+### Declension
+<noun-decl :grammar="grammar"></noun-decl>

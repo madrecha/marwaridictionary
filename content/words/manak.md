@@ -4,7 +4,11 @@ transliteration: manak
 slugurl: manak
 
 grammar:
+  word: मनक
   noun:
+    ending: a
+    term: मनक
+    trans: manak
     gender: m
     number: s
 
@@ -20,3 +24,6 @@ categories:
 ### Meaning
 1. person
 2. man
+
+### Declension
+<noun-decl :grammar="grammar"></noun-decl>
