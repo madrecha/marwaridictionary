@@ -5,7 +5,7 @@ slugurl: लगाणो
 
 grammar:
   verb:
-    term:लगा
+    term: लगा
     trans: lagaa
     ending: aa
     causative:
