@@ -4,7 +4,7 @@
       <p
         class="tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
       >
-        Fetching words...💖 Wait
+        Fetching words...💖 Wait for a few seconds 😊
       </p>
     </div>
     <div v-else>
@@ -45,6 +45,12 @@ export default {
       //   .where({ slugurl: this.$route.params.slugurl })
       .sortBy("title")
       .fetch();
+  },
+  activated() {
+    // Call fetch again if last fetch more than 15 min ago
+    if (this.$fetchState.timestamp <= Date.now() - 1500000) {
+      this.$fetch();
+    }
   },
 };
 </script>
