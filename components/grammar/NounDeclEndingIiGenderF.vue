@@ -1,38 +1,70 @@
 <template>
-  <table>
-    <thead>
-      <th colspan="3">
-        Marwari declension of noun → {{ term }}ी ( {{ trans }}ī)
-      </th>
-    </thead>
-    <tbody>
-      <tr>
-        <th></th>
-        <th class="noun-number">singular</th>
-        <th class="noun-number">plural</th>
-      </tr>
-      <tr>
-        <th class="noun-case">direct</th>
-        <td>{{ term }}ी<br />{{ trans }}ī</td>
-        <td>{{ term }}ियाँ <br />{{ trans }}iyā̃</td>
-      </tr>
-      <tr>
-        <th class="noun-case">oblique</th>
-        <td>{{ term }}ी <br />{{ trans }}ī</td>
-        <td>{{ term }}ियाँ <br />{{ trans }}iyā̃</td>
-      </tr>
-      <tr>
-        <th class="noun-case">vocative</th>
-        <td>{{ term }}ी <br />{{ trans }}ī</td>
-        <td>{{ term }}िया <br />{{ trans }}iyā</td>
-      </tr>
-    </tbody>
-  </table>
+  <div>
+    <table v-if="grammar.noun.ending === 'ii'">
+      <thead>
+        <th colspan="3">
+          Marwari declension of noun → {{ term }}ी ( {{ trans }}ī)
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <th></th>
+          <th class="noun-number">singular</th>
+          <th class="noun-number">plural</th>
+        </tr>
+        <tr>
+          <th class="noun-case">direct</th>
+          <td>{{ term }}ी<br />{{ trans }}ī</td>
+          <td>{{ term }}ियाँ <br />{{ trans }}iyā̃</td>
+        </tr>
+        <tr>
+          <th class="noun-case">oblique</th>
+          <td>{{ term }}ी <br />{{ trans }}ī</td>
+          <td>{{ term }}ियाँ <br />{{ trans }}iyā̃</td>
+        </tr>
+        <tr>
+          <th class="noun-case">vocative</th>
+          <td>{{ term }}ी <br />{{ trans }}ī</td>
+          <td>{{ term }}िया <br />{{ trans }}iyā</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table v-if="grammar.noun.ending === 'ii-vowel'">
+      <thead>
+        <th colspan="3">
+          Marwari declension of noun → {{ term }}ई ( {{ trans }}ī)
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <th></th>
+          <th class="noun-number">singular</th>
+          <th class="noun-number">plural</th>
+        </tr>
+        <tr>
+          <th class="noun-case">direct</th>
+          <td>{{ term }}ई<br />{{ trans }}ī</td>
+          <td>{{ term }}इयाँ <br />{{ trans }}iyā̃</td>
+        </tr>
+        <tr>
+          <th class="noun-case">oblique</th>
+          <td>{{ term }}ई <br />{{ trans }}ī</td>
+          <td>{{ term }}इयाँ <br />{{ trans }}iyā̃</td>
+        </tr>
+        <tr>
+          <th class="noun-case">vocative</th>
+          <td>{{ term }}ई <br />{{ trans }}ī</td>
+          <td>{{ term }}इया <br />{{ trans }}iyā</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <script>
 export default {
-  props: { term: String, trans: String },
+  props: { term: String, trans: String, grammar: Object },
   data() {
     return {};
   },

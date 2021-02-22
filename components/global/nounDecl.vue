@@ -14,9 +14,13 @@
       :trans="grammar.noun.trans"
     ></NounDeclEndingAGenderM>
     <NounDeclEndingIiGenderF
-      v-if="grammar.noun.ending === 'ii' && grammar.noun.gender === 'f'"
+      v-if="
+        (grammar.noun.ending === 'ii' || grammar.noun.ending === 'ii-vowel') &&
+        grammar.noun.gender === 'f'
+      "
       :term="grammar.noun.term"
       :trans="grammar.noun.trans"
+      :grammar="grammar"
     ></NounDeclEndingIiGenderF>
     <NounDeclEndingAGenderF
       v-if="grammar.noun.ending === 'a' && grammar.noun.gender === 'f'"
