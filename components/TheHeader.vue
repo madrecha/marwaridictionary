@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tw-flex tw-items-center tw-justify-center tw-bg-gradient-to-br tw-from-white tw-to-blue-50"
+    class="tw-sticky tw-top-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-bg-gradient-to-br tw-from-white tw-to-blue-50"
   >
     <div class="tw-w-1/2 sm:tw-w-1/3">
       <p
