@@ -1,25 +1,34 @@
 <template>
   <div class="tw-mt-3">
-    <h1 class="tw-text-center tw-text-2xl">
-      {{ words.length }} Marwari words added till now
-    </h1>
-    <div class="tw-mt-3">
-      <ul class="tw-flex tw-flex-wrap">
-        <li
-          v-for="word in words"
-          :key="word.slugurl"
-          class="tw-m-2 hover:tw-bg-blue-50 tw-text-center"
-        >
-          <nuxt-link
-            :to="`/word/${word.title}`"
-            class="tw-py-2 tw-text-lg tw-text-center"
+    <div v-if="$fetchState.pending" class="tw-my-20">
+      <p
+        class="tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+      >
+        Fetching words...💖 Wait
+      </p>
+    </div>
+    <div v-else>
+      <h1 class="tw-text-center tw-text-2xl">
+        {{ words.length }} Marwari words added till now
+      </h1>
+      <div class="tw-mt-3">
+        <ul class="tw-flex tw-flex-wrap">
+          <li
+            v-for="word in words"
+            :key="word.slugurl"
+            class="tw-m-2 hover:tw-bg-blue-50 tw-text-center"
           >
-            {{ word.title }}<br /><span class="tw-text-sm">
-              {{ word.transliteration }}
-            </span>
-          </nuxt-link>
-        </li>
-      </ul>
+            <nuxt-link
+              :to="`/word/${word.title}`"
+              class="tw-py-2 tw-text-lg tw-text-center"
+            >
+              {{ word.title }}<br /><span class="tw-text-sm">
+                {{ word.transliteration }}
+              </span>
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
