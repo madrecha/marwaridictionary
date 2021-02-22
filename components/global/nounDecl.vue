@@ -1,40 +1,45 @@
 <template>
-  <div>
-    <table>
-      <thead>
-        <th colspan="8">
-          Marwari declension of noun → {{ term }}णो ( {{ trans }}ṇo)
-        </th>
-
-        <tr>
-          <th rowspan="3" colspan="2">Person</th>
-          <th colspan="3">Singular</th>
-          <th colspan="3">Plural</th>
-        </tr>
-        <tr>
-          <th>1<sup>st</sup> person</th>
-          <th>2<sup>nd</sup> person</th>
-          <th>3<sup>rd</sup> person</th>
-          <th>1<sup>st</sup> person</th>
-          <th>2<sup>nd</sup> person</th>
-          <th>3<sup>rd</sup> person</th>
-        </tr>
-        <tr>
-          <th>मूं</th>
-          <th>थूं</th>
-          <th>यो/वो/या/वा</th>
-          <th>आपा/मां</th>
-          <th>थां</th>
-          <th>ये/वे/आप</th>
-        </tr>
-      </thead>
-    </table>
+  <div
+    v-if="grammar.noun.term"
+    class="tw-max-w-xs tw-overflow-x-scroll sm:tw-overflow-x-auto sm:tw-max-w-full"
+  >
+    <NounDeclEndingOGenderM
+      v-if="grammar.noun.ending === 'o' && grammar.noun.gender === 'm'"
+      :term="grammar.noun.term"
+      :trans="grammar.noun.trans"
+    ></NounDeclEndingOGenderM>
+    <NounDeclEndingAGenderM
+      v-if="grammar.noun.ending === 'a' && grammar.noun.gender === 'm'"
+      :term="grammar.noun.term"
+      :trans="grammar.noun.trans"
+    ></NounDeclEndingAGenderM>
+    <NounDeclEndingIiGenderF
+      v-if="grammar.noun.ending === 'ii' && grammar.noun.gender === 'f'"
+      :term="grammar.noun.term"
+      :trans="grammar.noun.trans"
+    ></NounDeclEndingIiGenderF>
+    <NounDeclEndingAGenderF
+      v-if="grammar.noun.ending === 'a' && grammar.noun.gender === 'f'"
+      :term="grammar.noun.term"
+      :trans="grammar.noun.trans"
+    ></NounDeclEndingAGenderF>
   </div>
 </template>
 
 <script>
+import NounDeclEndingOGenderM from "../grammar/NounDeclEndingOGenderM.vue";
+import NounDeclEndingAGenderM from "../grammar/NounDeclEndingAGenderM";
+import NounDeclEndingIiGenderF from "../grammar/NounDeclEndingIiGenderF.vue";
+import NounDeclEndingAGenderF from "../grammar/NounDeclEndingAGenderF.vue";
+
 export default {
   props: { grammar: Object },
+  components: {
+    NounDeclEndingOGenderM,
+    NounDeclEndingIiGenderF,
+    NounDeclEndingAGenderM,
+    NounDeclEndingAGenderF,
+  },
   data() {
     return {
       term: "",
