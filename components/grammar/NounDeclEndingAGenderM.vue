@@ -19,7 +19,7 @@
       <tr>
         <th class="noun-case">oblique</th>
         <td>{{ term }} <br />{{ trans }}</td>
-        <td>{{ term }}<br />{{ trans }}</td>
+        <td>{{ term }}ा<br />{{ trans }}ā</td>
       </tr>
       <tr>
         <th class="noun-case">vocative</th>
