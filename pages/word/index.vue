@@ -12,7 +12,12 @@
         {{ words.length }} Marwari words added till now
       </h1>
       <div class="tw-mt-3">
-        <ul class="tw-flex tw-flex-wrap">
+        <p class="tw-text-center">
+          {{ nouns.length }} nouns, {{ verbs.length }} verbs,
+          {{ words.length - nouns.length - verbs.length }} others =
+          {{ words.length }} words
+        </p>
+        <ul class="tw-mt-3 tw-flex tw-flex-wrap">
           <li
             v-for="word in words"
             :key="word.slugurl"
@@ -23,7 +28,24 @@
               class="tw-py-2 tw-text-lg tw-text-center"
             >
               {{ word.title }}<br /><span class="tw-text-sm">
-                {{ word.transliteration }}
+                {{ word.transliteration }} <br />
+                <span
+                  v-if="word.grammar"
+                  :class="
+                    word.grammar.noun
+                      ? 'tw-text-pink-500'
+                      : word.grammar.verb
+                      ? 'tw-text-blue-500'
+                      : 'tw-text-gray-500'
+                  "
+                  >{{
+                    word.grammar.noun
+                      ? "noun"
+                      : word.grammar.verb
+                      ? "verb"
+                      : "others"
+                  }}</span
+                >
               </span>
             </nuxt-link>
           </li>
@@ -38,6 +60,8 @@ export default {
   data() {
     return {
       words: [],
+      nouns: [],
+      verbs: [],
     };
   },
   async fetch() {
@@ -45,6 +69,22 @@ export default {
       //   .where({ slugurl: this.$route.params.slugurl })
       .sortBy("title")
       .fetch();
+
+    this.nouns = this.words.filter((word) => {
+      if (word.grammar && word.grammar.noun) {
+        for (let key in word.grammar) {
+          return (key = "noun");
+        }
+      }
+    });
+
+    this.verbs = this.words.filter((word) => {
+      if (word.grammar && word.grammar.verb) {
+        for (let key in word.grammar) {
+          return (key = "verb");
+        }
+      }
+    });
   },
   activated() {
     // Call fetch again if last fetch more than 15 min ago
