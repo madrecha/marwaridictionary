@@ -2,8 +2,8 @@
   <table id="verb-conjugation">
     <thead>
       <th colspan="8">
-          Marwari conjugation of verb → {{ term }}णो ( {{ trans }}ṇo)
-        </th>
+        Marwari conjugation of verb → {{ term }}णो ( {{ trans }}ṇo)
+      </th>
 
       <tr>
         <th rowspan="3" colspan="2">Person</th>
