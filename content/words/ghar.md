@@ -8,6 +8,11 @@ grammar:
     gender: m
     number: s
 
+categories:
+  - 
+
+syn: 
+  - मकान
 ---
 ## Noun
 ### Meaning
@@ -15,4 +20,4 @@ grammar:
 2. home
 
 ### Synonym
-<syn :syn="['मकान']"></syn>
+<syn :syn="syn"></syn>

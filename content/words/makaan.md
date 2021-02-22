@@ -7,6 +7,11 @@ grammar:
   noun:
     gender: m
     number: s
+
+syn:
+  - घर
+  - गृह
+
 ---
 
 ## Etymology
@@ -20,4 +25,4 @@ grammar:
 2. home
 
 ### Synonym
-<syn :syn="['घर', 'गृह']"></syn>
+<syn :syn="syn"></syn>
