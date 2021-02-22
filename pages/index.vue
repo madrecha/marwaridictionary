@@ -20,10 +20,12 @@
           Learn Marwari language
         </h2>
       </div>
-      <div class="tw-mt-16 sm:tw-mt-16 tw-border-t-2 tw-border-pink-900">
+      <div
+        class="tw-mt-16 sm:tw-mt-16 tw-border-t-4 tw-border-dashed tw-border-blue-800"
+      >
         <nuxt-link
           to="/word"
-          class="tw-p-6 tw-rounded tw-text-white tw-font-medium tw-bg-gradient-to-br tw-from-pink-500 tw-to-pink-700 hover:tw-from-white hover:tw-to-pink-100 hover:tw-shadow-2xl hover:tw-border hover:tw-border-pink-900 hover:tw-text-pink-800 tw-text-xl"
+          class="tw-p-6 tw-rounded-xl tw-text-white tw-font-medium tw-bg-gradient-to-br tw-from-pink-500 tw-to-pink-700 hover:tw-from-white hover:tw-to-pink-100 hover:tw-shadow-2xl tw-border-t-2 hover:tw-border-pink-200 hover:tw-text-pink-800 tw-text-xl"
           >Browse Marwari Words</nuxt-link
         >
       </div>
