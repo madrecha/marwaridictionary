@@ -1,7 +1,7 @@
 ---
 title: देवाणणो
 transliteration: devaanano
-slugurl: devaano
+slugurl: devaanano
 
 grammar: 
   verb:
