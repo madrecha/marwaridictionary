@@ -14,9 +14,24 @@
     </div>
     <div v-else>
       <article v-for="word in words" :key="word.slugurl">
-        <h1 class="tw-text-3xl tw-text-pink-800 tw-text-center tw-font-medium">
-          {{ word.title }} ({{ word.transliteration }}) meaning in Marwari
-        </h1>
+        <div class="tw-text-center">
+          <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">
+            {{ word.title }}
+            <span class="tw-capitalize">{{ word.transliteration }}</span>
+            meaning in Marwari
+          </h1>
+          <p
+            class="tw-max-w-2xl tw-mx-auto tw-text-sm tw-text-gray-500 tw-lowercase"
+          >
+            {{ word.title }} का मारवाड़ी अर्थ, {{ word.transliteration }} Marwari
+            meaning, {{ word.transliteration }} ka Marwari arth, meaning of
+            {{ word.transliteration }} in Marwari, {{ word.title }} का मारवाड़ी
+            भाषा में अर्थ, {{ word.title }} का मेवाड़ी अर्थ, {{ word.title }} का
+            मेवाड़ी भाषा में अर्थ, {{ word.transliteration }} ka Mewari arth,
+            {{ word.title }} ka Mewari bhasha mein arth,
+            {{ word.transliteration }} का मेवाड़ी अर्थ
+          </p>
+        </div>
         <NuxtContent :document="word"></NuxtContent>
         <MaintenanceCategories :word="word"></MaintenanceCategories>
       </article>
