@@ -12,10 +12,10 @@ grammar:
 		ending: uu
 		term: जमक
 		trans: jamk
-		gender: m-f
-		number: s-p
+		gender: m
+		number: s
 		type: 
-			- proper-noun
+			- "proper-noun"
 
 ---
 
