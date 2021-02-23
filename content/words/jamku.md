@@ -6,8 +6,8 @@ slugurl: जमकू
 grammar:
 	word: जमकू
 	adjective:
-		gender: m
-		number: s
+		# gender: m
+		# number: s
 	noun: 
 		ending: uu
 		term: जमक
