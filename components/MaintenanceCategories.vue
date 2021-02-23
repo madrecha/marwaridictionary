@@ -84,14 +84,32 @@
         </ul>
       </div>
     </div>
+    <div v-if="word.meanings" class="tw-mt-2 tw-border-t tw-border-green-800">
+      Words with meanings in Frontmatter,
+      <span v-if="word.meanings.length > 1"></span> Words with multiple meanings
+    </div>
     <div v-if="word.examples" class="tw-mt-2 tw-border-t tw-border-green-800">
       Words with examples, Words with {{ word.examples.length }} example{{
         word.examples.length > 1 ? "s" : ""
-      }}
+      }}, Words with examples outside the Meaning component
     </div>
-    <div v-if="word.ant || word.syn">
-      <span v-if="word.ant">Words with Antonyms</span>,
-      <span v-if="word.syn">Words with Synonyms</span>
+
+    <div
+      v-if="word.antonyms || word.ants"
+      class="tw-mt-2 tw-border-t tw-border-green-800"
+    >
+      Words with Antonyms
+    </div>
+    ,
+    <div
+      v-if="word.synonyms || word.syns"
+      class="tw-mt-2 tw-border-t tw-border-green-800"
+    >
+      Words with Synonyms
+    </div>
+    <div v-if="word.related" class="tw-mt-2 tw-border-t tw-border-green-800">
+      Words with related terms, Words with related terms outside Meaning
+      component
     </div>
     <div v-if="word.categories" class="tw-mt-2 tw-border-t tw-border-green-800">
       <span v-if="word.categories.length > 0"
