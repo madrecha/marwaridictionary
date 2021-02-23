@@ -17,45 +17,6 @@ grammar:
     ending: aa
     type: intransitive
 
-word:
-  title: जाणो
-  fos: 
-    - fostype: verb
-      meanings:
-        - meaning: to <span class="tw-text-blue-800">go</span>
-          examples: 
-            - eg: कटे जाई रो है?
-              en: Where are you going?
-            - eg: थारे कधी जाणो है?
-              en: When are you supposed to go?
-          synonyms:
-            - syn: जाणो परो
-              slugurl: जाणो-परो
-            - syn: एक और
-              slugurl: एक-और
-            - syn: oneword
-          antonyms:
-            - ant: आणो
-            - ant: वापिस आणो
-              slugurl: वापिस-आणो
-        - meaning: to die
-          examples:
-            - eg: एक दन तो सब ने इस जाणो है।
-              en: One day everyone has to go.
-      grammar:
-        term: जा
-        trans: jaa
-        ending: aa
-        type: intransitive
-    - fostype: noun
-      meanings:
-        - meaning: abc
-      grammar:
-        ending: o
-        term: जाण
-        trans: jaan
-        gender: m
-
 meanings:
   - meaning: to <span class="tw-text-blue-800">go</span>
     examples: 
@@ -131,8 +92,6 @@ topics:
   - 
 
 ---
-
-<!-- <all :word="word" :meta="url"></all> -->
 
 ## Noun
 <fos :grammar="grammar" :url="url"></fos>
