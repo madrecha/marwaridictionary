@@ -1,6 +1,6 @@
 <template>
   <div class="tw-mx-auto">
-    <div id="first-section" class="tw-text-center tw-mt-2">
+    <div id="first-section" class="tw-text-center tw-mt-3">
       <div
         class="tw-pb-20 tw-border-b-2 tw-border-dashed tw-border-blue-800 tw-bg-gradient-to-br tw-from-white tw-via-white tw-to-pink-50"
       >
