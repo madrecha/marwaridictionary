@@ -91,8 +91,9 @@ export default {
   },
   async fetch() {
     this.words = await this.$content("words")
+      .where({ slug: { $ne: "README" } })
       .without(["body", "toc"])
-      .sortBy("title")
+      .sortBy("transliteration")
       .fetch();
 
     this.nouns = this.words.filter((word) => {
