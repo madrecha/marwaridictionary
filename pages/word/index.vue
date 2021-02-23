@@ -41,14 +41,14 @@
             "
           >
             <nuxt-link
-              v-if="word.url && word.url.title"
-              :to="`/word/${word.url.title}`"
+              v-if="word.url && word.url.slugurl"
+              :to="`/word/${word.url.slugurl}`"
               class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
             >
               <div
-                class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-yellow-50 tw-text-gray-600"
+                class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-text-blue-900 md:tw-text-xl"
               >
-                <b>{{ word.url.title }}</b>
+                {{ word.url.title }}
               </div>
               <div class="sm:tw-w-1/2">
                 <div class="tw-text-sm">
