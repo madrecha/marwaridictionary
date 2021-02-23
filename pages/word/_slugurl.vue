@@ -1,6 +1,6 @@
 <template>
   <div class="tw-mt-3">
-    <div v-if="$fetchState.pending" class="tw-my-20">
+    <div v-if="$fetchState.pending" class="tw-min-h-screen tw-my-48">
       <p
         class="tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
       >
