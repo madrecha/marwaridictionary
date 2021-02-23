@@ -6,7 +6,7 @@
       keep-alive
       :keep-alive-props="{ max: 10 }"
     ></Nuxt>
-    <TheFooter v-if="showFooter"></TheFooter>
+    <TheFooter></TheFooter>
   </div>
 </template>
 
@@ -14,19 +14,19 @@
 export default {
   data() {
     return {
-      showFooter: false,
+      // showFooter: false,
     };
   },
-  methods: {
-    showElements() {
-      this.showFooter =
-        pageYOffset > 20 ||
-        document.documentElement.clientHeight < 900 ||
-        screen.width > 768;
-    },
-  },
-  mounted() {
-    window.addEventListener("pageshow", this.showElements);
-  },
+  // methods: {
+  //   showElements() {
+  //     this.showFooter =
+  //       pageYOffset > 20 ||
+  //       document.documentElement.clientHeight < 900 ||
+  //       screen.width > 768;
+  //   },
+  // },
+  // mounted() {
+  //   window.addEventListener("pageshow", this.showElements);
+  // },
 };
 </script>
