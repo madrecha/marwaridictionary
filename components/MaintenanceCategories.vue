@@ -55,13 +55,33 @@
 
       <div v-if="word.grammar.verb">
         <span class="fos">Verb</span> →
-        {{
-          word.grammar.verb.ending === "a"
-            ? "Verbs ending with 'a'"
-            : word.grammar.verb.ending === "aa"
-            ? "Verbs ending with 'aa'"
-            : ""
-        }}
+        <ul>
+          <li>
+            {{
+              word.grammar.verb.ending === "a"
+                ? "Verbs ending with 'a'"
+                : word.grammar.verb.ending === "aa"
+                ? "Verbs ending with 'aa'"
+                : word.grammar.verb.ending === "ae"
+                ? "Verbs ending with 'ae'"
+                : ""
+            }}
+          </li>
+
+          <li v-if="word.grammar.verb.causative">
+            Verbs with causative forms → Verbs of
+            <span v-if="word.grammar.verb.causative.self === 1"
+              >1<sup>st</sup>
+            </span>
+            <span v-if="word.grammar.verb.causative.self === 2"
+              >2<sup>nd</sup></span
+            >
+            <span v-if="word.grammar.verb.causative.self === 3"
+              >3<sup>rd</sup></span
+            >
+            causative form
+          </li>
+        </ul>
       </div>
     </div>
     <div v-if="word.examples" class="tw-mt-2 tw-border-t tw-border-green-800">
@@ -73,11 +93,10 @@
       <span v-if="word.ant">Words with Antonyms</span>,
       <span v-if="word.syn">Words with Synonyms</span>
     </div>
-    <div
-      v-if="word.categories && word.categories.length > 0"
-      class="tw-mt-2 tw-border-t tw-border-green-800"
-    >
-      Words with Topics assigned
+    <div v-if="word.categories" class="tw-mt-2 tw-border-t tw-border-green-800">
+      <span v-if="word.categories.length > 0"
+        >Words with {{ word.categories.length }} Topics assigned</span
+      >
     </div>
   </div>
 </template>
