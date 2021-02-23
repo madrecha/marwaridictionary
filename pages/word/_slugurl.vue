@@ -55,11 +55,11 @@ export default {
   },
   async fetch() {
     this.words = await this.$content("words")
-      .where({ title: this.$route.params.slugurl })
+      .where({ slugurl: this.$route.params.slugurl })
       .fetch();
   },
   activated() {
-    // Call fetch again if last fetch more than 15 min ago
+    // Call fetch again if last fetch more than 9 min ago
     if (this.$fetchState.timestamp <= Date.now() - 1500000) {
       this.$fetch();
     }

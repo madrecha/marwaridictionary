@@ -41,7 +41,7 @@
             "
           >
             <nuxt-link
-              :to="`/word/${word.title}`"
+              :to="`/word/${word.slugurl}`"
               class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
             >
               <div
