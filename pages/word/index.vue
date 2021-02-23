@@ -91,7 +91,7 @@ export default {
   },
   async fetch() {
     this.words = await this.$content("words")
-      //   .where({ slugurl: this.$route.params.slugurl })
+      .without(["body", "toc"])
       .sortBy("title")
       .fetch();
 
