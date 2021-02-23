@@ -1,7 +1,7 @@
 ---
 title: फदकणो
 transliteration: fadakno
-slugurl: fadakno
+slugurl: फदकणो
 
 grammar: 
   verb:
