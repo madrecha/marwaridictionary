@@ -2,16 +2,16 @@
   <div>
     <table id="verb-conjugation">
       <thead>
-        <th colspan="8">
+        <th colspan="8" @click.prevent="showAll = !showAll">
           Marwari conjugation of verb → {{ term }}णो ( {{ trans }}ṇo)
         </th>
 
-        <tr>
+        <tr v-show="showAll">
           <th rowspan="3" colspan="2">Person</th>
           <th colspan="3">Singular</th>
           <th colspan="3">Plural</th>
         </tr>
-        <tr>
+        <tr v-show="showAll">
           <th>1<sup>st</sup> person</th>
           <th>2<sup>nd</sup> person</th>
           <th>3<sup>rd</sup> person</th>
@@ -19,7 +19,7 @@
           <th>2<sup>nd</sup> person</th>
           <th>3<sup>rd</sup> person</th>
         </tr>
-        <tr>
+        <tr v-show="showAll">
           <th>मूं</th>
           <th>थूं</th>
           <th>यो/वो/या/वा</th>
@@ -28,7 +28,7 @@
           <th>ये/वे/आप</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody v-show="showAll">
         <tr
           @click.prevent="showPerfective = !showPerfective"
           class="verb-category"
@@ -429,7 +429,7 @@ export default {
   data() {
     return {
       showAll: false,
-      showPerfective: true,
+      showPerfective: false,
       showImperfective: false,
       showContinuous: false,
       showNonaspectual: false,

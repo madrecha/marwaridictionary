@@ -2,11 +2,11 @@
   <div>
     <table v-if="grammar.noun.ending === 'ii'">
       <thead>
-        <th colspan="3">
+        <th colspan="3" @click.prevent="showAll = !showAll">
           Marwari declension of noun → {{ term }}ी ( {{ trans }}ī)
         </th>
       </thead>
-      <tbody>
+      <tbody v-show="showAll">
         <tr>
           <th></th>
           <th class="noun-number">singular</th>
@@ -32,11 +32,11 @@
 
     <table v-if="grammar.noun.ending === 'ii-vowel'">
       <thead>
-        <th colspan="3">
+        <th colspan="3" @click.prevent="showAll = !showAll">
           Marwari declension of noun → {{ term }}ई ( {{ trans }}ī)
         </th>
       </thead>
-      <tbody>
+      <tbody v-show="showAll">
         <tr>
           <th></th>
           <th class="noun-number">singular</th>
@@ -66,7 +66,7 @@
 export default {
   props: { term: String, trans: String, grammar: Object },
   data() {
-    return {};
+    return { showAll: false };
   },
 };
 </script>

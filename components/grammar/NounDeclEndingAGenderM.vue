@@ -1,11 +1,11 @@
 <template>
   <table>
     <thead>
-      <th colspan="3">
+      <th colspan="3" @click.prevent="showAll">
         Marwari declension of noun → {{ term }} ( {{ trans }})
       </th>
     </thead>
-    <tbody>
+    <tbody v-show="showAll">
       <tr>
         <th></th>
         <th class="noun-number">singular</th>
@@ -34,7 +34,9 @@
 export default {
   props: { term: String, trans: String },
   data() {
-    return {};
+    return {
+      showAll: false,
+    };
   },
 };
 </script>

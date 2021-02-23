@@ -1,7 +1,7 @@
 <template>
   <table id="verb-conjugation">
     <thead>
-      <th colspan="8">
+      <th colspan="8" @click.prevent="showAll = !showAll">
         Marwari conjugation of verb → {{ term }}णो ( {{ trans }}ṇo)
       </th>
 
@@ -27,7 +27,7 @@
         <th>ये/वे/आप</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody v-show="showAll">
       <tr
         @click.prevent="showPerfective = !showPerfective"
         class="verb-category"
