@@ -1,7 +1,7 @@
 <template>
   <table>
     <thead>
-      <th colspan="3" @click.prevent="showAll">
+      <th colspan="3" @click.prevent="showAll = !showAll">
         Marwari declension of noun → {{ term }} ( {{ trans }})
       </th>
     </thead>
