@@ -1,17 +1,17 @@
 ---
-title: कीड़ो
+title: कीड़ी
 transliteration: keedo
-slugurl: कीड़ो
+slugurl: कीड़ी
 
 grammar:
-  word: कीड़ो
+  word: कीड़ी
   noun:
-    ending: o
+    ending: ii
     term: कीड़
     trans: keed
-    gender: m
-    gender_f: कीड़ी
-    gender_f_trans: keedi
+    gender: f
+    gender_m: कीड़ो
+    gender_m_trans: keedo
     number: s
 
 categories: 
@@ -24,7 +24,8 @@ categories:
 
 ## Noun
 ### Meaning
-1. insect
+1. ant
+2. female insect
 
 ### Declension
 <noun-decl :grammar="grammar"></noun-decl>
