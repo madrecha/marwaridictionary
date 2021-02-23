@@ -4,10 +4,14 @@ transliteration: bhaagno
 slugurl: bhaagno
 
 grammar: 
+  word: भागणो
   verb:
     term: भाग
+    trans: bhaag
     en: bhaag
     ending: a
+    type: 
+      - intransitive
 
 categories:
   - 
