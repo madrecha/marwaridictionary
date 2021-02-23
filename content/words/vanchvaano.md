@@ -1,15 +1,15 @@
 ---
-title: वंचाणो
-transliteration: vanchaano
-slugurl: वंचाणो
+title: वंचवाणो
+transliteration: vanchvaano
+slugurl: वंचवाणो
 
 grammar: 
   verb:
-    term: वंचा
-    trans: vanchaa
+    term: वंचवा
+    trans: vanchvaa
     ending: aa
     causative: 
-      self: 2
+      self: 3
       verb1: वंचणो
       verb1_trans: vanchno
       verb2: वंचाणो
@@ -20,7 +20,7 @@ grammar:
 ---
 ## Verb
 ### Meaning
-1. to save
+1. to cause to save
 
 ### Conjugation
 <verb-conj :grammar="grammar"></verb-conj>

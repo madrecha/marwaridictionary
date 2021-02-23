@@ -10,6 +10,12 @@ grammar:
     ending: a
     causative: 
       self: 1
+      verb1: वंचणो
+      verb1_trans: vanchno
+      verb2: वंचाणो
+      verb2_trans: vanchaano
+      verb3: वंचवाणो
+      verb3_trans: vanchvaano
 
 ---
 ## Etymology
