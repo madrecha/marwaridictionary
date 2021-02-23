@@ -1,7 +1,8 @@
 ---
-title: देवाणो
-transliteration: devaano
-slugurl: देवाणो
+url:
+  title: देवाणो
+  transliteration: devaano
+  slugurl: देवाणो
 
 grammar: 
   word: देवाणो

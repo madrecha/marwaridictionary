@@ -1,7 +1,8 @@
 ---
-title: जिमवाणो
-transliteration: jimwaano
-slugurl: जिमवाणो
+url:
+  title: जिमवाणो
+  transliteration: jimwaano
+  slugurl: जिमवाणो
 
 grammar: 
   verb:

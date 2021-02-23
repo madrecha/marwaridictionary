@@ -1,7 +1,8 @@
 ---
-title: मकान
-transliteration: makaan
-slugurl: मकान
+url:
+  title: मकान
+  transliteration: makaan
+  slugurl: मकान
 
 grammar: 
   word: मकान
@@ -22,7 +23,7 @@ syn:
 
 ## Pronunciation
 ## Noun
-<fos :word="title"></fos>
+<fos :word="url.title"></fos>
 
 ### Meaning
 1. house

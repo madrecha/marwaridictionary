@@ -1,7 +1,8 @@
 ---
-title: वंचाणो
-transliteration: vanchaano
-slugurl: वंचाणो
+url:
+  title: वंचाणो
+  transliteration: vanchaano
+  slugurl: वंचाणो
 
 grammar: 
   verb:

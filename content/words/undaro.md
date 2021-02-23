@@ -1,7 +1,8 @@
 ---
-title: उंदरो
-transliteration: undaro
-slugurl: उंदरो
+url:
+  title: उंदरो
+  transliteration: undaro
+  slugurl: उंदरो
 
 grammar:
   noun:

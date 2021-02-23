@@ -1,7 +1,8 @@
 ---
-title: गदेड़ो
-transliteration: gadedo
-slugurl: गदेड़ो
+url:
+  title: गदेड़ो
+  transliteration: gadedo
+  slugurl: गदेड़ो
 
 grammar:
   word: गदेड़ो

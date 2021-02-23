@@ -1,7 +1,8 @@
 ---
-title: रो
-transliteration: ro
-slugurl: रो
+url:
+  title: रो
+  transliteration: ro
+  slugurl: रो
 
 grammar: 
   preposition:

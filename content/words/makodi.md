@@ -1,7 +1,8 @@
 ---
-title: मकोड़ी
-transliteration: makodo
-slugurl: मकोड़ी
+url:
+  title: मकोड़ी
+  transliteration: makodo
+  slugurl: मकोड़ी
 
 grammar:
   word: मकोड़ी

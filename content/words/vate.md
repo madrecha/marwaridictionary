@@ -1,7 +1,8 @@
 ---
-title: वटे
-transliteration: vate
-slugurl: वटे
+url:
+  title: वटे
+  transliteration: vate
+  slugurl: वटे
 
 grammar: 
   pronoun:

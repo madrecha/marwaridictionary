@@ -1,7 +1,8 @@
 ---
-title: देणो
-transliteration: deno
-slugurl: देणो
+url:
+  title: देणो
+  transliteration: deno
+  slugurl: देणो
 
 grammar:
   word: देणो

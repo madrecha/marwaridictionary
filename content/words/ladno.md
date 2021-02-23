@@ -1,7 +1,8 @@
 ---
-title: लड़णो
-transliteration: ladno
-slugurl: लड़णो
+url:
+  title: लड़णो
+  transliteration: ladno
+  slugurl: लड़णो
 
 grammar: 
   verb:

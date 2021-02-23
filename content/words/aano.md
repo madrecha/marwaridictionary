@@ -1,7 +1,8 @@
 ---
-title: आणो
-transliteration: aano
-slugurl: आणो
+url: 
+  title: आणो
+  transliteration: aano
+  slugurl: आणो
 
 grammar: 
   verb:

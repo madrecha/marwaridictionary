@@ -1,7 +1,8 @@
 ---
-title: खाणो
-transliteration: khaano
-slugurl: खाणो
+url:
+  title: खाणो
+  transliteration: khaano
+  slugurl: खाणो
 
 grammar: 
   verb:

@@ -1,7 +1,8 @@
 ---
-title: पोड़णो
-transliteration: podno
-slugurl: पोड़णो
+url:
+  title: पोड़णो
+  transliteration: podno
+  slugurl: पोड़णो
 
 grammar: 
   word: पोड़णो

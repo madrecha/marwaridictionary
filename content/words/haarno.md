@@ -1,7 +1,8 @@
 ---
-title: हारणो
-transliteration: haarno
-slugurl: हारणो
+url:
+  title: हारणो
+  transliteration: haarno
+  slugurl: हारणो
 
 grammar: 
   verb:

@@ -1,7 +1,8 @@
 ---
-title: तेंदुओ
-transliteration: tenduo
-slugurl: तेंदुओ
+url:
+  title: तेंदुओ
+  transliteration: tenduo
+  slugurl: तेंदुओ
 
 grammar:
   noun:

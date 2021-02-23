@@ -1,7 +1,8 @@
 ---
-title: भगवान
-transliteration: bhagwaan
-slugurl: भगवान
+url:
+  title: भगवान
+  transliteration: bhagwaan
+  slugurl: भगवान
 
 grammar:
   word: भगवान

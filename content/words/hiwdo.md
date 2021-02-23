@@ -1,7 +1,8 @@
 ---
-title: हिवड़ो
-transliteration: hivdo
-slugurl: हिवड़ो
+url:
+  title: हिवड़ो
+  transliteration: hivdo
+  slugurl: हिवड़ो
 
 grammar:
   word: हिवड़ो

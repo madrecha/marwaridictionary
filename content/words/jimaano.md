@@ -1,7 +1,8 @@
 ---
-title: जिमाणो
-transliteration: jimaano
-slugurl: जिमाणो
+url:
+  title: जिमाणो
+  transliteration: jimaano
+  slugurl: जिमाणो
 
 grammar: 
   verb:

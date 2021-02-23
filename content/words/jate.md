@@ -1,7 +1,8 @@
 ---
-title: जटे
-transliteration: jate
-slugurl: जटे
+url:
+  title: जटे
+  transliteration: jate
+  slugurl: जटे
 
 grammar: 
   pronoun:

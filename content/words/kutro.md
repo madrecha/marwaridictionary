@@ -1,7 +1,8 @@
 ---
-title: कुत्रो
-transliteration: kutro
-slugurl: कुत्रो
+url:
+  title: कुत्रो
+  transliteration: kutro
+  slugurl: कुत्रो
 
 grammar:
   word: कुत्रो

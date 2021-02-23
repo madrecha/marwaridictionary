@@ -1,7 +1,8 @@
 ---
-title: वाचणो
-transliteration: vaanchno
-slugurl: वाचणो
+url:
+  title: वाचणो
+  transliteration: vaanchno
+  slugurl: वाचणो
 
 grammar: 
   verb:

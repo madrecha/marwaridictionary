@@ -1,7 +1,8 @@
 ---
-title: वेंडी
-transliteration: vendo
-slugurl: वेंडी
+url:
+  title: वेंडी
+  transliteration: vendo
+  slugurl: वेंडी
 
 grammar:
   word: वेंडी

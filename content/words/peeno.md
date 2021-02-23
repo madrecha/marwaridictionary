@@ -1,7 +1,8 @@
 ---
-title: पीणो
-transliteration: peeno
-slugurl: पीणो
+url:
+  title: पीणो
+  transliteration: peeno
+  slugurl: पीणो
 
 grammar:
   word: पीणो

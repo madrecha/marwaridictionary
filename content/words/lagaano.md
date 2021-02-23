@@ -1,7 +1,8 @@
 ---
-title: लगाणो
-transliteration: lagaano
-slugurl: लगाणो
+url:
+  title: लगाणो
+  transliteration: lagaano
+  slugurl: लगाणो
 
 grammar:
   verb:

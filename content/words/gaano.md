@@ -1,7 +1,8 @@
 ---
-title: गाणो
-transliteration: gaano
-slugurl: गाणो
+url:
+  title: गाणो
+  transliteration: gaano
+  slugurl: गाणो
 
 grammar: 
   word: गाणो

@@ -1,7 +1,8 @@
 ---
-title: कीड़ो
-transliteration: keedo
-slugurl: कीड़ो
+url:
+  title: कीड़ो
+  transliteration: keedo
+  slugurl: कीड़ो
 
 grammar:
   word: कीड़ो

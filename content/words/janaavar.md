@@ -1,7 +1,8 @@
 ---
-title: जनावर
-transliteration: janaavar
-slugurl: जनावर
+url:
+  title: जनावर
+  transliteration: janaavar
+  slugurl: जनावर
 
 grammar: 
   word: जनावर

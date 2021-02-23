@@ -1,7 +1,8 @@
 ---
-title: भैंस
-transliteration: bhains
-slugurl: भैंस
+url:
+  title: भैंस
+  transliteration: bhains
+  slugurl: भैंस
 
 grammar: 
   noun:

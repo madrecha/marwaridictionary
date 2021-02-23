@@ -1,7 +1,8 @@
 ---
-title: हापड़णो
-transliteration: haapadno
-slugurl: हापड़णो
+url:
+  title: हापड़णो
+  transliteration: haapadno
+  slugurl: हापड़णो
 
 grammar: 
   word: हापड़णो

@@ -1,7 +1,8 @@
 ---
-title: छोरो
-transliteration: chhoro
-slugurl: छोरो
+url:
+  title: छोरो
+  transliteration: chhoro
+  slugurl: छोरो
 
 grammar:
   noun:

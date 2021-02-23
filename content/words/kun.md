@@ -1,7 +1,8 @@
 ---
-title: कुण
-transliteration: kun
-slugurl: कुण
+url:
+  title: कुण
+  transliteration: kun
+  slugurl: कुण
 
 grammar:
   pronoun:

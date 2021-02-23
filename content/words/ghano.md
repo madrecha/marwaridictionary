@@ -1,7 +1,8 @@
 ---
-title: घणो
-transliteration: ghano
-slugurl: घणो
+url:
+  title: घणो
+  transliteration: ghano
+  slugurl: घणो
 
 grammar:
   word: घणो

@@ -1,7 +1,8 @@
 ---
-title: उड़ाणो
-transliteration: udaano
-slugurl: उड़ाणो
+url:
+  title: उड़ाणो
+  transliteration: udaano
+  slugurl: उड़ाणो
 
 grammar: 
   verb:

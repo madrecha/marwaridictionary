@@ -1,7 +1,8 @@
 ---
-title: आपाणो
-transliteration: aapaano
-slugurl: आपाणो
+url:
+  title: आपाणो
+  transliteration: aapaano
+  slugurl: आपाणो
 
 grammar:
   pronoun

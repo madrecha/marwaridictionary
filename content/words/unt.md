@@ -1,13 +1,15 @@
 ---
-title: ऊँट
-transliteration: unt
-slugurl: ऊँट
+url:
+  title: ऊँट
+  transliteration: unt
+  slugurl: ऊँट
 
 grammar: 
   word: ऊँट
   noun:
     ending: a
     term: ऊँट
+    trans: unt
     gender: m
     number: s
 
@@ -15,7 +17,7 @@ categories:
   - animal
 ---
 ## Noun
-<fos :word="title"></fos>
+<fos :word="url.title"></fos>
 
 ### Meaning
 1. camel

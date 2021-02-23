@@ -1,7 +1,8 @@
 ---
-title: अंधो
-transliteration: andho
-slugurl: अंधो
+url:
+  title: अंधो
+  transliteration: andho
+  slugurl: अंधो
 
 grammar: 
   word: अंधो

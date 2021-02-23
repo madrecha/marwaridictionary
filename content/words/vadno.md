@@ -1,7 +1,8 @@
 ---
-title: वदणो
-transliteration: vadno
-slugurl: वदणो
+url:
+  title: वदणो
+  transliteration: vadno
+  slugurl: वदणो
 
 grammar: 
   verb:

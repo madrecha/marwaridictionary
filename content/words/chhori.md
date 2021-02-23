@@ -1,7 +1,8 @@
 ---
-title: छोरी
-transliteration: chhori
-slugurl: छोरी
+url:
+  title: छोरी
+  transliteration: chhori
+  slugurl: छोरी
 
 grammar:
   noun:

@@ -1,7 +1,8 @@
 ---
-title: कटे
-transliteration: kate
-slugurl: कटे
+url:
+  title: कटे
+  transliteration: kate
+  slugurl: कटे
 
 grammar:
   pronoun:

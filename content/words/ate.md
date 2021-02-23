@@ -1,7 +1,8 @@
 ---
-title: अटे
-transliteration: ate
-slugurl: अटे
+url:
+  title: अटे
+  transliteration: ate
+  slugurl: अटे
 
 grammar: 
   pronoun:

@@ -1,7 +1,8 @@
 ---
-title: आटो
-transliteration: aato
-slugurl: आटो
+url: 
+  title: आटो
+  transliteration: aato
+  slugurl: आटो
 
 grammar:
   noun:

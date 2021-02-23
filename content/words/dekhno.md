@@ -1,7 +1,8 @@
 ---
-title: देखणो
-transliteration: dekhno
-slugurl: देखणो
+url:
+  title: देखणो
+  transliteration: dekhno
+  slugurl: देखणो
 
 grammar: 
   verb: 

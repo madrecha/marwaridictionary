@@ -1,7 +1,8 @@
 ---
-title: लेणो
-transliteration: leno
-slugurl: लेणो
+url:
+  title: लेणो
+  transliteration: leno
+  slugurl: लेणो
 
 grammar:
   word: लेणो

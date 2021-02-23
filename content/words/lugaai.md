@@ -1,7 +1,8 @@
 ---
-title: लुगाई
-transliteration: lugaai
-slugurl: लुगाई
+url:
+  title: लुगाई
+  transliteration: lugaai
+  slugurl: लुगाई
 
 grammar: 
   word: लुगाई
@@ -22,7 +23,7 @@ categories:
 
 
 ## Noun
-<!-- <fos :word="title" :gender="grammar.noun.gender"></fos> -->
+<!-- <fos :word="url.title" :gender="grammar.noun.gender"></fos> -->
 ### Meaning
 1. woman
 2. wife

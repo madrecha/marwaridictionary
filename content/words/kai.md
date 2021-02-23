@@ -1,7 +1,8 @@
 ---
-title: कई
-transliteration: kai
-slugurl: कई
+url:
+  title: कई
+  transliteration: kai
+  slugurl: कई
 
 grammar:
   adjective:

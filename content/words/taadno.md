@@ -1,7 +1,8 @@
 ---
-title: ताड़णो
-transliteration: taadno
-slugurl: ताड़णो
+url:
+  title: ताड़णो
+  transliteration: taadno
+  slugurl: ताड़णो
 
 grammar: 
   verb:

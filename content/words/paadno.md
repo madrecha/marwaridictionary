@@ -1,7 +1,8 @@
 ---
-title: पादणो
-transliteration: paadno
-slugurl: पादणो
+url:
+  title: पादणो
+  transliteration: paadno
+  slugurl: पादणो
 
 grammar: 
   verb:

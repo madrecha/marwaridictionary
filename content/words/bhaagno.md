@@ -1,7 +1,8 @@
 ---
-title: भागणो
-transliteration: bhaagno
-slugurl: भागणो
+url:
+  title: भागणो
+  transliteration: bhaagno
+  slugurl: भागणो
 
 grammar: 
   word: भागणो

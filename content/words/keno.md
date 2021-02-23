@@ -1,7 +1,8 @@
 ---
-title: केणो
-transliteration: keno
-slugurl: केणो
+url:
+  title: केणो
+  transliteration: keno
+  slugurl: केणो
 
 grammar:
   verb:

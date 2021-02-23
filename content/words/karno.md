@@ -1,7 +1,8 @@
 ---
-title: करणो
-transliteration: karno
-slugurl: करणो
+url:
+  title: करणो
+  transliteration: karno
+  slugurl: करणो
 
 grammar: 
   verb:

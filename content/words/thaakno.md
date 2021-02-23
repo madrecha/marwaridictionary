@@ -1,7 +1,8 @@
 ---
-title: थाकणो
-transliteration: thaakno
-slugurl: थाकणो
+url:
+  title: थाकणो
+  transliteration: thaakno
+  slugurl: थाकणो
 
 grammar: 
   verb:

@@ -1,7 +1,8 @@
 ---
-title: घर
-transliteration: ghar
-slugurl: घर
+url:
+  title: घर
+  transliteration: ghar
+  slugurl: घर
 
 grammar:
   word: घर

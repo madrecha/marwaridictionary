@@ -1,7 +1,8 @@
 ---
-title: हीवणो
-transliteration: heevno
-slugurl: हीवणो
+url:
+  title: हीवणो
+  transliteration: heevno
+  slugurl: हीवणो
 
 grammar: 
   verb:

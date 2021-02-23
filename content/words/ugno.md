@@ -1,7 +1,8 @@
 ---
-title: उगणो
-transliteration: ugano
-slugurl: उगणो
+url:
+  title: उगणो
+  transliteration: ugano
+  slugurl: उगणो
 
 grammar: 
   verb:

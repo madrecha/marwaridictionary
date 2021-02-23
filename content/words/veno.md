@@ -1,7 +1,8 @@
 ---
-title: वेणो
-transliteration: veno
-slugurl: वेणो
+url:
+  title: वेणो
+  transliteration: veno
+  slugurl: वेणो
 
 grammar: 
   verb:

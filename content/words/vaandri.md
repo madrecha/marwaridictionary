@@ -1,7 +1,8 @@
 ---
-title: वांदरी
-transliteration: vaandri
-slugurl: वांदरी
+url:
+  title: वांदरी
+  transliteration: vaandri
+  slugurl: वांदरी
 
 grammar:
   word: वांदरी

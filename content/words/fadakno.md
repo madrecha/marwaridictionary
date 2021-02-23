@@ -1,7 +1,8 @@
 ---
-title: फदकणो
-transliteration: fadakno
-slugurl: फदकणो
+url:
+  title: फदकणो
+  transliteration: fadakno
+  slugurl: फदकणो
 
 grammar: 
   word: फदकणो

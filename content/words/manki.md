@@ -1,7 +1,8 @@
 ---
-title: मनकी
-transliteration: manki
-slugurl: मनकी
+url:
+  title: मनकी
+  transliteration: manki
+  slugurl: मनकी
 
 grammar:
   word: मनकी

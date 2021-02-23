@@ -1,7 +1,8 @@
 ---
-title: हूँगणो
-transliteration: hoongno
-slugurl: हूँगणो
+url:
+  title: हूँगणो
+  transliteration: hoongno
+  slugurl: हूँगणो
 
 grammar:
   verb:

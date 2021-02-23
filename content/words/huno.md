@@ -1,7 +1,8 @@
 ---
-title: हुणो
-transliteration: huno
-slugurl: हुणो
+url:
+  title: हुणो
+  transliteration: huno
+  slugurl: हुणो
 
 grammar: 
   verb:

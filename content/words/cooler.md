@@ -1,7 +1,8 @@
 ---
-title: कूलर
-transliteration: cooler
-slugurl: कूलर
+url:
+  title: कूलर
+  transliteration: cooler
+  slugurl: कूलर
 
 grammar: 
   word: कूलर

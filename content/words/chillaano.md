@@ -1,7 +1,8 @@
 ---
-title: चिल्लाणो
-transliteration: chillaano
-slugurl: चिल्लाणो
+url:
+  title: चिल्लाणो
+  transliteration: chillaano
+  slugurl: चिल्लाणो
 
 grammar: 
   verb:

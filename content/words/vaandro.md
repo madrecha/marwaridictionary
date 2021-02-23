@@ -1,7 +1,8 @@
 ---
-title: वांदरो
-transliteration: vaandro
-slugurl: वांदरो
+url:
+  title: वांदरो
+  transliteration: vaandro
+  slugurl: वांदरो
 
 grammar:
   word: वांदरो

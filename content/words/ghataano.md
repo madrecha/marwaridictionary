@@ -1,7 +1,8 @@
 ---
-title: घटाणो
-transliteration: ghataano
-slugurl: घटाणो
+url:
+  title: घटाणो
+  transliteration: ghataano
+  slugurl: घटाणो
 
 grammar:
   verb:

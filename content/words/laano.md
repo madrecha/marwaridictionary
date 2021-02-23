@@ -1,7 +1,8 @@
 ---
-title: लाणो
-transliteration: laano
-slugurl: लाणो
+url:
+  title: लाणो
+  transliteration: laano
+  slugurl: लाणो
 
 grammar: 
   verb:

@@ -4,6 +4,7 @@ url:
   transliteration: jaano
   slugurl: जाणो
 
+
 grammar: 
   word: जाणो
   noun: 
@@ -93,6 +94,7 @@ topics:
 
 ---
 
+<!-- 
 ## Noun
 <fos :grammar="grammar" :url="url"></fos>
 
@@ -122,4 +124,4 @@ topics:
 
 ## Translation
 <translation :translation="translation" :url="url"></translation> 
-
+ -->

@@ -1,7 +1,8 @@
 ---
-title: उगाणो
-transliteration: ugaano
-slugurl: उगाणो
+url:
+  title: उगाणो
+  transliteration: ugaano
+  slugurl: उगाणो
 
 grammar: 
   verb:
