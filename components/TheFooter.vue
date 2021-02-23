@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tw-pt-2 tw-border-t tw-border-pink-500 tw-bg-gradient-to-br tw-from-white tw-to-pink-50"
+    class="tw-border-t tw-border-pink-500 tw-bg-gradient-to-br tw-from-white tw-to-pink-50"
   >
     <div
       class="sm:tw-px-4 sm:tw-py-2 sm:tw-flex tw-items-center tw-justify-evenly"

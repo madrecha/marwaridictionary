@@ -1,7 +1,11 @@
 <template>
   <div>
     <TheHeader></TheHeader>
-    <Nuxt class="tw-mx-2" keep-alive :keep-alive-props="{ max: 10 }"></Nuxt>
+    <Nuxt
+      class="tw-mx-2 tw-pb-4"
+      keep-alive
+      :keep-alive-props="{ max: 10 }"
+    ></Nuxt>
     <TheFooter v-if="showFooter"></TheFooter>
   </div>
 </template>
