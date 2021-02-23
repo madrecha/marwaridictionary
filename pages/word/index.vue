@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-mt-3">
+  <div>
     <div v-if="$fetchState.pending" class="tw-my-20">
       <p
         class="tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
@@ -8,28 +8,52 @@
       </p>
     </div>
     <div v-else>
-      <h1 class="tw-text-center tw-text-2xl">
-        {{ words.length }} Marwari words added till now
-      </h1>
-      <div class="tw-mt-3">
-        <p class="tw-text-center">
-          {{ nouns.length }} nouns, {{ verbs.length }} verbs,
-          {{ words.length - nouns.length - verbs.length }} others =
-          {{ words.length }} words
-        </p>
-        <ul class="tw-mt-3 tw-flex tw-flex-wrap">
+      <div>
+        <div class="tw-text-center">
+          <h1 class="tw-text-2xl tw-text-pink-900 tw-font-medium">
+            <span
+              class="tw-rounded-full tw-border tw-border-pink-800 tw-p-2 tw-shadow-md"
+            >
+              {{ words.length }}</span
+            >
+            Marwari words added till now
+          </h1>
+          <p class="tw-mt-3 tw-text-green-900">
+            {{ nouns.length }} nouns, {{ verbs.length }} verbs,
+            {{ words.length - nouns.length - verbs.length }} others =
+            {{ words.length }} words
+          </p>
+          <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p>
+        </div>
+        <ul
+          class="tw-m-2 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-3"
+        >
           <li
             v-for="word in words"
             :key="word.slugurl"
-            class="tw-m-2 hover:tw-bg-blue-50 tw-text-center"
+            class="tw-m-2 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center"
+            :class="
+              word.grammar && word.grammar.noun
+                ? 'hover:tw-to-pink-100'
+                : word.grammar && word.grammar.verb
+                ? 'hover:tw-to-blue-100'
+                : 'hover:tw-to-gray-100'
+            "
           >
             <nuxt-link
               :to="`/word/${word.title}`"
-              class="tw-py-2 tw-text-lg tw-text-center"
+              class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
             >
-              {{ word.title }}<br /><span class="tw-text-sm">
-                {{ word.transliteration }} <br />
-                <span
+              <div
+                class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-yellow-50 tw-text-gray-600"
+              >
+                <b>{{ word.title }}</b>
+              </div>
+              <div class="sm:tw-w-1/2">
+                <div class="tw-text-sm">
+                  {{ word.transliteration }}
+                </div>
+                <div
                   v-if="word.grammar"
                   :class="
                     word.grammar.noun
@@ -38,15 +62,16 @@
                       ? 'tw-text-blue-500'
                       : 'tw-text-gray-500'
                   "
-                  >{{
+                >
+                  {{
                     word.grammar.noun
                       ? "noun"
                       : word.grammar.verb
                       ? "verb"
                       : "others"
-                  }}</span
-                >
-              </span>
+                  }}
+                </div>
+              </div>
             </nuxt-link>
           </li>
         </ul>
