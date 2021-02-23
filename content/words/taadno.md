@@ -1,7 +1,7 @@
 ---
 title: ताड़णो
 transliteration: taadno
-slugurl: taadno
+slugurl: ताड़णो
 
 grammar: 
   verb:

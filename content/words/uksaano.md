@@ -1,7 +1,7 @@
 ---
 title: उकसाणो
 transliteration: uksaano
-slugurl: uksaano
+slugurl: उकसाणो
 
 grammar:
   verb:

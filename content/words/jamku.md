@@ -1,7 +1,7 @@
 ---
 title: जमकू
 transliteration: jamku
-slugurl: jamku
+slugurl: जमकू
 
 grammar:
 	word: जमकू

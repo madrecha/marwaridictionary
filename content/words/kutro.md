@@ -1,7 +1,7 @@
 ---
 title: कुत्रो
 transliteration: kutro
-slugurl: kutro
+slugurl: कुत्रो
 
 grammar:
   word: कुत्रो

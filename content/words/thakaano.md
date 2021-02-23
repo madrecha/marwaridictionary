@@ -1,7 +1,7 @@
 ---
 title: थकाणो
 transliteration: thakaano
-slugurl: thakaano
+slugurl: थकाणो
 
 grammar:
   verb:

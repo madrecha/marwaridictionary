@@ -1,7 +1,7 @@
 ---
 title: मारो
 transliteration: maaro
-slugurl: maaro
+slugurl: मारो
 
 grammar:
   pronoun:

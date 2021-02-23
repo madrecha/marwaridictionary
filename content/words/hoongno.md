@@ -1,7 +1,7 @@
 ---
 title: हूँगणो
 transliteration: hoongno
-slugurl: hoongno
+slugurl: हूँगणो
 
 grammar:
   verb:

@@ -1,7 +1,7 @@
 ---
 title: बेन
 transliteration: ben
-slugurl: ben
+slugurl: बेन
 
 grammar: 
   word: बेन

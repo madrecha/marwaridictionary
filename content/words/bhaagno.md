@@ -1,7 +1,7 @@
 ---
 title: भागणो
 transliteration: bhaagno
-slugurl: bhaagno
+slugurl: भागणो
 
 grammar: 
   word: भागणो

@@ -1,7 +1,7 @@
 ---
 title: भडूरो
 transliteration: bhaduro
-slugurl: bhaduro
+slugurl: भडूरो
 
 grammar: 
   word: भडूरो

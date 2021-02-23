@@ -1,13 +1,16 @@
 ---
 title: हापड़णो
 transliteration: haapadno
-slugurl: haapadno
+slugurl: हापड़णो
 
 grammar: 
+  word: हापड़णो
   verb:
     term: हापड़
     trans: haapad
     ending: a
+    type:
+      - transitive
 
 
 ---

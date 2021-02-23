@@ -1,7 +1,7 @@
 ---
 title: मकोड़ो
 transliteration: makodo
-slugurl: makodo
+slugurl: मकोड़ो
 
 grammar:
   word: मकोड़ो

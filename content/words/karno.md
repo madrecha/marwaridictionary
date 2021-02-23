@@ -1,7 +1,7 @@
 ---
 title: करणो
 transliteration: karno
-slugurl: karno
+slugurl: करणो
 
 grammar: 
   verb:

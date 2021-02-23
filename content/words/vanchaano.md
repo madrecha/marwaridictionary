@@ -1,7 +1,7 @@
 ---
 title: वंचाणो
 transliteration: vanchaano
-slugurl: vanchaano
+slugurl: वंचाणो
 
 grammar: 
   verb:

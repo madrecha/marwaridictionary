@@ -1,7 +1,7 @@
 ---
 title: देखणो
 transliteration: dekhno
-slugurl: dekhno
+slugurl: देखणो
 
 grammar: 
   verb: 

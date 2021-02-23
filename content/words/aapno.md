@@ -1,7 +1,7 @@
 ---
 title: आपणो
 transliteration: aapno
-slugurl: aapno
+slugurl: आपणो
 
 grammar:
   pronoun

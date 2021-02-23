@@ -1,7 +1,7 @@
 ---
 title: जिमणो
 transliteration: jimno
-slugurl: jimno
+slugurl: जिमणो
 
 grammar: 
   verb:

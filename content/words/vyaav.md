@@ -1,7 +1,7 @@
 ---
 title: व्याव
 transliteration: vyaav
-slugurl: vyaav
+slugurl: व्याव
 
 grammar: 
   word: व्याव

@@ -1,7 +1,7 @@
 ---
 title: थाकणो
 transliteration: thaakno
-slugurl: thaakno
+slugurl: थाकणो
 
 grammar: 
   verb:

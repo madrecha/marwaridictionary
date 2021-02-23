@@ -1,7 +1,7 @@
 ---
 title: उंदरो
 transliteration: undaro
-slugurl: undaro
+slugurl: उंदरो
 
 grammar:
   noun:

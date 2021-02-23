@@ -1,7 +1,7 @@
 ---
 title: केणो
 transliteration: keno
-slugurl: keno
+slugurl: केणो
 
 grammar:
   verb:

@@ -1,7 +1,7 @@
 ---
 title: हुणो
 transliteration: huno
-slugurl: huno
+slugurl: हुणो
 
 grammar: 
   verb:

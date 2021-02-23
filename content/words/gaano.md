@@ -1,9 +1,10 @@
 ---
 title: गाणो
 transliteration: gaano
-slugurl: gaano
+slugurl: गाणो
 
 grammar: 
+  word: गाणो
   verb:
     term: गाणो
     trans: gaa

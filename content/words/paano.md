@@ -1,7 +1,7 @@
 ---
 title: पाणो
 transliteration: paano
-slugurl: paano
+slugurl: पाणो
 
 grammar: 
   noun:

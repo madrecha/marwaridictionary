@@ -1,14 +1,15 @@
 ---
 title: हीवणो
 transliteration: heevno
-slugurl: heevno
+slugurl: हीवणो
 
 grammar: 
   verb:
     term: हीव
     trans: heev
     ending: a
-    type: transitive
+    type: 
+      - transitive
 
 ---
 ## Etymology

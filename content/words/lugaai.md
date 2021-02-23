@@ -1,7 +1,7 @@
 ---
 title: लुगाई
 transliteration: lugaai
-slugurl: lugaai
+slugurl: लुगाई
 
 grammar: 
   word: लुगाई

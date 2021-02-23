@@ -1,7 +1,7 @@
 ---
 title: कटे
 transliteration: kate
-slugurl: kate
+slugurl: कटे
 
 grammar:
   pronoun:

@@ -1,7 +1,7 @@
 ---
 title: छोरो
 transliteration: chhoro
-slugurl: chhoro
+slugurl: छोरो
 
 grammar:
   noun:

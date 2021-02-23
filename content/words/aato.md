@@ -1,7 +1,7 @@
 ---
 title: आटो
 transliteration: aato
-slugurl: aato
+slugurl: आटो
 
 grammar:
   noun:

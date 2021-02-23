@@ -1,7 +1,7 @@
 ---
-title: लेई-जाणो
-transliteration: lei-jaano
-slugurl: lei-jaano
+title: लेई जाणो
+transliteration: lei jaano
+slugurl: लेई-जाणो
 
 grammar: 
   verb:

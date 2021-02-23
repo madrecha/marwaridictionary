@@ -1,7 +1,7 @@
 ---
 title: जाणो
 transliteration: jaano
-slugurl: jaano
+slugurl: जाणो
 
 grammar: 
   verb:

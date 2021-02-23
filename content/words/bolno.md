@@ -1,7 +1,7 @@
 ---
 title: बोलणो
 transliteration: bolno
-slugurl: bolno
+slugurl: बोलणो
 
 grammar: 
   verb: 

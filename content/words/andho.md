@@ -1,14 +1,14 @@
 ---
 title: अंधो
 transliteration: andho
-slugurl: andho
+slugurl: अंधो
 
 grammar: 
+  word: अंधो
   adjective:
     gender: m
     number: s
   noun:
-    word: अंधो
     ending: o
     term: अंध
     trans: andh

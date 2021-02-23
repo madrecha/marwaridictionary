@@ -1,9 +1,10 @@
 ---
 title: देणो
 transliteration: deno
-slugurl: deno
+slugurl: देणो
 
 grammar:
+  word: देणो
   verb:
     term: दे
     trans: de

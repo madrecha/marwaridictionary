@@ -1,7 +1,7 @@
 ---
 title: घटाणो
 transliteration: ghataano
-slugurl: ghataano
+slugurl: घटाणो
 
 grammar:
   verb:

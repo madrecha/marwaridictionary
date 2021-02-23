@@ -1,7 +1,7 @@
 ---
 title: भैंस
 transliteration: bhains
-slugurl: bhains
+slugurl: भैंस
 
 grammar: 
   noun:

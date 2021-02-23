@@ -1,7 +1,7 @@
 ---
 title: कण्णो
 transliteration: kanno
-slugurl: kanno
+slugurl: कण्णो
 
 grammar:
   pronoun:

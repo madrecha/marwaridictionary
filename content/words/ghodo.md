@@ -1,7 +1,7 @@
 ---
 title: घोड़ो
 transliteration: ghodo
-slugurl: ghodo
+slugurl: घोड़ो
 
 grammar:
   word: घोड़ो

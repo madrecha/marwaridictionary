@@ -1,7 +1,7 @@
 ---
 title: मकान
 transliteration: makaan
-slugurl: makaan
+slugurl: मकान
 
 grammar: 
   word: मकान

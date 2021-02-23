@@ -1,7 +1,7 @@
 ---
 title: जिमवाणो
 transliteration: jimwaano
-slugurl: jimwaano
+slugurl: जिमवाणो
 
 grammar: 
   verb:

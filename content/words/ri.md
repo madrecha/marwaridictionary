@@ -1,7 +1,7 @@
 ---
 title: री
 transliteration: ri
-slugurl: ri
+slugurl: री
 
 grammar:
   preposition:

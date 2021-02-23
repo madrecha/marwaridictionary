@@ -1,13 +1,16 @@
 ---
 title: पीणो
 transliteration: peeno
-slugurl: peeno
+slugurl: पीणो
 
 grammar:
+  word: पीणो
   verb:
     term: पी
-    en: pee
+    trans: pee
     ending: ee
+    causative:
+      self: 1
 
 ---
 ## Etymology

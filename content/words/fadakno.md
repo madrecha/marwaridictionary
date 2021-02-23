@@ -4,6 +4,7 @@ transliteration: fadakno
 slugurl: फदकणो
 
 grammar: 
+  word: फदकणो
   verb:
     term: फदक
     trans: fadak

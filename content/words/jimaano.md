@@ -1,7 +1,7 @@
 ---
 title: जिमाणो
 transliteration: jimaano
-slugurl: jimaano
+slugurl: जिमाणो
 
 grammar: 
   verb:

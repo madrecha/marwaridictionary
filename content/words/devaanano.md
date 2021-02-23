@@ -1,9 +1,10 @@
 ---
 title: देवाणणो
 transliteration: devaanano
-slugurl: devaanano
+slugurl: देवाणणो
 
 grammar: 
+  word: देवाणणो
   verb:
     term: देवा
     trans: devaa

@@ -1,7 +1,7 @@
 ---
 title: लाणो
 transliteration: laano
-slugurl: laano
+slugurl: लाणो
 
 grammar: 
   verb:

@@ -1,7 +1,7 @@
 ---
 title: उड़णो
 transliteration: udno
-slugurl: udno
+slugurl: उड़णो
 
 grammar: 
   verb:

@@ -1,9 +1,10 @@
 ---
 title: घणो
 transliteration: ghano
-slugurl: ghano
+slugurl: घणो
 
 grammar:
+  word: घणो
   adjective:
     gender: m
     number: s

@@ -1,7 +1,7 @@
 ---
 title: वदणो
 transliteration: vadno
-slugurl: vadno
+slugurl: वदणो
 
 grammar: 
   verb:

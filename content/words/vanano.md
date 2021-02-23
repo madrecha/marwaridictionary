@@ -1,7 +1,7 @@
 ---
 title: वणणो
 transliteration: vanano
-slugurl: vanano
+slugurl: वणणो
 
 grammar: 
   verb:

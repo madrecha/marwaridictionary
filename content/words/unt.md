@@ -1,7 +1,7 @@
 ---
 title: ऊँट
 transliteration: unt
-slugurl: unt
+slugurl: ऊँट
 
 grammar: 
   word: ऊँट

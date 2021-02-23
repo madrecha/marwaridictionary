@@ -1,7 +1,7 @@
 ---
 title: मनक
 transliteration: manak
-slugurl: manak
+slugurl: मनक
 
 grammar:
   word: मनक

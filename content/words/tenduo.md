@@ -1,7 +1,7 @@
 ---
 title: तेंदुओ
 transliteration: tenduo
-slugurl: tenduo
+slugurl: तेंदुओ
 
 grammar:
   noun:

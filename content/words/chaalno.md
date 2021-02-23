@@ -1,7 +1,7 @@
 ---
 title: चालणो
 transliteration: chaalno
-slugurl: chaalno
+slugurl: चालणो
 
 grammar:
   verb:

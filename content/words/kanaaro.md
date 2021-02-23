@@ -1,7 +1,7 @@
 ---
 title: कणाारो
 transliteration: kanaaro
-slugurl: kanaaro
+slugurl: कणाारो
 
 grammar:
   pronoun:

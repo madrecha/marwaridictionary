@@ -1,7 +1,7 @@
 ---
 title: छोरी
 transliteration: chhori
-slugurl: chhori
+slugurl: छोरी
 
 grammar:
   noun:

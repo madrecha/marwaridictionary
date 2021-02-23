@@ -1,7 +1,7 @@
 ---
 title: भगाणो
 transliteration: bhagaano
-slugurl: bhagaano
+slugurl: भगाणो
 
 grammar: 
   verb:

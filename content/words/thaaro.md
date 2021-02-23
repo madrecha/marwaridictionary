@@ -1,7 +1,7 @@
 ---
 title: थारो
 transliteration: thaaro
-slugurl: thaaro
+slugurl: थारो
 
 grammar:
   pronoun:

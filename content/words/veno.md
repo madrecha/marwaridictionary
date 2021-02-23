@@ -1,7 +1,7 @@
 ---
 title: वेणो
 transliteration: veno
-slugurl: veno
+slugurl: वेणो
 
 grammar: 
   verb:

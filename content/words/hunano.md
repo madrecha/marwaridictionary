@@ -1,7 +1,7 @@
 ---
 title: हुणणो
 transliteration: hunano
-slugurl: hunano
+slugurl: हुणणो
 
 grammar: 
   verb:
