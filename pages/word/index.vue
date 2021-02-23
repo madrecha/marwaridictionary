@@ -30,7 +30,7 @@
         >
           <li
             v-for="word in words"
-            :key="word.slugurl"
+            :key="word"
             class="tw-m-2 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center"
             :class="
               word.grammar && word.grammar.noun
@@ -41,17 +41,18 @@
             "
           >
             <nuxt-link
-              :to="`/word/${word.slugurl}`"
+              v-if="word.url && word.url.title"
+              :to="`/word/${word.url.title}`"
               class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
             >
               <div
                 class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-yellow-50 tw-text-gray-600"
               >
-                <b>{{ word.title }}</b>
+                <b>{{ word.url.title }}</b>
               </div>
               <div class="sm:tw-w-1/2">
                 <div class="tw-text-sm">
-                  {{ word.transliteration }}
+                  {{ word.url.transliteration }}
                 </div>
                 <div
                   v-if="word.grammar"
@@ -92,8 +93,8 @@ export default {
   async fetch() {
     this.words = await this.$content("words")
       .where({ slug: { $ne: "README" } })
-      .without(["body", "toc"])
-      .sortBy("transliteration")
+      .without(["body", "toc", "categories"])
+      .sortBy("slug")
       .fetch();
 
     this.nouns = this.words.filter((word) => {
