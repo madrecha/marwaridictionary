@@ -56,7 +56,9 @@ export default {
   axios: {},
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  content: {
+    nestedProperties: ['url.slugurl']
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
