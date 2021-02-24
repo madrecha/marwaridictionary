@@ -3,7 +3,11 @@
     <h1>Topics</h1>
     <ol>
       <li v-for="(topic, i) in topics" :key="i">
-        <nuxt-link :to="`/topic/${topic.url.slugurl}`" class="tw-capitalize">
+        <nuxt-link
+          :to="`/topic/${topic.url.slugurl}`"
+          class="tw-capitalize"
+          v-if="topic.url"
+        >
           {{ topic.url.slugurl }}
         </nuxt-link>
 
@@ -27,7 +31,7 @@ export default {
     };
   },
   async fetch() {
-    this.topics = await this.$content("topics").fetch();
+    this.topics = await this.$content("topics").sortBy("slug").fetch();
   },
 };
 </script>
