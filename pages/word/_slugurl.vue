@@ -24,7 +24,7 @@
             meaning in Marwari
           </h1>
           <p
-            class="tw-mt-3 tw-max-w-2xl tw-mx-auto tw-text-xs tw-text-gray-500 tw-lowercase"
+            class="tw-mt-3 tw-max-w-3xl tw-mx-auto tw-text-xs tw-text-gray-500 tw-lowercase"
           >
             {{ word.url.title }} का मारवाड़ी अर्थ,
             {{ word.url.transliteration }} Marwari meaning,
@@ -39,11 +39,10 @@
         </div>
         <wordTOC :word="word" class="tw-mt-5 tw-max-w-xs tw-mx-auto"></wordTOC>
         <div
-          class="tw-mt-3 lg:tw-mt-4 lg:tw-mx-4 lg:tw-px-6 lg:tw-py-3 tw-border-t tw-border-b tw-border-pink-300"
+          class="tw-mt-4 tw-mx-0.5 lg:tw-mx-4 lg:tw-px-6 lg:tw-py-3 tw-border-t tw-border-b tw-border-pink-300"
         >
           <div class="tw-mx-auto tw-text-center">
             <ReadingTime :word="word"></ReadingTime>
-            <!-- {{ words_in_post }} -->
           </div>
 
           <NuxtContent :document="word" class="tw-pt--1"></NuxtContent>
