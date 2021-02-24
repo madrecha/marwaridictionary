@@ -13,19 +13,19 @@ grammar:
     gender: f
     number: s
 
-categories: 
+meanings: 
+  - meaning: sister
+  - meaning: fellow female
+
+topics: 
   - person
   - relative
 ---
 
-## Etymology
-
-## Pronunciation
 
 ## Noun
 ### Meaning
-1. sister
-2. fellow female
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ### Declension
-<noun-decl :grammar="grammar"></noun-decl>
+<noun-decl :grammar="grammar" :url="url"></noun-decl>
