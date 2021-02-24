@@ -101,21 +101,23 @@
       Words with Antonyms
     </div>
     ,
-    <div
+    <p
       v-if="word.synonyms || word.syns || word.syn"
       class="tw-mt-2 tw-border-t tw-border-green-800"
     >
       Words with Synonyms
-    </div>
-    <div v-if="word.related" class="tw-mt-2 tw-border-t tw-border-green-800">
+    </p>
+    <p v-if="word.related" class="tw-mt-2 tw-border-t tw-border-green-800">
       Words with related terms, Words with related terms outside Meaning
       component
-    </div>
-    <div v-if="word.categories" class="tw-mt-2 tw-border-t tw-border-green-800">
-      <span v-if="word.categories.length > 0"
-        >Words with {{ word.categories.length }} Topics assigned</span
-      >
-    </div>
+    </p>
+
+    <p
+      v-if="word.categories && word.categories.length > 0"
+      class="tw-mt-2 tw-border-t tw-border-green-800"
+    >
+      Words with {{ word.categories.length }} Topics assigned
+    </p>
   </div>
 </template>
 
