@@ -1,83 +1,81 @@
 <template>
   <div>
-    <div v-if="$fetchState.pending" class="tw-min-h-screen tw-my-48">
+    <article v-if="$fetchState.pending" class="tw-min-h-screen tw-my-48">
       <p
         class="tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
       >
         Fetching words...💖 Wait for a few seconds 😊
       </p>
-    </div>
-    <div v-else>
-      <div>
-        <div class="tw-text-center">
-          <h1 class="tw-text-2xl tw-text-pink-900 tw-font-medium">
-            <span
-              class="tw-rounded-full tw-border tw-border-pink-800 tw-p-2 tw-shadow-md"
-            >
-              {{ words.length }}</span
-            >
-            Marwari words added till now
-          </h1>
-          <p class="tw-mt-3 tw-text-green-900">
-            {{ nouns.length }} nouns, {{ verbs.length }} verbs,
-            {{ words.length - nouns.length - verbs.length }} others =
-            {{ words.length }} words
-          </p>
-          <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p>
-        </div>
-        <ul
-          class="tw-list-none tw-m-2 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-3"
-        >
-          <li
-            v-for="word in words"
-            :key="word.url.slugurl"
-            class="tw-m-2 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center"
-            :class="
-              word.grammar && word.grammar.noun
-                ? 'hover:tw-to-pink-100'
-                : word.grammar && word.grammar.verb
-                ? 'hover:tw-to-blue-100'
-                : 'hover:tw-to-gray-100'
-            "
+    </article>
+    <article>
+      <div class="tw-text-center">
+        <h1 class="tw-text-2xl tw-text-pink-900 tw-font-medium">
+          <span
+            class="tw-rounded-full tw-border tw-border-pink-800 tw-p-2 tw-shadow-md"
           >
-            <nuxt-link
-              v-if="word.url && word.url.slugurl"
-              :to="`/word/${word.url.slugurl}`"
-              class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
-            >
-              <div
-                class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-text-blue-900 md:tw-text-xl"
-              >
-                {{ word.url.title }}
-              </div>
-              <div class="sm:tw-w-1/2">
-                <div class="tw-text-sm">
-                  {{ word.url.transliteration }}
-                </div>
-                <div
-                  v-if="word.grammar"
-                  :class="
-                    word.grammar.noun
-                      ? 'tw-text-pink-500'
-                      : word.grammar.verb
-                      ? 'tw-text-blue-500'
-                      : 'tw-text-gray-500'
-                  "
-                >
-                  {{
-                    word.grammar.noun
-                      ? "noun"
-                      : word.grammar.verb
-                      ? "verb"
-                      : "others"
-                  }}
-                </div>
-              </div>
-            </nuxt-link>
-          </li>
-        </ul>
+            {{ words.length }}</span
+          >
+          Marwari words added till now
+        </h1>
+        <p class="tw-mt-3 tw-text-green-900">
+          {{ nouns.length }} nouns, {{ verbs.length }} verbs,
+          {{ words.length - nouns.length - verbs.length }} others =
+          {{ words.length }} words
+        </p>
+        <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p>
       </div>
-    </div>
+      <ul
+        class="tw-list-none tw-m-2 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-3"
+      >
+        <li
+          v-for="word in words"
+          :key="word.url.slugurl"
+          class="tw-m-2 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center"
+          :class="
+            word.grammar && word.grammar.noun
+              ? 'hover:tw-to-pink-100'
+              : word.grammar && word.grammar.verb
+              ? 'hover:tw-to-blue-100'
+              : 'hover:tw-to-gray-100'
+          "
+        >
+          <nuxt-link
+            v-if="word.url && word.url.slugurl"
+            :to="`/word/${word.url.slugurl}`"
+            class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
+          >
+            <div
+              class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-text-blue-900 md:tw-text-xl"
+            >
+              {{ word.url.title }}
+            </div>
+            <div class="sm:tw-w-1/2">
+              <div class="tw-text-sm">
+                {{ word.url.transliteration }}
+              </div>
+              <div
+                v-if="word.grammar"
+                :class="
+                  word.grammar.noun
+                    ? 'tw-text-pink-500'
+                    : word.grammar.verb
+                    ? 'tw-text-blue-500'
+                    : 'tw-text-gray-500'
+                "
+              >
+                {{
+                  word.grammar.noun
+                    ? "noun"
+                    : word.grammar.verb
+                    ? "verb"
+                    : "others"
+                }}
+              </div>
+            </div>
+          </nuxt-link>
+        </li>
+      </ul>
+    </article>
   </div>
 </template>
 
