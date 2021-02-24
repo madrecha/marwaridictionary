@@ -2,11 +2,12 @@
   <div>
     <div class="tw-text-center">
       <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">Topics</h1>
-      <p>
-        {{ uniquetopics.length }} topics added {{ alltopics.length }} times till
-        now to the words
+      <p class="tw-mt-3">
+        {{ uniquetopics.length }} topics added to {{ alltopics.length }} words
+        till now
       </p>
     </div>
+    <!-- OLD CODE (CAN DELETE LATER) -->
     <!-- <ol>
       <li v-for="(topic, i) in topics" :key="i">
         <nuxt-link
@@ -26,14 +27,23 @@
         </ol>
       </li>
     </ol> -->
-    <ol class="tw-list-decimal">
-      <li v-for="uniquetopic in uniquetopics" :key="uniquetopic">
-        <nuxt-link :to="`/topic/${uniquetopic}`">
-          {{ uniquetopic }} ({{ getWordsByTopic(alltopics, uniquetopic) }}
-          words)
-        </nuxt-link>
-      </li>
-    </ol>
+    <div class="tw-mt-3 tw-max-w-5xl tw-mx-auto">
+      <ol class="tw-list-decimal tw-grid tw-grid-cols-3 tw-gap-3 tw-mx-auto">
+        <li
+          v-for="uniquetopic in uniquetopics"
+          :key="uniquetopic"
+          class="tw-m-4"
+        >
+          <nuxt-link
+            :to="`/topic/${uniquetopic}`"
+            class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
+          >
+            {{ uniquetopic }} ({{ getWordsByTopic(alltopics, uniquetopic) }}
+            words)
+          </nuxt-link>
+        </li>
+      </ol>
+    </div>
   </div>
 </template>
 
@@ -77,6 +87,7 @@ export default {
     // Of course, individual topic file should be created later so as to add more info about that particular topic to be shown on that topic's page. E.g., its parents topics, its children topics.
     // But currently, even without the files, at least words are coming properly. 😀
   },
+
   methods: {
     getWordsByTopic(originalArray, topicname) {
       var compressed = [];
@@ -121,5 +132,5 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-@import url(~assets/css/nuxtcontent.postcss);
+/* @import url(~assets/css/nuxtcontent.postcss); */
 </style>
