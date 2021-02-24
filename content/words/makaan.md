@@ -40,7 +40,7 @@ topics:
 <syn :syn="synonyms" :url="url"></syn>
 
 ### Translation
-<translation :transation="translation" :url="url"></translation>
+<translation :translation="translation" :url="url"></translation>
 
 ### Declension
 <noun-decl :grammar="grammar" :url="url"></noun-decl>
