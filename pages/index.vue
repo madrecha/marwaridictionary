@@ -37,11 +37,13 @@
         <div
           class="tw-px-3 md:tw-w-10/12 md:tw-flex tw-justify-center tw-items-center md:tw-pt-8"
         >
-          <p class="tw-text-2xl tw-text-pink-900">
+          <p class="tw-text-xl md:tw-text-2xl tw-text-pink-900">
             A place to learn Marwari / Marwadi, Rajasthani, Mewadi and improve
             your vocabulary of Marwari words.
           </p>
-          <p class="tw-mt-3 md:tw-mt-0 tw-text-xl tw-text-gray-700">
+          <p
+            class="tw-mt-3 md:tw-mt-0 tw-text-lg md:tw-text-lg tw-text-gray-700"
+          >
             If you already know better, then
             <a
               href="https://github.com/madrecha/marwaridictionary"
