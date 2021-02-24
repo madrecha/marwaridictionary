@@ -1,11 +1,15 @@
 <template>
   <div>
     <div v-for="topic in topics" :key="topic.url.title">
-      <div v-for="parent in topic.parents" :key="parent">
-        Topic > {{ parent }} > {{ $route.params.topic }}
+      <div v-if="topic.parents && topic.parents.length > 0">
+        <div v-for="parent in topic.parents" :key="parent">
+          <nuxt-link to="/topic">Topic</nuxt-link> →
+          <nuxt-link :to="`/topic/${parent}`">{{ parent }}</nuxt-link> →
+          {{ $route.params.topic }}
+        </div>
       </div>
       <h1>Marwari words about {{ topic.url.title }}</h1>
-      <ol>
+      <ol v-if="topic.children && topic.children.length > 0">
         <li v-for="children in topic.children" :key="children">
           <nuxt-link :to="children">
             {{ children }}
