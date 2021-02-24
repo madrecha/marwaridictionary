@@ -12,12 +12,12 @@
         <li
           v-for="menu in menus"
           :key="menu.name"
-          class="tw-text-sm sm:tw-text-base tw-mx-2 tw-font-medium"
+          class="tw-text-sm sm:tw-text-base tw-mx-0.5 md:tw-mx-2 tw-font-medium"
         >
           <nuxt-link
             exact
             :to="menu.url"
-            class="tw-p-2.5 hover:tw-bg-pink-50"
+            class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
             >{{ menu.name }}</nuxt-link
           >
         </li>
@@ -34,7 +34,7 @@ export default {
         { name: "Home", url: "/" },
         { name: "Words", url: "/word" },
         { name: "Topics", url: "/topic" },
-        { name: "About", url: "/about" },
+        // { name: "About", url: "/about" },
       ],
     };
   },
