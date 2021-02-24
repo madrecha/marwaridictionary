@@ -41,9 +41,9 @@
         <div
           class="tw-mt-4 tw-mx-0.5 lg:tw-mx-4 lg:tw-px-6 lg:tw-py-3 tw-border-t tw-border-b tw-border-pink-300"
         >
-          <div class="tw-mx-auto tw-text-center">
+          <!-- <div class="tw-mx-auto tw-text-center">
             <ReadingTime :word="word"></ReadingTime>
-          </div>
+          </div> -->
 
           <NuxtContent :document="word" class="tw-pt--1"></NuxtContent>
           <MaintenanceCategories :word="word"></MaintenanceCategories>
