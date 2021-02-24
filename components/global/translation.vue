@@ -6,7 +6,7 @@
     </p>
     <ol>
       <li v-for="translate in translation" :key="translate.context">
-        <span class="tw-text-xs">Context:</span> {{ translate.context }}
+        <span class="tw-text-sm">Context: {{ translate.context }}</span>
         <ul>
           <li v-if="translate.hi || translate.hindi">
             <span class="tw-text-xs">Hindi:</span> {{ translate.hi }}
@@ -22,7 +22,10 @@
 
 <script>
 export default {
-  props: { translation: Array, url: Object },
+  props: {
+    translation: { type: Array, required: true },
+    url: { type: Object, required: false },
+  },
   data() {
     return {};
   },
