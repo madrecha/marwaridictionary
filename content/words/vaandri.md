@@ -15,15 +15,18 @@ grammar:
     gender_m_trans: vaandro
     number: s
 
+meanings:
+  - meaning: monkey
+  - meaning: stupid female person
+  - meaning: mischievous female person
+
 topics:
   - animal
 ---
 
 ## Noun
 ### Meaning
-1. monkey
-2. stupid female person
-3. mischievous female person
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ### Declension
 <noun-decl :grammar="grammar"></noun-decl>

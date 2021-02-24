@@ -13,14 +13,16 @@ grammar:
     gender: m
     number: s
 
+meanings:
+  - meaning: camel
+
 topics:
   - animal
 ---
 ## Noun
-<fos :word="url.title"></fos>
 
 ### Meaning
-1. camel
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ### Declension
 <noun-decl :grammar="grammar"></noun-decl>

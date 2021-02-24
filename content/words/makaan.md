@@ -13,24 +13,34 @@ grammar:
     gender: m
     number: s
 
-syn:
-  - घर
-  - गृह
+meanings: 
+  - meaning: house
+  - meaning: home
+  - meaning: flat
+
+synonyms:
+  - syn: घर
+  - syn: गृह
+
+translation:
+  - context: house, home
+    hi: घर, गृह
+
+topics:
+  - building
 
 ---
 
-## Etymology
-
-## Pronunciation
 ## Noun
-<fos :word="url.title"></fos>
 
 ### Meaning
-1. house
-2. home
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ### Synonym
-<syn :syn="syn"></syn>
+<syn :syn="synonyms" :url="url"></syn>
+
+### Translation
+<translation :transation="translation" :url="url"></translation>
 
 ### Declension
-<noun-decl :grammar="grammar"></noun-decl>
+<noun-decl :grammar="grammar" :url="url"></noun-decl>
