@@ -1,7 +1,20 @@
 <template>
   <div>
-    <h1>{{ words.length }} Marwari words about {{ $route.params.topic }}</h1>
-    <div><nuxt-link to="/topic">Go back to Topics</nuxt-link></div>
+    <div class="tw-text-center">
+      <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">
+        {{ words.length }} Marwari words about {{ $route.params.topic }}
+      </h1>
+      <p class="tw-mt-2">
+        List of <b>{{ $route.params.topic }}</b> in Marwari
+      </p>
+      <div class="tw-mt-2">
+        <nuxt-link
+          to="/topic"
+          class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
+          >Go back to Topics</nuxt-link
+        >
+      </div>
+    </div>
     <div v-for="(topic, i) in topics" :key="i">
       <div v-if="topic.parents && topic.parents.length > 0">
         <div v-for="parent in topic.parents" :key="parent">
@@ -12,19 +25,27 @@
       </div>
       <ol v-if="topic.children && topic.children.length > 0">
         <li v-for="children in topic.children" :key="children">
-          <nuxt-link :to="children">
+          <nuxt-link
+            :to="children"
+            class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
+          >
             {{ children }}
           </nuxt-link>
         </li>
       </ol>
     </div>
-    <ol>
-      <li v-for="word in words" :key="word.url.slugurl">
-        <nuxt-link :to="`/word/${word.url.slugurl}`">
-          {{ word.url.title }}
-        </nuxt-link>
-      </li>
-    </ol>
+    <div class="tw-mt-3 tw-max-w-5xl tw-mx-auto">
+      <ol class="tw-list-decimal tw-grid tw-grid-cols-3 tw-gap-3 tw-mx-auto">
+        <li v-for="word in words" :key="word.url.slugurl" class="tw-m-4">
+          <nuxt-link
+            :to="`/word/${word.url.slugurl}`"
+            class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
+          >
+            {{ word.url.title }} ({{ word.url.transliteration }})
+          </nuxt-link>
+        </li>
+      </ol>
+    </div>
   </div>
 </template>
 
