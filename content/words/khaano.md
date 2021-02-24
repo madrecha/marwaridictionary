@@ -10,14 +10,10 @@ grammar:
     trans: khaa
     ending: aa
 
-categories:
-  - 
+topics:
+  - food-and-drink
 
 ---
-## Etymology
-
-## Pronunciation
-
 ## Noun
 ### Meaning
 1. food
