@@ -11,13 +11,13 @@
           {{ topic.url.slugurl }}
         </nuxt-link>
 
-        <ol v-if="topic.children && topic.children.length > 0">
+        <!-- <ol v-if="topic.children && topic.children.length > 0">
           <li v-for="children in topic.children" :key="children">
             <nuxt-link :to="`/topic/${children}`" class="tw-capitalize">
               {{ children }}
             </nuxt-link>
           </li>
-        </ol>
+        </ol> -->
       </li>
     </ol>
   </div>

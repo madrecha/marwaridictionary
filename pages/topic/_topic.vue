@@ -37,7 +37,7 @@ export default {
   },
   async fetch() {
     this.topics = await this.$content("topics")
-      .where({ "url.slugurl": { $contains: this.$route.params.topic } })
+      .where({ "url.slugurl": { $eq: this.$route.params.topic } })
       .sortBy("slug")
       .fetch();
 
