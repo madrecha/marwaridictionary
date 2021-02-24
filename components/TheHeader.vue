@@ -30,6 +30,7 @@ export default {
       menus: [
         { name: "Home", url: "/" },
         { name: "Words", url: "/word" },
+        { name: "Topics", url: "/topic" },
         { name: "About", url: "/about" },
       ],
     };
