@@ -9,13 +9,22 @@ grammar:
     term: उड़ा
     trans: udaa
     ending: aa
+    causative:
+      self: 2
 
+meanings: 
+  - meaning: to fly something
+  - meaning: to spend (money) lavishly; to waste money
+    examples: 
+      - eg: कतरा पैसा उड़ाई?
+        en: How much money are you going to waste?
 
 ---
-## Etymology
 
-## Pronunciation
+## Verb
 
-## Meaning
-1. to fly something
-2. to spend (money) lavishly
+### Meaning 
+<meaning :meanings="meanings" :url="url"></meaning>
+
+### Conjugation
+<verb-conj :grammar="grammar"></verb-conj>

@@ -6,6 +6,9 @@ url:
 
 grammar: 
   noun:
+    ending: o
+    term: पाण
+    trans: paan
     gender: m
     number: s
   verb: 
@@ -13,17 +16,39 @@ grammar:
     trans: paa
     ending: aa
 
+meanings:
+  - meaning: instrument
+
+examples: 
+  - eg: पाणो ला, म्हारे यो नल ठीक करणो है।
+    en: Bring the instrument, I have to repair this tap.
+
+meanings_verb: 
+  - meaning: to achieve
+    examples: 
+      - eg: मूँ म्हारो गोल पाईन ईस रेऊँ।
+        en: I will definitely achieve my goal
+  - meaning: to cause someone to drink; to offer to drink
+    examples: 
+      - eg: थाक्यातका ने पाणी पाणो पुण्य रो काम है।
+        en: It is a merit to offer water to a tired person.
+
 ---
 
 ## Noun
 ### Meaning
-1. instrument
+<meaning :meanings="meanings" :url="url"></meaning>
+
+### Examples
+<eg :eg="examples" :url="url"></eg>
+
+### Declension
+<noun-decl :grammar="grammar" :url="url"></noun-decl>
 
 ## Verb
 ### Meaning
-1. to achieve
-2. to cause someone to drink
+<meaning :meanings="meanings_verb" :url="url"></meaning>
 
 ### Conjugation
-<verb-conj :grammar="grammar"></verb-conj>
+<verb-conj :grammar="grammar" :url="url"></verb-conj>
 

@@ -10,19 +10,19 @@ grammar:
     trans: taad
     ending: a
 
+meanings:
+  - meaning: to ogle
+  - meaning: to stare continuously
+
 categories:
   - informal
   - slang
   
 ---
-## Etymology
-
-## Pronunciation
 
 ## Verb
 ### Meaning
-1. to ogle
-2. to stare continuously
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ### Conjugation
 <verb-conj :grammar="grammar"></verb-conj>

@@ -12,16 +12,15 @@ grammar:
     causative:
       self: 2
 
+meanings: 
+  - meaning: to make someone tired
+  - meaning: to annoy someone to the extent he/she becomes fed up
+
 
 ---
-## Etymology
-
-## Pronunciation
-
 ## Verb
 ### Meaning
-1. to make someone tired
-2. to annoy someone to the extent he/she becomes fed up
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ### Conjugation
 <verb-conj :grammar="grammar"></verb-conj>

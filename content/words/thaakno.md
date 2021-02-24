@@ -12,16 +12,16 @@ grammar:
     causative:
       self: 1
 
----
-## Etymology
+meanings:
+  - meaning: to get tired
+  - meaning: to be exhausted
+  - meaning: to be fed up
 
-## Pronunciation
+---
 
 ## Verb
 ### Meaning
-1. to get tired
-2. to be exhausted
-3. to be fed up
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ### Conjugation
 <verb-conj :grammar="grammar"></verb-conj>
