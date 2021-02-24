@@ -10,7 +10,7 @@
       </p>
     </div>
     <nav class="tw-w-1/2 sm:tw-w-2/3 tw-px-2 sm:tw-px-8">
-      <ul class="tw-mx-auto tw-flex">
+      <ul class="tw-p-2 tw-mx-auto tw-flex tw-list-none">
         <li
           v-for="menu in menus"
           :key="menu.name"
@@ -37,3 +37,9 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss" scoped>
+.nuxt-link-exact-active {
+  @apply tw-bg-pink-50 tw-p-3  tw-rounded;
+}
+</style>
