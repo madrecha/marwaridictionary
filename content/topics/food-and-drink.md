@@ -4,7 +4,7 @@ url:
   slugurl: food-and-drink
 
 parents: 
-  - topic
+  - 
 
 children:
   - animal-foods
