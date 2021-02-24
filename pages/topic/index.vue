@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Topics</h1>
+    <p>{{ uniquetopics.length }} topics added till now to the words</p>
     <!-- <ol>
       <li v-for="(topic, i) in topics" :key="i">
         <nuxt-link
@@ -22,7 +23,9 @@
     </ol> -->
     <ol>
       <li v-for="uniquetopic in uniquetopics" :key="uniquetopic">
-        {{ uniquetopic }}
+        <nuxt-link :to="`/topic/${uniquetopic}`">
+          {{ uniquetopic }}
+        </nuxt-link>
       </li>
     </ol>
   </div>
@@ -32,14 +35,14 @@
 export default {
   data() {
     return {
-      topics: [],
+      // topics: [],
       words: [],
       alltopics: [],
       uniquetopics: [],
     };
   },
   async fetch() {
-    this.topics = await this.$content("topics").sortBy("slug").fetch();
+    // this.topics = await this.$content("topics").sortBy("slug").fetch();
 
     this.words = await this.$content("words")
       .only("topics")
@@ -59,6 +62,11 @@ export default {
         return a;
       }, [])
       .sort();
+
+    // Now, with the above uniquetopics code, alltopics get filtered and only unique topics remain.
+    // Moreover, now even if there DOES NOT exist any topic file in Content folder, still words are shown in the individual topic page.
+    // Of course, individual topic file should be created later so as to add more info about that particular topic to be shown on that topic's page. E.g., its parents topics, its children topics.
+    // But currently, even without the files, at least words are coming properly. 😀
   },
 };
 </script>
