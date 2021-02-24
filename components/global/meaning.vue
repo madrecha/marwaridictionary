@@ -1,32 +1,54 @@
 <template>
   <div>
-    <p>
-      Meaning of <span class="tw-capitalize">{{ url.transliteration }}</span> in
-      Marwari
+    <p v-if="url">
+      Marwari meaning of
+      <span class="tw-capitalize">{{ url.transliteration }}</span>
     </p>
     <ol>
       <li v-for="mean in meanings" :key="mean.meaning">
         <span v-html="mean.meaning" class="tw-text-2xl"></span>
 
-        <h3 v-if="mean.examples && h === 2">Marwari Examples</h3>
-        <h4 v-if="mean.examples && h === 3">Marwari Examples</h4>
+        <h3 v-if="(mean.examples || mean.egs) && h === 2">Marwari Examples</h3>
+        <h4 v-if="(mean.examples || mean.egs) && h === 3">Marwari Examples</h4>
         <eg :eg="mean.examples" v-if="mean.examples"></eg>
+        <eg :eg="mean.egs" v-if="mean.egs"></eg>
 
-        <h3 v-if="mean.synonyms && h === 2">Marwari Synonyms</h3>
-        <h4 v-if="mean.synonyms && h === 3">Marwari Synonyms</h4>
+        <h3 v-if="(mean.synonyms || mean.syns) && h === 2">Marwari Synonyms</h3>
+        <h4 v-if="(mean.synonyms || mean.syns) && h === 3">Marwari Synonyms</h4>
         <syn :syn="mean.synonyms" v-if="mean.synonyms"></syn>
+        <syn :syn="mean.syns" v-if="mean.syns"></syn>
 
-        <h3 v-if="mean.antonyms && h === 2">Marwari Antonyms</h3>
-        <h4 v-if="mean.antonyms && h === 3">Marwari Antonyms</h4>
+        <h3 v-if="(mean.antonyms || mean.ants) && h === 2">Marwari Antonyms</h3>
+        <h4 v-if="(mean.antonyms || mean.ants) && h === 3">Marwari Antonyms</h4>
         <ant :ant="mean.antonyms" v-if="mean.antonyms"></ant>
+        <ant :ant="mean.ants" v-if="mean.ants"></ant>
 
-        <h3 v-if="mean.related && h === 2">Related</h3>
-        <h4 v-if="mean.related && h === 3">Related</h4>
+        <h3 v-if="(mean.related || mean.rels) && h === 2">Related</h3>
+        <h4 v-if="(mean.related || mean.rels) && h === 3">Related</h4>
         <related :related="mean.related" v-if="mean.related"></related>
+        <related :related="mean.rels" v-if="mean.rels"></related>
 
-        <h3 v-if="mean.translation && h === 2">Translation</h3>
-        <h4 v-if="mean.translation && h === 3">Translation</h4>
-        <p v-if="url && mean.translation">
+        <h3
+          v-if="
+            (mean.translation || mean.translations || mean.translates) &&
+            h === 2
+          "
+        >
+          Translation
+        </h3>
+        <h4
+          v-if="
+            (mean.translation || mean.translations || mean.translates) &&
+            h === 3
+          "
+        >
+          Translation
+        </h4>
+        <p
+          v-if="
+            url && (mean.translation || mean.translations || mean.translates)
+          "
+        >
           Translate
           <span class="tw-capitalize">{{ url.transliteration }}</span> in
           Marwari
@@ -34,6 +56,14 @@
         <translation
           :translation="mean.translation"
           v-if="mean.translation"
+        ></translation>
+        <translation
+          :translation="mean.translations"
+          v-if="mean.translations"
+        ></translation>
+        <translation
+          :translation="mean.translates"
+          v-if="mean.translates"
         ></translation>
         <!-- <ul>
           <li v-for="example in mean.examples" :key="example.eg">
@@ -58,7 +88,11 @@
 
 <script>
 export default {
-  props: { meanings: Array, url: Object, h: { type: Number, default: 3 } },
+  props: {
+    meanings: { type: Array, required: true },
+    url: { type: Object, required: false },
+    h: { type: Number, default: 3, required: false },
+  },
   data() {
     return {};
   },
