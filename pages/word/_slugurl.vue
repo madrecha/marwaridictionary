@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-mt-3">
+  <div class="tw--mt-4">
     <div v-if="$fetchState.pending" class="tw-min-h-screen tw-my-48">
       <p
         class="tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
@@ -13,12 +13,10 @@
       </p>
     </div>
     <div v-else class="md:tw-flex">
-      <aside
-        class="tw-hidden md:tw-block md:tw--mt-8 md:tw-w-1/6 md:tw-bg-gray-50"
-      >
+      <aside class="tw-hidden md:tw-block md:tw-w-1/6 md:tw-bg-gray-50">
         <div class="tw-sticky tw-top-12">advt / words list / menu</div>
       </aside>
-      <article v-for="(word, i) in words" :key="i" class="md:tw-w-5/6">
+      <article v-for="(word, i) in words" :key="i" class="tw-mt-3 md:tw-w-5/6">
         <div class="tw-text-center">
           <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">
             {{ word.url.title }}
