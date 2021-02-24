@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h1>{{ words.length }} Marwari words about {{ $route.params.topic }}</h1>
+    <div><nuxt-link to="/topic">Go back to Topics</nuxt-link></div>
     <div v-for="(topic, i) in topics" :key="i">
       <div v-if="topic.parents && topic.parents.length > 0">
         <div v-for="parent in topic.parents" :key="parent">
@@ -8,7 +10,6 @@
           {{ $route.params.topic }}
         </div>
       </div>
-      <h1>Marwari words about {{ topic.url.title }}</h1>
       <ol v-if="topic.children && topic.children.length > 0">
         <li v-for="children in topic.children" :key="children">
           <nuxt-link :to="children">
@@ -42,7 +43,7 @@ export default {
       .fetch();
 
     this.words = await this.$content("words")
-      .where({ topics: { $containsAny: this.$route.params.topic } })
+      .where({ topics: { $contains: this.$route.params.topic } })
       .sortBy("slug")
       .fetch();
   },
