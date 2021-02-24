@@ -7,8 +7,6 @@ url:
 grammar: 
   pronoun:
 
-categories: 
-  - 
 
 ---
 

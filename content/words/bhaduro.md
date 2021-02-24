@@ -15,7 +15,7 @@ grammar:
     gender_f_trans: bhaduri
     number: s
 
-categories: 
+topics:
   - animal
 ---
 

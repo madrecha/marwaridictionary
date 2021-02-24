@@ -14,7 +14,7 @@ grammar:
     gender_m_trans: chhoro
     number: s
 
-categories: 
+topics:
   - person
 
 ant:

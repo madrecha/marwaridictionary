@@ -13,7 +13,7 @@ grammar:
     gender: f
     number: s
 
-categories: 
+topics:
   - person
 ---
 

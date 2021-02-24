@@ -10,7 +10,7 @@ grammar:
     trans: ke
     ending: ae
 
-categories: 
+topics:
   - 
 
 ---

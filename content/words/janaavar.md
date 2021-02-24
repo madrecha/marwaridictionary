@@ -13,7 +13,7 @@ grammar:
     gender: m
     number: s
     
-categories: 
+topics:
   - animal
 ---
 

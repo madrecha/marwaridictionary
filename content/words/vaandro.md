@@ -15,7 +15,7 @@ grammar:
     gender_f_trans: vaandri
     number: s
 
-categories: 
+topics: 
   - animal
 ---
 

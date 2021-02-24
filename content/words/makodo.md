@@ -15,7 +15,7 @@ grammar:
     gender_f_trans: makodi
     number: s
 
-categories: 
+topics:
   - insect
 ---
 

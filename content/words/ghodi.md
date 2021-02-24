@@ -15,7 +15,7 @@ grammar:
     gender_m_trans: ghodo
     number: s
 
-categories: 
+topics:
   - animal
 ---
 

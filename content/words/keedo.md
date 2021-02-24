@@ -15,7 +15,7 @@ grammar:
     gender_f_trans: keedi
     number: s
 
-categories: 
+topics:
   - insect
 ---
 

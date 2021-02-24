@@ -8,8 +8,6 @@ grammar:
   pronoun:
     type: interrogative
 
-categories: 
-  - 
 ---
 
 ## Etymology

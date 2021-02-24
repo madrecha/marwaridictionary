@@ -15,7 +15,7 @@ grammar:
     gender_m_trans: keedo
     number: s
 
-categories: 
+topics:
   - insect
 ---
 

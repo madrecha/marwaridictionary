@@ -16,7 +16,7 @@ grammar:
     number: s
     
     
-categories: 
+topics:
   - animal
 ---
 

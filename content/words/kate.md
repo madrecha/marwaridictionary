@@ -8,7 +8,7 @@ grammar:
   pronoun:
     type: interrogative
 
-categories: 
+topics:
   - 
 ---
 

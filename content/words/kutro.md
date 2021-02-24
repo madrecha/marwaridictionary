@@ -15,7 +15,7 @@ grammar:
     gender_f_trans: kutri
     number: s
 
-categories: 
+topics: 
   - animal
 ---
 ## Noun

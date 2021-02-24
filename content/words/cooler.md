@@ -13,8 +13,8 @@ grammar:
     gender: m
     number: s
 
-categories: 
-  - appliance
+topics:
+  - electrical-appliance
 ---
 
 ## Etymology

@@ -86,12 +86,6 @@ translation:
     hi: जाना
     mr: जाणे
 
-categories:
-  - 
-
-topics:
-  - taste
-
 ---
 
 <!-- 
