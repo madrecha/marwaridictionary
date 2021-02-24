@@ -26,11 +26,11 @@
           <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p>
         </div>
         <ul
-          class="tw-m-2 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-3"
+          class="tw-list-none tw-m-2 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-3"
         >
           <li
             v-for="word in words"
-            :key="word"
+            :key="word.url.slugurl"
             class="tw-m-2 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center"
             :class="
               word.grammar && word.grammar.noun
