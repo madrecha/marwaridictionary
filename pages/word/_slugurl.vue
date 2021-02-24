@@ -43,6 +43,7 @@
         >
           <div class="tw-mx-auto tw-text-center">
             <ReadingTime :word="word"></ReadingTime>
+            <!-- {{ words_in_post }} -->
           </div>
 
           <NuxtContent :document="word" class="tw-pt--1"></NuxtContent>
@@ -65,6 +66,7 @@ export default {
   data() {
     return {
       words: [],
+      // words_in_post: "abc",
     };
   },
   async fetch() {
@@ -72,9 +74,12 @@ export default {
       .where({ "url.slugurl": { $eq: this.$route.params.slugurl } })
       // .where({ grammar: { $contains: "verb" } })
       .fetch();
-  },
 
-  // this.$route.params.slugurl
+    // let currentword = this.words[0];
+
+    // const readingTime = require("reading-time");
+    // return (this.words_in_post = readingTime(currentword.meanings[0].meaning));
+  },
 
   activated() {
     // Call fetch again if last fetch more than 9 min ago
