@@ -95,14 +95,14 @@
     </div>
 
     <div
-      v-if="word.antonyms || word.ants"
+      v-if="word.antonyms || word.ants || word.ant"
       class="tw-mt-2 tw-border-t tw-border-green-800"
     >
       Words with Antonyms
     </div>
     ,
     <div
-      v-if="word.synonyms || word.syns"
+      v-if="word.synonyms || word.syns || word.syn"
       class="tw-mt-2 tw-border-t tw-border-green-800"
     >
       Words with Synonyms
