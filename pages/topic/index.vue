@@ -1,7 +1,12 @@
 <template>
   <div>
-    <h1>Topics</h1>
-    <p>{{ uniquetopics.length }} topics added till now to the words</p>
+    <div class="tw-text-center">
+      <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">Topics</h1>
+      <p>
+        {{ uniquetopics.length }} topics added {{ alltopics.length }} times till
+        now to the words
+      </p>
+    </div>
     <!-- <ol>
       <li v-for="(topic, i) in topics" :key="i">
         <nuxt-link
@@ -21,10 +26,11 @@
         </ol>
       </li>
     </ol> -->
-    <ol>
+    <ol class="tw-list-decimal">
       <li v-for="uniquetopic in uniquetopics" :key="uniquetopic">
         <nuxt-link :to="`/topic/${uniquetopic}`">
-          {{ uniquetopic }}
+          {{ uniquetopic }} ({{ getWordsByTopic(alltopics, uniquetopic) }}
+          words)
         </nuxt-link>
       </li>
     </ol>
@@ -48,10 +54,13 @@ export default {
       .only("topics")
       .sortBy(["slug"])
       .fetch();
+
     for (const word of this.words) {
-      if (word.topics) {
+      if (word.topics && word.topics.length > 0) {
         for (const topic of word.topics) {
-          this.alltopics.push(topic);
+          if (topic !== null) {
+            this.alltopics.push(topic);
+          }
         }
       }
     }
@@ -67,6 +76,46 @@ export default {
     // Moreover, now even if there DOES NOT exist any topic file in Content folder, still words are shown in the individual topic page.
     // Of course, individual topic file should be created later so as to add more info about that particular topic to be shown on that topic's page. E.g., its parents topics, its children topics.
     // But currently, even without the files, at least words are coming properly. 😀
+  },
+  methods: {
+    getWordsByTopic(originalArray, topicname) {
+      var compressed = [];
+      // make a copy of the input array
+      var copy = originalArray.slice(0);
+
+      // first loop goes over every element
+      for (var i = 0; i < originalArray.length; i++) {
+        var myCount = 0;
+        // loop over every element in the copy and see if it's the same
+        for (var w = 0; w < copy.length; w++) {
+          if (originalArray[i] == copy[w]) {
+            // increase amount of times duplicate is found
+            myCount++;
+            // sets item to undefined
+            delete copy[w];
+          }
+        }
+
+        if (myCount > 0) {
+          var a = new Object();
+          a.value = originalArray[i];
+          a.count = myCount;
+          compressed.push(a);
+        }
+      }
+      let counttopics;
+
+      for (let i = 0; i < compressed.length; i++) {
+        const element = compressed[i];
+        // if (element.value === null) delete element.value;
+        if (element.value === topicname) {
+          counttopics = element.count;
+        }
+      }
+      // console.log(compressed);
+      // return compressed;
+      return counttopics;
+    },
   },
 };
 </script>
