@@ -12,8 +12,13 @@
         Error in Fetching
       </p>
     </div>
-    <div v-else>
-      <article v-for="(word, i) in words" :key="i">
+    <div v-else class="md:tw-flex">
+      <aside
+        class="tw-hidden md:tw-block md:tw--mt-8 md:tw-w-1/6 md:tw-bg-gray-50"
+      >
+        <div class="tw-sticky tw-top-12">advt / words list / menu</div>
+      </aside>
+      <article v-for="(word, i) in words" :key="i" class="md:tw-w-5/6">
         <div class="tw-text-center">
           <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">
             {{ word.url.title }}
@@ -21,7 +26,7 @@
             meaning in Marwari
           </h1>
           <p
-            class="tw-max-w-2xl tw-mx-auto tw-text-sm tw-text-gray-500 tw-lowercase"
+            class="tw-mt-3 tw-max-w-2xl tw-mx-auto tw-text-xs tw-text-gray-500 tw-lowercase"
           >
             {{ word.url.title }} का मारवाड़ी अर्थ,
             {{ word.url.transliteration }} Marwari meaning,
@@ -34,8 +39,17 @@
             {{ word.url.transliteration }} का मेवाड़ी अर्थ
           </p>
         </div>
-        <NuxtContent :document="word"></NuxtContent>
-        <MaintenanceCategories :word="word"></MaintenanceCategories>
+        <wordTOC :word="word" class="tw-mt-5 tw-max-w-xs tw-mx-auto"></wordTOC>
+        <div
+          class="tw-mt-3 lg:tw-mt-4 lg:tw-mx-4 lg:tw-px-6 lg:tw-py-3 tw-border-t tw-border-b tw-border-pink-300"
+        >
+          <div class="tw-mx-auto tw-text-center">
+            <ReadingTime :word="word"></ReadingTime>
+          </div>
+
+          <NuxtContent :document="word" class="tw-pt--1"></NuxtContent>
+          <MaintenanceCategories :word="word"></MaintenanceCategories>
+        </div>
       </article>
     </div>
   </div>
