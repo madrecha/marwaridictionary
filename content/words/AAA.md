@@ -28,6 +28,7 @@ meanings_verb:
 #   - eg:
 #     eg_trans: 
 #     en:
+#     hi:
 #   - eg:
 #     en:
 
@@ -38,12 +39,18 @@ meanings_verb:
 
 # antonyms:
 #   - ant:
+#     slugurl:
 #     ant_trans: 
 
 # related:
 #   - rel:
+#     slugurl
 #     rel_trans: 
 
+# similar:
+#   - sim: 
+#     slugurl:
+#     sim_trans:
 
 translations:
   - context:
@@ -122,9 +129,30 @@ grammar:
 <!-- ### Related
 <related :related="related" :url="url"></related> -->
 
+<!-- ### Similar
+<similar :similar="similar" :url="url"></similar> -->
+
 ## Verb
 ### Meaning
 <meaning :meanings="meanings_verb" :url="url"></meaning>
 
+<!-- ### Examples
+<eg :eg="examples" :url="url"></eg> -->
+
+<!-- ### Synonyms
+<syn :syn="synonyms" :url="url"></syn> -->
+
+<!-- ### Antonyms
+<ant :ant="antonyms" :url="url"></ant> -->
+
+### Translation
+<translation :translation="translations_verb" :url="url"></translation>
+
 ### Conjugation
 <verb-conj :grammar="grammar" :url="url"></verb-conj>
+
+<!-- ### Related
+<related :related="related" :url="url"></related> -->
+
+<!-- ### Similar
+<similar :similar="similar" :url="url"></similar> -->
