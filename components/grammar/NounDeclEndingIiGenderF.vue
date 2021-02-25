@@ -2,9 +2,11 @@
   <div>
     <table v-if="grammar.noun.ending === 'ii'">
       <thead>
-        <th colspan="3" @click.prevent="showAll = !showAll">
-          Marwari declension of noun → {{ term }}ी ( {{ trans }}ī)
-        </th>
+        <tr>
+          <th colspan="3" @click.prevent="showAll = !showAll">
+            Marwari declension of noun → {{ term }}ी ( {{ trans }}ī)
+          </th>
+        </tr>
       </thead>
       <tbody v-show="showAll">
         <tr>
@@ -32,9 +34,11 @@
 
     <table v-if="grammar.noun.ending === 'ii-vowel'">
       <thead>
-        <th colspan="3" @click.prevent="showAll = !showAll">
-          Marwari declension of noun → {{ term }}ई ( {{ trans }}ī)
-        </th>
+        <tr>
+          <th colspan="3" @click.prevent="showAll = !showAll">
+            Marwari declension of noun → {{ term }}ई ( {{ trans }}ī)
+          </th>
+        </tr>
       </thead>
       <tbody v-show="showAll">
         <tr>

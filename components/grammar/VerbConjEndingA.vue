@@ -1,16 +1,18 @@
 <template>
   <table id="verb-conjugation">
-    <thead>
-      <th colspan="8" @click.prevent="showAll = !showAll">
-        Marwari conjugation of verb → {{ term }}णो ( {{ trans }}ṇo)
-      </th>
-
+    <thead @click.prevent="showAll = !showAll">
       <tr>
+        <th colspan="8">
+          Marwari conjugation of verb → {{ term }}णो ( {{ trans }}ṇo)
+        </th>
+      </tr>
+
+      <tr v-show="showAll">
         <th rowspan="3" colspan="2">Person</th>
         <th colspan="3">Singular</th>
         <th colspan="3">Plural</th>
       </tr>
-      <tr>
+      <tr v-show="showAll">
         <th>1<sup>st</sup> person</th>
         <th>2<sup>nd</sup> person</th>
         <th>3<sup>rd</sup> person</th>
@@ -18,7 +20,7 @@
         <th>2<sup>nd</sup> person</th>
         <th>3<sup>rd</sup> person</th>
       </tr>
-      <tr>
+      <tr v-show="showAll">
         <th>मूं</th>
         <th>थूं</th>
         <th>यो/वो/या/वा</th>

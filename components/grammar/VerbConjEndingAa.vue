@@ -2,9 +2,11 @@
   <div>
     <table id="verb-conjugation">
       <thead>
-        <th colspan="8" @click.prevent="showAll = !showAll">
-          Marwari conjugation of verb → {{ term }}णो ( {{ trans }}ṇo)
-        </th>
+        <tr>
+          <th colspan="8" @click.prevent="showAll = !showAll">
+            Marwari conjugation of verb → {{ term }}णो ( {{ trans }}ṇo)
+          </th>
+        </tr>
 
         <tr v-show="showAll">
           <th rowspan="3" colspan="2">Person</th>

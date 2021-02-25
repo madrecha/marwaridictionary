@@ -1,9 +1,11 @@
 <template>
   <table>
     <thead>
-      <th colspan="3" @click.prevent="showAll = !showAll">
-        Marwari declension of noun → {{ term }}ो ( {{ trans }}o)
-      </th>
+      <tr>
+        <th colspan="3" @click.prevent="showAll = !showAll">
+          Marwari declension of noun → {{ term }}ो ( {{ trans }}o)
+        </th>
+      </tr>
     </thead>
     <tbody v-show="showAll">
       <tr>
