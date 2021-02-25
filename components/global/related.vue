@@ -19,7 +19,10 @@
 
 <script>
 export default {
-  props: { related: Array, url: Object },
+  props: {
+    related: { type: Array, required: true },
+    url: { type: Object, required: false },
+  },
   data() {
     return {};
   },
