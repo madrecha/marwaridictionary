@@ -64,6 +64,11 @@ translations_noun:
     hi:
     hi_trans:
 
+translations_verb:
+  - context:
+    hi:
+    hi_trans:
+    
 grammar:
   adjective:
     ending: o
