@@ -23,12 +23,35 @@
           {{ words.length }} words
         </p>
         <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p>
+        <div>
+          <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto">
+            <button
+              @click.prevent="getNouns()"
+              class="tw-p-2 tw-m-2 tw-bg-blue-50 hover:tw-bg-pink-50"
+            >
+              Nouns
+            </button>
+            <button
+              @click.prevent="getVerbs()"
+              class="tw-p-2 tw-m-2 tw-bg-blue-50 hover:tw-bg-pink-50"
+            >
+              Verbs
+            </button>
+            <button
+              @click.prevent="getAllWords()"
+              class="tw-p-2 tw-m-2 tw-bg-blue-50 hover:tw-bg-pink-50"
+            >
+              All words
+            </button>
+          </div>
+          <p>showing {{ wordsToIterate.length }} words</p>
+        </div>
       </div>
       <ul
         class="tw-list-none tw-m-2 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-3"
       >
         <li
-          v-for="word in words"
+          v-for="word in wordsToIterate"
           :key="word.url.slugurl"
           class="tw-m-2 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center"
           :class="
@@ -84,6 +107,7 @@ export default {
   data() {
     return {
       words: [],
+      wordsToIterate: [],
       nouns: [],
       verbs: [],
     };
@@ -92,8 +116,10 @@ export default {
     this.words = await this.$content("words")
       .where({ slug: { $ne: "AAA" } })
       .without(["body", "toc", "categories"])
-      .sortBy("slug")
+      .sortBy("createdAt", "desc")
       .fetch();
+
+    this.wordsToIterate = this.words;
 
     this.nouns = this.words.filter((word) => {
       if (word.grammar && word.grammar.noun) {
@@ -116,6 +142,17 @@ export default {
     if (this.$fetchState.timestamp <= Date.now() - 1500000) {
       this.$fetch();
     }
+  },
+  methods: {
+    getNouns() {
+      return (this.wordsToIterate = this.nouns);
+    },
+    getVerbs() {
+      return (this.wordsToIterate = this.verbs);
+    },
+    getAllWords() {
+      return (this.wordsToIterate = this.words);
+    },
   },
 };
 </script>
