@@ -57,7 +57,10 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
-    nestedProperties: ['url.slugurl']
+    nestedProperties: ['url.slugurl'],
+    markdown: {
+      tocDepth: 4
+    },
   },
   hooks: {
     'content:file:beforeInsert': (document) => {
