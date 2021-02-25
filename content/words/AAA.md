@@ -108,6 +108,8 @@ grammar:
 ## Adjective
 
 ## Noun
+<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
 ### Meaning
 <meaning :meanings="meanings" :url="url"></meaning>
 
@@ -133,6 +135,8 @@ grammar:
 <similar :similar="similar" :url="url"></similar> -->
 
 ## Verb
+<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
 ### Meaning
 <meaning :meanings="meanings_verb" :url="url"></meaning>
 
