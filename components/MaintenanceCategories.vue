@@ -20,9 +20,9 @@
         }}
       </div>
 
-      <div v-if="word.grammar.noun">
-        <span class="fos">Noun</span> →
-        <ul>
+      <ol v-if="word.grammar.noun" class="">
+        <li class="fos">Noun</li>
+        <ol style="list-style-type: lower-roman">
           <li>
             {{
               word.grammar.noun.gender === "m"
@@ -35,27 +35,27 @@
               word.grammar.noun.number === "s" ? "Singular noun" : "Plural noun"
             }}
           </li>
-          <li>
-            <span v-if="word.grammar.noun.gender_f"
-              >Male nouns having female counterparts</span
-            >
-            <span v-if="word.grammar.noun.gender_m"
-              >Female nouns having male counterparts</span
-            >
+          <li v-if="word.grammar.noun.gender_f">
+            Male nouns having female counterparts
           </li>
-        </ul>
-      </div>
-      <div v-if="word.grammar.pronoun"><span class="fos">Pronoun</span></div>
-      <div v-if="word.grammar.preposition">
-        <span class="fos">Preposition</span>
-      </div>
-      <div v-if="word.grammar.conjunction">
-        <span class="fos">Conjunction</span>
-      </div>
+          <li v-if="word.grammar.noun.gender_m">
+            Female nouns having male counterparts
+          </li>
+        </ol>
+      </ol>
+      <ol v-if="word.grammar.pronoun">
+        <span class="fos"><li>Pronoun</li></span>
+      </ol>
+      <ol v-if="word.grammar.preposition">
+        <li class="fos">Preposition</li>
+      </ol>
+      <ol v-if="word.grammar.conjunction">
+        <li class="fos">Conjunction</li>
+      </ol>
 
-      <div v-if="word.grammar.verb">
-        <span class="fos">Verb</span> →
-        <ul>
+      <ol v-if="word.grammar.verb" class="">
+        <li class="fos">Verb</li>
+        <ol style="list-style-type: lower-roman">
           <li>
             {{
               word.grammar.verb.ending === "a"
@@ -81,43 +81,50 @@
             >
             causative form
           </li>
-        </ul>
-      </div>
+        </ol>
+      </ol>
     </div>
-    <div v-if="word.meanings" class="tw-mt-2 tw-border-t tw-border-green-800">
-      Words with meanings in Frontmatter,
-      <span v-if="word.meanings.length > 1"></span> Words with multiple meanings
-    </div>
-    <div v-if="word.examples" class="tw-mt-2 tw-border-t tw-border-green-800">
-      Words with examples, Words with {{ word.examples.length }} example{{
-        word.examples.length > 1 ? "s" : ""
-      }}, Words with examples outside the Meaning component
-    </div>
-
-    <div
-      v-if="word.antonyms || word.ants || word.ant"
+    <ol v-if="word.meanings" class="tw-mt-2 tw-border-t tw-border-green-800">
+      <li>Words with meanings in Frontmatter</li>
+      <li v-if="word.meanings.length === 1">Words with single meaning</li>
+      <li v-else>Words with multiple meanings</li>
+    </ol>
+    <ol
+      v-if="word.examples || word.egs"
       class="tw-mt-2 tw-border-t tw-border-green-800"
     >
-      Words with Antonyms
-    </div>
-    ,
-    <p
-      v-if="word.synonyms || word.syns || word.syn"
-      class="tw-mt-2 tw-border-t tw-border-green-800"
-    >
-      Words with Synonyms
-    </p>
-    <p v-if="word.related" class="tw-mt-2 tw-border-t tw-border-green-800">
-      Words with related terms, Words with related terms outside Meaning
-      component
-    </p>
+      <li>Words with examples</li>
+      <li v-if="word.examples">
+        Words with {{ word.examples.length }} example{{
+          word.examples.length > 1 ? "s" : ""
+        }}
+      </li>
+      <li v-if="word.egs">
+        Words with {{ word.egs.length }} example{{
+          word.egs.length > 1 ? "s" : ""
+        }}
+      </li>
+      <li>Words with examples outside the Meaning component</li>
+    </ol>
+    <ol class="tw-mt-2 tw-border-t tw-border-green-800">
+      <li v-if="word.antonyms || word.ants || word.ant">Words with Antonyms</li>
+      <li v-if="word.synonyms || word.syns || word.syn">Words with Synonyms</li>
+    </ol>
+    <ol v-if="word.related" class="tw-mt-2 tw-border-t tw-border-green-800">
+      <li>Words with related terms</li>
+      <li>Words with related terms outside Meaning</li>
+    </ol>
+    <ol v-if="word.rels" class="tw-mt-2 tw-border-t tw-border-green-800">
+      <li>Words with related terms</li>
+      <li>Words with related terms outside Meaning</li>
+    </ol>
 
-    <p
+    <ol
       v-if="word.categories && word.categories.length > 0"
       class="tw-mt-2 tw-border-t tw-border-green-800"
     >
-      Words with {{ word.categories.length }} Topics assigned
-    </p>
+      <li>Words with {{ word.categories.length }} Topics assigned</li>
+    </ol>
   </div>
 </template>
 
@@ -135,9 +142,10 @@ ul {
   @apply tw-list-disc tw-mt-2;
 }
 
-li {
-  list-style-type: disc;
+ol {
+  @apply tw-list-decimal tw-mt-2;
 }
+
 .fos {
   @apply tw-text-green-700 tw-bg-green-50 tw-p-1 tw-font-medium;
 }
