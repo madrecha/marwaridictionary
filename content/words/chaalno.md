@@ -9,15 +9,21 @@ grammar:
     term: चाल
     trans: chaal
     ending: a
----
-## Etymology
 
-## Pronunciation
+meanings:
+  - meaning: to walk
+  - meaning: to be okay; to be acceptable
+
+# topics: 
+#   -
+---
 
 ## Verb
 ### Meaning
-1. to walk
-2. to be okay; to be acceptable
+<meaning :meanings="meanings"></meaning>
+
+<!-- ### Examples
+<eg :eg="examples"></eg> -->
 
 ### Conjugation
 <verb-conj :grammar="grammar"></verb-conj>
