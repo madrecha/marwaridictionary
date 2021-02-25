@@ -10,7 +10,7 @@
           :to="
             each_ant.slugurl
               ? `/word/${each_ant.slugurl}`
-              : `/word/${each_ant.syn}`
+              : `/word/${each_ant.ant}`
           "
         >
           {{ each_ant.ant }}
