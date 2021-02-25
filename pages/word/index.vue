@@ -90,7 +90,7 @@ export default {
   },
   async fetch() {
     this.words = await this.$content("words")
-      .where({ slug: { $ne: "README" } })
+      .where({ slug: { $ne: "AAA" } })
       .without(["body", "toc", "categories"])
       .sortBy("slug")
       .fetch();
