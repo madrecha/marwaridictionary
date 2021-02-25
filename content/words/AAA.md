@@ -8,6 +8,7 @@ meanings:
   - meaning:
     examples:
       - eg:
+        eg_trans:
         en:
         hi:
   - meaning:
@@ -15,30 +16,46 @@ meanings:
       - eg:
         en:
 
+meanings_noun:
+  - meaning:
+  - meaning: 
+
 meanings_verb:
   - meaning:
   - meaning:   
 
-examples:
-  - eg:
-    en:
-  - eg:
-    en:
+# examples:
+#   - eg:
+#     eg_trans: 
+#     en:
+#   - eg:
+#     en:
 
-syns:
-  - syn:
-    slugurl:
+# synonyms:
+#   - syn:
+#     slugurl:
+#     syn_trans: 
 
-ants:
-  - ant:
+# antonyms:
+#   - ant:
+#     ant_trans: 
 
-rels:
-  - rel:
+# related:
+#   - rel:
+#     rel_trans: 
+
 
 translations:
   - context:
     hi:
+    hi_trans:
     mr:
+    mr_trans:
+
+translations_noun:
+  - context:
+    hi:
+    hi_trans:
 
 grammar:
   adjective:
@@ -50,7 +67,6 @@ grammar:
     gender_f_trans: 
     number: s
   noun:
-    adjective:
     ending: o
     term: आण
     trans: aan
@@ -62,12 +78,22 @@ grammar:
     term: आ
     trans: aa
     ending: aa
+    causative:
+      self:
+      verb1:
+      verb1_trans:
+      verb2:
+      verb2_trans:
+      verb3:
+      verb3_trans:
+    type:
+      - transitive
 
-categories:
-  -
+# categories:
+#   -
 
-topics:
-  -
+# topics:
+#   -
 
 # abc: abc   
 ---
@@ -78,17 +104,23 @@ topics:
 ### Meaning
 <meaning :meanings="meanings" :url="url"></meaning>
 
-### Examples
-<eg :eg="examples" :url="url"></eg>
+<!-- ### Examples
+<eg :eg="examples" :url="url"></eg> -->
 
-### Synonyms
-<syn :syn="syns" :url="url"></syn>
+<!-- ### Synonyms
+<syn :syn="synonyms" :url="url"></syn> -->
 
-### Antonyms
-<ant :ant="ant" :url="url"></ant>
+<!-- ### Antonyms
+<ant :ant="antonyms" :url="url"></ant> -->
+
+### Translation
+<translation :translation="translations" :url="url"></translation>
 
 ### Declension
 <noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<!-- ### Related
+<related :related="related" :url="url"></related> -->
 
 ## Verb
 ### Meaning
