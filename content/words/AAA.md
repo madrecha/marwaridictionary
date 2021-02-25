@@ -77,6 +77,8 @@ grammar:
     gender: m
     gender_f: 
     gender_f_trans: 
+    gender_m: 
+    gender_m_trans: 
     number: s
   noun:
     ending: o
