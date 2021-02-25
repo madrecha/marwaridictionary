@@ -3,8 +3,8 @@
     <div class="tw-text-center">
       <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">Topics</h1>
       <p class="tw-mt-3">
-        {{ uniquetopics.length }} topics added to {{ alltopics.length }} words
-        till now
+        {{ uniquetopics.length }} topics added {{ alltopics.length }} times till
+        now
       </p>
     </div>
     <!-- OLD CODE (CAN DELETE LATER) -->
