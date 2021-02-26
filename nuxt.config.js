@@ -57,7 +57,35 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
-    nestedProperties: ['url.slugurl'],
+    fullTextSearchFields: ['url.title', 'url.slugurl', 'url.transliteration', 'slug', 'text'],
+    nestedProperties: ['url.slugurl', 'url.title', 'url.transliteration',
+      'grammar.adjective',
+      'grammar.adjective.ending',
+      'grammar.adjective.term',
+      'grammar.adjective.trans',
+      'grammar.adjective.gender',
+      'grammar.adjective.gender_f',
+      'grammar.adjective.gender_f_trans',
+      'grammar.adjective.gender_m',
+      'grammar.adjective.gender_m_trans',
+      'grammar.adjective.number',
+      'grammar.noun',
+      'grammar.noun.ending',
+      'grammar.noun.term',
+      'grammar.noun.trans',
+      'grammar.noun.gender',
+      'grammar.noun.gender_f',
+      'grammar.noun.gender_f_trans',
+      'grammar.noun.gender_m',
+      'grammar.noun.gender_m_trans',
+      'grammar.noun.number',
+      'grammar.verb',
+      'grammar.verb.ending',
+      'grammar.verb.term',
+      'grammar.verb.trans',
+      'grammar.verb.type',
+      'grammar.verb.causative'],
+
     markdown: {
       tocDepth: 4
     },
