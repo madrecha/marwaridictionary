@@ -6,6 +6,9 @@ url:
 
 grammar:
   pronoun
+ 
+syns:
+  - syn: आपाणो
 ---
 ## Etymology
 
@@ -16,4 +19,4 @@ grammar:
 1. our, ours
 
 ### Synonym
-<syn :syn="['आपाणो']"></syn>
+<syn :syn="syns" :url="url"></syn>
