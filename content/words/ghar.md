@@ -4,6 +4,10 @@ url:
   transliteration: ghar
   slugurl: घर
 
+meanings:
+  - meaning: house
+  - meaning: home
+
 grammar:
   word: घर
   noun:
@@ -16,16 +20,15 @@ grammar:
 categories:
   - 
 
-syn: 
-  - मकान
+syns: 
+  - syn: मकान
 ---
 ## Noun
 ### Meaning
-1. house
-2. home
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ### Synonym
-<syn :syn="syn"></syn>
+<syn :syn="syns" :url="url"></syn>
 
 ### Declension
-<noun-decl :grammar="grammar"></noun-decl>
+<noun-decl :grammar="grammar" :url="url"></noun-decl>

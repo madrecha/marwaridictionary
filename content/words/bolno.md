@@ -7,7 +7,7 @@ url:
 grammar: 
   verb: 
     term: बोल
-    en: bol
+    trans: bol
     ending: a
 
 ---
