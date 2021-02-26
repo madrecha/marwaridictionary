@@ -7,7 +7,7 @@
         type="search"
         autocomplete="off"
         placeholder="Search..."
-        class="tw-border tw-rounded-xl tw-shadow-lg focus:tw-outline-none focus:tw-ring-2 tw-py-1 tw-px-3"
+        class="tw-border tw-rounded-xl tw-shadow focus:tw-outline-none focus:tw-ring-2 tw-py-1 tw-px-3"
         :class="width"
       />
     </div>
@@ -49,8 +49,8 @@ export default {
       }
 
       this.wordsToSearch = await this.$content("words")
-        .only(["url", "slug"])
-        .sortBy("slug", "asc")
+        // .only(["url", "slug"])
+        .sortBy("url.title", "asc")
         .limit(10)
         .search(query)
         .fetch();
