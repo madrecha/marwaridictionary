@@ -22,8 +22,9 @@
           {{ words.length - nouns.length - verbs.length }} others =
           {{ words.length }} words
         </p>
-        <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p>
-        <div>
+        <SearchWords class="tw-mt-3"></SearchWords>
+        <!-- <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p> -->
+        <div class="tw-mt-3">
           <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto">
             <button
               @click.prevent="getNouns()"
