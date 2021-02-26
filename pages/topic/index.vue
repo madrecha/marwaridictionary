@@ -28,7 +28,9 @@
       </li>
     </ol> -->
     <div class="tw-mt-3 tw-max-w-5xl tw-mx-auto">
-      <ol class="tw-list-decimal tw-grid tw-grid-cols-3 tw-gap-3 tw-mx-auto">
+      <ol
+        class="tw-list-decimal tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-1 lg:tw-gap-3 tw-p-2"
+      >
         <li
           v-for="uniquetopic in uniquetopics"
           :key="uniquetopic"
@@ -36,7 +38,7 @@
         >
           <nuxt-link
             :to="`/topic/${uniquetopic}`"
-            class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
+            class="tw-p-1 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50 tw-leading-relaxed"
           >
             {{ uniquetopic }} ({{ getWordsByTopic(alltopics, uniquetopic) }}
             words)
