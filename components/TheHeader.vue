@@ -5,22 +5,28 @@
     <div class="tw-w-1/5 md:tw-hidden tw-p-2">
       <button @click.prevent="show = !show">🧾</button>
     </div>
-    <nav
-      class="md:tw-block md:tw-w-1/3 tw-px-2"
-      :class="!show ? ['tw-hidden'] : ['tw-block']"
-    >
+    <nav class="md:tw-block md:tw-w-1/3 tw-px-2">
       <ul id="ul-menu" class="md:tw-flex tw-items-center tw-justify-center">
         <li
-          v-for="menu in menus"
-          :key="menu.name"
           class="tw-text-sm sm:tw-text-base tw-mx-0.5 md:tw-mx-2 tw-font-medium"
-          @click.prevent="hideMenu()"
         >
           <nuxt-link
             exact
-            :to="menu.url"
+            to="/word"
             class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
-            >{{ menu.name }}</nuxt-link
+            >Words</nuxt-link
+          >
+        </li>
+        <li
+          class="tw-text-sm sm:tw-text-base tw-mx-0.5 md:tw-mx-2 tw-font-medium"
+          @click.prevent="hideMenu()"
+          :class="!show ? ['tw-hidden'] : ['tw-block']"
+        >
+          <nuxt-link
+            exact
+            to="/topic"
+            class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
+            >Topics</nuxt-link
           >
         </li>
       </ul>
@@ -43,7 +49,7 @@ export default {
       show: false,
       menus: [
         // { name: "Home", url: "/" },
-        { name: "Words", url: "/word" },
+        // { name: "Words", url: "/word" },
         { name: "Topics", url: "/topic" },
         // { name: "About", url: "/about" },
       ],
