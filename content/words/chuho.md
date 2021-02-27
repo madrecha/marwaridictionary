@@ -1,28 +1,25 @@
 ---
-url:
-  title: उंदरो
-  transliteration: undaro
-  slugurl: उंदरो
+url: 
+  title: चूहो
+  transliteration: chuho
+  slugurl: चूहो
 
 meanings:
   - meaning: mouse
   - meaning: rat 
 
-grammar:
-  noun:
-    word: उंदरो
-    ending: o
-    term: उंदर
-    trans: undar
-    gender: m
-    gender_f: उंदरी
-    gender_f_trans: undari
-    number: s
+# examples:
+#   - eg:
+#     eg_trans: 
+#     en:
+#     hi:
+#   - eg:
+#     en:
 
 synonyms:
-  - syn: चूहो
-    syn_trans: chuho 
-    
+  - syn: उंदरो
+    syn_trans: undaro
+
 # antonyms:
 #   - ant:
 #     slugurl:
@@ -45,10 +42,25 @@ translations:
     mr:
     mr_trans:
     
-topics:
-  - animal
----
+grammar:
+  noun:
+    ending: o
+    term: चूह
+    trans: chuh
+    gender: m
+    gender_f: चूही 
+    gender_f_trans: chuhi
+    number: s
 
+# categories:
+#   -
+
+topics:
+  - vermin
+  - animal
+
+# abc: abc   
+---
 
 ## Noun
 <!-- <fos :grammar="grammar" :url="url"></fos> -->
@@ -70,3 +82,9 @@ topics:
 
 ### Declension
 <noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<!-- ### Related
+<related :related="related" :url="url"></related> -->
+
+<!-- ### Similar
+<similar :similar="similar" :url="url"></similar> -->
