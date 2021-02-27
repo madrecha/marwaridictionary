@@ -23,10 +23,7 @@
 </template>
 
 <script>
-// import all from "~/components/all.vue";
-
 export default {
-  // components: { all },
   data() {
     return {
       words: [],
@@ -72,76 +69,10 @@ export default {
         }
 
         return (meaningssearch = a || b || c);
-
-        // if (query === word.url.transliteration) {
-        //   console.log(word.meanings.toString());
-        // }
-
-        // || query === word.url.title ||
-        // /[0-9]/ === word.meanings[0].meaning.search(query)
       });
 
-      // for (let word of this.words) {
-      //   if (word.url.transliteration == query) {
-      //     this.wordsToIterate.push(word);
-      //     word = {};
-      //   }
-      // }
       // delete this.words;
     },
-  },
-  async fetch() {
-    // this.words = await this.$content("words").limit(10).fetch();
-    // this.wordsToIterate = this.words.filter((word) => {
-    //   word.url.transliteration = this.searcha;
-    // });
-    // console.log();
-    // for (const word of this.words) {
-    //   console.log(word);
-    // }
-    // this.words = await this.$content("words")
-    // .where({
-    //   $or: [
-    //     {
-    //       "url.transliteration": {
-    //         $contains: "lei jaano",
-    //       },
-    //     },
-    //     // {
-    //     //   "url.title": { $contains: "लेई जाणो" },
-    //     // },
-    //     {
-    //       "synonyms[0].syn": { $contains: "घर" },
-    //     },
-    //     // { meaning: { $contains: "abc" } },
-    //     {
-    //       meanings: { meaning: { $contains: "jump" } },
-    //     },
-    //     {
-    //       synonyms: { $contains: "syn: घर" },
-    //     },
-    //     {
-    //       check: { $contains: "abcd" },
-    //     },
-    //     {
-    //       grammar: {
-    //         $contains: {
-    //           noun: { $contains: { trans: { $contains: "makaan" } } },
-    //         },
-    //       },
-    //     },
-    //     // {
-    //     //   topics: { $contains: "animal" },
-    //     // },
-    //     // {
-    //     //   meanings: { $size: { $gte: 1 } },
-    //     // },
-    //     // {
-    //     //   meanings: { $size: { $gte: 1 } },
-    //     // },
-    //   ],
-    // })
-    // .fetch();
   },
 };
 </script>
