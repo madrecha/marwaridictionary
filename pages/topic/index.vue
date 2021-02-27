@@ -50,6 +50,8 @@
 </template>
 
 <script>
+import _ from "lodash";
+
 export default {
   data() {
     return {
@@ -77,12 +79,14 @@ export default {
       }
     }
 
-    this.uniquetopics = this.alltopics
-      .reduce(function (a, b) {
-        if (a.indexOf(b) < 0) a.push(b);
-        return a;
-      }, [])
-      .sort();
+    this.uniquetopics = _.uniq(this.alltopics).sort();
+
+    // this.uniquetopics = this.alltopics
+    //   .reduce(function (a, b) {
+    //     if (a.indexOf(b) < 0) a.push(b);
+    //     return a;
+    //   }, [])
+    //   .sort();
 
     // Now, with the above uniquetopics code, alltopics get filtered and only unique topics remain.
     // Moreover, now even if there DOES NOT exist any topic file in Content folder, still words are shown in the individual topic page.
