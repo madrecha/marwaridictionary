@@ -55,7 +55,7 @@
       >
         <li
           v-for="word in wordsToIterate"
-          :key="word.url.slugurl"
+          :key="word.slug"
           class="tw-m-2 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center"
           :class="
             word.grammar && word.grammar.noun
