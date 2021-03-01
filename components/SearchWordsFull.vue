@@ -59,8 +59,10 @@ export default {
 
       this.wordsToIterate = this.words.filter((word) => {
         let a1, a2, a3, a4;
+        let c1, c2, c3;
         let b, c, d, e, f, g, h, i, j, k, l, m;
         let tc, hi, hi_trans, mr, mr_trans, gu, gu_trans;
+        let cat, t;
 
         // Below is to Search URL
 
@@ -80,6 +82,25 @@ export default {
         // It can be 'meanings', 'meaning', 'meanings_noun', 'meanings_verb', etc.
 
         if (word.meanings && word.meanings.length > 0) {
+          if (
+            word.meanings[0].meaning &&
+            typeof word.meanings[0].meaning === "string"
+          ) {
+            c1 = word.meanings[0].meaning.toLowerCase().includes(query);
+          }
+          // if (
+          //   word.meanings[1].meaning &&
+          //   typeof word.meanings[1].meaning === "string"
+          // ) {
+          //   c2 = word.meanings[1].meaning.toLowerCase().includes(query);
+          // }
+          // if (
+          //   word.meanings[2].meaning &&
+          //   typeof word.meanings[2].meaning === "string"
+          // ) {
+          //   c3 = word.meanings[2].meaning.toLowerCase().includes(query);
+          // }
+
           for (const mean of word.meanings) {
             if (
               (mean.meaning && typeof mean.meaning === "string") ||
@@ -150,12 +171,33 @@ export default {
           }
         }
 
+        // Search Categories
+        if (word.categories && word.categories.length > 0) {
+          for (const item of word.categories) {
+            if (typeof item === "string") {
+              cat = item.toLowerCase().includes(query);
+            }
+          }
+        }
+
+        // Search Topics
+        if (word.topics && word.topics.length > 0) {
+          for (const item of word.topics) {
+            if (typeof item === "string") {
+              t = item.toLowerCase().includes(query);
+            }
+          }
+        }
+
         // Return something as true, because Filter works only then.
         return (toReturnSomethingTrue =
           a1 ||
           a2 ||
           a3 ||
           a4 ||
+          c1 ||
+          c2 ||
+          c3 ||
           c ||
           d ||
           e ||
@@ -165,7 +207,9 @@ export default {
           mr ||
           mr_trans ||
           gu ||
-          gu_trans);
+          gu_trans ||
+          cat ||
+          t);
       });
 
       // Show only 10 words even if the Array had hundreds of words to begin with
@@ -175,6 +219,7 @@ export default {
   methods: {
     // To clear the Search on clicking the link
     clearInput() {
+      this.words = [];
       this.wordsToIterate = [];
       // document.getElementById("search-word-input").value = "";
       this.query = "";
