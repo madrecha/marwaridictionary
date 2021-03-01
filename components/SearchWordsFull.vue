@@ -46,13 +46,21 @@ export default {
     async query(query) {
       const _ = require("lodash");
 
-      if (!query) {
+      // If input if false or if it has only spaces, then don't update the Words
+
+      const inputbox = document.getElementById("search-word-input").value;
+      const hasSpace = new RegExp("^[ ]+$").test(inputbox);
+
+      if (!query || hasSpace) {
+        this.words = [];
         this.wordsToIterate = [];
         return;
       }
 
+      // Main starts...
+
       this.words = await this.$content("words")
-        .without(["body", "toc"])
+        .without(["body", "toc", "readingTime"])
         .fetch();
 
       let toReturnSomethingTrue;
