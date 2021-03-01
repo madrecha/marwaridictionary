@@ -43,8 +43,8 @@ translations:
 grammar:
   noun:
     ending: ii
-    term: दूधी
-    trans: dudhi
+    term: दूध
+    trans: dudh
     gender: f
     number: s
 

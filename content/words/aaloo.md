@@ -2,6 +2,9 @@
 url: 
   title: आलू
   transliteration: aaloo
+  alt_trans:
+    - aloo
+    - aalu
   slugurl: आलू
 
 meanings:
