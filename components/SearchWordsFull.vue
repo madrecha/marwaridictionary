@@ -116,6 +116,9 @@ export default {
       this.wordsToIterate = this.words.filter((word) => {
         let a1, a2, a3, a4;
         let c1, c2, c3;
+        let d1, d2, d3;
+        let e1, e2, e3;
+        let f1, f2, f3;
         let b, c, d, e, f, g, h, i, j, k, l, m;
         let tc, hi, hi_trans, mr, mr_trans, gu, gu_trans;
         let cat, t;
@@ -170,6 +173,12 @@ export default {
         if (word.meaning && word.meaning.length > 0) {
           for (const mean of word.meaning) {
             if (
+              word.meaning[0].meaning &&
+              typeof word.meaning[0].meaning === "string"
+            ) {
+              d1 = word.meaning[0].meaning.toLowerCase().includes(query);
+            }
+            if (
               (mean.meaning && typeof mean.meaning === "string") ||
               typeof mean.meaning === "number"
             ) {
@@ -180,6 +189,12 @@ export default {
 
         if (word.meanings_noun && word.meanings_noun.length > 0) {
           for (const mean of word.meanings_noun) {
+            if (
+              word.meanings_noun[0].meaning &&
+              typeof word.meanings_noun[0].meaning === "string"
+            ) {
+              e1 = word.meanings_noun[0].meaning.toLowerCase().includes(query);
+            }
             if (
               (mean.meaning && typeof mean.meaning === "string") ||
               typeof mean.meaning === "number"
@@ -192,6 +207,12 @@ export default {
         if (word.meanings_verb && word.meanings_verb.length > 0) {
           for (const mean of word.meanings_verb) {
             if (
+              word.meanings_verb[0].meaning &&
+              typeof word.meanings_verb[0].meaning === "string"
+            ) {
+              f1 = word.meanings_verb[0].meaning.toLowerCase().includes(query);
+            }
+            if (
               (mean.meaning && typeof mean.meaning === "string") ||
               typeof mean.meaning === "number"
             ) {
@@ -203,6 +224,58 @@ export default {
         // Search Translations
         if (word.translations && word.translations.length > 0) {
           for (const trans of word.translations) {
+            if (trans.context && typeof trans.context === "string") {
+              tc = trans.context.toLowerCase().includes(query);
+            }
+            if (trans.hi && typeof trans.hi === "string") {
+              hi = trans.hi.toLowerCase().includes(query);
+            }
+            if (trans.hi_trans && typeof trans.hi_trans === "string") {
+              hi_trans = trans.hi_trans.toLowerCase().includes(query);
+            }
+            if (trans.mr && typeof trans.mr === "string") {
+              mr = trans.mr.toLowerCase().includes(query);
+            }
+            if (trans.mr_trans && typeof trans.mr_trans === "string") {
+              mr_trans = trans.mr_trans.toLowerCase().includes(query);
+            }
+            if (trans.gj && typeof trans.gj === "string") {
+              gu = trans.gj.toLowerCase().includes(query);
+            }
+            if (trans.gj_trans && typeof trans.gj_trans === "string") {
+              gu_trans = trans.gj_trans.toLowerCase().includes(query);
+            }
+          }
+        }
+
+        if (word.translations_noun && word.translations_noun.length > 0) {
+          for (const trans of word.translations_noun) {
+            if (trans.context && typeof trans.context === "string") {
+              tc = trans.context.toLowerCase().includes(query);
+            }
+            if (trans.hi && typeof trans.hi === "string") {
+              hi = trans.hi.toLowerCase().includes(query);
+            }
+            if (trans.hi_trans && typeof trans.hi_trans === "string") {
+              hi_trans = trans.hi_trans.toLowerCase().includes(query);
+            }
+            if (trans.mr && typeof trans.mr === "string") {
+              mr = trans.mr.toLowerCase().includes(query);
+            }
+            if (trans.mr_trans && typeof trans.mr_trans === "string") {
+              mr_trans = trans.mr_trans.toLowerCase().includes(query);
+            }
+            if (trans.gj && typeof trans.gj === "string") {
+              gu = trans.gj.toLowerCase().includes(query);
+            }
+            if (trans.gj_trans && typeof trans.gj_trans === "string") {
+              gu_trans = trans.gj_trans.toLowerCase().includes(query);
+            }
+          }
+        }
+
+        if (word.translations_verb && word.translations_verb.length > 0) {
+          for (const trans of word.translations_verb) {
             if (trans.context && typeof trans.context === "string") {
               tc = trans.context.toLowerCase().includes(query);
             }
@@ -254,6 +327,12 @@ export default {
           c1 ||
           c2 ||
           c3 ||
+          d1 ||
+          d2 ||
+          d3 ||
+          e1 ||
+          e2 ||
+          e3 ||
           c ||
           d ||
           e ||
