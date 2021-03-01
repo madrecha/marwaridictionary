@@ -2,6 +2,8 @@
 url: 
   title: वगड़णो
   transliteration: vagadno
+  alt_trans: 
+    - wagadno
   slugurl: वगड़णो
 
 meanings:

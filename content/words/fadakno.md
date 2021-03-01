@@ -22,7 +22,7 @@ meanings:
   - meaning: To be enthusiastic
 
 examples: 
-  - eg: रिजल्ट देखते इन वो खुशी रा मारे फदकवा लागी ग्यो ।
+  - eg: रिजल्ट देखते इन वो खुशी रा मारे फदकवा लागी ग्यो।
     en: As soon as he saw the result, he started jumping excitedly.
     hi: रिजल्ट देखते ही वो खुुशी के मारे फुदकने लग गया।
     mr: रिजल्ट बघताच तो हर्षाने उड्या मारू लागला.

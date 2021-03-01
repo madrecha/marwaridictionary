@@ -2,6 +2,8 @@
 url: 
   title: हबुड़णो
   transliteration: habudno
+  alt_trans:
+    - haboodno
   slugurl: हबुड़णो
 
 meanings:
@@ -53,8 +55,8 @@ meanings:
     
 grammar:
   verb:
-    term: हबुड़ण
-    trans: habudn
+    term: हबुड़
+    trans: habud
     ending: a
     causative:
       self: 1

@@ -1,7 +1,13 @@
 ---
 url: 
   title: वगड़वाणो
-  transliteration: vagaadno
+  transliteration: vagadwano
+  alt_trans: 
+    - wagadvaano
+    - wagadvano
+    - wagadwano
+    - wagadwaano
+    - vagadwaano
   slugurl: वगड़वाणो
 
 meanings:

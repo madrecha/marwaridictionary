@@ -2,6 +2,8 @@
 url: 
   title: भूळणो
   transliteration: bhoolno
+  alt_trans: 
+    - bhulno
   slugurl: भूळणो
 
 meanings:
