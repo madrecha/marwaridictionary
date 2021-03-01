@@ -1,21 +1,24 @@
 <template>
-  <ul>
-    <li v-for="eacheg in eg" :key="eacheg.eg">
-      {{ eacheg.eg }} <br />
-      {{ Transliterate(eacheg.eg) }}
+  <ol v-if="eg">
+    <li v-for="item in eg" :key="item.eg">
+      {{ item.eg }} <br />
+      <span v-if="item.eg">{{ Transliterate(item.eg) }}</span>
       <ul>
-        <li v-if="eacheg.en">
-          <span class="tw-text-xs">English:</span> {{ eacheg.en }}
+        <li v-if="item.en">
+          <span class="tw-text-xs">English:</span> {{ item.en }}
         </li>
-        <li v-if="eacheg.hi">
-          <span class="tw-text-xs">Hindi:</span> {{ eacheg.hi }}
+        <li v-if="item.hi">
+          <span class="tw-text-xs">Hindi:</span> {{ item.hi }}
         </li>
-        <li v-if="eacheg.mr">
-          <span class="tw-text-xs">Marathi:</span> {{ eacheg.mr }}
+        <li v-if="item.mr">
+          <span class="tw-text-xs">Marathi:</span> {{ item.mr }}
+        </li>
+        <li v-if="item.gu">
+          <span class="tw-text-xs">Gujarati:</span> {{ item.gu }}
         </li>
       </ul>
     </li>
-  </ul>
+  </ol>
 </template>
 
 <script>
