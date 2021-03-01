@@ -4,6 +4,12 @@ url:
   transliteration: andho
   slugurl: अंधो
 
+meanings:
+  - meaning: blind
+
+meanings_noun:
+  - meaning: blind person
+
 grammar: 
   word: अंधो
   adjective:
@@ -20,12 +26,14 @@ grammar:
 ---
 
 ## Adjective
+
 ### Meaning
-1. blind
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ## Noun
 ### Meaning
-1. blind person
+
+<meaning :meanings="meanings_noun" :url="url"></meaning>
 
 ### Declension
 <noun-decl :grammar="grammar"></noun-decl>

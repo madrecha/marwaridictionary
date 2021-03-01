@@ -2,6 +2,8 @@
 url:
   title: वांदरी
   transliteration: vaandri
+  alt_trans:
+    - vandri
   slugurl: वांदरी
 
 grammar:

@@ -4,6 +4,13 @@ url:
   transliteration: bhaduro
   slugurl: भडूरो
 
+meanings:
+  - meaning: pig
+
+translations:
+  - context:
+    hi: सूअर
+
 grammar: 
   word: भडूरो
   noun:
@@ -21,7 +28,19 @@ topics:
 
 ## Noun
 ### Meaning
-1. pig
+<meaning :meanings="meanings" :url="url"></meaning>
+
+<!-- ### Examples
+<eg :eg="examples" :url="url"></eg> -->
+
+<!-- ### Synonyms
+<syn :syn="synonyms" :url="url"></syn> -->
+
+<!-- ### Antonyms
+<ant :ant="antonyms" :url="url"></ant> -->
+
+### Translation
+<translation :translation="translations" :url="url"></translation>
 
 ### Declension
-<noun-decl :grammar="grammar"></noun-decl>
+<noun-decl :grammar="grammar" :url="url"></noun-decl>

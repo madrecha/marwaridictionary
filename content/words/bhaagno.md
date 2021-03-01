@@ -4,6 +4,10 @@ url:
   transliteration: bhaagno
   slugurl: भागणो
 
+meanings:
+  - meaning: to run
+  - meaning: to run away
+
 grammar: 
   word: भागणो
   verb:
@@ -11,20 +15,24 @@ grammar:
     trans: bhaag
     en: bhaag
     ending: a
+    causative:
+      self: 1
+      verb1: भागणो
+      verb1_trans: bhaagno
+      verb2: भगाणो
+      verb2_trans: bhagaano
+      verb3: भगवाणो
+      verb3_trans: bhagwano
     type: 
       - intransitive
 
 categories:
   - 
 ---
-## Etymology
-
-## Pronunciation
 
 ## Verb
 ### Meaning
-1. to run
-2. to run away
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ### Conjugation
 <verb-conj :grammar="grammar"></verb-conj>

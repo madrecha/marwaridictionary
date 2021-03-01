@@ -2,7 +2,17 @@
 url:
   title: भैंस
   transliteration: bhains
+  alt_trans:
+    - bhais
   slugurl: भैंस
+
+meanings: 
+  - meaning: buffalo
+
+translations:
+  - context:
+    hi: भैंस
+    hi_trans: bhains
 
 grammar: 
   noun:
@@ -18,8 +28,28 @@ topics:
 ---
 
 ## Noun
+<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
 ### Meaning
-1. buffalo
+<meaning :meanings="meanings" :url="url"></meaning>
+
+<!-- ### Examples
+<eg :eg="examples" :url="url"></eg> -->
+
+<!-- ### Synonyms
+<syn :syn="synonyms" :url="url"></syn> -->
+
+<!-- ### Antonyms
+<ant :ant="antonyms" :url="url"></ant> -->
+
+### Translation
+<translation :translation="translations" :url="url"></translation>
 
 ### Declension
-<noun-decl :grammar="grammar"></noun-decl>
+<noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<!-- ### Related
+<related :related="related" :url="url"></related> -->
+
+<!-- ### Similar
+<similar :similar="similar" :url="url"></similar> -->

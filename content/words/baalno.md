@@ -11,7 +11,6 @@ meanings_verb:
   - meaning: to cause to burn
   - meaning: to cause jealousy
 
-
 # examples:
 #   - eg:
 #     en:

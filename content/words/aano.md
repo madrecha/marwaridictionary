@@ -4,6 +4,10 @@ url:
   transliteration: aano
   slugurl: आणो
 
+meanings:
+  - meaning: to come
+  - meaning: to arrive
+
 grammar: 
   verb:
     term: आ
@@ -11,13 +15,10 @@ grammar:
     ending: aa
 
 ---
-## Etymology
 
-## Pronunciation
-
-## Meaning
-1. to come
-2. to arrive
+## Verb
+### Meaning
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ### Conjugation
 <verb-conj :grammar="grammar"></verb-conj>

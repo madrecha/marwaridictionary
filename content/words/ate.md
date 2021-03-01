@@ -4,8 +4,11 @@ url:
   transliteration: ate
   slugurl: अटे
 
+meanings:
+  - meaning: here
+
 grammar: 
-  pronoun:
+  pronoun
 
 examples:
   - eg: अटे आव
@@ -17,5 +20,7 @@ categories:
 
 ## Pronoun
 ### Meaning
-1. here
-		<eg :eg="examples"></eg>
+<meaning :meanings="meanings" :url="url"></meaning>
+
+### Examples
+<eg :eg="examples"></eg>

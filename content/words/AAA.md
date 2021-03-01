@@ -1,8 +1,8 @@
 ---
 url: 
-  title: आणो
-  transliteration: aano
-  slugurl: आणो
+  title: णो
+  transliteration: no
+  slugurl: णो
 
 meanings:
   - meaning:

@@ -4,19 +4,18 @@ url:
   transliteration: aapno
   slugurl: आपणो
 
+meanings:
+  - meaning: our, ours
+
 grammar:
   pronoun
  
 syns:
   - syn: आपाणो
 ---
-## Etymology
-
-## Pronunciation
-
 ## Pronoun
 ### Meaning
-1. our, ours
+<meaning :meanings="meanings" :url="url"></meaning>
 
 ### Synonym
 <syn :syn="syns" :url="url"></syn>
