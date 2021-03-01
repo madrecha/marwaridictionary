@@ -9,7 +9,29 @@
         placeholder="Search..."
         class="tw-border tw-rounded-xl tw-shadow focus:tw-outline-none focus:tw-ring-2 tw-py-1 tw-px-3"
         :class="width"
+        @click.prevent="showSearchHelp = true"
       />
+    </div>
+    <div
+      class="tw-absolute tw-top-10 tw-left-0 tw-right-0 tw-flex tw-flex-wrap tw-bg-yellow-50 tw-p-1 tw-rounded tw-shadow"
+      :class="!showSearchHelp ? 'tw-hidden' : 'tw-block'"
+    >
+      <div class="tw-relative">
+        <div>
+          <p class="tw-py tw-pl-1 tw-pr-4 tw-text-xs">
+            Search word (in English, Devanagari or Hindi), meaning,
+            translation...
+            <br />
+            <span class="tw-text-sm">E.g. → विंदणी, vindani, wife, पत्नी</span>
+          </p>
+        </div>
+        <button
+          @click.prevent="showSearchHelp = false"
+          class="tw-absolute tw-top-3 tw-right-0 tw-rounded-full tw-bg-yellow-200 focus:tw-outline-none focus:tw-ring-2"
+        >
+          ❌
+        </button>
+      </div>
     </div>
     <div
       class="tw-mt-3 tw-max-w-3xl tw-mx-auto tw-absolute tw-top-6 tw-left-0 tw-right-0"
@@ -40,6 +62,7 @@ export default {
       words: [],
       wordsToIterate: [],
       query: "",
+      showSearchHelp: false,
     };
   },
   watch: {
@@ -55,6 +78,11 @@ export default {
         this.words = [];
         this.wordsToIterate = [];
         return;
+      }
+
+      // Hide the Search Help box if someone types something
+      if (query.length > 0) {
+        this.showSearchHelp = false;
       }
 
       // Main starts...
