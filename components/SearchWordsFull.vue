@@ -58,7 +58,7 @@ export default {
       let toReturnSomethingTrue;
 
       this.wordsToIterate = this.words.filter((word) => {
-        let a, b, c, d, e, f, g, h, i, j, k, l, m;
+        let a1, a2, a3, a4, b, c, d, e, f, g, h, i, j, k, l, m;
         let tc,
           hindi,
           hindi_trans,
@@ -67,15 +67,48 @@ export default {
           gujarati,
           gujarati_trans;
 
+        // Below is to Search URL
+
         if (word.url) {
-          a = word.url.transliteration.toLowerCase().includes(query);
-          b = word.url.slugurl.toLowerCase().includes(query);
+          a1 = word.url.title.toLowerCase().includes(query);
+          a2 = word.url.transliteration.toLowerCase().includes(query);
+          a3 = word.url.slugurl.toLowerCase().includes(query);
+
+          if (word.url.alt_trans && word.url.alt_trans.length > 0) {
+            for (const item of word.url.alt_trans) {
+              a4 = item.toLowerCase().includes(query);
+            }
+          }
         }
 
         if (word.meanings && word.meanings.length > 0) {
           for (const mean of word.meanings) {
             if (mean.meaning && typeof mean.meaning === "string") {
               c = mean.meaning.toLowerCase().includes(query);
+            }
+          }
+        }
+
+        if (word.meaning && word.meaning.length > 0) {
+          for (const mean of word.meaning) {
+            if (mean.meaning && typeof mean.meaning === "string") {
+              d = mean.meaning.toLowerCase().includes(query);
+            }
+          }
+        }
+
+        if (word.meanings_noun && word.meanings_noun.length > 0) {
+          for (const mean of word.meanings_noun) {
+            if (mean.meaning && typeof mean.meaning === "string") {
+              e = mean.meaning.toLowerCase().includes(query);
+            }
+          }
+        }
+
+        if (word.meanings_verb && word.meanings_verb.length > 0) {
+          for (const mean of word.meanings_verb) {
+            if (mean.meaning && typeof mean.meaning === "string") {
+              f = mean.meaning.toLowerCase().includes(query);
             }
           }
         }
@@ -107,9 +140,13 @@ export default {
         }
 
         return (toReturnSomethingTrue =
-          a ||
-          b ||
+          a1 ||
+          a2 ||
+          a3 ||
+          a4 ||
           c ||
+          d ||
+          e ||
           tc ||
           hindi ||
           hindi_trans ||
@@ -120,6 +157,14 @@ export default {
       });
 
       this.wordsToIterate = _.take(this.wordsToIterate, 10);
+    },
+  },
+  methods: {
+    clearInput() {
+      this.wordsToIterate = [];
+      // document.getElementById("search-word-input").value = "";
+      this.query = "";
+      return;
     },
   },
 };
