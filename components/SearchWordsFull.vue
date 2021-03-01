@@ -58,14 +58,9 @@ export default {
       let toReturnSomethingTrue;
 
       this.wordsToIterate = this.words.filter((word) => {
-        let a1, a2, a3, a4, b, c, d, e, f, g, h, i, j, k, l, m;
-        let tc,
-          hindi,
-          hindi_trans,
-          marathi,
-          marathi_trans,
-          gujarati,
-          gujarati_trans;
+        let a1, a2, a3, a4;
+        let b, c, d, e, f, g, h, i, j, k, l, m;
+        let tc, hi, hi_trans, mr, mr_trans, gu, gu_trans;
 
         // Below is to Search URL
 
@@ -81,9 +76,15 @@ export default {
           }
         }
 
+        // Below is to Search Meanings. Meanings is an Array of objects.
+        // It can be 'meanings', 'meaning', 'meanings_noun', 'meanings_verb', etc.
+
         if (word.meanings && word.meanings.length > 0) {
           for (const mean of word.meanings) {
-            if (mean.meaning && typeof mean.meaning === "string") {
+            if (
+              (mean.meaning && typeof mean.meaning === "string") ||
+              typeof mean.meaning === "number"
+            ) {
               c = mean.meaning.toLowerCase().includes(query);
             }
           }
@@ -91,7 +92,10 @@ export default {
 
         if (word.meaning && word.meaning.length > 0) {
           for (const mean of word.meaning) {
-            if (mean.meaning && typeof mean.meaning === "string") {
+            if (
+              (mean.meaning && typeof mean.meaning === "string") ||
+              typeof mean.meaning === "number"
+            ) {
               d = mean.meaning.toLowerCase().includes(query);
             }
           }
@@ -99,7 +103,10 @@ export default {
 
         if (word.meanings_noun && word.meanings_noun.length > 0) {
           for (const mean of word.meanings_noun) {
-            if (mean.meaning && typeof mean.meaning === "string") {
+            if (
+              (mean.meaning && typeof mean.meaning === "string") ||
+              typeof mean.meaning === "number"
+            ) {
               e = mean.meaning.toLowerCase().includes(query);
             }
           }
@@ -107,38 +114,43 @@ export default {
 
         if (word.meanings_verb && word.meanings_verb.length > 0) {
           for (const mean of word.meanings_verb) {
-            if (mean.meaning && typeof mean.meaning === "string") {
+            if (
+              (mean.meaning && typeof mean.meaning === "string") ||
+              typeof mean.meaning === "number"
+            ) {
               f = mean.meaning.toLowerCase().includes(query);
             }
           }
         }
 
+        // Search Translations
         if (word.translations && word.translations.length > 0) {
           for (const trans of word.translations) {
             if (trans.context && typeof trans.context === "string") {
               tc = trans.context.toLowerCase().includes(query);
             }
             if (trans.hi && typeof trans.hi === "string") {
-              hindi = trans.hi.toLowerCase().includes(query);
+              hi = trans.hi.toLowerCase().includes(query);
             }
             if (trans.hi_trans && typeof trans.hi_trans === "string") {
-              hindi_trans = trans.hi_trans.toLowerCase().includes(query);
+              hi_trans = trans.hi_trans.toLowerCase().includes(query);
             }
             if (trans.mr && typeof trans.mr === "string") {
-              marathi = trans.mr.toLowerCase().includes(query);
+              mr = trans.mr.toLowerCase().includes(query);
             }
             if (trans.mr_trans && typeof trans.mr_trans === "string") {
-              marathi_trans = trans.mr_trans.toLowerCase().includes(query);
+              mr_trans = trans.mr_trans.toLowerCase().includes(query);
             }
             if (trans.gj && typeof trans.gj === "string") {
-              gujarati = trans.gj.toLowerCase().includes(query);
+              gu = trans.gj.toLowerCase().includes(query);
             }
             if (trans.gj_trans && typeof trans.gj_trans === "string") {
-              gujarati_trans = trans.gj_trans.toLowerCase().includes(query);
+              gu_trans = trans.gj_trans.toLowerCase().includes(query);
             }
           }
         }
 
+        // Return something as true, because Filter works only then.
         return (toReturnSomethingTrue =
           a1 ||
           a2 ||
@@ -148,18 +160,20 @@ export default {
           d ||
           e ||
           tc ||
-          hindi ||
-          hindi_trans ||
-          marathi ||
-          marathi_trans ||
-          gujarati ||
-          gujarati_trans);
+          hi ||
+          hi_trans ||
+          mr ||
+          mr_trans ||
+          gu ||
+          gu_trans);
       });
 
+      // Show only 10 words even if the Array had hundreds of words to begin with
       this.wordsToIterate = _.take(this.wordsToIterate, 10);
     },
   },
   methods: {
+    // To clear the Search on clicking the link
     clearInput() {
       this.wordsToIterate = [];
       // document.getElementById("search-word-input").value = "";
@@ -170,5 +184,5 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 </style>
