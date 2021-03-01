@@ -22,12 +22,7 @@
           {{ words.length - nouns.length - verbs.length }} others =
           {{ words.length }} words
         </p>
-        <div class="tw-mx-auto" style="max-width: 15rem">
-          <SearchWordsFull
-            width="tw-w-full"
-            class="tw-mt-3 tw-text-left"
-          ></SearchWordsFull>
-        </div>
+
         <!-- <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p> -->
         <div class="tw-mt-3">
           <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto">
@@ -52,6 +47,12 @@
           </div>
           <p>showing {{ wordsToIterate.length }} words</p>
         </div>
+      </div>
+      <div class="tw-mx-auto tw-sticky tw-top-12" style="max-width: 15rem">
+        <SearchWordsFull
+          width="tw-w-full"
+          class="tw-mt-3 tw-text-left"
+        ></SearchWordsFull>
       </div>
       <ul
         class="tw-list-none tw-m-2 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-3"
