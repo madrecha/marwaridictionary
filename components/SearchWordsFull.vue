@@ -52,7 +52,7 @@
           class="tw-m-1"
         >
           <NuxtLink
-            :to="`/word/${word.url.slugurl}`"
+            :to="`/dictionary/word/${word.url.slugurl}`"
             class="focus:tw-ring-2 tw-p-1"
           >
             {{ word.url.title }} ({{ word.url.transliteration }})

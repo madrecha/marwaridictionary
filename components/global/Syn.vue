@@ -9,8 +9,8 @@
         <nuxt-link
           :to="
             each_syn.slugurl
-              ? `/word/${each_syn.slugurl}`
-              : `/word/${each_syn.syn}`
+              ? `/dictionary/word/${each_syn.slugurl}`
+              : `/dictionary/word/${each_syn.syn}`
           "
         >
           {{ each_syn.syn }}

@@ -12,7 +12,7 @@
         >
           <nuxt-link
             exact
-            to="/word"
+            to="/dictionary/word"
             class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
             >Words</nuxt-link
           >
@@ -24,7 +24,7 @@
         >
           <nuxt-link
             exact
-            to="/topic"
+            to="/dictionary/topic"
             class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
             >Topics</nuxt-link
           >

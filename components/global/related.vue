@@ -7,8 +7,8 @@
       <nuxt-link
         :to="
           each_related.slugurl
-            ? `/word/${each_related.slugurl}`
-            : `/word/${each_related.rel}`
+            ? `/dictionary/word/${each_related.slugurl}`
+            : `/dictionary/word/${each_related.rel}`
         "
       >
         {{ each_related.rel }}

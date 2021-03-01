@@ -3,7 +3,9 @@
     <!-- This page is to generate Link of the words based on their file name which is denoted by "slug" -->
     <ul v-for="word in words" :key="word.title">
       <li>
-        <nuxt-link :to="`/word/${word.slug}`">{{ word.title }}</nuxt-link>
+        <nuxt-link :to="`/dictionary/word/${word.slug}`">{{
+          word.title
+        }}</nuxt-link>
       </li>
     </ul>
   </div>

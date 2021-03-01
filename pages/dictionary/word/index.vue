@@ -71,7 +71,7 @@
         >
           <nuxt-link
             v-if="word.url && word.url.slugurl"
-            :to="`/word/${word.url.slugurl}`"
+            :to="`/dictionary/word/${word.url.slugurl}`"
             class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
           >
             <div

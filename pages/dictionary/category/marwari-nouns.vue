@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li v-for="word in words" :key="word.title">
-        <nuxt-link :to="`/word/${word.title}`">
+        <nuxt-link :to="`/dictionary/word/${word.title}`">
           {{ word.title }}
         </nuxt-link>
       </li>

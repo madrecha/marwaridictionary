@@ -9,8 +9,8 @@
         <nuxt-link
           :to="
             each_ant.slugurl
-              ? `/word/${each_ant.slugurl}`
-              : `/word/${each_ant.ant}`
+              ? `/dictionary/word/${each_ant.slugurl}`
+              : `/dictionary/word/${each_ant.ant}`
           "
         >
           {{ each_ant.ant }}

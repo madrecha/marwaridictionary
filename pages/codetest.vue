@@ -20,7 +20,7 @@
     {{ wordsToIterate.length }}
     <ol v-if="wordsToIterate.length" class="tw-list-decimal">
       <li v-for="word in wordsToIterate" :key="word.slug" class="tw-m-2">
-        <nuxt-link :to="`/word/${word.url.slugurl}`" class="tw-p-2">
+        <nuxt-link :to="`/dictionary/word/${word.url.slugurl}`" class="tw-p-2">
           {{ word.url.transliteration }}
         </nuxt-link>
       </li>

@@ -37,7 +37,7 @@
           class="tw-m-4"
         >
           <nuxt-link
-            :to="`/topic/${uniquetopic}`"
+            :to="`/dictionary/topic/${uniquetopic}`"
             class="tw-p-1 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50 tw-leading-relaxed"
           >
             {{ uniquetopic }} ({{ getWordsByTopic(alltopics, uniquetopic) }}
