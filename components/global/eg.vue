@@ -1,7 +1,8 @@
 <template>
   <ul>
     <li v-for="eacheg in eg" :key="eacheg.eg">
-      {{ eacheg.eg }}
+      {{ eacheg.eg }} <br />
+      {{ Transliterate(eacheg.eg) }}
       <ul>
         <li v-if="eacheg.en">
           <span class="tw-text-xs">English:</span> {{ eacheg.en }}
@@ -22,6 +23,12 @@ export default {
   props: { eg: Array },
   data() {
     return {};
+  },
+  methods: {
+    Transliterate(text) {
+      let Sanscript = require("@sanskrit-coders/sanscript");
+      return Sanscript.t(text, "devanagari", "iast");
+    },
   },
 };
 </script>
