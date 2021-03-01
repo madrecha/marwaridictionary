@@ -11,6 +11,8 @@
         :class="width"
         @click.prevent="showSearchHelp = true"
         @keyup.esc="clearInput()"
+        @mouseover="showSearchHelp = true"
+        @mouseleave="showSearchHelp = false"
       />
     </div>
     <div
