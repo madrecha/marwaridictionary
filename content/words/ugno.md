@@ -1,7 +1,9 @@
 ---
 url:
   title: उगणो
-  transliteration: ugano
+  transliteration: ugno
+  alt_trans:
+    - ugano
   slugurl: उगणो
 
 grammar: 

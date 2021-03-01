@@ -74,7 +74,7 @@ grammar:
     number: s
   verb:
     term: हमज
-    trans: hamaj
+    trans: hamj
     ending: a
     causative:
       self: 1
