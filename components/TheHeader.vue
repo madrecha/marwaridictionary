@@ -37,7 +37,7 @@
       </p>
     </div>
     <div class="tw-w-2/5 md:tw-w-1/3 tw-flex tw-items-center tw-justify-start">
-      <SearchWords :width="'tw-w-2/3 md:tw-w-full'"></SearchWords>
+      <SearchWordsFull :width="'tw-w-2/3 md:tw-w-full'"></SearchWordsFull>
     </div>
   </div>
 </template>
