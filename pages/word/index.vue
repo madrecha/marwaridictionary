@@ -22,8 +22,11 @@
           {{ words.length - nouns.length - verbs.length }} others =
           {{ words.length }} words
         </p>
-        <div class="tw-max-w-xs tw-mx-auto">
-          <SearchWordsFull class="tw-mt-3"></SearchWordsFull>
+        <div class="tw-mx-auto" style="max-width: 15rem">
+          <SearchWordsFull
+            width="tw-w-full"
+            class="tw-mt-3 tw-text-left"
+          ></SearchWordsFull>
         </div>
         <!-- <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p> -->
         <div class="tw-mt-3">
