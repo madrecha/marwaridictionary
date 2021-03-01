@@ -23,7 +23,7 @@
           {{ words.length }} words
         </p>
         <div class="tw-max-w-xs tw-mx-auto">
-          <SearchWords class="tw-mt-3"></SearchWords>
+          <SearchWordsFull class="tw-mt-3"></SearchWordsFull>
         </div>
         <!-- <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p> -->
         <div class="tw-mt-3">
@@ -79,6 +79,16 @@
               <div class="tw-text-sm">
                 {{ word.url.transliteration }}
               </div>
+              <!-- <div class="tw-text-sm">
+                {{
+                  require("@sanskrit-coders/sanscript").t(
+                    word.url.title,
+                    "devanagari",
+                    "velthuis",
+                    { skip_sgml: false, syncope: true }
+                  )
+                }}
+              </div> -->
               <div
                 v-if="word.grammar"
                 :class="
