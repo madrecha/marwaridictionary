@@ -4,12 +4,13 @@
       <input
         id="search-word-input"
         v-model="query"
-        type="search"
+        type="text"
         autocomplete="off"
         placeholder="Search..."
         class="tw-border tw-rounded-xl tw-shadow focus:tw-outline-none focus:tw-ring-2 tw-py-1 tw-px-3"
         :class="width"
         @click.prevent="showSearchHelp = true"
+        @keyup.esc="clearInput()"
       />
     </div>
     <div
@@ -19,10 +20,14 @@
       <div class="tw-relative">
         <div>
           <p class="tw-py tw-pl-1 tw-pr-4 tw-text-xs">
-            Search word (in English, Devanagari or Hindi), meaning,
-            translation...
+            Search word (in English, Devanagari or Hindi), meaning, translation,
+            <b>topic</b>...
             <br />
-            <span class="tw-text-sm">E.g. → विंदणी, vindani, wife, पत्नी</span>
+            <span class="tw-text-xs">E.g. → विंदणी, vindani, wife, पत्नी</span>
+            <br />
+            <span class="tw-text-xs"
+              >E.g. → कुत्रो, kutro, dog, कुत्ता, animal</span
+            >
           </p>
         </div>
         <button
@@ -44,8 +49,12 @@
           v-for="word of wordsToIterate"
           :key="word.slug"
           @click.prevent="clearInput()"
+          class="tw-m-1"
         >
-          <NuxtLink :to="`/word/${word.url.slugurl}`">
+          <NuxtLink
+            :to="`/word/${word.url.slugurl}`"
+            class="focus:tw-ring-2 tw-p-1"
+          >
             {{ word.url.title }} ({{ word.url.transliteration }})
           </NuxtLink>
         </li>
@@ -64,6 +73,17 @@ export default {
       query: "",
       showSearchHelp: false,
     };
+  },
+  methods: {
+    // To clear the Search on clicking the link or pressing ESC in search-input
+    clearInput() {
+      this.showSearchHelp = false;
+      this.words = [];
+      this.wordsToIterate = [];
+      // document.getElementById("search-word-input").value = "";
+      this.query = "";
+      return;
+    },
   },
   watch: {
     async query(query) {
@@ -250,16 +270,6 @@ export default {
 
       // Show only 10 words even if the Array had hundreds of words to begin with
       this.wordsToIterate = _.take(this.wordsToIterate, 10);
-    },
-  },
-  methods: {
-    // To clear the Search on clicking the link
-    clearInput() {
-      this.words = [];
-      this.wordsToIterate = [];
-      // document.getElementById("search-word-input").value = "";
-      this.query = "";
-      return;
     },
   },
 };
