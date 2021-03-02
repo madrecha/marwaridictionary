@@ -72,6 +72,8 @@ export default {
     return {
       words: [],
       wordsToIterate: [],
+      wordsBody: [],
+      mixOfWordsAndWordsBody: [],
       query: "",
       showSearchHelp: false,
     };
@@ -82,6 +84,7 @@ export default {
       this.showSearchHelp = false;
       this.words = [];
       this.wordsToIterate = [];
+      this.wordsBody = [];
       // document.getElementById("search-word-input").value = "";
       this.query = "";
       return;
@@ -99,6 +102,7 @@ export default {
       if (!query || hasSpace) {
         this.words = [];
         this.wordsToIterate = [];
+        this.wordsBody = [];
         return;
       }
 
@@ -112,6 +116,10 @@ export default {
       this.words = await this.$content("words")
         .without(["body", "toc", "readingTime"])
         .fetch();
+
+      // this.mixOfWordsAndWordsBody = _.concat(this.words, this.wordsBody);
+
+      // this.mixOfWordsAndWordsBody = _.uniq(this.mixOfWordsAndWordsBody);
 
       let toReturnSomethingTrue;
 
@@ -349,8 +357,20 @@ export default {
           t);
       });
 
+      // Search Body of the word md file (usually not needed, but can contain useful text sometimes)
+      // Also, only 3 words are being fetch using this, so no big load.
+      this.wordsBody = await this.$content("words")
+        .only(["body", "url", "slug"])
+        .limit(3)
+        .search("text", query)
+        .fetch();
+
+      // Merge the Filtered Words and WordsBody and make the array Unique
+      let mergedArray = _.concat(this.wordsBody, this.wordsToIterate);
+      let uniqueArray = _.uniqBy(mergedArray, "slug");
+
       // Show only 10 words even if the Array had hundreds of words to begin with
-      this.wordsToIterate = _.take(this.wordsToIterate, 10);
+      this.wordsToIterate = _.take(uniqueArray, 10);
     },
   },
 };
