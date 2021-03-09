@@ -15,17 +15,17 @@ meanings:
 #     en:
 
 synonyms:
-  - syn: बांचणो
-    syn_trans: baanchno
+  - syn: बाचणो
+    syn_trans: baachno
   - syn: भणणो
     syn_trans: bhanano
 
 # antonyms:
 #   - ant:
 
-related:
-  - rel: वंचणो
-    rel_trans: vanchno
+similar:
+  - sim: वंचणो
+    sim_trans: vanchno
 
 translations:
   - context:
