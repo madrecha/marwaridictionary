@@ -69,6 +69,9 @@
           <button @click.prevent="sortWordsBy('date')" class="sort-button">
             date ⇅
           </button>
+          <button @click.prevent="sortWordsBy('updated')" class="sort-button">
+            updated ⇅
+          </button>
         </div>
       </section>
       <ul
@@ -145,7 +148,7 @@ export default {
       nouns: [],
       verbs: [],
       fosType: "",
-      sortByItemText: "date (newest)",
+      sortByItemText: "updated (newest)",
       sortWordsByAsc: true,
     };
   },
@@ -153,7 +156,7 @@ export default {
     this.words = await this.$content("words")
       .where({ slug: { $ne: "AAA" } })
       .without(["body", "toc", "categories"])
-      .sortBy("createdAt", "desc")
+      .sortBy("updatedAt", "desc")
       .fetch();
 
     this.wordsToIterate = this.words;
@@ -183,7 +186,7 @@ export default {
   methods: {
     getWordsType(fos) {
       this.wordsToIterate = this[fos];
-      this.sortByItemText = "date (newest)";
+      this.sortByItemText = "updated (newest)";
       this.fosType = fos;
     },
 
@@ -244,7 +247,7 @@ export default {
               return word.createdAt;
             },
           ]);
-          this.sortByItemText = "date (oldest)";
+          this.sortByItemText = "date added (oldest)";
         }
 
         if (this.sortWordsByAsc === false) {
@@ -255,7 +258,30 @@ export default {
               },
             ])
           );
-          this.sortByItemText = "date (newest)";
+          this.sortByItemText = "date added (newest)";
+        }
+        this.sortWordsByAsc = !this.sortWordsByAsc;
+      }
+
+      if (item === "updated") {
+        if (this.sortWordsByAsc === true) {
+          this.wordsToIterate = _.sortBy(this.wordsToIterate, [
+            (word) => {
+              return word.updatedAt;
+            },
+          ]);
+          this.sortByItemText = "updated (oldest)";
+        }
+
+        if (this.sortWordsByAsc === false) {
+          this.wordsToIterate = _.reverse(
+            _.sortBy(this.wordsToIterate, [
+              (word) => {
+                return word.updatedAt;
+              },
+            ])
+          );
+          this.sortByItemText = "updated (newest)";
         }
         this.sortWordsByAsc = !this.sortWordsByAsc;
       }
