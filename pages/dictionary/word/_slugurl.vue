@@ -23,6 +23,9 @@
             <span class="tw-capitalize">{{ word.url.transliteration }}</span>
             meaning in Marwari
           </h1>
+          <div>
+            <wordDate :word="word"></wordDate>
+          </div>
           <p
             class="tw-mt-3 tw-max-w-3xl tw-mx-auto tw-text-xs tw-text-gray-500 tw-lowercase"
           >
