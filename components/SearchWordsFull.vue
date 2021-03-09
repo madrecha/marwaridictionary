@@ -2,7 +2,6 @@
   <div class="tw-relative">
     <div>
       <input
-        id="search-word-input"
         v-model="query"
         type="text"
         autocomplete="off"
@@ -11,9 +10,9 @@
         :class="width"
         @click.prevent="showSearchHelp = true"
         @keyup.esc="clearInput()"
-        @mouseover="showSearchHelp = true"
-        @mouseleave="showSearchHelp = false"
       />
+      <!-- @mouseover="showSearchHelp = true"
+        @mouseleave="showSearchHelp = false" -->
     </div>
     <div
       class="tw-absolute tw-top-10 tw-left-0 tw-right-0 tw-flex tw-flex-wrap tw-bg-yellow-50 tw-p-1 tw-rounded tw-shadow"
@@ -25,7 +24,9 @@
             Search word (in English, Devanagari or Hindi), meaning, translation,
             <b>topic</b>...
             <br />
-            <span class="tw-text-xs">E.g. → विंदणी, vindani, wife, पत्नी</span>
+            <span class="tw-text-xs"
+              >E.g. → विंदणी, vindani, wife, पत्नी, person</span
+            >
             <br />
             <span class="tw-text-xs"
               >E.g. → कुत्रो, kutro, dog, कुत्ता, animal</span
@@ -73,7 +74,6 @@ export default {
       words: [],
       wordsToIterate: [],
       wordsBody: [],
-      mixOfWordsAndWordsBody: [],
       query: "",
       showSearchHelp: false,
     };
@@ -85,7 +85,6 @@ export default {
       this.words = [];
       this.wordsToIterate = [];
       this.wordsBody = [];
-      // document.getElementById("search-word-input").value = "";
       this.query = "";
       return;
     },
@@ -95,9 +94,7 @@ export default {
       const _ = require("lodash");
 
       // If input if false or if it has only spaces, then don't update the Words
-
-      const inputbox = document.getElementById("search-word-input").value;
-      const hasSpace = new RegExp("^[ ]+$").test(inputbox);
+      const hasSpace = new RegExp("^[ ]+$").test(query);
 
       if (!query || hasSpace) {
         this.words = [];
@@ -116,10 +113,6 @@ export default {
       this.words = await this.$content("words")
         .without(["body", "toc", "readingTime"])
         .fetch();
-
-      // this.mixOfWordsAndWordsBody = _.concat(this.words, this.wordsBody);
-
-      // this.mixOfWordsAndWordsBody = _.uniq(this.mixOfWordsAndWordsBody);
 
       let toReturnSomethingTrue;
 
