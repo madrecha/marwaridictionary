@@ -15,9 +15,12 @@ grammar:
     gender_m_trans: kutro
     number: s
 
+categories:
+  - abusive
+
 topics:
   - animal
-  - abusive
+
 ---
 ## Noun
 ### Meaning
