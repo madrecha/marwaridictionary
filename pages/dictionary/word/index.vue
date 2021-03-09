@@ -26,22 +26,13 @@
         <!-- <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p> -->
         <div class="tw-mt-3">
           <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto">
-            <button
-              @click.prevent="getNouns()"
-              class="tw-p-2 tw-m-2 tw-bg-blue-50 hover:tw-bg-pink-50"
-            >
+            <button @click.prevent="getNouns()" class="fos-button">
               Nouns
             </button>
-            <button
-              @click.prevent="getVerbs()"
-              class="tw-p-2 tw-m-2 tw-bg-blue-50 hover:tw-bg-pink-50"
-            >
+            <button @click.prevent="getVerbs()" class="fos-button">
               Verbs
             </button>
-            <button
-              @click.prevent="getAllWords()"
-              class="tw-p-2 tw-m-2 tw-bg-blue-50 hover:tw-bg-pink-50"
-            >
+            <button @click.prevent="getAllWords()" class="fos-button">
               All words
             </button>
           </div>
@@ -61,37 +52,34 @@
         >
           <button
             @click.prevent="sortByItemMethod('title')"
-            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
+            class="sort-button"
           >
             मारवाड़ी (↓)
           </button>
           <button
             @click.prevent="sortByItemMethod('title-reverse')"
-            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
+            class="sort-button"
           >
             मारवाड़ी (↑)
           </button>
           <button
             @click.prevent="sortByItemMethod('transliteration')"
-            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
+            class="sort-button"
           >
             english (↓)
           </button>
           <button
             @click.prevent="sortByItemMethod('transliteration-reverse')"
-            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
+            class="sort-button"
           >
             english (↑)
           </button>
-          <button
-            @click.prevent="sortByItemMethod('date')"
-            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
-          >
+          <button @click.prevent="sortByItemMethod('date')" class="sort-button">
             date (↓)
           </button>
           <button
             @click.prevent="sortByItemMethod('date-reverse')"
-            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
+            class="sort-button"
           >
             date (↑)
           </button>
@@ -280,4 +268,13 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss" scoped>
+.fos-button {
+  @apply tw-p-2 tw-m-2 tw-bg-blue-50 hover:tw-bg-pink-50;
+}
+.sort-button {
+  @apply tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50;
+}
+</style>
 
