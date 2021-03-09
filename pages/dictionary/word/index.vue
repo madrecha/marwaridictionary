@@ -8,7 +8,7 @@
       </p>
     </article>
     <article>
-      <div class="tw-text-center">
+      <section class="tw-text-center">
         <h1 class="tw-text-2xl tw-text-pink-900 tw-font-medium">
           <span
             class="tw-rounded-full tw-border tw-border-pink-800 tw-p-2 tw-shadow-md"
@@ -17,14 +17,14 @@
           >
           Marwari words added till now
         </h1>
-        <p class="tw-mt-3 tw-text-green-900">
+        <p class="tw-mt-1 tw-text-gray-800 tw-text-sm">
           {{ nouns.length }} nouns, {{ verbs.length }} verbs,
           {{ words.length - nouns.length - verbs.length }} others =
           {{ words.length }} words
         </p>
 
         <!-- <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p> -->
-        <div class="tw-mt-3">
+        <div class="tw-mt-2">
           <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto">
             <button @click.prevent="getWordsType('nouns')" class="fos-button">
               Nouns
@@ -36,20 +36,22 @@
               All words
             </button>
           </div>
-          <p>
+          <p class="tw-text-sm tw-text-gray-800">
             showing {{ wordsToIterate.length }} {{ fosType }} of
             {{ words.length }} words
           </p>
         </div>
-      </div>
+      </section>
       <!-- <div class="tw-mx-auto tw-sticky tw-top-12" style="max-width: 15rem">
         <SearchWordsFull
           width="tw-w-full"
           class="tw-mt-3 tw-text-left"
         ></SearchWordsFull>
       </div> -->
-      <div class="tw-mt-3 tw-p-2 tw-border-t tw-border-b tw-border-blue-300">
-        <p class="tw-text-center tw-text-sm">
+      <section
+        class="tw-mt-3 tw-p-2 tw-border-t tw-border-b tw-border-blue-300"
+      >
+        <p class="tw-text-center">
           Sorted by <span class="tw-font-medium">{{ sortByItemText }}</span>
         </p>
         <div
@@ -68,7 +70,7 @@
             date ⇅
           </button>
         </div>
-      </div>
+      </section>
       <ul
         class="tw-list-none tw-m-2 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-3"
       >
@@ -264,10 +266,10 @@ export default {
 
 <style lang="postcss" scoped>
 .fos-button {
-  @apply tw-p-2 tw-m-2 tw-bg-blue-50 hover:tw-bg-pink-50;
+  @apply tw-p-2 tw-m-2 tw-rounded-md tw-bg-blue-50 hover:tw-bg-pink-50 focus:tw-outline-none focus:tw-bg-pink-50 focus:tw-ring-1 focus:tw-ring-pink-500 focus:tw-text-pink-800;
 }
 .sort-button {
-  @apply tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50;
+  @apply tw-p-1.5 tw-m-2 tw-rounded-md tw-bg-yellow-50 hover:tw-bg-green-50 focus:tw-outline-none focus:tw-bg-green-50 focus:tw-ring-1 focus:tw-ring-green-500 focus:tw-text-green-800;
 }
 </style>
 
