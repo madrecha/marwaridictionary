@@ -12,7 +12,7 @@ examples:
     en: two times; twice
     hi: दो बार
   - eg: मैं कतरी वतक वणारी मनवार किदी, जदी जाईन वे जिमवा बैठा। 
-    en: I insisted him so many times, then only he sat down to eat,
+    en: I insisted him so many times, then only he sat down to eat.
 
 translations:
   - context:

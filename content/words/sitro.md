@@ -45,8 +45,8 @@ translations:
 grammar:
   noun:
     ending: o
-    term: आण
-    trans: aan
+    term: सित्र
+    trans: sitr
     gender: m
     gender_f: सित्री
     gender_f_trans: sitri
@@ -59,8 +59,6 @@ topics:
   - mammal
 
 # abc: abc   
----
-
 ---
 
 ## Noun
