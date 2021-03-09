@@ -1,5 +1,5 @@
 ---
-url
+url:
   title: छेटी
   transliteration: chheti
   slugurl: छेटी

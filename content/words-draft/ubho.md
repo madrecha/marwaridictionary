@@ -1,5 +1,5 @@
 ---
-url
+url:
   title: उभो
   transliteration: ubho
   slugurl: उभो

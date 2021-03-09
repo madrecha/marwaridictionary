@@ -1,5 +1,5 @@
 ---
-url
+url:
   title: साणो
   transliteration: saano
   slugurl: साणो

@@ -1,5 +1,5 @@
 ---
-url
+url:
   title: कमाड़
   transliteration: kamaad
   slugurl: कमाड़

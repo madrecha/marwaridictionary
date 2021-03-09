@@ -1,5 +1,5 @@
 ---
-url
+url:
   title: चोपड़णो
   transliteration: chopadno
   slugurl: चोपड़णो
