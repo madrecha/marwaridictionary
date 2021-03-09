@@ -36,7 +36,7 @@
               All words
             </button>
           </div>
-          <p>showing {{ wordsToIterate.length }} words</p>
+          <p>showing {{ wordsToIterate.length }} of {{ words.length }} words</p>
         </div>
       </div>
       <!-- <div class="tw-mx-auto tw-sticky tw-top-12" style="max-width: 15rem">
@@ -45,41 +45,25 @@
           class="tw-mt-3 tw-text-left"
         ></SearchWordsFull>
       </div> -->
-      <div class="tw-mt-3">
-        <p class="tw-text-center tw-text-sm">Sorted by {{ sortByItemText }}</p>
+      <div class="tw-mt-3 tw-p-2 tw-border-t tw-border-b tw-border-blue-300">
+        <p class="tw-text-center tw-text-sm">
+          Sorted by <span class="tw-font-medium">{{ sortByItemText }}</span>
+        </p>
         <div
           class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto tw-text-sm"
         >
-          <button
-            @click.prevent="sortWordsByTitleMethod('title')"
-            class="sort-button"
-          >
-            मारवाड़ी (↓)
+          <button @click.prevent="sortWordsBy('title')" class="sort-button">
+            मारवाड़ी ⇅
           </button>
           <button
-            @click.prevent="sortWordsByTitleMethod('transliteration')"
+            @click.prevent="sortWordsBy('transliteration')"
             class="sort-button"
           >
-            english (↓)
+            english ⇅
           </button>
-          <!-- <button
-            @click.prevent="sortByItemMethod('transliteration-reverse')"
-            class="sort-button"
-          >
-            english (↑)
-          </button> -->
-          <button
-            @click.prevent="sortWordsByTitleMethod('date')"
-            class="sort-button"
-          >
-            date (↓)
+          <button @click.prevent="sortWordsBy('date')" class="sort-button">
+            date ⇅
           </button>
-          <!-- <button
-            @click.prevent="sortByItemMethod('date-reverse')"
-            class="sort-button"
-          >
-            date (↑)
-          </button> -->
         </div>
       </div>
       <ul
@@ -156,7 +140,7 @@ export default {
       nouns: [],
       verbs: [],
       sortByItemText: "date (desc)",
-      sortWordsByTitle: true,
+      sortWordsByAsc: true,
     };
   },
   async fetch() {
@@ -192,14 +176,15 @@ export default {
   },
   methods: {
     getWordsType(fos) {
-      return (this.wordsToIterate = this[fos]);
+      this.wordsToIterate = this[fos];
+      this.sortByItemText = "date (desc)";
     },
 
-    sortWordsByTitleMethod(item) {
+    sortWordsBy(item) {
       const _ = require("lodash");
 
       if (item === "title") {
-        if (this.sortWordsByTitle === true) {
+        if (this.sortWordsByAsc === true) {
           this.wordsToIterate = _.sortBy(this.wordsToIterate, [
             (word) => {
               return word.url.title;
@@ -208,7 +193,7 @@ export default {
           this.sortByItemText = "Marwari (asc)";
         }
 
-        if (this.sortWordsByTitle === false) {
+        if (this.sortWordsByAsc === false) {
           this.wordsToIterate = _.reverse(
             _.sortBy(this.wordsToIterate, [
               (word) => {
@@ -219,11 +204,11 @@ export default {
           this.sortByItemText = "Marwari (desc)";
         }
 
-        this.sortWordsByTitle = !this.sortWordsByTitle;
+        this.sortWordsByAsc = !this.sortWordsByAsc;
       }
 
       if (item === "transliteration") {
-        if (this.sortWordsByTitle === true) {
+        if (this.sortWordsByAsc === true) {
           this.wordsToIterate = _.sortBy(this.wordsToIterate, [
             (word) => {
               return word.url.transliteration;
@@ -232,7 +217,7 @@ export default {
           this.sortByItemText = "transliteration (asc)";
         }
 
-        if (this.sortWordsByTitle === false) {
+        if (this.sortWordsByAsc === false) {
           this.wordsToIterate = _.reverse(
             _.sortBy(this.wordsToIterate, [
               (word) => {
@@ -242,11 +227,11 @@ export default {
           );
           this.sortByItemText = "transliteration (desc)";
         }
-        this.sortWordsByTitle = !this.sortWordsByTitle;
+        this.sortWordsByAsc = !this.sortWordsByAsc;
       }
 
       if (item === "date") {
-        if (this.sortWordsByTitle === true) {
+        if (this.sortWordsByAsc === true) {
           this.wordsToIterate = _.sortBy(this.wordsToIterate, [
             (word) => {
               return word.createdAt;
@@ -255,7 +240,7 @@ export default {
           this.sortByItemText = "date (asc)";
         }
 
-        if (this.sortWordsByTitle === false) {
+        if (this.sortWordsByAsc === false) {
           this.wordsToIterate = _.reverse(
             _.sortBy(this.wordsToIterate, [
               (word) => {
@@ -265,7 +250,7 @@ export default {
           );
           this.sortByItemText = "date (desc)";
         }
-        this.sortWordsByTitle = !this.sortWordsByTitle;
+        this.sortWordsByAsc = !this.sortWordsByAsc;
       }
     },
   },
