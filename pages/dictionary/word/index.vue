@@ -7,7 +7,7 @@
         Fetching words...💖 Wait for a few seconds 😊
       </p>
     </article>
-    <article>
+    <article class="tw-mt-2">
       <section class="tw-text-center">
         <h1 class="tw-text-2xl tw-text-pink-900 tw-font-medium">
           <span
@@ -15,16 +15,14 @@
           >
             {{ words.length }}</span
           >
-          Marwari words added till now
+          Marwari words added
         </h1>
-        <p class="tw-mt-1 tw-text-gray-800 tw-text-sm">
+        <p class="tw-mt-3 md:tw-mt-5 tw-text-gray-800 tw-text-sm">
           {{ nouns.length }} nouns, {{ verbs.length }} verbs,
           {{ words.length - nouns.length - verbs.length }} others =
           {{ words.length }} words
         </p>
-
-        <!-- <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p> -->
-        <div class="tw-mt-2">
+        <div class="tw-mt-1">
           <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto">
             <button @click.prevent="getWordsType('nouns')" class="fos-button">
               Nouns
@@ -36,7 +34,7 @@
               All words
             </button>
           </div>
-          <p class="tw-text-sm tw-text-gray-800">
+          <p class="tw-mt-1 tw-text-sm tw-text-gray-800">
             showing {{ wordsToIterate.length }} {{ fosType }} of
             {{ words.length }} words
           </p>
@@ -49,13 +47,13 @@
         ></SearchWordsFull>
       </div> -->
       <section
-        class="tw-mt-3 tw-p-2 tw-border-t tw-border-b tw-border-blue-300"
+        class="tw-mt-6 md:tw-mx-0 tw-p-1.5 tw-border-t tw-border-b tw-border-blue-300"
       >
-        <p class="tw-text-center">
+        <p class="tw-mt-1 tw-text-center">
           Sorted by <span class="tw-font-medium">{{ sortByItemText }}</span>
         </p>
         <div
-          class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto tw-text-sm"
+          class="tw-mt-1 tw-mb-2 tw-flex tw-justify-center tw-mx-auto tw-text-xs md:tw-text-sm"
         >
           <button @click.prevent="sortWordsBy('title')" class="sort-button">
             मारवाड़ी ⇅
@@ -67,7 +65,7 @@
             english ⇅
           </button>
           <button @click.prevent="sortWordsBy('date')" class="sort-button">
-            date ⇅
+            date added ⇅
           </button>
           <button @click.prevent="sortWordsBy('updated')" class="sort-button">
             updated ⇅
@@ -75,12 +73,12 @@
         </div>
       </section>
       <ul
-        class="tw-list-none tw-m-2 md:tw-py-3 lg:tw-mx-16 tw-grid tw-grid-cols-3 lg:tw-grid-cols-4 tw-gap-3 lg:tw-gap-6"
+        class="tw-list-none tw-mt-2 md:tw-mt-3 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-4 tw-mx-auto tw-max-w-screen-lg"
       >
         <li
           v-for="word in wordsToIterate"
           :key="word.slug"
-          class="tw-m-2 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center"
+          class="tw-m-3 md:tw-m-4 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center"
           :class="
             word.grammar && word.grammar.noun
               ? 'hover:tw-to-pink-100'
@@ -295,7 +293,7 @@ export default {
   @apply tw-p-2 tw-m-2 tw-rounded-md tw-border tw-border-blue-500 tw-bg-blue-50 hover:tw-bg-pink-50 focus:tw-outline-none focus:tw-bg-pink-50 focus:tw-ring-1 focus:tw-ring-pink-500 focus:tw-text-pink-800;
 }
 .sort-button {
-  @apply tw-p-1.5 tw-m-2 tw-rounded-md tw-border tw-border-yellow-500 tw-bg-yellow-50 hover:tw-bg-green-50 focus:tw-outline-none focus:tw-bg-green-50 focus:tw-ring-1 focus:tw-ring-green-500 focus:tw-text-green-800;
+  @apply tw-p-1 md:tw-p-2 tw-m-1 md:tw-m-2 tw-rounded-md tw-border tw-border-yellow-500 tw-bg-yellow-50 hover:tw-bg-green-50 focus:tw-outline-none focus:tw-bg-green-50 focus:tw-ring-1 focus:tw-ring-green-500 focus:tw-text-green-800;
 }
 </style>
 
