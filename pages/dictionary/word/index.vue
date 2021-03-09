@@ -36,7 +36,10 @@
               All words
             </button>
           </div>
-          <p>showing {{ wordsToIterate.length }} of {{ words.length }} words</p>
+          <p>
+            showing {{ wordsToIterate.length }} {{ fosType }} of
+            {{ words.length }} words
+          </p>
         </div>
       </div>
       <!-- <div class="tw-mx-auto tw-sticky tw-top-12" style="max-width: 15rem">
@@ -139,6 +142,7 @@ export default {
       wordsToIterate: [],
       nouns: [],
       verbs: [],
+      fosType: "",
       sortByItemText: "date (desc)",
       sortWordsByAsc: true,
     };
@@ -178,6 +182,7 @@ export default {
     getWordsType(fos) {
       this.wordsToIterate = this[fos];
       this.sortByItemText = "date (desc)";
+      this.fosType = fos;
     },
 
     sortWordsBy(item) {
