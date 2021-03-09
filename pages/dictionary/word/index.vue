@@ -75,7 +75,7 @@
         </div>
       </section>
       <ul
-        class="tw-list-none tw-m-2 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-3"
+        class="tw-list-none tw-m-2 md:tw-py-3 lg:tw-mx-16 tw-grid tw-grid-cols-3 lg:tw-grid-cols-4 tw-gap-3 lg:tw-gap-6"
       >
         <li
           v-for="word in wordsToIterate"
@@ -95,7 +95,7 @@
             class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
           >
             <div
-              class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-text-blue-900 md:tw-text-xl"
+              class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-text-blue-900 md:tw-text-xl tw-break-words md:tw-break-normal"
             >
               {{ word.url.title }}
             </div>
@@ -292,10 +292,10 @@ export default {
 
 <style lang="postcss" scoped>
 .fos-button {
-  @apply tw-p-2 tw-m-2 tw-rounded-md tw-bg-blue-50 hover:tw-bg-pink-50 focus:tw-outline-none focus:tw-bg-pink-50 focus:tw-ring-1 focus:tw-ring-pink-500 focus:tw-text-pink-800;
+  @apply tw-p-2 tw-m-2 tw-rounded-md tw-border tw-border-blue-500 tw-bg-blue-50 hover:tw-bg-pink-50 focus:tw-outline-none focus:tw-bg-pink-50 focus:tw-ring-1 focus:tw-ring-pink-500 focus:tw-text-pink-800;
 }
 .sort-button {
-  @apply tw-p-1.5 tw-m-2 tw-rounded-md tw-bg-yellow-50 hover:tw-bg-green-50 focus:tw-outline-none focus:tw-bg-green-50 focus:tw-ring-1 focus:tw-ring-green-500 focus:tw-text-green-800;
+  @apply tw-p-1.5 tw-m-2 tw-rounded-md tw-border tw-border-yellow-500 tw-bg-yellow-50 hover:tw-bg-green-50 focus:tw-outline-none focus:tw-bg-green-50 focus:tw-ring-1 focus:tw-ring-green-500 focus:tw-text-green-800;
 }
 </style>
 
