@@ -78,7 +78,7 @@
         <li
           v-for="word in wordsToIterate"
           :key="word.slug"
-          class="tw-m-3 md:tw-m-4 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center"
+          class="tw-m-3 md:tw-m-4 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center tw-shadow-lg hover:tw-shadow-2xl"
           :class="
             word.grammar && word.grammar.noun
               ? 'hover:tw-to-pink-100'
