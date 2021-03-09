@@ -51,38 +51,35 @@
           class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto tw-text-sm"
         >
           <button
-            @click.prevent="sortByItemMethod('title')"
+            @click.prevent="sortWordsByTitleMethod('title')"
             class="sort-button"
           >
             मारवाड़ी (↓)
           </button>
           <button
-            @click.prevent="sortByItemMethod('title-reverse')"
-            class="sort-button"
-          >
-            मारवाड़ी (↑)
-          </button>
-          <button
-            @click.prevent="sortByItemMethod('transliteration')"
+            @click.prevent="sortWordsByTitleMethod('transliteration')"
             class="sort-button"
           >
             english (↓)
           </button>
-          <button
+          <!-- <button
             @click.prevent="sortByItemMethod('transliteration-reverse')"
             class="sort-button"
           >
             english (↑)
-          </button>
-          <button @click.prevent="sortByItemMethod('date')" class="sort-button">
+          </button> -->
+          <button
+            @click.prevent="sortWordsByTitleMethod('date')"
+            class="sort-button"
+          >
             date (↓)
           </button>
-          <button
+          <!-- <button
             @click.prevent="sortByItemMethod('date-reverse')"
             class="sort-button"
           >
             date (↑)
-          </button>
+          </button> -->
         </div>
       </div>
       <ul
@@ -159,6 +156,7 @@ export default {
       nouns: [],
       verbs: [],
       sortByItemText: "date (desc)",
+      sortWordsByTitle: true,
     };
   },
   async fetch() {
@@ -203,66 +201,77 @@ export default {
       return (this.wordsToIterate = this.words);
     },
 
-    sortByItemMethod(item) {
-      let _ = require("lodash");
-      if (item === "date") {
-        this.wordsToIterate = _.sortBy(this.wordsToIterate, [
-          (word) => {
-            return word.createdAt;
-          },
-        ]);
-        this.sortByItemText = "date (asc)";
-      }
-
-      if (item === "date-reverse") {
-        this.wordsToIterate = _.reverse(
-          _.sortBy(this.wordsToIterate, [
-            (word) => {
-              return word.createdAt;
-            },
-          ])
-        );
-        this.sortByItemText = "date (desc)";
-      }
+    sortWordsByTitleMethod(item) {
+      const _ = require("lodash");
 
       if (item === "title") {
-        this.wordsToIterate = _.sortBy(this.wordsToIterate, [
-          (word) => {
-            return word.url.title;
-          },
-        ]);
-        this.sortByItemText = "मारवाड़ी (asc)";
-      }
-
-      if (item === "title-reverse") {
-        this.wordsToIterate = _.reverse(
-          _.sortBy(this.wordsToIterate, [
+        if (this.sortWordsByTitle === true) {
+          this.wordsToIterate = _.sortBy(this.wordsToIterate, [
             (word) => {
               return word.url.title;
             },
-          ])
-        );
-        this.sortByItemText = "मारवाड़ी (desc)";
+          ]);
+          this.sortByItemText = "Marwari (asc)";
+        }
+
+        if (this.sortWordsByTitle === false) {
+          this.wordsToIterate = _.reverse(
+            _.sortBy(this.wordsToIterate, [
+              (word) => {
+                return word.url.title;
+              },
+            ])
+          );
+          this.sortByItemText = "Marwari (desc)";
+        }
+
+        this.sortWordsByTitle = !this.sortWordsByTitle;
       }
 
       if (item === "transliteration") {
-        this.wordsToIterate = _.sortBy(this.wordsToIterate, [
-          (word) => {
-            return word.url.transliteration;
-          },
-        ]);
-        this.sortByItemText = "transliteration (asc)";
-      }
-
-      if (item === "transliteration-reverse") {
-        this.wordsToIterate = _.reverse(
-          _.sortBy(this.wordsToIterate, [
+        if (this.sortWordsByTitle === true) {
+          this.wordsToIterate = _.sortBy(this.wordsToIterate, [
             (word) => {
               return word.url.transliteration;
             },
-          ])
-        );
-        this.sortByItemText = "transliteration (desc)";
+          ]);
+          this.sortByItemText = "transliteration (asc)";
+        }
+
+        if (this.sortWordsByTitle === false) {
+          this.wordsToIterate = _.reverse(
+            _.sortBy(this.wordsToIterate, [
+              (word) => {
+                return word.url.transliteration;
+              },
+            ])
+          );
+          this.sortByItemText = "transliteration (desc)";
+        }
+        this.sortWordsByTitle = !this.sortWordsByTitle;
+      }
+
+      if (item === "date") {
+        if (this.sortWordsByTitle === true) {
+          this.wordsToIterate = _.sortBy(this.wordsToIterate, [
+            (word) => {
+              return word.createdAt;
+            },
+          ]);
+          this.sortByItemText = "date (asc)";
+        }
+
+        if (this.sortWordsByTitle === false) {
+          this.wordsToIterate = _.reverse(
+            _.sortBy(this.wordsToIterate, [
+              (word) => {
+                return word.createdAt;
+              },
+            ])
+          );
+          this.sortByItemText = "date (desc)";
+        }
+        this.sortWordsByTitle = !this.sortWordsByTitle;
       }
     },
   },
