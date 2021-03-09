@@ -48,11 +48,54 @@
           <p>showing {{ wordsToIterate.length }} words</p>
         </div>
       </div>
-      <div class="tw-mx-auto tw-sticky tw-top-12" style="max-width: 15rem">
+      <!-- <div class="tw-mx-auto tw-sticky tw-top-12" style="max-width: 15rem">
         <SearchWordsFull
           width="tw-w-full"
           class="tw-mt-3 tw-text-left"
         ></SearchWordsFull>
+      </div> -->
+      <div class="tw-mt-3">
+        <p class="tw-text-center tw-text-sm">Sorted by {{ sortByItemText }}</p>
+        <div
+          class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto tw-text-sm"
+        >
+          <button
+            @click.prevent="sortByItemMethod('title')"
+            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
+          >
+            मारवाड़ी (↓)
+          </button>
+          <button
+            @click.prevent="sortByItemMethod('title-reverse')"
+            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
+          >
+            मारवाड़ी (↑)
+          </button>
+          <button
+            @click.prevent="sortByItemMethod('transliteration')"
+            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
+          >
+            english (↓)
+          </button>
+          <button
+            @click.prevent="sortByItemMethod('transliteration-reverse')"
+            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
+          >
+            english (↑)
+          </button>
+          <button
+            @click.prevent="sortByItemMethod('date')"
+            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
+          >
+            date (↓)
+          </button>
+          <button
+            @click.prevent="sortByItemMethod('date-reverse')"
+            class="tw-p-1 tw-m-1 tw-bg-yellow-50 hover:tw-bg-green-50"
+          >
+            date (↑)
+          </button>
+        </div>
       </div>
       <ul
         class="tw-list-none tw-m-2 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-3"
@@ -127,6 +170,7 @@ export default {
       wordsToIterate: [],
       nouns: [],
       verbs: [],
+      sortByItemText: "date (desc)",
     };
   },
   async fetch() {
@@ -169,6 +213,69 @@ export default {
     },
     getAllWords() {
       return (this.wordsToIterate = this.words);
+    },
+
+    sortByItemMethod(item) {
+      let _ = require("lodash");
+      if (item === "date") {
+        this.wordsToIterate = _.sortBy(this.wordsToIterate, [
+          (word) => {
+            return word.createdAt;
+          },
+        ]);
+        this.sortByItemText = "date (asc)";
+      }
+
+      if (item === "date-reverse") {
+        this.wordsToIterate = _.reverse(
+          _.sortBy(this.wordsToIterate, [
+            (word) => {
+              return word.createdAt;
+            },
+          ])
+        );
+        this.sortByItemText = "date (desc)";
+      }
+
+      if (item === "title") {
+        this.wordsToIterate = _.sortBy(this.wordsToIterate, [
+          (word) => {
+            return word.url.title;
+          },
+        ]);
+        this.sortByItemText = "मारवाड़ी (asc)";
+      }
+
+      if (item === "title-reverse") {
+        this.wordsToIterate = _.reverse(
+          _.sortBy(this.wordsToIterate, [
+            (word) => {
+              return word.url.title;
+            },
+          ])
+        );
+        this.sortByItemText = "मारवाड़ी (desc)";
+      }
+
+      if (item === "transliteration") {
+        this.wordsToIterate = _.sortBy(this.wordsToIterate, [
+          (word) => {
+            return word.url.transliteration;
+          },
+        ]);
+        this.sortByItemText = "transliteration (asc)";
+      }
+
+      if (item === "transliteration-reverse") {
+        this.wordsToIterate = _.reverse(
+          _.sortBy(this.wordsToIterate, [
+            (word) => {
+              return word.url.transliteration;
+            },
+          ])
+        );
+        this.sortByItemText = "transliteration (desc)";
+      }
     },
   },
 };
