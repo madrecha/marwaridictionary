@@ -145,7 +145,7 @@ export default {
       nouns: [],
       verbs: [],
       fosType: "",
-      sortByItemText: "date (desc)",
+      sortByItemText: "date (newest)",
       sortWordsByAsc: true,
     };
   },
@@ -183,7 +183,7 @@ export default {
   methods: {
     getWordsType(fos) {
       this.wordsToIterate = this[fos];
-      this.sortByItemText = "date (desc)";
+      this.sortByItemText = "date (newest)";
       this.fosType = fos;
     },
 
@@ -197,7 +197,7 @@ export default {
               return word.url.title;
             },
           ]);
-          this.sortByItemText = "Marwari (asc)";
+          this.sortByItemText = "Marwari (ज्ञ → अ)";
         }
 
         if (this.sortWordsByAsc === false) {
@@ -208,7 +208,7 @@ export default {
               },
             ])
           );
-          this.sortByItemText = "Marwari (desc)";
+          this.sortByItemText = "Marwari (अ → ज्ञ)";
         }
 
         this.sortWordsByAsc = !this.sortWordsByAsc;
@@ -221,7 +221,7 @@ export default {
               return word.url.transliteration;
             },
           ]);
-          this.sortByItemText = "transliteration (asc)";
+          this.sortByItemText = "transliteration (a → z)";
         }
 
         if (this.sortWordsByAsc === false) {
@@ -232,7 +232,7 @@ export default {
               },
             ])
           );
-          this.sortByItemText = "transliteration (desc)";
+          this.sortByItemText = "transliteration (z → a)";
         }
         this.sortWordsByAsc = !this.sortWordsByAsc;
       }
@@ -244,7 +244,7 @@ export default {
               return word.createdAt;
             },
           ]);
-          this.sortByItemText = "date (asc)";
+          this.sortByItemText = "date (oldest)";
         }
 
         if (this.sortWordsByAsc === false) {
@@ -255,7 +255,7 @@ export default {
               },
             ])
           );
-          this.sortByItemText = "date (desc)";
+          this.sortByItemText = "date (newest)";
         }
         this.sortWordsByAsc = !this.sortWordsByAsc;
       }
