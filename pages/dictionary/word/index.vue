@@ -26,13 +26,13 @@
         <!-- <p class="tw-mt-3 tw-text-gray-700">Ctrl + F to search the word</p> -->
         <div class="tw-mt-3">
           <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto">
-            <button @click.prevent="getNouns()" class="fos-button">
+            <button @click.prevent="getWordsType('nouns')" class="fos-button">
               Nouns
             </button>
-            <button @click.prevent="getVerbs()" class="fos-button">
+            <button @click.prevent="getWordsType('verbs')" class="fos-button">
               Verbs
             </button>
-            <button @click.prevent="getAllWords()" class="fos-button">
+            <button @click.prevent="getWordsType('words')" class="fos-button">
               All words
             </button>
           </div>
@@ -191,14 +191,8 @@ export default {
     }
   },
   methods: {
-    getNouns() {
-      return (this.wordsToIterate = this.nouns);
-    },
-    getVerbs() {
-      return (this.wordsToIterate = this.verbs);
-    },
-    getAllWords() {
-      return (this.wordsToIterate = this.words);
+    getWordsType(fos) {
+      return (this.wordsToIterate = this[fos]);
     },
 
     sortWordsByTitleMethod(item) {
