@@ -1,0 +1,3 @@
+wisdom
+intelligence, intellect
+knowledge

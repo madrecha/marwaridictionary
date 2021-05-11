@@ -1,0 +1,4 @@
+liking
+preference
+interest
+hobby
