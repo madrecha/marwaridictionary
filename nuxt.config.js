@@ -34,8 +34,23 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
+  // Generate
   generate: {
+    // exclude: [],
     fallback: '404.html',
+    cache: {
+      ignore: [
+        '.nuxt', // buildDir
+        'static', // dir.static
+        'dist', // generate.dir
+        'node_modules',
+        '.**/*',
+        '.*',
+        'README.md',
+        'firebase.json' // firebase file (including redirects)
+      ]
+    }
+
   },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
@@ -103,8 +118,8 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     // analyze: false,
-    corejs: 3,
-    extractCSS: true,
+    // corejs: 3,
+    // extractCSS: true,
     filenames: {
       app: ({ isDev, isModern }) => isDev ? `[name]${isModern ? '.modern' : ''}.js` : `[name].[contenthash:7]${isModern ? '.modern' : ''}.js`,
       chunk: ({ isDev, isModern }) => isDev ? `[name]${isModern ? '.modern' : ''}.js` : `[name].[contenthash:7]${isModern ? '.modern' : ''}.js`,
