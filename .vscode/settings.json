@@ -5,5 +5,12 @@
   "[json]": {
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-  }
+  },
+  "conventionalCommits.scopes": [
+    "blog",
+    "content",
+    "pages",
+    "nuxt.config",
+    "words",
+  ]
 }
