@@ -72,10 +72,11 @@ export default {
     // '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-i18n'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  // axios: {},
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
@@ -120,6 +121,30 @@ export default {
       ],
     },
     liveEdit: false,
+  },
+
+  i18n: {
+    locales: [{
+      code: 'en',
+      iso: 'en',
+      name: 'English',
+    }, {
+      code: 'hi',
+      iso: 'hi',
+      name: 'हिन्दी',
+    }],
+    defaultLocale: 'en',
+    strategy: 'prefix',
+    // noPrefixDefaultLocale: true,
+    vueI18nLoader: true,
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: require('./i18n/en.js'),
+        hi: require('./i18n/hi.js'),
+      },
+
+    }
   },
 
   'nuxt-buefy': {
