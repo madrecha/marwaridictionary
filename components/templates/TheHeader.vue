@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-sticky tw-top-0 tw-z-30 tw-h-12 tw-flex tw-items-center tw-justify-center tw-bg-gradient-to-br tw-from-white tw-to-blue-50">
+  <header class="tw-sticky tw-top-0 tw-z-30 tw-h-12 tw-flex tw-items-center tw-justify-center tw-bg-gradient-to-br tw-from-white tw-to-blue-50">
     <div class="tw-w-1/5 md:tw-hidden tw-p-2">
       <button @click.prevent="show = !show">🧾</button>
     </div>
@@ -11,7 +11,14 @@
         <li class="tw-text-sm sm:tw-text-base tw-mx-0.5 md:tw-mx-2 tw-font-medium">
           <nuxt-link
             exact
-            to="/dictionary/word"
+            :to="`/${$i18n.locale}/dictionary`"
+            class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
+          >Dictionary</nuxt-link>
+        </li>
+        <li class="tw-text-sm sm:tw-text-base tw-mx-0.5 md:tw-mx-2 tw-font-medium">
+          <nuxt-link
+            exact
+            :to="`/${$i18n.locale}/dictionary/word`"
             class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
           >Words</nuxt-link>
         </li>
@@ -22,7 +29,7 @@
         >
           <nuxt-link
             exact
-            to="/dictionary/topic"
+            :to="`/${$i18n.locale}/dictionary/topic`"
             class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
           >Topics</nuxt-link>
         </li>
@@ -35,12 +42,17 @@
     </div>
     <div class="tw-w-2/5 md:tw-w-1/3 tw-flex tw-items-center tw-justify-start">
       <SearchWordsFull :width="'tw-w-2/3 md:tw-w-full'"></SearchWordsFull>
+      <!-- <LanguageInput></LanguageInput> -->
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
+import LanguageInput from "~/components/organisms/LanguageInput";
+import SearchWordsFull from "~/components/organisms/SearchWordsFull";
+
 export default {
+  components: { LanguageInput, SearchWordsFull },
   data() {
     return {
       show: false,

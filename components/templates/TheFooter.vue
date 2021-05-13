@@ -1,5 +1,5 @@
 <template>
-  <div
+  <footer
     class="tw-border-t tw-border-pink-500 tw-bg-gradient-to-br tw-from-white tw-to-pink-50"
   >
     <div
@@ -18,14 +18,14 @@
           <span class="tw-text-xs sm:tw-text-base tw-text-gray-500"
             >Design & Content:</span
           >
-          <span class="tw-font-medium tw-text-pink-900">CA Manas Madrecha</span>
+          <span class="tw-font-medium tw-text-pink-900">CA {{ $t("default_author") }}</span>
         </p>
       </div>
       <div class="sm:tw-w-1/3 tw-flex tw-items-center tw-justify-center">
         <div
           class="tw-w-1/4 sm:tw-w-1/2 tw-text-xs sm:tw-text-base sm:tw-p-3 tw-text-gray-500"
         >
-          &copy; 2014 - 2021
+      <p>&copy; 2014 - {{new Date().getFullYear()}}</p>
         </div>
         <div class="sm:tw-w-1/2 tw-text-center">
           <a
@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>

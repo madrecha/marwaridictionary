@@ -104,8 +104,17 @@ export default {
 
       // Main starts...
 
-      this.words = await this.$content("words")
+      this.words = await this.$content(`${this.$i18n.locale}/dictionary`, {
+        deep: true
+      })
+        .where({
+          $and: [
+            { slug: { $ne: "AAA" } },
+            { dir: `/${this.$i18n.locale}/dictionary/words` }
+          ]
+        })
         .without(["body", "toc", "readingTime"])
+        .sortBy("updatedAt", "desc")
         .fetch();
 
       let toReturnSomethingTrue;
