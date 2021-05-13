@@ -34,9 +34,10 @@
             by <a
               :href="word.author && word.author.url ? word.author.url : `https://instagram.com/ManasMadrecha`"
               target="_blank"
+              rel="noopener noreferrer"
               class="tw-border-b tw-py-1 tw-border-pink-500"
             >
-              {{word.author ? word.author : `Manas Madrecha 😊`}}
+              {{word.author ? word.author : `CA ${$t("default_author")} 😊`}}
             </a>
           </div>
           <p class="tw-mt-2 tw-max-w-3xl tw-mx-auto tw-text-xs tw-text-gray-500 tw-lowercase">
