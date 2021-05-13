@@ -4,7 +4,7 @@ export default {
 
   // Create only modern build
   // Ref: https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-modern
-  modern: true,
+  // modern: true, // commenting it as it slows down the compile time very much
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
