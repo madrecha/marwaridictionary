@@ -21,8 +21,8 @@
       </div>
       <div class="tw--mt-5">
         <nuxt-link
-          :to="`${$i18n.locale}/dictionary/word`"
-          class="tw-p-6 tw-rounded-xl tw-text-white tw-font-medium tw-bg-gradient-to-br tw-from-pink-500 tw-to-pink-700 hover:tw-from-white hover:tw-to-pink-100 tw-shadow-xl tw-border-t-2 hover:tw-border-pink-200 hover:tw-text-pink-800 tw-text-xl"
+          :to="`/${$i18n.locale}/dictionary/word`"
+          class="tw-p-6 tw-rounded-xl tw-text-white tw-font-medium tw-bg-gradient-to-br tw-from-pink-500 tw-to-pink-700 hover:tw-from-white hover:tw-to-pink-100 tw-shadow-xl twnp-border-t-2 hover:tw-border-pink-200 hover:tw-text-pink-800 tw-text-xl"
         >Browse Marwari Words</nuxt-link>
       </div>
       <div class="tw-py-2 tw-mt-10 md:tw-mt-3 md:tw-flex tw-justify-center tw-items-start tw-bg-gradient-to-br tw-from-white tw-via-white tw-to-blue-50">
