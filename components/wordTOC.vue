@@ -1,8 +1,6 @@
 <template>
   <div id="blog-toc">
-    <div
-      class="tw-rounded-2xl tw-shadow-md tw-bg-gradient-to-br tw-from-white tw-via-white tw-to-blue-50 tw-z-30"
-    >
+    <div class="tw-rounded-2xl tw-shadow-md tw-bg-gradient-to-br tw-from-white tw-via-white tw-to-blue-50 tw-z-30">
       <div
         id="heading-toc"
         @click.prevent="show = !show"
@@ -10,14 +8,16 @@
         style=""
       >
         <!-- <fa-icon icon="list-ol" class="tw-text-lg"></fa-icon> -->
-        <h2
-          class="tw-uppercase tw-font-medium tw-text-center tw-tracking-wider"
-        >
+        <h2 class="tw-uppercase tw-font-medium tw-text-center tw-tracking-wider">
           Table of contents (TOC)
         </h2>
         <!-- <fa-icon :icon="show == true ? 'chevron-up' : 'chevron-down'"></fa-icon> -->
       </div>
-      <nav id="toc-nav" v-show="show" class="tw-overflow-y-scroll tw-max-h-64">
+      <nav
+        id="toc-nav"
+        v-show="show"
+        class="tw-overflow-y-scroll tw-max-h-64"
+      >
         <ul
           id="toc-ul"
           class="tw-mt-2 tw-pl-5 tw-pr-1 md:tw-pl-8 md:tw-pr-4 tw-pb-2"
@@ -59,33 +59,30 @@ export default {
   props: { word: Object },
   data() {
     return {
-      show: true,
+      show: true
     };
-  },
+  }
 };
 </script>
 
-<style lang="postcss" scoped>
+<style lang="sass" scoped>
 /* width */
-::-webkit-scrollbar {
-  @apply tw-w-2;
-}
+::-webkit-scrollbar
+  @apply tw-w-2
 
 /* Track */
-::-webkit-scrollbar-track {
-  @apply tw-rounded-br-2xl;
+::-webkit-scrollbar-track
+  @apply tw-rounded-br-2xl
   /* box-shadow: inset 0 0 2px grey; */
-}
 
 /* Handle */
-::-webkit-scrollbar-thumb {
-  @apply tw-bg-blue-200 hover:tw-bg-pink-200 tw-rounded-lg;
+::-webkit-scrollbar-thumb
+  @apply tw-bg-blue-200 hover:tw-bg-pink-200 tw-rounded-lg
   /* background: red; */
   /* border-radius: 10px; */
-}
 
 /* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
-} */
+/* ::-webkit-scrollbar-thumb:hover 
+ background: #b30000;
+ */
 </style>

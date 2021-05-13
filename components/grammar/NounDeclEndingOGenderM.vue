@@ -2,7 +2,10 @@
   <table>
     <thead>
       <tr>
-        <th colspan="3" @click.prevent="showAll = !showAll">
+        <th
+          colspan="3"
+          @click.prevent="showAll = !showAll"
+        >
           Marwari declension of noun → {{ term }}ो ( {{ trans }}o)
         </th>
       </tr>
@@ -37,30 +40,25 @@ export default {
   props: { term: String, trans: String },
   data() {
     return {
-      showAll: false,
+      showAll: false
     };
-  },
+  }
 };
 </script>
 
-<style lang="postcss" scoped>
-table {
-  @apply tw-border tw-border-pink-800 tw-border-collapse;
-}
-th {
-  @apply tw-text-xl tw-text-blue-900 tw-font-medium;
-  @apply tw-py-2 tw-px-3;
-  @apply tw-border tw-border-blue-800;
-}
-td {
-  @apply tw-border tw-border-blue-800;
-  @apply tw-py-2 tw-px-3;
-}
+<style lang="sass" scoped>
+table
+  @apply tw-border tw-border-pink-800 tw-border-collapse
+th
+  @apply tw-text-xl tw-text-blue-900 tw-font-medium
+  @apply tw-py-2 tw-px-3
+  @apply tw-border tw-border-blue-800
+td
+  @apply tw-border tw-border-blue-800
+  @apply tw-py-2 tw-px-3
 
-.noun-number {
-  @apply tw-bg-pink-50;
-}
-.noun-case {
-  @apply tw-bg-blue-50;
-}
+.noun-number
+  @apply tw-bg-pink-50
+.noun-case
+  @apply tw-bg-blue-50
 </style>

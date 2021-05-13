@@ -11,13 +11,18 @@
         <nuxt-link
           to="/dictionary/topic"
           class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
-          >Go back to Topics</nuxt-link
-        >
+        >Go back to Topics</nuxt-link>
       </div>
     </div>
-    <div v-for="(topic, i) in topics" :key="i">
+    <div
+      v-for="(topic, i) in topics"
+      :key="i"
+    >
       <div v-if="topic.parents && topic.parents.length > 0">
-        <div v-for="parent in topic.parents" :key="parent">
+        <div
+          v-for="parent in topic.parents"
+          :key="parent"
+        >
           <nuxt-link to="/dictionary/topic">Topic</nuxt-link> →
           <nuxt-link :to="`/dictionary/topic/${parent}`">{{
             parent
@@ -27,7 +32,10 @@
         </div>
       </div>
       <ol v-if="topic.children && topic.children.length > 0">
-        <li v-for="children in topic.children" :key="children">
+        <li
+          v-for="children in topic.children"
+          :key="children"
+        >
           <nuxt-link
             :to="children"
             class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
@@ -38,10 +46,12 @@
       </ol>
     </div>
     <div class="tw-mt-3 tw-max-w-5xl tw-mx-auto">
-      <ol
-        class="tw-list-decimal tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-1 lg:tw-gap-3 tw-p-2"
-      >
-        <li v-for="word in words" :key="word.url.slugurl" class="tw-m-4">
+      <ol class="tw-list-decimal tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-1 lg:tw-gap-3 tw-p-2">
+        <li
+          v-for="word in words"
+          :key="word.url.slugurl"
+          class="tw-m-4"
+        >
           <nuxt-link
             :to="`/dictionary/word/${word.url.slugurl}`"
             class="tw-p-1 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50 tw-leading-relaxed"
@@ -59,7 +69,7 @@ export default {
   data() {
     return {
       topics: [],
-      words: [],
+      words: []
     };
   },
   async fetch() {
@@ -72,9 +82,6 @@ export default {
       .where({ topics: { $contains: this.$route.params.topic } })
       .sortBy("slug")
       .fetch();
-  },
+  }
 };
 </script>
-
-<style lang="postcss" scoped>
-</style>

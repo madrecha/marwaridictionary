@@ -11,9 +11,7 @@
         :class="width"
       />
     </div>
-    <div
-      class="tw-mt-3 tw-max-w-3xl tw-mx-auto tw-absolute tw-top-6 tw-left-0 tw-right-0"
-    >
+    <div class="tw-mt-3 tw-max-w-3xl tw-mx-auto tw-absolute tw-top-6 tw-left-0 tw-right-0">
       <ul
         v-if="wordsToSearch.length"
         class="tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-rounded tw-p-2"
@@ -38,7 +36,7 @@ export default {
   data() {
     return {
       wordsToSearch: [],
-      query: "",
+      query: ""
     };
   },
   watch: {
@@ -54,7 +52,7 @@ export default {
         .limit(10)
         .search(query)
         .fetch();
-    },
+    }
   },
   methods: {
     clearInput() {
@@ -62,10 +60,7 @@ export default {
       // document.getElementById("search-word-input").value = "";
       this.query = "";
       return;
-    },
-  },
+    }
+  }
 };
 </script>
-
-<style lang="postcss" scoped>
-</style>

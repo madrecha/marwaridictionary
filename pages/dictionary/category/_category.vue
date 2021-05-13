@@ -6,11 +6,8 @@
 export default {
   data() {
     return {
-      categories: [],
+      categories: []
     };
-  },
+  }
 };
 </script>
-
-<style lang="scss" scoped>
-</style>

@@ -18,9 +18,19 @@
       class="tw-ring-2"
     />
     {{ wordsToIterate.length }}
-    <ol v-if="wordsToIterate.length" class="tw-list-decimal">
-      <li v-for="word in wordsToIterate" :key="word.slug" class="tw-m-2">
-        <nuxt-link :to="`/dictionary/word/${word.url.slugurl}`" class="tw-p-2">
+    <ol
+      v-if="wordsToIterate.length"
+      class="tw-list-decimal"
+    >
+      <li
+        v-for="word in wordsToIterate"
+        :key="word.slug"
+        class="tw-m-2"
+      >
+        <nuxt-link
+          :to="`/dictionary/word/${word.url.slugurl}`"
+          class="tw-p-2"
+        >
           {{ word.url.transliteration }}
         </nuxt-link>
       </li>
@@ -41,7 +51,7 @@ export default {
       wordsToSearch: [],
       query: "",
       transcheck: "<b>आपाणो कैसे हो लड़का</b>",
-      transResult: "",
+      transResult: ""
     };
   },
   async fetch() {
@@ -49,11 +59,11 @@ export default {
       // .only(["url", "slug"])
       .where({
         $or: [
-          { meanings: { $regex: "hu" } },
+          { meanings: { $regex: "hu" } }
           // { "url.transliteration": { $contains: query } },
           // { "url.title": { $contains: query } },
           // { "url.slugurl": { $contains: query } },
-        ],
+        ]
       })
       .sortBy("url.title", "asc")
       // .limit(10)
@@ -75,7 +85,7 @@ export default {
 
       let toReturnSomethingTrue;
 
-      this.wordsToIterate = this.words.filter((word) => {
+      this.wordsToIterate = this.words.filter(word => {
         let a, b, c, d, e, f, g, h, i, j, k, l, m;
         let tc,
           hindi,
@@ -138,10 +148,7 @@ export default {
       });
 
       this.wordsToIterate = _.take(this.wordsToIterate, 10);
-    },
-  },
+    }
+  }
 };
 </script>
-
-<style src="@/assets/css/nuxtcontent.postcss" lang="postcss">
-</style>

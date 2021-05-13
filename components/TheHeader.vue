@@ -1,21 +1,19 @@
 <template>
-  <div
-    class="tw-sticky tw-top-0 tw-z-30 tw-h-12 tw-flex tw-items-center tw-justify-center tw-bg-gradient-to-br tw-from-white tw-to-blue-50"
-  >
+  <div class="tw-sticky tw-top-0 tw-z-30 tw-h-12 tw-flex tw-items-center tw-justify-center tw-bg-gradient-to-br tw-from-white tw-to-blue-50">
     <div class="tw-w-1/5 md:tw-hidden tw-p-2">
       <button @click.prevent="show = !show">🧾</button>
     </div>
     <nav class="md:tw-w-1/3 tw-px-2">
-      <ul id="ul-menu" class="md:tw-flex tw-items-center tw-justify-center">
-        <li
-          class="tw-text-sm sm:tw-text-base tw-mx-0.5 md:tw-mx-2 tw-font-medium"
-        >
+      <ul
+        id="ul-menu"
+        class="md:tw-flex tw-items-center tw-justify-center"
+      >
+        <li class="tw-text-sm sm:tw-text-base tw-mx-0.5 md:tw-mx-2 tw-font-medium">
           <nuxt-link
             exact
             to="/dictionary/word"
             class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
-            >Words</nuxt-link
-          >
+          >Words</nuxt-link>
         </li>
         <li
           class="md:tw-block tw-text-sm sm:tw-text-base tw-mx-0.5 md:tw-mx-2 tw-font-medium"
@@ -26,8 +24,7 @@
             exact
             to="/dictionary/topic"
             class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
-            >Topics</nuxt-link
-          >
+          >Topics</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -50,21 +47,20 @@ export default {
       menus: [
         // { name: "Home", url: "/" },
         // { name: "Words", url: "/word" },
-        { name: "Topics", url: "/topic" },
+        { name: "Topics", url: "/topic" }
         // { name: "About", url: "/about" },
-      ],
+      ]
     };
   },
   methods: {
     hideMenu() {
       this.show = false;
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style lang="postcss" scoped>
-#ul-menu .nuxt-link-exact-active {
-  @apply tw-border-pink-500 tw-border tw-rounded-xl tw-bg-white;
-}
+<style lang="sass" scoped>
+#ul-menu .nuxt-link-exact-active
+  @apply tw-border-pink-500 tw-border tw-rounded-xl tw-bg-white
 </style>

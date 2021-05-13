@@ -1,20 +1,18 @@
 <template>
   <div>
-    <article v-if="$fetchState.pending" class="tw-min-h-screen tw-my-48">
-      <p
-        class="tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
-      >
+    <article
+      v-if="$fetchState.pending"
+      class="tw-min-h-screen tw-my-48"
+    >
+      <p class="tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium">
         Fetching words...💖 Wait for a few seconds 😊
       </p>
     </article>
     <article class="tw-mt-2">
       <section class="tw-text-center">
         <h1 class="tw-text-2xl tw-text-pink-900 tw-font-medium">
-          <span
-            class="tw-rounded-full tw-border tw-border-pink-800 tw-p-2 tw-shadow-md"
-          >
-            {{ words.length }}</span
-          >
+          <span class="tw-rounded-full tw-border tw-border-pink-800 tw-p-2 tw-shadow-md">
+            {{ words.length }}</span>
           Marwari words added
         </h1>
         <p class="tw-mt-3 md:tw-mt-5 tw-text-gray-800 tw-text-sm">
@@ -24,13 +22,22 @@
         </p>
         <div class="tw-mt-1">
           <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto">
-            <button @click.prevent="getWordsType('nouns')" class="fos-button">
+            <button
+              @click.prevent="getWordsType('nouns')"
+              class="fos-button"
+            >
               Nouns
             </button>
-            <button @click.prevent="getWordsType('verbs')" class="fos-button">
+            <button
+              @click.prevent="getWordsType('verbs')"
+              class="fos-button"
+            >
               Verbs
             </button>
-            <button @click.prevent="getWordsType('words')" class="fos-button">
+            <button
+              @click.prevent="getWordsType('words')"
+              class="fos-button"
+            >
               All words
             </button>
           </div>
@@ -46,16 +53,15 @@
           class="tw-mt-3 tw-text-left"
         ></SearchWordsFull>
       </div> -->
-      <section
-        class="tw-mt-6 md:tw-mx-0 tw-p-1.5 tw-border-t tw-border-b tw-border-blue-300"
-      >
+      <section class="tw-mt-6 md:tw-mx-0 tw-p-1.5 tw-border-t tw-border-b tw-border-blue-300">
         <p class="tw-mt-1 tw-text-center">
           Sorted by <span class="tw-font-medium">{{ sortByItemText }}</span>
         </p>
-        <div
-          class="tw-mt-1 tw-mb-2 tw-flex tw-justify-center tw-mx-auto tw-text-xs md:tw-text-sm"
-        >
-          <button @click.prevent="sortWordsBy('title')" class="sort-button">
+        <div class="tw-mt-1 tw-mb-2 tw-flex tw-justify-center tw-mx-auto tw-text-xs md:tw-text-sm">
+          <button
+            @click.prevent="sortWordsBy('title')"
+            class="sort-button"
+          >
             मारवाड़ी ⇅
           </button>
           <button
@@ -64,17 +70,21 @@
           >
             english ⇅
           </button>
-          <button @click.prevent="sortWordsBy('date')" class="sort-button">
+          <button
+            @click.prevent="sortWordsBy('date')"
+            class="sort-button"
+          >
             date added ⇅
           </button>
-          <button @click.prevent="sortWordsBy('updated')" class="sort-button">
+          <button
+            @click.prevent="sortWordsBy('updated')"
+            class="sort-button"
+          >
             updated ⇅
           </button>
         </div>
       </section>
-      <ul
-        class="tw-list-none tw-mt-2 md:tw-mt-3 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-4 tw-mx-auto tw-max-w-screen-lg"
-      >
+      <ul class="tw-list-none tw-mt-2 md:tw-mt-3 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-4 tw-mx-auto tw-max-w-screen-lg">
         <li
           v-for="word in wordsToIterate"
           :key="word.slug"
@@ -92,9 +102,7 @@
             :to="`/dictionary/word/${word.url.slugurl}`"
             class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
           >
-            <div
-              class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-text-blue-900 md:tw-text-xl tw-break-words md:tw-break-normal"
-            >
+            <div class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-text-blue-900 md:tw-text-xl tw-break-words md:tw-break-normal">
               {{ word.url.title }}
             </div>
             <div class="sm:tw-w-1/2">
@@ -147,7 +155,7 @@ export default {
       verbs: [],
       fosType: "",
       sortByItemText: "updated (newest)",
-      sortWordsByAsc: true,
+      sortWordsByAsc: true
     };
   },
   async fetch() {
@@ -159,7 +167,7 @@ export default {
 
     this.wordsToIterate = this.words;
 
-    this.nouns = this.words.filter((word) => {
+    this.nouns = this.words.filter(word => {
       if (word.grammar && word.grammar.noun) {
         for (let key in word.grammar) {
           return (key = "noun");
@@ -167,7 +175,7 @@ export default {
       }
     });
 
-    this.verbs = this.words.filter((word) => {
+    this.verbs = this.words.filter(word => {
       if (word.grammar && word.grammar.verb) {
         for (let key in word.grammar) {
           return (key = "verb");
@@ -194,9 +202,9 @@ export default {
       if (item === "title") {
         if (this.sortWordsByAsc === true) {
           this.wordsToIterate = _.sortBy(this.wordsToIterate, [
-            (word) => {
+            word => {
               return word.url.title;
-            },
+            }
           ]);
           this.sortByItemText = "Marwari (ज्ञ → अ)";
         }
@@ -204,9 +212,9 @@ export default {
         if (this.sortWordsByAsc === false) {
           this.wordsToIterate = _.reverse(
             _.sortBy(this.wordsToIterate, [
-              (word) => {
+              word => {
                 return word.url.title;
-              },
+              }
             ])
           );
           this.sortByItemText = "Marwari (अ → ज्ञ)";
@@ -218,9 +226,9 @@ export default {
       if (item === "transliteration") {
         if (this.sortWordsByAsc === true) {
           this.wordsToIterate = _.sortBy(this.wordsToIterate, [
-            (word) => {
+            word => {
               return word.url.transliteration;
-            },
+            }
           ]);
           this.sortByItemText = "transliteration (a → z)";
         }
@@ -228,9 +236,9 @@ export default {
         if (this.sortWordsByAsc === false) {
           this.wordsToIterate = _.reverse(
             _.sortBy(this.wordsToIterate, [
-              (word) => {
+              word => {
                 return word.url.transliteration;
-              },
+              }
             ])
           );
           this.sortByItemText = "transliteration (z → a)";
@@ -241,9 +249,9 @@ export default {
       if (item === "date") {
         if (this.sortWordsByAsc === true) {
           this.wordsToIterate = _.sortBy(this.wordsToIterate, [
-            (word) => {
+            word => {
               return word.createdAt;
-            },
+            }
           ]);
           this.sortByItemText = "date added (oldest)";
         }
@@ -251,9 +259,9 @@ export default {
         if (this.sortWordsByAsc === false) {
           this.wordsToIterate = _.reverse(
             _.sortBy(this.wordsToIterate, [
-              (word) => {
+              word => {
                 return word.createdAt;
-              },
+              }
             ])
           );
           this.sortByItemText = "date added (newest)";
@@ -264,9 +272,9 @@ export default {
       if (item === "updated") {
         if (this.sortWordsByAsc === true) {
           this.wordsToIterate = _.sortBy(this.wordsToIterate, [
-            (word) => {
+            word => {
               return word.updatedAt;
-            },
+            }
           ]);
           this.sortByItemText = "updated (oldest)";
         }
@@ -274,26 +282,25 @@ export default {
         if (this.sortWordsByAsc === false) {
           this.wordsToIterate = _.reverse(
             _.sortBy(this.wordsToIterate, [
-              (word) => {
+              word => {
                 return word.updatedAt;
-              },
+              }
             ])
           );
           this.sortByItemText = "updated (newest)";
         }
         this.sortWordsByAsc = !this.sortWordsByAsc;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style lang="postcss" scoped>
-.fos-button {
-  @apply tw-p-2 tw-m-2 tw-rounded-md tw-border tw-border-blue-500 tw-bg-blue-50 hover:tw-bg-pink-50 focus:tw-outline-none focus:tw-bg-pink-50 focus:tw-ring-1 focus:tw-ring-pink-500 focus:tw-text-pink-800;
-}
-.sort-button {
-  @apply tw-p-1 md:tw-p-2 tw-m-1 md:tw-m-2 tw-rounded-md tw-border tw-border-yellow-500 tw-bg-yellow-50 hover:tw-bg-green-50 focus:tw-outline-none focus:tw-bg-green-50 focus:tw-ring-1 focus:tw-ring-green-500 focus:tw-text-green-800;
-}
+<style lang="sass" scoped>
+.fos-button
+  @apply tw-p-2 tw-m-2 tw-rounded-md tw-border tw-border-blue-500 tw-bg-blue-50 hover:tw-bg-pink-50 focus:tw-outline-none focus:tw-bg-pink-50 focus:tw-ring-1 focus:tw-ring-pink-500 focus:tw-text-pink-800
+
+.sort-button
+  @apply tw-p-1 md:tw-p-2 tw-m-1 md:tw-m-2 tw-rounded-md tw-border tw-border-yellow-500 tw-bg-yellow-50 hover:tw-bg-green-50 focus:tw-outline-none focus:tw-bg-green-50 focus:tw-ring-1 focus:tw-ring-green-500 focus:tw-text-green-800
 </style>
 

@@ -28,9 +28,7 @@
       </li>
     </ol> -->
     <div class="tw-mt-3 tw-max-w-5xl tw-mx-auto">
-      <ol
-        class="tw-list-decimal tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-1 lg:tw-gap-3 tw-p-2"
-      >
+      <ol class="tw-list-decimal tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-1 lg:tw-gap-3 tw-p-2">
         <li
           v-for="uniquetopic in uniquetopics"
           :key="uniquetopic"
@@ -58,7 +56,7 @@ export default {
       // topics: [],
       words: [],
       alltopics: [],
-      uniquetopics: [],
+      uniquetopics: []
     };
   },
   async fetch() {
@@ -132,11 +130,11 @@ export default {
       // console.log(compressed);
       // return compressed;
       return counttopics;
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style lang="postcss" scoped>
+<style scoped>
 /* @import url(~assets/css/nuxtcontent.postcss); */
 </style>

@@ -24,13 +24,9 @@
             Search word (in English, Devanagari or Hindi), meaning, translation,
             <b>topic</b>...
             <br />
-            <span class="tw-text-xs"
-              >E.g. → विंदणी, vindani, wife, पत्नी, person</span
-            >
+            <span class="tw-text-xs">E.g. → विंदणी, vindani, wife, पत्नी, person</span>
             <br />
-            <span class="tw-text-xs"
-              >E.g. → कुत्रो, kutro, dog, कुत्ता, animal</span
-            >
+            <span class="tw-text-xs">E.g. → कुत्रो, kutro, dog, कुत्ता, animal</span>
           </p>
         </div>
         <button
@@ -41,9 +37,7 @@
         </button>
       </div>
     </div>
-    <div
-      class="tw-mt-3 tw-max-w-3xl tw-mx-auto tw-absolute tw-top-6 tw-left-0 tw-right-0"
-    >
+    <div class="tw-mt-3 tw-max-w-3xl tw-mx-auto tw-absolute tw-top-6 tw-left-0 tw-right-0">
       <ol
         v-if="wordsToIterate.length"
         class="tw-list-decimal tw-list-inside tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-rounded tw-p-2"
@@ -75,7 +69,7 @@ export default {
       wordsToIterate: [],
       wordsBody: [],
       query: "",
-      showSearchHelp: false,
+      showSearchHelp: false
     };
   },
   methods: {
@@ -87,7 +81,7 @@ export default {
       this.wordsBody = [];
       this.query = "";
       return;
-    },
+    }
   },
   watch: {
     async query(query) {
@@ -116,7 +110,7 @@ export default {
 
       let toReturnSomethingTrue;
 
-      this.wordsToIterate = this.words.filter((word) => {
+      this.wordsToIterate = this.words.filter(word => {
         let a1, a2, a3, a4;
         let c1, c2, c3;
         let d1, d2, d3;
@@ -364,10 +358,7 @@ export default {
 
       // Show only 10 words even if the Array had hundreds of words to begin with
       this.wordsToIterate = _.take(uniqueArray, 10);
-    },
-  },
+    }
+  }
 };
 </script>
-
-<style lang="postcss" scoped>
-</style>

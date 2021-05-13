@@ -39,22 +39,19 @@ import NounDeclEndingAGenderF from "../grammar/NounDeclEndingAGenderF.vue";
 export default {
   props: {
     grammar: { type: Object, required: true },
-    url: { type: Object, required: false },
+    url: { type: Object, required: false }
   },
   components: {
     NounDeclEndingOGenderM,
     NounDeclEndingIiGenderF,
     NounDeclEndingAGenderM,
-    NounDeclEndingAGenderF,
+    NounDeclEndingAGenderF
   },
   data() {
     return {
       term: "",
-      trans: "",
+      trans: ""
     };
-  },
+  }
 };
 </script>
-
-<style lang="postcss" scoped>
-</style>

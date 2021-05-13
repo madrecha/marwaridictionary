@@ -3,13 +3,19 @@
     <table id="verb-conjugation">
       <thead>
         <tr>
-          <th colspan="8" @click.prevent="showAll = !showAll">
+          <th
+            colspan="8"
+            @click.prevent="showAll = !showAll"
+          >
             Marwari conjugation of verb → {{ term }}णो ({{ trans }}ṇo)
           </th>
         </tr>
 
         <tr>
-          <th rowspan="3" colspan="2">Person</th>
+          <th
+            rowspan="3"
+            colspan="2"
+          >Person</th>
           <th colspan="3">Singular</th>
           <th colspan="3">Plural</th>
         </tr>
@@ -31,7 +37,10 @@
         </tr>
       </thead>
       <tbody v-show="showAll">
-        <tr v-show="showPerfective" class="verb-category">
+        <tr
+          v-show="showPerfective"
+          class="verb-category"
+        >
           <th colspan="8">Perfective</th>
         </tr>
 
@@ -429,7 +438,7 @@ export default {
     trans: String,
     wordcat: String,
     term2: String,
-    trans2: String,
+    trans2: String
   },
   data() {
     return {
@@ -437,30 +446,27 @@ export default {
       showPerfective: false,
       showImperfective: false,
       showContinuous: false,
-      showNonaspectual: false,
+      showNonaspectual: false
     };
-  },
+  }
 };
 </script>
 
-<style lang="postcss" scoped>
-table {
-  @apply tw-border tw-border-pink-800 tw-border-collapse;
-}
-th {
-  @apply tw-text-xl tw-text-blue-900 tw-font-medium;
-  @apply tw-py-2 tw-px-3;
-  @apply tw-border tw-border-blue-800;
-}
-td {
-  @apply tw-border tw-border-blue-800;
-  @apply tw-py-2 tw-px-3;
-}
+<style lang="sass" scoped>
+table
+  @apply tw-border tw-border-pink-800 tw-border-collapse
+th
+  @apply tw-text-xl tw-text-blue-900 tw-font-medium
+  @apply tw-py-2 tw-px-3
+  @apply tw-border tw-border-blue-800
 
-.verb-category {
-  @apply tw-bg-pink-50;
-}
-.gender {
-  @apply tw-bg-blue-50;
-}
+td
+  @apply tw-border tw-border-blue-800
+  @apply tw-py-2 tw-px-3
+
+.verb-category
+  @apply tw-bg-pink-50
+
+.gender
+  @apply tw-bg-blue-50
 </style>

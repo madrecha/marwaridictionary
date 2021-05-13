@@ -1,11 +1,12 @@
 <template>
   <div class="tw-mt-4">
-    <h2
-      class="tw-text-green-800 tw-border-b-4 tw-border-double tw-border-green-800 tw-text-xl tw-font-medium tw-mt-4 tw-py-1"
-    >
+    <h2 class="tw-text-green-800 tw-border-b-4 tw-border-double tw-border-green-800 tw-text-xl tw-font-medium tw-mt-4 tw-py-1">
       Categories
     </h2>
-    <div v-if="word.grammar" class="tw-mt-2">
+    <div
+      v-if="word.grammar"
+      class="tw-mt-2"
+    >
       <div v-if="word.grammar.adjective">
         <span class="fos">Adjective</span> →
         {{
@@ -20,7 +21,10 @@
         }}
       </div>
 
-      <ol v-if="word.grammar.noun" class="">
+      <ol
+        v-if="word.grammar.noun"
+        class=""
+      >
         <li class="fos">Noun</li>
         <ol style="list-style-type: lower-roman">
           <li>
@@ -44,7 +48,9 @@
         </ol>
       </ol>
       <ol v-if="word.grammar.pronoun">
-        <span class="fos"><li>Pronoun</li></span>
+        <span class="fos">
+          <li>Pronoun</li>
+        </span>
       </ol>
       <ol v-if="word.grammar.preposition">
         <li class="fos">Preposition</li>
@@ -53,7 +59,10 @@
         <li class="fos">Conjunction</li>
       </ol>
 
-      <ol v-if="word.grammar.verb" class="">
+      <ol
+        v-if="word.grammar.verb"
+        class=""
+      >
         <li class="fos">Verb</li>
         <ol style="list-style-type: lower-roman">
           <li>
@@ -70,21 +79,19 @@
 
           <li v-if="word.grammar.verb.causative">
             Verbs with causative forms → Verbs of
-            <span v-if="word.grammar.verb.causative.self === 1"
-              >1<sup>st</sup>
+            <span v-if="word.grammar.verb.causative.self === 1">1<sup>st</sup>
             </span>
-            <span v-if="word.grammar.verb.causative.self === 2"
-              >2<sup>nd</sup></span
-            >
-            <span v-if="word.grammar.verb.causative.self === 3"
-              >3<sup>rd</sup></span
-            >
+            <span v-if="word.grammar.verb.causative.self === 2">2<sup>nd</sup></span>
+            <span v-if="word.grammar.verb.causative.self === 3">3<sup>rd</sup></span>
             causative form
           </li>
         </ol>
       </ol>
     </div>
-    <ol v-if="word.meanings" class="tw-mt-2 tw-border-t tw-border-green-800">
+    <ol
+      v-if="word.meanings"
+      class="tw-mt-2 tw-border-t tw-border-green-800"
+    >
       <li>Words with meanings in Frontmatter</li>
       <li v-if="word.meanings.length === 1">Words with single meaning</li>
       <li v-else>Words with multiple meanings</li>
@@ -110,11 +117,17 @@
       <li v-if="word.antonyms || word.ants || word.ant">Words with Antonyms</li>
       <li v-if="word.synonyms || word.syns || word.syn">Words with Synonyms</li>
     </ol>
-    <ol v-if="word.related" class="tw-mt-2 tw-border-t tw-border-green-800">
+    <ol
+      v-if="word.related"
+      class="tw-mt-2 tw-border-t tw-border-green-800"
+    >
       <li>Words with related terms</li>
       <li>Words with related terms outside Meaning</li>
     </ol>
-    <ol v-if="word.rels" class="tw-mt-2 tw-border-t tw-border-green-800">
+    <ol
+      v-if="word.rels"
+      class="tw-mt-2 tw-border-t tw-border-green-800"
+    >
       <li>Words with related terms</li>
       <li>Words with related terms outside Meaning</li>
     </ol>
@@ -133,20 +146,17 @@ export default {
   props: { word: Object },
   data() {
     return {};
-  },
+  }
 };
 </script>
 
-<style lang="postcss" scoped>
-ul {
-  @apply tw-list-disc tw-mt-2;
-}
+<style lang="sass" scoped>
+ul
+  @apply tw-list-disc tw-mt-2
 
-ol {
-  @apply tw-list-decimal tw-mt-2;
-}
+ol
+  @apply tw-list-decimal tw-mt-2
 
-.fos {
-  @apply tw-text-green-700 tw-bg-green-50 tw-p-1 tw-font-medium;
-}
+.fos
+  @apply tw-text-green-700 tw-bg-green-50 tw-p-1 tw-font-medium
 </style>

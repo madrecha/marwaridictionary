@@ -8,7 +8,10 @@
       </tr>
 
       <tr v-show="showAll">
-        <th rowspan="3" colspan="2">Person</th>
+        <th
+          rowspan="3"
+          colspan="2"
+        >Person</th>
         <th colspan="3">Singular</th>
         <th colspan="3">Plural</th>
       </tr>
@@ -430,30 +433,25 @@ export default {
       showPerfective: true,
       showImperfective: false,
       showContinuous: false,
-      showNonaspectual: false,
+      showNonaspectual: false
     };
-  },
+  }
 };
 </script>
 
-<style lang="postcss" scoped>
-table {
-  @apply tw-border tw-border-pink-800 tw-border-collapse;
-}
-th {
-  @apply tw-text-xl tw-text-blue-900 tw-font-medium;
-  @apply tw-py-2 tw-px-3;
-  @apply tw-border tw-border-blue-800;
-}
-td {
-  @apply tw-border tw-border-blue-800;
-  @apply tw-py-2 tw-px-3;
-}
+<style lang="sass" scoped>
+table
+  @apply tw-border tw-border-pink-800 tw-border-collapse
+th
+  @apply tw-text-xl tw-text-blue-900 tw-font-medium
+  @apply tw-py-2 tw-px-3
+  @apply tw-border tw-border-blue-800
+td
+  @apply tw-border tw-border-blue-800
+  @apply tw-py-2 tw-px-3
 
-.verb-category {
-  @apply tw-bg-pink-50;
-}
-.gender {
-  @apply tw-bg-blue-50;
-}
+.noun-number
+  @apply tw-bg-pink-50
+.noun-case
+  @apply tw-bg-blue-50
 </style>
