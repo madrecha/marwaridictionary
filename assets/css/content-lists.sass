@@ -1,0 +1,39 @@
+.nuxt-content
+  ul
+    @apply tw-list-outside tw-list-disc tw-pl-6 tw-mt-2
+  ol
+    @apply tw-list-outside tw-list-decimal tw-pl-6 tw-mt-2
+  li
+    @apply tw-mt-2
+    &::marker
+      @apply tw-text-red-500 tw-text-lg
+    & > p
+      @apply tw-mt-0
+
+  ul > li > ul
+    list-style-type: square
+    &> li
+      &::marker
+        @apply tw-text-red-200
+
+  ol > li > ul
+    list-style-type: square
+    &> li
+      &::marker
+        @apply tw-text-red-200
+
+div.flex-grandchild > ol
+  @apply tw-flex tw-flex-wrap
+  & > li
+    @apply tw-mx-6
+
+div.flex-grandchild > ul
+  @apply tw-flex tw-flex-wrap
+  & > li
+    @apply tw-mx-6
+
+.link-based-tabs
+  div
+    @apply tw-hidden
+  div:target
+    @apply tw-block

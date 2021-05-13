@@ -1,0 +1,28 @@
+%margin-shared
+  @apply tw-mt-6
+
+.nuxt-content
+  h2
+    @extend %margin-shared
+    @apply tw-text-pink-800 tw-text-xl sm:tw-text-3xl tw-bg-gradient-to-r tw-from-white tw-to-red-50 tw-rounded-md tw-py-1 lg:tw--ml-2 tw-pl-3 tw-shadow-md
+    // & + a
+    //   @apply tw-text-red-500
+    //   &::before
+    //     @apply tw-text-red-500
+    //     content: "#"
+
+  h3
+    @extend %margin-shared
+    @apply tw-text-blue-900 tw-font-medium tw-text-lg sm:tw-text-2xl tw-pb-1 tw-border-b-2 tw-border-gray-300
+
+  h4
+    @extend %margin-shared
+    @apply tw-text-green-700 tw-font-medium tw-text-lg sm:tw-text-xl tw-pb-1 tw-border-b-2 tw-border-gray-300
+
+  h5
+    @extend %margin-shared
+    @apply tw-text-yellow-700 tw-font-medium tw-text-lg sm:tw-text-lg tw-pb-1 tw-border-b-2 tw-border-gray-300
+
+  // :target
+  //   border: 2px solid #D4D4D4
+  //   background-color: #e5eecc

@@ -1,0 +1,76 @@
+*
+  @apply tw-text-sm md:tw-text-base
+
+.nuxt-content
+  a
+    @apply tw-text-blue-700 hover:tw-text-gray-800 tw-border-b hover:tw-border-gray-500
+
+  p
+    &:not([class*="progress"])
+      @apply tw-mt-6
+    &:empty
+      @apply tw-mt-0
+
+  details
+    @apply tw-mt-3 tw-transition-all tw-duration-300 tw-ease-linear
+    & > summary
+      @apply tw-p-2 tw-border tw-border-pink-400 tw-rounded tw-cursor-pointer hover:tw-shadow-lg tw-outline-none focus:tw-ring-2 tw-bg-gradient-to-br tw-from-white hover:tw-to-pink-50 focus:tw-ring-pink-500 focus:tw-bg-white tw-duration-300 tw-transition-all tw-ease-linear
+      &::marker
+        @apply tw-text-pink-500
+
+  blockquote
+    @apply tw-border-l-4 tw-border-pink-600 tw-bg-pink-50 tw-p-3 tw-mt-6
+
+    p
+      &:first-child
+        @apply tw--mt-0 tw-text-gray-800
+
+    cite
+      @apply tw-text-pink-900 tw-italic tw-font-medium
+
+  table
+    @extend %margin-shared
+    @apply hover:tw-shadow-lg
+    > caption
+      @apply tw-mb-3 tw-italic tw-text-pink-800
+    > thead
+      @apply tw-sticky tw-top-0 tw-z-20
+      > tr
+        > th
+          @apply tw-border tw-border-gray-200
+          @apply tw-p-2 tw-font-medium
+          @apply tw-bg-pink-50
+    > tbody
+      > tr
+        @apply hover:tw-bg-gray-50 tw-bg-white
+        > td
+          @apply tw-border tw-border-gray-200
+          @apply tw-p-2
+
+  // thead
+  // &:not([class*="table"])
+  //   @apply tw-sticky tw-top-6 tw-z-30
+
+hr
+  @apply tw-h-1 tw-mt-6 tw-border-0 tw-bg-gray-300
+
+mark
+  @apply tw-px-1 tw-py-0.5
+
+u
+  @apply tw-no-underline tw-border-b-2
+  &.u
+    &-blue
+      @apply tw-border-blue-400
+    &-gray
+      @apply tw-border-gray-400
+    &-green
+      @apply tw-border-green-400
+    &-indigo
+      @apply tw-border-indigo-400
+    &-pink
+      @apply tw-border-pink-400
+    &-red
+      @apply tw-border-red-400
+    &-yellow
+      @apply tw-border-yellow-400
