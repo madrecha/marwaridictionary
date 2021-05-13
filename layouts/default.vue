@@ -1,22 +1,28 @@
 <template>
   <div>
     <TheHeader></TheHeader>
-    <Nuxt
-      class="tw-mx-2 tw-py-4"
-      keep-alive
-      :keep-alive-props="{ max: 10 }"
-    ></Nuxt>
+    <main>
+      <Nuxt
+        class="tw-max-w-screen-lg tw-mx-auto tw-py-4"
+        keep-alive
+        :keep-alive-props="{ max: 10 }"
+      ></Nuxt>
+    </main>
     <TheFooter></TheFooter>
   </div>
 </template>
 
 <script>
+import TheHeader from "../components/templates/TheHeader";
+import TheFooter from "../components/templates/TheFooter";
+
 export default {
+  components: { TheHeader, TheFooter },
   data() {
     return {
       // showFooter: false,
     };
-  },
+  }
   // methods: {
   //   showElements() {
   //     this.showFooter =
