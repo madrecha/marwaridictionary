@@ -1,4 +1,11 @@
 export default {
+  ignore: [
+    'pages/redirect.vue', // just a page to fetch Content API posts to be redirected
+    'pages/blog', // WIP
+    'pages/learn', // WIP,
+    'pages/codetest.vue' // random
+  ],
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
