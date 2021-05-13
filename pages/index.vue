@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-mx-auto tw--mb-4">
+  <div class="!tw-max-w-screen-2xl tw-mx-auto tw--mb-4">
     <div
       id="first-section"
       class="tw-text-center tw-mt-3 md:tw--mt-2"
@@ -21,7 +21,7 @@
       </div>
       <div class="tw--mt-5">
         <nuxt-link
-          to="/dictionary/word"
+          :to="`${$i18n.locale}/dictionary/word`"
           class="tw-p-6 tw-rounded-xl tw-text-white tw-font-medium tw-bg-gradient-to-br tw-from-pink-500 tw-to-pink-700 hover:tw-from-white hover:tw-to-pink-100 tw-shadow-xl tw-border-t-2 hover:tw-border-pink-200 hover:tw-text-pink-800 tw-text-xl"
         >Browse Marwari Words</nuxt-link>
       </div>
@@ -56,6 +56,6 @@ import SvgGirlLearningPaperLetters from "~/components/svg/svg-girl-learning-pape
 import SvgFatherSon from "~/components/svg/svg-father-son.vue";
 
 export default {
-  components: { SvgGirlLearningPaperLetters, SvgFatherSon },
+  components: { SvgGirlLearningPaperLetters, SvgFatherSon }
 };
 </script>
