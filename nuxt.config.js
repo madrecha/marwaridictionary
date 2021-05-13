@@ -1,6 +1,6 @@
 export default {
   ignore: [
-    'pages/redirect.vue', // just a page to fetch Content API posts to be redirected
+    'pages/redirect.vue', // just a page to fetch Content API posts to be redirected (uncomment it whenever you need to copy paste the URLs; then comment it back)
     'pages/blog', // WIP
     'pages/learn', // WIP,
     'pages/codetest.vue' // random
