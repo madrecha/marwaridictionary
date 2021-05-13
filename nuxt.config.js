@@ -29,6 +29,11 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/vue-scrollactive.js',
+    { src: '~/plugins/vue-dragscroll.js', ssr: false },
+    // '~/plugins/vue-tooltip.js',
+    '~/plugins/directives',
+    '~/plugins/vue-google-charts.js', // https://github.com/devstark-com/vue-google-charts
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -55,14 +60,16 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
+    '@nuxt/image',
+    'vue-scrollto/nuxt', // https://github.com/rigor789/vue-scrollTo
+    'nuxt-buefy',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
@@ -102,9 +109,24 @@ export default {
       'grammar.verb.causative'],
 
     markdown: {
-      tocDepth: 4
+      tocDepth: 4,
+      remarkPlugins: [
+        ['remark-breaks'],
+        // ['remark-directive'],
+        // ['~/plugins/remark/directive-custom.js'],
+        ['@akebifiky/remark-simple-plantuml', { baseUrl: "https://www.plantuml.com/plantuml/svg" }],
+        ['@silvenon/remark-smartypants', { dashes: 'oldschool' }],
+        // ['remark-mermaid', { simple: true }] // PlantUML already there
+      ],
     },
+    liveEdit: false,
   },
+
+  'nuxt-buefy': {
+    defaultTrapFocus: true,
+    defaultModalScroll: true,
+  },
+
   hooks: {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
@@ -128,13 +150,5 @@ export default {
       font: ({ isDev }) => isDev ? '[path][name].[ext]' : 'fonts/[name].[contenthash:7].[ext]',
       video: ({ isDev }) => isDev ? '[path][name].[ext]' : 'videos/[name].[contenthash:7].[ext]'
     },
-    postcss: {
-      preset: {
-        features: {
-          // Fixes: https://github.com/tailwindcss/tailwindcss/issues/1190#issuecomment-546621554
-          "focus-within-pseudo-class": false
-        }
-      }
-    }
   }
 }

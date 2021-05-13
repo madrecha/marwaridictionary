@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "dev:host": "nuxt --hostname '0.0.0.0'",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -11,18 +12,33 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
-    "@nuxtjs/axios": "^5.12.5",
-    "@sanskrit-coders/sanscript": "^1.1.0",
-    "core-js": "^3.8.3",
-    "lodash": "^4.17.21",
-    "nuxt": "^2.14.12",
-    "reading-time": "^1.3.0"
+    "core-js": "^3.11.0",
+    "nuxt": "^2.15.5"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^3.4.2",
-    "@tailwindcss/postcss7-compat": "^2.0.3",
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "@akebifiky/remark-simple-plantuml": "^1.0.2",
+    "@mdi/font": "^5.9.55",
+    "@nuxt/image": "^0.4.8",
+    "@nuxtjs/tailwindcss": "^4.1.1",
+    "@sanskrit-coders/sanscript": "^1.1.0",
+    "@silvenon/remark-smartypants": "^1.0.0",
+    "autoprefixer": "^10.2.5",
+    "fibers": "^5.0.0",
+    "fuse.js": "^6.4.6",
+    "lodash": "^4.17.21",
+    "mermaid": "^8.10.1",
+    "nuxt-buefy": "^0.4.7",
+    "postcss": "^8.2.10",
+    "reading-time": "^1.3.0",
+    "remark-breaks": "^2.0.2",
+    "remark-directive": "^1.0.1",
+    "remark-mermaid": "^0.2.0",
+    "sass": "^1.32.11",
+    "sass-loader": "^10.2.0",
+    "v-tooltip": "^2.1.3",
+    "vue-dragscroll": "^3.0.0",
+    "vue-google-charts": "^0.3.3",
+    "vue-scrollactive": "^0.9.3",
+    "vue-scrollto": "^2.20.0"
   }
 }
