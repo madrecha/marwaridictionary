@@ -16,37 +16,31 @@
         Error in Fetching
       </p>
     </div>
-    <div
-      v-else
-      class=""
-    >
+    <div v-else>
       <!-- <aside class="tw-hidden md:tw-block md:tw-w-1/6 md:tw-bg-gray-50">
         <div class="tw-sticky tw-top-12"></div>
       </aside> -->
-      <article
-        v-for="(word, i) in words"
-        :key="i"
-        class="tw-mt-3"
-      >
+      <article class="tw-mt-3">
         <div class="tw-text-center">
           <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">
             {{ word.url.title }}
-            <span class="tw-capitalize">{{ word.url.transliteration }}</span>
+            <span class="tw-capitalize tw-text-3xl">{{ word.url.transliteration }}</span>
             meaning in Marwari
           </h1>
           <div>
             <wordDate :word="word"></wordDate>
           </div>
-          <p class="tw-mt-3 tw-max-w-3xl tw-mx-auto tw-text-xs tw-text-gray-500 tw-lowercase">
-            {{ word.url.title }} का मारवाड़ी अर्थ,
-            {{ word.url.transliteration }} Marwari meaning,
-            {{ word.url.transliteration }} ka Marwari arth, meaning of
-            {{ word.url.transliteration }} in Marwari, {{ word.url.title }} का
-            मारवाड़ी भाषा में अर्थ, {{ word.url.title }} का मेवाड़ी अर्थ,
-            {{ word.url.title }} का मेवाड़ी भाषा में अर्थ,
-            {{ word.url.transliteration }} ka Mewari arth,
-            {{ word.url.title }} ka Mewari bhasha mein arth,
-            {{ word.url.transliteration }} का मेवाड़ी अर्थ
+          <div class="tw-text-sm tw-mt-2">
+            by <a
+              :href="word.author && word.author.url ? word.author.url : `https://instagram.com/ManasMadrecha`"
+              target="_blank"
+              class="tw-border-b tw-py-1 tw-border-pink-500"
+            >
+              {{word.author ? word.author : `Manas Madrecha 😊`}}
+            </a>
+          </div>
+          <p class="tw-mt-2 tw-max-w-3xl tw-mx-auto tw-text-xs tw-text-gray-500 tw-lowercase">
+            {{seoKeywords}}
           </p>
         </div>
         <wordTOC
@@ -58,10 +52,7 @@
             <ReadingTime :word="word"></ReadingTime>
           </div> -->
 
-          <NuxtContent
-            :document="word"
-            class="tw-pt--1"
-          ></NuxtContent>
+          <NuxtContent :document="word"></NuxtContent>
           <MaintenanceCategories :word="word"></MaintenanceCategories>
         </div>
       </article>
@@ -70,18 +61,18 @@
 </template>
 
 <script>
-// import MarwariVerbConjugation from "~/components/MarwariVerbConjugation.vue";
-// import Ant from "~/components/word/Ant.vue";
-// import Syn from "~/components/word/Syn.vue";
+import wordDate from "~/components/templates/post/wordDate.vue";
+import wordTOC from "~/components/templates/post/wordTOC.vue";
+import MaintenanceCategories from "~/components/templates/post/MaintenanceCategories.vue";
 
 // import noun from "~/components/grammar/noun.vue";
 
 export default {
-  // components: { MarwariVerbConjugation, Syn, Ant, noun },
+  components: { wordDate, wordTOC, MaintenanceCategories },
   data() {
     return {
-      words: []
-      // words_in_post: "abc",
+      words: [],
+      word: null
     };
   },
   async fetch() {
@@ -90,11 +81,14 @@ export default {
     })
       .where({
         $and: [
+          { slug: { $ne: "AAA" } },
           { "url.slugurl": this.$route.params.slugurl },
           { dir: `/${this.$i18n.locale}/dictionary/words` }
         ]
       })
       .fetch();
+
+    this.word = this.words[0];
 
     // let currentword = this.words[0];
 
@@ -106,6 +100,61 @@ export default {
     // Call fetch again if last fetch more than 9 min ago
     if (this.$fetchState.timestamp <= Date.now() - 1500000) {
       this.$fetch();
+    }
+  },
+  computed: {
+    seoKeywords() {
+      if (this.word) {
+        return `${this.word.url.title} का मारवाड़ी अर्थ,
+            ${this.word.url.transliteration} Marwari meaning,
+            ${this.word.url.transliteration} ka Marwari arth, meaning of
+            ${this.word.url.transliteration} in Marwari, ${this.word.url.title} का
+            मारवाड़ी भाषा में अर्थ, ${this.word.url.title} का मेवाड़ी अर्थ,
+            ${this.word.url.title} का मेवाड़ी भाषा में अर्थ,
+            ${this.word.url.transliteration} ka Mewari arth,
+            ${this.word.url.title} ka Mewari bhasha mein arth,
+            ${this.word.url.transliteration} का मेवाड़ी अर्थ`;
+      }
+    }
+  },
+  head() {
+    if (this.word) {
+      return {
+        title: `Marwari meaning of ${
+          this.word.url.title
+            ? `${this.word.url.title} ${this.word.url.transliteration}`
+            : `${this.word.url.slug} ${this.word.url.transliteration}`
+        }`,
+        titleTemplate: "%s - Learn Marwari | Dictionary",
+        htmlAttrs: {
+          lang: this.$i18n.locale
+        },
+        meta: [
+          {
+            hid: "description",
+            name: "description",
+            content: this.word.description ?? this.seoKeywords
+          },
+          // Open Graph
+          { hid: "og:title", property: "og:title", content: this.word.title },
+          {
+            hid: "og:description",
+            property: "og:description",
+            content: this.word.description ?? this.seoKeywords
+          },
+          // Twitter Card
+          {
+            hid: "twitter:title",
+            name: "twitter:title",
+            content: this.word.title
+          },
+          {
+            hid: "twitter:description",
+            name: "twitter:description",
+            content: this.word.description ?? this.seoKeywords
+          }
+        ]
+      };
     }
   }
 };
