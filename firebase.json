@@ -71,803 +71,1593 @@
     ],
     "redirects": [
       {
-        "source": "/dictionary/words/आखर",
-        "destination": "/en/dictionary/words/आखर",
+        "source": "/dictionary/word/आखर",
+        "destination": "/en/dictionary/word/आखर",
         "type": 301
       },
       {
-        "source": "/dictionary/words/आळकातक",
-        "destination": "/en/dictionary/words/आळकातक",
+        "source": "/dictionary/word/आळकातक",
+        "destination": "/en/dictionary/word/आळकातक",
         "type": 301
       },
       {
-        "source": "/dictionary/words/आलू",
-        "destination": "/en/dictionary/words/आलू",
+        "source": "/dictionary/word/आलू",
+        "destination": "/en/dictionary/word/आलू",
         "type": 301
       },
       {
-        "source": "/dictionary/words/आंबो",
-        "destination": "/en/dictionary/words/आंबो",
+        "source": "/dictionary/word/आंबो",
+        "destination": "/en/dictionary/word/आंबो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/आंगळी",
-        "destination": "/en/dictionary/words/आंगळी",
+        "source": "/dictionary/word/आंगळी",
+        "destination": "/en/dictionary/word/आंगळी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/आणो",
-        "destination": "/en/dictionary/words/आणो",
+        "source": "/dictionary/word/आणो",
+        "destination": "/en/dictionary/word/आणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/आपाणो",
-        "destination": "/en/dictionary/words/आपाणो",
+        "source": "/dictionary/word/आपाणो",
+        "destination": "/en/dictionary/word/आपाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/आपणो",
-        "destination": "/en/dictionary/words/आपणो",
+        "source": "/dictionary/word/आपणो",
+        "destination": "/en/dictionary/word/आपणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/आटो",
-        "destination": "/en/dictionary/words/आटो",
+        "source": "/dictionary/word/आटो",
+        "destination": "/en/dictionary/word/आटो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/अंधो",
-        "destination": "/en/dictionary/words/अंधो",
+        "source": "/dictionary/word/अंधो",
+        "destination": "/en/dictionary/word/अंधो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/अणजान",
-        "destination": "/en/dictionary/words/अणजान",
+        "source": "/dictionary/word/अणजान",
+        "destination": "/en/dictionary/word/अणजान",
         "type": 301
       },
       {
-        "source": "/dictionary/words/अटे",
-        "destination": "/en/dictionary/words/अटे",
+        "source": "/dictionary/word/अटे",
+        "destination": "/en/dictionary/word/अटे",
         "type": 301
       },
       {
-        "source": "/dictionary/words/बाळणो",
-        "destination": "/en/dictionary/words/बाळणो",
+        "source": "/dictionary/word/बाळणो",
+        "destination": "/en/dictionary/word/बाळणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/बेन",
-        "destination": "/en/dictionary/words/बेन",
+        "source": "/dictionary/word/बेन",
+        "destination": "/en/dictionary/word/बेन",
         "type": 301
       },
       {
-        "source": "/dictionary/words/beno",
-        "destination": "/en/dictionary/words/beno",
+        "source": "/dictionary/word/beno",
+        "destination": "/en/dictionary/word/beno",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भागणो",
-        "destination": "/en/dictionary/words/भागणो",
+        "source": "/dictionary/word/भागणो",
+        "destination": "/en/dictionary/word/भागणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भडूरो",
-        "destination": "/en/dictionary/words/भडूरो",
+        "source": "/dictionary/word/भडूरो",
+        "destination": "/en/dictionary/word/भडूरो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भगाणो",
-        "destination": "/en/dictionary/words/भगाणो",
+        "source": "/dictionary/word/भगाणो",
+        "destination": "/en/dictionary/word/भगाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भगवान",
-        "destination": "/en/dictionary/words/भगवान",
+        "source": "/dictionary/word/भगवान",
+        "destination": "/en/dictionary/word/भगवान",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भाई",
-        "destination": "/en/dictionary/words/भाई",
+        "source": "/dictionary/word/भाई",
+        "destination": "/en/dictionary/word/भाई",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भैंस",
-        "destination": "/en/dictionary/words/भैंस",
+        "source": "/dictionary/word/भैंस",
+        "destination": "/en/dictionary/word/भैंस",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भणाणो",
-        "destination": "/en/dictionary/words/भणाणो",
+        "source": "/dictionary/word/भणाणो",
+        "destination": "/en/dictionary/word/भणाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भणई",
-        "destination": "/en/dictionary/words/भणई",
+        "source": "/dictionary/word/भणई",
+        "destination": "/en/dictionary/word/भणई",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भणणो",
-        "destination": "/en/dictionary/words/भणणो",
+        "source": "/dictionary/word/भणणो",
+        "destination": "/en/dictionary/word/भणणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भणवाणो",
-        "destination": "/en/dictionary/words/भणवाणो",
+        "source": "/dictionary/word/भणवाणो",
+        "destination": "/en/dictionary/word/भणवाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भसणो",
-        "destination": "/en/dictionary/words/भसणो",
+        "source": "/dictionary/word/भसणो",
+        "destination": "/en/dictionary/word/भसणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भिंडी",
-        "destination": "/en/dictionary/words/भिंडी",
+        "source": "/dictionary/word/भिंडी",
+        "destination": "/en/dictionary/word/भिंडी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भूळणो",
-        "destination": "/en/dictionary/words/भूळणो",
+        "source": "/dictionary/word/भूळणो",
+        "destination": "/en/dictionary/word/भूळणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भुळाणो",
-        "destination": "/en/dictionary/words/भुळाणो",
+        "source": "/dictionary/word/भुळाणो",
+        "destination": "/en/dictionary/word/भुळाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/भुळवाणो",
-        "destination": "/en/dictionary/words/भुळवाणो",
+        "source": "/dictionary/word/भुळवाणो",
+        "destination": "/en/dictionary/word/भुळवाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/बोलणो",
-        "destination": "/en/dictionary/words/बोलणो",
+        "source": "/dictionary/word/बोलणो",
+        "destination": "/en/dictionary/word/बोलणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/चालणो",
-        "destination": "/en/dictionary/words/चालणो",
+        "source": "/dictionary/word/चालणो",
+        "destination": "/en/dictionary/word/चालणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/चौमासो",
-        "destination": "/en/dictionary/words/चौमासो",
+        "source": "/dictionary/word/चौमासो",
+        "destination": "/en/dictionary/word/चौमासो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/छेटी",
-        "destination": "/en/dictionary/words/छेटी",
+        "source": "/dictionary/word/छेटी",
+        "destination": "/en/dictionary/word/छेटी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/छोलणो",
-        "destination": "/en/dictionary/words/छोलणो",
+        "source": "/dictionary/word/छोलणो",
+        "destination": "/en/dictionary/word/छोलणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/छोरी",
-        "destination": "/en/dictionary/words/छोरी",
+        "source": "/dictionary/word/छोरी",
+        "destination": "/en/dictionary/word/छोरी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/छोरो",
-        "destination": "/en/dictionary/words/छोरो",
+        "source": "/dictionary/word/छोरो",
+        "destination": "/en/dictionary/word/छोरो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/चिल्लाणो",
-        "destination": "/en/dictionary/words/चिल्लाणो",
+        "source": "/dictionary/word/चिल्लाणो",
+        "destination": "/en/dictionary/word/चिल्लाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/चोपड़णो",
-        "destination": "/en/dictionary/words/चोपड़णो",
+        "source": "/dictionary/word/चोपड़णो",
+        "destination": "/en/dictionary/word/चोपड़णो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/चोपड़वाणो",
-        "destination": "/en/dictionary/words/चोपड़वाणो",
+        "source": "/dictionary/word/चोपड़वाणो",
+        "destination": "/en/dictionary/word/चोपड़वाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/चोपड़ाणो",
-        "destination": "/en/dictionary/words/चोपड़ाणो",
+        "source": "/dictionary/word/चोपड़ाणो",
+        "destination": "/en/dictionary/word/चोपड़ाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/चूहो",
-        "destination": "/en/dictionary/words/चूहो",
+        "source": "/dictionary/word/चूहो",
+        "destination": "/en/dictionary/word/चूहो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कूलर",
-        "destination": "/en/dictionary/words/कूलर",
+        "source": "/dictionary/word/कूलर",
+        "destination": "/en/dictionary/word/कूलर",
         "type": 301
       },
       {
-        "source": "/dictionary/words/देखणो",
-        "destination": "/en/dictionary/words/देखणो",
+        "source": "/dictionary/word/देखणो",
+        "destination": "/en/dictionary/word/देखणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/देणो",
-        "destination": "/en/dictionary/words/देणो",
+        "source": "/dictionary/word/देणो",
+        "destination": "/en/dictionary/word/देणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/देवाणणो",
-        "destination": "/en/dictionary/words/देवाणणो",
+        "source": "/dictionary/word/देवाणणो",
+        "destination": "/en/dictionary/word/देवाणणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/देवाणो",
-        "destination": "/en/dictionary/words/देवाणो",
+        "source": "/dictionary/word/देवाणो",
+        "destination": "/en/dictionary/word/देवाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/देवरो",
-        "destination": "/en/dictionary/words/देवरो",
+        "source": "/dictionary/word/देवरो",
+        "destination": "/en/dictionary/word/देवरो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/दूधी",
-        "destination": "/en/dictionary/words/दूधी",
+        "source": "/dictionary/word/दूधी",
+        "destination": "/en/dictionary/word/दूधी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/एठवाड़ो",
-        "destination": "/en/dictionary/words/एठवाड़ो",
+        "source": "/dictionary/word/एठवाड़ो",
+        "destination": "/en/dictionary/word/एठवाड़ो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/फदकणो",
-        "destination": "/en/dictionary/words/फदकणो",
+        "source": "/dictionary/word/फदकणो",
+        "destination": "/en/dictionary/word/फदकणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/फुटरो",
-        "destination": "/en/dictionary/words/फुटरो",
+        "source": "/dictionary/word/फुटरो",
+        "destination": "/en/dictionary/word/फुटरो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/फुतरो",
-        "destination": "/en/dictionary/words/फुतरो",
+        "source": "/dictionary/word/फुतरो",
+        "destination": "/en/dictionary/word/फुतरो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/गाणो",
-        "destination": "/en/dictionary/words/गाणो",
+        "source": "/dictionary/word/गाणो",
+        "destination": "/en/dictionary/word/गाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/गदेड़ो",
-        "destination": "/en/dictionary/words/गदेड़ो",
+        "source": "/dictionary/word/गदेड़ो",
+        "destination": "/en/dictionary/word/गदेड़ो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/गंड़कडो",
-        "destination": "/en/dictionary/words/गंड़कडो",
+        "source": "/dictionary/word/गंड़कडो",
+        "destination": "/en/dictionary/word/गंड़कडो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/घणो",
-        "destination": "/en/dictionary/words/घणो",
+        "source": "/dictionary/word/घणो",
+        "destination": "/en/dictionary/word/घणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/घर",
-        "destination": "/en/dictionary/words/घर",
+        "source": "/dictionary/word/घर",
+        "destination": "/en/dictionary/word/घर",
         "type": 301
       },
       {
-        "source": "/dictionary/words/घटाणो",
-        "destination": "/en/dictionary/words/घटाणो",
+        "source": "/dictionary/word/घटाणो",
+        "destination": "/en/dictionary/word/घटाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/घटणो",
-        "destination": "/en/dictionary/words/घटणो",
+        "source": "/dictionary/word/घटणो",
+        "destination": "/en/dictionary/word/घटणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/घोड़ी",
-        "destination": "/en/dictionary/words/घोड़ी",
+        "source": "/dictionary/word/घोड़ी",
+        "destination": "/en/dictionary/word/घोड़ी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/घोड़ो",
-        "destination": "/en/dictionary/words/घोड़ो",
+        "source": "/dictionary/word/घोड़ो",
+        "destination": "/en/dictionary/word/घोड़ो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/हापड़णो",
-        "destination": "/en/dictionary/words/हापड़णो",
+        "source": "/dictionary/word/हापड़णो",
+        "destination": "/en/dictionary/word/हापड़णो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/हारणो",
-        "destination": "/en/dictionary/words/हारणो",
+        "source": "/dictionary/word/हारणो",
+        "destination": "/en/dictionary/word/हारणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/हबुड़णो",
-        "destination": "/en/dictionary/words/हबुड़णो",
+        "source": "/dictionary/word/हबुड़णो",
+        "destination": "/en/dictionary/word/हबुड़णो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/हमजणो",
-        "destination": "/en/dictionary/words/हमजणो",
+        "source": "/dictionary/word/हमजणो",
+        "destination": "/en/dictionary/word/हमजणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/हीवणो",
-        "destination": "/en/dictionary/words/हीवणो",
+        "source": "/dictionary/word/हीवणो",
+        "destination": "/en/dictionary/word/हीवणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/हिवड़ो",
-        "destination": "/en/dictionary/words/हिवड़ो",
+        "source": "/dictionary/word/हिवड़ो",
+        "destination": "/en/dictionary/word/हिवड़ो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/होड़े",
-        "destination": "/en/dictionary/words/होड़े",
+        "source": "/dictionary/word/होड़े",
+        "destination": "/en/dictionary/word/होड़े",
         "type": 301
       },
       {
-        "source": "/dictionary/words/हूँगणो",
-        "destination": "/en/dictionary/words/हूँगणो",
+        "source": "/dictionary/word/हूँगणो",
+        "destination": "/en/dictionary/word/हूँगणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/हुदो",
-        "destination": "/en/dictionary/words/हुदो",
+        "source": "/dictionary/word/हुदो",
+        "destination": "/en/dictionary/word/हुदो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/हुणाणो",
-        "destination": "/en/dictionary/words/हुणाणो",
+        "source": "/dictionary/word/हुणाणो",
+        "destination": "/en/dictionary/word/हुणाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/हुणणो",
-        "destination": "/en/dictionary/words/हुणणो",
+        "source": "/dictionary/word/हुणणो",
+        "destination": "/en/dictionary/word/हुणणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/हुणो",
-        "destination": "/en/dictionary/words/हुणो",
+        "source": "/dictionary/word/हुणो",
+        "destination": "/en/dictionary/word/हुणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/जाणो",
-        "destination": "/en/dictionary/words/जाणो",
+        "source": "/dictionary/word/जाणो",
+        "destination": "/en/dictionary/word/जाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/जनावर",
-        "destination": "/en/dictionary/words/जनावर",
+        "source": "/dictionary/word/जनावर",
+        "destination": "/en/dictionary/word/जनावर",
         "type": 301
       },
       {
-        "source": "/dictionary/words/जटे",
-        "destination": "/en/dictionary/words/जटे",
+        "source": "/dictionary/word/जटे",
+        "destination": "/en/dictionary/word/जटे",
         "type": 301
       },
       {
-        "source": "/dictionary/words/जिमाणो",
-        "destination": "/en/dictionary/words/जिमाणो",
+        "source": "/dictionary/word/जिमाणो",
+        "destination": "/en/dictionary/word/जिमाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/जिमणो",
-        "destination": "/en/dictionary/words/जिमणो",
+        "source": "/dictionary/word/जिमणो",
+        "destination": "/en/dictionary/word/जिमणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/जिमवाणो",
-        "destination": "/en/dictionary/words/जिमवाणो",
+        "source": "/dictionary/word/जिमवाणो",
+        "destination": "/en/dictionary/word/जिमवाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कई",
-        "destination": "/en/dictionary/words/कई",
+        "source": "/dictionary/word/कई",
+        "destination": "/en/dictionary/word/कई",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कमाड़",
-        "destination": "/en/dictionary/words/कमाड़",
+        "source": "/dictionary/word/कमाड़",
+        "destination": "/en/dictionary/word/कमाड़",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कणाारो",
-        "destination": "/en/dictionary/words/कणाारो",
+        "source": "/dictionary/word/कणाारो",
+        "destination": "/en/dictionary/word/कणाारो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कण्णो",
-        "destination": "/en/dictionary/words/कण्णो",
+        "source": "/dictionary/word/कण्णो",
+        "destination": "/en/dictionary/word/कण्णो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कराणो",
-        "destination": "/en/dictionary/words/कराणो",
+        "source": "/dictionary/word/कराणो",
+        "destination": "/en/dictionary/word/कराणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/करणो",
-        "destination": "/en/dictionary/words/करणो",
+        "source": "/dictionary/word/करणो",
+        "destination": "/en/dictionary/word/करणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/करवाणो",
-        "destination": "/en/dictionary/words/करवाणो",
+        "source": "/dictionary/word/करवाणो",
+        "destination": "/en/dictionary/word/करवाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कटे",
-        "destination": "/en/dictionary/words/कटे",
+        "source": "/dictionary/word/कटे",
+        "destination": "/en/dictionary/word/कटे",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कीड़ो",
-        "destination": "/en/dictionary/words/कीड़ो",
+        "source": "/dictionary/word/कीड़ो",
+        "destination": "/en/dictionary/word/कीड़ो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कीड़ी",
-        "destination": "/en/dictionary/words/कीड़ी",
+        "source": "/dictionary/word/कीड़ी",
+        "destination": "/en/dictionary/word/कीड़ी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/केणो",
-        "destination": "/en/dictionary/words/केणो",
+        "source": "/dictionary/word/केणो",
+        "destination": "/en/dictionary/word/केणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/खाणो",
-        "destination": "/en/dictionary/words/खाणो",
+        "source": "/dictionary/word/खाणो",
+        "destination": "/en/dictionary/word/खाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कुण",
-        "destination": "/en/dictionary/words/कुण",
+        "source": "/dictionary/word/कुण",
+        "destination": "/en/dictionary/word/कुण",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कुत्री",
-        "destination": "/en/dictionary/words/कुत्री",
+        "source": "/dictionary/word/कुत्री",
+        "destination": "/en/dictionary/word/कुत्री",
         "type": 301
       },
       {
-        "source": "/dictionary/words/कुत्रो",
-        "destination": "/en/dictionary/words/कुत्रो",
+        "source": "/dictionary/word/कुत्रो",
+        "destination": "/en/dictionary/word/कुत्रो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/लाणो",
-        "destination": "/en/dictionary/words/लाणो",
+        "source": "/dictionary/word/लाणो",
+        "destination": "/en/dictionary/word/लाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/लड़णो",
-        "destination": "/en/dictionary/words/लड़णो",
+        "source": "/dictionary/word/लड़णो",
+        "destination": "/en/dictionary/word/लड़णो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/लगाणो",
-        "destination": "/en/dictionary/words/लगाणो",
+        "source": "/dictionary/word/लगाणो",
+        "destination": "/en/dictionary/word/लगाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/लेई-जाणो",
-        "destination": "/en/dictionary/words/लेई-जाणो",
+        "source": "/dictionary/word/लेई-जाणो",
+        "destination": "/en/dictionary/word/लेई-जाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/लेणो",
-        "destination": "/en/dictionary/words/लेणो",
+        "source": "/dictionary/word/लेणो",
+        "destination": "/en/dictionary/word/लेणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/लुगाई",
-        "destination": "/en/dictionary/words/लुगाई",
+        "source": "/dictionary/word/लुगाई",
+        "destination": "/en/dictionary/word/लुगाई",
         "type": 301
       },
       {
-        "source": "/dictionary/words/मारो",
-        "destination": "/en/dictionary/words/मारो",
+        "source": "/dictionary/word/मारो",
+        "destination": "/en/dictionary/word/मारो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/मकान",
-        "destination": "/en/dictionary/words/मकान",
+        "source": "/dictionary/word/मकान",
+        "destination": "/en/dictionary/word/मकान",
         "type": 301
       },
       {
-        "source": "/dictionary/words/मकोड़ी",
-        "destination": "/en/dictionary/words/मकोड़ी",
+        "source": "/dictionary/word/मकोड़ी",
+        "destination": "/en/dictionary/word/मकोड़ी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/मकोड़ो",
-        "destination": "/en/dictionary/words/मकोड़ो",
+        "source": "/dictionary/word/मकोड़ो",
+        "destination": "/en/dictionary/word/मकोड़ो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/मनक",
-        "destination": "/en/dictionary/words/मनक",
+        "source": "/dictionary/word/मनक",
+        "destination": "/en/dictionary/word/मनक",
         "type": 301
       },
       {
-        "source": "/dictionary/words/मनकी",
-        "destination": "/en/dictionary/words/मनकी",
+        "source": "/dictionary/word/मनकी",
+        "destination": "/en/dictionary/word/मनकी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/पादणो",
-        "destination": "/en/dictionary/words/पादणो",
+        "source": "/dictionary/word/पादणो",
+        "destination": "/en/dictionary/word/पादणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/पाणो",
-        "destination": "/en/dictionary/words/पाणो",
+        "source": "/dictionary/word/पाणो",
+        "destination": "/en/dictionary/word/पाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/पीणो",
-        "destination": "/en/dictionary/words/पीणो",
+        "source": "/dictionary/word/पीणो",
+        "destination": "/en/dictionary/word/पीणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/पोड़णो",
-        "destination": "/en/dictionary/words/पोड़णो",
+        "source": "/dictionary/word/पोड़णो",
+        "destination": "/en/dictionary/word/पोड़णो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/राब",
-        "destination": "/en/dictionary/words/राब",
+        "source": "/dictionary/word/राब",
+        "destination": "/en/dictionary/word/राब",
         "type": 301
       },
       {
-        "source": "/dictionary/words/री",
-        "destination": "/en/dictionary/words/री",
+        "source": "/dictionary/word/री",
+        "destination": "/en/dictionary/word/री",
         "type": 301
       },
       {
-        "source": "/dictionary/words/रो",
-        "destination": "/en/dictionary/words/रो",
+        "source": "/dictionary/word/रो",
+        "destination": "/en/dictionary/word/रो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/साणो",
-        "destination": "/en/dictionary/words/साणो",
+        "source": "/dictionary/word/साणो",
+        "destination": "/en/dictionary/word/साणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/सतई",
-        "destination": "/en/dictionary/words/सतई",
+        "source": "/dictionary/word/सतई",
+        "destination": "/en/dictionary/word/सतई",
         "type": 301
       },
       {
-        "source": "/dictionary/words/सित्रो",
-        "destination": "/en/dictionary/words/सित्रो",
+        "source": "/dictionary/word/सित्रो",
+        "destination": "/en/dictionary/word/सित्रो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/ताड़णो",
-        "destination": "/en/dictionary/words/ताड़णो",
+        "source": "/dictionary/word/ताड़णो",
+        "destination": "/en/dictionary/word/ताड़णो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/सितारो",
-        "destination": "/en/dictionary/words/सितारो",
+        "source": "/dictionary/word/सितारो",
+        "destination": "/en/dictionary/word/सितारो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/तारो",
-        "destination": "/en/dictionary/words/तारो",
+        "source": "/dictionary/word/तारो",
+        "destination": "/en/dictionary/word/तारो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/तेंदुओ",
-        "destination": "/en/dictionary/words/तेंदुओ",
+        "source": "/dictionary/word/तेंदुओ",
+        "destination": "/en/dictionary/word/तेंदुओ",
         "type": 301
       },
       {
-        "source": "/dictionary/words/थाकणो",
-        "destination": "/en/dictionary/words/थाकणो",
+        "source": "/dictionary/word/थाकणो",
+        "destination": "/en/dictionary/word/थाकणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/थारो",
-        "destination": "/en/dictionary/words/थारो",
+        "source": "/dictionary/word/थारो",
+        "destination": "/en/dictionary/word/थारो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/थकाणो",
-        "destination": "/en/dictionary/words/थकाणो",
+        "source": "/dictionary/word/थकाणो",
+        "destination": "/en/dictionary/word/थकाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/उभो",
-        "destination": "/en/dictionary/words/उभो",
+        "source": "/dictionary/word/उभो",
+        "destination": "/en/dictionary/word/उभो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/उड़ाणो",
-        "destination": "/en/dictionary/words/उड़ाणो",
+        "source": "/dictionary/word/उड़ाणो",
+        "destination": "/en/dictionary/word/उड़ाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/उड़णो",
-        "destination": "/en/dictionary/words/उड़णो",
+        "source": "/dictionary/word/उड़णो",
+        "destination": "/en/dictionary/word/उड़णो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/उगाणो",
-        "destination": "/en/dictionary/words/उगाणो",
+        "source": "/dictionary/word/उगाणो",
+        "destination": "/en/dictionary/word/उगाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/उगणो",
-        "destination": "/en/dictionary/words/उगणो",
+        "source": "/dictionary/word/उगणो",
+        "destination": "/en/dictionary/word/उगणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/उकसाणो",
-        "destination": "/en/dictionary/words/उकसाणो",
+        "source": "/dictionary/word/उकसाणो",
+        "destination": "/en/dictionary/word/उकसाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/उंदरो",
-        "destination": "/en/dictionary/words/उंदरो",
+        "source": "/dictionary/word/उंदरो",
+        "destination": "/en/dictionary/word/उंदरो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/ऊँगणो",
-        "destination": "/en/dictionary/words/ऊँगणो",
+        "source": "/dictionary/word/ऊँगणो",
+        "destination": "/en/dictionary/word/ऊँगणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/ऊँट",
-        "destination": "/en/dictionary/words/ऊँट",
+        "source": "/dictionary/word/ऊँट",
+        "destination": "/en/dictionary/word/ऊँट",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वाचणो",
-        "destination": "/en/dictionary/words/वाचणो",
+        "source": "/dictionary/word/वाचणो",
+        "destination": "/en/dictionary/word/वाचणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वांदरी",
-        "destination": "/en/dictionary/words/वांदरी",
+        "source": "/dictionary/word/वांदरी",
+        "destination": "/en/dictionary/word/वांदरी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वांदरो",
-        "destination": "/en/dictionary/words/वांदरो",
+        "source": "/dictionary/word/वांदरो",
+        "destination": "/en/dictionary/word/वांदरो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वांटणो",
-        "destination": "/en/dictionary/words/वांटणो",
+        "source": "/dictionary/word/वांटणो",
+        "destination": "/en/dictionary/word/वांटणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वात",
-        "destination": "/en/dictionary/words/वात",
+        "source": "/dictionary/word/वात",
+        "destination": "/en/dictionary/word/वात",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वदारणो",
-        "destination": "/en/dictionary/words/वदारणो",
+        "source": "/dictionary/word/वदारणो",
+        "destination": "/en/dictionary/word/वदारणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वदणो",
-        "destination": "/en/dictionary/words/वदणो",
+        "source": "/dictionary/word/वदणो",
+        "destination": "/en/dictionary/word/वदणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वगाड़णो",
-        "destination": "/en/dictionary/words/वगाड़णो",
+        "source": "/dictionary/word/वगाड़णो",
+        "destination": "/en/dictionary/word/वगाड़णो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वगड़णो",
-        "destination": "/en/dictionary/words/वगड़णो",
+        "source": "/dictionary/word/वगड़णो",
+        "destination": "/en/dictionary/word/वगड़णो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वगड़वाणो",
-        "destination": "/en/dictionary/words/वगड़वाणो",
+        "source": "/dictionary/word/वगड़वाणो",
+        "destination": "/en/dictionary/word/वगड़वाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वणणो",
-        "destination": "/en/dictionary/words/वणणो",
+        "source": "/dictionary/word/वणणो",
+        "destination": "/en/dictionary/word/वणणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वंचाणो",
-        "destination": "/en/dictionary/words/वंचाणो",
+        "source": "/dictionary/word/वंचाणो",
+        "destination": "/en/dictionary/word/वंचाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वंचणो",
-        "destination": "/en/dictionary/words/वंचणो",
+        "source": "/dictionary/word/वंचणो",
+        "destination": "/en/dictionary/word/वंचणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वंचवाणो",
-        "destination": "/en/dictionary/words/वंचवाणो",
+        "source": "/dictionary/word/वंचवाणो",
+        "destination": "/en/dictionary/word/वंचवाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वताणो",
-        "destination": "/en/dictionary/words/वताणो",
+        "source": "/dictionary/word/वताणो",
+        "destination": "/en/dictionary/word/वताणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वटाणो",
-        "destination": "/en/dictionary/words/वटाणो",
+        "source": "/dictionary/word/वटाणो",
+        "destination": "/en/dictionary/word/वटाणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वतक",
-        "destination": "/en/dictionary/words/वतक",
+        "source": "/dictionary/word/वतक",
+        "destination": "/en/dictionary/word/वतक",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वटे",
-        "destination": "/en/dictionary/words/वटे",
+        "source": "/dictionary/word/वटे",
+        "destination": "/en/dictionary/word/वटे",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वेंड़ावेट",
-        "destination": "/en/dictionary/words/वेंड़ावेट",
+        "source": "/dictionary/word/वेंड़ावेट",
+        "destination": "/en/dictionary/word/वेंड़ावेट",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वेंडी",
-        "destination": "/en/dictionary/words/वेंडी",
+        "source": "/dictionary/word/वेंडी",
+        "destination": "/en/dictionary/word/वेंडी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वेंडो",
-        "destination": "/en/dictionary/words/वेंडो",
+        "source": "/dictionary/word/वेंडो",
+        "destination": "/en/dictionary/word/वेंडो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/वेणो",
-        "destination": "/en/dictionary/words/वेणो",
+        "source": "/dictionary/word/वेणो",
+        "destination": "/en/dictionary/word/वेणो",
         "type": 301
       },
       {
-        "source": "/dictionary/words/विंद",
-        "destination": "/en/dictionary/words/विंद",
+        "source": "/dictionary/word/विंद",
+        "destination": "/en/dictionary/word/विंद",
         "type": 301
       },
       {
-        "source": "/dictionary/words/विंदणी",
-        "destination": "/en/dictionary/words/विंदणी",
+        "source": "/dictionary/word/विंदणी",
+        "destination": "/en/dictionary/word/विंदणी",
         "type": 301
       },
       {
-        "source": "/dictionary/words/व्याव",
-        "destination": "/en/dictionary/words/व्याव",
+        "source": "/dictionary/word/व्याव",
+        "destination": "/en/dictionary/word/व्याव",
         "type": 301
       },
       {
-        "source": "/dictionary/words",
-        "destination": "/en/dictionary/words",
+        "source": "/dictionary/word",
+        "destination": "/en/dictionary/word",
         "type": 301
       },
       {
         "source": "/dictionary/topic",
         "destination": "/en/dictionary/topic",
+        "type": 301
+      },
+      {
+        "source": "/word/आखर",
+        "destination": "/en/dictionary/word/आखर",
+        "type": 301
+      },
+      {
+        "source": "/word/आळकातक",
+        "destination": "/en/dictionary/word/आळकातक",
+        "type": 301
+      },
+      {
+        "source": "/word/आलू",
+        "destination": "/en/dictionary/word/आलू",
+        "type": 301
+      },
+      {
+        "source": "/word/आंबो",
+        "destination": "/en/dictionary/word/आंबो",
+        "type": 301
+      },
+      {
+        "source": "/word/आंगळी",
+        "destination": "/en/dictionary/word/आंगळी",
+        "type": 301
+      },
+      {
+        "source": "/word/आणो",
+        "destination": "/en/dictionary/word/आणो",
+        "type": 301
+      },
+      {
+        "source": "/word/आपाणो",
+        "destination": "/en/dictionary/word/आपाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/आपणो",
+        "destination": "/en/dictionary/word/आपणो",
+        "type": 301
+      },
+      {
+        "source": "/word/आटो",
+        "destination": "/en/dictionary/word/आटो",
+        "type": 301
+      },
+      {
+        "source": "/word/अंधो",
+        "destination": "/en/dictionary/word/अंधो",
+        "type": 301
+      },
+      {
+        "source": "/word/अणजान",
+        "destination": "/en/dictionary/word/अणजान",
+        "type": 301
+      },
+      {
+        "source": "/word/अटे",
+        "destination": "/en/dictionary/word/अटे",
+        "type": 301
+      },
+      {
+        "source": "/word/बाळणो",
+        "destination": "/en/dictionary/word/बाळणो",
+        "type": 301
+      },
+      {
+        "source": "/word/बेन",
+        "destination": "/en/dictionary/word/बेन",
+        "type": 301
+      },
+      {
+        "source": "/word/beno",
+        "destination": "/en/dictionary/word/beno",
+        "type": 301
+      },
+      {
+        "source": "/word/भागणो",
+        "destination": "/en/dictionary/word/भागणो",
+        "type": 301
+      },
+      {
+        "source": "/word/भडूरो",
+        "destination": "/en/dictionary/word/भडूरो",
+        "type": 301
+      },
+      {
+        "source": "/word/भगाणो",
+        "destination": "/en/dictionary/word/भगाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/भगवान",
+        "destination": "/en/dictionary/word/भगवान",
+        "type": 301
+      },
+      {
+        "source": "/word/भाई",
+        "destination": "/en/dictionary/word/भाई",
+        "type": 301
+      },
+      {
+        "source": "/word/भैंस",
+        "destination": "/en/dictionary/word/भैंस",
+        "type": 301
+      },
+      {
+        "source": "/word/भणाणो",
+        "destination": "/en/dictionary/word/भणाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/भणई",
+        "destination": "/en/dictionary/word/भणई",
+        "type": 301
+      },
+      {
+        "source": "/word/भणणो",
+        "destination": "/en/dictionary/word/भणणो",
+        "type": 301
+      },
+      {
+        "source": "/word/भणवाणो",
+        "destination": "/en/dictionary/word/भणवाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/भसणो",
+        "destination": "/en/dictionary/word/भसणो",
+        "type": 301
+      },
+      {
+        "source": "/word/भिंडी",
+        "destination": "/en/dictionary/word/भिंडी",
+        "type": 301
+      },
+      {
+        "source": "/word/भूळणो",
+        "destination": "/en/dictionary/word/भूळणो",
+        "type": 301
+      },
+      {
+        "source": "/word/भुळाणो",
+        "destination": "/en/dictionary/word/भुळाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/भुळवाणो",
+        "destination": "/en/dictionary/word/भुळवाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/बोलणो",
+        "destination": "/en/dictionary/word/बोलणो",
+        "type": 301
+      },
+      {
+        "source": "/word/चालणो",
+        "destination": "/en/dictionary/word/चालणो",
+        "type": 301
+      },
+      {
+        "source": "/word/चौमासो",
+        "destination": "/en/dictionary/word/चौमासो",
+        "type": 301
+      },
+      {
+        "source": "/word/छेटी",
+        "destination": "/en/dictionary/word/छेटी",
+        "type": 301
+      },
+      {
+        "source": "/word/छोलणो",
+        "destination": "/en/dictionary/word/छोलणो",
+        "type": 301
+      },
+      {
+        "source": "/word/छोरी",
+        "destination": "/en/dictionary/word/छोरी",
+        "type": 301
+      },
+      {
+        "source": "/word/छोरो",
+        "destination": "/en/dictionary/word/छोरो",
+        "type": 301
+      },
+      {
+        "source": "/word/चिल्लाणो",
+        "destination": "/en/dictionary/word/चिल्लाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/चोपड़णो",
+        "destination": "/en/dictionary/word/चोपड़णो",
+        "type": 301
+      },
+      {
+        "source": "/word/चोपड़वाणो",
+        "destination": "/en/dictionary/word/चोपड़वाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/चोपड़ाणो",
+        "destination": "/en/dictionary/word/चोपड़ाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/चूहो",
+        "destination": "/en/dictionary/word/चूहो",
+        "type": 301
+      },
+      {
+        "source": "/word/कूलर",
+        "destination": "/en/dictionary/word/कूलर",
+        "type": 301
+      },
+      {
+        "source": "/word/देखणो",
+        "destination": "/en/dictionary/word/देखणो",
+        "type": 301
+      },
+      {
+        "source": "/word/देणो",
+        "destination": "/en/dictionary/word/देणो",
+        "type": 301
+      },
+      {
+        "source": "/word/देवाणणो",
+        "destination": "/en/dictionary/word/देवाणणो",
+        "type": 301
+      },
+      {
+        "source": "/word/देवाणो",
+        "destination": "/en/dictionary/word/देवाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/देवरो",
+        "destination": "/en/dictionary/word/देवरो",
+        "type": 301
+      },
+      {
+        "source": "/word/दूधी",
+        "destination": "/en/dictionary/word/दूधी",
+        "type": 301
+      },
+      {
+        "source": "/word/एठवाड़ो",
+        "destination": "/en/dictionary/word/एठवाड़ो",
+        "type": 301
+      },
+      {
+        "source": "/word/फदकणो",
+        "destination": "/en/dictionary/word/फदकणो",
+        "type": 301
+      },
+      {
+        "source": "/word/फुटरो",
+        "destination": "/en/dictionary/word/फुटरो",
+        "type": 301
+      },
+      {
+        "source": "/word/फुतरो",
+        "destination": "/en/dictionary/word/फुतरो",
+        "type": 301
+      },
+      {
+        "source": "/word/गाणो",
+        "destination": "/en/dictionary/word/गाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/गदेड़ो",
+        "destination": "/en/dictionary/word/गदेड़ो",
+        "type": 301
+      },
+      {
+        "source": "/word/गंड़कडो",
+        "destination": "/en/dictionary/word/गंड़कडो",
+        "type": 301
+      },
+      {
+        "source": "/word/घणो",
+        "destination": "/en/dictionary/word/घणो",
+        "type": 301
+      },
+      {
+        "source": "/word/घर",
+        "destination": "/en/dictionary/word/घर",
+        "type": 301
+      },
+      {
+        "source": "/word/घटाणो",
+        "destination": "/en/dictionary/word/घटाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/घटणो",
+        "destination": "/en/dictionary/word/घटणो",
+        "type": 301
+      },
+      {
+        "source": "/word/घोड़ी",
+        "destination": "/en/dictionary/word/घोड़ी",
+        "type": 301
+      },
+      {
+        "source": "/word/घोड़ो",
+        "destination": "/en/dictionary/word/घोड़ो",
+        "type": 301
+      },
+      {
+        "source": "/word/हापड़णो",
+        "destination": "/en/dictionary/word/हापड़णो",
+        "type": 301
+      },
+      {
+        "source": "/word/हारणो",
+        "destination": "/en/dictionary/word/हारणो",
+        "type": 301
+      },
+      {
+        "source": "/word/हबुड़णो",
+        "destination": "/en/dictionary/word/हबुड़णो",
+        "type": 301
+      },
+      {
+        "source": "/word/हमजणो",
+        "destination": "/en/dictionary/word/हमजणो",
+        "type": 301
+      },
+      {
+        "source": "/word/हीवणो",
+        "destination": "/en/dictionary/word/हीवणो",
+        "type": 301
+      },
+      {
+        "source": "/word/हिवड़ो",
+        "destination": "/en/dictionary/word/हिवड़ो",
+        "type": 301
+      },
+      {
+        "source": "/word/होड़े",
+        "destination": "/en/dictionary/word/होड़े",
+        "type": 301
+      },
+      {
+        "source": "/word/हूँगणो",
+        "destination": "/en/dictionary/word/हूँगणो",
+        "type": 301
+      },
+      {
+        "source": "/word/हुदो",
+        "destination": "/en/dictionary/word/हुदो",
+        "type": 301
+      },
+      {
+        "source": "/word/हुणाणो",
+        "destination": "/en/dictionary/word/हुणाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/हुणणो",
+        "destination": "/en/dictionary/word/हुणणो",
+        "type": 301
+      },
+      {
+        "source": "/word/हुणो",
+        "destination": "/en/dictionary/word/हुणो",
+        "type": 301
+      },
+      {
+        "source": "/word/जाणो",
+        "destination": "/en/dictionary/word/जाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/जनावर",
+        "destination": "/en/dictionary/word/जनावर",
+        "type": 301
+      },
+      {
+        "source": "/word/जटे",
+        "destination": "/en/dictionary/word/जटे",
+        "type": 301
+      },
+      {
+        "source": "/word/जिमाणो",
+        "destination": "/en/dictionary/word/जिमाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/जिमणो",
+        "destination": "/en/dictionary/word/जिमणो",
+        "type": 301
+      },
+      {
+        "source": "/word/जिमवाणो",
+        "destination": "/en/dictionary/word/जिमवाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/कई",
+        "destination": "/en/dictionary/word/कई",
+        "type": 301
+      },
+      {
+        "source": "/word/कमाड़",
+        "destination": "/en/dictionary/word/कमाड़",
+        "type": 301
+      },
+      {
+        "source": "/word/कणाारो",
+        "destination": "/en/dictionary/word/कणाारो",
+        "type": 301
+      },
+      {
+        "source": "/word/कण्णो",
+        "destination": "/en/dictionary/word/कण्णो",
+        "type": 301
+      },
+      {
+        "source": "/word/कराणो",
+        "destination": "/en/dictionary/word/कराणो",
+        "type": 301
+      },
+      {
+        "source": "/word/करणो",
+        "destination": "/en/dictionary/word/करणो",
+        "type": 301
+      },
+      {
+        "source": "/word/करवाणो",
+        "destination": "/en/dictionary/word/करवाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/कटे",
+        "destination": "/en/dictionary/word/कटे",
+        "type": 301
+      },
+      {
+        "source": "/word/कीड़ी",
+        "destination": "/en/dictionary/word/कीड़ी",
+        "type": 301
+      },
+      {
+        "source": "/word/कीड़ो",
+        "destination": "/en/dictionary/word/कीड़ो",
+        "type": 301
+      },
+      {
+        "source": "/word/केणो",
+        "destination": "/en/dictionary/word/केणो",
+        "type": 301
+      },
+      {
+        "source": "/word/खाणो",
+        "destination": "/en/dictionary/word/खाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/कुण",
+        "destination": "/en/dictionary/word/कुण",
+        "type": 301
+      },
+      {
+        "source": "/word/कुत्री",
+        "destination": "/en/dictionary/word/कुत्री",
+        "type": 301
+      },
+      {
+        "source": "/word/कुत्रो",
+        "destination": "/en/dictionary/word/कुत्रो",
+        "type": 301
+      },
+      {
+        "source": "/word/लाणो",
+        "destination": "/en/dictionary/word/लाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/लड़णो",
+        "destination": "/en/dictionary/word/लड़णो",
+        "type": 301
+      },
+      {
+        "source": "/word/लगाणो",
+        "destination": "/en/dictionary/word/लगाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/लेई-जाणो",
+        "destination": "/en/dictionary/word/लेई-जाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/लेणो",
+        "destination": "/en/dictionary/word/लेणो",
+        "type": 301
+      },
+      {
+        "source": "/word/लुगाई",
+        "destination": "/en/dictionary/word/लुगाई",
+        "type": 301
+      },
+      {
+        "source": "/word/मारो",
+        "destination": "/en/dictionary/word/मारो",
+        "type": 301
+      },
+      {
+        "source": "/word/मकान",
+        "destination": "/en/dictionary/word/मकान",
+        "type": 301
+      },
+      {
+        "source": "/word/मकोड़ी",
+        "destination": "/en/dictionary/word/मकोड़ी",
+        "type": 301
+      },
+      {
+        "source": "/word/मकोड़ो",
+        "destination": "/en/dictionary/word/मकोड़ो",
+        "type": 301
+      },
+      {
+        "source": "/word/मनक",
+        "destination": "/en/dictionary/word/मनक",
+        "type": 301
+      },
+      {
+        "source": "/word/मनकी",
+        "destination": "/en/dictionary/word/मनकी",
+        "type": 301
+      },
+      {
+        "source": "/word/पादणो",
+        "destination": "/en/dictionary/word/पादणो",
+        "type": 301
+      },
+      {
+        "source": "/word/पाणो",
+        "destination": "/en/dictionary/word/पाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/पीणो",
+        "destination": "/en/dictionary/word/पीणो",
+        "type": 301
+      },
+      {
+        "source": "/word/पोड़णो",
+        "destination": "/en/dictionary/word/पोड़णो",
+        "type": 301
+      },
+      {
+        "source": "/word/राब",
+        "destination": "/en/dictionary/word/राब",
+        "type": 301
+      },
+      {
+        "source": "/word/री",
+        "destination": "/en/dictionary/word/री",
+        "type": 301
+      },
+      {
+        "source": "/word/रो",
+        "destination": "/en/dictionary/word/रो",
+        "type": 301
+      },
+      {
+        "source": "/word/साणो",
+        "destination": "/en/dictionary/word/साणो",
+        "type": 301
+      },
+      {
+        "source": "/word/सतई",
+        "destination": "/en/dictionary/word/सतई",
+        "type": 301
+      },
+      {
+        "source": "/word/सित्रो",
+        "destination": "/en/dictionary/word/सित्रो",
+        "type": 301
+      },
+      {
+        "source": "/word/ताड़णो",
+        "destination": "/en/dictionary/word/ताड़णो",
+        "type": 301
+      },
+      {
+        "source": "/word/सितारो",
+        "destination": "/en/dictionary/word/सितारो",
+        "type": 301
+      },
+      {
+        "source": "/word/तारो",
+        "destination": "/en/dictionary/word/तारो",
+        "type": 301
+      },
+      {
+        "source": "/word/तेंदुओ",
+        "destination": "/en/dictionary/word/तेंदुओ",
+        "type": 301
+      },
+      {
+        "source": "/word/थाकणो",
+        "destination": "/en/dictionary/word/थाकणो",
+        "type": 301
+      },
+      {
+        "source": "/word/थारो",
+        "destination": "/en/dictionary/word/थारो",
+        "type": 301
+      },
+      {
+        "source": "/word/थकाणो",
+        "destination": "/en/dictionary/word/थकाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/उभो",
+        "destination": "/en/dictionary/word/उभो",
+        "type": 301
+      },
+      {
+        "source": "/word/उड़ाणो",
+        "destination": "/en/dictionary/word/उड़ाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/उड़णो",
+        "destination": "/en/dictionary/word/उड़णो",
+        "type": 301
+      },
+      {
+        "source": "/word/उगाणो",
+        "destination": "/en/dictionary/word/उगाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/उगणो",
+        "destination": "/en/dictionary/word/उगणो",
+        "type": 301
+      },
+      {
+        "source": "/word/उकसाणो",
+        "destination": "/en/dictionary/word/उकसाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/उंदरो",
+        "destination": "/en/dictionary/word/उंदरो",
+        "type": 301
+      },
+      {
+        "source": "/word/ऊँगणो",
+        "destination": "/en/dictionary/word/ऊँगणो",
+        "type": 301
+      },
+      {
+        "source": "/word/ऊँट",
+        "destination": "/en/dictionary/word/ऊँट",
+        "type": 301
+      },
+      {
+        "source": "/word/वाचणो",
+        "destination": "/en/dictionary/word/वाचणो",
+        "type": 301
+      },
+      {
+        "source": "/word/वांदरी",
+        "destination": "/en/dictionary/word/वांदरी",
+        "type": 301
+      },
+      {
+        "source": "/word/वांदरो",
+        "destination": "/en/dictionary/word/वांदरो",
+        "type": 301
+      },
+      {
+        "source": "/word/वांटणो",
+        "destination": "/en/dictionary/word/वांटणो",
+        "type": 301
+      },
+      {
+        "source": "/word/वात",
+        "destination": "/en/dictionary/word/वात",
+        "type": 301
+      },
+      {
+        "source": "/word/वदारणो",
+        "destination": "/en/dictionary/word/वदारणो",
+        "type": 301
+      },
+      {
+        "source": "/word/वदणो",
+        "destination": "/en/dictionary/word/वदणो",
+        "type": 301
+      },
+      {
+        "source": "/word/वगाड़णो",
+        "destination": "/en/dictionary/word/वगाड़णो",
+        "type": 301
+      },
+      {
+        "source": "/word/वगड़णो",
+        "destination": "/en/dictionary/word/वगड़णो",
+        "type": 301
+      },
+      {
+        "source": "/word/वगड़वाणो",
+        "destination": "/en/dictionary/word/वगड़वाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/वणणो",
+        "destination": "/en/dictionary/word/वणणो",
+        "type": 301
+      },
+      {
+        "source": "/word/वंचाणो",
+        "destination": "/en/dictionary/word/वंचाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/वंचणो",
+        "destination": "/en/dictionary/word/वंचणो",
+        "type": 301
+      },
+      {
+        "source": "/word/वंचवाणो",
+        "destination": "/en/dictionary/word/वंचवाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/वटाणो",
+        "destination": "/en/dictionary/word/वटाणो",
+        "type": 301
+      },
+      {
+        "source": "/word/वताणो",
+        "destination": "/en/dictionary/word/वताणो",
+        "type": 301
+      },
+      {
+        "source": "/word/वतक",
+        "destination": "/en/dictionary/word/वतक",
+        "type": 301
+      },
+      {
+        "source": "/word/वटे",
+        "destination": "/en/dictionary/word/वटे",
+        "type": 301
+      },
+      {
+        "source": "/word/वेंड़ावेट",
+        "destination": "/en/dictionary/word/वेंड़ावेट",
+        "type": 301
+      },
+      {
+        "source": "/word/वेंडो",
+        "destination": "/en/dictionary/word/वेंडो",
+        "type": 301
+      },
+      {
+        "source": "/word/वेंडी",
+        "destination": "/en/dictionary/word/वेंडी",
+        "type": 301
+      },
+      {
+        "source": "/word/वेणो",
+        "destination": "/en/dictionary/word/वेणो",
+        "type": 301
+      },
+      {
+        "source": "/word/विंद",
+        "destination": "/en/dictionary/word/विंद",
+        "type": 301
+      },
+      {
+        "source": "/word/विंदणी",
+        "destination": "/en/dictionary/word/विंदणी",
+        "type": 301
+      },
+      {
+        "source": "/word/व्याव",
+        "destination": "/en/dictionary/word/व्याव",
         "type": 301
       }
     ]

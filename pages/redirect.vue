@@ -36,25 +36,30 @@ export default {
       .fetch();
 
     let postlinks = this.posts.map(post => {
+      // return {
+      //   source: `/dictionary/words/${post.url.slugurl}`,
+      //   destination: `/en/dictionary/words/${post.url.slugurl}`,
+      //   type: 301
+      // };
       return {
-        source: `/dictionary/words/${post.url.slugurl}`,
-        destination: `/en/dictionary/words/${post.url.slugurl}`,
+        source: `/word/${post.url.slugurl}`,
+        destination: `/en/dictionary/word/${post.url.slugurl}`,
         type: 301
       };
     });
 
     this.links = [
-      ...postlinks,
-      {
-        source: `/dictionary/words`,
-        destination: `/en/dictionary/words`,
-        type: 301
-      },
-      {
-        source: `/dictionary/topics`,
-        destination: `/en/dictionary/topics`,
-        type: 301
-      }
+      ...postlinks
+      // {
+      //   source: `/dictionary/words`,
+      //   destination: `/en/dictionary/words`,
+      //   type: 301
+      // },
+      // {
+      //   source: `/dictionary/topics`,
+      //   destination: `/en/dictionary/topics`,
+      //   type: 301
+      // }
     ];
   }
 };
