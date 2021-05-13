@@ -71,6 +71,11 @@
     ],
     "redirects": [
       {
+        "source": "/",
+        "destination": "/en",
+        "type": 301
+      },
+      {
         "source": "/dictionary/word/आखर",
         "destination": "/en/dictionary/word/आखर",
         "type": 301
