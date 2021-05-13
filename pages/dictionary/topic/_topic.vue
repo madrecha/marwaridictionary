@@ -9,7 +9,7 @@
       </p>
       <div class="tw-mt-2">
         <nuxt-link
-          to="/dictionary/topic"
+          :to="`/${$i18n.locale}/dictionary/topic`"
           class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
         >Go back to Topics</nuxt-link>
       </div>
@@ -23,8 +23,8 @@
           v-for="parent in topic.parents"
           :key="parent"
         >
-          <nuxt-link to="/dictionary/topic">Topic</nuxt-link> →
-          <nuxt-link :to="`/dictionary/topic/${parent}`">{{
+          <nuxt-link :to="`/${$i18n.locale}/dictionary/topic`">Topic</nuxt-link> →
+          <nuxt-link :to="`/${$i18n.locale}/dictionary/topic/${parent}`">{{
             parent
           }}</nuxt-link>
           →
@@ -37,7 +37,7 @@
           :key="children"
         >
           <nuxt-link
-            :to="children"
+            :to="`${children}`"
             class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
           >
             {{ children }}
@@ -53,7 +53,7 @@
           class="tw-m-4"
         >
           <nuxt-link
-            :to="`/dictionary/word/${word.url.slugurl}`"
+            :to="`/${$i18n.locale}/dictionary/word/${word.url.slugurl}`"
             class="tw-p-1 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50 tw-leading-relaxed"
           >
             {{ word.url.title }} ({{ word.url.transliteration }})
@@ -73,13 +73,27 @@ export default {
     };
   },
   async fetch() {
-    this.topics = await this.$content("topics")
-      .where({ "url.slugurl": { $eq: this.$route.params.topic } })
+    this.topics = await this.$content(`${this.$i18n.locale}/dictionary`, {
+      deep: true
+    })
+      .where({
+        $and: [
+          { dir: `/${this.$i18n.locale}/dictionary/topics` },
+          { "url.slugurl": { $eq: this.$route.params.topic } }
+        ]
+      })
       .sortBy("slug")
       .fetch();
 
-    this.words = await this.$content("words")
-      .where({ topics: { $contains: this.$route.params.topic } })
+    this.words = await this.$content(`${this.$i18n.locale}/dictionary`, {
+      deep: true
+    })
+      .where({
+        $and: [
+          { dir: `/${this.$i18n.locale}/dictionary/words` },
+          { topics: { $contains: this.$route.params.topic } }
+        ]
+      })
       .sortBy("slug")
       .fetch();
   }

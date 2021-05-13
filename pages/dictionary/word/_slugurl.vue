@@ -85,9 +85,15 @@ export default {
     };
   },
   async fetch() {
-    this.words = await this.$content("words")
-      .where({ "url.slugurl": { $eq: this.$route.params.slugurl } })
-      // .where({ grammar: { $contains: "verb" } })
+    this.words = await this.$content(`${this.$i18n.locale}/dictionary`, {
+      deep: true
+    })
+      .where({
+        $and: [
+          { "url.slugurl": this.$route.params.slugurl },
+          { dir: `/${this.$i18n.locale}/dictionary/words` }
+        ]
+      })
       .fetch();
 
     // let currentword = this.words[0];
