@@ -40,6 +40,7 @@ export default {
     { src: '~/plugins/vue-dragscroll.js', ssr: false },
     // '~/plugins/vue-tooltip.js',
     '~/plugins/directives',
+    // { src: '~/plugins/sitemap.js', ssr: false },
     '~/plugins/vue-google-charts.js', // https://github.com/devstark-com/vue-google-charts
   ],
 
@@ -79,7 +80,8 @@ export default {
     // '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    // '@nuxtjs/sitemap'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -153,6 +155,56 @@ export default {
 
     }
   },
+
+  // sitemap: {
+  //   hostname: 'https://marwari.info',
+  //   gzip: true,
+  //   exclude: ['/blog', '/learn'],
+  //   i18n: true,
+  //   routes: async () => {
+  //     let routes = [];
+
+  //     const { $content } = require('@nuxt/content')
+  //     // const $i18n = require('nuxt-i18n')
+
+  //     let words = await $content(`en/dictionary`, {
+  //       deep: true
+  //     }).where({
+  //       $and: [
+  //         { slug: { $ne: "AAA" } },
+  //         { dir: `/en/dictionary/words` }
+  //       ]
+  //     }).fetch();
+
+  //     for (const word of words) {
+  //       if (word.url && word.url.slugurl) {
+  //         routes.push(`/en/dictionary/word/${word.url.slugurl}`);
+  //       } else {
+  //         routes.push(`/en/dictionary/word/${word.slug}`);
+  //       }
+  //     }
+
+  //     let alltopics = [];
+
+  //     for (const word of words) {
+  //       if (word.topics && word.topics.length > 0) {
+  //         for (const topic of word.topics) {
+  //           if (topic !== null) {
+  //             alltopics.push(topic);
+  //           }
+  //         }
+  //       }
+  //     }
+
+  //     let uniquetopics = [...new Set(alltopics)].sort();
+
+  //     for (const uniquetopic of uniquetopics) {
+  //       routes.push(`/en/dictionary/topic/${uniquetopic}`);
+  //     }
+
+  //     return routes;
+  //   }
+  // },
 
   'nuxt-buefy': {
     defaultTrapFocus: true,

@@ -12,9 +12,11 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
+    "@nuxtjs/sitemap": "2.4.0",
     "core-js": "^3.11.0",
     "nuxt": "^2.15.5",
-    "nuxt-i18n": "^6.21.1"
+    "nuxt-i18n": "^6.21.1",
+    "sitemap": "^4.1.1"
   },
   "devDependencies": {
     "@akebifiky/remark-simple-plantuml": "^1.0.2",
