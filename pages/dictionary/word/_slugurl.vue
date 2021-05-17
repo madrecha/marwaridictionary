@@ -66,10 +66,34 @@ import wordDate from "~/components/templates/post/wordDate.vue";
 import wordTOC from "~/components/templates/post/wordTOC.vue";
 import MaintenanceCategories from "~/components/templates/post/MaintenanceCategories.vue";
 
+import WordMeanings from "~/components/word/WordMeanings";
+import WordExample from "~/components/word/WordExample";
+import WordAntonyms from "~/components/word/WordAntonyms";
+import WordSynonyms from "~/components/word/WordSynonyms";
+
 // import noun from "~/components/grammar/noun.vue";
 
 export default {
-  components: { wordDate, wordTOC, MaintenanceCategories },
+  components: {
+    wordDate,
+    wordTOC,
+    MaintenanceCategories,
+    "word-meanings": WordMeanings,
+    // Word Examples
+    "word-eg": WordExample,
+    "word-ex": WordExample,
+    "word-example": WordExample,
+    // Shortcuts
+    "w-eg": WordExample,
+    "w-ex": WordExample,
+    "w-example": WordExample,
+    "word-antonyms": WordAntonyms,
+    "word-ants": WordAntonyms,
+    "w-ants": WordAntonyms,
+    "word-synonyms": WordSynonyms,
+    "word-syns": WordSynonyms,
+    "w-syns": WordSynonyms
+  },
   data() {
     return {
       words: [],
@@ -90,6 +114,14 @@ export default {
       .fetch();
 
     this.word = this.words[0];
+    // let frontYaml = {
+    //   slugurl: this.word.url.slugurl ?? this.word.slugurl,
+    //   title: this.word.url.title ?? this.word.title,
+    //   transliteration:
+    //     this.word.url.transliteration ?? this.word.transliteration
+    // };
+
+    // this.word = { ...this.word, frontYaml };
 
     // let currentword = this.words[0];
 
