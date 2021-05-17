@@ -2,23 +2,13 @@
 slugurl: अंधो
 transliteration: andho
 
-meanings:
-
-  - meaning: blind
-
-meanings_noun:
-
-  - meaning: blind person
-
 grammar: 
   word: अंधो
   adjective:
-
     gender: m
     number: s
 
   noun:
-
     ending: o
     term: अंध
     trans: andh
@@ -33,13 +23,20 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
+1. blind
+
+</word-meanings>
 ## Noun
 
 ### Meaning
 
-<meaning :meanings="meanings_noun" ></meaning>
+<word-meanings>
+
+1. blind person
+
+</word-meanings>
 
 ### Declension
 

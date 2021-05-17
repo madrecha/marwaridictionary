@@ -2,27 +2,22 @@
 slugurl: आपाणो
 transliteration: aapaano
 transliteration_alt:
-
   - aapano
-
-meanings:
-
-  - meaning: our, ours
-
-syns:
-
-  - syn: आपणो
 
 grammar:
   pronoun
 ---
 
-## Etymology
-
-## Pronunciation
-
 ## Pronoun
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. our; ours
+
+<word-meanings>
+
+### Synonyms
+
+<word-syns :syns="['आपणो']"></word-syns>

@@ -2,56 +2,69 @@
 slugurl: अटे
 transliteration: ate
 
-meanings_adjective:
-
-  - meaning: filler after a noun or demonstrative pronoun, solely for emphasis.
-  - meaning: filler after a demonstrative pronoun but before the noun it modifies, solely for emphasis.
-
-meanings_adverb:
-
-  - meaning: in, on, or at this place
-  - meaning: in this context
-  - meaning: at this point in the argument, narration, or other, usually written, work.
-
-meanings_interjection:
-
-  - meaning: used semi-assertively to offer something to the listener
-
-meanings_noun:
-
-  - meaning: this place; this location.
-  - meaning: this time, the present situation.
-
-  
-
 grammar: 
   adjective:
   adverb:
   interjection:
   noun:
 
-examples:
-
-  - eg: अटे आव
-
-    en: Come here
-
-categories:
-  - 
 ---
 
 ## Adverb
 
 ### Meaning
 
-<meaning :meanings="meanings_adverb" ></meaning>
+<word-meanings>
+
+1. in, on, or at this place
+2. in this context
+3. at this point in the argument, narration, or other, usually written, work.
+
+</word-meanings>
 
 ### Examples
 
-<eg :eg="examples"></eg>
+<word-eg>
+<template #mwr>
+
+**अटे** आव
+
+</template>
+<template #en>
+
+Come **here**.
+
+</template>
+</word-eg>
 
 ## Adjective
 
 ### Meaning
 
-<meaning :meanings="meanings_adjective" ></meaning>
+<word-meanings>
+
+1. filler after a noun or demonstrative pronoun, solely for emphasis.
+2. filler after a demonstrative pronoun but before the noun it modifies, solely for emphasis.
+
+</word-meanings>
+
+## Interjection
+
+### Meaning
+
+<word-meanings>
+
+1. used semi-assertively to offer something to the listener
+
+</word-meanings>
+
+## Noun
+
+### Meaning
+
+<word-meanings>
+
+1. this place; this location.
+2. this time, the present situation.
+
+</word-meanings>

@@ -2,36 +2,11 @@
 slugurl: आंबो
 transliteration: aambo
 
-meanings:
-
-  - meaning: mango fruit  
-
-# examples:
-
-#   - eg:
-
-#     en:
-
-#   - eg:
-
-#     en:
-
 synonyms:
-
   - syn: आम
 
-# antonyms:
-
-#   - ant:
-
-# related:
-
-#   - rel:
-
 translations:
-
   - context:
-
     hi: आम
     hi_trans: aam
     mr: आंबा
@@ -39,22 +14,14 @@ translations:
 
 grammar:
   noun:
-
     ending: o
     term: आंब
     trans: aamb
     gender: m
     number: s
 
-# categories:
-
-#   -
-
 topics:
-
   - fruit
-
-# abc: abc   
 
 ---
 
@@ -62,17 +29,15 @@ topics:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. mango
+
+</word-meanings>
 
 ### Synonyms
 
-<syn :syn="synonyms" ></syn>
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+<word-syns :syns="['आम']" ></word-syns>
 
 ### Translation
 
@@ -82,5 +47,3 @@ topics:
 
 <noun-decl :grammar="grammar" ></noun-decl>
 
-<!-- ### Related
-<related :related="related" ></related> -->

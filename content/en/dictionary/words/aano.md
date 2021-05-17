@@ -2,14 +2,8 @@
 slugurl: आणो
 transliteration: aano
 
-meanings:
-
-  - meaning: to come
-  - meaning: to arrive
-
 grammar: 
   verb:
-
     term: आ
     trans: aa
     ending: aa
@@ -20,7 +14,12 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. to come
+2. to arrive
+
+</word-meanings>
 
 ### Conjugation
 

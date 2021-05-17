@@ -2,34 +2,6 @@
 slugurl: अणजान
 transliteration: anjaan
 
-meanings:
-
-  - meaning: strange, unknown
-
-meanings_noun:
-
-  - meaning: stranger, unknown person
-
-# examples:
-
-#   - eg:
-
-#     en:
-
-#   - eg:
-
-#     en:
-
-# synonyms:
-
-#   - syn:
-
-#     slugurl:
-
-# antonyms:
-
-#   - ant:
-
 related:
 
   - rel: अणजाण्यो
@@ -42,9 +14,6 @@ translations:
 
     hi: अनजान
     hi_trans: anjaan
-
-    # mr:
-    # mr_trans:
 
 translations_noun:
 
@@ -74,24 +43,18 @@ grammar:
     gender_f_trans: anjaan
     number: s
 
-# categories:
-
-#   -
-
-# topics:
-
-#   -
-
-# abc: abc   
-
 ---
 
 ## Adjective
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
+1. strange
+2. unknown
+
+</word-meanings>
 ### Translation
 
 <translation :translation="translations" ></translation>
@@ -100,16 +63,12 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings_noun" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. stranger
+2. unknown person
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 

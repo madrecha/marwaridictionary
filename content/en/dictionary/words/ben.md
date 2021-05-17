@@ -5,20 +5,13 @@ transliteration: ben
 grammar: 
   word: बेन
   noun:
-
     ending: a
     term: बेन
     trans: ben
     gender: f
     number: s
 
-meanings: 
-
-  - meaning: sister
-  - meaning: fellow female
-
 topics: 
-
   - person
   - relative
 
@@ -28,7 +21,12 @@ topics:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. sister
+2. fellow female
+
+</word-meanings>
 
 ### Declension
 

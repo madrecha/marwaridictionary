@@ -2,20 +2,14 @@
 slugurl: आटो
 transliteration: aato
 
-meanings:
-
-  - meaning: flour
-
 grammar:
   noun:
-
     ending: o
     term: आट
     gender: m
     number: s
 
 topics:
-
   - food-and-drink
 
 ---
@@ -24,4 +18,8 @@ topics:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. flour
+
+</word-meanings>

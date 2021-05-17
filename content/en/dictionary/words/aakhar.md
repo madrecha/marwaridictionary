@@ -38,13 +38,13 @@ topics:
 
 ### Meaning
 
-<w-meanings>
+<word-meanings>
 
 1. alphabet
 2. letter
 3. word
 
-</w-meanings>
+</word-meanings>
 
 ### Synonyms
 

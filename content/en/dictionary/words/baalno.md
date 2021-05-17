@@ -2,69 +2,17 @@
 slugurl: बाळणो
 transliteration: baalno
 
-meanings:
-
-  - meaning: air
-
-meanings_verb:
-
-  - meaning: to cause to burn
-  - meaning: to cause jealousy
-
-# examples:
-
-#   - eg:
-
-#     en:
-
-#   - eg:
-
-#     en:
-
-synonyms: 
-
-  - syn: जळाणो
-
-# antonyms:
-
-#   - ant:
-
 related:
-
-  - rel: बाळ
-
-    rel_trans: baal
-
-translations:
-
-  - context: air
-
-    hi: हवा
-    hi_trans: hawa
+  - बाळ
 
 translations_verb:
-
   - context: burn
-
     hi: जलाना
-    hi_trans: jalaana
-
   - context: jealousy
-
     hi: जलाना
-    hi_trans: jalaana
 
 grammar:
-  noun:
-
-    ending: o
-    term: बाळण
-    trans: baaln
-    gender: m
-    number: s
-
   verb:
-
     term: बाळ
     trans: baal
     ending: a
@@ -77,54 +25,27 @@ grammar:
       verb3: बाळाणो
       verb3_trans: balaano
     type:
-
       - transitive
-
-# categories:
-
-#   -
-
+ 
 topics:
-
   - fire
 
-# abc: abc   
-
 ---
-
-## Noun
-
-### Meaning
-
-<meaning :meanings="meanings" ></meaning>
-
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
-
-### Synonyms
-
-<syn :syn="synonyms" ></syn>
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
-
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
-
-<noun-decl :grammar="grammar" ></noun-decl>
-
-### Related
-
-<related :related="related" ></related>
 
 ## Verb
 
 ### Meaning
 
-<meaning :meanings="meanings_verb" ></meaning>
+<word-meanings>
+
+1. to cause to burn
+2. to cause jealousy
+
+</word-meanings>
+
+### Synonyms
+
+<word-syns :syns="['जलाणो']"></word-syns>
 
 ### Translation
 
