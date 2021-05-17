@@ -99,7 +99,7 @@
         >
           <nuxt-link
             v-if="word.url && word.url.slugurl"
-            :to="`/${$i18n.locale}/dictionary/word/${word.url.slugurl}`"
+            :to="`/${$i18n.locale}/dictionary/word/${word.url.slugurl}/`"
             class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
           >
             <div class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-text-blue-900 md:tw-text-xl tw-break-words md:tw-break-normal">

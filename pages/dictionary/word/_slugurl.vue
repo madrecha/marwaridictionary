@@ -119,7 +119,8 @@ export default {
     }
   },
   head() {
-    if (this.word) {
+    const website = "https://marwari.info";
+    if (this.word && this.$route) {
       return {
         title: `Marwari meaning of ${
           this.word.url.title
@@ -153,6 +154,15 @@ export default {
             hid: "twitter:description",
             name: "twitter:description",
             content: this.word.description ?? this.seoKeywords
+          }
+        ],
+        link: [
+          {
+            hid: "canonical",
+            rel: "canonical",
+            href: this.$route.path.endsWith("/")
+              ? `${website}/${this.$route.path}`
+              : `${website}/${this.$route.path}/`
           }
         ]
       };

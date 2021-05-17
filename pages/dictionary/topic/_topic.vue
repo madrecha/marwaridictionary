@@ -9,7 +9,7 @@
       </p>
       <div class="tw-mt-2">
         <nuxt-link
-          :to="`/${$i18n.locale}/dictionary/topic`"
+          :to="`/${$i18n.locale}/dictionary/topic/`"
           class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
         >Go back to Topics</nuxt-link>
       </div>
@@ -23,8 +23,8 @@
           v-for="parent in topic.parents"
           :key="parent"
         >
-          <nuxt-link :to="`/${$i18n.locale}/dictionary/topic`">Topic</nuxt-link> →
-          <nuxt-link :to="`/${$i18n.locale}/dictionary/topic/${parent}`">{{
+          <nuxt-link :to="`/${$i18n.locale}/dictionary/topic/`">Topic</nuxt-link> →
+          <nuxt-link :to="`/${$i18n.locale}/dictionary/topic/${parent}/`">{{
             parent
           }}</nuxt-link>
           →
@@ -33,14 +33,14 @@
       </div>
       <ol v-if="topic.children && topic.children.length > 0">
         <li
-          v-for="children in topic.children"
-          :key="children"
+          v-for="child in topic.children"
+          :key="child"
         >
           <nuxt-link
-            :to="`${children}`"
+            :to="`/${$i18n.locale}/dictionary/topic/${child}/`"
             class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
           >
-            {{ children }}
+            {{ child }}
           </nuxt-link>
         </li>
       </ol>
@@ -53,7 +53,7 @@
           class="tw-m-4"
         >
           <nuxt-link
-            :to="`/${$i18n.locale}/dictionary/word/${word.url.slugurl}`"
+            :to="`/${$i18n.locale}/dictionary/word/${word.url.slugurl}/`"
             class="tw-p-1 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50 tw-leading-relaxed"
           >
             {{ word.url.title }} ({{ word.url.transliteration }})

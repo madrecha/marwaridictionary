@@ -1,9 +1,12 @@
 <template>
   <div>
     <!-- This page is to generate Link of the words based on their file name which is denoted by "slug" -->
-    <ul v-for="word in words" :key="word.title">
+    <ul
+      v-for="word in words"
+      :key="word.title"
+    >
       <li>
-        <nuxt-link :to="`/dictionary/word/${word.slug}`">{{
+        <nuxt-link :to="`/dictionary/word/${word.slug}/`">{{
           word.title
         }}</nuxt-link>
       </li>
@@ -15,7 +18,7 @@
 export default {
   data() {
     return {
-      words: [],
+      words: []
     };
   },
   async fetch() {
@@ -24,6 +27,6 @@ export default {
       .without(["body", "toc"])
       .sortBy("transliteration")
       .fetch();
-  },
+  }
 };
 </script>

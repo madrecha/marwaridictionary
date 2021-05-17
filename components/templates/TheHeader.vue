@@ -11,14 +11,14 @@
         <li class="tw-text-sm sm:tw-text-base tw-mx-0.5 md:tw-mx-2 tw-font-medium">
           <nuxt-link
             exact
-            :to="`/${$i18n.locale}/dictionary`"
+            :to="`/${$i18n.locale}/dictionary/`"
             class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
           >Dictionary</nuxt-link>
         </li>
         <li class="tw-text-sm sm:tw-text-base tw-mx-0.5 md:tw-mx-2 tw-font-medium">
           <nuxt-link
             exact
-            :to="`/${$i18n.locale}/dictionary/word`"
+            :to="`/${$i18n.locale}/dictionary/word/`"
             class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
           >Words</nuxt-link>
         </li>
@@ -29,7 +29,7 @@
         >
           <nuxt-link
             exact
-            :to="`/${$i18n.locale}/dictionary/topic`"
+            :to="`/${$i18n.locale}/dictionary/topic/`"
             class="tw-p-1 md:tw-p-2.5 hover:tw-bg-pink-50"
           >Topics</nuxt-link>
         </li>
@@ -37,7 +37,7 @@
     </nav>
     <div class="tw-w-2/5 md:tw-w-1/3">
       <p class="tw-text-center tw-font-medium sm:tw-text-2xl tw-text-pink-900">
-        <nuxt-link to="/"> Marwari </nuxt-link>
+        <nuxt-link :to="`${localePath('/')}/`"> Marwari </nuxt-link>
       </p>
     </div>
     <div class="tw-w-2/5 md:tw-w-1/3 tw-flex tw-items-center tw-justify-start">
