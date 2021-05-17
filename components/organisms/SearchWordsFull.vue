@@ -2,6 +2,7 @@
   <div class="tw-relative">
     <div>
       <input
+        autofocus
         v-model="query"
         type="text"
         autocomplete="off"
