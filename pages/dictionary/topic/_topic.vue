@@ -49,14 +49,14 @@
       <ol class="tw-list-decimal tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-1 lg:tw-gap-3 tw-p-2">
         <li
           v-for="word in words"
-          :key="word.url.slugurl"
+          :key="word.slug"
           class="tw-m-4"
         >
           <nuxt-link
-            :to="`/${$i18n.locale}/dictionary/word/${word.url.slugurl}/`"
+            :to="`/${$i18n.locale}/dictionary/word/${word.slugurl}/`"
             class="tw-p-1 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50 tw-leading-relaxed"
           >
-            {{ word.url.title }} ({{ word.url.transliteration }})
+            {{ word.title ? word.title : word.slugurl }} ({{ word.transliteration }})
           </nuxt-link>
         </li>
       </ol>
@@ -79,7 +79,7 @@ export default {
       .where({
         $and: [
           { dir: `/${this.$i18n.locale}/dictionary/topics` },
-          { "url.slugurl": { $eq: this.$route.params.topic } }
+          { slugurl: this.$route.params.topic }
         ]
       })
       .sortBy("slug")

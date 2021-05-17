@@ -50,10 +50,10 @@
           class="tw-m-1"
         >
           <NuxtLink
-            :to="`/dictionary/word/${word.url.slugurl}/`"
+            :to="`/dictionary/word/${word.slugurl}/`"
             class="focus:tw-ring-2 tw-p-1"
           >
-            {{ word.url.title }} ({{ word.url.transliteration }})
+            {{ word.title ? word.title : word.slugurl }} ({{ word.transliteration }})
           </NuxtLink>
         </li>
       </ol>
@@ -132,15 +132,15 @@ export default {
 
         // Below is to Search URL
 
-        if (word.url) {
-          a1 = word.url.title.toLowerCase().includes(query);
-          a2 = word.url.transliteration.toLowerCase().includes(query);
-          a3 = word.url.slugurl.toLowerCase().includes(query);
+        a1 = `${word.title ? word.title : word.slugurl}`
+          .toLowerCase()
+          .includes(query);
+        a2 = word.transliteration.toLowerCase().includes(query);
+        a3 = word.slugurl.toLowerCase().includes(query);
 
-          if (word.url.alt_trans && word.url.alt_trans.length > 0) {
-            for (const item of word.url.alt_trans) {
-              a4 = item.toLowerCase().includes(query);
-            }
+        if (word.transliteration_alt && word.transliteration_alt.length > 0) {
+          for (const item of word.transliteration_alt) {
+            a4 = item.toLowerCase().includes(query);
           }
         }
 
@@ -357,7 +357,7 @@ export default {
       // Search Body of the word md file (usually not needed, but can contain useful text sometimes)
       // Also, only 3 words are being fetch using this, so no big load.
       this.wordsBody = await this.$content("words")
-        .only(["body", "url", "slug"])
+        // .only(["body", "slug"])
         .limit(3)
         .search("text", query)
         .fetch();
