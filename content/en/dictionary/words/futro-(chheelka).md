@@ -1,11 +1,10 @@
 ---
-url:
-  title: फुतरो
-  transliteration: futro
-  slugurl: फुतरो
+slugurl: फुतरो
+transliteration: futro
 
 grammar:
   noun:
+
     term: फुतर
     trans: futr
     ending: o
@@ -13,32 +12,42 @@ grammar:
     number: s
 
 meanings:
+
   - meaning: peel (of fruit or vegetable)
 
 related:
+
   - rel: छोलणो
   - rel: फुटरो
 
 translations:
+
   - context: peel
+
     hi: छिलका   
 
 # topics: 
+
 #   -
 ---
 
 ## Noun
+
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 <!-- ### Examples
 <eg :eg="examples"></eg> -->
 
 ### Related
+
 <related :related="related"></related>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<noun-decl :grammar="grammar" ></noun-decl>

@@ -1,45 +1,34 @@
 ---
-url:
-  title: बोलणो
-  transliteration: bolno
-  slugurl: बोलणो
+slugurl: बोलणो
+transliteration: bolno
 
 meanings:
+
   - meaning: to say; to speak
   - meaning: to tell
-# examples:
-#   - eg:
-#     eg_trans: 
-#     en:
-#     hi:
-#   - eg:
-#     en:
 
 synonyms:
+
   - syn: केणो
+
     syn_trans: keno
 
-# antonyms:
-#   - ant:
-#     slugurl:
-#     ant_trans: 
-
-# related:
-#   - rel:
-#     slugurl
-#     rel_trans: 
-
 similar:
+
   - sim: बुलाणो
+
     sim_trans: bulaano
 
 translations:
+
   - context:
+
     hi: बोलना
     hi_trans: bolna
 
 grammar: 
   verb: 
+
     term: बोल
     trans: bol
     ending: a
@@ -47,26 +36,22 @@ grammar:
 ---
 
 ## Verb
+
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 <!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<eg :eg="examples" ></eg> -->
 
 ### Synonyms
-<syn :syn="synonyms" :url="url"></syn>
 
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<syn :syn="synonyms" ></syn>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Conjugation
-<verb-conj :grammar="grammar" :url="url"></verb-conj>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<verb-conj :grammar="grammar" ></verb-conj>

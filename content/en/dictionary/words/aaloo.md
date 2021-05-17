@@ -1,88 +1,58 @@
 ---
-url: 
-  title: आलू
-  transliteration: aaloo
-  alt_trans:
-    - aloo
-    - aalu
-  slugurl: आलू
+slugurl: आलू
+transliteration: aaloo
+transliteration_alt:
+
+  - aloo
+  - aalu
 
 meanings:
+
   - meaning: potato
 
-# examples:
-#   - eg:
-#     eg_trans: 
-#     en:
-#     hi:
-#   - eg:
-#     en:
-
-# synonyms:
-#   - syn: 
-#     syn_trans: 
-
-# antonyms:
-#   - ant:
-#     slugurl:
-#     ant_trans: 
-
-# related:
-#   - rel:
-#     slugurl
-#     rel_trans: 
-
-# similar:
-#   - sim: 
-#     sim_trans: 
-
 translations:
+
   - context:
+
     hi: आलू
     hi_trans: aaloo
     mr: आलू
     mr_trans: aaloo
     
+
 grammar:
   noun:
+
     ending: uu
     term: आलू
     trans: aaloo
     gender: m
     number: s
 
-# categories:
-#   -
-
 topics:
+
   - vegetable
 
 # abc: abc   
+
 ---
 
 ## Noun
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<word-meanings>
 
-<!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
+1. potato
 
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+</word-meanings>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<noun-decl :grammar="grammar" ></noun-decl>

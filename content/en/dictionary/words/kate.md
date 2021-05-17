@@ -1,11 +1,10 @@
 ---
-url:
-  title: कटे
-  transliteration: kate
-  slugurl: कटे
+slugurl: कटे
+transliteration: kate
 
 grammar:
   pronoun:
+
     type: interrogative
 
 topics:
@@ -16,7 +15,8 @@ topics:
 
 ## Pronunciation
 
-
 ## Pronoun
+
 ### Meaning
+
 1. where

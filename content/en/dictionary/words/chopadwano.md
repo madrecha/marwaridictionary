@@ -1,23 +1,27 @@
 ---
-url:
-  title: चोपड़वाणो
-  transliteration: chopadwano
-  slugurl: चोपड़वाणो
+slugurl: चोपड़वाणो
+transliteration: chopadwano
 
 meanings:
+
   - meaning: to apply
 
 synonyms:
+
   - syn: लगवाणो
+
     syn_trans: lagwano
 
 translations:
+
   - context:
+
     hi: लगवाना
     mr: 
 
 grammar:
   verb:
+
     term: चोपड़वा
     trans: chopadwa
     ending: aa
@@ -30,32 +34,39 @@ grammar:
       verb3: चोपड़वाणो
       verb3_trans: chopadwano
     type:
+
       - transitive
+
 ---
 
 ## Verb
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 <!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<eg :eg="examples" ></eg> -->
 
 ### Synonyms
-<syn :syn="synonyms" :url="url"></syn>
+
+<syn :syn="synonyms" ></syn>
 
 <!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<ant :ant="antonyms" ></ant> -->
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Conjugation
-<verb-conj :grammar="grammar" :url="url"></verb-conj>
+
+<verb-conj :grammar="grammar" ></verb-conj>
 
 <!-- ### Related
-<related :related="related" :url="url"></related> -->
+<related :related="related" ></related> -->
 
 <!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<similar :similar="similar" ></similar> -->

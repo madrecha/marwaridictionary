@@ -1,66 +1,38 @@
 ---
-url: 
-  title: आळकातक
-  transliteration: aalkatak
-  alt_trans:
-    - alkatak
-  slugurl: आळकातक
+slugurl: आळकातक
+transliteration: aalkatak
+transliteration_alt:
 
-meanings:
-  - meaning: lazy
-
-meanings_noun:
-  - meaning: lazy person
-  
-
-# examples:
-#   - eg:
-#     eg_trans: 
-#     en:
-#     hi:
-#   - eg:
-#     en:
-
-# synonyms:
-#   - syn:
-#     slugurl:
-#     syn_trans: 
-
-# antonyms:
-#   - ant:
-#     slugurl:
-#     ant_trans: 
-
-# related:
-#   - rel:
-#     slugurl
-#     rel_trans: 
-
-# similar:
-#   - sim: 
-#     slugurl:
-#     sim_trans:
+  - alkatak
 
 translations:
+
   - context:
+
     hi: आलसी
     hi_trans: aalsi
     mr:
     mr_trans:
 
 translations_noun:
+
   - context:
+
     hi: आलसी
     hi_trans: aalsi
     
+
 grammar:
   adjective:
+
     ending: a
     term: आळकातक
     trans: aalkatak
     gender: m
     number: s
+
   noun:
+
     ending: a
     term: आळकातक
     trans: aalkatak
@@ -68,64 +40,46 @@ grammar:
     number: s
 
 categories:
+
   - informal
 
-# topics:
-#   -
-
-# abc: abc   
 ---
 
 ## Adjective
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<word-meanings>
 
-<!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
+1. lazy
 
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+</word-meanings>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 <!-- ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl> -->
-
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<noun-decl :grammar="grammar" ></noun-decl> -->
 
 ## Noun
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings_noun" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<word-meanings>
 
-<!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
+1. lazy person
 
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+</word-meanings>
 
 ### Translation
-<translation :translation="translations_noun" :url="url"></translation>
+
+<translation :translation="translations_noun" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<noun-decl :grammar="grammar" ></noun-decl>

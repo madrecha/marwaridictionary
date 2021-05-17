@@ -23,8 +23,8 @@
       <article class="tw-mt-3">
         <div class="tw-text-center">
           <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">
-            {{ word.url.title }}
-            <span class="tw-capitalize tw-text-3xl">{{ word.url.transliteration }}</span>
+            {{ word.title ? word.title :  word.slugurl }}
+            <span class="tw-capitalize tw-text-3xl">{{ word.transliteration }}</span>
             meaning in Marwari
           </h1>
           <div>
@@ -107,7 +107,7 @@ export default {
       .where({
         $and: [
           { slug: { $ne: "AAA" } },
-          { "url.slugurl": this.$route.params.slugurl },
+          { slugurl: this.$route.params.slugurl },
           { dir: `/${this.$i18n.locale}/dictionary/words` }
         ]
       })
@@ -138,15 +138,25 @@ export default {
   computed: {
     seoKeywords() {
       if (this.word) {
-        return `${this.word.url.title} का मारवाड़ी अर्थ,
-            ${this.word.url.transliteration} Marwari meaning,
-            ${this.word.url.transliteration} ka Marwari arth, meaning of
-            ${this.word.url.transliteration} in Marwari, ${this.word.url.title} का
-            मारवाड़ी भाषा में अर्थ, ${this.word.url.title} का मेवाड़ी अर्थ,
-            ${this.word.url.title} का मेवाड़ी भाषा में अर्थ,
-            ${this.word.url.transliteration} ka Mewari arth,
-            ${this.word.url.title} ka Mewari bhasha mein arth,
-            ${this.word.url.transliteration} का मेवाड़ी अर्थ`;
+        return `${
+          this.word.title ? this.word.title : this.word.slugurl
+        } का मारवाड़ी अर्थ,
+            ${this.word.transliteration} Marwari meaning,
+            ${this.word.transliteration} ka Marwari arth, meaning of
+            ${this.word.transliteration} in Marwari, ${
+          this.word.title ? this.word.title : this.word.slugurl
+        } का
+            मारवाड़ी भाषा में अर्थ, ${
+              this.word.title ? this.word.title : this.word.slugurl
+            } का मेवाड़ी अर्थ,
+            ${
+              this.word.title ? this.word.title : this.word.slugurl
+            } का मेवाड़ी भाषा में अर्थ,
+            ${this.word.transliteration} ka Mewari arth,
+            ${
+              this.word.title ? this.word.title : this.word.slugurl
+            } ka Mewari bhasha mein arth,
+            ${this.word.transliteration} का मेवाड़ी अर्थ`;
       }
     }
   },
@@ -155,9 +165,9 @@ export default {
     if (this.word && this.$route) {
       return {
         title: `Marwari meaning of ${
-          this.word.url.title
-            ? `${this.word.url.title} ${this.word.url.transliteration}`
-            : `${this.word.url.slug} ${this.word.url.transliteration}`
+          this.word.title
+            ? `${this.word.title} ${this.word.transliteration}`
+            : `${this.word.slugurl} ${this.word.transliteration}`
         }`,
         titleTemplate: "%s - Learn Marwari | Dictionary",
         htmlAttrs: {

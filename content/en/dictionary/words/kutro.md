@@ -1,12 +1,11 @@
 ---
-url:
-  title: कुत्रो
-  transliteration: kutro
-  slugurl: कुत्रो
+slugurl: कुत्रो
+transliteration: kutro
 
 grammar:
   word: कुत्रो
   noun:
+
     ending: o
     term: कुत्र
     trans: kutr
@@ -16,11 +15,17 @@ grammar:
     number: s
 
 topics: 
+
   - animal
+
 ---
+
 ## Noun
+
 ### Meaning
+
 1. dog
 
 ### Declension
+
 <noun-decl :grammar="grammar"></noun-decl>

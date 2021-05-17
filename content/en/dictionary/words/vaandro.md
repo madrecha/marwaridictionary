@@ -1,19 +1,14 @@
 ---
-url:
-  title: वांदरो
-  transliteration: vaandro
-  alt_trans:
-    - vandro
-  slugurl: वांदरो
+slugurl: वांदरो
+transliteration: vaandro
+transliteration_alt:
 
-meanings:
-  - meaning: monkey
-  - meaning: stupid person
-  - meaning: mischievous person
+  - vandro
 
 grammar:
   word: वांदरो
   noun:
+
     ending: o
     term: वांदर
     trans: vaandr
@@ -23,12 +18,19 @@ grammar:
     number: s
 
 topics: 
+
   - animal
+
 ---
 
 ## Noun
+
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+1. monkey
+2. stupid person
+3. mischievous person
 
 ### Declension
+
 <noun-decl :grammar="grammar"></noun-decl>

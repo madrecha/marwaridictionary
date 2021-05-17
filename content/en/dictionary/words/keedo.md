@@ -1,12 +1,11 @@
 ---
-url:
-  title: कीड़ो
-  transliteration: keedo
-  slugurl: कीड़ो
+slugurl: कीड़ो
+transliteration: keedo
 
 grammar:
   word: कीड़ो
   noun:
+
     ending: o
     term: कीड़
     trans: keed
@@ -16,7 +15,9 @@ grammar:
     number: s
 
 topics:
+
   - insect
+
 ---
 
 ## Etymology
@@ -24,8 +25,11 @@ topics:
 ## Pronunciation
 
 ## Noun
+
 ### Meaning
+
 1. insect
 
 ### Declension
+
 <noun-decl :grammar="grammar"></noun-decl>

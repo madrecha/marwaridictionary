@@ -23,19 +23,19 @@
         <div class="tw-mt-1">
           <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto">
             <button
-              @click.prevent="getWordsType('nouns')"
+              @click="getWordsType('nouns')"
               class="fos-button"
             >
               Nouns
             </button>
             <button
-              @click.prevent="getWordsType('verbs')"
+              @click="getWordsType('verbs')"
               class="fos-button"
             >
               Verbs
             </button>
             <button
-              @click.prevent="getWordsType('words')"
+              @click="getWordsType('words')"
               class="fos-button"
             >
               All words
@@ -98,16 +98,16 @@
           "
         >
           <nuxt-link
-            v-if="word.url && word.url.slugurl"
-            :to="`/${$i18n.locale}/dictionary/word/${word.url.slugurl}/`"
+            v-if="word.slugurl"
+            :to="`/${$i18n.locale}/dictionary/word/${word.slugurl}/`"
             class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
           >
             <div class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-text-blue-900 md:tw-text-xl tw-break-words md:tw-break-normal">
-              {{ word.url.title }}
+              {{ word.title ? word.title : word.slugurl }}
             </div>
             <div class="sm:tw-w-1/2">
               <div class="tw-text-sm">
-                {{ word.url.transliteration }}
+                {{word.transliteration }}
               </div>
               <!-- <div class="tw-text-sm">
                 {{
@@ -210,7 +210,7 @@ export default {
         if (this.sortWordsByAsc === true) {
           this.wordsToIterate = _.sortBy(this.wordsToIterate, [
             word => {
-              return word.url.title;
+              return word.title ? word.title : word.slugurl;
             }
           ]);
           this.sortByItemText = "Marwari (ज्ञ → अ)";
@@ -220,7 +220,7 @@ export default {
           this.wordsToIterate = _.reverse(
             _.sortBy(this.wordsToIterate, [
               word => {
-                return word.url.title;
+                return word.title ? word.title : word.slugurl;
               }
             ])
           );
@@ -234,7 +234,7 @@ export default {
         if (this.sortWordsByAsc === true) {
           this.wordsToIterate = _.sortBy(this.wordsToIterate, [
             word => {
-              return word.url.transliteration;
+              return word.transliteration;
             }
           ]);
           this.sortByItemText = "transliteration (a → z)";
@@ -244,7 +244,7 @@ export default {
           this.wordsToIterate = _.reverse(
             _.sortBy(this.wordsToIterate, [
               word => {
-                return word.url.transliteration;
+                return word.transliteration;
               }
             ])
           );

@@ -1,12 +1,11 @@
 ---
-url:
-  title: बेन
-  transliteration: ben
-  slugurl: बेन
+slugurl: बेन
+transliteration: ben
 
 grammar: 
   word: बेन
   noun:
+
     ending: a
     term: बेन
     trans: ben
@@ -14,18 +13,23 @@ grammar:
     number: s
 
 meanings: 
+
   - meaning: sister
   - meaning: fellow female
 
 topics: 
+
   - person
   - relative
+
 ---
 
-
 ## Noun
+
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<noun-decl :grammar="grammar" ></noun-decl>

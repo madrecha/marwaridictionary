@@ -1,15 +1,16 @@
 ---
-url:
-  title: वेंडो
-  transliteration: vendo
-  slugurl: वेंडो
+slugurl: वेंडो
+transliteration: vendo
 
 grammar:
   word: वेंडो
   adjective:
+
     gender: m
     number: s
+
   noun:
+
     ending: o
     term: वेंड
     trans: vend
@@ -19,6 +20,7 @@ grammar:
     number: s
 
 categories:
+
   - informal
   - slang
   - abusive
@@ -26,16 +28,29 @@ categories:
 ---
 
 ## Adjective
+
 ### Meaning
+
+<word-meanings>
+
 1. stupid
 2. idiot
 3. fool
 
+</word-meanings>
+
 ## Noun
+
 ### Meaning
+
+<word-meanings>
+
 1. stupid person
 2. idiot person
 3. fool person
 
+</word-meanings>
+
 ### Declension
+
 <noun-decl :grammar="grammar"></noun-decl>

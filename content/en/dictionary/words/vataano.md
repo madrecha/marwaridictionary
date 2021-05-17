@@ -1,65 +1,26 @@
 ---
-url: 
-  title: वताणो
-  transliteration: vataano
-  slugurl: वताणो
-
-meanings:
-  - meaning: to show
-    # examples:
-    #   - eg:
-    #     eg_trans:
-    #     en:
-    #     hi:
-  - meaning: to show off
-    # examples:
-    #   - eg:
-    #     en: 
-  - meaning: to tell
-    # examples:
-    #   - eg:
-    #     en:
-  - meaning: to expose
-    # examples:
-    #   - eg:
-    #     en:
-
-# examples:
-#   - eg:
-#     eg_trans: 
-#     en:
-#     hi:
-#   - eg:
-#     en:
-
-# synonyms:
-#   - syn:
-#     slugurl:
-#     syn_trans: 
-
-# antonyms:
-#   - ant:
-#     slugurl:
-#     ant_trans: 
-
-# related:
-#   - rel:
-#     slugurl
-#     rel_trans: 
+transliteration: vataano
+slugurl: वताणो
 
 similar:
+
   - sim: वटाणो
+
     sim_trans: vataano
 
 translations:
+
   - context:
+
     hi: दिखाना
     hi_trans: dikhaana
     mr: दाखवणे
     mr_trans: daakhavne
     
+
 grammar:
   verb:
+
     term: वताण
     trans: vataan
     ending: a
@@ -72,40 +33,28 @@ grammar:
       verb3:
       verb3_trans:
     type:
+
       - transitive
 
-# categories:
-#   -
-
-# topics:
-#   -
-
 # abc: abc   
+
 ---
 
 ## Verb
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
-
-<!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+1. to show
+2. to show off
+3. to tell
+4. to expose
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Conjugation
-<verb-conj :grammar="grammar" :url="url"></verb-conj>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<verb-conj :grammar="grammar" ></verb-conj>

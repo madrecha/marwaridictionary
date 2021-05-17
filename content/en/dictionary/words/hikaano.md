@@ -1,5 +1,6 @@
 ---
-title: हिकाणो
+slugurl: हिकाणो
+transliteration: hikaano
 
 ---
 

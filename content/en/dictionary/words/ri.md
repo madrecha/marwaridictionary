@@ -1,13 +1,14 @@
 ---
-url:
-  title: री
-  transliteration: ri
-  slugurl: री
+transliteration: ri
+slugurl: री
 
 grammar:
   preposition:
   
 ---
+
 ## Preposition
+
 ### Meaning
-1. of (female)
+
+1. of (feminine gender)

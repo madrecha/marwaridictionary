@@ -1,12 +1,11 @@
 ---
-url:
-  title: वेंडी
-  transliteration: vendo
-  slugurl: वेंडी
+slugurl: वेंडी
+transliteration: vendo
 
 grammar:
   word: वेंडी
   adjective:
+
     ending: ii
     term: वेंड
     trans: vend
@@ -14,7 +13,9 @@ grammar:
     gender_m: वेंडो
     gender_m_trans: vendo
     number: s
+
   noun:
+
     ending: ii
     term: वेंड
     trans: vend
@@ -24,6 +25,7 @@ grammar:
     number: s
 
 categories:
+
   - informal
   - slang
   - abusive
@@ -31,16 +33,29 @@ categories:
 ---
 
 ## Adjective
+
 ### Meaning
+
+<word-meaning>
+
 1. stupid
 2. idiot
 3. fool
 
+</word-meaning>
+
 ## Noun
+
 ### Meaning
+
+<word-meanings>
+
 1. stupid female person
 2. idiot female person
 3. fool female person
 
+</word-meanings>
+
 ### Declension
+
 <noun-decl :grammar="grammar"></noun-decl>

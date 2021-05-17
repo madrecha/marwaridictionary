@@ -1,42 +1,15 @@
 ---
-url: 
-  title: आखर
-  transliteration: aakhar
-  slugurl: आखर
-
-meanings:
-  - meaning: word
-    # examples:
-    #   - eg:
-    #     en:
-    #     hi:
-  - meaning: alphabet
-    # examples:
-    #   - eg:
-    #     en:
-  - meaning: letter
-
-# meanings_verb:
-#   - meaning:
-#   - meaning:   
-
-# examples:
-#   - eg:
-#     en:
-#   - eg:
-#     en:
+transliteration: aakhar
+slugurl: आखर
 
 synonyms:
-  - syn: अक्षर
 
-# antonyms:
-#   - ant:
-
-# related:
-#   - rel:
+  - अक्षर
 
 translations:
+
   - context:
+
     hi: अक्षर
     hi_trans: akshar
     mr: अक्षर
@@ -44,6 +17,7 @@ translations:
 
 grammar:
   noun:
+
     ending: a
     term: आखर
     trans: aan
@@ -51,33 +25,38 @@ grammar:
     number: s
 
 # categories:
-#   -
 
 topics:
+
   - literature
 
 # abc: abc   
+
 ---
 
-
 ## Noun
-### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+### Meaning
+
+<w-meanings>
+
+1. alphabet
+2. letter
+3. word
+
+</w-meanings>
 
 ### Synonyms
-<syn :syn="synonyms" :url="url"></syn>
 
-<!-- ### Antonyms
-<ant :ant="ant" :url="url"></ant> -->
+<w-syns :syns="synonyms"></w-syns>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<noun-decl :grammar="grammar" ></noun-decl>
 
 <!-- ### Related
-<related :related="related" :url="url"></related> -->
+<related :related="related" ></related> -->

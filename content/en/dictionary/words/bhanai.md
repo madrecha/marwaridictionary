@@ -1,52 +1,73 @@
 ---
-url: 
-  title: भणई
-  transliteration: bhanai
-  alt_trans:
-    - bhanaii
-    - bhanaee
-  slugurl: भणई
+slugurl: भणई
+transliteration: bhanai
+transliteration_alt:
+
+  - bhanaii
+  - bhanaee
 
 meanings:
+
   - meaning: study
   - meaning: learning  
 
 # examples:
+
 #   - eg:
+
 #     eg_trans: 
+
 #     en:
+
 #     hi:
+
 #   - eg:
+
 #     en:
 
 # synonyms:
+
 #   - syn:
+
 #     slugurl:
+
 #     syn_trans: 
 
 # antonyms:
+
 #   - ant:
+
 #     slugurl:
+
 #     ant_trans: 
 
 related:
+
   - rel: भणणो
+
     rel_trans: bhanano
 
 # similar:
+
 #   - sim: 
+
 #     slugurl:
+
 #     sim_trans:
 
 translations:
+
   - context:
+
     hi: पढ़ाई
     hi_trans: padhai
     mr:
     mr_trans:
     
+
 grammar:
   noun:
+
     ending: ii-vowel
     term: भण
     trans: bhana
@@ -56,37 +77,45 @@ grammar:
     number: s
 
 # categories:
+
 #   -
 
 # topics:
+
 #   -
 
 # abc: abc   
+
 ---
 
 ## Noun
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 <!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<eg :eg="examples" ></eg> -->
 
 <!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
+<syn :syn="synonyms" ></syn> -->
 
 <!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<ant :ant="antonyms" ></ant> -->
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<noun-decl :grammar="grammar" ></noun-decl>
 
 ### Related
-<related :related="related" :url="url"></related>
+
+<related :related="related" ></related>
 
 <!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<similar :similar="similar" ></similar> -->

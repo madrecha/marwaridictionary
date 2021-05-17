@@ -1,11 +1,10 @@
 ---
-url:
-  title: थाकणो
-  transliteration: thaakno
-  slugurl: थाकणो
+slugurl: थाकणो
+transliteration: thaakno
 
 grammar: 
   verb:
+
     term: थाक
     trans: thaak
     ending: a
@@ -13,6 +12,7 @@ grammar:
       self: 1
 
 meanings:
+
   - meaning: to get tired
   - meaning: to be exhausted
   - meaning: to be fed up
@@ -20,8 +20,11 @@ meanings:
 ---
 
 ## Verb
+
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 ### Conjugation
+
 <verb-conj :grammar="grammar"></verb-conj>

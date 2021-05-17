@@ -1,12 +1,11 @@
 ---
-url:
-  title: देवाणो
-  transliteration: devaano
-  slugurl: देवाणो
+transliteration: devaano
+slugurl: देवाणो
 
 grammar: 
   word: देवाणो
   verb:
+
     term: देवा
     trans: devaa
     ending: aa
@@ -17,12 +16,15 @@ grammar:
       verb3: देवाणणो
 
 ---
+
 ## Etymology
 
 ## Pronunciation
 
 ## Meaning
+
 1. to cause someone to give
 
 ### Conjugation
+
 <verb-conj :grammar="grammar"></verb-conj>

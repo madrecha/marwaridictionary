@@ -1,12 +1,11 @@
 ---
-url:
-  title: कीड़ी
-  transliteration: keedo
-  slugurl: कीड़ी
+transliteration: keedo
+slugurl: कीड़ी
 
 grammar:
   word: कीड़ी
   noun:
+
     ending: ii
     term: कीड़
     trans: keed
@@ -16,7 +15,9 @@ grammar:
     number: s
 
 topics:
+
   - insect
+
 ---
 
 ## Etymology
@@ -24,9 +25,12 @@ topics:
 ## Pronunciation
 
 ## Noun
+
 ### Meaning
+
 1. ant
 2. female insect
 
 ### Declension
+
 <noun-decl :grammar="grammar"></noun-decl>

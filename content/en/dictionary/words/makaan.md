@@ -1,12 +1,11 @@
 ---
-url:
-  title: मकान
-  transliteration: makaan
-  slugurl: मकान
+transliteration: makaan
+slugurl: मकान
 
 grammar: 
   word: मकान
   noun:
+
     ending: a
     term: मकान
     trans: makaan
@@ -14,19 +13,24 @@ grammar:
     number: s
 
 meanings: 
+
   - meaning: house
   - meaning: home
   - meaning: flat
 
 synonyms:
+
   - syn: घर
   - syn: गृह
 
 translation:
+
   - context: house, home
+
     hi: घर, गृह
 
 topics:
+
   - building
 
 ---
@@ -34,13 +38,17 @@ topics:
 ## Noun
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 ### Synonym
-<syn :syn="synonyms" :url="url"></syn>
+
+<syn :syn="synonyms" ></syn>
 
 ### Translation
-<translation :translation="translation" :url="url"></translation>
+
+<translation :translation="translation" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<noun-decl :grammar="grammar" ></noun-decl>

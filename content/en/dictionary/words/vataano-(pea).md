@@ -1,87 +1,63 @@
 ---
-url: 
-  title: वटाणो
-  transliteration: vataano
-  alt_trans:
-    - vatano
-  slugurl: वटाणो
+slugurl: वटाणो
+transliteration: vataano
+transliteration_alt:
 
-meanings:
-  - meaning: pea
-
-# examples:
-#   - eg:
-#     eg_trans: 
-#     en:
-#     hi:
-#   - eg:
-#     en:
-
-synonyms:
-  - syn: मटर
-    syn_trans: matar
-
-# antonyms:
-#   - ant:
-#     slugurl:
-#     ant_trans: 
-
-# related:
-#   - rel:
-#     slugurl
-#     rel_trans: 
+  - vatano
 
 similar:
+
   - sim: वताणो
+
     sim_trans: vataano
 
 translations:
+
   - context:
+
     hi: मटर
     hi_trans: matar
     mr: मटर
     mr_trans: matar
     
+
 grammar:
   noun:
+
     ending: o
     term: वटाण
     trans: vataan
     gender: m
     number: s
 
-# categories:
-#   -
-
 topics:
+
   - vegetable
 
 # abc: abc   
+
 ---
 
 ## Noun
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<word-meanings>
+
+1. pea
+
+</word-meanings>
 
 ### Synonyms
-<syn :syn="synonyms" :url="url"></syn>
 
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<w-syns :syns="['मटर']"></w-syns>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<noun-decl :grammar="grammar" ></noun-decl>

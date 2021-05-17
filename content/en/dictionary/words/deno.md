@@ -1,12 +1,11 @@
 ---
-url:
-  title: देणो
-  transliteration: deno
-  slugurl: देणो
+slugurl: देणो
+transliteration: deno
 
 grammar:
   word: देणो
   verb:
+
     term: दे
     trans: de
     term2: द
@@ -18,16 +17,20 @@ grammar:
       verb2: देवाणो
       verb3: देवाणणो
     type: 
+
       - transitive
 
 ---
+
 ## Etymology
 
 ## Pronunciation
 
 ## Meaning
+
 1. to give
 2. to donate
 
 ### Conjugation
+
 <verb-conj :grammar="grammar"></verb-conj>

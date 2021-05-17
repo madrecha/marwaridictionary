@@ -1,34 +1,31 @@
 ---
-url:
-  title: वाचणो
-  transliteration: vaanchno
-  slugurl: वाचणो
-
-meanings:
-  - meaning: to read
-  - meaning: to study
-
-# examples:
-#   - eg:
-#     en:
-#   - eg:
-#     en:
+transliteration: vaanchno
+slugurl: वाचणो
 
 synonyms:
+
   - syn: बाचणो
+
     syn_trans: baachno
+
   - syn: भणणो
+
     syn_trans: bhanano
 
 # antonyms:
+
 #   - ant:
 
 similar:
+
   - sim: वंचणो
+
     sim_trans: vanchno
 
 translations:
+
   - context:
+
     hi: पढ़ना
     hi_trans: padhna
     mr:
@@ -36,6 +33,7 @@ translations:
 
 grammar: 
   verb:
+
     term: वाच
     trans: vaanch
     ending: a
@@ -48,13 +46,8 @@ grammar:
       verb3:
       verb3_trans:
     type:
+
       - transitive
-
-# categories:
-#   -
-
-# topics:
-#   -
 
 # abc: abc  
 
@@ -63,22 +56,18 @@ grammar:
 ## Verb
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+1. to read
+2. to study
 
 ### Synonyms
-<syn :syn="synonyms" :url="url"></syn>
 
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<syn :syn="synonyms" ></syn>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Conjugation
-<verb-conj :grammar="grammar" :url="url"></verb-conj>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
+<verb-conj :grammar="grammar" ></verb-conj>

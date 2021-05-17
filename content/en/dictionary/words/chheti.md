@@ -1,21 +1,23 @@
 ---
-url:
-  title: छेटी
-  transliteration: chheti
-  alt_trans:
-    - chhetti
-    - cheti
-  slugurl: छेटी
+slugurl: छेटी
+transliteration: chheti
+transliteration_alt:
+
+  - chhetti
+  - cheti
 
 meanings:
+
   - meaning: far; afar
 
 antonyms:
-  - ant: होड़े
-    ant_trans: hode
+
+  - होड़े
 
 translations:
+
   - context:
+
     hi: दूर
 
 grammar:
@@ -24,28 +26,17 @@ grammar:
 ---
 
 ## Noun
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
-
-<!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
+<meaning :meanings="meanings" ></meaning>
 
 ### Antonyms
-<ant :ant="antonyms" :url="url"></ant>
+
+<ant :ant="antonyms" ></ant>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
 
-<!-- ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl> -->
-
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<translation :translation="translations" ></translation>

@@ -1,12 +1,11 @@
 ---
-url:
-  title: गदेड़ो
-  transliteration: gadedo
-  slugurl: गदेड़ो
+slugurl: गदेड़ो
+transliteration: gadedo
 
 grammar:
   word: गदेड़ो
   noun:
+
     ending: o
     term: गदेड़
     trans: gaded
@@ -15,8 +14,11 @@ grammar:
     gender_f_trans: gadedi
     number: s
     
+
 topics:
+
   - animal
+
 ---
 
 ## Etymology
@@ -24,8 +26,11 @@ topics:
 ## Pronunciation
 
 ## Noun
+
 ### Meaning
+
 1. donkey
 
 ### Declension
+
 <noun-decl :grammar="grammar"></noun-decl>

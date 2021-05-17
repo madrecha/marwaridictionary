@@ -1,20 +1,22 @@
 ---
-url:
-  title: आपाणो
-  transliteration: aapaano
-  alt_trans:
-    - aapano
-  slugurl: आपाणो
+slugurl: आपाणो
+transliteration: aapaano
+transliteration_alt:
+
+  - aapano
 
 meanings:
+
   - meaning: our, ours
 
 syns:
+
   - syn: आपणो
 
 grammar:
   pronoun
 ---
+
 ## Etymology
 
 ## Pronunciation
@@ -22,4 +24,5 @@ grammar:
 ## Pronoun
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>

@@ -1,11 +1,10 @@
 ---
-url:
-  title: जिमणो
-  transliteration: jimno
-  slugurl: जिमणो
+slugurl: जिमणो
+transliteration: jimno
 
 grammar: 
   verb:
+
     term: जिम
     trans: devaa
     ending: a
@@ -16,13 +15,14 @@ grammar:
       verb3: जिमवाणो
 
 ---
-## Etymology
-
-## Pronunciation
 
 ## Verb
+
 ### Meaning
+
 1. to eat
+2. to have a proper meal
 
 ### Conjugation
+
 <verb-conj :grammar="grammar"></verb-conj>

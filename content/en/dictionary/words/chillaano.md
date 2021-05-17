@@ -1,42 +1,60 @@
 ---
-url:
-  title: चिल्लाणो
-  transliteration: chillaano
-  slugurl: चिल्लाणो
+slugurl: चिल्लाणो
+transliteration: chillaano
 
 meanings:
+
   - meaning: to shout
   - meaning: to scold
 
 # examples:
+
 #   - eg:
+
 #     eg_trans: 
+
 #     en:
+
 #     hi:
+
 #   - eg:
+
 #     en:
 
 synonyms:
+
   - syn: बळड़ाणो
+
     syn_trans: baldaano
 
 # antonyms:
+
 #   - ant:
+
 #     slugurl:
+
 #     ant_trans: 
 
 # related:
+
 #   - rel:
+
 #     slugurl
+
 #     rel_trans: 
 
 # similar:
+
 #   - sim: 
+
 #     slugurl:
+
 #     sim_trans:
 
 translations:
+
   - context:
+
     hi: चिल्लाना
     hi_trans: chillana
     mr: ओरडणे
@@ -44,6 +62,7 @@ translations:
 
 grammar: 
   verb:
+
     term: चिल्ला
     trans: chillaa
     ending: aa
@@ -52,29 +71,35 @@ topics:
   - 
 
 ---
+
 ## Verb
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 <!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<eg :eg="examples" ></eg> -->
 
 ### Synonyms
-<syn :syn="synonyms" :url="url"></syn>
+
+<syn :syn="synonyms" ></syn>
 
 <!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<ant :ant="antonyms" ></ant> -->
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Conjugation
-<verb-conj :grammar="grammar" :url="url"></verb-conj>
+
+<verb-conj :grammar="grammar" ></verb-conj>
 
 <!-- ### Related
-<related :related="related" :url="url"></related> -->
+<related :related="related" ></related> -->
 
 <!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<similar :similar="similar" ></similar> -->

@@ -1,48 +1,37 @@
 ---
-url: 
-  title: तारो
-  transliteration: taaro
-  slugurl: तारो
+transliteration: taaro
+slugurl: तारो
 
 meanings:
+
   - meaning: star  
 
-# examples:
-#   - eg:
-#     eg_trans: 
-#     en:
-#     hi:
-#   - eg:
-#     en:
-
 synonyms:
+
   - syn: सितारो
+
     syn_trans: sitaaro
 
-# antonyms:
-#   - ant:
-#     slugurl:
-#     ant_trans: 
-
-# related:
-#   - rel:
-#     slugurl
-#     rel_trans: 
-
 similar:
+
   - sim: थारो
+
     slugurl:
     sim_trans: thaaro
 
 translations:
+
   - context:
+
     hi: तारा
     hi_trans: taara
     mr:
     mr_trans:
     
+
 grammar:
   noun:
+
     ending: a
     term: तार
     trans: taar
@@ -50,37 +39,31 @@ grammar:
     number: s
 
 # categories:
+
 #   -
 
 topics:
+
   - astronomy
 
 # abc: abc   
+
 ---
 
 ## Noun
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<meaning :meanings="meanings" ></meaning>
 
 ### Synonyms
-<syn :syn="synonyms" :url="url"></syn>
 
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<syn :syn="synonyms" ></syn>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<noun-decl :grammar="grammar" ></noun-decl>

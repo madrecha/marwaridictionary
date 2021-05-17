@@ -1,12 +1,11 @@
 ---
-url:
-  title: मनकी
-  transliteration: manki
-  slugurl: मनकी
+slugurl: मनकी
+transliteration: manki
 
 grammar:
   word: मनकी
   noun:
+
     ending: ii
     term: मनक
     trans: mank
@@ -15,8 +14,11 @@ grammar:
     gender_m_trans: manko
     number: s
     
+
 topics:
+
   - animal
+
 ---
 
 ## Etymology
@@ -24,9 +26,11 @@ topics:
 ## Pronunciation
 
 ## Noun
+
 ### Meaning
+
 1. cat
 
-
 ### Declension
+
 <noun-decl :grammar="grammar"></noun-decl>

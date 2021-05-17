@@ -1,8 +1,6 @@
 ---
-url:
-  title: वटे
-  transliteration: vate
-  slugurl: वटे
+transliteration: vate
+slugurl: वटे
 
 grammar: 
   pronoun:
@@ -11,11 +9,12 @@ topics:
   - 
 ---
 
-## Etymology
-
-## Pronunciation
-
-
 ## Pronoun
+
 ### Meaning
+
+<word-meanings>
+
 1. there
+
+</word-meanings>

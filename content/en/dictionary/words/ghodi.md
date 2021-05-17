@@ -1,12 +1,11 @@
 ---
-url:
-  title: घोड़ी
-  transliteration: ghodo
-  slugurl: घोड़ी
+slugurl: घोड़ी
+transliteration: ghodo
 
 grammar:
   word: घोड़ी
   noun:
+
     ending: ii
     term: घोड़
     trans: ghod
@@ -16,16 +15,17 @@ grammar:
     number: s
 
 topics:
+
   - animal
+
 ---
 
-## Etymology
-
-## Pronunciation
-
 ## Noun
+
 ### Meaning
+
 1. female horse
 
 ### Declension
+
 <noun-decl :grammar="grammar"></noun-decl>

@@ -1,21 +1,25 @@
 ---
-url:
-  title: भैंस
-  transliteration: bhains
-  alt_trans:
-    - bhais
-  slugurl: भैंस
+transliteration: bhains
+transliteration_alt:
+
+  - bhais
+
+slugurl: भैंस
 
 meanings: 
+
   - meaning: buffalo
 
 translations:
+
   - context:
+
     hi: भैंस
     hi_trans: bhains
 
 grammar: 
   noun:
+
     word: भैंस
     ending: a
     term: भैंस
@@ -24,32 +28,38 @@ grammar:
     number: s
 
 topics:
+
   - animal
+
 ---
 
 ## Noun
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 <!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<eg :eg="examples" ></eg> -->
 
 <!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
+<syn :syn="synonyms" ></syn> -->
 
 <!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<ant :ant="antonyms" ></ant> -->
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<noun-decl :grammar="grammar" ></noun-decl>
 
 <!-- ### Related
-<related :related="related" :url="url"></related> -->
+<related :related="related" ></related> -->
 
 <!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<similar :similar="similar" ></similar> -->

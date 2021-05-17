@@ -1,48 +1,67 @@
 ---
-url: 
-  title: भाई
-  transliteration: bhai
-  slugurl: भाई
+slugurl: भाई
+transliteration: bhai
 
 meanings:
+
   - meaning: brother
+
     # examples:
     #   - eg:
     #     eg_trans:
     #     en:
     #     hi:
+
   - meaning: fellow person
+
     # examples:
     #   - eg:
     #     en:
 
 # examples:
+
 #   - eg:
+
 #     eg_trans: 
+
 #     en:
+
 #     hi:
+
 #   - eg:
+
 #     en:
 
 synonyms:
+
   - syn: भैया
+
     syn_trans: bhaiya
 
 antonyms:
+
   - ant: बेन
+
     ant_trans: ben
 
 # related:
+
 #   - rel:
+
 #     slugurl
+
 #     rel_trans: 
 
 similar:
+
   - sim: भी
+
     sim_trans: bhi
 
 translations:
+
   - context: brother
+
     hi: भाई
     hi_trans: bhai
     mr: भाऊ
@@ -50,6 +69,7 @@ translations:
 
 grammar:
   noun:
+
     ending: ii-vowel
     term: भा
     trans: bhai
@@ -57,37 +77,45 @@ grammar:
     number: s
 
 # categories:
+
 #   -
 
 topics:
+
   - person
   - relative
 
 # abc: abc   
+
 ---
 
-
 ## Noun
+
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 <!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<eg :eg="examples" ></eg> -->
 
 ### Synonyms
-<syn :syn="synonyms" :url="url"></syn>
+
+<syn :syn="synonyms" ></syn>
 
 ### Antonyms
-<ant :ant="antonyms" :url="url"></ant>
+
+<ant :ant="antonyms" ></ant>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<noun-decl :grammar="grammar" ></noun-decl>
 
 <!-- ### Related
-<related :related="related" :url="url"></related> -->
+<related :related="related" ></related> -->
 
 <!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<similar :similar="similar" ></similar> -->

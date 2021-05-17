@@ -1,19 +1,21 @@
 ---
-url:
-  title: कमाड़
-  transliteration: kamaad
-  slugurl: कमाड़
+slugurl: कमाड़
+transliteration: kamaad
 
 meanings:
+
   - meaning: door
 
 translations:
+
   - context:
+
     hi: दरवाज़ा
     mr: दार
 
 grammar:
   noun:
+
     ending: a
     term: कमाड़
     trans: kamaad
@@ -21,32 +23,23 @@ grammar:
     number: s
 
 topics:
+
   - building
+
 ---
 
 ## Noun
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
-
-<!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<meaning :meanings="meanings" ></meaning>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<noun-decl :grammar="grammar" ></noun-decl>

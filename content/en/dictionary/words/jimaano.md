@@ -1,11 +1,10 @@
 ---
-url:
-  title: जिमाणो
-  transliteration: jimaano
-  slugurl: जिमाणो
+slugurl: जिमाणो
+transliteration: jimaano
 
 grammar: 
   verb:
+
     term: जिमा
     trans: jimaa
     ending: aa
@@ -16,13 +15,17 @@ grammar:
       verb3: जिमवाणो
 
 ---
-## Etymology
-
-## Pronunciation
 
 ## Verb
+
 ### Meaning
+
 1. to feed
 
+### Synonyms
+
+<word-synonyms :syns="['खवाणो']" ></word-synonyms>
+
 ### Conjugation
+
 <verb-conj :grammar="grammar"></verb-conj>

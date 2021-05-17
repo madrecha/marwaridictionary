@@ -1,12 +1,11 @@
 ---
-url:
-  title: पीणो
-  transliteration: peeno
-  slugurl: पीणो
+slugurl: पीणो
+transliteration: peeno
 
 grammar:
   word: पीणो
   verb:
+
     term: पी
     trans: pee
     ending: ee
@@ -14,14 +13,18 @@ grammar:
       self: 1
 
 ---
+
 ## Etymology
 
 ## Pronunciation
 
 ## Verb
+
 ### Meaning
+
 1. to drink
 2. to consume alcohol
 
 ### Conjugation
+
 <verb-conj :grammar="grammar"></verb-conj>

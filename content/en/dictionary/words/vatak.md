@@ -1,25 +1,27 @@
 ---
-url:
-  title: वतक
-  transliteration: vatak
-  slugurl: वतक
-
-meanings:
-  - meaning: times
+transliteration: vatak
+slugurl: वतक
 
 examples:
+
   - eg: दो वतक
+
     en: two times; twice
     hi: दो बार
+
   - eg: मैं कतरी वतक वणारी मनवार किदी, जदी जाईन वे जिमवा बैठा। 
+
     en: I insisted him so many times, then only he sat down to eat.
 
 translations:
+
   - context:
+
     hi: बार
 
 grammar:
   noun:
+
     ending: a
     term: वतक
     trans: vatak
@@ -29,28 +31,31 @@ grammar:
 ---
 
 ## Noun
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+1. times
 
 ### Examples
-<eg :eg="examples" :url="url"></eg>
 
-<!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
+1. <word-eg>
 
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+   <template #mwr>दो वतक</template>
+   <template #en>two times; twice</template>
+   </word-eg>
+
+2. <word-eg>
+
+    <template #mwr>मैं कतरी वतक वणारी मनवार किदी, जदी जाईन वे जिमवा बैठा। </template>
+    <template #en>I insisted him so many times, then only he sat down to eat.</template>
+    </word-eg>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<noun-decl :grammar="grammar" ></noun-decl>

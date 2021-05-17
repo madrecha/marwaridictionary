@@ -1,11 +1,10 @@
 ---
-url:
-  title: राब
-  transliteration: raab
-  slugurl: राब
+slugurl: राब
+transliteration: raab
 
 grammar:
   noun:
+
     term: राब
     trans: raab
     ending: a
@@ -13,27 +12,36 @@ grammar:
     number: s
 
 meanings:
+
   - meaning: A traditional food preparation made from Curd and Maize. 
 
 related:
+
   - rel: पलेव
 
 # translations:
+
 #   - context: peel
+
 #     hi: छिलका   
 
 topics: 
+
   - food-and-drink
+
 ---
 
 ## Noun
+
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 <!-- ### Examples
 <eg :eg="examples"></eg> -->
 
 ### Usage
+
 Raab can be consumed hot or at room temperature. 
 
 - In some parts of Rajasthan, instead of maize (corn), jowar and bajra are also used. 
@@ -48,7 +56,8 @@ It's served with Daal Bati.
 <related :related="related"></related> -->
 
 <!-- ### Translation
-<translation :translation="translations" :url="url"></translation> -->
+<translation :translation="translations" ></translation> -->
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<noun-decl :grammar="grammar" ></noun-decl>

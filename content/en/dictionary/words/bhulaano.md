@@ -1,46 +1,66 @@
 ---
-url: 
-  title: भुळाणो
-  transliteration: bhulaano
-  alt_trans: 
-    - bhulano
-    - bhoolaano
-    - bhoolano
-  slugurl: भुळाणो
+slugurl: भुळाणो
+transliteration: bhulaano
+transliteration_alt: 
+
+  - bhulano
+  - bhoolaano
+  - bhoolano
 
 meanings:
+
   - meaning: to cause someone forget   
 
 # examples:
+
 #   - eg:
+
 #     eg_trans: 
+
 #     en:
+
 #     hi:
+
 #   - eg:
+
 #     en:
 
 # synonyms:
+
 #   - syn:
+
 #     slugurl:
+
 #     syn_trans: 
 
 # antonyms:
+
 #   - ant:
+
 #     slugurl:
+
 #     ant_trans: 
 
 # related:
+
 #   - rel:
+
 #     slugurl
+
 #     rel_trans: 
 
 # similar:
+
 #   - sim: 
+
 #     slugurl:
+
 #     sim_trans:
 
 translations:
+
   - context:
+
     hi: भुलाना
     hi_trans: bhulaana
     mr:
@@ -48,6 +68,7 @@ translations:
 
 grammar:
   verb:
+
     term: भुळा
     trans: bhulaa
     ending: aa
@@ -60,39 +81,46 @@ grammar:
       verb3: भुळवाणो
       verb3_trans: bhulwano
     type:
+
       - transitive
 
 # categories:
+
 #   -
 
 # topics:
+
 #   -
 
 # abc: abc   
+
 ---
 
-
 ## Verb
+
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 <!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<eg :eg="examples" ></eg> -->
 
 <!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
+<syn :syn="synonyms" ></syn> -->
 
 <!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<ant :ant="antonyms" ></ant> -->
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Conjugation
-<verb-conj :grammar="grammar" :url="url"></verb-conj>
+
+<verb-conj :grammar="grammar" ></verb-conj>
 
 <!-- ### Related
-<related :related="related" :url="url"></related> -->
+<related :related="related" ></related> -->
 
 <!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<similar :similar="similar" ></similar> -->

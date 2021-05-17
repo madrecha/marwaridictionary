@@ -1,11 +1,10 @@
 ---
-url:
-  title: जिमवाणो
-  transliteration: jimwaano
-  slugurl: जिमवाणो
+slugurl: जिमवाणो
+transliteration: jimwaano
 
 grammar: 
   verb:
+
     term: जिमवा
     trans: jimwaa
     ending: aaa
@@ -16,13 +15,13 @@ grammar:
       verb3: जिमवाणो
 
 ---
-## Etymology
-
-## Pronunciation
 
 ## Verb
+
 ### Meaning
+
 1. to cause someone to feed someone
 
 ### Conjugation
+
 <verb-conj :grammar="grammar"></verb-conj>

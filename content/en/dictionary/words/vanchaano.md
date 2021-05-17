@@ -1,23 +1,27 @@
 ---
-url:
-  title: वंचाणो
-  transliteration: vanchaano
-  slugurl: वंचाणो
+slugurl: वंचाणो
+transliteration: vanchaano
 
 meanings:
-  - meaning: to save
-  - meaning: to cause to read, learn, study
+
+  - meaning: 
+  - meaning: 
 
 translations:
+
   - context: save
+
     hi: बचाना
     hi_trans: bachaana
+
   - context: read, learn, study
+
     hi: पढ़ाना
     hi_trans: padhaana
 
 grammar: 
   verb:
+
     term: वंचा
     trans: vanchaa
     ending: aa
@@ -33,28 +37,18 @@ grammar:
 ---
 
 ## Verb
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
-
-<!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+1. to save
+2. to cause to read, learn, study
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Conjugation
-<verb-conj :grammar="grammar" :url="url"></verb-conj>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<verb-conj :grammar="grammar" ></verb-conj>

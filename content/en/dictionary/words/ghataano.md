@@ -1,11 +1,10 @@
 ---
-url:
-  title: घटाणो
-  transliteration: ghataano
-  slugurl: घटाणो
+slugurl: घटाणो
+transliteration: ghataano
 
 grammar:
   verb:
+
     term: घटा
     trans: ghataa
     ending: aa
@@ -15,7 +14,9 @@ grammar:
 ## Verb
 
 ### Meaning
+
 1. to cause someone to reduce or decrease
 
 ### Conjugation
+
 <verb-conj :grammar="grammar"></verb-conj>

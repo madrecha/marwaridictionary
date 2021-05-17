@@ -1,21 +1,15 @@
 ---
-url:
-  title: जटे
-  transliteration: jate
-  slugurl: जटे
+slugurl: जटे
+transliteration: jate
 
 grammar: 
   pronoun:
 
-
 ---
 
-## Etymology
-
-## Pronunciation
-
-
 ## Pronoun
+
 ### Meaning
+
 1. where
 2. wherever

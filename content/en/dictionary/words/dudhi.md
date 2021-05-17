@@ -1,47 +1,66 @@
 ---
-url: 
-  title: दूधी
-  transliteration: dudhi
-  slugurl: दूधी
+slugurl: दूधी
+transliteration: dudhi
 
 meanings:
+
   - meaning: bottlegourd
 
 # examples:
+
 #   - eg:
+
 #     eg_trans: 
+
 #     en:
+
 #     hi:
+
 #   - eg:
+
 #     en:
 
 # synonyms:
+
 #   - syn: 
+
 #     syn_trans: 
 
 # antonyms:
+
 #   - ant:
+
 #     slugurl:
+
 #     ant_trans: 
 
 # related:
+
 #   - rel:
+
 #     slugurl
+
 #     rel_trans: 
 
 # similar:
+
 #   - sim: 
+
 #     sim_trans: 
 
 translations:
+
   - context:
+
     hi: दूधी
     hi_trans: dudhi
     mr: दूधी
     mr_trans: dudhi
     
+
 grammar:
   noun:
+
     ending: ii
     term: दूध
     trans: dudh
@@ -49,37 +68,44 @@ grammar:
     number: s
 
 # categories:
+
 #   -
 
 topics:
+
   - vegetable
 
 # abc: abc   
+
 ---
 
 ## Noun
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 <!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<eg :eg="examples" ></eg> -->
 
 <!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
+<syn :syn="synonyms" ></syn> -->
 
 <!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<ant :ant="antonyms" ></ant> -->
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<noun-decl :grammar="grammar" ></noun-decl>
 
 <!-- ### Related
-<related :related="related" :url="url"></related> -->
+<related :related="related" ></related> -->
 
 <!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<similar :similar="similar" ></similar> -->

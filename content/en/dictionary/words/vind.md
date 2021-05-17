@@ -1,51 +1,27 @@
 ---
-url: 
-  title: विंद
-  transliteration: vind
-  slugurl: विंद
-
-meanings:
-  - meaning: husband
-    # examples:
-    #   - eg:
-    #     eg_trans:
-    #     en:
-    #     hi:
-
-# examples:
-#   - eg:
-#     eg_trans: 
-#     en:
-#     hi:
-#   - eg:
-#     en:
-
-synonyms:
-  - syn: पति
-    syn_trans: bahu
-  - syn: मर्द
-    syn_trans: mard
-
-antonyms:
-  - ant: विंदणी
-    ant_trans: vindni
-  - ant: पत्नी
-    ant_trans: patni
-  - ant: लुगाई
-    ant_trans: lugaai
+slugurl: विंद
+transliteration: vind
 
 related:
+
   - rel: वंदोळो
+
     rel_trans: vandolo
 
 similar:
+
   - sim: विंदणो
+
     sim_trans: vindano
+
   - sim: वंदाणो
+
     sim_trans: vandaano
 
 translations:
+
   - context:
+
     hi: पति
     hi_trans: pati
     mr:
@@ -53,6 +29,7 @@ translations:
 
 grammar:
   noun:
+
     ending: a
     term: विंद
     trans: vind
@@ -62,9 +39,11 @@ grammar:
     number: s
 
 # categories:
+
 #   -
 
 topics:
+
   - person
   - relative
   - marriage
@@ -72,30 +51,31 @@ topics:
   - love
 
 # abc: abc   
+
 ---
 
-
 ## Noun
-### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+### Meaning
+
+1. husband
 
 ### Synonyms
-<syn :syn="synonyms" :url="url"></syn>
+
+<word-syns :syns="['पति', 'मर्द']"></word-syns>
 
 ### Antonyms
-<ant :ant="antonyms" :url="url"></ant>
+
+<word-ants :ants="['विंदणी', 'पत्नी', 'लुगाई']"></word-ants>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations"></translation>
 
 ### Declension
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+
+<noun-decl :grammar="grammar"></noun-decl>
 
 ### Related
-<related :related="related" :url="url"></related>
 
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<related :related="related"></related>

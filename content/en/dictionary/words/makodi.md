@@ -1,12 +1,11 @@
 ---
-url:
-  title: मकोड़ी
-  transliteration: makodo
-  slugurl: मकोड़ी
+slugurl: मकोड़ी
+transliteration: makodo
 
 grammar:
   word: मकोड़ी
   noun:
+
     ending: ii
     term: मकोड़
     trans: makod
@@ -16,7 +15,9 @@ grammar:
     number: s
 
 topics:
+
   - insect
+
 ---
 
 ## Etymology
@@ -24,8 +25,11 @@ topics:
 ## Pronunciation
 
 ## Noun
+
 ### Meaning
+
 1. female insect
 
 ### Declension
+
 <noun-decl :grammar="grammar"></noun-decl>

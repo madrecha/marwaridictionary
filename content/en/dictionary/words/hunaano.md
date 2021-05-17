@@ -1,11 +1,10 @@
 ---
-url:
-  title: हुणाणो
-  transliteration: hunaano
-  slugurl: हुणाणो
+slugurl: हुणाणो
+transliteration: hunaano
 
 grammar: 
   verb:
+
     term: लेई जा
     trans: hunaa
     ending: aa
@@ -13,14 +12,14 @@ grammar:
       self: 2
 
 ---
-## Etymology
-
-## Pronunciation
 
 ## Verb
+
 ### Meaning
+
 1. to taunt
 2. to tell
 
 ### Conjugation
+
 <verb-conj :grammar="grammar"></verb-conj>

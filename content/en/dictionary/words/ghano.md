@@ -1,22 +1,18 @@
 ---
-url:
-  title: घणो
-  transliteration: ghano
-  slugurl: घणो
+slugurl: घणो
+transliteration: ghano
 
 grammar:
   word: घणो
   adjective:
+
     gender: m
     number: s
 
 ---
 
-## Etymology
-
-## Pronunciation
-
 ## Adjective
 
 ### Meaning
+
 1. very

@@ -1,22 +1,22 @@
 ---
-url:
-  title: तेंदुओ
-  transliteration: tenduo
-  slugurl: तेंदुओ
+slugurl: तेंदुओ
+transliteration: tenduo
 
 grammar:
   noun:
+
     gender: m
     number: s
     
+
 topics: 
+
   - mammal
+
 ---
 
-## Etymology
-
-## Pronunciation
-
 ## Noun
+
 ### Meaning
+
 1. leopard

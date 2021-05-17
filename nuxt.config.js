@@ -87,8 +87,8 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
-    fullTextSearchFields: ['url.title', 'url.slugurl', 'url.transliteration', 'slug', 'text'],
-    nestedProperties: ['url.slugurl', 'url.title', 'url.transliteration',
+    fullTextSearchFields: ['title', 'slugurl', 'transliteration', 'slug', 'description', 'text'],
+    nestedProperties: [
       'grammar.adjective',
       'grammar.adjective.ending',
       'grammar.adjective.term',

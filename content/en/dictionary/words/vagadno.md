@@ -1,56 +1,30 @@
 ---
-url: 
-  title: वगड़णो
-  transliteration: vagadno
-  alt_trans: 
-    - wagadno
-  slugurl: वगड़णो
+slugurl: वगड़णो
+transliteration: vagadno
+transliteration_alt: 
 
-meanings:
-  - meaning: to get worsened
-    # examples:
-    #   - eg:
-    #     eg_trans:
-    #     en:
-    #     hi: 
-
-# examples:
-#   - eg:
-#     eg_trans: 
-#     en:
-#     hi:
-#   - eg:
-#     en:
+  - wagadno
 
 synonyms:
+
   - syn: खराब वेणो
+
     slugurl: खराब-वेणो
     syn_trans: kharab veno
 
-# antonyms:
-#   - ant:
-#     slugurl:
-#     ant_trans: 
-
-# related:
-#   - rel:
-#     slugurl
-#     rel_trans: 
-
-# similar:
-#   - sim: 
-#     slugurl:
-#     sim_trans:
-
 translations:
+
   - context:
+
     hi: बिगड़ना
     hi_trans: bigadna
     mr:
     mr_trans:
     
+
 grammar:
   verb:
+
     term: वगड़
     trans: vagad
     ending: a
@@ -63,41 +37,27 @@ grammar:
       verb3: वगड़वाणो
       verb3_trans: vagadwano
     type:
+
       - intransitive
 
-# categories:
-#   -
-
-# topics:
-#   -
-
 # abc: abc   
+
 ---
 
-
 ## Verb
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+1. to get worsened
 
 ### Synonyms
-<syn :syn="synonyms" :url="url"></syn>
 
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<syn :syn="synonyms" ></syn>
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Conjugation
-<verb-conj :grammar="grammar" :url="url"></verb-conj>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<verb-conj :grammar="grammar" ></verb-conj>

@@ -1,44 +1,64 @@
 ---
-url: 
-  title: भूळणो
-  transliteration: bhoolno
-  alt_trans: 
-    - bhulno
-  slugurl: भूळणो
+slugurl: भूळणो
+transliteration: bhoolno
+transliteration_alt: 
+
+  - bhulno
 
 meanings:
+
   - meaning: to forget   
 
 # examples:
+
 #   - eg:
+
 #     eg_trans: 
+
 #     en:
+
 #     hi:
+
 #   - eg:
+
 #     en:
 
 # synonyms:
+
 #   - syn:
+
 #     slugurl:
+
 #     syn_trans: 
 
 # antonyms:
+
 #   - ant:
+
 #     slugurl:
+
 #     ant_trans: 
 
 # related:
+
 #   - rel:
+
 #     slugurl
+
 #     rel_trans: 
 
 # similar:
+
 #   - sim: 
+
 #     slugurl:
+
 #     sim_trans:
 
 translations:
+
   - context:
+
     hi: भूलना
     hi_trans: bhoolna
     mr:
@@ -46,6 +66,7 @@ translations:
 
 grammar:
   verb:
+
     term: भूळ
     trans: bhool
     ending: aa
@@ -58,39 +79,46 @@ grammar:
       verb3: भुळवाणो
       verb3_trans: bhulwano
     type:
+
       - intransitive
 
 # categories:
+
 #   -
 
 # topics:
+
 #   -
 
 # abc: abc   
+
 ---
 
-
 ## Verb
+
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 <!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<eg :eg="examples" ></eg> -->
 
 <!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
+<syn :syn="synonyms" ></syn> -->
 
 <!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<ant :ant="antonyms" ></ant> -->
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Conjugation
-<verb-conj :grammar="grammar" :url="url"></verb-conj>
+
+<verb-conj :grammar="grammar" ></verb-conj>
 
 <!-- ### Related
-<related :related="related" :url="url"></related> -->
+<related :related="related" ></related> -->
 
 <!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
+<similar :similar="similar" ></similar> -->

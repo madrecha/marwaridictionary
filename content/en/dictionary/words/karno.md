@@ -1,14 +1,14 @@
 ---
-url:
-  title: करणो
-  transliteration: karno
-  slugurl: करणो
+transliteration: karno
+slugurl: करणो
 
 meanings:
+
   - meaning: to do
 
 grammar: 
   verb:
+
     term: कर
     trans: kar
     ending: a
@@ -22,9 +22,13 @@ grammar:
       verb3_trans: karwano
 
 ---
+
 ## Verb
+
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+<meaning :meanings="meanings" ></meaning>
 
 ### Conjugation
+
 <verb-conj :grammar="grammar"></verb-conj>

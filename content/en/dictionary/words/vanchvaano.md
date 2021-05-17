@@ -1,22 +1,21 @@
 ---
-url:
-  title: वंचवाणो
-  transliteration: vanchwano
-  alt_trans:
-    - vanchvaano
-  slugurl: वंचवाणो
 
-meanings:
-  - meaning: to cause to save
-  - meaning: to cause to read, learn, study
+slugurl: वंचवाणो
+transliteration: vanchwano
+transliteration_alt:
+
+  - vanchvaano
 
 translations:
+
   - context:
+
     hi: बचवाना
     hi_trans: bachwana
 
 grammar: 
   verb:
+
     term: वंचवा
     trans: vanchvaa
     ending: aa
@@ -30,30 +29,20 @@ grammar:
       verb3_trans: vanchwano
 
 ---
+
 ## Verb
-<!-- <fos :grammar="grammar" :url="url"></fos> -->
+
+<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
-
-<!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+1. to cause to save
+2. to cause to read, learn, study
 
 ### Translation
-<translation :translation="translations" :url="url"></translation>
+
+<translation :translation="translations" ></translation>
 
 ### Conjugation
-<verb-conj :grammar="grammar" :url="url"></verb-conj>
 
-<!-- ### Related
-<related :related="related" :url="url"></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" :url="url"></similar> -->
-
+<verb-conj :grammar="grammar" ></verb-conj>

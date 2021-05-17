@@ -1,8 +1,6 @@
 ---
-url:
-  title: पाणो
-  transliteration: paano
-  slugurl: पाणो
+slugurl: पाणो
+transliteration: paano
 
 grammar: 
   noun:
@@ -53,7 +51,7 @@ meanings_verb:
 
 ### Meaning
 
-<!-- <meaning :meanings="meanings" :url="url"></meaning> -->
+<!-- <meaning :meanings="meanings" ></meaning> -->
 
 1. instrument
 
@@ -64,7 +62,7 @@ meanings_verb:
 
 ### Declension
 
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+<noun-decl :grammar="grammar" ></noun-decl>
 
 ## Verb
 
@@ -92,7 +90,7 @@ meanings_verb:
 
 </word-meanings>
 
-<!-- <meaning :meanings="meanings_verb" :url="url"></meaning> -->
+<!-- <meaning :meanings="meanings_verb" ></meaning> -->
 
 ### Synonyms
 
@@ -100,4 +98,4 @@ meanings_verb:
 
 ### Conjugation
 
-<verb-conj :grammar="grammar" :url="url"></verb-conj>
+<verb-conj :grammar="grammar" ></verb-conj>

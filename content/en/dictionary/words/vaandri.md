@@ -1,14 +1,14 @@
 ---
-url:
-  title: वांदरी
-  transliteration: vaandri
-  alt_trans:
-    - vandri
-  slugurl: वांदरी
+slugurl: वांदरी
+transliteration: vaandri
+transliteration_alt:
+
+  - vandri
 
 grammar:
   word: वांदरी
   noun:
+
     ending: ii
     term: वांदर
     trans: vaandr
@@ -17,18 +17,20 @@ grammar:
     gender_m_trans: vaandro
     number: s
 
-meanings:
-  - meaning: monkey
-  - meaning: stupid female person
-  - meaning: mischievous female person
-
 topics:
+
   - animal
+
 ---
 
 ## Noun
+
 ### Meaning
-<meaning :meanings="meanings" :url="url"></meaning>
+
+1. female monkey
+2. stupid female person
+3. mischievous female person
 
 ### Declension
+
 <noun-decl :grammar="grammar"></noun-decl>

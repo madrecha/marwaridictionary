@@ -1,8 +1,6 @@
 ---
-url: 
-  title: आंगळी
-  transliteration: aangli
-  slugurl: आंगळी
+slugurl: आंगळी
+transliteration: aangli
 
 meanings:
 
@@ -68,7 +66,7 @@ topics:
 
 ### Meaning
 
-<!-- <meaning :meanings="meanings" :url="url"></meaning> -->
+<!-- <meaning :meanings="meanings" ></meaning> -->
 
 <word-meanings>
 
@@ -79,22 +77,22 @@ topics:
   <!-- <word-meaning>finger</word-meaning> -->
 
 <!-- ### Examples
-<eg :eg="examples" :url="url"></eg> -->
+<eg :eg="examples" ></eg> -->
 
 <!-- ### Synonyms
-<syn :syn="synonyms" :url="url"></syn> -->
+<syn :syn="synonyms" ></syn> -->
 
 <!-- ### Antonyms
-<ant :ant="antonyms" :url="url"></ant> -->
+<ant :ant="antonyms" ></ant> -->
 
 ### Translation
 
-<translation :translation="translations" :url="url"></translation>
+<translation :translation="translations" ></translation>
 
 ### Declension
 
-<noun-decl :grammar="grammar" :url="url"></noun-decl>
+<noun-decl :grammar="grammar" ></noun-decl>
 
 <!-- ### Related -->
 
-<!-- <related :related="related" :url="url"></related> -->
+<!-- <related :related="related" ></related> -->
