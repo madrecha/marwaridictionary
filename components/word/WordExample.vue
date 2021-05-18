@@ -11,7 +11,7 @@
         lang="mwr-Latn"
         class="word-example--mwr-Latn tw-mt-2 tw-ml-6"
       >
-        <slot name="mwr-Latn"></slot>
+        <slot name="mwrlatn"></slot>
       </dd>
       <dd
         :lang="$i18n.locale"
@@ -44,4 +44,6 @@ export default {
     @apply tw-bg-yellow-50
   & > strong
     @apply tw-bg-yellow-50
+  &-Latn
+    @apply tw-italic tw-text-gray-500 tw-text-sm md:tw-text-base
 </style>
