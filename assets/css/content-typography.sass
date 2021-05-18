@@ -29,23 +29,23 @@
       @apply tw-text-pink-900 tw-italic tw-font-medium
 
   table
-    @extend %margin-shared
-    @apply hover:tw-shadow-lg
+    // @extend %margin-shared
+    @apply hover:tw-shadow-xl tw-mt-3
     > caption
-      @apply tw-mb-3 tw-italic tw-text-pink-800
-    > thead
-      @apply tw-sticky tw-top-0 tw-z-20
-      > tr
-        > th
-          @apply tw-border tw-border-gray-200
-          @apply tw-p-2 tw-font-medium
-          @apply tw-bg-pink-50
+      @apply tw-mb-3 tw-text-gray-600
+    // > thead
+      // @apply tw-sticky tw-top-12 tw-z-20
+  //     > tr
+  //       > th
+  //         @apply tw-border tw-border-gray-200
+  //         @apply tw-p-2 tw-font-medium
+  //         @apply tw-bg-pink-50
     > tbody
       > tr
         @apply hover:tw-bg-gray-50 tw-bg-white
-        > td
-          @apply tw-border tw-border-gray-200
-          @apply tw-p-2
+  //       > td
+  //         @apply tw-border tw-border-gray-200
+  //         @apply tw-p-2
 
   // thead
   // &:not([class*="table"])
