@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="tw-max-w-xs tw-overflow-x-scroll sm:tw-overflow-x-auto sm:tw-max-w-full"
-  >
+  <div>
     <VerbConjEndingA
       v-if="grammar.verb.ending === 'a'"
       :term="grammar.verb.term"
@@ -23,19 +21,19 @@
 </template>
 
 <script>
-import VerbConjEndingA from "../grammar/VerbConjEndingA.vue";
-import VerbConjEndingAa from "../grammar/VerbConjEndingAa.vue";
-import VerbConjEndingAe from "../grammar/VerbConjEndingAe.vue";
+import VerbConjEndingA from "~/components/grammar/VerbConjEndingA.vue";
+import VerbConjEndingAa from "~/components/grammar/VerbConjEndingAa.vue";
+import VerbConjEndingAe from "~/components/grammar/VerbConjEndingAe.vue";
 
 export default {
   props: { grammar: Object },
   components: {
     VerbConjEndingA,
     VerbConjEndingAa,
-    VerbConjEndingAe,
+    VerbConjEndingAe
   },
   data() {
     return {};
-  },
+  }
 };
 </script>
