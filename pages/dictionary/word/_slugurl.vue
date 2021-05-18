@@ -23,9 +23,8 @@
       <article class="tw-mt-3">
         <div class="tw-text-center">
           <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">
-            {{ word.title ? word.title :  word.slugurl }}
+            Marwari meaning of {{ word.title ? word.title :  word.slugurl }}
             <span class="tw-capitalize tw-text-3xl">{{ word.transliteration }}</span>
-            meaning in Marwari
           </h1>
           <div>
             <wordDate :word="word"></wordDate>
@@ -169,7 +168,7 @@ export default {
             ? `${this.word.title} ${this.word.transliteration}`
             : `${this.word.slugurl} ${this.word.transliteration}`
         }`,
-        titleTemplate: "%s - Learn Marwari | Dictionary",
+        titleTemplate: "%s - Marwari Dictionary",
         htmlAttrs: {
           lang: this.$i18n.locale
         },
