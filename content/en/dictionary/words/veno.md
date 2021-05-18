@@ -4,14 +4,12 @@ transliteration: veno
 
 grammar: 
   verb:
-
     term: वे
     trans: ve
     term2: व
     trans2: v
     ending: ae
     type: 
-
       - intransitive
 
 ---

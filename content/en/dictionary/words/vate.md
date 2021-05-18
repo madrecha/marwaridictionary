@@ -5,8 +5,6 @@ slugurl: वटे
 grammar: 
   pronoun:
 
-topics:
-  - 
 ---
 
 ## Pronoun

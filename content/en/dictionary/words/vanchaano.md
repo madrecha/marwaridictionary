@@ -45,6 +45,13 @@ grammar:
 1. to save
 2. to cause to read, learn, study
 
+### Examples
+
+1. <word-eg>
+   <template #mwr>फटाकती ब्रेक मारीने वणी गाड़ी णे गड्ढा मा जावाती <b>वंचाई</b> दी दो।</template>
+   <template #mwrlatn>Fataakti break maarine vani gaadi ne gaddha maa javaati vanchaai di do.</template>
+   <template #en>By quickly applying the break, he saved the car from falling into the pothole.</template>
+   </word-eg>
 ### Translation
 
 <translation :translation="translations" ></translation>

@@ -2,36 +2,19 @@
 slugurl: वेंड़ावेट
 transliteration: vendavet
 
-synonyms:
-
-  - पागलपन
-
 derived_from: 
-
-  - der: वेंड़ो
-
-    der_trans: vendo
+  - वेंड़ो
 
 translations:
-
   - context: foolishness
-
     hi: पागलपन
     hi_trans: pagalpan
-    mr:
-    mr_trans:
-
   - context: stubborn
-
     hi: ज़िद
     hi_trans: zid
-    mr:
-    mr_trans:
-    
 
 grammar:
   noun:
-
     ending: a
     term: वेंड़ावेट
     trans: vendavet
@@ -39,11 +22,8 @@ grammar:
     number: s
 
 categories:
-
   - informal
   - slang
-
-# abc: abc 
 
 ---
 
@@ -62,7 +42,7 @@ categories:
 
 ### Synonyms
 
-<w-syns :syns="synonyms"></w-syns>
+<w-syns :syns="['पागलपन']"></w-syns>
 
 ### Translation
 

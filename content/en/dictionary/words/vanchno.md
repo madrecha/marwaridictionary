@@ -1,10 +1,9 @@
 ---
-transliteration: vanchno
 slugurl: वंचणो
+transliteration: vanchno
 
 grammar: 
   verb:
-
     term: वंच
     trans: vanch
     ending: a
@@ -23,8 +22,12 @@ grammar:
 
 ### Meaning
 
+<word-meanings>
+
 1. to be saved
 2. to escape from some danger
+
+</word-meanings>
 
 ### Conjugation
 

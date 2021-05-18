@@ -2,28 +2,20 @@
 slugurl: वटाणो
 transliteration: vataano
 transliteration_alt:
-
   - vatano
 
 similar:
-
-  - sim: वताणो
-
-    sim_trans: vataano
+  - वताणो
 
 translations:
-
   - context:
-
     hi: मटर
     hi_trans: matar
     mr: मटर
     mr_trans: matar
-    
 
 grammar:
   noun:
-
     ending: o
     term: वटाण
     trans: vataan
@@ -31,10 +23,7 @@ grammar:
     number: s
 
 topics:
-
   - vegetable
-
-# abc: abc   
 
 ---
 

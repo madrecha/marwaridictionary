@@ -5,12 +5,9 @@ transliteration: vendo
 grammar:
   word: वेंडो
   adjective:
-
     gender: m
     number: s
-
   noun:
-
     ending: o
     term: वेंड
     trans: vend
@@ -20,7 +17,6 @@ grammar:
     number: s
 
 categories:
-
   - informal
   - slang
   - abusive
@@ -39,6 +35,10 @@ categories:
 
 </word-meanings>
 
+### Synonyms
+
+<word-synonyms :syns="['पागल', 'बुद्धू', 'नासमझ', 'नाहमझणो']"></word-synonyms>
+
 ## Noun
 
 ### Meaning
@@ -50,6 +50,10 @@ categories:
 3. fool person
 
 </word-meanings>
+
+### Synonyms
+
+<word-synonyms :syns="['पागल', 'बुद्धू', 'नासमझ', 'नाहमझणो']"></word-synonyms>
 
 ### Declension
 

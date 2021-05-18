@@ -3,33 +3,19 @@ slugurl: विंद
 transliteration: vind
 
 related:
-
-  - rel: वंदोळो
-
-    rel_trans: vandolo
+  - वंदोळो
 
 similar:
-
-  - sim: विंदणो
-
-    sim_trans: vindano
-
-  - sim: वंदाणो
-
-    sim_trans: vandaano
+  - विंदणो
+  - वंदाणो
 
 translations:
-
   - context:
-
     hi: पति
     hi_trans: pati
-    mr:
-    mr_trans:
 
 grammar:
   noun:
-
     ending: a
     term: विंद
     trans: vind
@@ -38,19 +24,12 @@ grammar:
     gender_f_trans: vindni
     number: s
 
-# categories:
-
-#   -
-
 topics:
-
   - person
   - relative
   - marriage
   - couple
   - love
-
-# abc: abc   
 
 ---
 
@@ -58,7 +37,11 @@ topics:
 
 ### Meaning
 
+<word-meanings>
+
 1. husband
+
+</word-meanings>
 
 ### Synonyms
 
@@ -76,6 +59,6 @@ topics:
 
 <noun-decl :grammar="grammar"></noun-decl>
 
-### Related
+<!-- ### Related -->
 
-<related :related="related"></related>
+<!-- <related :related="related"></related> -->

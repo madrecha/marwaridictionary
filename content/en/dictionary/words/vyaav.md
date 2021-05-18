@@ -5,7 +5,6 @@ transliteration: vyaav
 grammar: 
   word: व्याव
   noun:
-
     ending: a
     term: व्याव
     trans: vyaav

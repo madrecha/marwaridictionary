@@ -2,26 +2,12 @@
 transliteration: vatak
 slugurl: वतक
 
-examples:
-
-  - eg: दो वतक
-
-    en: two times; twice
-    hi: दो बार
-
-  - eg: मैं कतरी वतक वणारी मनवार किदी, जदी जाईन वे जिमवा बैठा। 
-
-    en: I insisted him so many times, then only he sat down to eat.
-
 translations:
-
   - context:
-
     hi: बार
 
 grammar:
   noun:
-
     ending: a
     term: वतक
     trans: vatak
@@ -36,19 +22,23 @@ grammar:
 
 ### Meaning
 
+<word-meanings>
+
 1. times
+
+</word-meanings>
 
 ### Examples
 
 1. <word-eg>
-
-   <template #mwr>दो वतक</template>
+   <template #mwr>दो <b>वतक</b></template>
+   <template #mwrlatn>do vatak</template>
    <template #en>two times; twice</template>
    </word-eg>
 
 2. <word-eg>
-
-    <template #mwr>मैं कतरी वतक वणारी मनवार किदी, जदी जाईन वे जिमवा बैठा। </template>
+    <template #mwr>मैं कतरी <b>वतक</b> वणारी मनवार किदी, जदी जाईन वे जिमवा बैठा। </template>
+    <template #mwrlatn>Main katri vatak vanaari manwaar kidi, jadi jaayin ve jimwa baitha.</template>
     <template #en>I insisted him so many times, then only he sat down to eat.</template>
     </word-eg>
 

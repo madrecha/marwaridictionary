@@ -3,19 +3,15 @@
 slugurl: वंचवाणो
 transliteration: vanchwano
 transliteration_alt:
-
   - vanchvaano
 
 translations:
-
   - context:
-
     hi: बचवाना
     hi_trans: bachwana
 
 grammar: 
   verb:
-
     term: वंचवा
     trans: vanchvaa
     ending: aa
@@ -36,8 +32,12 @@ grammar:
 
 ### Meaning
 
+<word-meanings>
+
 1. to cause to save
 2. to cause to read, learn, study
+
+</word-meanings>
 
 ### Translation
 
