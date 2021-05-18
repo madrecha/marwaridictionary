@@ -1,9 +1,10 @@
 <template>
   <section class="word-meanings">
-    <p class="tw-text-base tw-text-gray-500">Marwari meaning of
-      <span lang="mwr">{{$route.params.slugurl}}</span>
+    <p class="tw-text-sm tw-text-gray-500">Marwari <span class="tw-text-sm tw-text-green-800 tw-font-medium">Meaning</span> of <span
+        lang="mwr"
+        class="tw-text-sm"
+      >{{$route.params.slugurl}}</span>
     </p>
-    {{msg}}
     <slot></slot>
   </section>
 </template>
@@ -13,8 +14,7 @@
 export default {
   name: "WordMeanings",
   props: {
-    count: { type: Number }, // Number of meanings
-    msg: undefined
+    count: { type: Number } // Number of meanings
   },
   data() {
     return {
@@ -53,6 +53,8 @@ export default {
 .word-meanings
   & > ol > li
     @apply tw-text-lg md:tw-text-xl
+    & > p:first-child
+      @apply tw-bg-gradient-to-b tw-from-white tw-to-white tw-shadow tw-px-2 tw-py-1
   & > ul > li
     @apply tw-text-lg md:tw-text-xl
 </style>
