@@ -20,7 +20,7 @@
           class="tw-text-base"
         >
           Examples of
-          <span class="tw-capitalize">{{ url.title }} ({{ url.transliteration }})</span>
+          <span class="tw-capitalize">{{ url.title ? url.title : url.slugurl }} ({{ url.transliteration }})</span>
           in Marwari
         </h3>
         <h4
@@ -28,7 +28,7 @@
           class="tw-text-base"
         >
           Examples of
-          <span class="tw-capitalize">{{ url.title }} ({{ url.transliteration }})</span>
+          <span class="tw-capitalize">{{ url.title ? url.title : url.slugurl }} ({{ url.transliteration }})</span>
           in Marwari
         </h4>
         <eg
@@ -45,14 +45,14 @@
           class="tw-text-base sm:tw-text-xl"
         >
           Marwari synonyms of
-          <span class="tw-capitalize">{{ url.title }} ({{ url.transliteration }})</span>
+          <span class="tw-capitalize">{{ url.title ? url.title : url.slugurl }} ({{ url.transliteration }})</span>
         </h3>
         <h4
           v-if="(mean.synonyms || mean.syns) && h === 3"
           class="tw-text-base"
         >
           Marwari synonyms of
-          <span class="tw-capitalize">{{ url.title }} ({{ url.transliteration }})</span>
+          <span class="tw-capitalize">{{ url.title ? url.title : url.slugurl }} ({{ url.transliteration }})</span>
         </h4>
         <syn
           :syn="mean.synonyms"
@@ -68,14 +68,14 @@
           class="tw-text-base"
         >
           Marwari antonyms of
-          <span class="tw-capitalize">{{ url.title }} ({{ url.transliteration }})</span>
+          <span class="tw-capitalize">{{ url.title ? url.title : url.slugurl }} ({{ url.transliteration }})</span>
         </h3>
         <h4
           v-if="(mean.antonyms || mean.ants) && h === 3"
           class="tw-text-base"
         >
           Marwari antonyms of
-          <span class="tw-capitalize">{{ url.title }} ({{ url.transliteration }})</span>
+          <span class="tw-capitalize">{{ url.title ? url.title : url.slugurl }} ({{ url.transliteration }})</span>
         </h4>
         <ant
           :ant="mean.antonyms"
@@ -91,14 +91,14 @@
           class="tw-text-base"
         >
           Marwari words related to
-          <span class="tw-capitalize">{{ url.title }} ({{ url.transliteration }})</span>
+          <span class="tw-capitalize">{{ url.title ? url.title : url.slugurl }} ({{ url.transliteration }})</span>
         </h3>
         <h4
           v-if="(mean.related || mean.rels) && h === 3"
           class="tw-text-base"
         >
           Marwari words related to
-          <span class="tw-capitalize">{{ url.title }} ({{ url.transliteration }})</span>
+          <span class="tw-capitalize">{{ url.title ? url.title : url.slugurl }} ({{ url.transliteration }})</span>
         </h4>
         <related
           :related="mean.related"
@@ -117,7 +117,7 @@
           class="tw-text-base"
         >
           Translate Marwari word
-          <span class="tw-capitalize">{{ url.title }} ({{ url.transliteration }})</span>
+          <span class="tw-capitalize">{{ url.title ? url.title : url.slugurl }} ({{ url.transliteration }})</span>
         </h3>
         <h4
           v-if="
@@ -127,13 +127,13 @@
           class="tw-text-base"
         >
           Translate Marwari word
-          <span class="tw-capitalize">{{ url.title }} ({{ url.transliteration }})</span>
+          <span class="tw-capitalize">{{ url.title ? url.title : url.slugurl }} ({{ url.transliteration }})</span>
         </h4>
         <p v-if="
             url && (mean.translation || mean.translations || mean.translates)
           ">
           Translate Marwari word
-          <span class="tw-capitalize">{{ url.title }} ({{ url.transliteration }})</span>
+          <span class="tw-capitalize">{{ url.title ? url.title : url.slugurl }} ({{ url.transliteration }})</span>
         </p>
         <translation
           :translation="mean.translation"
