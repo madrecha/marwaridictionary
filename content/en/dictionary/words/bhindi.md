@@ -2,52 +2,6 @@
 slugurl: भिंडी
 transliteration: bhindi
 
-meanings:
-
-  - meaning: ladies finger, okra
-
-# examples:
-
-#   - eg:
-
-#     eg_trans: 
-
-#     en:
-
-#     hi:
-
-#   - eg:
-
-#     en:
-
-# synonyms:
-
-#   - syn: 
-
-#     syn_trans: 
-
-# antonyms:
-
-#   - ant:
-
-#     slugurl:
-
-#     ant_trans: 
-
-# related:
-
-#   - rel:
-
-#     slugurl
-
-#     rel_trans: 
-
-# similar:
-
-#   - sim: 
-
-#     sim_trans: 
-
 translations:
 
   - context:
@@ -62,7 +16,7 @@ grammar:
   noun:
 
     ending: ii
-    term: भिंडी
+    term: भिंड
     trans: bhind
     gender: f
     number: s
@@ -85,16 +39,11 @@ topics:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. ladies finger, okra
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 
@@ -104,8 +53,3 @@ topics:
 
 <noun-decl :grammar="grammar" ></noun-decl>
 
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->
