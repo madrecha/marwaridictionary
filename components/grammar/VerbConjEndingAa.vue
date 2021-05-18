@@ -4,11 +4,23 @@
     <table>
       <caption>Marwari conjugation of verb → <span lang="mwr-Deva">{{ term }}णो</span> (<span lang="mwr-Latn">{{ trans }}ṇo</span>)
         <div>
-          <!-- <b-button @click="showAll = !showAll">{{showAll ? `Close` : `Open`}} all</b-button> -->
-          <b-button @click="showPerfective = !showPerfective">{{showPerfective ? `✅ Perfective`: `Perfective`}}</b-button>
-          <b-button @click="showImperfective = !showImperfective">{{showImperfective ? `✅ Imperfective`: `Imperfective`}}</b-button>
-          <b-button @click="showContinuous = !showContinuous">{{showContinuous ? `✅ Continuous`: `Continuous`}}</b-button>
-          <b-button @click="showNonaspectual = !showNonaspectual">{{showNonaspectual ? `✅ Non-aspectual`: `Non-aspectual`}}</b-button>
+          <!-- <b-button @click="toggleAll = !toggleAll">{{toggleAll ? `Close` : `Open`}} all</b-button> -->
+          <b-button
+            v-if="verbCategories.showPerfective"
+            @click="togglePerfective = !togglePerfective"
+          >{{togglePerfective ? `✅ Perfective`: `Perfective`}}</b-button>
+          <b-button
+            v-if="verbCategories.showImperfective"
+            @click="toggleImperfective = !toggleImperfective"
+          >{{toggleImperfective ? `✅ Imperfective`: `Imperfective`}}</b-button>
+          <b-button
+            v-if="verbCategories.showContinuous"
+            @click="toggleContinuous = !toggleContinuous"
+          >{{toggleContinuous ? `✅ Continuous`: `Continuous`}}</b-button>
+          <b-button
+            v-if="verbCategories.showNonaspectual"
+            @click="toggleNonaspectual = !toggleNonaspectual"
+          >{{toggleNonaspectual ? `✅ Non-aspectual`: `Non-aspectual`}}</b-button>
         </div>
         <p><span class="tw-text-sm tw-text-yellow-800">by Manas Madrecha</span></p>
       </caption>
@@ -16,7 +28,7 @@
         <!-- <tr>
           <th
             colspan="8"
-            @click.prevent="showAll = !showAll"
+            @click.prevent="toggleAll = !toggleAll"
           >
             Marwari conjugation of verb → <span lang="mwr-Deva">{{ term }}णो ( <span lang="mwr-Latn">{{ trans }}ṇo)
           </th>
@@ -48,14 +60,20 @@
         </tr>
       </thead>
       <tbody>
-        <tr @click.prevent="showPerfective = !showPerfective">
+        <tr
+          v-if="verbCategories.showPerfective"
+          @click.prevent="togglePerfective = !togglePerfective"
+        >
           <th
             colspan="8"
             class="verb-category"
           >Perfective</th>
         </tr>
 
-        <tr v-show="showPerfective || showAll">
+        <tr
+          v-show="togglePerfective || toggleAll"
+          v-if="verbCategories.showPerfective"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -71,7 +89,10 @@
           <td><span lang="mwr-Deva">{{ term }}या</span><br /><span lang="mwr-Latn">{{ trans }}yā</span></td>
           <td><span lang="mwr-Deva">{{ term }}या</span><br /><span lang="mwr-Latn">{{ trans }}yā</span></td>
         </tr>
-        <tr v-show="showPerfective || showAll">
+        <tr
+          v-show="togglePerfective || toggleAll"
+          v-if="verbCategories.showPerfective"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -82,7 +103,10 @@
           <td><span lang="mwr-Deva">{{ term }}ईं</span><br /><span lang="mwr-Latn">{{ trans }}ī̃</span></td>
           <td><span lang="mwr-Deva">{{ term }}ईं</span><br /><span lang="mwr-Latn">{{ trans }}ī̃</span></td>
         </tr>
-        <tr v-show="showPerfective || showAll">
+        <tr
+          v-show="togglePerfective || toggleAll"
+          v-if="verbCategories.showPerfective"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -97,7 +121,10 @@
           <td><span lang="mwr-Deva">{{ term }}या हो</span><br /><span lang="mwr-Latn">{{ trans }}yā ho</span></td>
           <td><span lang="mwr-Deva">{{ term }}या हां</span><br /><span lang="mwr-Latn">{{ trans }}yā hā̃</span></td>
         </tr>
-        <tr v-show="showPerfective || showAll">
+        <tr
+          v-show="togglePerfective || toggleAll"
+          v-if="verbCategories.showPerfective"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -108,7 +135,10 @@
           <td><span lang="mwr-Deva">{{ term }}ईं हो</span><br /><span lang="mwr-Latn">{{ trans }}ī̃ ho</span></td>
           <td><span lang="mwr-Deva">{{ term }}ईं हैं</span><br /><span lang="mwr-Latn">{{ trans }}ī̃ ha͠i</span></td>
         </tr>
-        <tr v-show="showPerfective || showAll">
+        <tr
+          v-show="togglePerfective || toggleAll"
+          v-if="verbCategories.showPerfective"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -123,7 +153,10 @@
           <td><span lang="mwr-Deva">{{ term }}या था</span><br /><span lang="mwr-Latn">{{ trans }}yā thā</span></td>
           <td><span lang="mwr-Deva">{{ term }}या थां</span><br /><span lang="mwr-Latn">{{ trans }}yā thā̃</span></td>
         </tr>
-        <tr v-show="showPerfective || showAll">
+        <tr
+          v-show="togglePerfective || toggleAll"
+          v-if="verbCategories.showPerfective"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -134,7 +167,10 @@
           <td><span lang="mwr-Deva">{{ term }}ईं थीं</span><br /><span lang="mwr-Latn">{{ trans }}ī̃ thī̃</span></td>
           <td><span lang="mwr-Deva">{{ term }}ईं थीं</span><br /><span lang="mwr-Latn">{{ trans }}ī̃ thī̃</span></td>
         </tr>
-        <tr v-show="showPerfective || showAll">
+        <tr
+          v-show="togglePerfective || toggleAll"
+          v-if="verbCategories.showPerfective"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -145,11 +181,14 @@
           <td><span lang="mwr-Deva">{{ term }}यो वेऊँ</span><br /><span lang="mwr-Latn">{{ trans }}yo veū̃</span></td>
           <td><span lang="mwr-Deva">{{ term }}यो वेई</span><br /><span lang="mwr-Latn">{{ trans }}yo veī</span></td>
           <td><span lang="mwr-Deva">{{ term }}यो वेई</span><br /><span lang="mwr-Latn">{{ trans }}yo veī</span></td>
-          <td><span lang="mwr-Deva">{{ term }}या वेंवा</span><br /><span lang="mwr-Deva">{{ term }}yā vemvā</span></td>
+          <td><span lang="mwr-Deva">{{ term }}या वेंवा</span><br /><span lang="mwr-Deva">{{ trans }}yā vemvā</span></td>
           <td><span lang="mwr-Deva">{{ term }}या वेवो</span><br /><span lang="mwr-Latn">{{ trans }}yā vevo</span></td>
           <td><span lang="mwr-Deva">{{ term }}या वेंई</span><br /><span lang="mwr-Latn">{{ trans }}yā vẽī</span></td>
         </tr>
-        <tr v-show="showPerfective || showAll">
+        <tr
+          v-show="togglePerfective || toggleAll"
+          v-if="verbCategories.showPerfective"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -160,7 +199,10 @@
           <td><span lang="mwr-Deva">{{ term }}ईं वेओ</span><br /><span lang="mwr-Latn">{{ trans }}ī̃ veo</span></td>
           <td><span lang="mwr-Deva">{{ term }}ईं वेंई</span><br /><span lang="mwr-Latn">{{ trans }}ī̃ vẽī</span></td>
         </tr>
-        <tr v-show="showPerfective || showAll">
+        <tr
+          v-show="togglePerfective || toggleAll"
+          v-if="verbCategories.showPerfective"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -175,7 +217,10 @@
           <td><span lang="mwr-Deva">{{ term }}्या वेओ</span><br /><span lang="mwr-Latn">{{ trans }}yā veo</span></td>
           <td><span lang="mwr-Deva">{{ term }}्या वेंई</span><br /><span lang="mwr-Latn">{{ trans }}yā vẽī</span></td>
         </tr>
-        <tr v-show="showPerfective || showAll">
+        <tr
+          v-show="togglePerfective || toggleAll"
+          v-if="verbCategories.showPerfective"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -186,13 +231,19 @@
           <td><span lang="mwr-Deva">{{ term }}ईं वेओ</span><br /><span lang="mwr-Latn">{{ trans }}ī̃ veo</span></td>
           <td><span lang="mwr-Deva">{{ term }}ईं वेंई</span><br /><span lang="mwr-Latn">{{ trans }}ī̃ vẽī</span></td>
         </tr>
-        <tr @click.prevent="showImperfective = !showImperfective">
+        <tr
+          v-if="verbCategories.showImperfective"
+          @click.prevent="toggleImperfective = !toggleImperfective"
+        >
           <th
             colspan="8"
             class="verb-category"
           >Imperfective</th>
         </tr>
-        <tr v-show="showImperfective">
+        <tr
+          v-show="toggleImperfective"
+          v-if="verbCategories.showImperfective"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -207,7 +258,10 @@
           <td><span lang="mwr-Deva">{{ term }}ता</span><br /><span lang="mwr-Latn">{{ trans }}tā</span></td>
           <td><span lang="mwr-Deva">{{ term }}ता</span><br /><span lang="mwr-Latn">{{ trans }}tā</span></td>
         </tr>
-        <tr v-show="showImperfective">
+        <tr
+          v-show="toggleImperfective"
+          v-if="verbCategories.showImperfective"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -218,7 +272,10 @@
           <td><span lang="mwr-Deva">{{ term }}तीं</span><br /><span lang="mwr-Latn">{{ trans }}tī̃</span></td>
           <td><span lang="mwr-Deva">{{ term }}तीं</span><br /><span lang="mwr-Latn">{{ trans }}tī̃</span></td>
         </tr>
-        <tr v-show="showImperfective">
+        <tr
+          v-show="toggleImperfective"
+          v-if="verbCategories.showImperfective"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -233,7 +290,10 @@
           <td><span lang="mwr-Deva">{{ term }}ओ हो</span><br /><span lang="mwr-Latn">{{ trans }}o ho</span></td>
           <td><span lang="mwr-Deva">{{ term }}ए हैं</span><br /><span lang="mwr-Latn">{{ trans }}e ha͠i</span></td>
         </tr>
-        <tr v-show="showImperfective">
+        <tr
+          v-show="toggleImperfective"
+          v-if="verbCategories.showImperfective"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -244,7 +304,10 @@
           <td><span lang="mwr-Deva">{{ term }}ओ हो</span><br /><span lang="mwr-Latn">{{ trans }}o ho</span></td>
           <td><span lang="mwr-Deva">{{ term }}ए हैं</span><br /><span lang="mwr-Latn">{{ trans }}e ha͠i</span></td>
         </tr>
-        <tr v-show="showImperfective">
+        <tr
+          v-show="toggleImperfective"
+          v-if="verbCategories.showImperfective"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -259,7 +322,10 @@
           <td><span lang="mwr-Deva">{{ term }}ता था</span><br /><span lang="mwr-Latn">{{ trans }}tā thā</span></td>
           <td><span lang="mwr-Deva">{{ term }}ता था</span><br /><span lang="mwr-Latn">{{ trans }}tā thā</span></td>
         </tr>
-        <tr v-show="showImperfective">
+        <tr
+          v-show="toggleImperfective"
+          v-if="verbCategories.showImperfective"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -270,7 +336,10 @@
           <td><span lang="mwr-Deva">{{ term }}तीं थीं</span><br /><span lang="mwr-Latn">{{ trans }}tī̃ thī̃</span></td>
           <td><span lang="mwr-Deva">{{ term }}तीं थीं</span><br /><span lang="mwr-Latn">{{ trans }}tī̃ thī̃</span></td>
         </tr>
-        <tr v-show="showImperfective">
+        <tr
+          v-show="toggleImperfective"
+          v-if="verbCategories.showImperfective"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -285,7 +354,10 @@
           <td><span lang="mwr-Deva">{{ term }}ता वेवो</span><br /><span lang="mwr-Latn">{{ trans }}tā vevo</span></td>
           <td><span lang="mwr-Deva">{{ term }}ता वेंई</span><br /><span lang="mwr-Latn">{{ trans }}tā vẽī</span></td>
         </tr>
-        <tr v-show="showImperfective">
+        <tr
+          v-show="toggleImperfective"
+          v-if="verbCategories.showImperfective"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -296,7 +368,10 @@
           <td><span lang="mwr-Deva">{{ term }}तीं वेवो</span><br /><span lang="mwr-Latn">{{ trans }}tī̃ vevo</span></td>
           <td><span lang="mwr-Deva">{{ term }}तीं वेंई</span><br /><span lang="mwr-Latn">{{ trans }}tī̃ vẽī</span></td>
         </tr>
-        <tr v-show="showImperfective">
+        <tr
+          v-show="toggleImperfective"
+          v-if="verbCategories.showImperfective"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -311,7 +386,10 @@
           <td><span lang="mwr-Deva">{{ term }}ता वेवो</span><br /><span lang="mwr-Latn">{{ trans }}tā vevo</span></td>
           <td><span lang="mwr-Deva">{{ term }}ता वेंई</span><br /><span lang="mwr-Latn">{{ trans }}tā vẽī</span></td>
         </tr>
-        <tr v-show="showImperfective">
+        <tr
+          v-show="toggleImperfective"
+          v-if="verbCategories.showImperfective"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -322,13 +400,19 @@
           <td><span lang="mwr-Deva">{{ term }}तीं वेवो</span><br /><span lang="mwr-Latn">{{ trans }}tī̃ vevo</span></td>
           <td><span lang="mwr-Deva">{{ term }}तीं वेंई</span><br /><span lang="mwr-Latn">{{ trans }}tī̃ vẽī</span></td>
         </tr>
-        <tr @click.prevent="showContinuous = !showContinuous">
+        <tr
+          v-if="verbCategories.showContinuous"
+          @click.prevent="toggleContinuous = !toggleContinuous"
+        >
           <th
             colspan="8"
             class="verb-category"
           >Continuous</th>
         </tr>
-        <tr v-show="showContinuous">
+        <tr
+          v-show="toggleContinuous"
+          v-if="verbCategories.showContinuous"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -343,7 +427,10 @@
           <td><span lang="mwr-Deva">{{ term }}ई रा हो</span><br /><span lang="mwr-Latn">{{ trans }}ī rā ho</span></td>
           <td><span lang="mwr-Deva">{{ term }}ई रा हैं</span><br /><span lang="mwr-Latn">{{ trans }}ī rā ha͠i</span></td>
         </tr>
-        <tr v-show="showContinuous">
+        <tr
+          v-show="toggleContinuous"
+          v-if="verbCategories.showContinuous"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -354,7 +441,10 @@
           <td><span lang="mwr-Deva">{{ term }}ई रीं हो</span><br /><span lang="mwr-Latn">{{ trans }}ī rī̃ ho</span></td>
           <td><span lang="mwr-Deva">{{ term }}ई रीं हैं</span><br /><span lang="mwr-Latn">{{ trans }}ī rī̃ ha͠i</span></td>
         </tr>
-        <tr v-show="showContinuous">
+        <tr
+          v-show="toggleContinuous"
+          v-if="verbCategories.showContinuous"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -369,7 +459,10 @@
           <td><span lang="mwr-Deva">{{ term }}ई रा था</span><br /><span lang="mwr-Latn">{{ trans }}ī rā thā</span></td>
           <td><span lang="mwr-Deva">{{ term }}ई रा था</span><br /><span lang="mwr-Latn">{{ trans }}ī rā thā</span></td>
         </tr>
-        <tr v-show="showContinuous">
+        <tr
+          v-show="toggleContinuous"
+          v-if="verbCategories.showContinuous"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -380,7 +473,10 @@
           <td><span lang="mwr-Deva">{{ term }}ई रीं थीं</span><br /><span lang="mwr-Latn">{{ trans }}ī rī̃ thī̃</span></td>
           <td><span lang="mwr-Deva">{{ term }}ई रीं थीं</span><br /><span lang="mwr-Latn">{{ trans }}ī rī̃ thī̃</span></td>
         </tr>
-        <tr v-show="showContinuous">
+        <tr
+          v-show="toggleContinuous"
+          v-if="verbCategories.showContinuous"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -395,7 +491,10 @@
           <td><span lang="mwr-Deva">{{ term }}ई रा वेवो</span><br /><span lang="mwr-Latn">{{ trans }}ī rā vevo</span></td>
           <td><span lang="mwr-Deva">{{ term }}ई रा वेंई</span><br /><span lang="mwr-Latn">{{ trans }}ī rā vẽī</span></td>
         </tr>
-        <tr v-show="showContinuous">
+        <tr
+          v-show="toggleContinuous"
+          v-if="verbCategories.showContinuous"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -406,7 +505,10 @@
           <td><span lang="mwr-Deva">{{ term }}ई रीं वेवो</span><br /><span lang="mwr-Latn">{{ trans }}ī rī̃ vevo</span></td>
           <td><span lang="mwr-Deva">{{ term }}ई रीं वेंई</span><br /><span lang="mwr-Latn">{{ trans }}ī rī̃ vẽī</span></td>
         </tr>
-        <tr v-show="showContinuous">
+        <tr
+          v-show="toggleContinuous"
+          v-if="verbCategories.showContinuous"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -421,7 +523,10 @@
           <td><span lang="mwr-Deva">{{ term }}ई रा वेवो</span><br /><span lang="mwr-Latn">{{ trans }}ī rā vevo</span></td>
           <td><span lang="mwr-Deva">{{ term }}ई रा वेंई</span><br /><span lang="mwr-Latn">{{ trans }}ī rā vẽī</span></td>
         </tr>
-        <tr v-show="showContinuous">
+        <tr
+          v-show="toggleContinuous"
+          v-if="verbCategories.showContinuous"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -432,13 +537,19 @@
           <td><span lang="mwr-Deva">{{ term }}ई रीं वेवो</span><br /><span lang="mwr-Latn">{{ trans }}ī rī̃ vevo</span></td>
           <td><span lang="mwr-Deva">{{ term }}ई रीं वेंई</span><br /><span lang="mwr-Latn">{{ trans }}ī rī̃ vẽī</span></td>
         </tr>
-        <tr @click.prevent="showNonaspectual = !showNonaspectual">
+        <tr
+          v-if="verbCategories.showNonaspectual"
+          @click.prevent="toggleNonaspectual = !toggleNonaspectual"
+        >
           <th
             colspan="8"
             class="verb-category"
           >Non-aspectual</th>
         </tr>
-        <tr v-show="showNonaspectual">
+        <tr
+          v-show="toggleNonaspectual"
+          v-if="verbCategories.showNonaspectual"
+        >
           <th
             colspan="2"
             class="verb-category--type"
@@ -450,7 +561,10 @@
           <td><span lang="mwr-Deva">{{ term }}ओ</span><br /><span lang="mwr-Latn">{{ trans }}o</span></td>
           <td><span lang="mwr-Deva">{{ term }}ईं</span><br /><span lang="mwr-Latn">{{ trans }}ī̃</span></td>
         </tr>
-        <tr v-show="showNonaspectual">
+        <tr
+          v-show="toggleNonaspectual"
+          v-if="verbCategories.showNonaspectual"
+        >
           <th
             rowspan="2"
             class="verb-category--type"
@@ -465,7 +579,10 @@
           <td><span lang="mwr-Deva">{{ term }}ओला</span><br /><span lang="mwr-Latn">{{ trans }}olā</span></td>
           <td><span lang="mwr-Deva">{{ term }}ईंला</span><br /><span lang="mwr-Latn">{{ trans }}ī̃lā</span></td>
         </tr>
-        <tr v-show="showNonaspectual">
+        <tr
+          v-show="toggleNonaspectual"
+          v-if="verbCategories.showNonaspectual"
+        >
           <td class="gender">
             <span title="feminine gender">👸🏻</span>
           </td>
@@ -476,7 +593,10 @@
           <td><span lang="mwr-Deva">{{ term }}ओला</span><br /><span lang="mwr-Latn">{{ trans }}olā</span></td>
           <td><span lang="mwr-Deva">{{ term }}ईंला</span><br /><span lang="mwr-Latn">{{ trans }}ī̃lā</span></td>
         </tr>
-        <tr v-show="showNonaspectual">
+        <tr
+          v-show="toggleNonaspectual"
+          v-if="verbCategories.showNonaspectual"
+        >
           <th
             colspan="2"
             class="verb-category--type"
@@ -495,14 +615,19 @@
 
 <script>
 export default {
-  props: { term: String, trans: String, wordcat: String },
+  props: {
+    term: { type: String },
+    trans: { type: String },
+    wordcat: String,
+    verbCategories: { type: Object } // to hide a specific verb-category only
+  },
   data() {
     return {
-      showAll: false,
-      showPerfective: true,
-      showImperfective: true,
-      showContinuous: true,
-      showNonaspectual: true
+      toggleAll: false,
+      togglePerfective: true,
+      toggleImperfective: true,
+      toggleContinuous: true,
+      toggleNonaspectual: true
     };
   }
 };
