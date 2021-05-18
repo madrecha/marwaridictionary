@@ -1,14 +1,9 @@
 ---
-transliteration: karno
 slugurl: करणो
-
-meanings:
-
-  - meaning: to do
+transliteration: karno
 
 grammar: 
   verb:
-
     term: कर
     trans: kar
     ending: a
@@ -27,7 +22,11 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. to do
+
+</word-meanings>
 
 ### Conjugation
 

@@ -2,20 +2,13 @@
 slugurl: कमाड़
 transliteration: kamaad
 
-meanings:
-
-  - meaning: door
-
 translations:
-
   - context:
-
     hi: दरवाज़ा
     mr: दार
 
 grammar:
   noun:
-
     ending: a
     term: कमाड़
     trans: kamaad
@@ -23,8 +16,7 @@ grammar:
     number: s
 
 topics:
-
-  - building
+  - architecture
 
 ---
 
@@ -34,7 +26,12 @@ topics:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. door
+2. gate
+
+</word-meanings>
 
 ### Translation
 

@@ -4,7 +4,6 @@ transliteration: hunano
 
 grammar: 
   verb:
-
     term: हुण
     trans: hun
     ending: a
@@ -17,8 +16,13 @@ grammar:
 
 ### Meaning
 
+<word-meanings>
+
 1. to listen
-2. to accept someone's advice
+2. to hear
+3. to accept someone's advice
+
+</word-meanings>
 
 ### Conjugation
 

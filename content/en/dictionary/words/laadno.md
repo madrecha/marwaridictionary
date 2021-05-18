@@ -1,25 +1,22 @@
 ---
-slugurl: पादणो
-transliteration: paadno
+slugurl: लादणो
+transliteration: laadno
 
-grammar: 
+grammar:
   verb:
-    term: पाद
-    trans: paad
+    term: लाद
+    trans: laad
     ending: a
 
-categories:
-  - informal
-  - slang
-
 ---
+
 ## Verb
 
 ### Meaning
 
 <word-meanings>
 
-1. to fart
+1. to put
 
 </word-meanings>
 

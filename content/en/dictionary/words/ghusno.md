@@ -1,25 +1,23 @@
 ---
-slugurl: पादणो
-transliteration: paadno
+slugurl: घुसणो
+transliteration: ghusno
 
-grammar: 
+grammar:
   verb:
-    term: पाद
-    trans: paad
+    term: घुस
+    trans: ghus
     ending: a
 
-categories:
-  - informal
-  - slang
-
 ---
+
 ## Verb
 
 ### Meaning
 
 <word-meanings>
 
-1. to fart
+1. to enter
+2. to insert
 
 </word-meanings>
 

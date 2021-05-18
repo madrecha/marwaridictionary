@@ -4,7 +4,7 @@ slugurl: आखर
 
 synonyms:
 
-  - अक्षर
+  - 
 
 translations:
 
@@ -48,7 +48,7 @@ topics:
 
 ### Synonyms
 
-<w-syns :syns="synonyms"></w-syns>
+<w-syns :syns="['अक्षर']"></w-syns>
 
 ### Translation
 

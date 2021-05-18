@@ -1,25 +1,23 @@
 ---
-slugurl: पादणो
-transliteration: paadno
+slugurl: काटणो
+transliteration: kaatno
 
-grammar: 
+grammar:
   verb:
-    term: पाद
-    trans: paad
+    term: काट
+    trans: kaat
     ending: a
 
-categories:
-  - informal
-  - slang
-
 ---
+
 ## Verb
 
 ### Meaning
 
 <word-meanings>
 
-1. to fart
+1. to cut
+2. to chop (fruits, vegetables, etc.)
 
 </word-meanings>
 

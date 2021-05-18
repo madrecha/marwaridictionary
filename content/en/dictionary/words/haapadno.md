@@ -1,16 +1,14 @@
 ---
-slugurl: हापड़णो
+slugurl: हापडणो
 transliteration: haapadno
 
 grammar: 
-  word: हापड़णो
+  word: हापडणो
   verb:
-
-    term: हापड़
+    term: हापड
     trans: haapad
     ending: a
     type:
-
       - transitive
 
 ---
@@ -19,7 +17,16 @@ grammar:
 
 ### Meaning
 
+<word-meanings>
+
 1. to bathe
+2. to shower
+
+</word-meanings>
+
+### Synonyms
+
+<word-synonyms :syns="['नहाणो']"></word-synonyms>
 
 ### Conjugation
 

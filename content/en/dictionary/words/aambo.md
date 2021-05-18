@@ -2,9 +2,6 @@
 slugurl: आंबो
 transliteration: aambo
 
-synonyms:
-  - syn: आम
-
 translations:
   - context:
     hi: आम

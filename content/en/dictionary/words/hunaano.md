@@ -4,7 +4,6 @@ transliteration: hunaano
 
 grammar: 
   verb:
-
     term: लेई जा
     trans: hunaa
     ending: aa
@@ -17,8 +16,12 @@ grammar:
 
 ### Meaning
 
+<word-meanings>
+
 1. to taunt
 2. to tell
+
+</word-meanings>
 
 ### Conjugation
 

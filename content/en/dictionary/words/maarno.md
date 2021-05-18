@@ -1,25 +1,23 @@
 ---
-slugurl: पादणो
-transliteration: paadno
+slugurl: मारणो
+transliteration: maarno
 
-grammar: 
+grammar:
   verb:
-    term: पाद
-    trans: paad
+    term: मार
+    trans: maar
     ending: a
 
-categories:
-  - informal
-  - slang
-
 ---
+
 ## Verb
 
 ### Meaning
 
 <word-meanings>
 
-1. to fart
+1. to beat
+2. to kill
 
 </word-meanings>
 

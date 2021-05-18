@@ -1,25 +1,22 @@
 ---
-slugurl: पादणो
-transliteration: paadno
+slugurl: चाखणो
+transliteration: chaakhno
 
-grammar: 
+grammar:
   verb:
-    term: पाद
-    trans: paad
+    term: चाख
+    trans: chaakh
     ending: a
 
-categories:
-  - informal
-  - slang
-
 ---
+
 ## Verb
 
 ### Meaning
 
 <word-meanings>
 
-1. to fart
+1. to taste
 
 </word-meanings>
 
