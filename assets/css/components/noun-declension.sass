@@ -2,6 +2,10 @@
   // @apply tw-border tw-border-pink-800 tw-border-collapse
 caption
   @apply tw-text-green-600
+  & > span[lang="mwr-Deva"]
+    @apply tw-font-medium tw-text-yellow-800
+thead, tbody
+  @apply tw-text-center
 th
   @apply tw-text-lg md:tw-text-xl tw-font-medium
   @apply tw-py-2 tw-px-3
@@ -10,7 +14,9 @@ tr
   @apply hover:tw-bg-white
 td
   @apply tw-border tw-border-blue-800
-  @apply tw-py-2 tw-px-3
+  @apply tw-py-2 tw-px-3 tw-text-center
+  &:not([class*="noun-"])
+    @apply hover:tw-bg-purple-50 hover:tw-shadow-md hover:tw-scale-110 tw-transform tw-transition-all
 
 .noun-number
   @apply tw-bg-gradient-to-b tw-from-white tw-to-pink-50 tw-text-blue-900

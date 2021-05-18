@@ -1,13 +1,23 @@
+.verb-conj-wrapper-div
+  @apply tw-px-1 md:tw-px-0 tw-max-h-[80vh] tw-overflow-auto
+
 // table
   // @apply tw-border tw-border-pink-800 tw-border-collapse
+
 caption
   @apply tw-text-green-600
+
+thead, tbody
+  @apply tw-text-center
+
 th
   @apply tw-text-sm md:tw-text-lg tw-font-medium
   @apply tw-py-2 tw-px-3
   @apply tw-border tw-border-blue-800
+
 tr
   @apply hover:tw-bg-white
+
 td
   @apply tw-border tw-border-blue-800
   @apply tw-py-2 tw-px-3
@@ -16,6 +26,8 @@ td
 
 .row-verb-number > th
   @apply tw-text-center
+  &:not(:first-child)
+    @apply tw-w-[45%]
 
 .row-person
   &-en > th
@@ -24,15 +36,19 @@ td
     @apply tw-text-center
 
 .verb-category // Perfective, Imperfective, Continuous, Non-aspectual
+  @apply tw-sticky tw-top-0 tw-z-20
   @apply tw-bg-gradient-to-b tw-from-white tw-to-yellow-50
   @apply tw-text-yellow-800 tw-text-center
   @apply tw-cursor-pointer hover:tw-shadow-lg hover:tw--translate-y-0.5 tw-transform tw-transition-all
+
   &--type
+    @apply tw-sticky tw-left-0 tw-z-10
     @apply tw-bg-gradient-to-b tw-from-white tw-to-green-50
     @apply tw-text-blue-900 tw-text-sm
 
 .gender
   @apply even:tw-bg-blue-50 odd:tw-bg-pink-50
+  @apply tw-sticky tw-left-20 tw-z-10
   & > abbr[title*="feminine"]
     @apply tw-text-xs md:tw-text-base
     // &::before

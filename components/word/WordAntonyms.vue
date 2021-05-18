@@ -6,7 +6,7 @@
     <p
       v-if="head"
       class="tw-text-base tw-text-gray-500"
-    >Marwari Antonyms of
+    >Marwari <span class="tw-text-yellow-800 tw-text-base tw-font-medium">Antonyms</span> of
       <span lang="mwr">{{$route.params.slugurl}}</span>
     </p>
     <p
@@ -38,7 +38,7 @@ export default {
   props: {
     antonyms: { type: Array },
     ants: { type: Array },
-    color: { type: Boolean, default: true },
+    color: { type: Boolean, default: false },
     head: { type: Boolean, default: true }
   },
   data() {

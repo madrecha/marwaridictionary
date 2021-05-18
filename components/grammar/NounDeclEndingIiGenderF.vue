@@ -1,7 +1,7 @@
 <template>
   <div>
     <table v-if="grammar.noun.ending === 'ii'">
-      <caption>Marwari declension of noun → {{ term }}ी ( {{ trans }}ī)</caption>
+      <caption>Marwari declension of noun 👉🏻 <span lang="mwr-Deva">{{ term }}ी</span> (<span lang="mwr-Latn">{{ trans }}ī</span>)</caption>
       <thead>
         <!-- <tr>
           <th
@@ -37,7 +37,7 @@
     </table>
 
     <table v-if="grammar.noun.ending === 'ii-vowel'">
-      <caption>Marwari declension of noun → {{ term }}ई ( {{ trans }}ī)</caption>
+      <caption>Marwari declension of noun → <span lang="mwr-Deva">{{ term }}ई</span> (<span lang="mwr-Latn">{{ trans }}ī</span>)</caption>
       <thead>
         <!-- <tr>
           <th

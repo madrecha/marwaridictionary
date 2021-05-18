@@ -1,6 +1,6 @@
 <template>
   <!-- e.g. भगाणो (to cause to run), जिमाणो (to feed) -->
-  <div class="tw-max-h-[80vh] tw-mx-auto tw-overflow-scroll md:tw-overflow-auto md:tw-max-w-[80vw]">
+  <div class="verb-conj-wrapper-div">
     <table>
       <caption>Marwari conjugation of verb → <span lang="mwr-Deva">{{ term }}णो</span> (<span lang="mwr-Latn">{{ trans }}ṇo</span>)
         <div>

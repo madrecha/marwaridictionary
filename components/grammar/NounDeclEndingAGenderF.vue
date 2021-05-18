@@ -1,6 +1,6 @@
 <template>
   <table>
-    <caption>Marwari declension of noun → {{ term }} ( {{ trans }})</caption>
+    <caption>Marwari declension of noun → <span lang="mwr-Deva">{{ term }}</span> (<span lang="mwr-Latn">{{ trans }}</span>)</caption>
     <thead>
       <!-- <tr>
         <th
