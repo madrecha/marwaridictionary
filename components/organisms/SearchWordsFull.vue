@@ -22,12 +22,11 @@
       <div class="tw-relative">
         <div>
           <p class="tw-py tw-pl-1 tw-pr-4 tw-text-xs">
-            Search word (in English, Devanagari or Hindi), meaning, translation,
-            <b>topic</b>...
+            Search word (in English or Devanagari) or TOPIC...
             <br />
-            <span class="tw-text-xs">E.g. → विंदणी, vindani, wife, पत्नी, person</span>
+            <span class="tw-text-xs">E.g. → विंदणी, vindani, person</span>
             <br />
-            <span class="tw-text-xs">E.g. → कुत्रो, kutro, dog, कुत्ता, animal</span>
+            <span class="tw-text-xs">E.g. → कुत्रो, kutro, animal</span>
           </p>
         </div>
         <button
@@ -41,13 +40,13 @@
     <div class="tw-mt-3 tw-max-w-3xl tw-mx-auto tw-absolute tw-top-6 tw-left-0 tw-right-0">
       <ol
         v-if="wordsToIterate.length"
-        class="tw-list-decimal tw-list-inside tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-rounded tw-p-2"
+        class="tw-list-decimal tw-list-inside tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-rounded tw-p-2 tw-z-40"
       >
         <li
           v-for="word of wordsToIterate"
           :key="word.slug"
           @click.prevent="clearInput()"
-          class="tw-m-1"
+          class="tw-m-1 tw-z-40"
         >
           <NuxtLink
             :to="`/dictionary/word/${word.slugurl}/`"
