@@ -2,6 +2,22 @@
   @apply tw-text-base md:tw-text-lg
 
 .nuxt-content
+  h3
+    &[id="meaning"]
+      &::after
+        content: " 🧾"
+    &[id="examples"]
+      &::after
+        content: " ✍🏻"
+    &[id="translation"]
+      &::after
+        content: " 🌏"
+    &[id="conjugation"]
+      &::after
+        content: " 📚"
+    &[id="declension"]
+      &::after
+        content: " 📚"
   a
     @apply tw-text-blue-700 hover:tw-text-gray-800 tw-border-b hover:tw-border-gray-500
 
