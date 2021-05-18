@@ -2,72 +2,19 @@
 slugurl: भणई
 transliteration: bhanai
 transliteration_alt:
-
   - bhanaii
   - bhanaee
 
-meanings:
-
-  - meaning: study
-  - meaning: learning  
-
-# examples:
-
-#   - eg:
-
-#     eg_trans: 
-
-#     en:
-
-#     hi:
-
-#   - eg:
-
-#     en:
-
-# synonyms:
-
-#   - syn:
-
-#     slugurl:
-
-#     syn_trans: 
-
-# antonyms:
-
-#   - ant:
-
-#     slugurl:
-
-#     ant_trans: 
-
 related:
-
-  - rel: भणणो
-
-    rel_trans: bhanano
-
-# similar:
-
-#   - sim: 
-
-#     slugurl:
-
-#     sim_trans:
+  - भणणो
 
 translations:
-
   - context:
-
     hi: पढ़ाई
     hi_trans: padhai
-    mr:
-    mr_trans:
-    
 
 grammar:
   noun:
-
     ending: ii-vowel
     term: भण
     trans: bhana
@@ -76,34 +23,18 @@ grammar:
     gender_f_trans: 
     number: s
 
-# categories:
-
-#   -
-
-# topics:
-
-#   -
-
-# abc: abc   
-
 ---
 
 ## Noun
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. study
+2. learning
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 
@@ -113,9 +44,6 @@ grammar:
 
 <noun-decl :grammar="grammar" ></noun-decl>
 
-### Related
+<!-- ### Related -->
 
-<related :related="related" ></related>
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->
+<!-- <related :related="related" ></related> -->

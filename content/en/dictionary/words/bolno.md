@@ -2,33 +2,13 @@
 slugurl: बोलणो
 transliteration: bolno
 
-meanings:
-
-  - meaning: to say; to speak
-  - meaning: to tell
-
-synonyms:
-
-  - syn: केणो
-
-    syn_trans: keno
-
-similar:
-
-  - sim: बुलाणो
-
-    sim_trans: bulaano
-
 translations:
-
   - context:
-
     hi: बोलना
     hi_trans: bolna
 
 grammar: 
   verb: 
-
     term: बोल
     trans: bol
     ending: a
@@ -39,14 +19,18 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to say
+2. to speak
+3. to tell
+4. to converse
+
+</word-meanings>
 
 ### Synonyms
 
-<syn :syn="synonyms" ></syn>
+<word-synonyms :syns="['केणो']" ></word-synonyms>
 
 ### Translation
 

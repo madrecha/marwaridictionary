@@ -2,26 +2,12 @@
 slugurl: चोपड़णो
 transliteration: chopadno
 
-meanings:
-
-  - meaning: to apply
-
-synonyms:
-
-  - syn: लगाणो
-
-    syn_trans: lagaano
-
 translations:
-
   - context:
-
     hi: लगाना
-    mr: 
 
 grammar:
   verb:
-
     term: चोपड़
     trans: chopad
     ending: a
@@ -34,28 +20,23 @@ grammar:
       verb3: चोपड़वाणो
       verb3_trans: chopadwano
     type:
-
       - transitive
 
 ---
 
 ## Verb
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to apply (something liquid like oil or paste or ointment)
+
+</word-meanings>
 
 ### Synonyms
 
-<syn :syn="synonyms" ></syn>
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+<word-synonyms :syns="['लगाणो']" ></word-synonyms>
 
 ### Translation
 
@@ -64,9 +45,3 @@ grammar:
 ### Conjugation
 
 <verb-conj :grammar="grammar" ></verb-conj>
-
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

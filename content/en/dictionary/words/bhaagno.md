@@ -2,15 +2,9 @@
 slugurl: भागणो
 transliteration: bhaagno
 
-meanings:
-
-  - meaning: to run
-  - meaning: to run away
-
 grammar: 
   word: भागणो
   verb:
-
     term: भाग
     trans: bhaag
     en: bhaag
@@ -35,7 +29,12 @@ categories:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. to run
+2. to run away
+
+</word-meanings>
 
 ### Conjugation
 

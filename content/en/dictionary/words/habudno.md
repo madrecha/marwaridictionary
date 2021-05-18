@@ -2,18 +2,10 @@
 slugurl: हबुड़णो
 transliteration: habudno
 transliteration_alt:
-
   - haboodno
-
-meanings:
-
-  - meaning: to slurp
-
-  - meaning: to consume everything
 
 grammar:
   verb:
-
     term: हबुड़
     trans: habud
     ending: a
@@ -26,43 +18,25 @@ grammar:
       verb3:
       verb3_trans:
     type:
-
       - intransitive
 
 topics:
-
   - food-and-drink
-
-# abc: abc   
 
 ---
 
 ## Verb
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to slurp
+2. to consume noisily
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
-
-<!-- ### Translation
-<translation :translation="translations_verb" ></translation> -->
+</word-meanings>
 
 ### Conjugation
 
 <verb-conj :grammar="grammar" ></verb-conj>
 
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

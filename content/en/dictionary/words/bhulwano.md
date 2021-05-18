@@ -2,72 +2,16 @@
 slugurl: भुळवाणो
 transliteration: bhulwano
 transliteration_alt: 
-
   - bhulvaano
   - bhulvano
 
-meanings:
-
-  - meaning: to cause some 3rd person to forget someone else
-
-# examples:
-
-#   - eg:
-
-#     eg_trans: 
-
-#     en:
-
-#     hi:
-
-#   - eg:
-
-#     en:
-
-# synonyms:
-
-#   - syn:
-
-#     slugurl:
-
-#     syn_trans: 
-
-# antonyms:
-
-#   - ant:
-
-#     slugurl:
-
-#     ant_trans: 
-
-# related:
-
-#   - rel:
-
-#     slugurl
-
-#     rel_trans: 
-
-# similar:
-
-#   - sim: 
-
-#     slugurl:
-
-#     sim_trans:
-
 translations:
-
   - context:
-
     hi: भुलवाना
     hi_trans: bhulwana
-    mr:
-    mr_trans:
 
 grammar:
   verb:
-
     term: भुळवा
     trans: bhulwa
     ending: aa
@@ -80,18 +24,7 @@ grammar:
       verb3: भुळवाणो
       verb3_trans: bhulwano
     type:
-
       - transitive
-
-# categories:
-
-#   -
-
-# topics:
-
-#   -
-
-# abc: abc   
 
 ---
 
@@ -99,16 +32,11 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to cause some 3rd person to forget someone else
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 
@@ -117,9 +45,3 @@ grammar:
 ### Conjugation
 
 <verb-conj :grammar="grammar" ></verb-conj>
-
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

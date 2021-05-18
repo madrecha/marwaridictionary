@@ -2,14 +2,8 @@
 slugurl: भगाणो
 transliteration: bhagaano
 
-meanings:
-
-  - meaning: to cause someone to run
-  - meaning: to shoo away
-
 grammar: 
   verb:
-
     term: भगा
     en: bhagaa
     ending: aa
@@ -22,7 +16,6 @@ grammar:
       verb3: भगवाणो
       verb3_trans: bhagwano
     type: 
-
       - transitive
 
 ---
@@ -31,16 +24,12 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to cause someone to run
+2. to shoo away
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Conjugation
 

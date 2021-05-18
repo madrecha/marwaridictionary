@@ -2,65 +2,10 @@
 slugurl: भुळाणो
 transliteration: bhulaano
 transliteration_alt: 
-
   - bhulano
-  - bhoolaano
-  - bhoolano
-
-meanings:
-
-  - meaning: to cause someone forget   
-
-# examples:
-
-#   - eg:
-
-#     eg_trans: 
-
-#     en:
-
-#     hi:
-
-#   - eg:
-
-#     en:
-
-# synonyms:
-
-#   - syn:
-
-#     slugurl:
-
-#     syn_trans: 
-
-# antonyms:
-
-#   - ant:
-
-#     slugurl:
-
-#     ant_trans: 
-
-# related:
-
-#   - rel:
-
-#     slugurl
-
-#     rel_trans: 
-
-# similar:
-
-#   - sim: 
-
-#     slugurl:
-
-#     sim_trans:
 
 translations:
-
   - context:
-
     hi: भुलाना
     hi_trans: bhulaana
     mr:
@@ -68,7 +13,6 @@ translations:
 
 grammar:
   verb:
-
     term: भुळा
     trans: bhulaa
     ending: aa
@@ -81,18 +25,7 @@ grammar:
       verb3: भुळवाणो
       verb3_trans: bhulwano
     type:
-
       - transitive
-
-# categories:
-
-#   -
-
-# topics:
-
-#   -
-
-# abc: abc   
 
 ---
 
@@ -100,16 +33,11 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to cause someone to forget 
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 
@@ -119,8 +47,3 @@ grammar:
 
 <verb-conj :grammar="grammar" ></verb-conj>
 
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

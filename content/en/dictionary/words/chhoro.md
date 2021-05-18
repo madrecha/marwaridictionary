@@ -2,64 +2,10 @@
 slugurl: छोरो
 transliteration: chhoro
 transliteration_alt:
-
   - choro
 
-meanings:
-
-  - meaning: boy
-  - meaning: son
-
-# examples:
-
-#   - eg:
-
-#     eg_trans: 
-
-#     en:
-
-#     hi:
-
-#   - eg:
-
-#     en:
-
-# synonyms:
-
-#   - syn:
-
-#     slugurl:
-
-#     syn_trans: 
-
-# antonyms:
-
-#   - ant:
-
-#     slugurl:
-
-#     ant_trans: 
-
-# related:
-
-#   - rel:
-
-#     slugurl
-
-#     rel_trans: 
-
-# similar:
-
-#   - sim: 
-
-#     slugurl:
-
-#     sim_trans:
-
 translations:
-
   - context:
-
     hi: लड़का
     hi_trans: ladka
     mr: मुलगा, पोरगा
@@ -67,7 +13,6 @@ translations:
 
 grammar:
   noun:
-
     ending: o
     term: छोर
     trans: chhor
@@ -77,34 +22,28 @@ grammar:
     number: s
 
 topics:
-
   - person
-
-antonyms:
-
-  - ant: लड़की
-  - ant: छोरी
-  - ant: छोकरी
 
 ---
 
 ## Noun
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. boy
+2. son
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
+</word-meanings>
+
+### Synonyms
+
+<word-synonyms :syns="['छोकरो', 'लड़को']" ></word-synonyms>
 
 ### Antonyms
 
-<ant :ant="antonyms" ></ant>
+<word-antonyms :ants="['छोरी', 'छोकरी', 'लड़की']" ></word-antonyms>
 
 ### Translation
 
@@ -113,9 +52,3 @@ antonyms:
 ### Declension
 
 <noun-decl :grammar="grammar" ></noun-decl>
-
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

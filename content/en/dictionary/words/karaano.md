@@ -2,21 +2,13 @@
 slugurl: कराणो
 transliteration: karaano
 
-meanings:
-
-  - meaning: to cause someone to do something  
-
 translations:
-
   - context:
-
     hi: कराना
     hi_trans:
-    
 
 grammar:
   verb:
-
     term: करा
     trans: karaa
     ending: aa
@@ -29,37 +21,19 @@ grammar:
       verb3: करवाणो
       verb3_trans: karwano
     type:
-
       - transitive
-
-# categories:
-
-#   -
-
-# topics:
-
-#   -
-
-# abc: abc   
 
 ---
 
 ## Verb
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to cause someone to do something  
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 
@@ -69,8 +43,3 @@ grammar:
 
 <verb-conj :grammar="grammar" ></verb-conj>
 
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

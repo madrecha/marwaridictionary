@@ -4,46 +4,36 @@ transliteration: chholno
 
 grammar:
   verb:
-
     term: छोल
     trans: chhol
     ending: a
     type:
-
       - transitive
 
-meanings:
-
-  - meaning: to peel
-  - meaning: to frustate someone
-
 related:
-
-  - rel: फुतरो
+  - फुतरो
 
 translations:
-
   - context: peel
-
     hi: छीलना   
 
-# topics: 
-
-#   -
 ---
 
 ## Verb
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples"></eg> -->
+1. to peel
+2. to frustate someone
+3. to probe deeper especially with regard to enquiring about something
 
-### Related
+</word-meanings>
 
-<related :related="related"></related>
+<!-- ### Related
+
+<related :related="related"></related> -->
 
 ### Translation
 

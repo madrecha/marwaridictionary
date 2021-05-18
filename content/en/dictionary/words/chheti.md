@@ -2,22 +2,11 @@
 slugurl: छेटी
 transliteration: chheti
 transliteration_alt:
-
   - chhetti
   - cheti
 
-meanings:
-
-  - meaning: far; afar
-
-antonyms:
-
-  - होड़े
-
 translations:
-
   - context:
-
     hi: दूर
 
 grammar:
@@ -27,15 +16,17 @@ grammar:
 
 ## Noun
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. far; afar
+
+</word-meanings>
 
 ### Antonyms
 
-<ant :ant="antonyms" ></ant>
+<word-antonyms :ants="['होड़े']" ></word-antonyms>
 
 ### Translation
 

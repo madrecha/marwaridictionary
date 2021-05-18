@@ -1,8 +1,6 @@
 ---
-slugurl: छोरी
-transliteration: chhori
-transliteration_alt:
-  - chori
+slugurl: लड़की
+transliteration: ladki
 
 translations:
   - context:
@@ -14,11 +12,11 @@ translations:
 grammar:
   noun:
     ending: ii
-    term: छोर
-    trans: chhor
+    term: लड़क
+    trans: ladk
     gender: f
-    gender_m: छोरो
-    gender_m_trans: chhoro
+    gender_m: लड़का
+    gender_m_trans: ladka
     number: s
 
 topics:
@@ -39,11 +37,11 @@ topics:
 
 ### Synonyms
 
-<word-synonyms :syns="['लड़की', 'छोकरी']" ></word-synonyms>
+<word-synonyms :syns="['छोरी', 'छोकरी']" ></word-synonyms>
 
 ### Antonyms
 
-<word-antonyms :ants="['छोरो', 'छोकरो', 'लड़को']" ></word-antonyms>
+<word-antonyms :ants="['छोरो', 'लड़को']" ></word-antonyms>
 
 ### Translation
 

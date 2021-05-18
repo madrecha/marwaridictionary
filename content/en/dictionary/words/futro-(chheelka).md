@@ -4,45 +4,37 @@ transliteration: futro
 
 grammar:
   noun:
-
     term: फुतर
     trans: futr
     ending: o
     gender: m
     number: s
 
-meanings:
-
-  - meaning: peel (of fruit or vegetable)
-
 related:
+  - छोलणो
 
-  - rel: छोलणो
-  - rel: फुटरो
+similar:
+- फुटरो
 
 translations:
-
   - context: peel
-
     hi: छिलका   
 
-# topics: 
-
-#   -
 ---
 
 ## Noun
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples"></eg> -->
+1. peel (of fruit or vegetable)
 
-### Related
+</word-meanings>
 
-<related :related="related"></related>
+<!-- ### Related
+
+<related :related="related"></related> -->
 
 ### Translation
 

@@ -4,27 +4,22 @@ transliteration: chaalno
 
 grammar:
   verb:
-
     term: चाल
     trans: chaal
     ending: a
-
-meanings:
-
-  - meaning: to walk
-  - meaning: to be okay; to be acceptable
-
-# topics: 
 
 ---
 
 ## Verb
 
 ### Meaning
-<meaning :meanings="meanings"></meaning>
 
-<!-- ### Examples
-<eg :eg="examples"></eg> -->
+<word-meanings>
+
+1. to walk
+2. to be okay; to be acceptable
+
+</word-meanings>
 
 ### Conjugation
 

@@ -2,41 +2,23 @@
 slugurl: खाणो
 transliteration: khaano
 
-meanings:
-
-  - meaning: food
-  - meaning: meal - lunch, dinner, etc.
-
-meanings_verb: 
-
-  - meaning: to eat
-  - meaning: to accept bribe
-
 grammar: 
   verb:
-
     term: खा
     trans: khaa
     ending: aa
 
 translations:
-
   - context:
-
     hi: खाना
     hi_trans: khana
-    mr: 
 
 translations_verb:
-
   - context:
-
     hi: खाना
     hi_trans: khana
-    mr:
 
 topics:
-
   - food-and-drink
 
 ---
@@ -45,16 +27,12 @@ topics:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. food
+2. meal --- lunch, dinner, etc.
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 
@@ -64,16 +42,12 @@ topics:
 
 ### Meaning
 
-<meaning :meanings="meanings_verb" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to eat
+2. to accept bribe
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 
@@ -82,3 +56,4 @@ topics:
 ### Conjugation
 
 <verb-conj :grammar="grammar"></verb-conj>
+

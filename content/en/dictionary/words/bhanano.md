@@ -2,69 +2,13 @@
 slugurl: भणणो
 transliteration: bhanano
 
-meanings:
-
-  - meaning: to study
-  - meaning: to read
-  - meaning: to learn  
-
-# examples:
-
-#   - eg:
-
-#     eg_trans: 
-
-#     en:
-
-#     hi:
-
-#   - eg:
-
-#     en:
-
-synonyms:
-
-  - syn: वाचणो
-
-    syn_trans: vaachno
-
-# antonyms:
-
-#   - ant:
-
-#     slugurl:
-
-#     ant_trans: 
-
-# related:
-
-#   - rel:
-
-#     slugurl
-
-#     rel_trans: 
-
-# similar:
-
-#   - sim: 
-
-#     slugurl:
-
-#     sim_trans:
-
 translations:
-
   - context:
-
     hi: पढ़ना
     hi_trans: padhna
-    mr:
-    mr_trans:
-    
 
 grammar:
   verb:
-
     term: भण
     trans: bhan
     ending: a
@@ -77,38 +21,25 @@ grammar:
       verb3: भणवाणो
       verb3_trans: bhanwano
     type:
-
       - intransitive
-
-# categories:
-
-#   -
-
-# topics:
-
-#   -
-
-# abc: abc   
 
 ---
 
 ## Verb
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to study
+2. to read
+3. to learn
+
+</word-meanings>
 
 ### Synonyms
 
-<syn :syn="synonyms" ></syn>
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+<word-synonyms :syns="['वाचणो']" ></word-synonyms>
 
 ### Translation
 
@@ -118,8 +49,3 @@ grammar:
 
 <verb-conj :grammar="grammar" ></verb-conj>
 
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

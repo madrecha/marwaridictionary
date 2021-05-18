@@ -2,26 +2,13 @@
 slugurl: चोपड़वाणो
 transliteration: chopadwano
 
-meanings:
-
-  - meaning: to apply
-
-synonyms:
-
-  - syn: लगवाणो
-
-    syn_trans: lagwano
-
 translations:
-
   - context:
-
     hi: लगवाना
     mr: 
 
 grammar:
   verb:
-
     term: चोपड़वा
     trans: chopadwa
     ending: aa
@@ -34,28 +21,19 @@ grammar:
       verb3: चोपड़वाणो
       verb3_trans: chopadwano
     type:
-
       - transitive
 
 ---
 
 ## Verb
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
-
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to cause someone to apply (something liquid like gum or ointment)
 
 ### Synonyms
 
-<syn :syn="synonyms" ></syn>
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+<word-synonyms :syns="['लगवाणो']" ></word-synonyms>
 
 ### Translation
 
@@ -65,8 +43,3 @@ grammar:
 
 <verb-conj :grammar="grammar" ></verb-conj>
 
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

@@ -5,103 +5,33 @@ transliteration: jaano
 grammar: 
   word: जाणो
   noun: 
-
     term: जा
     ending: o
     gender: m
 
   verb:
-
     term: जा
     gender: a
     trans: jaa
     ending: aa
     type: intransitive
 
-meanings:
+# synonyms: 
+#   - जाणो-परो
 
-  - meaning: to <span class="tw-text-blue-800">go</span>
-
-    examples: 
-
-      - eg: कटे जाई रो है?
-
-        en: Where are you going?
-
-      - eg: थारे कधी जाणो है?
-
-        en: When are you supposed to go?
-
-    antonyms:
-
-      - ant: आणो
-      - ant: वापिस आणो
-
-        slugurl: वापिस-आणो
-    related:
-
-      - rel: लाणो
-      - rel: लेई जाणो
-
-        slugurl: लेई-जाणो
-    translation: 
-
-      - context: to go
-
-        hi: जाना
-        mr: जाणे
-
-      - context: to die
-
-        hi: जाना
-        mr: जाणे
-
-  - meaning: to die
-
-    examples:
-
-      - eg: एक दन तो सब ने इस जाणो है।
-
-        en: One day everyone has to go.
-
-synonyms:
-
-  - syn: जाणो परो
-
-    slugurl: जाणो-परो
-    context: to go
-
-  - syn: एक और
-
-    slugurl: एक-और
-
-  - syn: oneword
-
-    context: to die
-
-antonyms:
-
-  - ant: आणो
-  - ant: वापिस आणो
-
-    slugurl: वापिस-आणो
+# antonyms:
+#   - आणो
+#   - वापिस-आणो
 
 related:
-
-  - rel: लाणो
-  - rel: लेई जाणो
-
-    slugurl: लेई-जाणो
+  - लाणो
+  - लेई-जाणो
 
 translation: 
-
   - context: to go
-
     hi: जाना
     mr: जाणे
-
   - context: to die
-
     hi: जाना
     mr: जाणे
 
@@ -111,21 +41,41 @@ translation:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>  
+<word-meanings>
 
-### Synonyms
+1. to go 🚶🏻‍♂️
+    
+    <word-eg>
+    <template #mwr>कटे <b>जाई रो है</b>?</template>
+    <template #mwrlatn>Kate jaayi ro hai?</template>
+    <template #en>Where are you going?</template>
+    </word-eg>
 
-<syn :syn="synonyms"></syn>
+    <word-eg>
+    <template #mwr>थारे कधी <b>जाणो</b> है?</template>
+    <template #mwrlatn>Thaare kadhi jaano hai?</template>
+    <template #en>When are you supposed to go?</template>
+    </word-eg>
 
-### Related
+    <word-antonyms :ants="['आणो']"></word-antonyms>
 
-<related :related="related"></related>
+2. to die 💀
+
+    <word-eg>
+    <template #mwr>एक दन तो सब ने ईस <b>जाणो</b> है।</template>
+    <template #mwrlatn>Ek dan toh sab ne is jaano hai.</template>
+    <template #en>One day, everyone has to go.</template>
+    </word-eg>
+
+    <word-synonyms :syns="['मरणो']"></word-synonyms>
+
+</word-meanings>
+
+## Translation
+
+<translation :translation="translation" ></translation> 
 
 ### Conjugation
 
 <verb-conj :grammar="grammar" ></verb-conj> 
 
-## Translation
-
-<translation :translation="translation" ></translation> 
- 

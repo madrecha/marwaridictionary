@@ -1,29 +1,17 @@
 ---
 slugurl: भगवान
-transliteration: bhagwaan
+transliteration: bhagwan
 transliteration_alt:
-
-  - bhagwan
-
-meanings: 
-
-  - meaning: God
-  - meaning: god, deity
-  - meaning: liberated or enlightened person
+  - bhagwaan
 
 translations:
-
   - context:
-
     hi: भगवान
     hi_trans: bhagwan
-    mr:
-    mr_trans:
 
 grammar:
   word: भगवान
   noun:
-
     ending: a
     term: भगवान
     trans: bhagwaan
@@ -31,7 +19,6 @@ grammar:
     number: s
 
 topics:
-
   - god
   - religion
 
@@ -41,16 +28,13 @@ topics:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. God
+2. god, deity
+3. liberated or enlightened person
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 

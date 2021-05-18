@@ -2,68 +2,15 @@
 slugurl: चूहो
 transliteration: chuho
 
-meanings:
-
-  - meaning: mouse
-  - meaning: rat 
-
-# examples:
-
-#   - eg:
-
-#     eg_trans: 
-
-#     en:
-
-#     hi:
-
-#   - eg:
-
-#     en:
-
-synonyms:
-
-  - syn: उंदरो
-
-    syn_trans: undaro
-
-# antonyms:
-
-#   - ant:
-
-#     slugurl:
-
-#     ant_trans: 
-
-# related:
-
-#   - rel:
-
-#     slugurl
-
-#     rel_trans: 
-
-# similar:
-
-#   - sim: 
-
-#     slugurl:
-
-#     sim_trans:
-
 translations:
-
   - context:
-
     hi: चूहा
     hi_trans: chuhaa
     mr:
     mr_trans:
-    
 
 grammar:
   noun:
-
     ending: o
     term: चूह
     trans: chuh
@@ -72,36 +19,27 @@ grammar:
     gender_f_trans: chuhi
     number: s
 
-# categories:
-
-#   -
-
 topics:
-
   - vermin
   - animal
-
-# abc: abc   
 
 ---
 
 ## Noun
 
-<!-- <fos :grammar="grammar" ></fos> -->
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. mouse
+2. rat
+
+</word-meanings>
 
 ### Synonyms
 
-<syn :syn="synonyms" ></syn>
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+<word-synonyms :syns="['उंदरो']" ></word-synonyms>
 
 ### Translation
 

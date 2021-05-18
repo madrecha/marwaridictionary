@@ -23,7 +23,7 @@ grammar:
 
 ### Synonyms
 
-<word-synonyms :syns="['फटकारणो', 'झिड़कणो']"></word-synonyms>
+<word-synonyms :syns="['बळडाणो', 'चिल्लाणो', 'फटकारणो', 'झिड़कणो']"></word-synonyms>
 
 ### Conjugation
 

@@ -12,25 +12,15 @@ grammar:
     gender: m
     number: s
 
-meanings: 
-
-  - meaning: house
-  - meaning: home
-  - meaning: flat
-
 synonyms:
-
-  - syn: घर
-  - syn: गृह
+  - घर
+  - गृह
 
 translation:
-
   - context: house, home
-
     hi: घर, गृह
 
 topics:
-
   - building
 
 ---
@@ -39,11 +29,17 @@ topics:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. house
+2. home
+3. flat; apartment
+
+</word-meanings>
 
 ### Synonym
 
-<syn :syn="synonyms" ></syn>
+<word-synonyms :syns="synonyms" ></word-synonyms>
 
 ### Translation
 

@@ -2,63 +2,10 @@
 slugurl: भूळणो
 transliteration: bhoolno
 transliteration_alt: 
-
   - bhulno
 
-meanings:
-
-  - meaning: to forget   
-
-# examples:
-
-#   - eg:
-
-#     eg_trans: 
-
-#     en:
-
-#     hi:
-
-#   - eg:
-
-#     en:
-
-# synonyms:
-
-#   - syn:
-
-#     slugurl:
-
-#     syn_trans: 
-
-# antonyms:
-
-#   - ant:
-
-#     slugurl:
-
-#     ant_trans: 
-
-# related:
-
-#   - rel:
-
-#     slugurl
-
-#     rel_trans: 
-
-# similar:
-
-#   - sim: 
-
-#     slugurl:
-
-#     sim_trans:
-
 translations:
-
   - context:
-
     hi: भूलना
     hi_trans: bhoolna
     mr:
@@ -66,7 +13,6 @@ translations:
 
 grammar:
   verb:
-
     term: भूळ
     trans: bhool
     ending: aa
@@ -79,18 +25,7 @@ grammar:
       verb3: भुळवाणो
       verb3_trans: bhulwano
     type:
-
       - intransitive
-
-# categories:
-
-#   -
-
-# topics:
-
-#   -
-
-# abc: abc   
 
 ---
 
@@ -98,16 +33,11 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to forget
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 
@@ -117,8 +47,3 @@ grammar:
 
 <verb-conj :grammar="grammar" ></verb-conj>
 
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

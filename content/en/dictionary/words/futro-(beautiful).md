@@ -4,7 +4,6 @@ slugurl: फुटरो
 
 grammar:
   adjective:
-
     term: फुटर
     trans: futar
     ending: o
@@ -14,7 +13,6 @@ grammar:
     number: s
 
   noun:
-
     term: फुटर
     trans: futar
     ending: o
@@ -23,53 +21,45 @@ grammar:
     gender_f_trans: futri
     number: s
 
-meanings:
-
-  - meaning: beautiful
-
-meanings_noun:
-
-  - meaning: beautiful person
-
 syns: 
-
-  - syn: हऊ
-  - syn: हाऊ
-  - syn: बढ़िया
+  - हऊ
+  - हाऊ
+  - बढ़िया
 
 related:
-
-  - rel: फुतरो
+  - फुतरो
 
 translations:
-
   - context: beautiful
-
     hi: खूबसूरत, सुंदर, बढ़िया, मस्त
 
-# topics: 
-
-#   -
 ---
 
 ## Adjective
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. beautiful
+
+</word-meanings>
+
+### Synonyms
+
+<word-synonyms :syns="syns"></word-synonyms>
 
 ## Noun
 
 ### Meaning
 
-<meaning :meanings="meanings_noun" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples"></eg> -->
+1. beautiful person
 
-### Related
+</word-meanings>
 
-<related :related="related"></related>
+
 
 ### Translation
 

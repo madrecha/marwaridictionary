@@ -1,52 +1,26 @@
 ---
-transliteration: taaro
 slugurl: तारो
-
-meanings:
-
-  - meaning: star  
-
-synonyms:
-
-  - syn: सितारो
-
-    syn_trans: sitaaro
+transliteration: taaro
 
 similar:
-
-  - sim: थारो
-
-    slugurl:
-    sim_trans: thaaro
+  - तारणो
 
 translations:
-
   - context:
-
     hi: तारा
-    hi_trans: taara
-    mr:
-    mr_trans:
-    
+    hi_trans: taara    
 
 grammar:
   noun:
-
     ending: a
     term: तार
     trans: taar
     gender: m
     number: s
 
-# categories:
-
-#   -
-
 topics:
-
   - astronomy
-
-# abc: abc   
+  - film
 
 ---
 
@@ -54,11 +28,18 @@ topics:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. star
+
+</word-meanings>
+
+<!-- ### Examples
+<word-eg></word-eg> -->
 
 ### Synonyms
 
-<syn :syn="synonyms" ></syn>
+<word-synonyms :syns="['सितारो']" ></word-synonyms>
 
 ### Translation
 
@@ -67,3 +48,4 @@ topics:
 ### Declension
 
 <noun-decl :grammar="grammar" ></noun-decl>
+

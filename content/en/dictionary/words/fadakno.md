@@ -1,11 +1,10 @@
 ---
-transliteration: fadakno
 slugurl: फदकणो
+transliteration: fadakno
 
 grammar: 
   word: फदकणो
   verb:
-
     term: फदक
     trans: fadak
     ending: a
@@ -16,30 +15,27 @@ grammar:
       verb2: फदकाणो
       verb3: फदकवाणो
 
-meanings:
-
-  - meaning: To jump excitedly
-  - meaning: To be enthusiastic
-
-examples: 
-
-  - eg: रिजल्ट देखते इन वो खुशी रा मारे फदकवा लागी ग्यो।
-
-    en: As soon as he saw the result, he started jumping excitedly.
-    hi: रिजल्ट देखते ही वो खुुशी के मारे फुदकने लग गया।
-    mr: रिजल्ट बघताच तो हर्षाने उड्या मारू लागला.
-
 ---
 
 ## Verb
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. to jump excitedly
+2. to be enthusiastic
+
+</word-meanings>
 
 ### Examples
 
-<eg :eg="examples" ></eg>
+1. <word-eg>
+    <template #mwr>रिजल्ट देखते इन वो खुशी रा मारे <b>फदकवा</b> लागी ग्यो।</template>
+    <template #mwrlatn>Result dekhte in voh khushi raa maare fadakvaa laagi gyo.</template>
+    <template #en>As soon as he saw the result, he started jumping excitedly.</template>
+    <template #hi>रिजल्ट देखते ही वो खुुशी के मारे फुदकने लग गया।</template>
+    <template #mr>रिजल्ट बघताच तो हर्षाने उड्या मारू लागला.</template>
 
 ### Usage 
 

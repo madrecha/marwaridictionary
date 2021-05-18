@@ -2,22 +2,16 @@
 slugurl: साणो
 transliteration: saano
 
-meanings:
-
-  - meaning: to want
-
 translations:
-
   - context:
-
     hi: चाहना
 
 grammar:
   verb:
-
     term: सा
     trans: saa
     ending: aa
+    term2: साई
     causative:
       self:
       verb1:
@@ -27,27 +21,19 @@ grammar:
       verb3:
       verb3_trans:
     type:
-
       - transitive
 
 ---
 
 ## Verb
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to want
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 
@@ -55,10 +41,5 @@ grammar:
 
 ### Conjugation
 
-<verb-conj :grammar="grammar" ></verb-conj>
-
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->
+<verb-conj :grammar="grammar" :perfective="false"></verb-conj>
+<!-- "perfective" set to false as it is rendering incorrectly for verb saano. -->

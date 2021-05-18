@@ -2,101 +2,45 @@
 slugurl: देवरो
 transliteration: devro
 
-meanings:
-
-  - meaning: small temple or local abode of deity  
-
-# examples:
-
-#   - eg:
-
-#     eg_trans: 
-
-#     en:
-
-#     hi:
-
-#   - eg:
-
-#     en:
-
-synonyms:
-
-  - syn: मंदर 
-
-    syn_trans: mandar
-
-# antonyms:
-
-#   - ant:
-
-#     slugurl:
-
-#     ant_trans: 
-
-# related:
-
-#   - rel:
-
-#     slugurl
-
-#     rel_trans: 
+syns:
+  - मंदर
+  - मंदिर
 
 similar:
-
-  - sim: देवर
-
-    sim_trans: devar
+  - देवर
 
 translations:
-
   - context:
-
     hi: देवरा
     hi_trans: devraa
-    mr:
-    mr_trans:
-    
 
 grammar:
   noun:
-
     ending: o
     term: देवर
     trans: devr
     gender: m
     number: s
 
-# categories:
-
-#   -
-
 topics:
-
   - religion
   - building
-
-# abc: abc   
 
 ---
 
 ## Noun
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. small temple or local abode of deity  
+
+</word-meanings>
 
 ### Synonyms
 
-<syn :syn="synonyms" ></syn>
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+<word-synonyms :syns="syns" ></word-synonyms>
 
 ### Translation
 
@@ -105,9 +49,3 @@ topics:
 ### Declension
 
 <noun-decl :grammar="grammar" ></noun-decl>
-
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

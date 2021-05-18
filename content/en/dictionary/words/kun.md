@@ -2,27 +2,8 @@
 slugurl: कुण
 transliteration: kun
 
-meanings:
-
-  - meaning: who
-  - meaning: whom
-
-examples:
-
-  - eg: कुण है वो?
-
-    en: Who is he?
-    hi: कौन है वह?
-
-  - eg: कुण कुण आई रा हैं?
-
-    en: Who all are coming?
-    hi: कौन-कौन आ रहे हैं?
-
 translations:
-
   - context:
-
     hi: कौन
     hi_trans: kaun
     mr: कोण
@@ -30,24 +11,38 @@ translations:
 
 grammar:
   pronoun:
-
     type: interrogative
 
-topics:
-
-  - ask
-
+categories:
+  - question
 ---
 
 ## Pronoun
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. who
+2. whom
+
+</word-meanings>
 
 ### Examples
 
-<eg :eg="examples" ></eg>
+1. <word-eg>
+    <template #mwr><b>कुण</b> है वो?</template>
+    <template #mwrlatn>Kun hai voh?</template>
+    <template #en>Who is he?</template>
+    <template #hi>कौन है वह?</template>
+    </word-eg>
+  
+2. <word-eg> 
+    <template #mwr><b>कुण-कुण</b> आई रा हैं?</template>
+    <template #mwrlatn>Kun-kun aayi raa hain?</template>
+    <template #en>Who all are coming?</template>
+    <template #hi>कौन-कौन आ रहे हैं?</template>
+    </word-eg>
 
 ### Translation
 

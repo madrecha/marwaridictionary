@@ -2,29 +2,18 @@
 slugurl: अणजान
 transliteration: anjaan
 
-related:
-
-  - rel: अणजाण्यो
-
-    rel_trans: anjaanyo
-
 translations:
-
   - context:
-
     hi: अनजान
     hi_trans: anjaan
 
 translations_noun:
-
   - context:
-
     hi: अनजान
     hi_trans: anjaan
 
 grammar:
   adjective:
-
     ending: a
     term: अणजान
     trans: anjaan
@@ -34,7 +23,6 @@ grammar:
     number: s
 
   noun:
-
     ending: a
     term: अणजान
     trans: anjaan
@@ -71,6 +59,10 @@ grammar:
 
 </word-meanings>
 
+### Synonyms
+
+<word-synonyms :syns="['अणजाण्यो']"></word-synonyms>
+
 ### Translation
 
 <translation :translation="translations_noun" ></translation>
@@ -79,6 +71,3 @@ grammar:
 
 <noun-decl :grammar="grammar" ></noun-decl>
 
-### Related
-
-<related :related="related" ></related>

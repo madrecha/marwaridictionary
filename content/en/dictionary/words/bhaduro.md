@@ -2,20 +2,13 @@
 slugurl: भडूरो
 transliteration: bhaduro
 
-meanings:
-
-  - meaning: pig
-
 translations:
-
   - context:
-
     hi: सूअर
 
 grammar: 
   word: भडूरो
   noun:
-
     ending: o
     term: भडूर
     trans: bhadur
@@ -25,7 +18,6 @@ grammar:
     number: s
 
 topics:
-
   - animal
 
 ---
@@ -34,16 +26,12 @@ topics:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. pig; swine
+2. lazy person
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 

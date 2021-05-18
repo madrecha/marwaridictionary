@@ -2,20 +2,8 @@
 slugurl: होड़े
 transliteration: hode
 
-meanings:
-
-  - meaning: near
-
-antonyms:
-
-  - ant: छेटी
-
-    ant_trans: chheti
-
 translations:
-
   - context:
-
     hi: पास, नज़दीक
 
 grammar:
@@ -25,16 +13,19 @@ grammar:
 
 ## Adverb
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. near
+
+</word-meanings>
 
 ### Antonyms
 
-<ant :ant="antonyms" ></ant>
+<word-antonyms :ants="['छेटी']" ></word-antonyms>
 
 ### Translation
 
 <translation :translation="translations" ></translation>
+

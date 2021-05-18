@@ -2,74 +2,13 @@
 slugurl: भणवाणो
 transliteration: bhanwano
 
-meanings:
-
-  - meaning: to cause to study
-  - meaning: to cause to read
-  - meaning: to cause to learn  
-  - meaning: to cause to teach
-
-# examples:
-
-#   - eg:
-
-#     eg_trans: 
-
-#     en:
-
-#     hi:
-
-#   - eg:
-
-#     en:
-
-synonyms:
-
-  - syn: वंचवाणो
-
-    syn_trans: vanchwano
-
-  - syn: हिकवाणो
-
-    syn_trans: hikwano
-
-# antonyms:
-
-#   - ant:
-
-#     slugurl:
-
-#     ant_trans: 
-
-# related:
-
-#   - rel:
-
-#     slugurl
-
-#     rel_trans: 
-
-# similar:
-
-#   - sim: 
-
-#     slugurl:
-
-#     sim_trans:
-
 translations:
-
   - context:
-
     hi: पढ़वाना
-    hi_trans: padhwana
-    mr:
-    mr_trans:
-    
+    hi_trans: padhwana    
 
 grammar:
   verb:
-
     term: भणवा
     trans: bhanwa
     ending: aa
@@ -82,38 +21,22 @@ grammar:
       verb3: भणवाणो
       verb3_trans: bhanwano
     type:
-
       - transitive
-
-# categories:
-
-#   -
-
-# topics:
-
-#   -
-
-# abc: abc   
 
 ---
 
 ## Verb
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to cause to study or read
+    <word-synonyms :syns="['वंचवाणो']"></word-synonyms>  
+2. to cause to learn or teach
+    <word-synonyms :syns="['हिकाणो']"></word-synonyms>  
 
-### Synonyms
-
-<syn :syn="synonyms" ></syn>
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 
@@ -123,8 +46,3 @@ grammar:
 
 <verb-conj :grammar="grammar" ></verb-conj>
 
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

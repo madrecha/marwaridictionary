@@ -2,67 +2,26 @@
 slugurl: हमजणो
 transliteration: hamajno
 
-meanings_adjective:
-
-  - meaning: understanding
-  - meaning: practical
-
- 
-meanings_noun:
-
-  - meaning: understanding person
-  - meaning: practical person
-
-meanings_verb:
-
-  - meaning: to understand
-  - meaning: to comprehend
-  - meaning: to realise something
-
-synonyms_verb:
-
-  - syn: ठा पड़णो
-
-    slugurl: ठा-पड़णो
-    syn_trans: tha padno
-
 similar:
-
-  - sim: हजम करणो
-
-    sim_trans: hajam karno
-    slugurl: हजम-करणो
+  - हजमणो
 
 translations_adjective:
-
   - context:
-
     hi: समझदार
     hi_trans: samajhdaar
-    mr:
-    mr_trans:
 
 translations_noun:
-
   - context:
-
     hi: समझदार
     hi_trans: samajhdaar
-    mr:
-    mr_trans:
 
 translations_verb:
-
   - context:
-
     hi: समझना
     hi_trans: samajhna
-    mr:
-    mr_trans:
 
 grammar:
   adjective:
-
     ending: o
     term: हमजण
     trans: hamajn
@@ -72,7 +31,6 @@ grammar:
     number: s
 
   verb:
-
     term: हमज
     trans: hamj
     ending: a
@@ -85,10 +43,7 @@ grammar:
       verb3: हमजवाणो
       verb3_trans: hamajvano
     type:
-
       - transitive
-
-# abc: abc   
 
 ---
 
@@ -96,7 +51,12 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings_adjective" ></meaning>
+<word-meanings>
+
+1. understanding
+2. practical
+
+</word-meanings>
 
 ### Translation
 
@@ -106,7 +66,12 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings_noun" ></meaning>
+<word-meanings>
+
+1. understanding person
+2. practical person
+
+</word-meanings>
 
 ### Translation
 
@@ -116,11 +81,17 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings_verb" ></meaning>
+<word-meanings>
+
+1. to understand
+2. to comprehend
+3. to realise something
+
+</word-meanings>
 
 ### Synonyms
 
-<syn :syn="synonyms_verb" ></syn>
+<word-synonyms :syns="['ठा-पड़णो']"></word-synonyms>
 
 ### Translation
 

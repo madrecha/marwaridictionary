@@ -23,7 +23,7 @@ grammar:
 
 ### Synonyms
 
-<word-synonyms :syns="['धाकळणो', 'झिड़कणो']"></word-synonyms>
+<word-synonyms :syns="['बळडाणो', 'धाकळणो', 'चिल्लाणो', 'झिड़कणो']"></word-synonyms>
 
 ### Conjugation
 

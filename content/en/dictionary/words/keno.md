@@ -2,104 +2,39 @@
 slugurl: केणो
 transliteration: keno
 
-meanings:
-
-  - meaning: to tell
-  - meaning: to expose
-  - meaning: to say; to speak
-
-# examples:
-
-#   - eg:
-
-#     eg_trans: 
-
-#     en:
-
-#     hi:
-
-#   - eg:
-
-#     en:
-
-synonyms:
-
-  - syn: बोलणो
-
-    syn_trans: bolno
-
-# antonyms:
-
-#   - ant:
-
-#     slugurl:
-
-#     ant_trans: 
-
-# related:
-
-#   - rel:
-
-#     slugurl
-
-#     rel_trans: 
-
-# similar:
-
-#   - sim: 
-
-#     slugurl:
-
-#     sim_trans:
-
 grammar:
   verb:
-
+    ending: ae
     term: के
     trans: ke
-    ending: ae
+    term2: क
+    trans2: k
 
 translations:
-
   - context:
-
     hi: कहना
     hi_trans: kehna
     mr: सांगणे
     mr_trans: saangne
 
-topics:
-  - 
-
 ---
 
 ## Verb
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to tell
+2. to say
+3. to speak
+
+</word-meanings>
 
 ### Synonyms
 
-<syn :syn="synonyms" ></syn>
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+<word-synonyms :syns="['बोलणो']" ></word-synonyms>
 
 ### Translation
 
 <translation :translation="translations" ></translation>
-
-<!-- ### Conjugation
-<verb-conj :grammar="grammar" ></verb-conj> -->
-
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

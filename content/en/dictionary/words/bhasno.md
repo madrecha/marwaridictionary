@@ -2,55 +2,33 @@
 slugurl: भसणो
 transliteration: bhasno
 
-meanings:
-
-  - meaning: to bark
-  - meaning: to scream; to shout
-
 translations:
-
   - context:
-
     hi: भौंकना
 
 grammar:
   verb:
-
     term: भस
     trans: bhas
     ending: a
     type:
-
       - intransitive
 
-# categories:
-
-#   -
-
 topics:
-
   - animal-voice
-
-# abc: abc   
 
 ---
 
 ## Verb
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to bark
+2. to shout; to scream
 
-<!-- ### Synonyms
-<syn :syn="synonyms" ></syn> -->
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
+</word-meanings>
 
 ### Translation
 
@@ -60,8 +38,3 @@ topics:
 
 <verb-conj :grammar="grammar" ></verb-conj>
 
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

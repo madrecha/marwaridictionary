@@ -1,5 +1,5 @@
 ---
-slugurl: चिल्लाणो
+slugurl: बळडाणो
 transliteration: chillaano
 
 translations:
@@ -11,8 +11,8 @@ translations:
 
 grammar: 
   verb:
-    term: चिल्ला
-    trans: chillaa
+    term: बळडा
+    trans: baldaa
     ending: aa
 
 ---
@@ -29,7 +29,7 @@ grammar:
 
 ### Synonyms
 
-<word-synonyms :syns="['बळडाणो', 'धाकळणो', 'फटकारणो', 'झिड़कणो']" ></word-synonyms>
+<word-synonyms :syns="['चिल्लाणो', 'धाकळणो', 'फटकारणो', 'झिड़कणो']" ></word-synonyms>
 
 ### Translation
 

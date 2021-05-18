@@ -4,21 +4,13 @@ transliteration: taadno
 
 grammar: 
   verb:
-
     term: ताड़
     trans: taad
     ending: a
 
-meanings:
-
-  - meaning: to ogle
-  - meaning: to stare continuously
-
 categories:
-
   - informal
   - slang
-
   
 ---
 
@@ -26,7 +18,16 @@ categories:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
+
+1. to ogle
+2. to stare; to gaze
+
+</word-meanings>
+
+### Synonyms
+
+<word-synonyms :syns="['ताकणो']"></word-synonyms>
 
 ### Conjugation
 

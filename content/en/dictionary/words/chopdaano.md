@@ -2,26 +2,12 @@
 slugurl: चोपड़ाणो
 transliteration: chopdaano
 
-meanings:
-
-  - meaning: to apply
-
-synonyms:
-
-  - syn: लगाणो
-
-    syn_trans: lagaano
-
 translations:
-
   - context:
-
     hi: लगाना
-    mr: 
 
 grammar:
   verb:
-
     term: चोपड़ा
     trans: chopdaa
     ending: aa
@@ -32,9 +18,8 @@ grammar:
       verb2: चोपड़ाणो
       verb2_trans: chopdaano
       verb3: चोपड़वाणो
-      verb3_trans: chopadwano
+      verb3_trans: chopadwaano
     type:
-
       - transitive
 
 ---
@@ -45,18 +30,13 @@ grammar:
 
 ### Meaning
 
-<meaning :meanings="meanings" ></meaning>
+<word-meanings>
 
-<!-- ### Examples
-<eg :eg="examples" ></eg> -->
+1. to cause someone to apply (something liquid like oil or ointment)
 
 ### Synonyms
 
-<syn :syn="synonyms" ></syn>
-
-<!-- ### Antonyms
-<ant :ant="antonyms" ></ant> -->
-
+<word-synonyms :syns="['लगाणो']" ></word-synonyms>
 ### Translation
 
 <translation :translation="translations" ></translation>
@@ -64,9 +44,3 @@ grammar:
 ### Conjugation
 
 <verb-conj :grammar="grammar" ></verb-conj>
-
-<!-- ### Related
-<related :related="related" ></related> -->
-
-<!-- ### Similar
-<similar :similar="similar" ></similar> -->

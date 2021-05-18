@@ -2,9 +2,13 @@
 slugurl: बेणो
 transliteration: beno
  
-meanings:
-
-  - meaning: to sit
+grammar:
+  verb:
+    ending: ae
+    term: बे
+    trans: be
+    term2: ब
+    trans2: b
 
 ---
 
@@ -12,4 +16,12 @@ meanings:
 
 ### Meaning
 
-<meanings :meanings="meanings"></meanings>
+<word-meanings>
+
+1. to sit
+
+</word-meanings>
+
+### Conjugation
+
+<verb-conj :grammar="grammar"></verb-conj>
