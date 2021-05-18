@@ -4,7 +4,6 @@ transliteration: vadaarno
 
 grammar:
   verb:
-
     term: वदार
     trans: vadaar
     ending: a
@@ -17,18 +16,7 @@ grammar:
       verb3:
       verb3_trans:
     type:
-
       - transitive
-
-# categories:
-
-#   -
-
-# topics:
-
-#   -
-
-# abc: abc   
 
 ---
 

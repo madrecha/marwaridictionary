@@ -2,7 +2,6 @@
 slugurl: वगड़वाणो
 transliteration: vagadwano
 transliteration_alt: 
-
   - wagadvaano
   - wagadvano
   - wagadwano
@@ -10,18 +9,12 @@ transliteration_alt:
   - vagadwaano
 
 translations:
-
   - context:
-
     hi: बिगड़वाना
-    hi_trans: bigadwana
-    mr:
-    mr_trans:
-    
+    hi_trans: bigadwana   
 
 grammar:
   verb:
-
     term: वगड़वा
     trans: vagaadwa
     ending: aa
@@ -34,7 +27,6 @@ grammar:
       verb3: वगड़वाणो
       verb3_trans: vagadwano
     type:
-
       - transitive
 
 # abc: abc   
@@ -47,7 +39,11 @@ grammar:
 
 ### Meaning
 
+<word-meanings>
+
 1. to cause some 3rd person thing to worsen by someone
+
+</word-meanings>
 
 ### Translation
 

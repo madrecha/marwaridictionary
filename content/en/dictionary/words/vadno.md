@@ -20,8 +20,32 @@ grammar:
 
 ### Meaning
 
+<word-meanings>
+
 1. to grow
 2. to increase
+
+</word-meanings>
+
+### Examples
+
+1. <word-eg>
+    <template #mwr>
+    
+    म्यूचूअल फंड में अबे ऊस पैसा नाकणो शुरू कर दे, जदी जाईन वे कई गुणा <b>वदी</b>। 
+
+    </template>
+    <template #mwrlatn>
+    
+    Mutual Fund mein abe us paisa naakno shuru kar de, jadi jaayin ve kai gunaa vadi.
+    
+    </template>
+    <template #en>
+    
+    Start investing money in Mutual Fund from now itself; then only it grow manifold.
+    
+    </template>
+    </word-eg>
 
 ### Conjugation
 
