@@ -1,0 +1,48 @@
+// table
+  // @apply tw-border tw-border-pink-800 tw-border-collapse
+caption
+  @apply tw-text-green-600
+th
+  @apply tw-text-sm md:tw-text-lg tw-font-medium
+  @apply tw-py-2 tw-px-3
+  @apply tw-border tw-border-blue-800
+tr
+  @apply hover:tw-bg-white
+td
+  @apply tw-border tw-border-blue-800
+  @apply tw-py-2 tw-px-3
+  &:not([class*="gender"])
+    @apply hover:tw-bg-purple-50 hover:tw-shadow-md hover:tw-scale-110 tw-transform tw-transition-all
+
+.row-verb-number > th
+  @apply tw-text-center
+
+.row-person
+  &-en > th
+    @apply tw-text-center
+  &-mwr > th
+    @apply tw-text-center
+
+.verb-category // Perfective, Imperfective, Continuous, Non-aspectual
+  @apply tw-bg-gradient-to-b tw-from-white tw-to-yellow-50
+  @apply tw-text-yellow-800 tw-text-center
+  @apply tw-cursor-pointer hover:tw-shadow-lg hover:tw--translate-y-0.5 tw-transform tw-transition-all
+  &--type
+    @apply tw-bg-gradient-to-b tw-from-white tw-to-green-50
+    @apply tw-text-blue-900 tw-text-sm
+
+.gender
+  @apply even:tw-bg-blue-50 odd:tw-bg-pink-50
+  & > abbr[title*="feminine"]
+    @apply tw-text-xs md:tw-text-base
+    // &::before
+    //   content: " 👩🏻"
+  & > abbr[title*="masculine"]
+    @apply tw-text-xs md:tw-text-base
+    // &::before
+    //   content: " 👨🏻"
+
+span[lang="mwr-Deva"]
+  @apply tw-text-base md:tw-text-xl
+span[lang="mwr-Latn"]
+  @apply tw-text-xs md:tw-text-base tw-text-gray-500
