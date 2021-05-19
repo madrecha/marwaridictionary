@@ -2,7 +2,7 @@
   <!-- e.g. भगाणो (to cause to run), जिमाणो (to feed) -->
   <div class="verb-conj-wrapper-div">
     <table>
-      <caption>Marwari conjugation of verb → <span lang="mwr-Deva">{{ term }}णो</span> (<span lang="mwr-Latn">{{ trans }}ṇo</span>)
+      <caption>Marwari conjugation of verb → <span lang="mwr-Deva">{{ term }}णो</span> <span lang="mwr-Latn">({{ trans }}ṇo)</span>
         <div>
           <!-- <b-button @click="toggleAll = !toggleAll">{{toggleAll ? `Close` : `Open`}} all</b-button> -->
           <b-button
