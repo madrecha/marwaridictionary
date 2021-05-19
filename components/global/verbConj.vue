@@ -1,6 +1,13 @@
 <template>
-  <div>
-    <VerbConjEndingA
+  <component
+    :is="componentPicker"
+    :term="grammar.verb.term"
+    :trans="grammar.verb.trans"
+    :term2="grammar.verb.term2 ? grammar.verb.term2 : null"
+    :trans2="grammar.verb.trans2 ? grammar.verb.trans2 : null"
+    :verbCategories="verbCategories"
+  ></component>
+  <!-- <VerbConjEndingA
       v-if="grammar.verb.ending === 'a'"
       :term="grammar.verb.term"
       :trans="grammar.verb.trans"
@@ -19,8 +26,7 @@
       :term2="grammar.verb.term2"
       :trans2="grammar.verb.trans2"
       :verbCategories="verbCategories"
-    ></VerbConjEndingAe>
-  </div>
+    ></VerbConjEndingAe> -->
 </template>
 
 <script>
@@ -52,6 +58,18 @@ export default {
         showContinuous: this.continuous,
         showNonaspectual: this.nonaspectual
       };
+    },
+    componentPicker() {
+      let ending = this.grammar.verb.ending;
+      if (ending === "a") {
+        return `VerbConjEndingA`;
+      }
+      if (ending === "aa") {
+        return `VerbConjEndingAa`;
+      }
+      if (ending === "ae") {
+        return `VerbConjEndingAe`;
+      }
     }
   }
 };
