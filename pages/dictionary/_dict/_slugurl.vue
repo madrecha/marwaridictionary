@@ -17,9 +17,9 @@
       </p>
     </div>
     <div v-else>
-      <!-- <aside class="tw-hidden md:tw-block md:tw-w-1/6 md:tw-bg-gray-50">
-        <div class="tw-sticky tw-top-12"></div>
-      </aside> -->
+      <aside class="tw-hidden md:tw-block md:tw-w-1/6 md:tw-bg-gray-50">
+        <div class="tw-sticky tw-top-12">hello</div>
+      </aside>
       <article class="tw-mt-3">
         <div class="tw-text-center">
           <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">
