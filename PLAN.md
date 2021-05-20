@@ -43,6 +43,31 @@ Now, let us see in detail each page.
 
 ### 2.1. Dictionary 🧾
 
+[marwari.info](https://marwari.info) is not only a dictionary, but will also contain blog, learning section, etc. 
+
+So, there needs to be a `dictionary` page to demarcate it from the rest of the website and inside which there will be definitions.
+
+#### 2.1.1. Dictionary index page
+
+It should contain list of all dictionaries that will be available on the website. 
+
+Examples:
+1. **marwari** (i.e. normal monolingual dictionary which is not yet planned)
+2. **marwari-english** (i.e. bilingual dictionary which is currently being made. Also, it is the most easy to make for majority of native speakers)
+3. **english-marwari** (i.e. bilingual dictionary, which again can be made easily from Oxford 3000 essential words.)
+4. **marwari-hindi**, 
+5. **marwari-marathi**, 
+6. **marwari-gujarati**, 
+7. **marwari-tamil**, etc.
+
+In long-term, there can also be dictionaries for specific dialects like:
+1. **mewadi**
+2. **gorwari**, etc.
+
+In short, there is a need for index page of Dictionary. ✅
+
+#### 2.1.2. Dictionary type
+
 <details>
 
 <summary>Types of Dictionaries we plan to have 😃</summary>
@@ -77,33 +102,16 @@ Now, let us see in detail each page.
 
 </details>
 
-#### 2.1.1. Dictionary 
 
-[marwari.info](https://marwari.info) is not only a dictionary, but will also contain blog, learning section, etc. 
+From current URL structure of `/dictionary/word/<word>`, there is a need to change it to
+`/dictionary/<dictionary-type>/<word>`
 
-So, there needs to be a `dictionary` page to demarcate it from the rest of the website and inside which there will be definitions.
-
-##### 2.1.1.1. Dictionary index page
-
-It should contain list of all dictionaries that will be available on the website. 
-
-Examples:
-1. **marwari** (i.e. normal monolingual dictionary which is not yet planned)
-2. **marwari-english** (i.e. bilingual dictionary which is currently being made. Also, it is the most easy to make for majority of native speakers)
-3. **english-marwari** (i.e. bilingual dictionary, which again can be made easily from Oxford 3000 essential words.)
-4. **marwari-hindi**, 
-5. **marwari-marathi**, 
-6. **marwari-gujarati**, 
-7. **marwari-tamil**, etc.
-
-In long-term, there can also be dictionaries for specific dialects like:
-1. **mewadi**
-2. **gorwari**, etc.
-
-In short, there is a need for index page of Dictionary. ✅
+1. A new nesting of `<dictionary-type>` is needed, as in future, we may create more dictionaries. (see above Types of Dictionaries)
 
 
-##### 2.1.1.2. Word
+**Note**: Even ahead of the actual word, there can be further URL, e.g. `/dictionary/<dictionary-type>/<word>/citations`. But this is not yet planned.
+
+##### 2.1.2.1. Word
 
 Currently, the URL structure of each word post is: `/dictionary/word/<word>`
 
@@ -117,17 +125,8 @@ So, it has:
 
 Each word is dynamically generated based on markdown file. 
 
-##### 2.1.1.3. Definition
+To know what should be displayed on each word post, see below Layout heading.
 
-From current URL structure of `/dictionary/word/<word>`, there is a need to change it to
-`/dictionary/<dictionary-type>/definition/<word>`
-
-1. A new nesting of `<dictionary-type>` is needed, as in future, we may create more dictionaries. (see above Types of Dictionaries)
-
-2. Currently used static "word" should be replaced with should be "definition".
-   1. The **definition** index page may redirect to dictionary-type index page.
-
-**Note**: Even ahead of the actual word, there can be further URL, e.g. `/dictionary/<dictionary-type>/definition/<word>/citations`. But this is not yet planned.
 
 ### 2.2. Topic 🏷
 
@@ -382,7 +381,7 @@ These will form the **Next** and **Previous** words. They will be fetched based 
 These will be 3 words, with 2 words surrounding the current word.
 
 
-## Contributions 👨‍👩‍👧‍👦
+## 4. Contributions 👨‍👩‍👧‍👦
 
 Contributions are most welcome. 
 
