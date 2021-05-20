@@ -10,11 +10,7 @@
     </article>
     <article class="tw-mt-2">
       <section class="tw-text-center">
-        <h1 class="tw-text-2xl tw-text-pink-900 tw-font-medium">
-          <span class="tw-rounded-full tw-border tw-border-pink-800 tw-p-2 tw-shadow-md">
-            {{ words.length }}</span>
-          Marwari words in Dictionary
-        </h1>
+        <h1>Browse Marwari-English Dictionary with {{ words.length }} Marwari words</h1>
         <p class="tw-mt-3 md:tw-mt-5 tw-text-gray-800 tw-text-sm">
           {{ nouns.length }} nouns, {{ verbs.length }} verbs,
           {{ words.length - nouns.length - verbs.length }} others =

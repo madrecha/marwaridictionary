@@ -21,7 +21,7 @@
       </div>
       <div class="tw--mt-5">
         <nuxt-link
-          :to="`/${$i18n.locale}/dictionary/word/`"
+          :to="`/${$i18n.locale}/browse/`"
           class="tw-p-6 tw-rounded-xl tw-text-white tw-font-medium tw-bg-gradient-to-br tw-from-pink-500 tw-to-pink-700 hover:tw-from-white hover:tw-to-pink-100 tw-shadow-xl twnp-border-t-2 hover:tw-border-pink-200 hover:tw-text-pink-800 tw-text-xl"
         >Browse Marwari Words</nuxt-link>
       </div>
