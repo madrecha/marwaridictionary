@@ -1,14 +1,13 @@
 <template>
   <div>
-    <div class="tw-text-center">
-      <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">Topics</h1>
-      <p class="tw-mt-3">
-        {{ uniquetopics.length }} topics added {{ alltopics.length }} times till
-        now
-      </p>
-    </div>
-    <!-- OLD CODE (CAN DELETE LATER) -->
-    <!-- <ol>
+    <article class="article-post">
+      <header class="article-post_header">
+        <h1 class="article-post_header--h1">Topics</h1>
+        <p class="article-post_header--description">Topics are collections of words related to similar subject areas.</p>
+      </header>
+
+      <!-- OLD CODE (CAN DELETE LATER) -->
+      <!-- <ol>
       <li v-for="(topic, i) in topics" :key="i">
         <nuxt-link
           :to="`/topic/${topic.url.slugurl}`"
@@ -27,30 +26,32 @@
         </ol>
       </li>
     </ol> -->
-    <div class="tw-mt-3 tw-max-w-5xl tw-mx-auto">
-      <ol class="tw-list-decimal tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-1 lg:tw-gap-3 tw-p-2">
-        <li
-          v-for="uniquetopic in uniquetopics"
-          :key="uniquetopic"
-          class="tw-m-4"
-        >
-          <nuxt-link
-            :to="`/${$i18n.locale}/dictionary/topic/${uniquetopic}/`"
-            class="tw-p-1 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50 tw-leading-relaxed"
+      <section class="tw-mt-3 tw-max-w-5xl tw-mx-auto">
+        <p class="tw-text-center">
+          <span class="tw-font-medium">{{ uniquetopics.length }}</span>
+          topics added
+          <span class="tw-font-medium">{{ alltopics.length }}</span>
+          times till now
+        </p>
+        <ol class="tw-list-decimal tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-1 lg:tw-gap-3 tw-p-2 nuxt-content">
+          <li
+            v-for="uniquetopic in uniquetopics"
+            :key="uniquetopic"
+            class="tw-m-4"
           >
-            {{ uniquetopic }} ({{ getWordsByTopic(alltopics, uniquetopic) }}
-            words)
-          </nuxt-link>
-        </li>
-      </ol>
-    </div>
+            <nuxt-link :to="`/${$i18n.locale}/topic/${uniquetopic}/`">
+              {{ uniquetopic }}
+            </nuxt-link> <br><span class="tw-italic tw-text-sm">({{ getWordsByTopic(alltopics, uniquetopic) }} words)</span>
+          </li>
+        </ol>
+      </section>
+    </article>
   </div>
 </template>
 
 <script>
-import _ from "lodash";
-
 export default {
+  name: "TopicIndexPage",
   data() {
     return {
       // topics: [],
@@ -61,11 +62,14 @@ export default {
   },
   async fetch() {
     // this.topics = await this.$content("topics").sortBy("slug").fetch();
-    this.words = await this.$content(`${this.$i18n.locale}/dictionary`, {
-      deep: true
-    })
+    this.words = await this.$content("dictionary", { deep: true })
       .where({
-        $and: [{ dir: `/${this.$i18n.locale}/dictionary/words` }]
+        $and: [
+          { slug: { $ne: "AAA" } },
+          {
+            dir: `/dictionary/marwari-english` // currently, marwari-english dictionary has more words, so fetching it from there.
+          }
+        ]
       })
       .without(["body", "toc"])
       .sortBy(["slug"])
@@ -81,7 +85,8 @@ export default {
       }
     }
 
-    this.uniquetopics = _.uniq(this.alltopics).sort();
+    this.uniquetopics = [...new Set(this.alltopics)];
+    this.uniquetopics = this.uniquetopics.sort();
 
     // this.uniquetopics = this.alltopics
     //   .reduce(function (a, b) {

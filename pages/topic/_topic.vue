@@ -1,51 +1,50 @@
 <template>
   <div>
-    <div class="tw-text-center">
-      <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">
+    <header class="article-post_header">
+      <h1 class="article-post_header--h1">
         {{ words.length }} Marwari words about {{ $route.params.topic }}
       </h1>
-      <p class="tw-mt-2">
+      <p class="article-post_header--description">
         List of <b>{{ $route.params.topic }}</b> in Marwari
       </p>
-      <div class="tw-mt-2">
-        <nuxt-link
-          :to="`/${$i18n.locale}/dictionary/topic/`"
-          class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
-        >Go back to Topics</nuxt-link>
-      </div>
+    </header>
+    <div class="nuxt-content tw-text-center">
+      <nuxt-link
+        :to="`/${$i18n.locale}/topic/`"
+        class="tw-inline-block tw-mt-3 "
+      >Go back to Topics</nuxt-link>
     </div>
-    <div
+    <section
       v-for="(topic, i) in topics"
       :key="i"
+      class="nuxt-content"
     >
+      <h2>Breadcrumbs</h2>
       <div v-if="topic.parents && topic.parents.length > 0">
         <div
           v-for="parent in topic.parents"
           :key="parent"
+          class="tw-mt-3"
         >
-          <nuxt-link :to="`/${$i18n.locale}/dictionary/topic/`">Topic</nuxt-link> →
-          <nuxt-link :to="`/${$i18n.locale}/dictionary/topic/${parent}/`">{{
-            parent
-          }}</nuxt-link>
-          →
-          {{ $route.params.topic }}
+          <nuxt-link :to="`/${$i18n.locale}/topic/`">Topic</nuxt-link> →
+          <nuxt-link :to="`/${$i18n.locale}/topic/${parent}/`">{{parent}}</nuxt-link>
+          → {{ $route.params.topic }}
         </div>
       </div>
       <ol v-if="topic.children && topic.children.length > 0">
+        <h3>Children categories</h3>
         <li
           v-for="child in topic.children"
           :key="child"
         >
-          <nuxt-link
-            :to="`/${$i18n.locale}/dictionary/topic/${child}/`"
-            class="tw-p-2 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50"
-          >
+          <nuxt-link :to="`/${$i18n.locale}/topic/${child}/`">
             {{ child }}
           </nuxt-link>
         </li>
       </ol>
-    </div>
-    <div class="tw-mt-3 tw-max-w-5xl tw-mx-auto">
+    </section>
+    <section class="tw-mt-3 tw-max-w-5xl tw-mx-auto nuxt-content">
+      <h2>List of {{ $route.params.topic }}s in Marwari</h2>
       <ol class="tw-list-decimal tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-1 lg:tw-gap-3 tw-p-2">
         <li
           v-for="word in words"
@@ -53,14 +52,14 @@
           class="tw-m-4"
         >
           <nuxt-link
-            :to="`/${$i18n.locale}/dictionary/word/${word.slugurl}/`"
-            class="tw-p-1 tw-border-b tw-border-pink-800 hover:tw-bg-blue-50 tw-leading-relaxed"
+            :to="`/${$i18n.locale}/dictionary/marwari-english/${word.slugurl}/`"
+            class=""
           >
             {{ word.title ? word.title : word.slugurl }} ({{ word.transliteration }})
           </nuxt-link>
         </li>
       </ol>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -73,25 +72,28 @@ export default {
     };
   },
   async fetch() {
-    this.topics = await this.$content(`${this.$i18n.locale}/dictionary`, {
+    this.topics = await this.$content(`${this.$i18n.locale}`, {
       deep: true
     })
+
       .where({
         $and: [
-          { dir: `/${this.$i18n.locale}/dictionary/topics` },
-          { slugurl: this.$route.params.topic }
+          { path: `/${this.$i18n.locale}/topics/${this.$route.params.topic}` }
         ]
       })
       .sortBy("slug")
       .fetch();
 
-    this.words = await this.$content(`${this.$i18n.locale}/dictionary`, {
+    this.words = await this.$content(`dictionary`, {
       deep: true
     })
       .where({
         $and: [
-          { dir: `/${this.$i18n.locale}/dictionary/words` },
-          { topics: { $contains: this.$route.params.topic } }
+          { slug: { $ne: "AAA" } },
+          { topics: { $contains: this.$route.params.topic } },
+          {
+            dir: `/dictionary/marwari-english` // currently, marwari-english dictionary has more words, so fetching it from there.
+          }
         ]
       })
       .sortBy("slug")
