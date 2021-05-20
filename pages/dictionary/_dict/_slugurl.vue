@@ -1,5 +1,5 @@
 <template>
-  <div class="tw--my-4">
+  <div class="">
     <div
       v-if="$fetchState.pending"
       class="tw-min-h-screen tw-my-48"
@@ -17,15 +17,20 @@
       </p>
     </div>
     <div v-else>
-      <aside class="tw-hidden md:tw-block md:tw-w-1/6 md:tw-bg-gray-50">
+      <!-- <aside class="tw-hidden md:tw-block md:tw-w-1/6 md:tw-bg-gray-50">
         <div class="tw-sticky tw-top-12">hello</div>
-      </aside>
-      <article class="tw-mt-3">
+      </aside> -->
+      <article class="article-post">
         <div class="tw-text-center">
-          <h1 class="tw-text-3xl tw-text-pink-800 tw-font-medium">
-            Marwari meaning of {{ word.title ? word.title :  word.slugurl }}
-            <span class="tw-capitalize tw-text-3xl">{{ word.transliteration }}</span>
-          </h1>
+          <header class="article-post_header">
+            <h1 class="article-post_header--h1">
+              Marwari meaning of {{ word.title ? word.title :  word.slugurl }}
+              {{ word.transliteration }}
+            </h1>
+            <p class="article-post_header--description !tw-text-base tw-text-gray-500 tw-lowercase">
+              {{seoKeywords}}
+            </p>
+          </header>
           <div>
             <wordDate :word="word"></wordDate>
           </div>
@@ -39,9 +44,6 @@
               {{word.author ? word.author : `CA ${$t("default_author")} 😊`}}
             </a>
           </div>
-          <p class="tw-mt-2 tw-max-w-3xl tw-mx-auto tw-text-xs tw-text-gray-500 tw-lowercase">
-            {{seoKeywords}}
-          </p>
         </div>
         <wordTOC
           :word="word"

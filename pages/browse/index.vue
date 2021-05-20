@@ -8,14 +8,16 @@
         Fetching words...💖 Wait for a few seconds 😊
       </p>
     </article>
-    <article class="tw-mt-2">
+    <article class="article-post">
       <section class="tw-text-center">
-        <h1>Browse Marwari-English Dictionary with {{ words.length }} Marwari words</h1>
-        <p class="tw-mt-3 md:tw-mt-5 tw-text-gray-800 tw-text-sm">
-          {{ nouns.length }} nouns, {{ verbs.length }} verbs,
-          {{ words.length - nouns.length - verbs.length }} others =
-          {{ words.length }} words
-        </p>
+        <header class="article-post_header">
+          <h1 class="article-post_header--h1">Browse Marwari-English Dictionary with <br>{{ words.length }} Marwari words</h1>
+          <p class="article-post_header--description tw-mt-3 md:tw-mt-5 tw-text-gray-800 tw-text-sm">
+            {{ nouns.length }} nouns, {{ verbs.length }} verbs,
+            {{ words.length - nouns.length - verbs.length }} others =
+            {{ words.length }} words
+          </p>
+        </header>
         <div class="tw-mt-1">
           <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto">
             <button

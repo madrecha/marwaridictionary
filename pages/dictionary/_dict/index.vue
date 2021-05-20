@@ -4,8 +4,10 @@
       v-if="post"
       class="article-post nuxt-content"
     >
-      <h1 class="article-post_h1">{{post.title}}</h1>
-      <p class="article-post_description">{{post.description}}</p>
+      <header class="article-post_header">
+        <h1 class="article-post_header--h1">{{post.title}}</h1>
+        <p class="article-post_header--description">{{post.description}}</p>
+      </header>
       <nuxt-content :document="post"></nuxt-content>
       <section>
         <h2>Browse Marwari words</h2>
@@ -64,8 +66,3 @@ export default {
   }
 };
 </script>
-
-<style lang="sass" scoped>
-.article-post_description
-  @apply tw-text-center tw-bg-white tw-shadow tw-text-gray-600 tw-p-2 tw-border tw-border-gray-200 tw-max-w-screen-md tw-mx-auto
-</style>
