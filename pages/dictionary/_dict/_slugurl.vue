@@ -100,14 +100,14 @@ export default {
     };
   },
   async fetch() {
-    this.words = await this.$content(`${this.$i18n.locale}/dictionary`, {
+    this.words = await this.$content(`dictionary`, {
       deep: true
     })
       .where({
         $and: [
           { slug: { $ne: "AAA" } },
           { slugurl: this.$route.params.slugurl },
-          { dir: `/${this.$i18n.locale}/dictionary/words` }
+          { dir: `/dictionary/${this.$route.params.dict}` }
         ]
       })
       .fetch();

@@ -99,7 +99,7 @@
         >
           <nuxt-link
             v-if="word.slugurl"
-            :to="`/${$i18n.locale}/dictionary/word/${word.slugurl}/`"
+            :to="`/${$i18n.locale}/dictionary/${$route.params.dict}/${word.slugurl}/`"
             class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
           >
             <div class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-text-blue-900 md:tw-text-xl tw-break-words md:tw-break-normal">
@@ -159,13 +159,13 @@ export default {
     };
   },
   async fetch() {
-    this.words = await this.$content(`${this.$i18n.locale}/dictionary`, {
+    this.words = await this.$content(`dictionary`, {
       deep: true
     })
       .where({
         $and: [
           { slug: { $ne: "AAA" } },
-          { dir: `/${this.$i18n.locale}/dictionary/words` }
+          { dir: `/dictionary/${this.$route.params.dict}` }
         ]
       })
       .without(["body", "toc", "categories"])
