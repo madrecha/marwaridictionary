@@ -38,3 +38,7 @@ translations:
 ### Translation
 
 <translation :translation="translations" ></translation>
+
+### Conjugation
+
+<verb-conj :grammar="grammar"></verb-conj>

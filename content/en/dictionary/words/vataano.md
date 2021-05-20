@@ -14,9 +14,9 @@ translations:
 
 grammar:
   verb:
-    term: वताण
-    trans: vataan
-    ending: a
+    term: वता
+    trans: vataa
+    ending: aa
     causative:
       self:
       verb1:
