@@ -70,7 +70,6 @@ export default {
     '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
     '@nuxt/image',
     'vue-scrollto/nuxt', // https://github.com/rigor789/vue-scrollTo
-    'nuxt-buefy',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -152,11 +151,6 @@ export default {
       },
 
     }
-  },
-
-  'nuxt-buefy': {
-    defaultTrapFocus: true,
-    defaultModalScroll: true,
   },
 
   hooks: {

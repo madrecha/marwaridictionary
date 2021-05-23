@@ -5,23 +5,23 @@
     <table>
       <caption>Marwari conjugation of verb → <span lang="mwr-Deva">{{ term }}णो</span> <span lang="mwr-Latn">({{ trans }}ṇo)</span>
         <div>
-          <!-- <b-button @click="toggleAll = !toggleAll">{{toggleAll ? `Close` : `Open`}} all</b-button> -->
-          <b-button
+          <!-- <button @click="toggleAll = !toggleAll">{{toggleAll ? `Close` : `Open`}} all</button> -->
+          <button
             v-if="verbCategories.showPerfective"
             @click="togglePerfective = !togglePerfective"
-          >{{togglePerfective ? `✅ Perfective`: `Perfective`}}</b-button>
-          <b-button
+          >{{togglePerfective ? `✅ Perfective`: `Perfective`}}</button>
+          <button
             v-if="verbCategories.showImperfective"
             @click="toggleImperfective = !toggleImperfective"
-          >{{toggleImperfective ? `✅ Imperfective`: `Imperfective`}}</b-button>
-          <b-button
+          >{{toggleImperfective ? `✅ Imperfective`: `Imperfective`}}</button>
+          <button
             v-if="verbCategories.showContinuous"
             @click="toggleContinuous = !toggleContinuous"
-          >{{toggleContinuous ? `✅ Continuous`: `Continuous`}}</b-button>
-          <b-button
+          >{{toggleContinuous ? `✅ Continuous`: `Continuous`}}</button>
+          <button
             v-if="verbCategories.showNonaspectual"
             @click="toggleNonaspectual = !toggleNonaspectual"
-          >{{toggleNonaspectual ? `✅ Non-aspectual`: `Non-aspectual`}}</b-button>
+          >{{toggleNonaspectual ? `✅ Non-aspectual`: `Non-aspectual`}}</button>
         </div>
         <p><span class="tw-text-sm tw-text-yellow-800">by Manas Madrecha</span></p>
       </caption>
