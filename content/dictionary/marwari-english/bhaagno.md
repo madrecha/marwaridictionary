@@ -3,8 +3,8 @@ slugurl: भागणो
 transliteration: bhaagno
 
 grammar: 
-  word: भागणो
   verb:
+     
     term: भाग
     trans: bhaag
     en: bhaag
@@ -18,16 +18,13 @@ grammar:
       verb3: भगवाणो
       verb3_trans: bhagwano
     type: 
-
       - intransitive
 
-categories:
-  - 
+topics:
+  - human-activity
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -36,6 +33,6 @@ categories:
 
 </word-meanings>
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>

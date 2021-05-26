@@ -19,9 +19,7 @@ translations:
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -30,8 +28,6 @@ translations:
 3. to speak
 
 </word-meanings>
-
-### Synonyms
 
 <word-synonyms :syns="['बोलणो']" ></word-synonyms>
 
@@ -42,3 +38,15 @@ translations:
 ### Conjugation
 
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>
+
+<word-pos pos="noun">
+
+<word-meanings>
+
+1. he
+
+</word-meanings>
+
+</word-pos>

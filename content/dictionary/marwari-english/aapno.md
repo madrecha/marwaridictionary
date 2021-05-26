@@ -3,13 +3,12 @@ slugurl: आपणो
 transliteration: aapno
 
 grammar:
-  pronoun
+  pronoun:
+     
  
 ---
 
-## Pronoun
-
-### Meaning
+<word-pos pos="pronoun">
 
 <word-meanings>
 
@@ -17,6 +16,6 @@ grammar:
 
 </word-meanings>
 
-### Synonym
-
 <word-syns :syns="['आपाणो']" ></word-syns>
+
+</word-pos>

@@ -4,6 +4,7 @@ transliteration: akshar
 
 grammar:
   noun:
+     
     ending: a
     term: अक्षर
     trans: akshar
@@ -15,9 +16,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -27,10 +26,8 @@ topics:
 
 </word-meanings>
 
-### Synonyms
-
 <w-syns :syns="['आखर']"></w-syns>
 
-### Declension
-
 <noun-decl :grammar="grammar" ></noun-decl>
+
+</word-pos>

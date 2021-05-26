@@ -4,17 +4,18 @@ transliteration: beno
  
 grammar:
   verb:
+     
     ending: ae
     term: बे
     trans: be
     term2: ब
     trans2: b
+    type:
+      - intransitive
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -22,6 +23,6 @@ grammar:
 
 </word-meanings>
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>

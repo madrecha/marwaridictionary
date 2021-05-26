@@ -2,14 +2,11 @@
 transliteration: aakhar
 slugurl: आखर
 
-synonyms:
-
-  - 
+syns:
+  - अक्षर 
 
 translations:
-
   - context:
-
     hi: अक्षर
     hi_trans: akshar
     mr: अक्षर
@@ -17,26 +14,18 @@ translations:
 
 grammar:
   noun:
-
     ending: a
     term: आखर
     trans: aan
     gender: m
     number: s
 
-# categories:
-
 topics:
-
   - literature
-
-# abc: abc   
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -46,17 +35,11 @@ topics:
 
 </word-meanings>
 
-### Synonyms
-
-<w-syns :syns="['अक्षर']"></w-syns>
-
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
+<w-syns :syns="syns"></w-syns>
 
 <noun-decl :grammar="grammar" ></noun-decl>
 
 <!-- ### Related
 <related :related="related" ></related> -->
+
+</word-pos>

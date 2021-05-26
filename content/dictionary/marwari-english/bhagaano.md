@@ -4,6 +4,7 @@ transliteration: bhagaano
 
 grammar: 
   verb:
+     
     term: भगा
     en: bhagaa
     ending: aa
@@ -20,17 +21,15 @@ grammar:
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
 1. to cause someone to run
-2. to shoo away
+2. to shoo someone away
 
 </word-meanings>
 
-### Conjugation
-
 <verb-conj :grammar="grammar" ></verb-conj>
+
+</word-pos>

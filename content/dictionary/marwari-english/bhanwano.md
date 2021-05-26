@@ -9,6 +9,7 @@ translations:
 
 grammar:
   verb:
+     
     term: भणवा
     trans: bhanwa
     ending: aa
@@ -25,9 +26,7 @@ grammar:
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -38,11 +37,7 @@ grammar:
 
 </word-meanings>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Conjugation
-
 <verb-conj :grammar="grammar" ></verb-conj>
+
+</word-pos>
 

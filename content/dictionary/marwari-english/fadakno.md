@@ -5,6 +5,7 @@ transliteration: fadakno
 grammar: 
   word: फदकणो
   verb:
+     
     term: फदक
     trans: fadak
     ending: a
@@ -17,9 +18,7 @@ grammar:
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -28,19 +27,22 @@ grammar:
 
 </word-meanings>
 
-### Examples
+1. <word-egs>
 
-1. <word-eg>
+    <word-eg>
     <template #mwr>रिजल्ट देखते इन वो खुशी रा मारे <b>फदकवा</b> लागी ग्यो।</template>
     <template #mwrlatn>Result dekhte in voh khushi raa maare fadakvaa laagi gyo.</template>
     <template #en>As soon as he saw the result, he started jumping excitedly.</template>
     <template #hi>रिजल्ट देखते ही वो खुुशी के मारे फुदकने लग गया।</template>
     <template #mr>रिजल्ट बघताच तो हर्षाने उड्या मारू लागला.</template>
+    </word-eg>
+
+    </word-egs>
 
 ### Usage 
 
 To denote the activity of jumping or dancing with excitement
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>

@@ -17,9 +17,9 @@ grammar:
 
 ---
 
-## Noun
+<word-pos pos="noun">
 
-### Meaning
+<word-meanings>
 
 1. instrument
 
@@ -29,13 +29,15 @@ grammar:
    <template #en>Bring the <b>instrument</b>, I have to repair this tap.</template>
    </word-eg>
 
+</word-meanings>
+
 ### Declension
 
 <noun-decl :grammar="grammar" ></noun-decl>
 
-## Verb
+</word-pos>
 
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -59,3 +61,4 @@ grammar:
 
 <verb-conj :grammar="grammar" ></verb-conj>
 
+</word-pos>

@@ -9,6 +9,7 @@ translations:
 
 grammar:
   verb:
+     
     term: भण
     trans: bhan
     ending: a
@@ -25,9 +26,7 @@ grammar:
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -37,15 +36,8 @@ grammar:
 
 </word-meanings>
 
-### Synonyms
-
 <word-synonyms :syns="['वाचणो']" ></word-synonyms>
-
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Conjugation
 
 <verb-conj :grammar="grammar" ></verb-conj>
 
+</word-pos>

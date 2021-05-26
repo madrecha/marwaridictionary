@@ -15,9 +15,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -25,11 +23,8 @@ topics:
 
 </word-meanings>
 
-### Synonyms
-
 <word-syns :syns="['आंबो']" ></word-syns>
-
-### Declension
 
 <noun-decl :grammar="grammar" ></noun-decl>
 
+</word-pos>

@@ -14,6 +14,7 @@ translations:
 
 grammar:
   noun:
+     
     ending: ii-vowel
     term: भा
     trans: bhai
@@ -26,9 +27,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -40,13 +39,9 @@ topics:
 
 2. fellow person
 
-<word-meanings>
+</word-meanings>
 
-### Translation
+<!-- <noun-decl :grammar="grammar" ></noun-decl> -->
 
-<translation :translation="translations" ></translation>
-
-### Declension
-
-<noun-decl :grammar="grammar" ></noun-decl>
+</word-pos>
 

@@ -11,15 +11,14 @@ translations:
 
 grammar: 
   verb:
+     
     term: बळडा
     trans: baldaa
     ending: aa
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -27,15 +26,10 @@ grammar:
 2. to scold
 3. to admonish someone
 
-### Synonyms
+</word-meanings>
 
-<word-synonyms :syns="['चिल्लाणो', 'धाकळणो', 'फटकारणो', 'झिड़कणो']" ></word-synonyms>
-
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Conjugation
+<word-syns :syns="['चिल्लाणो', 'धाकळणो', 'फटकारणो', 'झिड़कणो']" ></word-syns>
 
 <verb-conj :grammar="grammar" ></verb-conj>
 
+</word-pos>

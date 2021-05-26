@@ -3,12 +3,13 @@ slugurl: अंधो
 transliteration: andho
 
 grammar: 
-  word: अंधो
   adjective:
+     
     gender: m
     number: s
 
   noun:
+     
     ending: o
     term: अंध
     trans: andh
@@ -19,18 +20,17 @@ grammar:
 
 ---
 
-## Adjective
-
-### Meaning
+<word-pos pos="adjective">
 
 <word-meanings>
 
 1. blind
 
 </word-meanings>
-## Noun
 
-### Meaning
+</word-pos>
+
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -38,6 +38,6 @@ grammar:
 
 </word-meanings>
 
-### Declension
-
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>

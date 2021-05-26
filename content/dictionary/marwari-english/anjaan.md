@@ -14,6 +14,7 @@ translations_noun:
 
 grammar:
   adjective:
+     
     ending: a
     term: अणजान
     trans: anjaan
@@ -23,6 +24,7 @@ grammar:
     number: s
 
   noun:
+     
     ending: a
     term: अणजान
     trans: anjaan
@@ -33,9 +35,7 @@ grammar:
 
 ---
 
-## Adjective
-
-### Meaning
+<word-pos pos="adjective">
 
 <word-meanings>
 
@@ -44,13 +44,9 @@ grammar:
 
 </word-meanings>
 
-### Translation
+</word-pos>
 
-<translation :translation="translations" ></translation>
-
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -59,15 +55,8 @@ grammar:
 
 </word-meanings>
 
-### Synonyms
-
 <word-synonyms :syns="['अणजाण्यो']"></word-synonyms>
-
-### Translation
-
-<translation :translation="translations_noun" ></translation>
-
-### Declension
 
 <noun-decl :grammar="grammar" ></noun-decl>
 
+</word-pos>

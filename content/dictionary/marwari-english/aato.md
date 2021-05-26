@@ -4,6 +4,7 @@ transliteration: aato
 
 grammar:
   noun:
+     
     ending: o
     term: आट
     gender: m
@@ -14,12 +15,12 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
 1. flour
 
 </word-meanings>
+
+</word-pos>

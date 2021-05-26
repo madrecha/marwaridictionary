@@ -25,9 +25,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -35,11 +33,6 @@ topics:
 
 </word-meanings>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
-
 <noun-decl :grammar="grammar" ></noun-decl>
 
+</word-pos>

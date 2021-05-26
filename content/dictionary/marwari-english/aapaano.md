@@ -5,19 +5,19 @@ transliteration_alt:
   - aapano
 
 grammar:
-  pronoun
+  pronoun:
+     
+
 ---
 
-## Pronoun
-
-### Meaning
+<word-pos pos="pronoun">
 
 <word-meanings>
 
 1. our; ours
 
-<word-meanings>
-
-### Synonyms
+</word-meanings>
 
 <word-syns :syns="['आपणो']"></word-syns>
+
+</word-pos>

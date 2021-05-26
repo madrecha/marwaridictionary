@@ -10,11 +10,15 @@ translations:
     hi_trans: bhagwan
 
 grammar:
-  word: भगवान
   noun:
     ending: a
     term: भगवान
-    trans: bhagwaan
+    trans: bhagwan
+    gender: m
+    number: s
+  proper-noun:
+    ending: a
+    trans: bhagwan
     gender: m
     number: s
 
@@ -24,22 +28,25 @@ topics:
 
 ---
 
-## Noun
+<word-pos pos="noun">
 
-### Meaning
+<word-meanings>
+
+1. god, deity
+2. liberated or enlightened person
+
+</word-meanings>
+
+<noun-decl :grammar="grammar" ></noun-decl>
+
+</word-pos>
+
+<word-pos pos="proper-noun">
 
 <word-meanings>
 
 1. God
-2. god, deity
-3. liberated or enlightened person
 
 </word-meanings>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
-
-<noun-decl :grammar="grammar" ></noun-decl>
+</word-pos>

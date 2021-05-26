@@ -2,73 +2,46 @@
 slugurl: आळकातक
 transliteration: aalkatak
 transliteration_alt:
-
   - alkatak
 
 translations:
-
   - context:
-
     hi: आलसी
     hi_trans: aalsi
-    mr:
-    mr_trans:
 
 translations_noun:
-
   - context:
-
     hi: आलसी
     hi_trans: aalsi
     
-
 grammar:
   adjective:
-
     ending: a
     term: आळकातक
     trans: aalkatak
     gender: m
     number: s
-
   noun:
-
     ending: a
     term: आळकातक
     trans: aalkatak
     gender: m
     number: s
 
-categories:
-
+labels:
   - informal
 
 ---
 
-## Adjective
-
-<!-- <fos :grammar="grammar" ></fos> -->
-
-### Meaning
+<word-pos pos="adjective">
 
 <word-meanings>
 
 1. lazy
 
-</word-meanings>
+</word-pos>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-<!-- ### Declension
-<noun-decl :grammar="grammar" ></noun-decl> -->
-
-## Noun
-
-<!-- <fos :grammar="grammar" ></fos> -->
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -76,10 +49,6 @@ categories:
 
 </word-meanings>
 
-### Translation
-
-<translation :translation="translations_noun" ></translation>
-
-### Declension
-
 <noun-decl :grammar="grammar" ></noun-decl>
+
+</word-pos>

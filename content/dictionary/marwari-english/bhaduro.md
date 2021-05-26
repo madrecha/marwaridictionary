@@ -9,6 +9,7 @@ translations:
 grammar: 
   word: भडूरो
   noun:
+     
     ending: o
     term: भडूर
     trans: bhadur
@@ -20,23 +21,21 @@ grammar:
 topics:
   - animal
 
+labels:
+  - abusive
+
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
 1. pig; swine
-2. lazy person
+2. <w-labels :labels="labels"></w-labels>sleazy person
 
 </word-meanings>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
-
 <noun-decl :grammar="grammar" ></noun-decl>
+
+</word-pos>
+

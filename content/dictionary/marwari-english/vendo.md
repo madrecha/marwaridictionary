@@ -3,18 +3,17 @@ slugurl: वेंडो
 transliteration: vendo
 
 grammar:
-  word: वेंडो
-  adjective:
-    gender: m
-    number: s
-  noun:
-    ending: o
-    term: वेंड
-    trans: vend
-    gender: m
-    gender_f: वेंडी
-    gender_f_trans: vendi
-    number: s
+  - adjective:
+      gender: m
+      number: s
+  - noun:
+      ending: o
+      term: वेंड
+      trans: vend
+      gender: m
+      gender_f: वेंडी
+      gender_f_trans: vendi
+      number: s
 
 categories:
   - informal

@@ -18,6 +18,7 @@ translations:
 
 grammar:
   noun:
+     
     ending: ii
     term: विंदण
     trans: vindan
@@ -35,28 +36,23 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
 1. daughter-in-law
-   - <word-synonyms :syns="['बहु']"></word-synonyms>
+   <word-syns :syns="['बहु']"></word-syns>
 2. wife
-   - <word-synonyms :syns="['लुगाई', 'हु', 'पत्नी']"></word-synonyms> 
-   - <word-antonyms :ants="['विंद', 'पति', 'मर्द']"></word-antonyms>
+   <word-syns :syns="['लुगाई', 'हु', 'पत्नी']"></word-syns>
+
+   <word-ants :ants="['विंद', 'पति', 'मर्द']"></word-ants>
 
 </word-meanings>
-
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
 
 <noun-decl :grammar="grammar" ></noun-decl>
 
 <!-- ### Related -->
 
 <!-- <related :related="related" ></related> -->
+
+</word-pos>

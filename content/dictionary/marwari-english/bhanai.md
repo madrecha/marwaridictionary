@@ -15,6 +15,7 @@ translations:
 
 grammar:
   noun:
+     
     ending: ii-vowel
     term: भण
     trans: bhana
@@ -25,9 +26,7 @@ grammar:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -36,14 +35,11 @@ grammar:
 
 </word-meanings>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
-
 <noun-decl :grammar="grammar" ></noun-decl>
 
 <!-- ### Related -->
 
 <!-- <related :related="related" ></related> -->
+
+</word-pos>
+

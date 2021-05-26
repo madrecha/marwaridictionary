@@ -2,27 +2,27 @@
 slugurl: पादणो
 transliteration: paadno
 
-grammar: 
+grammar:
   verb:
+     
     term: पाद
     trans: paad
     ending: a
 
-categories:
+labels:
   - informal
   - slang
 
 ---
-## Verb
 
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
-1. to fart
+1. <w-labels :labels="labels"/></w-labels> to fart
 
 </word-meanings>
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>

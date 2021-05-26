@@ -3,8 +3,8 @@ slugurl: पोड़णो
 transliteration: podno
 
 grammar: 
-  word: पोड़णो
   verb:
+     
     term: पोड़
     trans: pod
     ending: a
@@ -13,7 +13,7 @@ grammar:
     type: 
       - intransitive
 
-categories:
+labels:
   - rare
   - formal
 
@@ -22,18 +22,15 @@ topics:
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
-1. to sleep
-2. to rest
+1. <w-l :labels="labels"></w-l> to sleep; to rest  
 
 </word-meanings>
 
-### Examples
+<word-examples>
 
 1. <word-eg>
     <template #mwr>आप अटे <b>पोड़ी</b> जाओ, सुबे निकली जा जो।</template>
@@ -47,7 +44,7 @@ topics:
      <template #en>May you sleep now, the bed is ready.</template>
      </word-eg>
 
-### Synonyms
+</word-examples>
 
 <word-synonyms :syns="['हुणो']"></word-synonyms>
 
@@ -57,6 +54,7 @@ topics:
 - Generally, it used in the context of asking guests to sleep over at host's house.
 - This word denotes respect
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>
+

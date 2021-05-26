@@ -11,7 +11,7 @@ translations:
 
 grammar: 
   noun:
-    word: भैंस
+     
     ending: a
     term: भैंस
     trans: bhains
@@ -24,9 +24,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meaning>
 
@@ -34,11 +32,6 @@ topics:
 
 </word-meaning>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
-
 <noun-decl :grammar="grammar" ></noun-decl>
 
+</word-pos>

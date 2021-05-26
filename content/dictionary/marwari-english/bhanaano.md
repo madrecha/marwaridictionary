@@ -13,6 +13,7 @@ translations:
     
 grammar:
   verb:
+     
     term: भणा
     trans: bhanaa
     ending: aa
@@ -31,25 +32,17 @@ grammar:
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
 1. to teach
+2. to educate
 
 </word-meanings>
 
-
-### Synonyms
-
 <word-synonyms :syns="['हिकाणो']" ></word-synonyms>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Conjugation
-
 <verb-conj :grammar="grammar" ></verb-conj>
+
+</word-pos>

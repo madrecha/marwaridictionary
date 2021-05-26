@@ -26,15 +26,10 @@ grammar:
       verb3_trans: balaano
     type:
       - transitive
- 
-topics:
-  - fire
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -43,14 +38,9 @@ topics:
 
 </word-meanings>
 
-### Synonyms
-
 <word-syns :syns="['जलाणो']"></word-syns>
 
-### Translation
-
-<translation :translation="translations_verb" ></translation>
-
-### Conjugation
-
 <verb-conj :grammar="grammar" ></verb-conj>
+
+</word-pos>
+

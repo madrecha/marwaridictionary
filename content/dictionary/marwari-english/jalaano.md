@@ -7,12 +7,12 @@ grammar:
     term: जला
     trans: jalaa
     ending: aa
+    type:
+      - transitive
   
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -21,10 +21,8 @@ grammar:
 
 </word-meanings>
 
-### Synonyms
-
 <word-synonyms :syns="['बाळणो']"></word-synonyms>
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>

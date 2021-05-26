@@ -2,6 +2,9 @@
 slugurl: आंबो
 transliteration: aambo
 
+syns:
+  - आम
+
 translations:
   - context:
     hi: आम
@@ -22,9 +25,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -32,15 +33,8 @@ topics:
 
 </word-meanings>
 
-### Synonyms
-
-<word-syns :syns="['आम']" ></word-syns>
-
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
+<word-syns :syns="syns" ></word-syns>
 
 <noun-decl :grammar="grammar" ></noun-decl>
 
+</word-pos>

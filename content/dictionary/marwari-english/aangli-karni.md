@@ -3,14 +3,15 @@ slugurl: आंगळी-करणी
 title: आंगळी करणी
 transliteration: aangli karni
 
-categories:
+grammar:
+  verb:
+
+labels:
   - phrase
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -19,3 +20,5 @@ categories:
 3. to poke nose in someone else's business
 
 </word-meanings>
+
+</word-pos>

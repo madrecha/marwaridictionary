@@ -4,15 +4,17 @@ transliteration: ate
 
 grammar: 
   adjective:
+     
   adverb:
+     
   interjection:
+     
   noun:
+     
 
 ---
 
-## Adverb
-
-### Meaning
+<word-pos pos="adverb">
 
 <word-meanings>
 
@@ -22,24 +24,19 @@ grammar:
 
 </word-meanings>
 
-### Examples
+<word-egs>
 
 <word-eg>
-<template #mwr>
-
-**अटे** आव
-
-</template>
-<template #en>
-
-Come **here**.
-
-</template>
+<template #mwr><b>अटे</b> आव।</template>
+<template #mwrlatn>Ate aav.</template>
+<template #en>Come here.</template>
 </word-eg>
 
-## Adjective
+</word-egs>
 
-### Meaning
+</word-pos>
+
+<word-pos pos="adjective">
 
 <word-meanings>
 
@@ -48,9 +45,9 @@ Come **here**.
 
 </word-meanings>
 
-## Interjection
+</word-pos>
 
-### Meaning
+<word-pos pos="interjection" close>
 
 <word-meanings>
 
@@ -58,9 +55,9 @@ Come **here**.
 
 </word-meanings>
 
-## Noun
+</word-pos>
 
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -68,3 +65,19 @@ Come **here**.
 2. this time, the present situation.
 
 </word-meanings>
+
+<word-egs tag="h3">
+
+<word-eg>
+<template #mwr>आपाणे <b>अटे</b> बैठणो हैं।</template>
+<template #en>We have to sit here.</template>
+</word-eg>
+
+<word-eg>
+<template #mwr>आपाणे <b>अटे</b> बैठणो हैं।</template>
+<template #en>We have to sit here.</template>
+</word-eg>
+
+</word-egs>
+
+</word-pos>

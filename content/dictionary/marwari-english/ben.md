@@ -3,8 +3,8 @@ slugurl: बेन
 transliteration: ben
 
 grammar: 
-  word: बेन
   noun:
+     
     ending: a
     term: बेन
     trans: ben
@@ -17,17 +17,15 @@ topics:
 
 ---
 
-## Noun
+<w-pos :head="grammar.noun">
 
-### Meaning
-
-<word-meanings>
+<w-meanings>
 
 1. sister
 2. fellow female
 
-</word-meanings>
-
-### Declension
+</w-meanings>
 
 <noun-decl :grammar="grammar" ></noun-decl>
+
+</w-pos>
