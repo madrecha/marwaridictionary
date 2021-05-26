@@ -45,7 +45,7 @@
       :is="childrenFetched && childrenFetched.length > 0 ? 'details' : 'div'"
       v-show="!toggleChildren"
       v-if="childrenNotExisting && childrenNotExisting.length > 0"
-      :class="childrenFetched && childrenFetched.length > 0 ? 'word-child-more-details' : word-child-more-div"
+      :class="childrenFetched && childrenFetched.length > 0 ? 'word-child-more-details' : 'word-child-more-div'"
     >
       <summary
         class="word-child-more-summary"
@@ -103,8 +103,10 @@ export default {
         "slugurl",
         "title",
         "transliteration",
-        "children",
-        "child"
+        "synonyms",
+        "syns",
+        "antonyms",
+        "ants"
       ])
       .fetch();
 
