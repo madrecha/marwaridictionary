@@ -25,9 +25,9 @@ grammar:
 
 ---
 
-## Verb
+<word-pos pos="verb">
 
-### Meaning
+<word-meanings>
 
 <word-meanings>
 
@@ -35,11 +35,7 @@ grammar:
 
 </word-meanings>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Conjugation
-
 <verb-conj :grammar="grammar" :perfective="false"></verb-conj>
 <!-- "perfective" set to false as it is rendering incorrectly for verb saano. -->
+
+</word-meanings>

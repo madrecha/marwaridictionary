@@ -4,11 +4,13 @@ transliteration: keno
 
 grammar:
   verb:
-    ending: ae
+    ending: e
     term: के
     trans: ke
     term2: क
     trans2: k
+    type:
+      - intransitive
 
 translations:
   - context:
@@ -29,7 +31,7 @@ translations:
 
 </word-meanings>
 
-<word-synonyms :syns="['बोलणो']" ></word-synonyms>
+<w-syns :syns="['बोलणो']" ></w-syns>
 
 <!-- <verb-conj :grammar="grammar"></verb-conj> -->
 

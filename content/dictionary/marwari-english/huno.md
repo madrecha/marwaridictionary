@@ -4,19 +4,26 @@ transliteration: huno
 
 grammar: 
   verb:
-
     term: हु
     trans: hu
     ending: u
+    type:
+      - intransitive
 
-# categories:
+topics:
+  - human-activity
 
 ---
 
-## Meaning
+<word-pos pos="verb">
+
+<word-meanings>
 
 1. to sleep
 
-### Conjugation
+</word-meanings>
 
-<verb-conj :grammar="grammar"></verb-conj>
+<!-- <verb-conj :grammar="grammar"></verb-conj> -->
+
+</word-pos>
+

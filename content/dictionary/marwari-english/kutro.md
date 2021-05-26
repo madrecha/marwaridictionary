@@ -5,7 +5,6 @@ transliteration: kutro
 grammar:
   word: कुत्रो
   noun:
-
     ending: o
     term: कुत्र
     trans: kutr
@@ -15,17 +14,20 @@ grammar:
     number: s
 
 topics: 
-
   - animal
+  - domestic-animal
 
 ---
 
-## Noun
+<word-pos pos="noun">
 
-### Meaning
+<word-meanings>
 
 1. dog
 
-### Declension
+</word-meanings>
 
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>
+

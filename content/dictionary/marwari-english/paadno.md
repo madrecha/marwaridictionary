@@ -4,7 +4,6 @@ transliteration: paadno
 
 grammar:
   verb:
-     
     term: पाद
     trans: paad
     ending: a

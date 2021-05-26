@@ -4,20 +4,21 @@ transliteration: udno
 
 grammar: 
   verb:
-
     term: उड़
     trans: ud
     ending: a
 
 ---
 
-## Verb
+<word-pos pos="verb">
 
-### Meaning
+<word-meanings>
 
 1. to fly
 2. to soar high
 
-### Conjugation
+</word-meanings>
 
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>

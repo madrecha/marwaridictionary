@@ -4,19 +4,21 @@ transliteration: tenduo
 
 grammar:
   noun:
-
     gender: m
     number: s
     
 
 topics: 
-
   - mammal
 
 ---
 
-## Noun
+<word-pos pos="noun">
 
-### Meaning
+<word-meanings>
 
 1. leopard
+
+</word-meanings>
+
+</word-pos>

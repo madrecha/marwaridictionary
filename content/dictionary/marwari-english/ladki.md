@@ -24,9 +24,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -35,19 +33,11 @@ topics:
 
 </word-meanings>
 
-### Synonyms
+<w-syns :syns="['छोरी', 'छोकरी']" ></w-syns>
 
-<word-synonyms :syns="['छोरी', 'छोकरी']" ></word-synonyms>
-
-### Antonyms
-
-<word-antonyms :ants="['छोरो', 'लड़को']" ></word-antonyms>
-
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
+<w-ants :ants="['छोरो', 'लड़को']" ></w-ants>
 
 <noun-decl :grammar="grammar" ></noun-decl>
+
+</word-pos>
 

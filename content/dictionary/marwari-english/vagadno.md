@@ -5,26 +5,16 @@ transliteration_alt:
 
   - wagadno
 
-synonyms:
-
-  - syn: खराब वेणो
-
-    slugurl: खराब-वेणो
-    syn_trans: kharab veno
+syns:
+  - खराब-वेणो
 
 translations:
-
   - context:
-
     hi: बिगड़ना
     hi_trans: bigadna
-    mr:
-    mr_trans:
     
-
 grammar:
   verb:
-
     term: वगड़
     trans: vagad
     ending: a
@@ -37,27 +27,20 @@ grammar:
       verb3: वगड़वाणो
       verb3_trans: vagadwano
     type:
-
       - intransitive
-
-# abc: abc   
 
 ---
 
-## Verb
+<word-pos pos="verb">
 
-### Meaning
+<word-meanings>
 
 1. to get worsened
 
-### Synonyms
+</word-meanings>
 
-<syn :syn="synonyms" ></syn>
-
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Conjugation
+<w-syns :syns="syns" ></w-syns>
 
 <verb-conj :grammar="grammar" ></verb-conj>
+
+</word-pos>

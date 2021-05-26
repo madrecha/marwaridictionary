@@ -31,8 +31,6 @@ grammar:
 
 </word-meanings>
 
-### Declension
-
 <noun-decl :grammar="grammar" ></noun-decl>
 
 </word-pos>
@@ -56,8 +54,6 @@ grammar:
    </word-eg>
 
 </word-meanings>
-
-### Conjugation
 
 <verb-conj :grammar="grammar" ></verb-conj>
 

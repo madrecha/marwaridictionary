@@ -3,15 +3,12 @@ transliteration: ubho
 slugurl: उभो
 
 translations:
-
   - context: 
-
     hi: खड़ा
     mr: ऊभा
 
 grammar:
   adjective:
-
     ending: o
     term: उभो
     trans: ubho
@@ -22,16 +19,15 @@ grammar:
 
 ---
 
-## Adjective
+<word-pos pos="adjective">
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
-### Meaning
+<word-meanings>
 
 1. standing; upright
 2. vertical
 3. straight; erect
 
-### Translation
+</word-meanings>
 
-<translation :translation="translations" ></translation>
+</word-pos>
+

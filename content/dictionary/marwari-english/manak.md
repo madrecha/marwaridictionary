@@ -5,7 +5,6 @@ transliteration: manak
 grammar:
   word: मनक
   noun:
-
     ending: a
     term: मनक
     trans: manak
@@ -13,22 +12,19 @@ grammar:
     number: s
 
 topics:
-
   - person
 
 ---
 
-## Etymology
+<word-pos pos="noun">
 
-## Pronunciation
-
-## Noun
-
-### Meaning
+<word-meanings>
 
 1. person
 2. man
 
-### Declension
+</word-meanings>
 
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>

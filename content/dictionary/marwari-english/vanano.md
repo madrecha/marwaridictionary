@@ -15,33 +15,37 @@ examples:
 
 ---
 
-## Verb
+<word-pos pos="verb">
 
-### Meaning
+<word-meanings>
 
 1. to become
 2. to accomplish something
 
-### Examples
+</word-meanings>
 
-1. <word-eg>
+<word-egs>
+
+   <word-eg>
     <template #mwr>थारे बड़ो <b>वेईन</b> कई वणणो है?</template>
     <template #mwrlatn>Thaare bado veyin kai vanano hai?</template>
     <template #en>What do you want to become after growing up?</template>
     </word-eg>
 
-2. <word-eg>
+   <word-eg>
     <template #mwr>वो तो अबे बड़ो आदमी <b>वणी</b> ग्यो है।</template>
     <template #mwrlatn>Voh toh abe bado aadmi vani gyo hai.</template>
     <template #en>He has become a big man today.</template>
     </word-eg>
 
-3. <word-eg>
+   <word-eg>
     <template #mwr>कतरा साल री भणई कड़े तू डॉक्टर <b>वणीला</b>?</template>
     <template #mwrlatn>Katraa saal ri bhanai kade tu doctor vanilaa?</template>
     <template #en>After how many years of study will you become a doctor?</template>
     </word-eg>
 
-### Conjugation
+</word-egs>
 
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>

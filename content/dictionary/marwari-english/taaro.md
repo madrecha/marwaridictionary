@@ -24,9 +24,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -37,15 +35,9 @@ topics:
 <!-- ### Examples
 <word-eg></word-eg> -->
 
-### Synonyms
-
 <word-synonyms :syns="['सितारो']" ></word-synonyms>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
-
 <noun-decl :grammar="grammar" ></noun-decl>
+
+</word-pos>
 

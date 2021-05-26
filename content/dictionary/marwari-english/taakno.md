@@ -10,9 +10,7 @@ grammar:
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -21,10 +19,9 @@ grammar:
 
 </word-meanings>
 
-### Synonyms
-
 <word-synonyms :syns="['घूरणो']"></word-synonyms>
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>
+

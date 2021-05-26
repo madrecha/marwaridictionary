@@ -4,15 +4,19 @@ transliteration: thaaro
 
 grammar:
   pronoun:
-
     person: 2
     number: s
     gender: m
 
 ---
 
-## Pronoun
+<word-pos pos="pronoun">
 
-### Meaning
+<word-meanings>
 
 1. your, yours
+
+</word-meanings>
+
+</word-pos>
+

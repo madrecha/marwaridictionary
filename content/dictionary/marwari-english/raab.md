@@ -18,9 +18,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -40,6 +38,6 @@ Paleev is similar to Raab but it's made from Rice.
 
 It is served with Daal Bati.
 
-### Declension
-
 <noun-decl :grammar="grammar" ></noun-decl>
+
+</word-pos>

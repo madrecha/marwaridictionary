@@ -9,12 +9,13 @@ grammar:
     ending: a
     causative: 
       self: 1
+    type:
+      - transitive
+      - intransitive
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -24,6 +25,6 @@ grammar:
 
 </word-meanings>
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>

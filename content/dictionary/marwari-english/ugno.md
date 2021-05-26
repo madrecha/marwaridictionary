@@ -2,12 +2,10 @@
 slugurl: उगणो
 transliteration: ugno
 transliteration_alt:
-
   - ugano
 
 grammar: 
   verb:
-
     term: उग
     trans: ug
     ending: a
@@ -16,13 +14,16 @@ grammar:
 
 ---
 
-## Verb
+<word-pos pos="verb">
 
-### Meaning
+<word-meanings>
 
 1. to grow
 2. to sprout
 
-### Conjugation
+</word-meanings>
 
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>
+

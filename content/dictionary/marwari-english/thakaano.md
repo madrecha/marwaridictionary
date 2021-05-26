@@ -4,7 +4,6 @@ transliteration: thakaano
 
 grammar:
   verb:
-
     term: थका
     trans: thakaa
     ending: aa
@@ -13,13 +12,16 @@ grammar:
 
 ---
 
-## Verb
+<word-pos pos="verb">
 
-### Meaning
+<word-meanings>
 
 1. to make someone tired
 2. to annoy someone to the extent he/she becomes fed up
 
-### Conjugation
+</word-meanings>
 
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>
+

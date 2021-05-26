@@ -2,9 +2,6 @@
 slugurl: सित्रो
 transliteration: sitro
 
-meanings:
-  - meaning: panther
-
 translations:
   - context:
     hi: चीता
@@ -27,9 +24,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -38,11 +33,6 @@ topics:
 
 </word-meanings>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
-
 <noun-decl :grammar="grammar" ></noun-decl>
 
+</word-pos>

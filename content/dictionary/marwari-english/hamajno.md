@@ -29,7 +29,14 @@ grammar:
     gender_f: हमजणी
     gender_f_trans: hamajni
     number: s
-
+  noun:
+    ending: o
+    term: हमजण
+    trans: hamajn
+    gender: m
+    gender_f: हमजणी
+    gender_f_trans: hamajni
+    number: s
   verb:
     term: हमज
     trans: hamj
@@ -47,9 +54,7 @@ grammar:
 
 ---
 
-## Adjective
-
-### Meaning
+<word-pos pos="adjective">
 
 <word-meanings>
 
@@ -58,13 +63,9 @@ grammar:
 
 </word-meanings>
 
-### Translation
+</word-pos>
 
-<translation :translation="translations_adjective" ></translation>
-
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -73,13 +74,9 @@ grammar:
 
 </word-meanings>
 
-### Translation
+</word-pos>
 
-<translation :translation="translations_noun" ></translation>
-
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -89,14 +86,9 @@ grammar:
 
 </word-meanings>
 
-### Synonyms
-
-<word-synonyms :syns="['ठा-पड़णो']"></word-synonyms>
-
-### Translation
-
-<translation :translation="translations_verb" ></translation>
-
-### Conjugation
+<w-syns :syns="['ठा-पड़णो']"></w-syns>
 
 <verb-conj :grammar="grammar" ></verb-conj>
+
+</word-pos>
+

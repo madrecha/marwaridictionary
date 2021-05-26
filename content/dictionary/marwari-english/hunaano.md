@@ -4,17 +4,17 @@ transliteration: hunaano
 
 grammar: 
   verb:
-    term: लेई जा
+    term: हुणा
     trans: hunaa
     ending: aa
     causative:
       self: 2
+    type:
+      - transitive
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -23,6 +23,7 @@ grammar:
 
 </word-meanings>
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>
+

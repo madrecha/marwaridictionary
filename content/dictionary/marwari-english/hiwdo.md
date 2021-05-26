@@ -5,7 +5,6 @@ transliteration: hivdo
 grammar:
   word: हिवड़ो
   noun: 
-
     ending: o
     term: हिवड़
     trans: hivad
@@ -14,12 +13,17 @@ grammar:
 
 ---
 
-## Noun
+<word-pos pos="noun">
 
-### Meaning
+<word-meanings>
 
-1. misspelling of हीवड़ो (heart)
+<!-- misspelling of हीवड़ो -->
 
-### Declension
+1. heart
+2. dear one; beloved one
+
+</word-meanings>
 
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>

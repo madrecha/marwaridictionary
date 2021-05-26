@@ -4,7 +4,6 @@ transliteration: undaro
 
 grammar:
   noun:
-
     word: उंदरो
     ending: o
     term: उंदर
@@ -14,44 +13,35 @@ grammar:
     gender_f_trans: undari
     number: s
 
-synonyms:
-
-  - syn: चूहो
-
-    syn_trans: chuho 
+syns:
+  - चूहो
 
 translations:
-
   - context:
-
     hi: चूहा
     hi_trans: chuhaa
-    mr:
-    mr_trans:
     
+labels:
+  - slang
+  - informal
 
 topics:
-
   - animal
 
 ---
 
-## Noun
+<word-pos pos="noun">
 
-### Meaning
+<word-meanings>
 
 1. mouse
 2. rat
-3. sneaky person
+3. <w-labels :labels="labels"></w-labels>sneaky person
 
-### Synonyms
+</word-meanings>
 
-<syn :syn="synonyms" ></syn>
-
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
+<w-syns :syns="syns" ></w-syns>
 
 <noun-decl :grammar="grammar" ></noun-decl>
+
+</word-pos>

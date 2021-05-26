@@ -1,11 +1,10 @@
 ---
-transliteration: kutro
 slugurl: कुत्री
+transliteration: kutri
 
 grammar:
   word: कुत्री
   noun:
-
     ending: ii
     term: कुत्र
     trans: kutr
@@ -20,18 +19,24 @@ categories:
   - offensive
 
 topics:
-
   - animal
+  - domestic-animal
+
+labels:
+  - abusive
+  - vulgar
 
 ---
 
-## Noun
+<word-pos pos="noun">
 
-### Meaning
+<word-meanings>
 
 1. female dog
-2. bitch
+2. <w-labels :labels="labels"></w-labels>bitch
 
-### Declension
+</word-meanings>
 
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>

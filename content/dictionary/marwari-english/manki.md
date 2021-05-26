@@ -5,7 +5,6 @@ transliteration: manki
 grammar:
   word: मनकी
   noun:
-
     ending: ii
     term: मनक
     trans: mank
@@ -14,23 +13,19 @@ grammar:
     gender_m_trans: manko
     number: s
     
-
 topics:
-
   - animal
 
 ---
 
-## Etymology
+<word-pos pos="noun">
 
-## Pronunciation
-
-## Noun
-
-### Meaning
+<w-meanings>
 
 1. cat
 
-### Declension
+</w-meanings>
 
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>

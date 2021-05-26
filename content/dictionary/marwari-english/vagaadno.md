@@ -3,29 +3,18 @@
 slugurl: वगाड़णो
 transliteration: vagaadno
 transliteration_alt: 
-
   - wagaadno
 
-synonyms:
-
-  - syn: खराब करणो
-
-    slugurl: खराब-करणो
-    syn_trans: kharab karno
+syns:
+  - खराब-करणो
 
 translations:
-
   - context:
-
     hi: बिगाड़ना
-    hi_trans: bigaadna
-    mr:
-    mr_trans:
-    
+    hi_trans: bigaadna    
 
 grammar:
   verb:
-
     term: वगाड़
     trans: vagaad
     ending: a
@@ -38,27 +27,19 @@ grammar:
       verb3: वगड़वाणो
       verb3_trans: vagadwano
     type:
-
       - transitive
 
-# abc: abc   
-
 ---
+<word-pos pos="verb">
 
-## Verb
-
-### Meaning
+<word-meanings>
 
 1. to cause something to worsen
 
-### Synonyms
+</word-meanings>
 
-<syn :syn="synonyms" ></syn>
-
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Conjugation
+<w-syns :syns="syns" ></w-syns>
 
 <verb-conj :grammar="grammar" ></verb-conj>
+
+</word-pos>

@@ -2,14 +2,8 @@
 transliteration: ungno
 slugurl: ऊँगणो
 
-meanings:
-
-  - meaning: 
-  - meaning: to procastinate
-
 grammar:
   verb:
-
     term: ऊँग
     trans: ung
     ending: a
@@ -29,15 +23,15 @@ grammar:
 
 ---
 
-## Verb
+<word-pos pos="verb">
 
-<!-- <fos :grammar="grammar" ></fos> -->
-
-### Meaning
+<word-meanings>
 
 1. to act lazily
 2. to procastinate
 
-### Conjugation
+</word-meanings>
 
 <verb-conj :grammar="grammar" ></verb-conj>
+
+</word-pos>

@@ -3,6 +3,11 @@ slugurl: खाणो
 transliteration: khaano
 
 grammar: 
+  noun:
+    term: खाण
+    trans: khaan
+    ending: o
+    gender: m
   verb:
     term: खा
     trans: khaa
@@ -23,9 +28,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -34,13 +37,11 @@ topics:
 
 </word-meanings>
 
-### Translation
+<noun-decl :grammar="grammar"></noun-decl>
 
-<translation :translation="translations" ></translation>
+</word-pos>
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -49,11 +50,7 @@ topics:
 
 </word-meanings>
 
-### Translation
-
-<translation :translation="translations_verb" ></translation>
-
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>
 

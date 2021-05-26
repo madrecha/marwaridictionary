@@ -8,15 +8,13 @@ grammar:
     trans: taad
     ending: a
 
-categories:
+labels:
   - informal
   - slang
   
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -25,10 +23,8 @@ categories:
 
 </word-meanings>
 
-### Synonyms
-
 <word-synonyms :syns="['ताकणो']"></word-synonyms>
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>

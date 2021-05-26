@@ -5,7 +5,6 @@ transliteration: unt
 grammar: 
   word: ऊँट
   noun:
-
     ending: a
     term: ऊँट
     trans: unt
@@ -13,17 +12,18 @@ grammar:
     number: s
 
 topics:
-
   - animal
 
 ---
 
-## Noun
+<word-pos pos="verb">
 
-### Meaning
+<word-meanings>
 
 1. camel
 
-### Declension
+</word-meanings>
 
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>

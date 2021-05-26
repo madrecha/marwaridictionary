@@ -3,27 +3,16 @@ slugurl: वांटणो
 transliteration: vaantno
 
 similar:
-
-  - sim: वटाणो
-
-    sim_trans: vataano
-
-  - sim: वताणो
-
-    sim_trans: vataano
+  - वटाणो
+  - वताणो
 
 translations:
-
   - context:
-
     hi: बाँटना
     hi_trans: baantna
-    mr:
-    mr_trans:
 
 grammar:
   verb:
-
     term: वांट
     trans: vaant
     ending: a
@@ -36,24 +25,19 @@ grammar:
       verb3:
       verb3_trans:
     type:
-
       - transitive
-
-# abc: abc   
 
 ---
 
-## Verb
+<word-pos pos="verb">
 
-### Meaning
+<word-meanings>
 
 1. to distribute
 2. to share
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Conjugation
+</word-meanings>
 
 <verb-conj :grammar="grammar" ></verb-conj>
+
+</word-pos>

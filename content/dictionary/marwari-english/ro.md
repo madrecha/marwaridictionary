@@ -4,10 +4,15 @@ slugurl: रो
 
 grammar: 
   preposition:
+
 ---
 
-## Preposition
+<word-pos pos="preposition">
 
-### Meaning
+<word-meanings>
 
 1. of (masculine gender)
+
+</word-meanings>
+
+</word-pos>

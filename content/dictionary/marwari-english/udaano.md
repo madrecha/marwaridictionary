@@ -13,26 +13,25 @@ grammar:
 
 ---
 
-## Verb
+<word-pos pos="verb">
 
-### Meaning 
+<word-meanings>
 
 1. to fly something
+
 2. to spend (money) lavishly; to waste money
-
+   
+   <word-egs>
+   
    <word-eg>
-   <template #mwr>
-   
-   कतरा पैसा उड़ाई?
-
-   </template>
-   <template #en>
-   
-   How much money will you waste?
-   
-   </template>
+   <template #mwr>कतरा पैसा उड़ाई?</template>
+   <template #en>How much money will you waste?</template>
    </word-eg>
 
-### Conjugation
+   </word-egs>
+
+</word-meanings>
 
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>

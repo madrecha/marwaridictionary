@@ -8,8 +8,8 @@ grammar:
     term: लड़क
     trans: ladk
     gender: m
-    gender_m: लड़की
-    gender_m_trans: ladki
+    gender_f: लड़की
+    gender_f_trans: ladki
     number: s
 
 topics:
@@ -17,9 +17,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -28,16 +26,11 @@ topics:
 
 </word-meanings>
 
-### Synonyms
+<w-syns :syns="['छोरो', 'छोकरो']" ></w-syns>
 
-<word-synonyms :syns="['छोरो', 'छोकरो']" ></word-synonyms>
-
-### Antonyms
-
-<word-antonyms :ants="['लड़की', 'छोकरी']" ></word-antonyms>
-
-
-### Declension
+<w-ants :ants="['लड़की', 'छोकरी']" ></w-ants>
 
 <noun-decl :grammar="grammar" ></noun-decl>
+
+</word-pos>
 

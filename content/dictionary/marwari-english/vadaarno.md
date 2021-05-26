@@ -20,11 +20,7 @@ grammar:
 
 ---
 
-## Verb
-
-<!-- <fos :grammar="grammar" ></fos> -->
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -36,6 +32,6 @@ grammar:
 
 It is usally used in the context of breaking coconut or some hard food material either for the purpose of eating or for some religious ritual.
 
-### Conjugation
-
 <verb-conj :grammar="grammar" ></verb-conj>
+
+</word-pos>

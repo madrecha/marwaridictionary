@@ -10,9 +10,7 @@ grammar:
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -21,10 +19,8 @@ grammar:
 
 </word-meanings>
 
-### Synonyms
-
 <word-synonyms :syns="['हापडणो']"></word-synonyms>
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>
