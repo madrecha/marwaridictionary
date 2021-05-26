@@ -145,6 +145,7 @@
 
 <script>
 export default {
+  name: "BrowseIndexPage",
   data() {
     return {
       words: [],
@@ -307,5 +308,8 @@ export default {
 
 .sort-button
   @apply tw-p-1 md:tw-p-2 tw-m-1 md:tw-m-2 tw-rounded-md tw-border tw-border-yellow-500 tw-bg-yellow-50 hover:tw-bg-green-50 focus:tw-outline-none focus:tw-bg-green-50 focus:tw-ring-1 focus:tw-ring-green-500 focus:tw-text-green-800
+</style>
+
+<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
 </style>
 
