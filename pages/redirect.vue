@@ -20,19 +20,19 @@ export default {
     };
   },
   async fetch() {
-    this.posts = await this.$content(`en/dictionary`, {
+    this.posts = await this.$content(`dictionary/marwari-english`, {
       deep: true
     })
       .where({
         $and: [
-          {
-            dir: `/en/dictionary/words`
-          },
+          // {
+          //   dir: `/dictionary/marwari-dictionary`
+          // },
           { slug: { $ne: "AAA" } }
         ]
       })
       .without(["body", "toc"])
-      .sortBy("url.transliteration")
+      .sortBy("transliteration")
       .fetch();
 
     let postlinks = this.posts.map(post => {
@@ -42,8 +42,9 @@ export default {
       //   type: 301
       // };
       return {
-        source: `/word/${post.url.slugurl}`,
-        destination: `/en/dictionary/word/${post.url.slugurl}`,
+        // source: `/word/${post.slugurl}/`,
+        source: `/en/dictionary/word/${post.slugurl}/`,
+        destination: `/en/dictionary/marwari-english/${post.slugurl}/`,
         type: 301
       };
     });
