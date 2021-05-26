@@ -3,8 +3,8 @@
     <article class="article-post">
       <header class="article-post_header">
         <h1 class="article-post_header--h1">Topics</h1>
-        <p class="article-post_header--description">Topics are collections of words related to similar subject areas.</p>
       </header>
+      <p class="article-post_header--description">Topics are collections of words related to similar subject areas.</p>
 
       <!-- OLD CODE (CAN DELETE LATER) -->
       <!-- <ol>
@@ -146,4 +146,7 @@ export default {
 
 <style scoped>
 /* @import url(~assets/css/nuxtcontent.postcss); */
+</style>
+
+<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
 </style>

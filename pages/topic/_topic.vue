@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <article>
     <header class="article-post_header">
       <h1 class="article-post_header--h1">
         {{ words.length }} Marwari words about {{ $route.params.topic }}
@@ -8,12 +8,10 @@
         List of <b>{{ $route.params.topic }}</b> in Marwari
       </p>
     </header>
-    <div class="nuxt-content tw-text-center">
-      <nuxt-link
-        :to="`/${$i18n.locale}/topic/`"
-        class="tw-inline-block tw-mt-3 "
-      >Go back to Topics</nuxt-link>
-    </div>
+    <nuxt-link
+      :to="`/${$i18n.locale}/topic/`"
+      class="nuxt-link tw-inline-block tw-mt-3 tw-text-center "
+    >Go back to Topics</nuxt-link>
     <section
       v-for="(topic, i) in topics"
       :key="i"
@@ -60,7 +58,7 @@
         </li>
       </ol>
     </section>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -72,14 +70,14 @@ export default {
     };
   },
   async fetch() {
+    let topic = this.$route.params.topic;
+
     this.topics = await this.$content(`${this.$i18n.locale}`, {
       deep: true
     })
 
       .where({
-        $and: [
-          { path: `/${this.$i18n.locale}/topics/${this.$route.params.topic}` }
-        ]
+        $and: [{ path: `/${this.$i18n.locale}/topics/${topic}` }]
       })
       .sortBy("slug")
       .fetch();
@@ -90,7 +88,7 @@ export default {
       .where({
         $and: [
           { slug: { $ne: "AAA" } },
-          { topics: { $contains: this.$route.params.topic } },
+          { topics: { $contains: topic } },
           {
             dir: `/dictionary/marwari-english` // currently, marwari-english dictionary has more words, so fetching it from there.
           }
@@ -101,3 +99,6 @@ export default {
   }
 };
 </script>
+
+<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
+</style>
