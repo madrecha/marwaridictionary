@@ -31,7 +31,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "~/assets/css/all.sass",
+    "~/assets/css/themes/daisyui.sass",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -70,6 +70,7 @@ export default {
     '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
     '@nuxt/image',
     'vue-scrollto/nuxt', // https://github.com/rigor789/vue-scrollTo
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -80,6 +81,14 @@ export default {
     '@nuxt/content',
     'nuxt-i18n'
   ],
+
+  fontawesome: {
+    component: 'faIcon',
+    icons: {
+      solid: ['faCheckCircle', 'faHeart'],
+      regular: ['faCheckCircle', 'faHeart']
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   // axios: {},
