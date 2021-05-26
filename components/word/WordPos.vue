@@ -18,10 +18,25 @@
       <span class="word-component-collapse-icon word-pos-collapse-icon">{{togglePos ? `+` : `-`}}</span>
     </header>
     <!-- <span class="tw-text-gray-500">Pronunciation</span> -->
-    <span
-      v-if="wordFetched && wordFetched.grammar && wordFetched.grammar.verb && wordFetched.grammar.verb.type && typeof wordFetched.grammar.verb.type === 'object' && wordFetched.grammar.verb.type.length>0"
-      class="tw-text-gray-500"
-    >{{wordFetched.grammar.verb.type[0]}}</span>
+
+    <p class="tw-mx-2 tw-text-gray-500 tw-bg-gray-50 tw-max-w-max tw-px-2 tw-py-0.5">
+      <span v-if="this.partOfSpeech === 'adjective'">
+        {{adjective}}
+      </span>
+      <span v-if="this.partOfSpeech === 'noun'">
+        <span>{{noun}}</span> <span v-if="nounCounterpartFetched">| opposite of {{word}}: <nuxt-link
+            :to="`/${$i18n.locale}/dictionary/${$route.params.dict}/${nounCounterpartFetched.slugurl}/`"
+            class="tw-link tw-link-secondary"
+          >
+            {{nounCounterpartFetched.slugurl}}
+          </nuxt-link>
+        </span>
+      </span>
+      <span v-if="this.partOfSpeech === 'verb'">
+        {{verb}}
+      </span>
+    </p>
+
     <div
       class="word-component-slot-wrapper word-pos-slot"
       v-show="!togglePos"
@@ -41,6 +56,7 @@ export default {
   data() {
     return {
       wordFetched: null,
+      nounCounterpartFetched: null,
       togglePos: this.close
     };
   },
@@ -53,6 +69,19 @@ export default {
       .without(["body", "toc"])
       .fetch();
     this.wordFetched = this.wordFetched[0];
+
+    if (this.nounCounterpart) {
+      this.nounCounterpartFetched = await this.$content(
+        `dictionary/${this.$route.params.dict}`,
+        { deep: true }
+      )
+        .where({
+          $and: [{ slug: { $ne: "AAA" } }, { slugurl: this.nounCounterpart }]
+        })
+        .without(["body", "toc"])
+        .fetch();
+      this.nounCounterpartFetched = this.nounCounterpartFetched[0];
+    }
   },
   computed: {
     word() {
@@ -68,27 +97,93 @@ export default {
       //   conjuction: ["conjuction", "conj"]
       // };
 
-      // return this.pos?.pos ? this.pos?.pos : null;
+      let pos = this.pos;
+      if (pos === "noun" || pos === "n") {
+        return "noun";
+      } else if (pos === "verb" || pos === "v") {
+        return "verb";
+      } else if (pos === "pronoun" || pos === "pro") {
+        return "pronoun";
+      } else if (pos === "adjective" || pos === "adj") {
+        return "adjective";
+      } else if (pos === "adverb" || pos === "adv") {
+        return "adverb";
+      } else if (pos === "preposition" || pos === "prep") {
+        return "preposition";
+      } else if (pos === "conjunction" || pos === "conj") {
+        return "conjunction";
+      } else if (pos === "interjection") {
+        return "interjection";
+      } else return pos;
+    },
+    adjective() {
+      let word = this.wordFetched;
+      if (word && this.partOfSpeech === "adjective") {
+        let genderVar =
+          word?.grammar?.adjective?.gender ?? word?.grammar?.adjective?.g;
+        let numberVar =
+          word?.grammar?.adjective?.number ?? word?.grammar?.adjective?.n;
 
-      for (const pos of this.pos) {
-        if (pos === "noun" || pos === "n") {
-          return "noun";
-        } else if (pos === "verb" || pos === "v") {
-          return "verb";
-        } else if (pos === "pronoun" || pos === "pro") {
-          return "pronoun";
-        } else if (pos === "adjective" || pos === "adj") {
-          return "adjective";
-        } else if (pos === "adverb" || pos === "adv") {
-          return "adverb";
-        } else if (pos === "preposition" || pos === "prep") {
-          return "preposition";
-        } else if (pos === "conjunction" || pos === "conj") {
-          return "conjunction";
-        } else if (pos === "interjection") {
-          return "interjection";
-        } else return pos;
+        let gender = null;
+        let number = null;
+        gender =
+          genderVar === "m"
+            ? "masculine"
+            : genderVar === "f"
+            ? "feminine"
+            : null;
+        number =
+          numberVar === "s" ? "singular" : numberVar === "p" ? "plural" : null;
+
+        return gender + " " + number;
       }
+    },
+    noun() {
+      let word = this.wordFetched;
+      if (word && this.partOfSpeech === "noun") {
+        let genderVar = word?.grammar?.noun?.gender ?? word?.grammar?.noun?.g;
+        let numberVar = word?.grammar?.noun?.number ?? word?.grammar?.noun?.n;
+
+        let gender = null;
+        let number = null;
+        gender =
+          genderVar === "m"
+            ? "masculine"
+            : genderVar === "f"
+            ? "feminine"
+            : null;
+        number =
+          numberVar === "s" ? "singular" : numberVar === "p" ? "plural" : null;
+
+        return gender + " " + number;
+      }
+    },
+    nounCounterpart() {
+      let word = this.wordFetched;
+      if (word && this.partOfSpeech === "noun") {
+        let genderVar = word?.grammar?.noun?.gender ?? word?.grammar?.noun?.g;
+        let femaleCounterpart = word?.grammar?.noun?.gender_f;
+        let maleCounterpart = word?.grammar?.noun?.gender_m;
+        if (genderVar === "m" && femaleCounterpart) {
+          return femaleCounterpart;
+        }
+        if (genderVar === "f" && maleCounterpart) {
+          return maleCounterpart;
+        }
+      }
+    },
+    verb() {
+      let word = this.wordFetched;
+      let type = null;
+      if (word && this.partOfSpeech === "verb") {
+        if (
+          typeof word?.grammar?.verb?.type === "object" &&
+          word?.grammar?.verb?.type.length > 0
+        ) {
+          return (type = word?.grammar?.verb?.type.join(", "));
+        }
+      }
+      return type;
     }
   }
 };
