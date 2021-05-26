@@ -21,20 +21,19 @@
         <div class="tw-sticky tw-top-12">hello</div>
       </aside> -->
       <article class="article-post">
-        <div class="tw-text-center">
-          <header class="article-post_header">
-            <h1 class="article-post_header--h1">
-              Marwari meaning of {{ word.title ? word.title :  word.slugurl }}
-              {{ word.transliteration }}
-            </h1>
-            <p class="article-post_header--description !tw-text-base tw-text-gray-500 tw-lowercase">
-              {{seoKeywords}}
-            </p>
-          </header>
-          <div>
-            <wordDate :word="word"></wordDate>
-          </div>
-          <div class="tw-text-sm tw-mt-2">
+        <header class="article-post_header">
+          <h1 class="article-post_header--h1">
+            {{$t('word.h1', {word: wordWithTransliteration})}}
+            <!-- Marwari meaning of {{ word.title ? word.title :  word.slugurl }}
+              {{ word.transliteration }} -->
+          </h1>
+        </header>
+        <p class="article-post_header--description !tw-text-base tw-text-gray-500 tw-lowercase">
+          {{seoKeywords}}
+        </p>
+        <div>
+          <wordDate :word="word"></wordDate>
+          <!-- <div class="tw-text-sm tw-mt-2">
             by <a
               :href="word.author && word.author.url ? word.author.url : `https://instagram.com/ManasMadrecha`"
               target="_blank"
@@ -43,20 +42,24 @@
             >
               {{word.author ? word.author : `CA ${$t("default_author")} 😊`}}
             </a>
-          </div>
-        </div>
-        <wordTOC
+          </div> -->
+          <!-- <wordTOC
           :word="word"
           class="tw-mt-5 tw-max-w-xs tw-mx-auto"
-        ></wordTOC>
-        <div class="tw-mt-4 tw-mx-0.5 lg:tw-mx-4 lg:tw-px-6 lg:tw-py-3 tw-border-t tw-border-b tw-border-pink-300">
+        ></wordTOC> -->
           <!-- <div class="tw-mx-auto tw-text-center">
             <ReadingTime :word="word"></ReadingTime>
           </div> -->
-
-          <NuxtContent :document="word"></NuxtContent>
-          <MaintenanceCategories :word="word"></MaintenanceCategories>
         </div>
+        <main>
+          <NuxtContent
+            :document="word"
+            class="nuxt-content--word tw-max-w-screen-lg tw-mx-auto"
+          ></NuxtContent>
+        </main>
+        <footer class="tw-max-w-screen-lg tw-mx-auto">
+          <MaintenanceCategories :word="word"></MaintenanceCategories>
+        </footer>
       </article>
     </div>
   </div>
@@ -68,32 +71,57 @@ import wordTOC from "~/components/templates/post/wordTOC.vue";
 import MaintenanceCategories from "~/components/templates/post/MaintenanceCategories.vue";
 
 import WordMeanings from "~/components/word/WordMeanings";
+import WordExamples from "~/components/word/WordExamples";
 import WordExample from "~/components/word/WordExample";
 import WordAntonyms from "~/components/word/WordAntonyms";
 import WordSynonyms from "~/components/word/WordSynonyms";
+import WordPos from "~/components/word/WordPos";
+import WordLabels from "~/components/word/WordLabels";
+import WordQualifier from "~/components/word/WordQualifier";
 
 // import noun from "~/components/grammar/noun.vue";
 
 export default {
+  name: "DictSlugurlPage",
   components: {
     wordDate,
     wordTOC,
     MaintenanceCategories,
+    // Word Pos, e.g. lemma, non-lemma forms
+    "word-pos": WordPos,
+    "w-pos": WordPos,
     "word-meanings": WordMeanings,
     // Word Examples
+    "word-examples": WordExamples,
+    "word-egs": WordExamples,
+    "word-exs": WordExamples,
+    "w-examples": WordExamples,
+    "w-egs": WordExamples,
+    "w-exs": WordExamples,
+    // Word Example
+    "word-example": WordExample,
     "word-eg": WordExample,
     "word-ex": WordExample,
-    "word-example": WordExample,
-    // Shortcuts
     "w-eg": WordExample,
     "w-ex": WordExample,
     "w-example": WordExample,
+    // Word Antnonyms and Word Synonyms
     "word-antonyms": WordAntonyms,
     "word-ants": WordAntonyms,
     "w-ants": WordAntonyms,
     "word-synonyms": WordSynonyms,
     "word-syns": WordSynonyms,
-    "w-syns": WordSynonyms
+    "w-syns": WordSynonyms,
+    // Word Labels
+    "word-labels": WordLabels,
+    "word-label": WordLabels,
+    "w-label": WordLabels,
+    "w-labels": WordLabels,
+    "w-l": WordLabels,
+    // Word Qualifier
+    "word-qualifer": WordQualifier,
+    "w-qualifier": WordQualifier,
+    "w-q": WordQualifier
   },
   data() {
     return {
@@ -115,14 +143,14 @@ export default {
       .fetch();
 
     this.word = this.words[0];
+
+    // https://github.com/nuxt/content/issues/381
     // let frontYaml = {
     //   slugurl: this.word.url.slugurl ?? this.word.slugurl,
     //   title: this.word.url.title ?? this.word.title,
     //   transliteration:
     //     this.word.url.transliteration ?? this.word.transliteration
     // };
-
-    // this.word = { ...this.word, frontYaml };
 
     // let currentword = this.words[0];
 
@@ -132,11 +160,18 @@ export default {
 
   activated() {
     // Call fetch again if last fetch more than 9 min ago
-    if (this.$fetchState.timestamp <= Date.now() - 1500000) {
+    if (this.$fetchState.timestamp <= Date.now() - 900000) {
       this.$fetch();
     }
   },
   computed: {
+    wordWithTransliteration() {
+      if (this.word) {
+        let w = this.word.title ? this.word.title : this.word.slugurl;
+        let t = this.word.transliteration;
+        return w + " " + t;
+      }
+    },
     seoKeywords() {
       if (this.word) {
         return `${
@@ -213,3 +248,13 @@ export default {
   }
 };
 </script>
+
+<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
+</style>
+
+<style lang="sass">
+.word-component-collapse-icon
+  @apply tw-text-2xl
+// Note: This applies globally, because scoped style will not get passed to the word components.
+// TODO: So, later shift this to individual word components
+</style>

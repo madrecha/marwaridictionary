@@ -33,7 +33,7 @@
 import SearchWordsFull from "~/components/organisms/SearchWordsFull";
 
 export default {
-  name: "DictionaryName",
+  name: "DictIndexPage",
   components: { SearchWordsFull },
   data() {
     return {
@@ -66,3 +66,6 @@ export default {
   }
 };
 </script>
+
+<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
+</style>

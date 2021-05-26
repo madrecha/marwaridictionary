@@ -1,5 +1,5 @@
 <template>
-  <div class="nuxt-content tw-max-w-screen-lg tw-mx-auto">
+  <div class="nuxt-content">
     <article class="article-post">
       <header class="article-post_header">
         <h1 class="article-post_header--h1">Marwari Dictionaries</h1>
@@ -61,6 +61,7 @@
 
 <script>
 export default {
+  name: "DictionaryIndexPage",
   data() {
     return {
       posts: null,
@@ -78,3 +79,6 @@ export default {
   }
 };
 </script>
+
+<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
+</style>
