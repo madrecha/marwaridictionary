@@ -104,13 +104,13 @@ export default {
 
       // Main starts...
 
-      this.words = await this.$content(`${this.$i18n.locale}/dictionary`, {
+      this.words = await this.$content(`dictionary`, {
         deep: true
       })
         .where({
           $and: [
             { slug: { $ne: "AAA" } },
-            { dir: `/${this.$i18n.locale}/dictionary/words` }
+            { dir: `/dictionary/marwari-english` }
           ]
         })
         .without(["body", "toc", "readingTime"])
@@ -355,8 +355,14 @@ export default {
 
       // Search Body of the word md file (usually not needed, but can contain useful text sometimes)
       // Also, only 3 words are being fetch using this, so no big load.
-      this.wordsBody = await this.$content("words")
+      this.wordsBody = await this.$content("dictionary")
         // .only(["body", "slug"])
+        .where({
+          $and: [
+            { slug: { $ne: "AAA" } },
+            { dir: `/dictionary/marwari-english` }
+          ]
+        })
         .limit(3)
         .search("text", query)
         .fetch();

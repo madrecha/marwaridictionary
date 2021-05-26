@@ -1,9 +1,9 @@
 <template>
   <div>
     <TheHeader></TheHeader>
-    <main class="tw-bg-gray-50">
+    <main class="">
+      <!-- tw-max-w-screen-lg tw-mx-auto  -->
       <Nuxt
-        class="tw-max-w-screen-lg tw-mx-auto tw-px-2 tw-py-4 "
         keep-alive
         :keep-alive-props="{ max: 10 }"
       ></Nuxt>
@@ -36,3 +36,9 @@ export default {
   // },
 };
 </script>
+
+<style lang="sass">
+body
+  & > main
+    min-height: 100vh
+</style>
