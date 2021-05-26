@@ -91,6 +91,7 @@ export default {
     "word-pos": WordPos,
     "w-pos": WordPos,
     "word-meanings": WordMeanings,
+    "w-meanings": WordMeanings,
     // Word Examples
     "word-examples": WordExamples,
     "word-egs": WordExamples,

@@ -32,6 +32,7 @@
             src="~/assets/images/girl-holding-documents.svg"
             alt=""
             width="200"
+            height="200"
             loading="lazy"
           />
           <blockquote class="tw-px-4 tw-py-10 tw-my-4 tw-text-xl md:tw-text-3xl tw-italic  tw-text-red-800 tw-text-center tw-border-b-2 tw-border-t-2 tw-border-yellow-500">

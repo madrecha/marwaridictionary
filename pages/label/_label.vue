@@ -71,3 +71,6 @@ export default {
 
 <style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
 </style>
+
+<style lang="sass" src="~/assets/css/layout/article-tags-list.sass" scoped>
+</style>
