@@ -1,49 +1,51 @@
 <template>
-  <div class="word-example">
-    <dl class="tw-mt-3">
-      <dt
-        lang="mwr-Deva"
-        class="word-example--mwr tw-ml-3"
-      >
-        <slot name="mwr"></slot>
-      </dt>
-      <dd
-        lang="mwr-Latn"
-        class="word-example--mwr-Latn tw-mt-2 tw-ml-6"
-      >
-        <slot name="mwrlatn"></slot>
-      </dd>
-      <dd
-        :lang="$i18n.locale"
-        class="word-example--locale tw-mt-2 tw-ml-6"
-      >
-        <slot :name="$i18n.locale"></slot>
-      </dd>
-    </dl>
-  </div>
+  <dl class="word-example-dl-top">
+    <dt
+      lang="mwr-Deva"
+      class="word-example--mwr"
+    >
+      <slot name="mwr"></slot>
+    </dt>
+    <dd
+      lang="mwr-Latn"
+      class="word-example--mwr-Latn"
+    >
+      <slot name="mwrlatn"></slot>
+    </dd>
+    <dd
+      :lang="$i18n.locale"
+      class="word-example--locale"
+    >
+      <slot :name="$i18n.locale"></slot>
+    </dd>
+    <!-- <slot></slot>  -->
+    <!-- default slot -->
+  </dl>
 </template>
 
-<script>
-export default {
-  name: "WordExample",
-  data() {
-    return {};
-  },
-  methods: {
-    // transliterate() {
-    //   let marwariExample = document.querySelector(`dt[lang="mwr-Deva"]`);
-    //   console.log(marwariExample.innerHTML);
-    // }
-  }
-};
-</script>
-
 <style lang="sass" scoped>
+.word-example-dl-top
+  counter-increment: example
+  @apply tw-p-2 sm:tw-ml-2 tw-my-0.5
+  &:not(:first-child)
+    @apply tw-mt-1
+  &:not(:last-child)
+    @apply tw-mb-1
+  &::before
+    content: counter(example) " "
+    @apply tw-text-sm tw-rounded-full tw-p-1 tw-mr-2 tw-text-indigo-800
+    @apply tw-bg-gradient-to-br tw-from-white tw-to-indigo-50 tw-border tw-border-indigo-200
 .word-example--mwr
-  & > b
+  @apply tw-inline tw-text-gray-800 tw-text-base tw-leading-7
+  & b, strong
     @apply tw-bg-yellow-50
-  & > strong
-    @apply tw-bg-yellow-50
-  &-Latn
-    @apply tw-italic tw-text-gray-500 tw-text-sm md:tw-text-base
+  & a
+    @apply tw-inline-block tw-border-b tw-border-indigo-200 tw-text-indigo-800 hover:tw-text-indigo-500
+.word-example--mwr-Latn
+  @apply tw-py-1 tw-text-gray-500 tw-italic tw-text-sm tw-ml-12
+  &:empty
+    @apply tw-hidden
+    // $slots not showing slotname in markdown components https://github.com/nuxt/content/issues/899
+.word-example--locale
+  @apply tw-text-gray-700 tw-text-base tw-ml-12
 </style>
