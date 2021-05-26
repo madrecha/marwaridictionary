@@ -49,7 +49,7 @@
           class="tw-m-1 tw-z-40"
         >
           <NuxtLink
-            :to="`/dictionary/word/${word.slugurl}/`"
+            :to="`/${$i18n.locale}/dictionary/marwari-english/${word.slugurl}/`"
             class="focus:tw-ring-2 tw-p-1"
           >
             {{ word.title ? word.title : word.slugurl }} ({{ word.transliteration }})

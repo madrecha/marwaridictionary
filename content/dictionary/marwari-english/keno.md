@@ -31,22 +31,6 @@ translations:
 
 <word-synonyms :syns="['बोलणो']" ></word-synonyms>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Conjugation
-
-<verb-conj :grammar="grammar"></verb-conj>
-
-</word-pos>
-
-<word-pos pos="noun">
-
-<word-meanings>
-
-1. he
-
-</word-meanings>
+<!-- <verb-conj :grammar="grammar"></verb-conj> -->
 
 </word-pos>
