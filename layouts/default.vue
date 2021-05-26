@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheHeader></TheHeader>
-    <main class="">
+    <main class="tw-min-h-[100vh]">
       <!-- tw-max-w-screen-lg tw-mx-auto  -->
       <Nuxt
         keep-alive
@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import TheHeader from "../components/templates/TheHeader";
-import TheFooter from "../components/templates/TheFooter";
+import TheHeader from "~/components/templates/TheHeader";
+import TheFooter from "~/components/templates/TheFooter";
 
 export default {
   components: { TheHeader, TheFooter },
@@ -36,9 +36,3 @@ export default {
   // },
 };
 </script>
-
-<style lang="sass">
-body
-  & > main
-    min-height: 100vh
-</style>

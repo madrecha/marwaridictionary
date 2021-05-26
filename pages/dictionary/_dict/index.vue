@@ -8,23 +8,27 @@
         <h1 class="article-post_header--h1">{{post.title}}</h1>
         <p class="article-post_header--description">{{post.description}}</p>
       </header>
-      <nuxt-content :document="post"></nuxt-content>
-      <section>
-        <h2>Browse Marwari words</h2>
-        <p>Showing only 10 recent most updated Marwari words</p>
-        <p class="tw-border tw-border-gray-400 tw-shadow tw-bg-white tw-p-2">
-          <nuxt-link :to="`/${$i18n.locale}/browse`">Browse <strong>all Marwari words here</strong></nuxt-link> with better filtering and sorting.
-        </p>
-        <ol class="tw-grid tw-grid-cols-3 md:tw-grid-cols-4 tw-gap-2">
-          <li
-            v-for="word in words"
-            :key="word.slug"
-          >
-            <nuxt-link :to="`/${$i18n.locale}/dictionary/${$route.params.dict}/${word.slugurl}/`"><span lang="mwr-Deva">{{word.slugurl}}</span></nuxt-link> <span lang="mwr-Latn">{{word.transliteration}}</span>
-          </li>
-        </ol>
-        <!-- <SearchWordsFull :width="'tw-w-2/3 md:tw-w-full'"></SearchWordsFull> -->
-      </section>
+      <div class="tw-max-w-screen-lg tw-mx-auto">
+
+        <nuxt-content :document="post"></nuxt-content>
+        <section>
+          <h2>Browse Marwari words</h2>
+          <p>Showing only 10 recent most updated Marwari words</p>
+          <p class="tw-border tw-border-gray-400 tw-shadow tw-bg-white tw-p-2">
+            <nuxt-link :to="`/${$i18n.locale}/browse`">Browse <strong>all Marwari words here</strong></nuxt-link> with better filtering and sorting.
+          </p>
+          <ol class="tw-grid tw-grid-cols-3 md:tw-grid-cols-4 tw-gap-2">
+            <li
+              v-for="word in words"
+              :key="word.slug"
+            >
+              <nuxt-link :to="`/${$i18n.locale}/dictionary/${$route.params.dict}/${word.slugurl}/`"><span lang="mwr-Deva">{{word.slugurl}}</span></nuxt-link> <span lang="mwr-Latn">{{word.transliteration}}</span>
+            </li>
+          </ol>
+          <!-- <SearchWordsFull :width="'tw-w-2/3 md:tw-w-full'"></SearchWordsFull> -->
+        </section>
+      </div>
+
     </article>
   </div>
 </template>
@@ -68,4 +72,7 @@ export default {
 </script>
 
 <style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
+</style>
+
+<style lang="sass" src="~/assets/css/all.sass" scoped>
 </style>

@@ -3,26 +3,23 @@
     <header class="article-post_header">
       <h1 class="article-post_header--h1">Marwari words categorized by Label (usage)</h1>
     </header>
-    <p>Labels are used to categorize Marwari words by the manner and context in which they are used by speakers.</p>
-    <div class="tags-list-div-wrapper">
-      <ol class="tags-list tags-list__ol">
-        <li
-          v-for="label in uniquelabels"
-          :key="label"
-          class="tags-list__li"
-        >
-          <nuxt-link
-            :to="`/${$i18n.locale}/label/${label}/`"
-            class="tags-list__li--link nuxt-link"
-          >Marwari {{label}} words</nuxt-link>
-        </li>
-      </ol>
+    <div class="tw-max-w-screen-lg tw-mx-auto">
+      <p>Labels are used to categorize Marwari words by the manner and context in which they are used by speakers.</p>
+      <div class="tags-list-div-wrapper">
+        <ol class="tags-list tags-list__ol">
+          <li
+            v-for="label in uniquelabels"
+            :key="label"
+            class="tags-list__li"
+          >
+            <nuxt-link
+              :to="`/${$i18n.locale}/label/${label}/`"
+              class="tags-list__li--link nuxt-link"
+            >Marwari {{label}} words</nuxt-link>
+          </li>
+        </ol>
+      </div>
     </div>
-    <word-example>
-      <template #mwr>
-        test
-      </template>a
-    </word-example>
   </article>
 </template>
 

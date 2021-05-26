@@ -28,7 +28,7 @@
               {{ word.transliteration }} -->
           </h1>
         </header>
-        <p class="article-post_header--description !tw-text-base tw-text-gray-500 tw-lowercase">
+        <p class="article-post_header--description !tw-text-base tw-text-gray-500 tw-lowercase tw-max-w-screen-lg tw-mx-auto">
           {{seoKeywords}}
         </p>
         <div>

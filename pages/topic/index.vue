@@ -1,9 +1,10 @@
 <template>
-  <div>
-    <article class="article-post">
-      <header class="article-post_header">
-        <h1 class="article-post_header--h1">Topics</h1>
-      </header>
+  <article class="article-post">
+    <header class="article-post_header">
+      <h1 class="article-post_header--h1">Topics</h1>
+    </header>
+    <div class="tw-max-w-screen-lg tw-mx-auto">
+
       <p class="article-post_header--description">Topics are collections of words related to similar subject areas.</p>
 
       <!-- OLD CODE (CAN DELETE LATER) -->
@@ -45,8 +46,8 @@
           </li>
         </ol>
       </section>
-    </article>
-  </div>
+    </div>
+  </article>
 </template>
 
 <script>

@@ -3,26 +3,26 @@
     <header class="article-post_header">
       <h1 class="article-post_header--h1"><span class="tw-capitalize">{{labelTitle}}</span> Marwari words</h1>
     </header>
-    <p></p>
-    <div class="tags-list-div-wrapper">
-      <ol class="tags-list tags-list__ol">
-        <li
-          v-for="word in words"
-          :key="word.slug"
-          class="tags-list__li"
-        >
-          <nuxt-link
-            :to="`/${$i18n.locale}/dictionary/marwari-english/${word.slugurl}/`"
-            class="tags-list__li--link nuxt-link"
+    <div class="tw-max-w-screen-lg tw-mx-auto nuxt-content">
+      <div class="tags-list-div-wrapper">
+        <ol class="tags-list tags-list__ol">
+          <li
+            v-for="word in words"
+            :key="word.slug"
+            class="tags-list__li"
           >
+            <nuxt-link
+              :to="`/${$i18n.locale}/dictionary/marwari-english/${word.slugurl}/`"
+              class="tags-list__li--link nuxt-link"
+            >
 
-            {{word.slugurl}} {{word.transliteration}}
-          </nuxt-link>
+              {{word.slugurl}} {{word.transliteration}}
+            </nuxt-link>
 
-        </li>
-      </ol>
+          </li>
+        </ol>
+      </div>
     </div>
-
   </article>
 </template>
 
@@ -70,7 +70,4 @@ export default {
 </script>
 
 <style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
-</style>
-
-<style lang="sass" src="~/assets/css/layout/article-tags-list.sass" scoped>
 </style>

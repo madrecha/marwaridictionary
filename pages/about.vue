@@ -1,23 +1,30 @@
 <template>
-  <div>
-    <h1
-      class="tw-text-3xl tw-text-center tw-bg-blue-50 tw-text-pink-900 tw-p-3"
-    >
-      About Marwari Dictionary
-    </h1>
-    <NuxtContent :document="page"></NuxtContent>
-  </div>
+  <article class="article-post">
+    <header class="article-post_header">
+      <h1 class="article-post_header--h1">About Marwari Dictionary</h1>
+    </header>
+    <div class="tw-max-w-screen-lg tw-mx-auto">
+
+      <NuxtContent :document="page"></NuxtContent>
+    </div>
+  </article>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      page: null,
+      page: null
     };
   },
   async fetch() {
-    this.page = await this.$content("about").fetch();
-  },
+    this.page = await this.$content(`${this.$i18n.locale}/about`).fetch();
+  }
 };
 </script>
+
+<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
+</style>
+
+<style lang="sass" src="~/assets/css/all.sass" scoped>
+</style>
