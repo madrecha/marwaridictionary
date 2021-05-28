@@ -72,6 +72,7 @@ export default {
     '@nuxt/image',
     'vue-scrollto/nuxt', // https://github.com/rigor789/vue-scrollTo
     '@nuxtjs/fontawesome',
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -89,6 +90,13 @@ export default {
       solid: ['faCheckCircle', 'faHeart'],
       regular: ['faCheckCircle', 'faHeart']
     }
+  },
+
+  vuetify: {
+    customVariables: ['~/assets/css/themes/vuetify-variables.sass'],
+    defaultAssets: false,
+    optionsPath: '~/plugins/vuetify.js',
+    treeShake: true, // process.env.NODE_ENV === 'production',
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
