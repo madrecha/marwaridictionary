@@ -81,7 +81,8 @@ export default {
     // '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    'nuxt-webfontloader'
   ],
 
   fontawesome: {
@@ -182,6 +183,12 @@ export default {
         hi: require('./i18n/hi.js'),
       },
 
+    }
+  },
+
+  webfontloader: {
+    google: {
+      families: ['Open+Sans:300,400,600&display=swap']
     }
   },
 
