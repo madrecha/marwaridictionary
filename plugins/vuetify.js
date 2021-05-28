@@ -1,10 +1,11 @@
 export default {
+  // https://vuetifyjs.com/en/features/breakpoints/#thresholds
   breakpoint: {
     thresholds: {
-      xs: 340,
-      sm: 640,
-      md: 768,
-      lg: 1024,
+      xs: 640,
+      sm: 768,
+      md: 1024,
+      lg: 1280,
     },
   },
   // icons: {},
