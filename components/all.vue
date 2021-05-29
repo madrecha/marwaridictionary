@@ -16,16 +16,28 @@
         </ol>
       </li>
     </ol> -->
-    <div v-for="(f, index) in word.fos" :key="index">
+    <div
+      v-for="(f, index) in word.fos"
+      :key="index"
+    >
       <h2 class="tw-capitalize">{{ f.fostype }}</h2>
       <!-- <h3>Meaning of {{ meta.title }} {{ meta.transliteration }} in Marwari</h3> -->
       <ol>
-        <li v-for="mean in f.meanings" :key="mean.meaning">
-          <span v-html="mean.meaning" class="tw-text-2xl"></span>
+        <li
+          v-for="mean in f.meanings"
+          :key="mean.meaning"
+        >
+          <span
+            v-html="mean.meaning"
+            class="tw-text-2xl"
+          ></span>
           <div v-if="mean.examples">
             <h4 @click.prevent="showExamples = !showExamples">Examples</h4>
             <ul v-show="showExamples">
-              <li v-for="example in mean.examples" :key="example.eg">
+              <li
+                v-for="example in mean.examples"
+                :key="example.eg"
+              >
                 {{ example.eg }}
                 <ul>
                   <li v-if="example.en">
@@ -43,16 +55,22 @@
           </div>
           <h4 v-if="mean.synonyms">Synonyms</h4>
           <ol>
-            <li v-for="syn in mean.synonyms" :key="syn.syn">
-              <nuxt-link :to="syn.slugurl ? syn.slugurl : syn.syn">{{
+            <li
+              v-for="syn in mean.synonyms"
+              :key="syn.syn"
+            >
+              <nuxt-link :to="syn.slugurl ? localePath(syn.slugurl) : localePath(syn.syn)">{{
                 syn.syn
               }}</nuxt-link>
             </li>
           </ol>
           <h4 v-if="mean.antonyms">Antonyms</h4>
           <ol>
-            <li v-for="ant in mean.antonyms" :key="ant.ant">
-              <nuxt-link :to="ant.slugurl ? ant.slugurl : ant.ant">{{
+            <li
+              v-for="ant in mean.antonyms"
+              :key="ant.ant"
+            >
+              <nuxt-link :to="ant.slugurl ? localePath(ant.slugurl) : localePath(ant.ant)">{{
                 ant.ant
               }}</nuxt-link>
             </li>
@@ -81,9 +99,9 @@ export default {
   props: { word: { type: Object }, meta: { type: Object } },
   data() {
     return {
-      showExamples: false,
+      showExamples: false
     };
-  },
+  }
 };
 </script>
 

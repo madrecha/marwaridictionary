@@ -15,7 +15,7 @@
         </p>
         <div class="tw-divider tw-mt-20 tw-mb-16">
           <nuxt-link
-            :to="`/${$i18n.locale}/browse/`"
+            :to="localePath(`/browse`)"
             class="marwari-browse-link tw-group"
           > Browse Marwari Words <fa-icon
               :icon="faSearch"

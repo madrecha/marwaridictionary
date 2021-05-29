@@ -12,7 +12,7 @@
             class="tags-list__li"
           >
             <nuxt-link
-              :to="`/${$i18n.locale}/dictionary/marwari-english/${word.slugurl}/`"
+              :to="localePath(`/dictionary/marwari-english/${word.slugurl}/`)"
               class="tags-list__li--link nuxt-link"
             >
 

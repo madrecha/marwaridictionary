@@ -5,7 +5,7 @@
         v-for="word in words"
         :key="word.title"
       >
-        <nuxt-link :to="`/dictionary/word/${word.title}`">
+        <nuxt-link :to="localePath(`/dictionary/word/${word.title}`)">
           {{ word.title }}
         </nuxt-link>
       </li>

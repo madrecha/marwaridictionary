@@ -25,7 +25,7 @@
       </span>
       <span v-if="this.partOfSpeech === 'noun'">
         <span>{{noun}}</span> <span v-if="nounCounterpartFetched">| opposite of {{word}}: <nuxt-link
-            :to="`/${$i18n.locale}/dictionary/${$route.params.dict}/${nounCounterpartFetched.slugurl}/`"
+            :to="localePath(`/dictionary/${$route.params.dict}/${nounCounterpartFetched.slugurl}`)"
             class="tw-link tw-link-secondary"
           >
             {{nounCounterpartFetched.slugurl}}

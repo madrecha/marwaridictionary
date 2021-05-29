@@ -30,7 +30,7 @@
         class="word-child-li"
       >
         <nuxt-link
-          :to="`/${$i18n.locale}/dictionary/${$route.params.dict}/${child.slugurl}/`"
+          :to="localePath(`/dictionary/${$route.params.dict}/${child.slugurl}`)"
           class="word-child-nuxtlink"
         >
           {{ child.title ? child.title : child.slugurl }}

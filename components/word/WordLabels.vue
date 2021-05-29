@@ -13,7 +13,7 @@
         class="word-label"
       >
         <nuxt-link
-          :to="`/${$i18n.locale}/label/${label}`"
+          :to="localePath(`/label/${label}`)"
           class="nuxt-link word-label-link"
         >{{label}}</nuxt-link>{{i === labels.length - 1 ? null : `,`}}
       </span>

@@ -10,7 +10,7 @@
         List of <b>{{ $route.params.topic }}</b> in Marwari
       </p>
       <nuxt-link
-        :to="`/${$i18n.locale}/topic/`"
+        :to="localePath(`topic`)"
         class="nuxt-link tw-inline-block tw-mt-3 tw-text-center "
       >Go back to Topics</nuxt-link>
       <section
@@ -25,8 +25,8 @@
             :key="parent"
             class="tw-mt-3"
           >
-            <nuxt-link :to="`/${$i18n.locale}/topic/`">Topic</nuxt-link> →
-            <nuxt-link :to="`/${$i18n.locale}/topic/${parent}/`">{{parent}}</nuxt-link>
+            <nuxt-link :to="localePath(`/topic`)">Topic</nuxt-link> →
+            <nuxt-link :to="localePath(`/topic/${parent}`)">{{parent}}</nuxt-link>
             → {{ $route.params.topic }}
           </div>
         </div>
@@ -36,7 +36,7 @@
             v-for="child in topic.children"
             :key="child"
           >
-            <nuxt-link :to="`/${$i18n.locale}/topic/${child}/`">
+            <nuxt-link :to="localePath(`/topic/${child}`)">
               {{ child }}
             </nuxt-link>
           </li>
@@ -50,10 +50,7 @@
             :key="word.slug"
             class="tw-m-4"
           >
-            <nuxt-link
-              :to="`/${$i18n.locale}/dictionary/marwari-english/${word.slugurl}/`"
-              class=""
-            >
+            <nuxt-link :to="localePath(`/dictionary/marwari-english/${word.slugurl}`)">
               {{ word.title ? word.title : word.slugurl }} ({{ word.transliteration }})
             </nuxt-link>
           </li>

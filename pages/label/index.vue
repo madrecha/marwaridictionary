@@ -13,7 +13,7 @@
             class="tags-list__li"
           >
             <nuxt-link
-              :to="`/${$i18n.locale}/label/${label}/`"
+              :to="localePath(`/label/${label}/`)"
               class="tags-list__li--link nuxt-link"
             >Marwari {{label}} words</nuxt-link>
           </li>

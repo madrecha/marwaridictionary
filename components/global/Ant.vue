@@ -2,18 +2,20 @@
   <div>
     <p v-if="url">Antonyms of {{ url.transliteration }} in Marwari</p>
     <ol>
-      <li v-for="each_ant in ant" :key="each_ant.ant">
-        <span v-if="each_ant.context" class="tw-text-sm"
-          >({{ each_ant.context }})</span
-        >
-        <nuxt-link
-          :to="
-            each_ant.slugurl
-              ? `/dictionary/word/${each_ant.slugurl}`
-              : `/dictionary/word/${each_ant.ant}`
-          "
-        >
-          {{ each_ant.ant }}
+      <li
+        v-for="a in ant"
+        :key="a.ant"
+      >
+        <span
+          v-if="a.context"
+          class="tw-text-sm"
+        >({{ a.context }})</span>
+        <nuxt-link :to="
+            a.slugurl
+              ? localePath(`/dictionary/word/${a.slugurl}`)
+              : localePath(`/dictionary/word/${a.ant}`)
+          ">
+          {{ a.ant }}
         </nuxt-link>
       </li>
     </ol>
@@ -22,6 +24,6 @@
 
 <script>
 export default {
-  props: { ant: Array, url: Object },
+  props: { ant: Array, url: Object }
 };
 </script>

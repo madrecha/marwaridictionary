@@ -18,7 +18,7 @@
           <h2>List of Marwari Dictionaries</h2>
           <ol>
             <li class="tw-">
-              <nuxt-link :to="`/${$i18n.locale}/dictionary/marwari-english/`">Marwari-English dictionary</nuxt-link>
+              <nuxt-link :to="localePath(`/dictionary/marwari-english`)">Marwari-English dictionary</nuxt-link>
             </li>
             <li class="tw-text-gray-500">English-Marwari dictionary (WIP)</li>
             <li class="tw-text-gray-500">Marwari-Hindi dictionary (planned)</li>

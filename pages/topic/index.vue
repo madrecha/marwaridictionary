@@ -40,7 +40,7 @@
             :key="uniquetopic"
             class="tw-m-4"
           >
-            <nuxt-link :to="`/${$i18n.locale}/topic/${uniquetopic}/`">
+            <nuxt-link :to="localePath(`/topic/${uniquetopic}`)">
               {{ uniquetopic }}
             </nuxt-link> <br><span class="tw-italic tw-text-sm">({{ getWordsByTopic(alltopics, uniquetopic) }} words)</span>
           </li>

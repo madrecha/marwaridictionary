@@ -3,25 +3,36 @@
     <dt
       lang="mwr-Deva"
       class="word-example--mwr"
+      v-if="$scopedSlots.mwr"
     >
       <slot name="mwr"></slot>
     </dt>
     <dd
       lang="mwr-Latn"
       class="word-example--mwr-Latn"
+      v-if="$scopedSlots.mwrlatn"
     >
       <slot name="mwrlatn"></slot>
     </dd>
     <dd
-      :lang="$i18n.locale"
+      :lang="locale"
       class="word-example--locale"
+      v-if="$scopedSlots[locale]"
     >
-      <slot :name="$i18n.locale"></slot>
+      <slot :name="locale"></slot>
     </dd>
-    <!-- <slot></slot>  -->
-    <!-- default slot -->
   </dl>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      locale: this.$i18n.locale
+    };
+  }
+};
+</script>
 
 <style lang="sass" scoped>
 .word-example-dl-top

@@ -1,17 +1,19 @@
 <template>
   <ol>
-    <li v-for="each_related in related" :key="each_related.rel">
-      <span v-if="each_related.context" class="tw-text-sm"
-        >({{ each_related.context }})</span
-      >
-      <nuxt-link
-        :to="
-          each_related.slugurl
-            ? `/dictionary/word/${each_related.slugurl}`
-            : `/dictionary/word/${each_related.rel}`
-        "
-      >
-        {{ each_related.rel }}
+    <li
+      v-for="r in related"
+      :key="r.rel"
+    >
+      <span
+        v-if="r.context"
+        class="tw-text-sm"
+      >({{ r.context }})</span>
+      <nuxt-link :to="
+          r.slugurl
+            ? localePath(`/dictionary/${$route.params.dict}/${r.slugurl}`)
+            : localePath(`/dictionary/${$route.params.dict}/${r.rel}`)
+        ">
+        {{ r.rel }}
       </nuxt-link>
     </li>
   </ol>
@@ -21,11 +23,11 @@
 export default {
   props: {
     related: { type: Array, required: true },
-    url: { type: Object, required: false },
+    url: { type: Object, required: false }
   },
   data() {
     return {};
-  },
+  }
 };
 </script>
 

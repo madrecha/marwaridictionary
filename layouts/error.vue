@@ -3,14 +3,10 @@
     class="tw-min-w-screen tw-bg-blue-100 tw-flex tw-items-center tw-p-5 lg:tw-p-20 tw-overflow-hidden tw-relative"
     style="min-height: 70vh"
   >
-    <div
-      class="tw-min-h-full tw-min-w-full tw-rounded-3xl tw-bg-white tw-shadow-xl tw-p-10 tw-text-gray-800 tw-relative md:tw-flex tw-items-center tw-text-center md:tw-text-left"
-    >
+    <div class="tw-min-h-full tw-min-w-full tw-rounded-3xl tw-bg-white tw-shadow-xl tw-p-10 tw-text-gray-800 tw-relative md:tw-flex tw-items-center tw-text-center md:tw-text-left">
       <div class="tw-w-full md:tw-w-1/2">
         <div class="tw-mb-10 tw-text-gray-600 tw-font-light">
-          <h1
-            class="tw-font-black tw-uppercase tw-text-3xl lg:tw-text-5xl tw-text-yellow-500 tw-mb-5"
-          >
+          <h1 class="tw-font-black tw-uppercase tw-text-3xl lg:tw-text-5xl tw-text-yellow-500 tw-mb-5">
             You seem to be lost!
           </h1>
           <p class="tw-text-2xl tw-font-medium">
@@ -20,7 +16,7 @@
         <div class="tw-mb-20 md:tw-mb-0">
           <nuxt-link
             class="tw-text-lg tw-font-bold focus:tw-outline-none tw-text-white tw-bg-yellow-500 hover:tw-bg-white hover:tw-text-yellow-500 tw-shadow-xl tw-rounded-xl tw-p-4"
-            to="/"
+            :to="localePath(`/`)"
           >
             Go Home
           </nuxt-link>
@@ -33,65 +29,86 @@
           class="w-full max-w-lg lg:max-w-full mx-auto"
         >
           <style>
-            .st0 {
-              fill: #fff;
-            }
-            .st1 {
-              fill: #b5dfea;
-            }
-            .st2 {
-              opacity: 0.55;
-              fill: #90cedd;
-            }
-            .st3 {
-              fill: #d7f0f9;
-            }
-            .st4 {
-              fill: #0582c1;
-            }
-            .st5 {
-              fill: #79c9e8;
-            }
-            .st6 {
-              fill: #ffbf4d;
-            }
-            .st7 {
-              fill: #00668e;
-            }
-            .st8 {
-              fill: #05556d;
-            }
-            .st9 {
-              fill: #f98d3d;
-            }
-            .st10 {
-              fill: #ed701b;
-            }
-            .st11 {
-              fill: none;
-            }
-            .st12 {
-              fill: #efaa3a;
-            }
-            .st13 {
-              opacity: 0.29;
-              fill: #f98d2b;
-            }
-            .st14 {
-              fill: #49b4d6;
-            }
-            .st15 {
-              fill: #ff9f50;
-            }
-            .st16 {
-              fill: #f77e2d;
-            }
-            .st17 {
-              opacity: 0.55;
-              fill: url(#SVGID_1_);
-            }
+          .st0 {
+            fill: #fff;
+          }
+
+          .st1 {
+            fill: #b5dfea;
+          }
+
+          .st2 {
+            opacity: 0.55;
+            fill: #90cedd;
+          }
+
+          .st3 {
+            fill: #d7f0f9;
+          }
+
+          .st4 {
+            fill: #0582c1;
+          }
+
+          .st5 {
+            fill: #79c9e8;
+          }
+
+          .st6 {
+            fill: #ffbf4d;
+          }
+
+          .st7 {
+            fill: #00668e;
+          }
+
+          .st8 {
+            fill: #05556d;
+          }
+
+          .st9 {
+            fill: #f98d3d;
+          }
+
+          .st10 {
+            fill: #ed701b;
+          }
+
+          .st11 {
+            fill: none;
+          }
+
+          .st12 {
+            fill: #efaa3a;
+          }
+
+          .st13 {
+            opacity: 0.29;
+            fill: #f98d2b;
+          }
+
+          .st14 {
+            fill: #49b4d6;
+          }
+
+          .st15 {
+            fill: #ff9f50;
+          }
+
+          .st16 {
+            fill: #f77e2d;
+          }
+
+          .st17 {
+            opacity: 0.55;
+            fill: url(#SVGID_1_);
+          }
           </style>
-          <path class="st0" d="M0 0h500v500H0z" id="BACKGROUND" />
+          <path
+            class="st0"
+            d="M0 0h500v500H0z"
+            id="BACKGROUND"
+          />
           <g id="OBJECTS">
             <path
               class="st1"
@@ -230,35 +247,68 @@
                 class="st6"
                 d="M90.6 252.92H58.1l3.86 24.27c.29 1.84 1.88 3.2 3.74 3.2h17.29c1.86 0 3.45-1.35 3.74-3.2l3.87-24.27z"
               />
-              <path class="st15" d="M89.96 256.94l.64-4.02H58.1l.64 4.02z" />
+              <path
+                class="st15"
+                d="M89.96 256.94l.64-4.02H58.1l.64 4.02z"
+              />
               <path
                 class="st15"
                 d="M82.73 252.92l-3.86 24.27a3.792 3.792 0 0 1-3.74 3.2H83c1.86 0 3.45-1.35 3.74-3.2l3.86-24.27h-7.87z"
               />
             </g>
             <g>
-              <path class="st6" d="M167.86 209.64h146.86v29.86H167.86z" />
-              <path class="st13" d="M167.86 209.64h146.86v7.25H167.86z" />
+              <path
+                class="st6"
+                d="M167.86 209.64h146.86v29.86H167.86z"
+              />
+              <path
+                class="st13"
+                d="M167.86 209.64h146.86v7.25H167.86z"
+              />
               <path
                 class="st16"
                 d="M180.63 209.64h13.41l-3.6 7.25h-13.41zM210.83 209.64h13.41l-3.6 7.25h-13.4zM241.03 209.64h13.4l-3.59 7.25h-13.4zM271.23 209.64h13.4l-3.6 7.25h-13.39zM314.73 209.64v.2l-3.5 7.05h-13.39l3.59-7.25z"
               />
-              <path class="st5" d="M186.14 239.5h10.35v40.83h-10.35z" />
-              <path class="st14" d="M194.15 239.5h2.35v40.83h-2.35z" />
-              <path class="st5" d="M286.9 239.5h10.35v40.83H286.9z" />
+              <path
+                class="st5"
+                d="M186.14 239.5h10.35v40.83h-10.35z"
+              />
+              <path
+                class="st14"
+                d="M194.15 239.5h2.35v40.83h-2.35z"
+              />
+              <path
+                class="st5"
+                d="M286.9 239.5h10.35v40.83H286.9z"
+              />
               <path
                 class="st14"
                 d="M294.19 239.5h3.06v40.83h-3.06zM186.14 239.47h10.35v5.14h-10.35z"
               />
-              <path class="st14" d="M286.9 239.47h10.35v5.14H286.9z" />
-              <path class="st5" d="M186.14 204.97h10.35v4.64h-10.35z" />
-              <path class="st14" d="M194.15 204.97h2.35v4.64h-2.35z" />
-              <path class="st5" d="M286.9 204.97h10.35v4.64H286.9z" />
+              <path
+                class="st14"
+                d="M286.9 239.47h10.35v5.14H286.9z"
+              />
+              <path
+                class="st5"
+                d="M186.14 204.97h10.35v4.64h-10.35z"
+              />
+              <path
+                class="st14"
+                d="M194.15 204.97h2.35v4.64h-2.35z"
+              />
+              <path
+                class="st5"
+                d="M286.9 204.97h10.35v4.64H286.9z"
+              />
               <path
                 class="st14"
                 d="M294.19 204.97h3.06v4.64h-3.06zM186.14 209.03h10.35v.58h-10.35z"
               />
-              <path class="st14" d="M286.9 209.03h10.35v.58H286.9z" />
+              <path
+                class="st14"
+                d="M286.9 209.03h10.35v.58H286.9z"
+              />
               <path
                 class="st4"
                 d="M194.04 209.64l-14.81 29.86h-11.37v-4.12l12.77-25.74zM210.83 209.64l-14.81 29.86h13.4l14.82-29.86zM254.43 209.64l-14.81 29.86h-13.4l14.81-29.86zM284.63 209.64l-14.81 29.86h-13.4l14.81-29.86zM301.43 209.64l-14.81 29.86h13.4l14.71-29.66z"
@@ -275,10 +325,20 @@
                 x2="242.075"
                 y2="224.179"
               >
-                <stop offset="0" stop-color="#fff" />
-                <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                <stop
+                  offset="0"
+                  stop-color="#fff"
+                />
+                <stop
+                  offset="1"
+                  stop-color="#fff"
+                  stop-opacity="0"
+                />
               </linearGradient>
-              <path class="st17" d="M171.96 222.56H312.2v14.94H171.96z" />
+              <path
+                class="st17"
+                d="M171.96 222.56H312.2v14.94H171.96z"
+              />
               <ellipse
                 transform="rotate(-9.249 191.082 198.565)"
                 class="st6"
@@ -313,8 +373,14 @@
                 class="st13"
                 d="M326.66 269.73l-3.07 7.43h46.78l-3.06-7.43z"
               />
-              <path class="st5" d="M319.85 272.72h53.57v7.57h-53.57z" />
-              <path class="st14" d="M361.85 272.72h11.57v7.57h-11.57z" />
+              <path
+                class="st5"
+                d="M319.85 272.72h53.57v7.57h-53.57z"
+              />
+              <path
+                class="st14"
+                d="M361.85 272.72h11.57v7.57h-11.57z"
+              />
               <path
                 class="st13"
                 d="M368.53 272.72h-6.62l-5.31-12.89v-.01l-2.88-7-.79-1.92-1.29-3.12-.26-.64-2.88-7-.53-1.27-4.29-10.42.8-1.96c.92-2.23 4.08-2.23 5 0l5.1 12.38.53 1.27 2.88 7 .26.64 1.29 3.12.79 1.92 2.88 7v.01l5.32 12.89z"
@@ -333,7 +399,12 @@
                 class="st3"
                 d="M72.22 107.1c3.49 0 6.53-2.54 7.01-6 .08-.62.13-1.25.13-1.9 0-7.71-6.25-13.96-13.96-13.96-.32 0-.63.01-.94.03-.64-7.6-7.01-13.57-14.77-13.57-8.19 0-14.83 6.64-14.83 14.83 0 .36.02.72.04 1.08-2.32-1.3-5.03-1.99-7.91-1.86-7.45.34-13.57 6.3-14.1 13.74 0 .06-.01.12-.01.18-.24 4.04 3.03 7.44 7.08 7.44h52.26zM405.35 118.06c11.04 0 11.65-16.61.62-17.15-.3-.01-.6-.02-.91-.02-1.97 0-3.86.31-5.64.88-1.48-8.99-9.28-15.85-18.69-15.85-9.62 0-17.55 7.17-18.77 16.45a17.45 17.45 0 0 0-7.54-1.71c-1.51 0-2.97.19-4.37.55-9.65 2.49-7.63 16.85 2.34 16.85h52.96zM272.8 36.21c11.03 0 11.65-16.61.62-17.14-.3-.01-.6-.02-.91-.02-1.97 0-3.86.31-5.64.88-1.48-8.99-9.28-15.85-18.68-15.85-9.61 0-17.55 7.17-18.77 16.45a17.501 17.501 0 0 0-11.9-1.16c-9.65 2.48-7.62 16.84 2.34 16.84h52.94z"
               />
-              <circle class="st6" cx="97.11" cy="40.45" r="26.45" />
+              <circle
+                class="st6"
+                cx="97.11"
+                cy="40.45"
+                r="26.45"
+              />
               <path
                 class="st15"
                 d="M97.32 14c7.19 4.73 11.95 12.87 11.95 22.12 0 14.61-11.84 26.45-26.45 26.45-.07 0-.14 0-.22-.01 4.17 2.74 9.15 4.34 14.51 4.34 14.61 0 26.45-11.84 26.45-26.45 0-14.53-11.73-26.33-26.24-26.45z"
@@ -350,7 +421,7 @@
 export default {
   data() {
     return {};
-  },
+  }
 };
 </script>
 
