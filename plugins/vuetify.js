@@ -8,7 +8,9 @@ export default {
       lg: 1280,
     },
   },
-  // icons: {},
+  icons: {
+    iconfont: 'mdiSvg',
+  },
   // lang: {},
   // theme: {}
 }
