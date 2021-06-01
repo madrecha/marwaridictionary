@@ -42,7 +42,7 @@ export default {
     '~/plugins/vue-scrollactive.js',
     { src: '~/plugins/vue-dragscroll.js', ssr: false },
     // '~/plugins/vue-tooltip.js',
-    '~/plugins/directives',
+    // '~/plugins/directives',
     '~/plugins/vue-google-charts.js', // https://github.com/devstark-com/vue-google-charts
   ],
 
