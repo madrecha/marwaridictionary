@@ -1,50 +1,57 @@
 <template>
   <div>
-    <article
+    <div
       v-if="$fetchState.pending"
-      class="tw-min-h-screen tw-my-48"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
     >
-      <p class="tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium">
-        Fetching words...💖 Wait for a few seconds 😊
+      Fetching... 💖 Wait for a few seconds 😊
+
+    </div>
+    <div
+      v-else-if="$fetchState.error"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+    >
+      Error in Fetching... 👀
+    </div>
+    <article-layout v-else>
+      <template #title>Marwari-English Dictionary</template>
+      <template #description>Browse Marwari-English Dictionary with {{ words.length }} Marwari words</template>
+
+      <p class="tw-text-center tw-mt-3 md:tw-mt-5 tw-text-gray-800 tw-text-sm">
+        {{ nouns.length }} nouns, {{ verbs.length }} verbs,
+        {{ words.length - nouns.length - verbs.length }} others =
+        {{ words.length }} words
       </p>
-    </article>
-    <article class="article-post">
-      <section class="tw-text-center">
-        <header class="article-post_header">
-          <h1 class="article-post_header--h1">Browse Marwari-English Dictionary with <br>{{ words.length }} Marwari words</h1>
-          <p class="article-post_header--description tw-mt-3 md:tw-mt-5 tw-text-gray-800 tw-text-sm">
-            {{ nouns.length }} nouns, {{ verbs.length }} verbs,
-            {{ words.length - nouns.length - verbs.length }} others =
-            {{ words.length }} words
-          </p>
-        </header>
-        <div class="tw-mt-1">
-          <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto">
-            <button
-              @click="getWordsType('nouns')"
-              class="fos-button"
-            >
-              Nouns
-            </button>
-            <button
-              @click="getWordsType('verbs')"
-              class="fos-button"
-            >
-              Verbs
-            </button>
-            <button
-              @click="getWordsType('words')"
-              class="fos-button"
-            >
-              All words
-            </button>
-          </div>
-          <p class="tw-mt-1 tw-text-sm tw-text-gray-800">
-            showing {{ wordsToIterate.length }} {{ fosType }} of
-            {{ words.length }} words
-          </p>
+
+      <div class="tw-mt-1 tw-text-center">
+        <div class="tw-flex tw-flex-wrap tw-justify-center tw-mx-auto tw-gap-4 md:tw-gap-8">
+          <button
+            @click="getWordsType('nouns')"
+            v-ripple
+            class="fos-button"
+          >
+            Nouns
+          </button>
+          <button
+            @click="getWordsType('verbs')"
+            v-ripple
+            class="fos-button"
+          >
+            Verbs
+          </button>
+          <button
+            @click="getWordsType('words')"
+            v-ripple
+            class="fos-button"
+          >
+            All words
+          </button>
         </div>
-      </section>
+        <p class="tw-text-center tw-mt-3 tw-text-sm tw-text-gray-800">
+          showing {{ wordsToIterate.length }} {{ fosType }} of
+          {{ words.length }} words
+        </p>
+      </div>
       <!-- <div class="tw-mx-auto tw-sticky tw-top-12" style="max-width: 15rem">
         <SearchWordsFull
           width="tw-w-full"
@@ -55,7 +62,7 @@
         <p class="tw-mt-1 tw-text-center">
           Sorted by <span class="tw-font-medium">{{ sortByItemText }}</span>
         </p>
-        <div class="tw-mt-1 tw-mb-2 tw-flex tw-justify-center tw-mx-auto tw-text-xs md:tw-text-sm">
+        <div class="tw-my-2 tw-flex tw-justify-center tw-items-center tw-mx-auto tw-text-xs md:tw-text-sm tw-gap-4 md:tw-gap-8">
           <button
             @click.prevent="sortWordsBy('title')"
             class="sort-button"
@@ -82,29 +89,29 @@
           </button>
         </div>
       </section>
-      <ul class="tw-list-none tw-mt-2 md:tw-mt-3 md:tw-py-3 tw-grid tw-grid-cols-3 lg:tw-grid-cols-4 tw-mx-auto tw-max-w-screen-lg">
+      <ul class="!tw-pl-0 tw-list-none tw-mt-3 md:tw-py-3 tw-grid tw-grid-cols-3 md:tw-grid-cols-4 tw-mx-auto tw-max-w-screen-lg tw-gap-4 md:tw-gap-8">
         <li
           v-for="word in wordsToIterate"
           :key="word.slug"
-          class="tw-m-3 md:tw-m-4 tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center tw-shadow-lg hover:tw-shadow-2xl"
+          class="tw-border tw-rounded-xl tw-border-pink-800 tw-bg-gradient-to-br hover:tw-from-white tw-text-center tw-shadow-md hover:tw-shadow-2xl tw-transform hover:tw-scale-110 tw-transition-all"
           :class="
             word.grammar && word.grammar.noun
               ? 'hover:tw-to-pink-100'
               : word.grammar && word.grammar.verb
-              ? 'hover:tw-to-blue-100'
+              ? 'hover:tw-to-green-100'
               : 'hover:tw-to-gray-100'
           "
         >
           <nuxt-link
             v-if="word.slugurl"
             :to="localePath(`/dictionary/marwari-english/${word.slugurl}`)"
-            class="sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
+            class="tw-inline-block sm:tw-flex tw-items-center tw-justify-center tw-text-lg tw-text-center"
           >
             <div class="sm:tw-w-1/2 tw-p-2 sm:tw-p-4 tw-rounded-xl tw-bg-gradient-to-br tw-from-white tw-to-pink-50 tw-text-blue-900 md:tw-text-xl tw-break-words md:tw-break-normal">
               {{ word.title ? word.title : word.slugurl }}
             </div>
             <div class="sm:tw-w-1/2">
-              <div class="tw-text-sm">
+              <div class="tw-text-sm tw-text-gray-500">
                 {{word.transliteration }}
               </div>
               <!-- <div class="tw-text-sm">
@@ -112,7 +119,7 @@
                   require("@sanskrit-coders/sanscript").t(
                     word.url.title,
                     "devanagari",
-                    "velthuis",
+                    "iast",
                     { skip_sgml: false, syncope: true }
                   )
                 }}
@@ -123,8 +130,8 @@
                   word.grammar.noun
                     ? 'tw-text-pink-500'
                     : word.grammar.verb
-                    ? 'tw-text-blue-500'
-                    : 'tw-text-gray-500'
+                    ? 'tw-text-green-600'
+                    : 'tw-text-gray-600'
                 "
               >
                 {{
@@ -139,13 +146,17 @@
           </nuxt-link>
         </li>
       </ul>
-    </article>
+    </article-layout>
   </div>
+
 </template>
 
 <script>
+import ArticleLayout from "~/components/templates/ArticleLayout.vue";
+
 export default {
   name: "BrowseIndexPage",
+  components: { ArticleLayout },
   data() {
     return {
       words: [],
@@ -304,12 +315,8 @@ export default {
 
 <style lang="sass" scoped>
 .fos-button
-  @apply tw-p-2 tw-m-2 tw-rounded-md tw-border tw-border-blue-500 tw-bg-blue-50 hover:tw-bg-pink-50 focus:tw-outline-none focus:tw-bg-pink-50 focus:tw-ring-1 focus:tw-ring-pink-500 focus:tw-text-pink-800
+  @apply tw-p-2 tw-rounded tw-shadow-md tw-bg-pink-50 focus:tw-outline-none focus:tw-ring-1 hover:tw-bg-pink-500 hover:tw-text-white focus:tw-bg-pink-500 focus:tw-text-white
 
 .sort-button
-  @apply tw-p-1 md:tw-p-2 tw-m-1 md:tw-m-2 tw-rounded-md tw-border tw-border-yellow-500 tw-bg-yellow-50 hover:tw-bg-green-50 focus:tw-outline-none focus:tw-bg-green-50 focus:tw-ring-1 focus:tw-ring-green-500 focus:tw-text-green-800
+  @apply tw-p-1 md:tw-p-2 tw-text-sm md:tw-text-lg tw-rounded tw-shadow-md tw-bg-yellow-50 focus:tw-outline-none focus:tw-ring-1 hover:tw-bg-yellow-500 hover:tw-text-white focus:tw-bg-yellow-500 focus:tw-text-white
 </style>
-
-<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
-</style>
-

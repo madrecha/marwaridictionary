@@ -1,11 +1,21 @@
 <template>
-  <article class="article-post">
-    <header class="article-post_header">
-      <h1 class="article-post_header--h1">Marwari words categorized by Label (usage)</h1>
-    </header>
-    <div class="tw-max-w-screen-lg tw-mx-auto">
-      <p>Labels are used to categorize Marwari words by the manner and context in which they are used by speakers.</p>
-      <div class="tags-list-div-wrapper">
+  <div>
+    <div
+      v-if="$fetchState.pending"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+    >
+      Fetching... 💖 Wait for a few seconds 😊
+    </div>
+    <div
+      v-else-if="$fetchState.error"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+    >
+      Error in Fetching... 👀
+    </div>
+    <article-layout v-else>
+      <template #title>Marwari words categorized by Label (usage)</template>
+      <template #description>Labels are used to categorize Marwari words by the manner and context in which they are used by speakers.</template>
+      <div class="tags-list-div-wrapper nuxt-content">
         <ol class="tags-list tags-list__ol">
           <li
             v-for="label in uniquelabels"
@@ -19,15 +29,16 @@
           </li>
         </ol>
       </div>
-    </div>
-  </article>
+    </article-layout>
+  </div>
 </template>
 
 <script>
-import WordExample from "~/components/word/WordExample.vue";
+import ArticleLayout from "~/components/templates/ArticleLayout.vue";
+
 export default {
   name: "LabelIndexPage",
-  components: { WordExample },
+  components: { ArticleLayout },
   data() {
     return {
       labels: [],
@@ -64,9 +75,3 @@ export default {
   }
 };
 </script>
-
-<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
-</style>
-
-<style lang="sass" src="~/assets/css/layout/article-tags-list.sass" scoped>
-</style>

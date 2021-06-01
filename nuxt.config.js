@@ -4,7 +4,8 @@ export default {
     'pages/blog', // WIP
     'pages/learn', // WIP,
     'pages/codetest.vue', // random,
-    'pages/grammar'
+    'pages/grammar',
+    'pages/dictionary/_dict/enlinks.vue'
   ],
 
   // Target: https://go.nuxtjs.dev/config-target
@@ -12,7 +13,7 @@ export default {
 
   // Create only modern build
   // Ref: https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-modern
-  // modern: true, // commenting it as it slows down the compile time very much
+  modern: process.env.NODE_ENV === 'production', // not needed in dev mode as it as it slows down the compile time very much
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -27,9 +28,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: "preconnect", href: "https://fonts.gstatic.com" },
+      // https://csswizardry.com/2020/05/the-fastest-google-fonts/
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true },
       {
-        rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+        rel: "preload", as: "style", href: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap",
+        media: "print", onload: "this.media='all'"
       }
     ]
   },

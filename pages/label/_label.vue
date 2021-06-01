@@ -1,10 +1,21 @@
 <template>
-  <article class="article-post">
-    <header class="article-post_header">
-      <h1 class="article-post_header--h1"><span class="tw-capitalize">{{labelTitle}}</span> Marwari words</h1>
-    </header>
-    <div class="tw-max-w-screen-lg tw-mx-auto nuxt-content">
-      <div class="tags-list-div-wrapper">
+  <div>
+    <div
+      v-if="$fetchState.pending"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+    >
+      Fetching... 💖 Wait for a few seconds 😊
+    </div>
+    <div
+      v-else-if="$fetchState.error"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+    >
+      Error in Fetching... 👀
+    </div>
+    <article-layout v-else>
+      <template #title>Marwari {{labelTitle}} words</template>
+      <template #description>List of {{labelTitle}} words in Marwari language</template>
+      <div class="tags-list-div-wrapper nuxt-content">
         <ol class="tags-list tags-list__ol">
           <li
             v-for="word in words"
@@ -13,22 +24,23 @@
           >
             <nuxt-link
               :to="localePath(`/dictionary/marwari-english/${word.slugurl}/`)"
-              class="tags-list__li--link nuxt-link"
+              class="tags-list__li--link"
             >
-
-              {{word.slugurl}} {{word.transliteration}}
+              {{word.slugurl}} <span class="tw-text-sm">{{word.transliteration}}</span>
             </nuxt-link>
-
           </li>
         </ol>
       </div>
-    </div>
-  </article>
+    </article-layout>
+  </div>
 </template>
 
 <script>
+import ArticleLayout from "~/components/templates/ArticleLayout.vue";
+
 export default {
   name: "LabelPage",
+  components: { ArticleLayout },
   data() {
     return {
       labels: [],
@@ -68,9 +80,6 @@ export default {
   }
 };
 </script>
-
-<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
-</style>
 
 <style lang="sass" src="~/assets/css/layout/article-tags-list.sass" scoped>
 </style>

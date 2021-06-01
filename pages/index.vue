@@ -20,7 +20,7 @@
           > Browse Marwari Words
             <v-icon
               right
-              color="green darken-3"
+              class="!tw-text-green-600"
             >{{mdiMagnify}}</v-icon>
           </nuxt-link>
         </div>

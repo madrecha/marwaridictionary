@@ -1,13 +1,25 @@
 <template>
-  <article class="article-post">
-    <header class="article-post_header">
-      <h1 class="article-post_header--h1">About Marwari Dictionary</h1>
-    </header>
-    <div class="tw-max-w-screen-lg tw-mx-auto">
+  <div>
+    <div
+      v-if="$fetchState.pending"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+    >
+      Fetching... 💖 Wait for a few seconds 😊
 
-      <NuxtContent :document="page"></NuxtContent>
     </div>
-  </article>
+    <div
+      v-else-if="$fetchState.error"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+    >
+      Error in Fetching... 👀
+    </div>
+    <article-layout v-else>
+      <template #title>About Marwari Dictionary</template>
+
+      <nuxt-content :document="page"></nuxt-content>
+    </article-layout>
+  </div>
+
 </template>
 
 <script>
@@ -22,9 +34,3 @@ export default {
   }
 };
 </script>
-
-<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
-</style>
-
-<style lang="sass" src="~/assets/css/all.sass" scoped>
-</style>

@@ -198,7 +198,7 @@ export default {
   @apply tw-cursor-pointer tw-flex tw-justify-between tw-items-center hover:tw-shadow-lg
 .word-pos-collapse-icon
   @apply tw-text-pink-500 tw-text-2xl
-.word-pos-heading
+// .word-pos-heading
 .word-pos-heading-span-word
   text-shadow: 1px 1px 2px #ffdcdc
   @apply tw-text-pink-600 tw-font-semibold tw-text-2xl
