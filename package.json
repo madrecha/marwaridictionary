@@ -8,7 +8,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "npm run generate && firebase deploy --only hosting:marwaridictionary"
+    "deploy": "npm run generate && firebase deploy --only hosting:marwaridictionary",
+    "deployonly": "firebase deploy --only hosting:marwaridictionary",
+    "deploytest": "npm run generate && firebase hosting:channel:deploy test"
   },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
