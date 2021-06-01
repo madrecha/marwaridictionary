@@ -26,7 +26,11 @@ export default {
       { hid: 'description', name: 'description', content: 'Learn Marwari language with Marwari dictionary in English and Hindi by Manas Madrecha' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: "preconnect", href: "https://fonts.gstatic.com" },
+      {
+        rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      }
     ]
   },
 
@@ -71,7 +75,6 @@ export default {
     '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
     '@nuxt/image',
     'vue-scrollto/nuxt', // https://github.com/rigor789/vue-scrollTo
-    '@nuxtjs/fontawesome',
     '@nuxtjs/vuetify'
   ],
 
@@ -82,16 +85,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'nuxt-i18n',
-    'nuxt-webfontloader'
   ],
-
-  fontawesome: {
-    component: 'faIcon',
-    icons: {
-      solid: ['faCheckCircle', 'faHeart'],
-      regular: ['faCheckCircle', 'faHeart']
-    }
-  },
 
   vuetify: {
     customVariables: ['~/assets/css/themes/vuetify-variables.sass'],
@@ -183,12 +177,6 @@ export default {
         hi: require('./i18n/hi.js'),
       },
 
-    }
-  },
-
-  webfontloader: {
-    google: {
-      families: ['Open+Sans:300,400,600&display=swap']
     }
   },
 
