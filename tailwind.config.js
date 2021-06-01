@@ -29,8 +29,6 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [
-    require('daisyui'),
-  ],
+  plugins: [],
   prefix: 'tw-',
 }
