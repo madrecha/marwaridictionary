@@ -7,7 +7,7 @@
       autocomplete="off"
       autofocus
       placeholder="Search for word 🔎"
-      class="tw-bg-white tw-rounded-lg tw-p-2 tw-shadow tw-border tw-border-gray-700 focus:tw-outline-none focus:tw-ring-2 tw-ring-blue-400 tw-transform tw-transition-transform"
+      class="tw-bg-white tw-rounded-lg tw-p-2 tw-shadow tw-border tw-border-gray-700 focus:tw-outline-none tw-ring-1 focus:tw-ring-2 tw-ring-blue-400 tw-transform tw-transition-transform"
       :class="width"
       transition="slide-x-transition"
       @keyup.esc="clearInput()"

@@ -1,68 +1,44 @@
 <template>
-  <div class="nuxt-content">
-    <article class="article-post">
-      <header class="article-post_header">
-        <h1 class="article-post_header--h1">Marwari Dictionaries</h1>
-        <p class="article-post_header--description"></p>
-      </header>
-      <div class="tw-max-w-screen-lg tw-mx-auto">
-        <section>
-          <h2>Introduction</h2>
-          <p>While Marwari Dictionaries can be monolingual or bilingual, we have started with preparing a <strong>bilingual Marwari to English dictionary</strong>. Why? Because we feel that with this approach, we can quickly reach out to the English speakers who wish to learn Marwari language.</p>
-
-          <p>Of course, we will also try to prepare a bilingual English to Marwari dictionary. You too can help us to contribute to the community.</p>
-
-        </section>
-
-        <section>
-          <h2>List of Marwari Dictionaries</h2>
-          <ol>
-            <li class="tw-">
-              <nuxt-link :to="localePath(`/dictionary/marwari-english`)">Marwari-English dictionary</nuxt-link>
-            </li>
-            <li class="tw-text-gray-500">English-Marwari dictionary (WIP)</li>
-            <li class="tw-text-gray-500">Marwari-Hindi dictionary (planned)</li>
-            <li class="tw-text-gray-500">Hindi-Marwari dictionary (planned)</li>
-            <li class="tw-text-gray-500">Marwari dictionary (planned) (monolingual)</li>
-          </ol>
-          <p class="tw-text-sm">WIP = Work in Progress</p>
-        </section>
-
-        <section>
-          <h2>Long-term Vision</h2>
-          <p>Read our <a
-              href="https://github.com/madrecha/marwaridictionary/blob/master/PLAN.md"
-              ref="noopener noreferer"
-              target="_blank"
-            >plan on Github</a> on how we aim to implement these extensively comphrensive Marwari Dictionaries.</p>
-        </section>
-
-        <!-- <section class="tw-flex tw-justify-evenly tw-items-center">
-
-      <nuxt-link
-        class="tw-w-48 tw-h-48 tw-rounded-lg tw-border tw-border-gray-200 tw-bg-yellow-50 tw-flex tw-justify-center tw-items-center"
-        :to="`/${$i18n.locale}/dictionary/word/`"
+  <div>
+    <div
+      v-if="$fetchState.pending"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+    >
+      Fetching... 💖 Wait for a few seconds 😊
+    </div>
+    <div
+      v-else-if="$fetchState.error"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+    >
+      Error in Fetching... 👀
+    </div>
+    <article-layout v-else>
+      <template
+        #title
+        v-if="post"
       >
-        Words
-      </nuxt-link>
-      <nuxt-link
-        class="tw-w-48 tw-h-48 tw-rounded-lg tw-border tw-border-gray-200 tw-bg-yellow-50 tw-flex tw-justify-center tw-items-center"
-        :to="`/${$i18n.locale}/dictionary/topic/`"
+        {{post.title}}
+      </template>
+      <template
+        #description
+        v-if="post"
       >
-        Topics
-      </nuxt-link>
-    </section> -->
-        <!-- <article>
-      <nuxt-content :document="post"></nuxt-content>
-    </article> -->
-      </div>
-    </article>
+        {{post.description}}
+      </template>
+      <nuxt-content
+        :document="post"
+        v-if="post"
+      ></nuxt-content>
+    </article-layout>
   </div>
 </template>
 
 <script>
+import ArticleLayout from "~/components/templates/ArticleLayout.vue";
+
 export default {
   name: "DictionaryIndexPage",
+  components: { ArticleLayout },
   data() {
     return {
       posts: null,
@@ -80,9 +56,3 @@ export default {
   }
 };
 </script>
-
-<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
-</style>
-
-<style lang="sass" src="~/assets/css/all.sass" scoped>
-</style>

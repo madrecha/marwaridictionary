@@ -1,58 +1,58 @@
 <template>
-  <article class="article-post">
-    <header class="article-post_header">
-      <h1 class="article-post_header--h1">Topics</h1>
-    </header>
-    <div class="tw-max-w-screen-lg tw-mx-auto">
+  <div>
+    <div
+      v-if="$fetchState.pending"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+    >
+      Fetching... 💖 Wait for a few seconds 😊
+    </div>
+    <div
+      v-else-if="$fetchState.error"
+      class="tw-my-48 tw-text-xl tw-text-blue-800 tw-bg-pink-50 tw-p-4 tw-text-center tw-font-medium"
+    >
+      Error in Fetching... 👀
+    </div>
+    <article-layout v-else>
+      <template #title>Topics</template>
+      <template #description>
+        Topics are collections of words related to similar subject areas.
+      </template>
 
-      <p class="article-post_header--description">Topics are collections of words related to similar subject areas.</p>
-
-      <!-- OLD CODE (CAN DELETE LATER) -->
-      <!-- <ol>
-      <li v-for="(topic, i) in topics" :key="i">
-        <nuxt-link
-          :to="`/topic/${topic.url.slugurl}`"
-          class="tw-capitalize"
-          v-if="topic.url"
-        >
-          {{ topic.url.slugurl }}
-        </nuxt-link>
-
-        <ol v-if="topic.children && topic.children.length > 0">
-          <li v-for="children in topic.children" :key="children">
-            <nuxt-link :to="`/topic/${children}`" class="tw-capitalize">
-              {{ children }}
-            </nuxt-link>
-          </li>
-        </ol>
-      </li>
-    </ol> -->
-      <section class="tw-mt-3 tw-max-w-5xl tw-mx-auto">
+      <section class="tw-mt-3 nuxt-content">
         <p class="tw-text-center">
           <span class="tw-font-medium">{{ uniquetopics.length }}</span>
           topics added
           <span class="tw-font-medium">{{ alltopics.length }}</span>
           times till now
         </p>
-        <ol class="tw-list-decimal tw-grid tw-grid-cols-3 lg:tw-grid-cols-5 tw-gap-1 lg:tw-gap-3 tw-p-2 nuxt-content">
+        <ol class="tw-list-decimal tw-list-outside tw-grid tw-grid-cols-2 sm:tw-grid-cols-3 md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-gap-4 md:tw-gap-8">
           <li
             v-for="uniquetopic in uniquetopics"
             :key="uniquetopic"
-            class="tw-m-4"
+            class=""
           >
-            <nuxt-link :to="localePath(`/topic/${uniquetopic}`)">
-              {{ uniquetopic }}
-            </nuxt-link> <br><span class="tw-italic tw-text-sm">({{ getWordsByTopic(alltopics, uniquetopic) }} words)</span>
+            <div class="tw-inline-flex tw-flex-col tw-flex-wrap">
+              <nuxt-link
+                :to="localePath(`/topic/${uniquetopic}`)"
+                class="tw-inline-block tw-p-1 tw-text-base md:tw-text-lg"
+              >
+                {{ uniquetopic }}
+              </nuxt-link>
+              <span class="tw-inline-block tw-italic tw-text-sm">({{ getWordsByTopic(alltopics, uniquetopic)}} words)</span>
+            </div>
           </li>
         </ol>
       </section>
-    </div>
-  </article>
+    </article-layout>
+  </div>
 </template>
 
 <script>
+import ArticleLayout from "~/components/templates/ArticleLayout.vue";
+
 export default {
   name: "TopicIndexPage",
+  components: { ArticleLayout },
   data() {
     return {
       // topics: [],
@@ -145,9 +145,3 @@ export default {
 };
 </script>
 
-<style scoped>
-/* @import url(~assets/css/nuxtcontent.postcss); */
-</style>
-
-<style lang="sass" src="~/assets/css/layout/article-heading.sass" scoped>
-</style>

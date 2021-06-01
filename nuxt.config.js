@@ -4,7 +4,8 @@ export default {
     'pages/blog', // WIP
     'pages/learn', // WIP,
     'pages/codetest.vue', // random,
-    'pages/grammar'
+    'pages/grammar',
+    'pages/dictionary/_dict/enlinks.vue'
   ],
 
   // Target: https://go.nuxtjs.dev/config-target

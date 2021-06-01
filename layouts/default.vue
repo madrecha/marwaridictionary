@@ -1,15 +1,14 @@
 <template>
-  <div>
-    <TheHeader></TheHeader>
-    <main class="tw-min-h-[100vh]">
-      <!-- tw-max-w-screen-lg tw-mx-auto  -->
+  <v-app class="tw-text-base md:tw-text-lg">
+    <the-header></the-header>
+    <v-main class="!tw-min-h-screen">
       <Nuxt
         keep-alive
         :keep-alive-props="{ max: 10 }"
       ></Nuxt>
-    </main>
-    <TheFooter></TheFooter>
-  </div>
+    </v-main>
+    <the-footer></the-footer>
+  </v-app>
 </template>
 
 <script>
@@ -17,12 +16,12 @@ import TheHeader from "~/components/templates/TheHeader";
 import TheFooter from "~/components/templates/TheFooter";
 
 export default {
-  components: { TheHeader, TheFooter },
-  data() {
-    return {
-      // showFooter: false,
-    };
-  }
+  components: { TheHeader, TheFooter }
+  // data() {
+  //   return {
+  //     // showFooter: false,
+  //   };
+  // }
   // methods: {
   //   showElements() {
   //     this.showFooter =
@@ -36,3 +35,4 @@ export default {
   // },
 };
 </script>
+

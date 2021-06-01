@@ -1,39 +1,29 @@
 <template>
-  <footer class="tw-border-t tw-border-pink-500 tw-bg-gradient-to-br tw-from-white tw-to-pink-50">
-    <div class="sm:tw-px-4 sm:tw-py-2 sm:tw-flex tw-items-center tw-justify-evenly">
-      <div class="sm:tw-w-2/3 sm:tw-flex tw-items-center tw-justify-start">
-        <p class="sm:tw-px-6 tw-text-center">
-          <span class="tw-text-xs sm:tw-text-base tw-text-gray-500">Inspiration:</span>
-          <span class="tw-font-medium tw-text-pink-900">CA Adarsh Madrecha</span>
-        </p>
-        <p class="sm:tw-px-6 tw-text-center">
-          <span class="tw-text-xs sm:tw-text-base tw-text-gray-500">Design & Content:</span>
-          <span class="tw-font-medium tw-text-pink-900">CA {{ $t("default_author") }}</span>
-        </p>
+  <v-footer
+    app
+    absolute
+    class="tw-bg-gradient-to-b tw-from-white tw-to-blue-50 "
+  >
+    <div class="tw-w-full tw-border-t tw-border-blue-200 tw-px-4 tw-py-2 tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-justify-evenly tw-gap-4 tw-text-center">
+      <div class="">
+        <span class="tw-text-base tw-text-gray-500">Inspiration:</span>
+        <span class="tw-font-medium tw-text-gray-900">CA Adarsh Madrecha</span>
       </div>
-      <div class="sm:tw-w-1/3 tw-flex tw-items-center tw-justify-center">
-        <div class="tw-w-1/4 sm:tw-w-1/2 tw-text-xs sm:tw-text-base sm:tw-p-3 tw-text-gray-500">
-          <p>&copy; 2014 - {{new Date().getFullYear()}}</p>
-        </div>
-        <div class="sm:tw-w-1/2 tw-text-center">
-          <a
-            href="https://github.com/madrecha/marwaridictionary"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="tw-text-sm sm:tw-text-base tw-text-green-800 hover:tw-text-green-500"
-          >
-            <span class="mdi mdi-github"></span> Contribute on Github
-          </a>
-        </div>
+      <div>
+        <span class="tw-text-base tw-text-gray-500">Design & Content:</span>
+        <span class="tw-font-medium tw-text-gray-900">CA {{ $t("default_author") }}</span>
+      </div>
+      <div class="tw-text-base tw-text-gray-800">
+        &copy; 2014 - {{new Date().getFullYear()}}
       </div>
     </div>
-  </footer>
+  </v-footer>
 </template>
 
 <script>
-export default {
-  data() {
-    return {};
-  }
-};
+// export default {
+//   data() {
+//     return {};
+//   }
+// };
 </script>

@@ -13,7 +13,10 @@
               :to="localePath('/')"
               class="pink--text text--darken-2"
             >
-              <v-icon color="pink">{{mdiHome}}</v-icon>
+              <v-icon
+                left
+                class="!tw-text-pink-600"
+              >{{mdiHome}}</v-icon>
 
               Marwari Dictionary
 
@@ -27,7 +30,6 @@
           v-for="menu in menus"
           :key="menu.text"
           :class="`hover:${menu.bgcolor}`"
-          
         >
           <nuxt-link
             exact
@@ -36,7 +38,8 @@
           >
             <v-icon
               left
-              :color="menu.color"
+              :large="$vuetify.breakpoint.mdAndUp"
+              :class="menu.iconColor"
             >{{ menu.icon }}</v-icon>{{ menu.text }}
           </nuxt-link>
         </li>
@@ -44,7 +47,7 @@
 
       <template #append>
         <footer class="tw-p-2">
-          &copy; Manas Madrecha
+          &copy; CA Manas Madrecha
         </footer>
         <div
           class="tw-flex tw-mx-2"
@@ -57,7 +60,10 @@
             class="tw-block tw-p-2 tw-rounded-xl hover:tw-bg-gray-50 hover:tw-shadow"
             title="Marwari Dictionary Github repository"
           >
-            <v-icon color="grey darken-3">{{mdiGithub}}</v-icon>
+            <v-icon
+              role="Github"
+              class="!tw-text-gray-600"
+            >{{mdiGithub}}</v-icon>
           </a>
 
           <a
@@ -67,7 +73,10 @@
             class="tw-block tw-p-2 tw-rounded-xl hover:tw-bg-pink-50 hover:tw-shadow"
             title="Manas Madrecha Instagram follow"
           >
-            <v-icon color="pink darken-3">{{mdiInstagram}}</v-icon>
+            <v-icon
+              role="Instagram"
+              class="!tw-text-pink-600"
+            >{{mdiInstagram}}</v-icon>
           </a>
         </div>
       </template>
@@ -88,17 +97,17 @@
         </v-img>
       </template>
 
-      <v-app-bar-nav-icon
+      <v-icon
         role="menu"
         @click.stop="toggleMenu = !toggleMenu"
-        color="grey"
-      ></v-app-bar-nav-icon>
+        class="!tw-text-gray-500 tw-mx-2 tw-transform hover:tw-scale-125 tw-transition-transform"
+      >{{mdiMenu}}</v-icon>
 
       <div class="tw-w-full tw-flex tw-justify-between tw-items-center">
         <div class="tw-w-[90%] md:tw-w-[30%] tw-mx-2">
           <nuxt-link
             :to="localePath('/')"
-            class="tw-block tw-p-2 !tw-text-pink-700 tw-font-semibold  tw-text-xl md:tw-text-2xl"
+            class="tw-block tw-p-2 !tw-text-pink-700 tw-font-semibold tw-text-xl md:tw-text-2xl tw-transform hover:tw--skew-x-6 tw-transition-transform"
           >Marwari Dictionary</nuxt-link>
         </div>
 
@@ -106,14 +115,11 @@
           class="tw-w-[10%] tw-mx-2"
           v-if="$vuetify.breakpoint.smAndDown"
         >
-          <v-btn
-            text
-            icon
-            color="blue darken-4"
+          <v-icon
+            role="search"
+            class="!tw-text-blue-800"
             @click="toggleSearch = true"
-          >
-            <v-icon>{{mdiMagnify}}</v-icon>
-          </v-btn>
+          >{{mdiMagnify}}</v-icon>
         </div>
 
         <div
@@ -134,7 +140,10 @@
             class="tw-block tw-p-2 tw-rounded-xl hover:tw-bg-gray-50 hover:tw-shadow"
             title="Marwari Dictionary Github repository"
           >
-            <v-icon color="grey darken-3">{{mdiGithub}}</v-icon>
+            <v-icon
+              role="Github"
+              class="!tw-text-gray-600"
+            >{{mdiGithub}}</v-icon>
           </a>
 
           <a
@@ -144,7 +153,10 @@
             class="tw-block tw-p-2 tw-rounded-xl hover:tw-bg-pink-50 hover:tw-shadow"
             title="Manas Madrecha Instagram follow"
           >
-            <v-icon color="pink darken-3">{{mdiInstagram}}</v-icon>
+            <v-icon
+              role="Instagram"
+              class="!tw-text-pink-600"
+            >{{mdiInstagram}}</v-icon>
           </a>
         </div>
       </div>
@@ -176,7 +188,7 @@
         <v-spacer></v-spacer>
 
         <v-btn
-          color="blue darken-1"
+          class="!tw-text-blue-500"
           text
           @click="toggleSearch = false"
         >
@@ -220,37 +232,37 @@ export default {
           icon: mdiHome,
           text: `Home`,
           link: `/`,
-          color: `yellow darken-3`,
+          iconColor: `!tw-text-yellow-500`,
           bgcolor: `tw-bg-yellow-50`
         },
         {
           icon: mdiBookEditOutline,
           text: `Dictionary`,
           link: `/dictionary`,
-          color: `blue`,
+          iconColor: `!tw-text-blue-600`,
           bgcolor: `tw-bg-blue-50`
         },
         {
           icon: mdiSortAlphabeticalVariant,
           text: `Browse all words`,
           link: `/browse`,
-          color: `pink`,
-          bgcolor: `tw-bg-pink-50`
+          iconColor: `!tw-text-green-500`,
+          bgcolor: `tw-bg-green-50`
         },
 
         {
           icon: mdiPackage,
           text: `Topics`,
           link: `/topic`,
-          color: `green`,
-          bgcolor: `tw-bg-green-50`
+          iconColor: `!tw-text-pink-600`,
+          bgcolor: `tw-bg-pink-50`
         },
         {
           icon: mdiTagMultiple,
           text: `Labels`,
           link: `/label`,
-          color: `indigo`,
-          bgcolor: `tw-bg-blue-50`
+          iconColor: `!tw-text-purple-600`,
+          bgcolor: `tw-bg-purple-50`
         }
       ]
     };
