@@ -75,7 +75,8 @@ export default {
     '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
     '@nuxt/image',
     'vue-scrollto/nuxt', // https://github.com/rigor789/vue-scrollTo
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    "@nuxtjs/svg"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
