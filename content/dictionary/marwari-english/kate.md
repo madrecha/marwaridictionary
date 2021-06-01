@@ -4,19 +4,20 @@ transliteration: kate
 
 grammar:
   pronoun:
-
-    type: interrogative
+    type: 
+      - interrogative
 
 topics:
   - 
 ---
 
-## Etymology
+<word-pos pos="pronoun">
 
-## Pronunciation
-
-## Pronoun
-
-### Meaning
+<word-meanings>
 
 1. where
+
+</word-meanings>
+
+</word-pos>
+

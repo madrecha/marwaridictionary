@@ -27,11 +27,7 @@ categories:
 
 ---
 
-## Noun
-
-<!-- <fos :grammar="grammar"></fos> -->
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -40,14 +36,8 @@ categories:
 
 </word-meanings>
 
-### Synonyms
-
 <w-syns :syns="['पागलपन']"></w-syns>
 
-### Translation
-
-<translation :translation="translations"></translation>
-
-### Declension
-
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>

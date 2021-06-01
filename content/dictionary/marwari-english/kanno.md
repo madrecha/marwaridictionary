@@ -1,18 +1,25 @@
 ---
-transliteration: kanno
 slugurl: कण्णो
+transliteration: kanno
+transliteration_alt:
+  - kanano
 
 grammar:
   pronoun:
-
-    type: interrogative
+    type: 
+      - interrogative
 
 # topics:
 
 ---
 
-## Pronoun
+<word-pos pos="pronoun">
 
-### Meaning
+<word-meanings>
 
 1. whose
+
+</word-meanings>
+
+</word-pos>
+

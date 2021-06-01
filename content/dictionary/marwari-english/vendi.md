@@ -28,25 +28,20 @@ categories:
 
 ---
 
-## Adjective
+<word-pos pos="adjective">
 
-### Meaning
-
-<word-meaning>
-
+<word-meanings>
 1. stupid
 2. idiot
 3. fool
 
-</word-meaning>
-
-### Synonyms
+</word-meanings>
 
 <word-synonyms :syns="['पागल', 'बुद्धू', 'नासमझ', 'नाहमझणी']"></word-synonyms>
 
-## Noun
+</word-pos>
 
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -56,10 +51,9 @@ categories:
 
 </word-meanings>
 
-### Synonyms
-
 <word-synonyms :syns="['पागल', 'बुद्धू', 'नासमझ', 'नाहमझणी']"></word-synonyms>
 
-### Declension
-
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>
+

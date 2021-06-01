@@ -16,11 +16,7 @@ grammar:
 
 ---
 
-## Noun
-
-<!-- <fos :grammar="grammar" ></fos> -->
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -28,24 +24,22 @@ grammar:
 
 </word-meanings>
 
-### Examples
+<word-examples>
 
-1. <word-eg>
+   <word-eg>
    <template #mwr>दो <b>वतक</b></template>
    <template #mwrlatn>do vatak</template>
    <template #en>two times; twice</template>
    </word-eg>
 
-2. <word-eg>
+   <word-eg>
     <template #mwr>मैं कतरी <b>वतक</b> वणारी मनवार किदी, जदी जाईन वे जिमवा बैठा। </template>
     <template #mwrlatn>Main katri vatak vanaari manwaar kidi, jadi jaayin ve jimwa baitha.</template>
     <template #en>I insisted him so many times, then only he sat down to eat.</template>
-    </word-eg>
+   </word-eg>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Declension
+</word-examples>
 
 <noun-decl :grammar="grammar" ></noun-decl>
+
+</word-pos>

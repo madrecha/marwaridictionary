@@ -33,9 +33,7 @@ topics:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -43,22 +41,15 @@ topics:
 
 </word-meanings>
 
-### Synonyms
-
 <word-syns :syns="['पति', 'मर्द']"></word-syns>
 
-### Antonyms
-
 <word-ants :ants="['विंदणी', 'पत्नी', 'लुगाई']"></word-ants>
-
-### Translation
-
-<translation :translation="translations"></translation>
-
-### Declension
 
 <noun-decl :grammar="grammar"></noun-decl>
 
 <!-- ### Related -->
 
 <!-- <related :related="related"></related> -->
+
+</word-pos>
+

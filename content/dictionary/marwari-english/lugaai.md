@@ -5,7 +5,6 @@ slugurl: लुगाई
 grammar: 
   word: लुगाई
   noun:
-
     term: लुगा
     ending: ii-vowel
     trans: lugaa
@@ -13,25 +12,22 @@ grammar:
     number: s
 
 topics:
-
   - person
+  - relative
 
 ---
 
-## Etymology
+<word-pos pos="noun">
 
-## Pronunciation
-
-## Noun
-
-<!-- <fos :word="url.title" :gender="grammar.noun.gender"></fos> -->
-
-### Meaning
+<word-meanings>
 
 1. woman
 2. wife
 3. female
 
-### Declension
+</word-meanings>
 
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>
+

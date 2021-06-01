@@ -30,14 +30,9 @@ grammar:
 
 ---
 
-## Verb
-
-<!-- <fos :grammar="grammar" ></fos> -->
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
-
 1. to show
 2. to show off
 3. to tell
@@ -45,24 +40,22 @@ grammar:
 
 </word-meanings>
 
-### Examples
+<word-examples>
 
-1. <word-eg>
+  <word-eg>
    <template #mwr>मने भी <b>वता</b>।</template>
    <template #mwrlatn>Mane bhi vataa.</template>
    <template #en>Show me too.</template>
    </word-eg>
 
-2. <word-eg>
+  <word-eg>
    <template #mwr>घणा जणा तो सिर्फ <b>वतावा</b> वास्ते ईस चीजा खरीदे।</template>
    <template #mwrlatn>ghanaa janaa toh vataava vaaste is chijaa kharide.</template>
    <template #en>Many people buy things only to show off.</template>
    </word-eg>
 
-### Translation
-
-<translation :translation="translations" ></translation>
-
-### Conjugation
+</word-examples>
 
 <verb-conj :grammar="grammar" ></verb-conj>
+
+</word-pos>

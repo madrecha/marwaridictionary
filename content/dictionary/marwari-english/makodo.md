@@ -5,7 +5,6 @@ transliteration: makodo
 grammar:
   word: मकोड़ो
   noun:
-
     ending: o
     term: मकोड़
     trans: makod
@@ -15,21 +14,18 @@ grammar:
     number: s
 
 topics:
-
   - insect
 
 ---
 
-## Etymology
+<word-pos pos="noun">
 
-## Pronunciation
+<word-meanings>
 
-## Noun
+1. insect (big ant)
 
-### Meaning
-
-1. insect
-
-### Declension
+</word-meanings>
 
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>

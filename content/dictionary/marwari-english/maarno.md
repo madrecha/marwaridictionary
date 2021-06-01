@@ -7,12 +7,12 @@ grammar:
     term: मार
     trans: maar
     ending: a
+    type:
+      - transitive
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -21,6 +21,7 @@ grammar:
 
 </word-meanings>
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>
+

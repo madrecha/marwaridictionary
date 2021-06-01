@@ -4,13 +4,18 @@ slugurl: कणाारो
 
 grammar:
   pronoun:
-
-    type: interrogative
+    type:
+      - interrogative
 
 ---
 
-## Pronoun
+<word-pos pos="pronoun">
 
-### Meaning
+<word-meanings>
 
 1. whose
+
+</word-meanings>
+
+</word-pos>
+

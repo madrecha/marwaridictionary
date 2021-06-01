@@ -18,9 +18,7 @@ grammar:
 
 ---
 
-## Verb
-
-### Meaning
+<word-pos pos="verb">
 
 <word-meanings>
 
@@ -28,6 +26,6 @@ grammar:
 
 </word-meanings>
 
-### Conjugation
-
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>

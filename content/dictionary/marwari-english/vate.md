@@ -7,12 +7,13 @@ grammar:
 
 ---
 
-## Pronoun
-
-### Meaning
+<word-pos pos="pronoun">
 
 <word-meanings>
 
 1. there
 
 </word-meanings>
+
+</word-pos>
+

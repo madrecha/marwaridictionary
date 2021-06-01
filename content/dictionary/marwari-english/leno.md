@@ -5,22 +5,23 @@ transliteration: leno
 grammar:
   word: लेणो
   verb:
-
     term: ले
     trans: leno
-    ending: ae
+    ending: e
     type:
-
       - transitive
 
 ---
 
-## Verb
+<word-pos pos="verb">
 
-### Meaning
+<word-meanings>
 
 1. to take
 
-### Conjugation
+</word-meanings>
 
-<verb-conj :grammar="grammar"></verb-conj>
+<!-- <verb-conj :grammar="grammar"></verb-conj> -->
+
+</word-pos>
+

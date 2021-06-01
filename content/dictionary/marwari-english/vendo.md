@@ -3,17 +3,17 @@ slugurl: वेंडो
 transliteration: vendo
 
 grammar:
-  - adjective:
-      gender: m
-      number: s
-  - noun:
-      ending: o
-      term: वेंड
-      trans: vend
-      gender: m
-      gender_f: वेंडी
-      gender_f_trans: vendi
-      number: s
+  adjective:
+    gender: m
+    number: s
+  noun:
+    ending: o
+    term: वेंड
+    trans: vend
+    gender: m
+    gender_f: वेंडी
+    gender_f_trans: vendi
+    number: s
 
 categories:
   - informal
@@ -22,9 +22,7 @@ categories:
 
 ---
 
-## Adjective
-
-### Meaning
+<word-pos pos="adjective">
 
 <word-meanings>
 
@@ -34,13 +32,11 @@ categories:
 
 </word-meanings>
 
-### Synonyms
-
 <word-synonyms :syns="['पागल', 'बुद्धू', 'नासमझ', 'नाहमझणो']"></word-synonyms>
 
-## Noun
+</word-pos>
 
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -50,10 +46,8 @@ categories:
 
 </word-meanings>
 
-### Synonyms
-
 <word-synonyms :syns="['पागल', 'बुद्धू', 'नासमझ', 'नाहमझणो']"></word-synonyms>
 
-### Declension
-
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>

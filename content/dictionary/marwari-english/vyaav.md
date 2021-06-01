@@ -13,9 +13,7 @@ grammar:
 
 ---
 
-## Noun
-
-### Meaning
+<word-pos pos="noun">
 
 <word-meanings>
 
@@ -24,6 +22,6 @@ grammar:
 
 </word-meanings>
 
-### Declension
-
 <noun-decl :grammar="grammar"></noun-decl>
+
+</word-pos>

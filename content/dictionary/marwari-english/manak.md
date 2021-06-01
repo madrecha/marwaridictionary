@@ -22,6 +22,7 @@ topics:
 
 1. person
 2. man
+3. human being <w-q>in general</w-q>
 
 </word-meanings>
 

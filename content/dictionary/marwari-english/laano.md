@@ -4,22 +4,20 @@ slugurl: लाणो
 
 grammar: 
   verb:
-
     term: ला
     trans: laa
     ending: aa
-
-# categories:
-
   
 ---
 
-## Verb
+<word-pos pos="verb">
 
-### Meaning
+<word-meanings>
 
 1. to bring
 
-### Conjugation
+</word-meanings>
 
 <verb-conj :grammar="grammar"></verb-conj>
+
+</word-pos>
