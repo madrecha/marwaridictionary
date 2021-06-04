@@ -18,10 +18,10 @@
         <div class="tw-sticky tw-top-12">hello</div>
       </aside> -->
       <template #title>
-        {{$t('word.h1', {word: wordWithTransliteration})}}
+        {{$t('word.h1', {word: `${wordTitle} ${wordTransliteration}`})}}
       </template>
       <!-- Marwari meaning of {{ word.title ? word.title :  word.slugurl }}
-              {{ word.transliteration }} -->
+        {{ word.transliteration }} -->
 
       <p class="tw-max-w-max tw-mx-auto !tw-text-xs md:!tw-text-sm tw-text-gray-500 tw-lowercase !tw-leading-relaxed md:!tw-leading-relaxed">
         {{seoKeywords}}
@@ -164,29 +164,22 @@ export default {
     }
   },
   computed: {
-    wordWithTransliteration() {
-      if (this.word) {
-        let w = this.word.title ? this.word.title : this.word.slugurl;
-        let t = this.word.transliteration;
-        return w + " " + t;
-      }
+    wordTitle() {
+      return this.word.title ? this.word.title : this.word.slugurl;
+    },
+    wordTransliteration() {
+      return this.word.transliteration;
     },
     seoKeywords() {
-      if (this.word) {
-        let title = this.word.title ? this.word.title : this.word.slugurl;
-        let trans = this.word?.transliteration ?? null;
-        return `${title} का मारवाड़ी अर्थ, ${trans} Marwari meaning, define ${trans} in Marwari, ${trans} ka Marwari arth, meaning of ${trans} in Marwari, ${title} का मारवाड़ी भाषा में अर्थ, ${title} का मेवाड़ी अर्थ, ${title} का मेवाड़ी भाषा में अर्थ, ${trans} ka Mewari arth, ${title} ka Mewari bhasha mein arth, ${trans} का मेवाड़ी अर्थ`;
-      }
+      let title = this.wordTitle;
+      let trans = this.wordTransliteration;
+      return `${title} का मारवाड़ी अर्थ, ${trans} Marwari meaning, define ${trans} in Marwari, ${trans} ka Marwari arth, meaning of ${trans} in Marwari, ${title} का मारवाड़ी भाषा में अर्थ, ${title} का मेवाड़ी अर्थ, ${title} का मेवाड़ी भाषा में अर्थ, ${trans} ka Mewari arth, ${title} ka Mewari bhasha mein arth, ${trans} का मेवाड़ी अर्थ`;
     }
   },
   head() {
     if (this.word && this.$route) {
       return {
-        title: `Marwari meaning of ${
-          this.word.title
-            ? `${this.word.title} ${this.word.transliteration}`
-            : `${this.word.slugurl} ${this.word.transliteration}`
-        }`,
+        title: `Marwari meaning of ${this.wordTitle} ${this.wordTransliteration}`,
         titleTemplate: "%s - Marwari Dictionary",
         htmlAttrs: {
           lang: this.$i18n.locale
@@ -198,7 +191,7 @@ export default {
             content: this.word.description ?? this.seoKeywords
           },
           // Open Graph
-          { hid: "og:title", property: "og:title", content: this.word.title },
+          { hid: "og:title", property: "og:title", content: this.wordTitle },
           {
             hid: "og:description",
             property: "og:description",
@@ -208,7 +201,7 @@ export default {
           {
             hid: "twitter:title",
             name: "twitter:title",
-            content: this.word.title
+            content: this.wordTitle
           },
           {
             hid: "twitter:description",
