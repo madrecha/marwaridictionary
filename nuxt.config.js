@@ -46,6 +46,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/ga.js', mode: 'client' }, // Google Analytics, only on Browser, not on server
     '~/plugins/vue-scrollactive.js',
     { src: '~/plugins/vue-dragscroll.js', ssr: false },
     // '~/plugins/vue-tooltip.js',
