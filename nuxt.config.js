@@ -51,7 +51,7 @@ export default {
     { src: '~/plugins/vue-dragscroll.js', ssr: false },
     // '~/plugins/vue-tooltip.js',
     // '~/plugins/directives',
-    '~/plugins/vue-google-charts.js', // https://github.com/devstark-com/vue-google-charts
+    // '~/plugins/vue-google-charts.js', // https://github.com/devstark-com/vue-google-charts
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -94,6 +94,10 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'nuxt-i18n',
+    ['@nuxtjs/google-adsense', {
+      id: 'ca-pub-###########',
+      pageLevelAds: true,
+    }]
   ],
 
   vuetify: {
@@ -154,7 +158,6 @@ export default {
     markdown: {
       tocDepth: 4,
       remarkPlugins: [
-        // ['remark-breaks'],
         // ['remark-directive'],
         // ['~/plugins/remark/directive-custom.js'],
         ['@akebifiky/remark-simple-plantuml', { baseUrl: "https://www.plantuml.com/plantuml/svg" }],
