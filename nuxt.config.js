@@ -95,8 +95,10 @@ export default {
     '@nuxt/content',
     'nuxt-i18n',
     ['@nuxtjs/google-adsense', {
-      id: 'ca-pub-###########',
+      id: 'ca-pub-9878743762131174',
       pageLevelAds: true,
+      overlayBottom: true,
+      analyticsDomainName: 'marwari.info',
     }]
   ],
 
