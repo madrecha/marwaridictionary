@@ -36,16 +36,16 @@ export default {
 
 <style lang="sass" scoped>
 .word-example-dl-top
-  counter-increment: example
+  // counter-increment: example
   @apply tw-p-2 sm:tw-ml-2 tw-my-0.5
   &:not(:first-child)
     @apply tw-mt-1
   &:not(:last-child)
     @apply tw-mb-1
-  &::before
-    content: counter(example) " "
-    @apply tw-text-sm tw-rounded-full tw-p-1 tw-mr-2 tw-text-indigo-800
-    @apply tw-bg-gradient-to-br tw-from-white tw-to-indigo-50 tw-border tw-border-indigo-200
+  // &::before
+  //   // content: counter(example) " "
+  //   @apply tw-text-sm tw-rounded-full tw-p-1 tw-mr-2 tw-text-indigo-800
+  //   @apply tw-bg-gradient-to-br tw-from-white tw-to-indigo-50 tw-border tw-border-indigo-200
 .word-example--mwr
   @apply tw-inline tw-text-gray-800 tw-text-base tw-leading-7
   & b, strong
