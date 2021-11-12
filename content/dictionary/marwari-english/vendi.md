@@ -31,6 +31,7 @@ categories:
 <word-pos pos="adjective">
 
 <word-meanings>
+
 1. stupid
 2. idiot
 3. fool
