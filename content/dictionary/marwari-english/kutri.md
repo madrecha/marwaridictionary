@@ -13,11 +13,6 @@ grammar:
     gender_m_trans: kutro
     number: s
 
-categories:
-
-  - abusive
-  - offensive
-
 topics:
   - animal
   - domestic-animal
