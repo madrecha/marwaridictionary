@@ -23,9 +23,9 @@
   },
   "devDependencies": {
     "@akebifiky/remark-simple-plantuml": "^1.0.2",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-regular-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/free-brands-svg-icons": "5.15.4",
+    "@fortawesome/free-regular-svg-icons": "5.15.4",
+    "@fortawesome/free-solid-svg-icons": "5.15.4",
     "@mdi/js": "^6.4.95",
     "@nuxt/image": "^0.6.0",
     "@nuxtjs/fontawesome": "^1.1.2",
