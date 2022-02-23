@@ -31,7 +31,7 @@
     "@nuxtjs/fontawesome": "1.1.2",
     "@nuxtjs/svg": "0.3.0",
     "@nuxtjs/tailwindcss": "4.2.1",
-    "@nuxtjs/vuetify": "1.12.1",
+    "@nuxtjs/vuetify": "1.12.3",
     "@sanskrit-coders/sanscript": "1.2.2",
     "@silvenon/remark-smartypants": "1.0.0",
     "autoprefixer": "10.4.2",
