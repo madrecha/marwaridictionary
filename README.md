@@ -1,5 +1,7 @@
 #  Marwari Dictionary
 [![https://good-labs.github.io/greater-good-affirmation/assets/images/badge.svg](https://good-labs.github.io/greater-good-affirmation/assets/images/badge.svg)](https://good-labs.github.io/greater-good-affirmation)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+
 
 This repository contains source code and content for [marwari.info](https://marwari.info) — 😋 a beautiful multilingual dictionary for Marwari language. 
 
