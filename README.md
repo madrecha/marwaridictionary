@@ -16,7 +16,9 @@ This repository contains source code and content for [marwari.info](https://marw
 
 ## 2. Long-term Vision
 
-We have documented the medium-term and long-term plan in [PLAN.md](https://github.com/madrecha/marwaridictionary/blob/master/PLAN.md). We plan to have so many features. Stay tuned. 😊
+We have documented the medium-term and long-term plan in [PLAN](https://github.com/madrecha/marwaridictionary/blob/master/PLAN.md). 
+
+You can go through it as we plan to have so many features. Stay tuned. 😊
 
 ## 3. Features
 
@@ -39,9 +41,15 @@ We have documented the medium-term and long-term plan in [PLAN.md](https://githu
 
 - ❤ Pleasing aesthetic User Interface
 
+### To-Do
+
+- [ ] Add filterable search
+- [ ] Add Nuxt 3
+- [ ] Change workflow to easily add new words.
+
 ## 4. Who are we?
 
-We are Chartered Accountants based in Mumbai (India) — CA @ManasMadrecha and CA @AdarshMadrecha.
+We are Chartered Accountants based in Mumbai (India) — [CA @ManasMadrecha](https://github.com/ManasMadrecha) and [CA @AdarshMadrecha](https://github.com/AdarshMadrecha).
 
 💪🏻 We were the creators of marwaridictionary.blogspot.com. But, it was high time we moved from a simple blog (that garnered lakhs of views) to a full-fledged Jamstack web-app. 
 
