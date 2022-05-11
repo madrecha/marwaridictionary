@@ -35,7 +35,7 @@
     "@sanskrit-coders/sanscript": "1.2.2",
     "@silvenon/remark-smartypants": "1.0.0",
     "autoprefixer": "10.4.2",
-    "fuse.js": "6.4.6",
+    "fuse.js": "6.6.2",
     "lodash": "4.17.21",
     "postcss": "8.4.12",
     "postcss-nested": "5.0.6",
