@@ -27,7 +27,7 @@
     "@fortawesome/free-regular-svg-icons": "5.15.4",
     "@fortawesome/free-solid-svg-icons": "5.15.4",
     "@mdi/js": "6.4.95",
-    "@nuxt/image": "0.6.0",
+    "@nuxt/image": "0.7.2",
     "@nuxtjs/fontawesome": "1.1.2",
     "@nuxtjs/svg": "0.3.0",
     "@nuxtjs/tailwindcss": "4.2.1",
